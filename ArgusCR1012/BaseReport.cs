@@ -4,7 +4,7 @@ using System.Configuration;
 using System.Drawing.Printing;
 using Newtonsoft.Json;
 
-namespace ArgusRPT
+namespace Reports
 {
     public class BaseReport : DevExpress.XtraReports.UI.XtraReport
     {
@@ -28,7 +28,7 @@ namespace ArgusRPT
             package = _package;
         }
 
-        protected virtual string dictionaryStore() { return null;  }
+        protected virtual string dictionaryStore() { return null; }
 
         protected virtual void labelsText() { }
 
@@ -158,5 +158,3 @@ namespace ArgusRPT
         }
     }
 }
-
-

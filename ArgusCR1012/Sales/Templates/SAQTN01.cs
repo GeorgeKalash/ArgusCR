@@ -6,9 +6,9 @@ using DevExpress.XtraReports.UI;
 
 namespace ArgusCR1012.Sales.Templates
 {
-    public partial class SalesQuotation : ArgusRPT.BaseReport
+    public partial class SAQTN01 : Reports.BaseReport
     {
-        public SalesQuotation()
+        public SAQTN01()
         {
             InitializeComponent();
         }
