@@ -13,5 +13,9 @@ namespace ArgusCR1012.Sales.Templates
             InitializeComponent();
         }
 
+        private void ReportFooter_BeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e)
+        {
+
+        }
     }
 }
