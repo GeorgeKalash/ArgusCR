@@ -25,7 +25,7 @@ namespace ArgusCR1012.Sales.Templates
 
             clientName_data.Text = webObject.record.header.clientName;
             reference_data.Text = webObject.record.header.reference;
-            date_data.Text = webObject.record.header.date.ToString("dd/MM/yy"/*sessionInfo.dateFormat*/);
+            date_data.Text = webObject.record.header.date.ToString(sessionInfo.dateFormat);
 
             billAddressName_data.Text = webObject.record.billAddress?.name;
             billAddressPhone_data.Text = webObject.record.billAddress?.phone;
@@ -36,6 +36,19 @@ namespace ArgusCR1012.Sales.Templates
 
             spName_data.Text = webObject.record.header.spName;
             spCellPhone_data.Text = webObject.record.header.spCellPhone;
+
+            if (webObject.record.header.deliveryDate != null)
+                deliveryDate_data.Text = ((DateTime) webObject.record.header.deliveryDate).ToString(sessionInfo.dateFormat);
+
+            amountInWords_data.Text = SharedClasses.NumberToWords.multiLingualNumberInText((decimal) webObject.record.header.amount, 2, Convert.ToInt16(sessionInfo.languageId));
+
+            if (webObject.record.header.expiryDate != null)
+                validity_data.Text = string.Format("{0} days: {1}", webObject.record.header.validity, ((DateTime)webObject.record.header.expiryDate).ToString(sessionInfo.dateFormat));
+
+            if (webObject.record.shipAddress != null)
+            {
+                shipToAddress_data.Text = string.Format("{0}\\r\\n{1}\\r\\n{2}", webObject.record.shipAddress.street1, webObject.record.shipAddress.street2, webObject.record.shipAddress.city);
+            }
 
             base.OnBeforePrint(e);
         }
