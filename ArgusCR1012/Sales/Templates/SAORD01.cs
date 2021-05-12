@@ -12,6 +12,5 @@ namespace ArgusCR1012.Sales.Templates
         {
             InitializeComponent();
         }
-
     }
 }
