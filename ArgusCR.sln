@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.30907.101
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArgusCR1000", "ArgusCR1000\ArgusCR1000.csproj", "{57D18A1B-02EE-4F52-B38A-E5212832FFAD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArgusCR1008", "ArgusCR1008\ArgusCR1008.csproj", "{6F6997C9-3BBC-40CB-AD77-7FE3E321218F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{57D18A1B-02EE-4F52-B38A-E5212832FFAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{57D18A1B-02EE-4F52-B38A-E5212832FFAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{57D18A1B-02EE-4F52-B38A-E5212832FFAD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F6997C9-3BBC-40CB-AD77-7FE3E321218F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F6997C9-3BBC-40CB-AD77-7FE3E321218F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F6997C9-3BBC-40CB-AD77-7FE3E321218F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F6997C9-3BBC-40CB-AD77-7FE3E321218F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
