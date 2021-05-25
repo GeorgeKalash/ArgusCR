@@ -161,7 +161,7 @@
             this.balance2_data.StylePriority.UseTextAlignment = false;
             this.balance2_data.Text = "balance_data";
             this.balance2_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
-            this.balance2_data.TextFormatString = "{0:#}";
+            this.balance2_data.TextFormatString = "{0:n0}";
             // 
             // spName_data
             // 
@@ -308,7 +308,7 @@
             this.balance_data.StylePriority.UseFont = false;
             this.balance_data.Text = "balance_data";
             this.balance_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
-            this.balance_data.TextFormatString = "{0:#}";
+            this.balance_data.TextFormatString = "{0:n0}";
             // 
             // xrPanel1
             // 
@@ -590,7 +590,7 @@
             this.amount_data.StylePriority.UseTextAlignment = false;
             this.amount_data.Text = "amount_data";
             this.amount_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
-            this.amount_data.TextFormatString = "{0:#}";
+            this.amount_data.TextFormatString = "{0:n0}";
             // 
             // xrLabel31
             // 

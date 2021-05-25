@@ -34,6 +34,18 @@
             this.DetailData3_Odd = new DevExpress.XtraReports.UI.XRControlStyle();
             this.PageInfo = new DevExpress.XtraReports.UI.XRControlStyle();
             this.TopMargin = new DevExpress.XtraReports.UI.TopMarginBand();
+            this.reference_data = new DevExpress.XtraReports.UI.XRLabel();
+            this.date_data = new DevExpress.XtraReports.UI.XRLabel();
+            this.spName_data = new DevExpress.XtraReports.UI.XRLabel();
+            this.balance2_data = new DevExpress.XtraReports.UI.XRLabel();
+            this.balance_data = new DevExpress.XtraReports.UI.XRLabel();
+            this.volume_data = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrPanel1 = new DevExpress.XtraReports.UI.XRPanel();
+            this.phone3_data = new DevExpress.XtraReports.UI.XRLabel();
+            this.phone2_data = new DevExpress.XtraReports.UI.XRLabel();
+            this.phone_data = new DevExpress.XtraReports.UI.XRLabel();
+            this.szName_data = new DevExpress.XtraReports.UI.XRLabel();
+            this.clientName_data = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel25 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel24 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel23 = new DevExpress.XtraReports.UI.XRLabel();
@@ -55,18 +67,6 @@
             this.groupHeaderBand1 = new DevExpress.XtraReports.UI.GroupHeaderBand();
             this.groupFooterBand1 = new DevExpress.XtraReports.UI.GroupFooterBand();
             this.xrLine1 = new DevExpress.XtraReports.UI.XRLine();
-            this.xrPanel1 = new DevExpress.XtraReports.UI.XRPanel();
-            this.phone3_data = new DevExpress.XtraReports.UI.XRLabel();
-            this.phone2_data = new DevExpress.XtraReports.UI.XRLabel();
-            this.phone_data = new DevExpress.XtraReports.UI.XRLabel();
-            this.szName_data = new DevExpress.XtraReports.UI.XRLabel();
-            this.clientName_data = new DevExpress.XtraReports.UI.XRLabel();
-            this.balance_data = new DevExpress.XtraReports.UI.XRLabel();
-            this.volume_data = new DevExpress.XtraReports.UI.XRLabel();
-            this.reference_data = new DevExpress.XtraReports.UI.XRLabel();
-            this.date_data = new DevExpress.XtraReports.UI.XRLabel();
-            this.spName_data = new DevExpress.XtraReports.UI.XRLabel();
-            this.balance2_data = new DevExpress.XtraReports.UI.XRLabel();
             ((System.ComponentModel.ISupportInitialize)(this.table1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             // 
@@ -138,6 +138,164 @@
             this.xrLabel22});
             this.TopMargin.HeightF = 296.375F;
             this.TopMargin.Name = "TopMargin";
+            // 
+            // reference_data
+            // 
+            this.reference_data.BackColor = System.Drawing.Color.LightGray;
+            this.reference_data.Font = new System.Drawing.Font("Times New Roman", 10.5F);
+            this.reference_data.LocationFloat = new DevExpress.Utils.PointFloat(1.999969F, 250.2083F);
+            this.reference_data.Multiline = true;
+            this.reference_data.Name = "reference_data";
+            this.reference_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.reference_data.SizeF = new System.Drawing.SizeF(122.7083F, 23F);
+            this.reference_data.StylePriority.UseBackColor = false;
+            this.reference_data.StylePriority.UseFont = false;
+            this.reference_data.StylePriority.UseTextAlignment = false;
+            this.reference_data.Text = "reference_data";
+            this.reference_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            // 
+            // date_data
+            // 
+            this.date_data.BackColor = System.Drawing.Color.LightGray;
+            this.date_data.Font = new System.Drawing.Font("Times New Roman", 10.5F);
+            this.date_data.LocationFloat = new DevExpress.Utils.PointFloat(124.7083F, 250.2083F);
+            this.date_data.Multiline = true;
+            this.date_data.Name = "date_data";
+            this.date_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.date_data.SizeF = new System.Drawing.SizeF(131.3751F, 23F);
+            this.date_data.StylePriority.UseBackColor = false;
+            this.date_data.StylePriority.UseFont = false;
+            this.date_data.StylePriority.UseTextAlignment = false;
+            this.date_data.Text = "date_data";
+            this.date_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            this.date_data.TextFormatString = "{0:dd/MM/yyyy}";
+            // 
+            // spName_data
+            // 
+            this.spName_data.BackColor = System.Drawing.Color.LightGray;
+            this.spName_data.Font = new System.Drawing.Font("Times New Roman", 10.5F);
+            this.spName_data.LocationFloat = new DevExpress.Utils.PointFloat(256.0833F, 250.2083F);
+            this.spName_data.Multiline = true;
+            this.spName_data.Name = "spName_data";
+            this.spName_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.spName_data.SizeF = new System.Drawing.SizeF(128.6389F, 23F);
+            this.spName_data.StylePriority.UseBackColor = false;
+            this.spName_data.StylePriority.UseFont = false;
+            this.spName_data.StylePriority.UseTextAlignment = false;
+            this.spName_data.Text = "spName_data";
+            this.spName_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            // 
+            // balance2_data
+            // 
+            this.balance2_data.BackColor = System.Drawing.Color.LightGray;
+            this.balance2_data.Font = new System.Drawing.Font("Times New Roman", 10.5F);
+            this.balance2_data.LocationFloat = new DevExpress.Utils.PointFloat(384.7222F, 250.2083F);
+            this.balance2_data.Multiline = true;
+            this.balance2_data.Name = "balance2_data";
+            this.balance2_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.balance2_data.SizeF = new System.Drawing.SizeF(150.2779F, 23F);
+            this.balance2_data.StylePriority.UseBackColor = false;
+            this.balance2_data.StylePriority.UseFont = false;
+            this.balance2_data.StylePriority.UseTextAlignment = false;
+            this.balance2_data.Text = "balance_data";
+            this.balance2_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            this.balance2_data.TextFormatString = "{0:n0}";
+            // 
+            // balance_data
+            // 
+            this.balance_data.Font = new System.Drawing.Font("Times New Roman", 13F);
+            this.balance_data.LocationFloat = new DevExpress.Utils.PointFloat(60F, 40.62498F);
+            this.balance_data.Multiline = true;
+            this.balance_data.Name = "balance_data";
+            this.balance_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.balance_data.SizeF = new System.Drawing.SizeF(100F, 23F);
+            this.balance_data.StylePriority.UseFont = false;
+            this.balance_data.Text = "balance_data";
+            this.balance_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
+            this.balance_data.TextFormatString = "{0:n0}";
+            // 
+            // volume_data
+            // 
+            this.volume_data.Font = new System.Drawing.Font("Times New Roman", 12F);
+            this.volume_data.LocationFloat = new DevExpress.Utils.PointFloat(416.5963F, 188.9584F);
+            this.volume_data.Multiline = true;
+            this.volume_data.Name = "volume_data";
+            this.volume_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.volume_data.SizeF = new System.Drawing.SizeF(100F, 23F);
+            this.volume_data.StylePriority.UseFont = false;
+            this.volume_data.Text = "volume_data";
+            this.volume_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
+            // 
+            // xrPanel1
+            // 
+            this.xrPanel1.BackColor = System.Drawing.Color.LightGray;
+            this.xrPanel1.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+            this.phone3_data,
+            this.phone2_data,
+            this.phone_data,
+            this.szName_data,
+            this.clientName_data});
+            this.xrPanel1.LocationFloat = new DevExpress.Utils.PointFloat(282.7223F, 40.62498F);
+            this.xrPanel1.Name = "xrPanel1";
+            this.xrPanel1.SizeF = new System.Drawing.SizeF(233.8741F, 136.875F);
+            this.xrPanel1.StylePriority.UseBackColor = false;
+            // 
+            // phone3_data
+            // 
+            this.phone3_data.Font = new System.Drawing.Font("Times New Roman", 13F);
+            this.phone3_data.LocationFloat = new DevExpress.Utils.PointFloat(10.00003F, 103.875F);
+            this.phone3_data.Multiline = true;
+            this.phone3_data.Name = "phone3_data";
+            this.phone3_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.phone3_data.SizeF = new System.Drawing.SizeF(213.8741F, 23F);
+            this.phone3_data.StylePriority.UseFont = false;
+            this.phone3_data.Text = "phone3_data";
+            // 
+            // phone2_data
+            // 
+            this.phone2_data.Font = new System.Drawing.Font("Times New Roman", 13F);
+            this.phone2_data.LocationFloat = new DevExpress.Utils.PointFloat(10.00003F, 79.00003F);
+            this.phone2_data.Multiline = true;
+            this.phone2_data.Name = "phone2_data";
+            this.phone2_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.phone2_data.SizeF = new System.Drawing.SizeF(213.8741F, 23F);
+            this.phone2_data.StylePriority.UseFont = false;
+            this.phone2_data.Text = "phone2_data";
+            // 
+            // phone_data
+            // 
+            this.phone_data.Font = new System.Drawing.Font("Times New Roman", 13F);
+            this.phone_data.LocationFloat = new DevExpress.Utils.PointFloat(10.00003F, 56.00002F);
+            this.phone_data.Multiline = true;
+            this.phone_data.Name = "phone_data";
+            this.phone_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.phone_data.SizeF = new System.Drawing.SizeF(213.8741F, 23F);
+            this.phone_data.StylePriority.UseFont = false;
+            this.phone_data.StylePriority.UseTextAlignment = false;
+            this.phone_data.Text = "phone_data";
+            this.phone_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            // 
+            // szName_data
+            // 
+            this.szName_data.Font = new System.Drawing.Font("Times New Roman", 13F);
+            this.szName_data.LocationFloat = new DevExpress.Utils.PointFloat(10.00003F, 33F);
+            this.szName_data.Multiline = true;
+            this.szName_data.Name = "szName_data";
+            this.szName_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.szName_data.SizeF = new System.Drawing.SizeF(213.8741F, 23F);
+            this.szName_data.StylePriority.UseFont = false;
+            this.szName_data.Text = "szName_data";
+            // 
+            // clientName_data
+            // 
+            this.clientName_data.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Bold);
+            this.clientName_data.LocationFloat = new DevExpress.Utils.PointFloat(10.00003F, 10F);
+            this.clientName_data.Multiline = true;
+            this.clientName_data.Name = "clientName_data";
+            this.clientName_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.clientName_data.SizeF = new System.Drawing.SizeF(213.8741F, 23F);
+            this.clientName_data.StylePriority.UseFont = false;
+            this.clientName_data.Text = "clientName_data";
             // 
             // xrLabel25
             // 
@@ -318,6 +476,7 @@
             this.xrLabel5.StylePriority.UseTextAlignment = false;
             this.xrLabel5.Text = "xrLabel5";
             this.xrLabel5.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
+            this.xrLabel5.TextFormatString = "{0:n0}";
             // 
             // xrLabel4
             // 
@@ -367,164 +526,6 @@
             this.xrLine1.LocationFloat = new DevExpress.Utils.PointFloat(1.999969F, 2.916667F);
             this.xrLine1.Name = "xrLine1";
             this.xrLine1.SizeF = new System.Drawing.SizeF(533.0001F, 2.083333F);
-            // 
-            // xrPanel1
-            // 
-            this.xrPanel1.BackColor = System.Drawing.Color.LightGray;
-            this.xrPanel1.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
-            this.phone3_data,
-            this.phone2_data,
-            this.phone_data,
-            this.szName_data,
-            this.clientName_data});
-            this.xrPanel1.LocationFloat = new DevExpress.Utils.PointFloat(282.7223F, 40.62498F);
-            this.xrPanel1.Name = "xrPanel1";
-            this.xrPanel1.SizeF = new System.Drawing.SizeF(233.8741F, 136.875F);
-            this.xrPanel1.StylePriority.UseBackColor = false;
-            // 
-            // phone3_data
-            // 
-            this.phone3_data.Font = new System.Drawing.Font("Times New Roman", 13F);
-            this.phone3_data.LocationFloat = new DevExpress.Utils.PointFloat(10.00003F, 103.875F);
-            this.phone3_data.Multiline = true;
-            this.phone3_data.Name = "phone3_data";
-            this.phone3_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.phone3_data.SizeF = new System.Drawing.SizeF(213.8741F, 23F);
-            this.phone3_data.StylePriority.UseFont = false;
-            this.phone3_data.Text = "phone3_data";
-            // 
-            // phone2_data
-            // 
-            this.phone2_data.Font = new System.Drawing.Font("Times New Roman", 13F);
-            this.phone2_data.LocationFloat = new DevExpress.Utils.PointFloat(10.00003F, 79.00003F);
-            this.phone2_data.Multiline = true;
-            this.phone2_data.Name = "phone2_data";
-            this.phone2_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.phone2_data.SizeF = new System.Drawing.SizeF(213.8741F, 23F);
-            this.phone2_data.StylePriority.UseFont = false;
-            this.phone2_data.Text = "phone2_data";
-            // 
-            // phone_data
-            // 
-            this.phone_data.Font = new System.Drawing.Font("Times New Roman", 13F);
-            this.phone_data.LocationFloat = new DevExpress.Utils.PointFloat(10.00003F, 56.00002F);
-            this.phone_data.Multiline = true;
-            this.phone_data.Name = "phone_data";
-            this.phone_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.phone_data.SizeF = new System.Drawing.SizeF(213.8741F, 23F);
-            this.phone_data.StylePriority.UseFont = false;
-            this.phone_data.StylePriority.UseTextAlignment = false;
-            this.phone_data.Text = "phone_data";
-            this.phone_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
-            // 
-            // szName_data
-            // 
-            this.szName_data.Font = new System.Drawing.Font("Times New Roman", 13F);
-            this.szName_data.LocationFloat = new DevExpress.Utils.PointFloat(10.00003F, 33F);
-            this.szName_data.Multiline = true;
-            this.szName_data.Name = "szName_data";
-            this.szName_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.szName_data.SizeF = new System.Drawing.SizeF(213.8741F, 23F);
-            this.szName_data.StylePriority.UseFont = false;
-            this.szName_data.Text = "szName_data";
-            // 
-            // clientName_data
-            // 
-            this.clientName_data.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Bold);
-            this.clientName_data.LocationFloat = new DevExpress.Utils.PointFloat(10.00003F, 10F);
-            this.clientName_data.Multiline = true;
-            this.clientName_data.Name = "clientName_data";
-            this.clientName_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.clientName_data.SizeF = new System.Drawing.SizeF(213.8741F, 23F);
-            this.clientName_data.StylePriority.UseFont = false;
-            this.clientName_data.Text = "clientName_data";
-            // 
-            // balance_data
-            // 
-            this.balance_data.Font = new System.Drawing.Font("Times New Roman", 13F);
-            this.balance_data.LocationFloat = new DevExpress.Utils.PointFloat(60F, 40.62498F);
-            this.balance_data.Multiline = true;
-            this.balance_data.Name = "balance_data";
-            this.balance_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.balance_data.SizeF = new System.Drawing.SizeF(100F, 23F);
-            this.balance_data.StylePriority.UseFont = false;
-            this.balance_data.Text = "balance_data";
-            this.balance_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
-            this.balance_data.TextFormatString = "{0:#}";
-            // 
-            // volume_data
-            // 
-            this.volume_data.Font = new System.Drawing.Font("Times New Roman", 12F);
-            this.volume_data.LocationFloat = new DevExpress.Utils.PointFloat(416.5963F, 188.9584F);
-            this.volume_data.Multiline = true;
-            this.volume_data.Name = "volume_data";
-            this.volume_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.volume_data.SizeF = new System.Drawing.SizeF(100F, 23F);
-            this.volume_data.StylePriority.UseFont = false;
-            this.volume_data.Text = "volume_data";
-            this.volume_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
-            // 
-            // reference_data
-            // 
-            this.reference_data.BackColor = System.Drawing.Color.LightGray;
-            this.reference_data.Font = new System.Drawing.Font("Times New Roman", 10.5F);
-            this.reference_data.LocationFloat = new DevExpress.Utils.PointFloat(1.999969F, 250.2083F);
-            this.reference_data.Multiline = true;
-            this.reference_data.Name = "reference_data";
-            this.reference_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.reference_data.SizeF = new System.Drawing.SizeF(122.7083F, 23F);
-            this.reference_data.StylePriority.UseBackColor = false;
-            this.reference_data.StylePriority.UseFont = false;
-            this.reference_data.StylePriority.UseTextAlignment = false;
-            this.reference_data.Text = "reference_data";
-            this.reference_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
-            // 
-            // date_data
-            // 
-            this.date_data.BackColor = System.Drawing.Color.LightGray;
-            this.date_data.Font = new System.Drawing.Font("Times New Roman", 10.5F);
-            this.date_data.LocationFloat = new DevExpress.Utils.PointFloat(124.7083F, 250.2083F);
-            this.date_data.Multiline = true;
-            this.date_data.Name = "date_data";
-            this.date_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.date_data.SizeF = new System.Drawing.SizeF(131.3751F, 23F);
-            this.date_data.StylePriority.UseBackColor = false;
-            this.date_data.StylePriority.UseFont = false;
-            this.date_data.StylePriority.UseTextAlignment = false;
-            this.date_data.Text = "date_data";
-            this.date_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
-            this.date_data.TextFormatString = "{0:dd/MM/yyyy}";
-            // 
-            // spName_data
-            // 
-            this.spName_data.BackColor = System.Drawing.Color.LightGray;
-            this.spName_data.Font = new System.Drawing.Font("Times New Roman", 10.5F);
-            this.spName_data.LocationFloat = new DevExpress.Utils.PointFloat(256.0833F, 250.2083F);
-            this.spName_data.Multiline = true;
-            this.spName_data.Name = "spName_data";
-            this.spName_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.spName_data.SizeF = new System.Drawing.SizeF(128.6389F, 23F);
-            this.spName_data.StylePriority.UseBackColor = false;
-            this.spName_data.StylePriority.UseFont = false;
-            this.spName_data.StylePriority.UseTextAlignment = false;
-            this.spName_data.Text = "spName_data";
-            this.spName_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
-            // 
-            // balance2_data
-            // 
-            this.balance2_data.BackColor = System.Drawing.Color.LightGray;
-            this.balance2_data.Font = new System.Drawing.Font("Times New Roman", 10.5F);
-            this.balance2_data.LocationFloat = new DevExpress.Utils.PointFloat(384.7222F, 250.2083F);
-            this.balance2_data.Multiline = true;
-            this.balance2_data.Name = "balance2_data";
-            this.balance2_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.balance2_data.SizeF = new System.Drawing.SizeF(150.2779F, 23F);
-            this.balance2_data.StylePriority.UseBackColor = false;
-            this.balance2_data.StylePriority.UseFont = false;
-            this.balance2_data.StylePriority.UseTextAlignment = false;
-            this.balance2_data.Text = "balance_data";
-            this.balance2_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
-            this.balance2_data.TextFormatString = "{0:#}";
             // 
             // SATRX03
             // 

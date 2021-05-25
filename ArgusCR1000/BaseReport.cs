@@ -30,7 +30,7 @@ namespace Reports
 
         protected virtual string dictionaryStore() 
         { 
-            return "custom\\R1008\\"; 
+            return "custom\\R1000\\"; 
         }
 
         protected virtual void labelsText() { }
