@@ -4,13 +4,14 @@ using System.ComponentModel;
 using System.Drawing;
 using DevExpress.XtraReports.UI;
 
-namespace ArgusCR1012.Sales.Templates
+namespace ArgusCR1012.Delivery
 {
-    public partial class SAORD01 : Reports.BaseReport
+    public partial class DEORD01 : Reports.BaseReport
     {
-        public SAORD01()
+        public DEORD01()
         {
             InitializeComponent();
         }
+
     }
 }

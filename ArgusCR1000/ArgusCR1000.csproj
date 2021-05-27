@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{2BE458F6-E168-4877-82C6-1C86F4F22A2D}</ProjectGuid>
+    <ProjectGuid>{57D18A1B-02EE-4F52-B38A-E5212832FFAD}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ArgusCR1012</RootNamespace>
-    <AssemblyName>ArgusCR1012</AssemblyName>
+    <RootNamespace>ArgusCR1000</RootNamespace>
+    <AssemblyName>ArgusCR1000</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -31,17 +31,13 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="ArgusDS, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="ArgusDS">
       <HintPath>..\..\..\Extensions\ArgusDS.dll</HintPath>
     </Reference>
-    <Reference Include="DevExpress.Charts.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.Data.Desktop.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Data.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\Extensions\DevExpress.Data.v20.1.dll</HintPath>
     </Reference>
-    <Reference Include="DevExpress.Office.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Pdf.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\Extensions\DevExpress.Pdf.v20.1.Core.dll</HintPath>
@@ -50,16 +46,10 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\Extensions\DevExpress.Pdf.v20.1.Drawing.dll</HintPath>
     </Reference>
-    <Reference Include="DevExpress.PivotGrid.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Printing.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\Extensions\DevExpress.Printing.v20.1.Core.dll</HintPath>
     </Reference>
-    <Reference Include="DevExpress.RichEdit.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.RichEdit.v20.1.Export, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.Sparkline.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.XtraCharts.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.XtraGauges.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraReports.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\Extensions\DevExpress.XtraReports.v20.1.dll</HintPath>
@@ -69,7 +59,7 @@
       <HintPath>..\..\..\Extensions\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="SharedClasses">
-      <HintPath>..\..\Extensions\SharedClasses.dll</HintPath>
+      <HintPath>..\..\..\Extensions\SharedClasses.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
@@ -86,35 +76,54 @@
     <Compile Include="BaseReport.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Delivery\DEORD01.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Delivery\DEORD01.Designer.cs">
-      <DependentUpon>DEORD01.cs</DependentUpon>
-    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Sales\Templates\SAORD01.cs">
+    <Compile Include="Sales\SAQTN01.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Sales\Templates\SAORD01.Designer.cs">
-      <DependentUpon>SAORD01.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Sales\Templates\SAQTN01.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Sales\Templates\SAQTN01.Designer.cs">
+    <Compile Include="Sales\SAQTN01.Designer.cs">
       <DependentUpon>SAQTN01.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sales\SAQTN02.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Sales\SAQTN02.Designer.cs">
+      <DependentUpon>SAQTN02.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sales\SATRX01.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Sales\SATRX01.Designer.cs">
+      <DependentUpon>SATRX01.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sales\SATRX02.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Sales\SATRX02.Designer.cs">
+      <DependentUpon>SATRX02.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sales\SATRX03.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Sales\SATRX03.Designer.cs">
+      <DependentUpon>SATRX03.cs</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Properties\licenses.licx" />
-    <EmbeddedResource Include="Sales\Templates\SAORD01.resx">
-      <DependentUpon>SAORD01.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Sales\Templates\SAQTN01.resx">
+    <EmbeddedResource Include="Sales\SAQTN01.resx">
       <DependentUpon>SAQTN01.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Sales\SAQTN02.resx">
+      <DependentUpon>SAQTN02.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales\SATRX01.resx">
+      <DependentUpon>SATRX01.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales\SATRX02.resx">
+      <DependentUpon>SATRX02.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales\SATRX03.resx">
+      <DependentUpon>SATRX03.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
