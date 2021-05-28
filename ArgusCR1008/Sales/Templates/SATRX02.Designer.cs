@@ -615,7 +615,7 @@
             // 
             this.groupHeaderBand1.Expanded = false;
             this.groupHeaderBand1.GroupFields.AddRange(new DevExpress.XtraReports.UI.GroupField[] {
-            new DevExpress.XtraReports.UI.GroupField("categoryName", DevExpress.XtraReports.UI.XRColumnSortOrder.None),
+            new DevExpress.XtraReports.UI.GroupField("categoryName", DevExpress.XtraReports.UI.XRColumnSortOrder.Ascending),
             new DevExpress.XtraReports.UI.GroupField("width", DevExpress.XtraReports.UI.XRColumnSortOrder.Ascending)});
             this.groupHeaderBand1.Name = "groupHeaderBand1";
             // 
