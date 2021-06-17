@@ -94,6 +94,12 @@
     <Compile Include="Delivery\DEORD01.Designer.cs">
       <DependentUpon>DEORD01.cs</DependentUpon>
     </Compile>
+    <Compile Include="Manufacturing\Templates\MFBOM01.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Manufacturing\Templates\MFBOM01.Designer.cs">
+      <DependentUpon>MFBOM01.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Sales\Templates\SAORD01.cs">
       <SubType>Component</SubType>

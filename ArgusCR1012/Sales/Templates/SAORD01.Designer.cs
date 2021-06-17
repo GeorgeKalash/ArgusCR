@@ -35,6 +35,7 @@ namespace ArgusCR1012.Sales.Templates
             this.xrTable5 = new DevExpress.XtraReports.UI.XRTable();
             this.xrTableRow14 = new DevExpress.XtraReports.UI.XRTableRow();
             this.xrTableCell26 = new DevExpress.XtraReports.UI.XRTableCell();
+            this.xrTableCell19 = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTableRow15 = new DevExpress.XtraReports.UI.XRTableRow();
             this.xrTableCell27 = new DevExpress.XtraReports.UI.XRTableCell();
             this.reference_data = new DevExpress.XtraReports.UI.XRTableCell();
@@ -99,7 +100,6 @@ namespace ArgusCR1012.Sales.Templates
             this.xrTableCell5 = new DevExpress.XtraReports.UI.XRTableCell();
             this.PageFooter = new DevExpress.XtraReports.UI.PageFooterBand();
             this.xrLabel4 = new DevExpress.XtraReports.UI.XRLabel();
-            this.xrTableCell19 = new DevExpress.XtraReports.UI.XRTableCell();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable3)).BeginInit();
@@ -179,6 +179,14 @@ namespace ArgusCR1012.Sales.Templates
             this.xrTableCell26.StylePriority.UseBackColor = false;
             this.xrTableCell26.Text = "Date:";
             this.xrTableCell26.Weight = 8.7061381602429382D;
+            // 
+            // xrTableCell19
+            // 
+            this.xrTableCell19.BackColor = System.Drawing.Color.Azure;
+            this.xrTableCell19.Multiline = true;
+            this.xrTableCell19.Name = "xrTableCell19";
+            this.xrTableCell19.StylePriority.UseBackColor = false;
+            this.xrTableCell19.Weight = 8.7061381602429382D;
             // 
             // xrTableRow15
             // 
@@ -422,7 +430,6 @@ namespace ArgusCR1012.Sales.Templates
             // 
             this.Detail.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
             this.xrTable3});
-            this.Detail.Expanded = false;
             this.Detail.HeightF = 37.5F;
             this.Detail.Name = "Detail";
             // 
@@ -791,7 +798,6 @@ namespace ArgusCR1012.Sales.Templates
             // 
             this.PageHeader.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
             this.xrTable1});
-            this.PageHeader.Expanded = false;
             this.PageHeader.HeightF = 64.58337F;
             this.PageHeader.Name = "PageHeader";
             // 
@@ -903,14 +909,6 @@ namespace ArgusCR1012.Sales.Templates
             this.xrLabel4.Text = "Distribution original (white)-Customer. (Blue)-Sale.  (Green)-Accounts. (Pink)-Ma" +
     "ster file.";
             this.xrLabel4.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
-            // 
-            // xrTableCell19
-            // 
-            this.xrTableCell19.BackColor = System.Drawing.Color.Azure;
-            this.xrTableCell19.Multiline = true;
-            this.xrTableCell19.Name = "xrTableCell19";
-            this.xrTableCell19.StylePriority.UseBackColor = false;
-            this.xrTableCell19.Weight = 8.7061381602429382D;
             // 
             // SAORD01
             // 
