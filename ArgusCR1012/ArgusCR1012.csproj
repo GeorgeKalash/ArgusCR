@@ -88,10 +88,10 @@
     <Compile Include="BaseReport.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Delivery\DEORD01.cs">
+    <Compile Include="Delivery\Templates\DEORD01.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Delivery\DEORD01.Designer.cs">
+    <Compile Include="Delivery\Templates\DEORD01.Designer.cs">
       <DependentUpon>DEORD01.cs</DependentUpon>
     </Compile>
     <Compile Include="Manufacturing\Templates\MFBOM01.cs">
@@ -115,8 +115,11 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Delivery\DEORD01.resx">
+    <EmbeddedResource Include="Delivery\Templates\DEORD01.resx">
       <DependentUpon>DEORD01.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manufacturing\Templates\MFBOM01.resx">
+      <DependentUpon>MFBOM01.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Sales\Templates\SAORD01.resx">

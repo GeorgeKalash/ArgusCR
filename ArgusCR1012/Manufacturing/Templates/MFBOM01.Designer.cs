@@ -29,11 +29,32 @@ namespace ArgusCR1012.Manufacturing.Templates
         /// </summary>
         private void InitializeComponent()
         {
-            components = new System.ComponentModel.Container();
+            this.ReportHeader = new DevExpress.XtraReports.UI.ReportHeaderBand();
+            this.Detail = new DevExpress.XtraReports.UI.DetailBand();
+            ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
+            // 
+            // ReportHeader
+            // 
+            this.ReportHeader.Name = "ReportHeader";
+            // 
+            // Detail
+            // 
+            this.Detail.Name = "Detail";
+            // 
+            // MFBOM01
+            // 
+            this.Bands.AddRange(new DevExpress.XtraReports.UI.Band[] {
+            this.ReportHeader,
+            this.Detail});
+            this.Version = "20.1";
+            ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
+
         }
+
 
         #endregion
 
-
+        private DevExpress.XtraReports.UI.ReportHeaderBand ReportHeader;
+        private DevExpress.XtraReports.UI.DetailBand Detail;
     }
 }
