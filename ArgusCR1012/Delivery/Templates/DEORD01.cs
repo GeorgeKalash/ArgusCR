@@ -4,7 +4,7 @@ using System.ComponentModel;
 using System.Drawing;
 using System.Drawing.Printing;
 using DevExpress.XtraReports.UI;
-using ArgusDS.Delivery;
+using ArgusDS.Delivery.Reports;
 using ArgusDS.Sales.Reports;
 
 namespace ArgusCR1012.Delivery.Templates
@@ -21,8 +21,8 @@ namespace ArgusCR1012.Delivery.Templates
 
         protected override void OnBeforePrint(PrintEventArgs e)
         {
-            SharedClasses.JsonProtocol.GetStructure<OrderItem> webObject = deserializeGet<OrderItem>();
-            DataSource = webObject.record;
+            SharedClasses.JsonProtocol.GetStructure<ArgusDS.Delivery.Reports.OrderPrintLayout> webObject = deserializeGet<ArgusDS.Delivery.Reports.OrderPrintLayout>();
+            DataSource = webObject.record.items;
             base.OnBeforePrint(e);
         }
 
