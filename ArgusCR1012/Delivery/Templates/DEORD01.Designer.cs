@@ -124,8 +124,7 @@ namespace ArgusCR1012.Delivery.Templates
             this.xrPanel2,
             this.xrLabel8,
             this.xrLabel1});
-            this.ReportHeader.Expanded = false;
-            this.ReportHeader.HeightF = 288.2083F;
+            this.ReportHeader.HeightF = 212.1667F;
             this.ReportHeader.Name = "ReportHeader";
             // 
             // xrTable5
@@ -449,11 +448,12 @@ namespace ArgusCR1012.Delivery.Templates
             // 
             this.PageHeader.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
             this.xrTable1});
+            this.PageHeader.HeightF = 52.41668F;
             this.PageHeader.Name = "PageHeader";
             // 
             // xrTable1
             // 
-            this.xrTable1.LocationFloat = new DevExpress.Utils.PointFloat(24.00002F, 10.00001F);
+            this.xrTable1.LocationFloat = new DevExpress.Utils.PointFloat(24.00002F, 0F);
             this.xrTable1.Name = "xrTable1";
             this.xrTable1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable1.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
@@ -540,7 +540,7 @@ namespace ArgusCR1012.Delivery.Templates
             // 
             this.Detail.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
             this.xrTable3});
-            this.Detail.HeightF = 51.04167F;
+            this.Detail.HeightF = 25F;
             this.Detail.Name = "Detail";
             // 
             // xrTable3
@@ -548,7 +548,7 @@ namespace ArgusCR1012.Delivery.Templates
             this.xrTable3.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
-            this.xrTable3.LocationFloat = new DevExpress.Utils.PointFloat(24.00002F, 10.00001F);
+            this.xrTable3.LocationFloat = new DevExpress.Utils.PointFloat(24.00002F, 0F);
             this.xrTable3.Name = "xrTable3";
             this.xrTable3.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable3.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
@@ -638,7 +638,6 @@ namespace ArgusCR1012.Delivery.Templates
             this.xrLabel17,
             this.xrLabel13,
             this.xrLabel12});
-            this.ReportFooter.Expanded = false;
             this.ReportFooter.HeightF = 393.75F;
             this.ReportFooter.Name = "ReportFooter";
             this.ReportFooter.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 0, 0, 0, 100F);
