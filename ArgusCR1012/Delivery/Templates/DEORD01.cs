@@ -23,6 +23,30 @@ namespace ArgusCR1012.Delivery.Templates
         {
             SharedClasses.JsonProtocol.GetStructure<ArgusDS.Delivery.Reports.OrderPrintLayout> webObject = deserializeGet<ArgusDS.Delivery.Reports.OrderPrintLayout>();
             DataSource = webObject.record.items;
+
+            clientName_data.Text = webObject.record.shipAddress?.name;  // Customer
+            billAddressName_data.Text = webObject.record.header.clientName; // Contact Name
+            billAddressPhone_data.Text = webObject.record.shipAddress?.phone; // Contact No 
+
+            deliveryNo_data.Text = webObject.record.header.reference; // del reference
+            deliveryDate_data.Text = ((DateTime)webObject.record.header.date).ToString(sessionInfo.dateFormat); // del date
+            reference_data.Text = webObject.record.header.soRef; // SO reference
+
+
+
+
+            delLoc_data.Text = webObject.record.shipAddress.city;
+            attention_data.Text = webObject.record.shipAddress.name;
+            delPhone.Text = webObject.record.shipAddress?.phone;
+
+
+            driverName_data.Text = webObject.record.header.driverName;
+
+
+
+
+
+
             base.OnBeforePrint(e);
         }
 
