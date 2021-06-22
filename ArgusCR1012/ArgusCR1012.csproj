@@ -124,6 +124,9 @@
     <EmbeddedResource Include="Delivery\Templates\DEORD01.resx">
       <DependentUpon>DEORD01.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Manufacturing\Templates\MFASM01.resx">
+      <DependentUpon>MFASM01.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Manufacturing\Templates\MFBOM01.resx">
       <DependentUpon>MFBOM01.cs</DependentUpon>
     </EmbeddedResource>
