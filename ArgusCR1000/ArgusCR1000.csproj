@@ -110,6 +110,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Sales\SAQTN01.resx">
       <DependentUpon>SAQTN01.cs</DependentUpon>
     </EmbeddedResource>
