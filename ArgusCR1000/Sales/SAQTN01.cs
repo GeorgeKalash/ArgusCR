@@ -32,7 +32,8 @@ namespace ArgusCR1000.Sales.Templates
             date_data.Text = webObject.record.header.date.ToString("dd/MM/yy");
             description_data.Text = webObject.record.header.description;
             reference_data.Text = webObject.record.header.reference;
-            address_data.Text = webObject.record.billAddress.street1 + "\r\n" + webObject.record.billAddress.city + "\r\n" + webObject.record.billAddress.countryName;
+            if (webObject.record.billAddress != null)
+                address_data.Text = webObject.record.billAddress.street1 + "\r\n" + webObject.record.billAddress.city + "\r\n" + webObject.record.billAddress.countryName;
             base.OnBeforePrint(e);
         }
     }
