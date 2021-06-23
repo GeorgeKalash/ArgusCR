@@ -12,6 +12,8 @@ namespace ArgusCR1012.Sales.Templates
     public partial class SAIVC01 : Reports.BaseReport
     {
         int itemsCounter = 1;
+        private readonly object validity_data;
+
         public SAIVC01()
         {
             InitializeComponent();
@@ -43,9 +45,6 @@ namespace ArgusCR1012.Sales.Templates
                 deliveryDate_data.Text = ((DateTime)webObject.record.header.deliveryDate).ToString(sessionInfo.dateFormat);
 
             amountInWords_data.Text = SharedClasses.NumberToWords.multiLingualNumberInText((decimal)webObject.record.header.amount, 2, Convert.ToInt16(sessionInfo.languageId));
-
-            if (webObject.record.header.expiryDate != null)
-                validity_data.Text = string.Format("{0} days: {1}", webObject.record.header.validity, ((DateTime)webObject.record.header.expiryDate).ToString(sessionInfo.dateFormat));
 
             if (webObject.record.shipAddress != null)
             {
