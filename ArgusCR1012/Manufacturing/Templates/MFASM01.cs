@@ -57,7 +57,7 @@ namespace ArgusCR1012.Manufacturing.Templates
 
             DataSource = webObject.record.items;
 
-            dtName.Text = webObject.record.header.dtName;
+            dtName_data.Text = webObject.record.header.dtName;
             //reference_data.Text = webObject.record.header.reference;
             //date_data.Text = webObject.record.header.date.ToString(sessionInfo.dateFormat);
 

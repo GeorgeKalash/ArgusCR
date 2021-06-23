@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArgusCR1008", "ArgusCR1008\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArgusCR1012", "ArgusCR1012\ArgusCR1012.csproj", "{2BE458F6-E168-4877-82C6-1C86F4F22A2D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArgusDS", "..\ArgusDS\ArgusDS.csproj", "{8C80BB4D-7697-414C-8DE7-93EC9FF0CF2F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReportViewer", "..\..\Utilities\ReportViewer\ReportViewer.csproj", "{F56B391A-D424-4925-B347-A0CA39E21AEE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{2BE458F6-E168-4877-82C6-1C86F4F22A2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2BE458F6-E168-4877-82C6-1C86F4F22A2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2BE458F6-E168-4877-82C6-1C86F4F22A2D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C80BB4D-7697-414C-8DE7-93EC9FF0CF2F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C80BB4D-7697-414C-8DE7-93EC9FF0CF2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C80BB4D-7697-414C-8DE7-93EC9FF0CF2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C80BB4D-7697-414C-8DE7-93EC9FF0CF2F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F56B391A-D424-4925-B347-A0CA39E21AEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F56B391A-D424-4925-B347-A0CA39E21AEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F56B391A-D424-4925-B347-A0CA39E21AEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F56B391A-D424-4925-B347-A0CA39E21AEE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
