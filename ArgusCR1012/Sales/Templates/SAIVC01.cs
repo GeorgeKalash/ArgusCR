@@ -62,6 +62,10 @@ namespace ArgusCR1012.Sales.Templates
         }
         protected override void labelsText()
         {
+            invoice_lbl.Text = labelText(0);
+            customerVatNo_lbl.Text = labelText(1);
+            masagVatNo_lbl.Text = labelText(2);
+            clientName_lbl.Text = labelText(3);
         }
 
         protected override string dictionaryStore()
