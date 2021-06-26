@@ -58,31 +58,20 @@ namespace ArgusCR1012.Manufacturing.Templates
             DataSource = webObject.record.items;
 
             dtName_data.Text = webObject.record.header.dtName;
-            //reference_data.Text = webObject.record.header.reference;
-            //date_data.Text = webObject.record.header.date.ToString(sessionInfo.dateFormat);
+            reference_data.Text = webObject.record.header.reference;
+            date_data.Text = webObject.record.header.date.ToString(sessionInfo.dateFormat);
+            qty_data.Text = webObject.record.header.siteName;
 
-            //billAddressName_data.Text = webObject.record.billAddress?.name;
-            //billAddressPhone_data.Text = webObject.record.billAddress?.phone;
+           
 
-            //subtotal_data.Text = webObject.record.header.subtotal.ToString("N2");
-            //vatAmount_data.Text = webObject.record.header.vatAmount.ToString("N2");
-            //amount_data.Text = webObject.record.header.amount.ToString("N2");
+            bomName_data.Text = webObject.record.header.bomName;
+            itemName_data.Text = webObject.record.header.itemName;
+            siteName_data.Text = webObject.record.header.qty.ToString("N3");
+            rmSiteName_data.Text = webObject.record.header.rmSiteName;
+            notes_data.Text = webObject.record.header.notes;
 
-            //spName_data.Text = webObject.record.header.spName;
-            //spCellPhone_data.Text = webObject.record.header.spCellPhone;
-
-            //if (webObject.record.header.deliveryDate != null)
-            //    deliveryDate_data.Text = ((DateTime)webObject.record.header.deliveryDate).ToString(sessionInfo.dateFormat);
-
-            //amountInWords_data.Text = SharedClasses.NumberToWords.multiLingualNumberInText((decimal)webObject.record.header.amount, 2, Convert.ToInt16(sessionInfo.languageId));
-
-            //if (webObject.record.header.expiryDate != null)
-            //    validity_data.Text = string.Format("{0} days: {1}", webObject.record.header.validity, ((DateTime)webObject.record.header.expiryDate).ToString(sessionInfo.dateFormat));
-
-            //if (webObject.record.shipAddress != null)
-            //{
-            //    shipToAddress_data.Text = string.Format("{0}\\r\\n{1}\\r\\n{2}", webObject.record.shipAddress.street1, webObject.record.shipAddress.street2, webObject.record.shipAddress.city);
-            //}
+            
+            
 
             base.OnBeforePrint(e);
         }
@@ -95,6 +84,26 @@ namespace ArgusCR1012.Manufacturing.Templates
         }
         protected override void labelsText()
         {
+            assembly_lbl.Text = labelText(0);
+
+            dtName_lbl.Text = labelText(1);
+            reference_lbl.Text = labelText(2);
+            date_lbl.Text = labelText(3);
+            qty_lbl.Text = labelText(4);
+            rmCost_lbl.Text = labelText(5);
+
+            bomName_lbl.Text = labelText(6);
+            item_lbl.Text = labelText(7);
+            siteName_lbl.Text = labelText(8);
+            rmSite_lbl.Text = labelText(9);
+            notes_lbl.Text = labelText(10);
+
+            sku_lbl.Text = labelText(11);
+            itemName_lbl.Text = labelText(12);
+            rmSiteName_lbl.Text = labelText(13);
+            designQty_lbl.Text = labelText(14);
+            quantity_lbl.Text = labelText(15);
+            cost_lbl.Text = labelText(16);
         }
 
         protected override string dictionaryStore()
