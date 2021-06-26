@@ -458,6 +458,7 @@
             this.xrLabel5,
             this.xrLabel4});
             this.Detail.HeightF = 41.58331F;
+            this.Detail.KeepTogether = true;
             this.Detail.Name = "Detail";
             // 
             // xrLabel5
