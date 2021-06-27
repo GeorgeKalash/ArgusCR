@@ -35,8 +35,8 @@ namespace ArgusCR1012.Delivery.Templates
 
 
 
-            delLoc_data.Text = webObject.record.shipAddress.city;
-            attention_data.Text = webObject.record.shipAddress.name;
+            delLoc_data.Text = webObject.record.shipAddress?.city;
+            attention_data.Text = webObject.record.shipAddress?.name;
             delPhone.Text = webObject.record.shipAddress?.phone;
 
 
