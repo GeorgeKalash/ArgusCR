@@ -69,7 +69,7 @@ namespace ArgusCR1012.Sales.Templates
             this.xrTableRow8 = new DevExpress.XtraReports.UI.XRTableRow();
             this.deliveryInfo_lbl = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTableRow9 = new DevExpress.XtraReports.UI.XRTableRow();
-            this.dueDate_lbl = new DevExpress.XtraReports.UI.XRTableCell();
+            this.deliveryDate_lbl = new DevExpress.XtraReports.UI.XRTableCell();
             this.deliveryDate_data = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTableRow10 = new DevExpress.XtraReports.UI.XRTableRow();
             this.shipAddress_lbl = new DevExpress.XtraReports.UI.XRTableCell();
@@ -117,7 +117,7 @@ namespace ArgusCR1012.Sales.Templates
             this.departmentManager_lbl = new DevExpress.XtraReports.UI.XRTableCell();
             this.accountsManager_lbl = new DevExpress.XtraReports.UI.XRTableCell();
             this.costomerEnd_lbl = new DevExpress.XtraReports.UI.XRTableCell();
-            this.date_lbl = new DevExpress.XtraReports.UI.XRTableCell();
+            this.postingDate_lbl = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTableCell39 = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrLabel1 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel8 = new DevExpress.XtraReports.UI.XRLabel();
@@ -127,12 +127,12 @@ namespace ArgusCR1012.Sales.Templates
             this.xrTable3 = new DevExpress.XtraReports.UI.XRTable();
             this.xrTableRow3 = new DevExpress.XtraReports.UI.XRTableRow();
             this.spRef_lbl = new DevExpress.XtraReports.UI.XRTableCell();
-            this.xrTableCell7 = new DevExpress.XtraReports.UI.XRTableCell();
+            this.spRef_data = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTable5 = new DevExpress.XtraReports.UI.XRTable();
             this.xrTableRow15 = new DevExpress.XtraReports.UI.XRTableRow();
-            this.clientRef_lbl = new DevExpress.XtraReports.UI.XRTableCell();
+            this.reference_lbl = new DevExpress.XtraReports.UI.XRTableCell();
             this.reference_data = new DevExpress.XtraReports.UI.XRTableCell();
-            this.dateTime_lbl = new DevExpress.XtraReports.UI.XRTableCell();
+            this.date_lbl = new DevExpress.XtraReports.UI.XRTableCell();
             this.date_data = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTableRow16 = new DevExpress.XtraReports.UI.XRTableRow();
             this.spName_lbl = new DevExpress.XtraReports.UI.XRTableCell();
@@ -659,7 +659,6 @@ namespace ArgusCR1012.Sales.Templates
             this.notes_data.Multiline = true;
             this.notes_data.Name = "notes_data";
             this.notes_data.StylePriority.UseBackColor = false;
-            this.notes_data.Text = "notes_data";
             this.notes_data.Weight = 2.7635394253891068D;
             // 
             // xrTable11
@@ -701,19 +700,19 @@ namespace ArgusCR1012.Sales.Templates
             // xrTableRow9
             // 
             this.xrTableRow9.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
-            this.dueDate_lbl,
+            this.deliveryDate_lbl,
             this.deliveryDate_data});
             this.xrTableRow9.Name = "xrTableRow9";
             this.xrTableRow9.Weight = 1D;
             // 
-            // dueDate_lbl
+            // deliveryDate_lbl
             // 
-            this.dueDate_lbl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.dueDate_lbl.Multiline = true;
-            this.dueDate_lbl.Name = "dueDate_lbl";
-            this.dueDate_lbl.StylePriority.UseBackColor = false;
-            this.dueDate_lbl.Text = "Delivery Date:";
-            this.dueDate_lbl.Weight = 1.2100508732667241D;
+            this.deliveryDate_lbl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.deliveryDate_lbl.Multiline = true;
+            this.deliveryDate_lbl.Name = "deliveryDate_lbl";
+            this.deliveryDate_lbl.StylePriority.UseBackColor = false;
+            this.deliveryDate_lbl.Text = "Delivery Date:";
+            this.deliveryDate_lbl.Weight = 1.2100508732667241D;
             // 
             // deliveryDate_data
             // 
@@ -721,7 +720,7 @@ namespace ArgusCR1012.Sales.Templates
             this.deliveryDate_data.Multiline = true;
             this.deliveryDate_data.Name = "deliveryDate_data";
             this.deliveryDate_data.StylePriority.UseBackColor = false;
-            this.deliveryDate_data.Text = "dueDate_data";
+            this.deliveryDate_data.Text = "deliveryDate_data";
             this.deliveryDate_data.Weight = 2.2961990075698417D;
             // 
             // xrTableRow10
@@ -1226,7 +1225,7 @@ namespace ArgusCR1012.Sales.Templates
             this.departmentManager_lbl,
             this.accountsManager_lbl,
             this.costomerEnd_lbl,
-            this.date_lbl,
+            this.postingDate_lbl,
             this.xrTableCell39});
             this.xrTableRow25.Name = "xrTableRow25";
             this.xrTableRow25.Weight = 1D;
@@ -1291,20 +1290,20 @@ namespace ArgusCR1012.Sales.Templates
             this.costomerEnd_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopCenter;
             this.costomerEnd_lbl.Weight = 0.9204339871257009D;
             // 
-            // date_lbl
+            // postingDate_lbl
             // 
-            this.date_lbl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.date_lbl.Font = new System.Drawing.Font("Times New Roman", 9F);
-            this.date_lbl.Multiline = true;
-            this.date_lbl.Name = "date_lbl";
-            this.date_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 8, 0, 100F);
-            this.date_lbl.StylePriority.UseBackColor = false;
-            this.date_lbl.StylePriority.UseFont = false;
-            this.date_lbl.StylePriority.UsePadding = false;
-            this.date_lbl.StylePriority.UseTextAlignment = false;
-            this.date_lbl.Text = "Date:";
-            this.date_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopCenter;
-            this.date_lbl.Weight = 0.46494342269049804D;
+            this.postingDate_lbl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.postingDate_lbl.Font = new System.Drawing.Font("Times New Roman", 9F);
+            this.postingDate_lbl.Multiline = true;
+            this.postingDate_lbl.Name = "postingDate_lbl";
+            this.postingDate_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 8, 0, 100F);
+            this.postingDate_lbl.StylePriority.UseBackColor = false;
+            this.postingDate_lbl.StylePriority.UseFont = false;
+            this.postingDate_lbl.StylePriority.UsePadding = false;
+            this.postingDate_lbl.StylePriority.UseTextAlignment = false;
+            this.postingDate_lbl.Text = "Date:";
+            this.postingDate_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopCenter;
+            this.postingDate_lbl.Weight = 0.46494342269049804D;
             // 
             // xrTableCell39
             // 
@@ -1423,7 +1422,7 @@ namespace ArgusCR1012.Sales.Templates
             // 
             this.xrTableRow3.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
             this.spRef_lbl,
-            this.xrTableCell7});
+            this.spRef_data});
             this.xrTableRow3.Name = "xrTableRow3";
             this.xrTableRow3.Weight = 1D;
             // 
@@ -1442,18 +1441,18 @@ namespace ArgusCR1012.Sales.Templates
             this.spRef_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopCenter;
             this.spRef_lbl.Weight = 1.0741968383064202D;
             // 
-            // xrTableCell7
+            // spRef_data
             // 
-            this.xrTableCell7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.xrTableCell7.Multiline = true;
-            this.xrTableCell7.Name = "xrTableCell7";
-            this.xrTableCell7.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 4, 0, 100F);
-            this.xrTableCell7.StylePriority.UseBackColor = false;
-            this.xrTableCell7.StylePriority.UsePadding = false;
-            this.xrTableCell7.StylePriority.UseTextAlignment = false;
-            this.xrTableCell7.Text = "spRef_data";
-            this.xrTableCell7.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopCenter;
-            this.xrTableCell7.Weight = 0.92580316169357968D;
+            this.spRef_data.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.spRef_data.Multiline = true;
+            this.spRef_data.Name = "spRef_data";
+            this.spRef_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 4, 0, 100F);
+            this.spRef_data.StylePriority.UseBackColor = false;
+            this.spRef_data.StylePriority.UsePadding = false;
+            this.spRef_data.StylePriority.UseTextAlignment = false;
+            this.spRef_data.Text = "spRef_data";
+            this.spRef_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopCenter;
+            this.spRef_data.Weight = 0.92580316169357968D;
             // 
             // xrTable5
             // 
@@ -1475,25 +1474,25 @@ namespace ArgusCR1012.Sales.Templates
             // xrTableRow15
             // 
             this.xrTableRow15.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
-            this.clientRef_lbl,
+            this.reference_lbl,
             this.reference_data,
-            this.dateTime_lbl,
+            this.date_lbl,
             this.date_data});
             this.xrTableRow15.Name = "xrTableRow15";
             this.xrTableRow15.Weight = 1D;
             // 
-            // clientRef_lbl
+            // reference_lbl
             // 
-            this.clientRef_lbl.BackColor = System.Drawing.Color.White;
-            this.clientRef_lbl.Multiline = true;
-            this.clientRef_lbl.Name = "clientRef_lbl";
-            this.clientRef_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(15, 2, 0, 0, 100F);
-            this.clientRef_lbl.StylePriority.UseBackColor = false;
-            this.clientRef_lbl.StylePriority.UsePadding = false;
-            this.clientRef_lbl.StylePriority.UseTextAlignment = false;
-            this.clientRef_lbl.Text = "Reference No:";
-            this.clientRef_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
-            this.clientRef_lbl.Weight = 4.6387080856693252D;
+            this.reference_lbl.BackColor = System.Drawing.Color.White;
+            this.reference_lbl.Multiline = true;
+            this.reference_lbl.Name = "reference_lbl";
+            this.reference_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(15, 2, 0, 0, 100F);
+            this.reference_lbl.StylePriority.UseBackColor = false;
+            this.reference_lbl.StylePriority.UsePadding = false;
+            this.reference_lbl.StylePriority.UseTextAlignment = false;
+            this.reference_lbl.Text = "Reference No:";
+            this.reference_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            this.reference_lbl.Weight = 4.6387080856693252D;
             // 
             // reference_data
             // 
@@ -1501,17 +1500,17 @@ namespace ArgusCR1012.Sales.Templates
             this.reference_data.Multiline = true;
             this.reference_data.Name = "reference_data";
             this.reference_data.StylePriority.UseBackColor = false;
-            this.reference_data.Text = "clientRef_data";
+            this.reference_data.Text = "reference_data";
             this.reference_data.Weight = 3.7489122395643282D;
             // 
-            // dateTime_lbl
+            // date_lbl
             // 
-            this.dateTime_lbl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.dateTime_lbl.Multiline = true;
-            this.dateTime_lbl.Name = "dateTime_lbl";
-            this.dateTime_lbl.StylePriority.UseBackColor = false;
-            this.dateTime_lbl.Text = "Date:";
-            this.dateTime_lbl.Weight = 1.96286097149192D;
+            this.date_lbl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.date_lbl.Multiline = true;
+            this.date_lbl.Name = "date_lbl";
+            this.date_lbl.StylePriority.UseBackColor = false;
+            this.date_lbl.Text = "Date:";
+            this.date_lbl.Weight = 1.96286097149192D;
             // 
             // date_data
             // 
@@ -1873,9 +1872,9 @@ namespace ArgusCR1012.Sales.Templates
         private DevExpress.XtraReports.UI.XRTableCell billAddressPhone_data;
         private DevExpress.XtraReports.UI.XRTable xrTable5;
         private DevExpress.XtraReports.UI.XRTableRow xrTableRow15;
-        private DevExpress.XtraReports.UI.XRTableCell clientRef_lbl;
+        private DevExpress.XtraReports.UI.XRTableCell reference_lbl;
         private DevExpress.XtraReports.UI.XRTableCell reference_data;
-        private DevExpress.XtraReports.UI.XRTableCell dateTime_lbl;
+        private DevExpress.XtraReports.UI.XRTableCell date_lbl;
         private DevExpress.XtraReports.UI.XRTableCell date_data;
         private DevExpress.XtraReports.UI.XRTableRow xrTableRow16;
         private DevExpress.XtraReports.UI.XRTableCell spName_lbl;
@@ -1887,7 +1886,7 @@ namespace ArgusCR1012.Sales.Templates
         private DevExpress.XtraReports.UI.XRTable xrTable3;
         private DevExpress.XtraReports.UI.XRTableRow xrTableRow3;
         private DevExpress.XtraReports.UI.XRTableCell spRef_lbl;
-        private DevExpress.XtraReports.UI.XRTableCell xrTableCell7;
+        private DevExpress.XtraReports.UI.XRTableCell spRef_data;
         private DevExpress.XtraReports.UI.XRTable xrTable6;
         private DevExpress.XtraReports.UI.XRTableRow xrTableRow4;
         private DevExpress.XtraReports.UI.XRTableCell lineNo_lbl;
@@ -1923,7 +1922,7 @@ namespace ArgusCR1012.Sales.Templates
         private DevExpress.XtraReports.UI.XRTableRow xrTableRow8;
         private DevExpress.XtraReports.UI.XRTableCell deliveryInfo_lbl;
         private DevExpress.XtraReports.UI.XRTableRow xrTableRow9;
-        private DevExpress.XtraReports.UI.XRTableCell dueDate_lbl;
+        private DevExpress.XtraReports.UI.XRTableCell deliveryDate_lbl;
         private DevExpress.XtraReports.UI.XRTableCell deliveryDate_data;
         private DevExpress.XtraReports.UI.XRTableRow xrTableRow10;
         private DevExpress.XtraReports.UI.XRTableCell shipAddress_lbl;
@@ -1954,7 +1953,7 @@ namespace ArgusCR1012.Sales.Templates
         private DevExpress.XtraReports.UI.XRTableCell departmentManager_lbl;
         private DevExpress.XtraReports.UI.XRTableCell accountsManager_lbl;
         private DevExpress.XtraReports.UI.XRTableCell costomerEnd_lbl;
-        private DevExpress.XtraReports.UI.XRTableCell date_lbl;
+        private DevExpress.XtraReports.UI.XRTableCell postingDate_lbl;
         private DevExpress.XtraReports.UI.XRTable xrTable14;
         private DevExpress.XtraReports.UI.XRTableRow xrTableRow27;
         private DevExpress.XtraReports.UI.XRTableCell preparedBy_lbl;
