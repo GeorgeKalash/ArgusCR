@@ -32,24 +32,14 @@ namespace ArgusCR1012.Delivery.Templates
             deliveryDate_data.Text = ((DateTime)webObject.record.header.date).ToString(sessionInfo.dateFormat); // del date
             reference_data.Text = webObject.record.header.soRef; // SO reference
 
-
-
-
             delLoc_data.Text = webObject.record.shipAddress?.city;
             attention_data.Text = webObject.record.shipAddress?.name;
             delPhone.Text = webObject.record.shipAddress?.phone;
 
-
             driverName_data.Text = webObject.record.header.driverName;
-
-
-
-
-
 
             base.OnBeforePrint(e);
         }
-
 
         protected override void OnDataSourceRowChanged(DataSourceRowEventArgs e)
         {
