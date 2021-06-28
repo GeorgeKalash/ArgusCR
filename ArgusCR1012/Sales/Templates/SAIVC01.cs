@@ -29,22 +29,23 @@ namespace ArgusCR1012.Sales.Templates
             DataSource = webObject.record.items;
 
             clientName_data.Text = webObject.record.header.clientName;
-            reference_data.Text = webObject.record.header.reference;
-            date_data.Text = webObject.record.header.date.ToString(sessionInfo.dateFormat);
-
             billAddressName_data.Text = webObject.record.billAddress?.name;
             billAddressPhone_data.Text = webObject.record.billAddress?.phone;
 
-            subtotal_data.Text = webObject.record.header.subtotal.ToString("N2");
-            vatAmount_data.Text = webObject.record.header.vatAmount.ToString("N2");
-       
+            spRef_data.Text = webObject.record.header.spRef;
+            reference_data.Text = webObject.record.header.reference;
+            date_data.Text = webObject.record.header.date.ToString(sessionInfo.dateFormat);
             spName_data.Text = webObject.record.header.spName;
             spCellPhone_data.Text = webObject.record.header.spCellPhone;
 
+            subtotal_data.Text = webObject.record.header.subtotal.ToString("N2");
+            vatAmount_data.Text = webObject.record.header.vatAmount.ToString("N2");
+            amountInWords_data.Text = SharedClasses.NumberToWords.multiLingualNumberInText((decimal)webObject.record.header.amount, 2, Convert.ToInt16(sessionInfo.languageId));
+            amount_data.Text = webObject.record.header.amount.ToString("N2");
+
+
             if (webObject.record.header.deliveryDate != null)
                 deliveryDate_data.Text = ((DateTime)webObject.record.header.deliveryDate).ToString(sessionInfo.dateFormat);
-
-            amountInWords_data.Text = SharedClasses.NumberToWords.multiLingualNumberInText((decimal)webObject.record.header.amount, 2, Convert.ToInt16(sessionInfo.languageId));
 
             if (webObject.record.shipAddress != null)
             {
@@ -70,8 +71,8 @@ namespace ArgusCR1012.Sales.Templates
             billAddressName_lbl.Text = labelText(5);
             billAddressPhone_lbl.Text = labelText(6);
             spRef_lbl.Text = labelText(7);
-            clientRef_lbl.Text = labelText(8);
-            dateTime_lbl.Text = labelText(9);
+            reference_lbl.Text = labelText(8);
+            date_lbl.Text = labelText(9);
             spName_lbl.Text = labelText(10);
             spCellPhone_lbl.Text = labelText(11);
             lineNo_lbl.Text = labelText(12);
@@ -85,7 +86,7 @@ namespace ArgusCR1012.Sales.Templates
             currencyName_lbl.Text = labelText(20);
             amount_lbl.Text = labelText(21);
             deliveryInfo_lbl.Text = labelText(22);
-            dueDate_lbl.Text = labelText(23);
+            deliveryDate_lbl.Text = labelText(23);
             shipAddress_lbl.Text = labelText(24);
             shippingMode_lbl.Text = labelText(25);
             paymentTerms_lbl.Text = labelText(26);
@@ -105,7 +106,7 @@ namespace ArgusCR1012.Sales.Templates
             departmentManager_lbl.Text = labelText(40);
             accountsManager_lbl.Text = labelText(41);
             costomerEnd_lbl.Text = labelText(42);
-            date_lbl.Text = labelText(43);
+            postingDate_lbl.Text = labelText(43);
             distribution_lbl.Text = labelText(44);
         }
 
