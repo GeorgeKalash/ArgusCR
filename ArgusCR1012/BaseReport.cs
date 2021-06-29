@@ -30,6 +30,14 @@ namespace Reports
 
         protected virtual string dictionaryStore() { return null; }
 
+
+        protected virtual string reportName() { return null; }
+
+        protected string reportSignature()
+        {
+            return "[" + reportName() + "]" + " " + sessionInfo.userName + " " + DateTime.Now.ToString();
+        }
+
         protected virtual void labelsText() { }
 
         protected virtual void initSubReports()

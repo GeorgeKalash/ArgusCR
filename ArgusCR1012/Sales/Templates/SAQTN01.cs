@@ -61,11 +61,44 @@ namespace ArgusCR1012.Sales.Templates
         }
         protected override void labelsText()
         {
+            qt_lbl.Text = labelText(0);
+            customer_lbl.Text = labelText(1);
+            contactName_lbl.Text = labelText(2);
+            contactNo_lbl.Text = labelText(3);
+            ref_lbl.Text = labelText(4);
+            refNo_lbl.Text = labelText(5);
+            date_lbl.Text = labelText(6);
+            salesP_lbl.Text = labelText(7);
+            contactNo2_lbl.Text = labelText(8);
+            itemNo_lbl.Text = labelText(9);
+            pcNo_lbl.Text = labelText(10);
+            dpd_lbl.Text = labelText(11);
+            //qty_lbl.Text = labelText(12);
+            //up_lbl.Text = labelText(13);
+            //totalAm_lbl.Text = labelText(14);
+            totalAmInWords_lbl.Text = labelText(15);
+
+            subtotal_lbl.Text = labelText(16);
+            vat_lbl.Text = labelText(17);
+            totalSR_lbl.Text = labelText(18);
+            SDI_lbl.Text = labelText(19);
+            dd_lbl.Text = labelText(20);
+            dTo_lbl.Text = labelText(21);
+            shippingMode_lbl.Text = labelText(22);
+            paymentTerms_lbl.Text = labelText(23);
+            validity_lbl.Text = labelText(24);
+            remarks_lbl.Text = labelText(25);
+            customerAcc_lbl.Text = labelText(26);
+            authSig_lbl.Text = labelText(27);
+            dateSeal_lbl.Text = labelText(28);
+            prepBy_lbl.Text = labelText(29);
+            appBy_lbl.Text = labelText(30);
+            recBy_lbl.Text = labelText(31);
         }
 
         protected override string dictionaryStore()
         {
-            return "Custom\\R1012\\SA101";
+            return "Custom\\R1012\\SA102";
         }
         private void ReportFooter_BeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e)
         {

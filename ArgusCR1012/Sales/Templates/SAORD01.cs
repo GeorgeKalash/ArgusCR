@@ -27,10 +27,10 @@ namespace ArgusCR1012.Sales.Templates
 
             clientName_data.Text = webObject.record.header.clientName;
             reference_data.Text = webObject.record.header.reference;
-            //date_data.Text = webObject.record.header.date.ToString(sessionInfo.dateFormat);
+            date_data.Text = webObject.record.header.date.ToString(sessionInfo.dateFormat);
 
-            billAddressName_data.Text = webObject.record.billAddress?.name;
-            billAddressPhone_data.Text = webObject.record.billAddress?.phone;
+            contactName_data.Text = webObject.record.billAddress?.name;
+            contactNo_data.Text = webObject.record.billAddress?.phone;
 
             //subtotal_data.Text = webObject.record.header.subtotal.ToString("N2");
             //vatAmount_data.Text = webObject.record.header.vatAmount.ToString("N2");
@@ -63,9 +63,35 @@ namespace ArgusCR1012.Sales.Templates
             base.OnDataSourceRowChanged(e);
         }
 
+        protected override void labelsText()
+        {
+            sku_lbl.Text = labelText(0);
+            description_lbl.Text = labelText(1);
+            qty_lbl.Text = labelText(2);
+            remarks_lbl.Text = labelText(3);
+            lineNo_lbl.Text = labelText(4);
+
+            cDetail_lbl.Text = labelText(5);
+            customer_lbl.Text = labelText(6);
+            contactName_lbl.Text = labelText(7);
+            contactNo_lbl.Text = labelText(8);
+            contactNo2_lbl.Text = labelText(8);
+            date_lbl.Text = labelText(9);
+            date2_lbl.Text = labelText(9);
+            date3_lbl.Text = labelText(9);
+            
+
+            reference_lbl.Text = labelText(10);
+            spName_lbl.Text = labelText(11);
+            prep_lbl.Text = labelText(12);
+            sig_lbl.Text = labelText(13);
+            sig2_lbl.Text = labelText(13);
+            rec_lbl.Text = labelText(14);
+        }
+
         protected override string dictionaryStore()
         {
-            return "Custom\\R1012\\SA102";
+            return "Custom\\R1012\\SA101";
         }
     }
 }
