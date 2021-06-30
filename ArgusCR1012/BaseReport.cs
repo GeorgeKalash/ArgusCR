@@ -152,7 +152,7 @@ namespace Reports
             if (status.statusId < 0)
             {
                 SharedClasses.JsonProtocol.ErrorStructure errorObj = JsonConvert.DeserializeObject<SharedClasses.JsonProtocol.ErrorStructure>(jsonData);
-                throw new Exception(errorObj.statusId.ToString() + ": " + errorObj.error);
+                throw new Exception("API Error: "+errorObj.statusId.ToString() + ": " + errorObj.error);
             }
             try
             {

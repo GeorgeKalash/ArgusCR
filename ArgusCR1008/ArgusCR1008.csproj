@@ -99,6 +99,10 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <EmbeddedResource Include="BaseReport.resx">
+      <DependentUpon>BaseReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Sales\Templates\SATRX01.resx">
       <DependentUpon>SATRX01.cs</DependentUpon>
     </EmbeddedResource>

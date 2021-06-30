@@ -458,6 +458,7 @@
             this.xrLabel5,
             this.xrLabel4});
             this.Detail.HeightF = 41.58331F;
+            this.Detail.KeepTogether = true;
             this.Detail.Name = "Detail";
             // 
             // xrLabel5
@@ -475,7 +476,7 @@
             this.xrLabel5.StylePriority.UseFont = false;
             this.xrLabel5.StylePriority.UseTextAlignment = false;
             this.xrLabel5.Text = "xrLabel5";
-            this.xrLabel5.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
+            this.xrLabel5.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             this.xrLabel5.TextFormatString = "{0:n0}";
             // 
             // xrLabel4
