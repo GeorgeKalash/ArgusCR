@@ -12,7 +12,6 @@ namespace ArgusCR1012.Sales.Templates
     public partial class SAIVC01 : Reports.BaseReport
     {
         int itemsCounter = 1;
-        //private readonly object validity_data;
 
         public SAIVC01()
         {
@@ -21,7 +20,6 @@ namespace ArgusCR1012.Sales.Templates
 
         protected override void OnBeforePrint(PrintEventArgs e)
         {
-
             SharedClasses.JsonProtocol.GetStructure<QuotationPrintLayout> webObject = deserializeGet<QuotationPrintLayout>();
 
             //if (webObject)

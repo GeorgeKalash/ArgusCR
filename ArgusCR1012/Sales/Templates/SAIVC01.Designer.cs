@@ -1518,7 +1518,7 @@ namespace ArgusCR1012.Sales.Templates
             this.date_data.Multiline = true;
             this.date_data.Name = "date_data";
             this.date_data.StylePriority.UseBackColor = false;
-            this.date_data.Text = "dateTime_data";
+            this.date_data.Text = "date_data";
             this.date_data.Weight = 3.1616202745069488D;
             // 
             // xrTableRow16
