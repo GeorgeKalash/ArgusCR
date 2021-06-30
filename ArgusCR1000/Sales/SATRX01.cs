@@ -9,6 +9,14 @@ namespace ArgusCR1000.Sales.Templates
         {
             InitializeComponent();            
         }
+        protected override void OnBeforePrint(PrintEventArgs e)
+        {
+            DataSource = CreateDataSourceFromText();
+            base.OnBeforePrint(e);
+        }
 
+        private void Detail_BeforePrint(object sender, PrintEventArgs e)
+        {
+        }
     }
 }

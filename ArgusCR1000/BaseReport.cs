@@ -3,11 +3,14 @@ using System.Collections.Generic;
 using System.Configuration;
 using System.Drawing.Printing;
 using Newtonsoft.Json;
+using DevExpress.DataAccess.Json;
+
 
 namespace Reports
 {
     public class BaseReport : DevExpress.XtraReports.UI.XtraReport
     {
+        const string dictionaryPath = "custom\\R1000\\";
         public struct ReportHeaders
         {
             public string accountId, userName, languageId, dateFormat;
@@ -29,8 +32,8 @@ namespace Reports
         }
 
         protected virtual string dictionaryStore() 
-        { 
-            return "custom\\R1000\\"; 
+        {
+            return null;
         }
 
         protected virtual void labelsText() { }
@@ -81,12 +84,22 @@ namespace Reports
             loadLablesDict();
             base.OnBeforePrint(e);
         }
-
+        protected JsonDataSource CreateDataSourceFromText()
+        {
+            JsonDataSource jsonDataSource = new JsonDataSource();
+            jsonDataSource.JsonSource = new CustomJsonSource(jsonData);
+            jsonDataSource.Fill();
+            return jsonDataSource;
+        }
         private void loadLablesDict()
         {
-            string path = ConfigurationManager.AppSettings["reports-labels-folder"] + dictionaryStore() + ".xml";
-            labels = SharedClasses.XMLTools.loadDict(path, "L" + sessionInfo.languageId);
-            labelsText();
+            string ds = dictionaryStore();
+            if (ds != null)
+            {
+                string path = ConfigurationManager.AppSettings["reports-labels-folder"] + dictionaryPath + ds + ".xml";
+                labels = SharedClasses.XMLTools.loadDict(path, "L" + sessionInfo.languageId);
+                labelsText();
+            }
         }
 
         protected string labelText(int idx)
