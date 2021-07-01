@@ -66,32 +66,32 @@ namespace ArgusCR1012.Sales.Templates
 
         protected override void labelsText()
         {
-            salesOrder_lbl.Text = labelText(1);
-            customerDetail_lbl.Text = labelText(2);
-            clientName_lbl.Text = labelText(3);
-            billAddressName_lbl.Text = labelText(4);
-            billAddressPhone_lbl.Text = labelText(5);
-            date_lbl.Text = labelText(6);
-            reference_lbl.Text = labelText(7);
-            spName_lbl.Text = labelText(8);
-            spCellPhone_lbl.Text = labelText(9);
-            lineNo_lbl.Text = labelText(10);
-            sku_lbl.Text = labelText(11);
-            itemName_lbl.Text = labelText(12);
-            qty_lbl.Text = labelText(13);
-            notes_lbl.Text = labelText(14);
-            anyNote_lbl.Text = labelText(15);
-            preparedBy_lbl.Text = labelText(16);
-            preparedSig_lbl.Text = labelText(17);
-            preparedDate_lbl.Text = labelText(18);
-            receivedBy_lbl.Text = labelText(19);
-            receivedSig_lbl.Text = labelText(20);
-            receivedDate_lbl.Text = labelText(21);
-            filledBy_lbl.Text = labelText(22);
-            pJobOrder_lbl.Text = labelText(23);
-            deliveryNoteNo_lbl.Text = labelText(24);
-            distribution_lbl.Text = labelText(25);
-            or_lbl.Text = labelText(26);
+            salesOrder_lbl.Text = labelText(0);
+            customerDetail_lbl.Text = labelText(1);
+            clientName_lbl.Text = labelText(2);
+            billAddressName_lbl.Text = labelText(3);
+            billAddressPhone_lbl.Text = labelText(4);
+            date_lbl.Text = labelText(5);
+            reference_lbl.Text = labelText(6);
+            spName_lbl.Text = labelText(7);
+            spCellPhone_lbl.Text = labelText(8);
+            lineNo_lbl.Text = labelText(9);
+            sku_lbl.Text = labelText(10);
+            itemName_lbl.Text = labelText(11);
+            qty_lbl.Text = labelText(12);
+            notes_lbl.Text = labelText(13);
+            anyNote_lbl.Text = labelText(14);
+            preparedBy_lbl.Text = labelText(15);
+            preparedSig_lbl.Text = labelText(16);
+            preparedDate_lbl.Text = labelText(17);
+            receivedBy_lbl.Text = labelText(18);
+            receivedSig_lbl.Text = labelText(19);
+            receivedDate_lbl.Text = labelText(20);
+            filledBy_lbl.Text = labelText(21);
+            pJobOrder_lbl.Text = labelText(22);
+            deliveryNoteNo_lbl.Text = labelText(23);
+            distribution_lbl.Text = labelText(24);
+            or_lbl.Text = labelText(25);
 
         }
 
