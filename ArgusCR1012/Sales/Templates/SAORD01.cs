@@ -89,10 +89,9 @@ namespace ArgusCR1012.Sales.Templates
             receivedDate_lbl.Text = labelText(20);
             filledBy_lbl.Text = labelText(21);
             pJobOrder_lbl.Text = labelText(22);
-            deliveryNoteNo_lbl.Text = labelText(23);
-            distribution_lbl.Text = labelText(24);
-            or_lbl.Text = labelText(25);
-
+            or_lbl.Text = labelText(23);
+            deliveryNoteNo_lbl.Text = labelText(24);
+            distribution_lbl.Text = labelText(25);
         }
 
         protected override string dictionaryStore()

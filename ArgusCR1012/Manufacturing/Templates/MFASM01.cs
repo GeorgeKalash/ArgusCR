@@ -86,6 +86,7 @@ namespace ArgusCR1012.Manufacturing.Templates
             date_lbl.Text = labelText(3);
             qty_lbl.Text = labelText(4);
             rmCost_lbl.Text = labelText(5);
+
             bomName_lbl.Text = labelText(6);
             item_lbl.Text = labelText(7);
             siteName_lbl.Text = labelText(8);

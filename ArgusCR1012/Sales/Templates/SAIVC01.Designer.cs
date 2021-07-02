@@ -79,7 +79,7 @@ namespace ArgusCR1012.Sales.Templates
             this.xrTableCell32 = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTable10 = new DevExpress.XtraReports.UI.XRTable();
             this.xrTableRow7 = new DevExpress.XtraReports.UI.XRTableRow();
-            this.currencyName_lbl = new DevExpress.XtraReports.UI.XRTableCell();
+            this.amountInWords_lbl = new DevExpress.XtraReports.UI.XRTableCell();
             this.amountInWords_data = new DevExpress.XtraReports.UI.XRTableCell();
             this.amount_lbl = new DevExpress.XtraReports.UI.XRTableCell();
             this.amount_data = new DevExpress.XtraReports.UI.XRTableCell();
@@ -790,25 +790,25 @@ namespace ArgusCR1012.Sales.Templates
             // xrTableRow7
             // 
             this.xrTableRow7.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
-            this.currencyName_lbl,
+            this.amountInWords_lbl,
             this.amountInWords_data,
             this.amount_lbl,
             this.amount_data});
             this.xrTableRow7.Name = "xrTableRow7";
             this.xrTableRow7.Weight = 1D;
             // 
-            // currencyName_lbl
+            // amountInWords_lbl
             // 
-            this.currencyName_lbl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.currencyName_lbl.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold);
-            this.currencyName_lbl.Multiline = true;
-            this.currencyName_lbl.Name = "currencyName_lbl";
-            this.currencyName_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(6, 2, 10, 0, 100F);
-            this.currencyName_lbl.StylePriority.UseBackColor = false;
-            this.currencyName_lbl.StylePriority.UseFont = false;
-            this.currencyName_lbl.StylePriority.UsePadding = false;
-            this.currencyName_lbl.Text = "NET AMOUNT IN WORDS";
-            this.currencyName_lbl.Weight = 1.7399426903485991D;
+            this.amountInWords_lbl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.amountInWords_lbl.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold);
+            this.amountInWords_lbl.Multiline = true;
+            this.amountInWords_lbl.Name = "amountInWords_lbl";
+            this.amountInWords_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(6, 2, 10, 0, 100F);
+            this.amountInWords_lbl.StylePriority.UseBackColor = false;
+            this.amountInWords_lbl.StylePriority.UseFont = false;
+            this.amountInWords_lbl.StylePriority.UsePadding = false;
+            this.amountInWords_lbl.Text = "NET AMOUNT IN WORDS";
+            this.amountInWords_lbl.Weight = 1.7399426903485991D;
             // 
             // amountInWords_data
             // 
@@ -1909,7 +1909,7 @@ namespace ArgusCR1012.Sales.Templates
         private DevExpress.XtraReports.UI.XRTableCell subtotal_data;
         private DevExpress.XtraReports.UI.XRTable xrTable10;
         private DevExpress.XtraReports.UI.XRTableRow xrTableRow7;
-        private DevExpress.XtraReports.UI.XRTableCell currencyName_lbl;
+        private DevExpress.XtraReports.UI.XRTableCell amountInWords_lbl;
         private DevExpress.XtraReports.UI.XRTableCell amountInWords_data;
         private DevExpress.XtraReports.UI.XRTableCell amount_lbl;
         private DevExpress.XtraReports.UI.XRTable xrTable9;

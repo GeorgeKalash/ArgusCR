@@ -81,7 +81,7 @@ namespace ArgusCR1012.Sales.Templates
             extendedPrice_lbl.Text = labelText(17);
             subtotal_lbl.Text = labelText(18);
             vatAmount_lbl.Text = labelText(19);
-            currencyName_lbl.Text = labelText(20);
+            amountInWords_lbl.Text = labelText(20);
             amount_lbl.Text = labelText(21);
             deliveryInfo_lbl.Text = labelText(22);
             deliveryDate_lbl.Text = labelText(23);
