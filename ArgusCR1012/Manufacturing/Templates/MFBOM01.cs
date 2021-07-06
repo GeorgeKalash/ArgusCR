@@ -28,61 +28,58 @@ namespace ArgusCR1012.Manufacturing.Templates
 
             //if (webObject)
             DataSource = webObject.record.items;
+
             reference_data.Text = webObject.record.header.reference;
             name_data.Text = webObject.record.header.name;
+            type_data.Text = webObject.record.header.type.ToString();
+            description_data.Text = webObject.record.header.description;
+
             status_data.Text = webObject.record.header.activeStatus.ToString();
             version_data.Text = webObject.record.header.version;
             date_data.Text = ((DateTime)webObject.record.header.date).ToString(sessionInfo.dateFormat);
-            description_data.Text = webObject.record.header.description;
-            qty_data.Text = webObject.record.header.qty.ToString();
-            type_data.Text = webObject.record.header.type.ToString();
-            printSignature.Text = reportSignature();
-
-
-
+            bomQty_data.Text = webObject.record.header.qty.ToString();
+            
+            printSignature_lbl.Text = reportSignature();
             base.OnBeforePrint(e);
         }
 
 
         protected override void OnDataSourceRowChanged(DataSourceRowEventArgs e)
         {
-            xrTableCell23.Text = itemsCounter.ToString();
+            lineNo_data.Text = itemsCounter.ToString();
             ++itemsCounter;
             base.OnDataSourceRowChanged(e);
         }
 
         protected override void labelsText()
         {
-            sku_lbl.Text = labelText(0);
-            name_lbl.Text = labelText(1);
-            qty_lbl.Text = labelText(2);
-            lineNo_lbl.Text = labelText(3);
+            masagTitle_lbl.Text = labelText(0);
+            tamdeedTitle_lbl.Text = labelText(1);
+            bomTitle_lbl.Text = labelText(2);
 
-            
-            bomReference_lbl.Text = labelText(4);
-            bomName_lbl.Text = labelText(5);
-            bomType_lbl.Text = labelText(6);
-            bomDesc_lbl.Text = labelText(7);
+            billOfMaterial_lbl.Text = labelText(3);
+            reference_lbl.Text = labelText(4);
+            name_lbl.Text = labelText(5);
+            type_lbl.Text = labelText(6);
+            description_lbl.Text = labelText(7);
 
-            bomStatus_lbl.Text = labelText(8);
-            bomVersion_lbl.Text = labelText(9);
-            bomDate_lbl.Text = labelText(10);
+            status_lbl.Text = labelText(8);
+            version_lbl.Text = labelText(9);
+            date_lbl.Text = labelText(10);
             bomQty_lbl.Text = labelText(11);
 
+            lineNo_lbl.Text = labelText(12);
+            sku_lbl.Text = labelText(13);
+            itemName_lbl.Text = labelText(14);
+            qty_lbl.Text = labelText(15);
 
-            bomTitle_lbl.Text = labelText(12);
-            bomTitle2_lbl.Text = labelText(12);
-            mTitle_lbl.Text = labelText(13);
-            tamdeedTitle_lbl.Text = labelText(14);
-
-
+            printSignature_lbl.Text = labelText(16);
+            pageNumber_lbl.Text = labelText(17);
         }
 
         protected override string dictionaryStore()
         {
             return "Custom\\R1012\\MF101";
         }
-
-
     }
 }
