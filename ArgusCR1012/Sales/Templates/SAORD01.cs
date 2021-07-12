@@ -66,32 +66,43 @@ namespace ArgusCR1012.Sales.Templates
 
         protected override void labelsText()
         {
-            salesOrder_lbl.Text = labelText(0);
-            customerDetail_lbl.Text = labelText(1);
-            clientName_lbl.Text = labelText(2);
-            billAddressName_lbl.Text = labelText(3);
-            billAddressPhone_lbl.Text = labelText(4);
-            date_lbl.Text = labelText(5);
-            reference_lbl.Text = labelText(6);
-            spName_lbl.Text = labelText(7);
-            spCellPhone_lbl.Text = labelText(8);
-            lineNo_lbl.Text = labelText(9);
-            sku_lbl.Text = labelText(10);
-            itemName_lbl.Text = labelText(11);
-            qty_lbl.Text = labelText(12);
-            notes_lbl.Text = labelText(13);
-            anyNote_lbl.Text = labelText(14);
-            preparedBy_lbl.Text = labelText(15);
-            preparedSig_lbl.Text = labelText(16);
-            preparedDate_lbl.Text = labelText(17);
-            receivedBy_lbl.Text = labelText(18);
-            receivedSig_lbl.Text = labelText(19);
-            receivedDate_lbl.Text = labelText(20);
-            filledBy_lbl.Text = labelText(21);
-            pJobOrder_lbl.Text = labelText(22);
-            or_lbl.Text = labelText(23);
-            deliveryNoteNo_lbl.Text = labelText(24);
-            distribution_lbl.Text = labelText(25);
+            title_lbl.Text = labelText(0);
+            tamdeed_lbl.Text = labelText(1);
+            salesOrder_lbl.Text = labelText(2);
+            doc_lbl.Text = labelText(3);
+
+            customerDetail_lbl.Text = labelText(4);
+            clientName_lbl.Text = labelText(5);
+            billAddressName_lbl.Text = labelText(6);
+            billAddressPhone_lbl.Text = labelText(7);
+
+            date_lbl.Text = labelText(8);
+            reference_lbl.Text = labelText(9);
+            spName_lbl.Text = labelText(10);
+            spCellPhone_lbl.Text = labelText(11);
+
+            lineNo_lbl.Text = labelText(12);
+            sku_lbl.Text = labelText(13);
+            itemName_lbl.Text = labelText(14);
+            qty_lbl.Text = labelText(15);
+            notes_lbl.Text = labelText(16);
+
+            anyNote_lbl.Text = labelText(17);
+
+            preparedBy_lbl.Text = labelText(18);
+            preparedSig_lbl.Text = labelText(19);
+            preparedDate_lbl.Text = labelText(20);
+
+            receivedBy_lbl.Text = labelText(21);
+            receivedSig_lbl.Text = labelText(22);
+            receivedDate_lbl.Text = labelText(23);
+
+            filledBy_lbl.Text = labelText(24);
+            pJobOrder_lbl.Text = labelText(25);
+            or_lbl.Text = labelText(26);
+            deliveryNoteNo_lbl.Text = labelText(27);
+
+            distribution_lbl.Text = labelText(28);
         }
 
         protected override string dictionaryStore()

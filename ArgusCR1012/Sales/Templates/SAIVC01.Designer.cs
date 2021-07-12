@@ -119,8 +119,8 @@ namespace ArgusCR1012.Sales.Templates
             this.costomerEnd_lbl = new DevExpress.XtraReports.UI.XRTableCell();
             this.postingDate_lbl = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTableCell39 = new DevExpress.XtraReports.UI.XRTableCell();
-            this.xrLabel1 = new DevExpress.XtraReports.UI.XRLabel();
-            this.xrLabel8 = new DevExpress.XtraReports.UI.XRLabel();
+            this.title_lbl = new DevExpress.XtraReports.UI.XRLabel();
+            this.tamdeed_lbl = new DevExpress.XtraReports.UI.XRLabel();
             this.xrPanel1 = new DevExpress.XtraReports.UI.XRPanel();
             this.ReportHeader = new DevExpress.XtraReports.UI.ReportHeaderBand();
             this.accountNo_lbl = new DevExpress.XtraReports.UI.XRLabel();
@@ -342,13 +342,11 @@ namespace ArgusCR1012.Sales.Templates
             // lineNo_data
             // 
             this.lineNo_data.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.lineNo_data.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[lineNo]")});
             this.lineNo_data.Multiline = true;
             this.lineNo_data.Name = "lineNo_data";
             this.lineNo_data.StylePriority.UseBackColor = false;
             this.lineNo_data.StylePriority.UseTextAlignment = false;
-            this.lineNo_data.Text = "lineNo_data";
+            this.lineNo_data.Text = "lineNo";
             this.lineNo_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             this.lineNo_data.Weight = 0.45765093809190704D;
             // 
@@ -1313,46 +1311,46 @@ namespace ArgusCR1012.Sales.Templates
             this.xrTableCell39.StylePriority.UseBackColor = false;
             this.xrTableCell39.Weight = 0.93783925604290719D;
             // 
-            // xrLabel1
+            // title_lbl
             // 
-            this.xrLabel1.BackColor = System.Drawing.Color.White;
-            this.xrLabel1.BorderColor = System.Drawing.Color.Transparent;
-            this.xrLabel1.Borders = DevExpress.XtraPrinting.BorderSide.None;
-            this.xrLabel1.Font = new System.Drawing.Font("Arial", 16F, System.Drawing.FontStyle.Bold);
-            this.xrLabel1.ForeColor = System.Drawing.Color.SlateBlue;
-            this.xrLabel1.LocationFloat = new DevExpress.Utils.PointFloat(2.70829F, 9.666681F);
-            this.xrLabel1.Multiline = true;
-            this.xrLabel1.Name = "xrLabel1";
-            this.xrLabel1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel1.SizeF = new System.Drawing.SizeF(462.2918F, 27.49999F);
-            this.xrLabel1.StylePriority.UseBackColor = false;
-            this.xrLabel1.StylePriority.UseBorderColor = false;
-            this.xrLabel1.StylePriority.UseBorders = false;
-            this.xrLabel1.StylePriority.UseFont = false;
-            this.xrLabel1.StylePriority.UseForeColor = false;
-            this.xrLabel1.StylePriority.UseTextAlignment = false;
-            this.xrLabel1.Text = "Masag Factory For Plastic Industries";
-            this.xrLabel1.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopCenter;
+            this.title_lbl.BackColor = System.Drawing.Color.White;
+            this.title_lbl.BorderColor = System.Drawing.Color.Transparent;
+            this.title_lbl.Borders = DevExpress.XtraPrinting.BorderSide.None;
+            this.title_lbl.Font = new System.Drawing.Font("Arial", 16F, System.Drawing.FontStyle.Bold);
+            this.title_lbl.ForeColor = System.Drawing.Color.SlateBlue;
+            this.title_lbl.LocationFloat = new DevExpress.Utils.PointFloat(2.70829F, 9.666681F);
+            this.title_lbl.Multiline = true;
+            this.title_lbl.Name = "title_lbl";
+            this.title_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.title_lbl.SizeF = new System.Drawing.SizeF(462.2918F, 27.49999F);
+            this.title_lbl.StylePriority.UseBackColor = false;
+            this.title_lbl.StylePriority.UseBorderColor = false;
+            this.title_lbl.StylePriority.UseBorders = false;
+            this.title_lbl.StylePriority.UseFont = false;
+            this.title_lbl.StylePriority.UseForeColor = false;
+            this.title_lbl.StylePriority.UseTextAlignment = false;
+            this.title_lbl.Text = "Masag Factory For Plastic Industries";
+            this.title_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopCenter;
             // 
-            // xrLabel8
+            // tamdeed_lbl
             // 
-            this.xrLabel8.BackColor = System.Drawing.Color.SlateBlue;
-            this.xrLabel8.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+            this.tamdeed_lbl.BackColor = System.Drawing.Color.SlateBlue;
+            this.tamdeed_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
-            this.xrLabel8.Font = new System.Drawing.Font("Arial", 15.38F, System.Drawing.FontStyle.Bold);
-            this.xrLabel8.ForeColor = System.Drawing.Color.White;
-            this.xrLabel8.LocationFloat = new DevExpress.Utils.PointFloat(2.708309F, 37.16668F);
-            this.xrLabel8.Multiline = true;
-            this.xrLabel8.Name = "xrLabel8";
-            this.xrLabel8.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel8.SizeF = new System.Drawing.SizeF(462.2917F, 27.83333F);
-            this.xrLabel8.StylePriority.UseBackColor = false;
-            this.xrLabel8.StylePriority.UseBorders = false;
-            this.xrLabel8.StylePriority.UseFont = false;
-            this.xrLabel8.StylePriority.UseForeColor = false;
-            this.xrLabel8.StylePriority.UseTextAlignment = false;
-            this.xrLabel8.Text = "(Tamdeed)";
-            this.xrLabel8.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            this.tamdeed_lbl.Font = new System.Drawing.Font("Arial", 15.38F, System.Drawing.FontStyle.Bold);
+            this.tamdeed_lbl.ForeColor = System.Drawing.Color.White;
+            this.tamdeed_lbl.LocationFloat = new DevExpress.Utils.PointFloat(2.708309F, 37.16668F);
+            this.tamdeed_lbl.Multiline = true;
+            this.tamdeed_lbl.Name = "tamdeed_lbl";
+            this.tamdeed_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.tamdeed_lbl.SizeF = new System.Drawing.SizeF(462.2917F, 27.83333F);
+            this.tamdeed_lbl.StylePriority.UseBackColor = false;
+            this.tamdeed_lbl.StylePriority.UseBorders = false;
+            this.tamdeed_lbl.StylePriority.UseFont = false;
+            this.tamdeed_lbl.StylePriority.UseForeColor = false;
+            this.tamdeed_lbl.StylePriority.UseTextAlignment = false;
+            this.tamdeed_lbl.Text = "(Tamdeed)";
+            this.tamdeed_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             // 
             // xrPanel1
             // 
@@ -1360,9 +1358,9 @@ namespace ArgusCR1012.Sales.Templates
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrPanel1.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
-            this.xrLabel8,
-            this.xrLabel1});
-            this.xrPanel1.LocationFloat = new DevExpress.Utils.PointFloat(37.49999F, 12.5F);
+            this.tamdeed_lbl,
+            this.title_lbl});
+            this.xrPanel1.LocationFloat = new DevExpress.Utils.PointFloat(37.5F, 12.5F);
             this.xrPanel1.Name = "xrPanel1";
             this.xrPanel1.SizeF = new System.Drawing.SizeF(466.6667F, 75F);
             this.xrPanel1.StylePriority.UseBorders = false;
@@ -1846,8 +1844,8 @@ namespace ArgusCR1012.Sales.Templates
         private DevExpress.XtraReports.UI.DetailBand Detail;
         private DevExpress.XtraReports.UI.ReportFooterBand ReportFooter;
         private DevExpress.XtraReports.UI.PageFooterBand PageFooter;
-        private DevExpress.XtraReports.UI.XRLabel xrLabel1;
-        private DevExpress.XtraReports.UI.XRLabel xrLabel8;
+        private DevExpress.XtraReports.UI.XRLabel title_lbl;
+        private DevExpress.XtraReports.UI.XRLabel tamdeed_lbl;
         private DevExpress.XtraReports.UI.XRPanel xrPanel1;
         private DevExpress.XtraReports.UI.ReportHeaderBand ReportHeader;
         private DevExpress.XtraReports.UI.XRPanel xrPanel2;

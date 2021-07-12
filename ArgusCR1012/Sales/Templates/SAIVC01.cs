@@ -106,6 +106,12 @@ namespace ArgusCR1012.Sales.Templates
             costomerEnd_lbl.Text = labelText(42);
             postingDate_lbl.Text = labelText(43);
             distribution_lbl.Text = labelText(44);
+
+
+            title_lbl.Text = labelText(45);
+            tamdeed_lbl.Text = labelText(46);
+
+
         }
 
         protected override string dictionaryStore()
