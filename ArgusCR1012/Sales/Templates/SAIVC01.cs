@@ -61,57 +61,67 @@ namespace ArgusCR1012.Sales.Templates
         }
         protected override void labelsText()
         {
-            invoice_lbl.Text = labelText(0);
-            customerVatNo_lbl.Text = labelText(1);
-            masagVatNo_lbl.Text = labelText(2);
-            accountNo_lbl.Text = labelText(3);
-            clientName_lbl.Text = labelText(4);
-            billAddressName_lbl.Text = labelText(5);
-            billAddressPhone_lbl.Text = labelText(6);
-            spRef_lbl.Text = labelText(7);
-            reference_lbl.Text = labelText(8);
-            date_lbl.Text = labelText(9);
-            spName_lbl.Text = labelText(10);
-            spCellPhone_lbl.Text = labelText(11);
-            lineNo_lbl.Text = labelText(12);
-            sku_lbl.Text = labelText(13);
-            itemName_lbl.Text = labelText(14);
-            qty_lbl.Text = labelText(15);
-            unitPrice_lbl.Text = labelText(16);
-            extendedPrice_lbl.Text = labelText(17);
-            subtotal_lbl.Text = labelText(18);
-            vatAmount_lbl.Text = labelText(19);
-            amountInWords_lbl.Text = labelText(20);
-            amount_lbl.Text = labelText(21);
-            deliveryInfo_lbl.Text = labelText(22);
-            deliveryDate_lbl.Text = labelText(23);
-            shipAddress_lbl.Text = labelText(24);
-            shippingMode_lbl.Text = labelText(25);
-            paymentTerms_lbl.Text = labelText(26);
-            cash_lbl.Text = labelText(27);
-            notes_lbl.Text = labelText(28);
-            thanksMessage_lbl.Text = labelText(29);
-            callTel_lbl.Text = labelText(30);
-            customerAcceptance_lbl.Text = labelText(31);
-            authorizedSign_lbl.Text = labelText(32);
-            dateSeal_lbl.Text = labelText(33);
-            preparedBy_lbl.Text = labelText(34);
-            approvedBy_lbl.Text = labelText(35);
-            confirmedBy_lbl.Text = labelText(36);
-            receivedBy_lbl.Text = labelText(37);
-            postedBy_lbl.Text = labelText(38);
-            saleManager_lbl.Text = labelText(39);
-            departmentManager_lbl.Text = labelText(40);
-            accountsManager_lbl.Text = labelText(41);
-            costomerEnd_lbl.Text = labelText(42);
-            postingDate_lbl.Text = labelText(43);
-            distribution_lbl.Text = labelText(44);
+            title_lbl.Text = labelText(0);
+            tamdeed_lbl.Text = labelText(1);
+            invoice_lbl.Text = labelText(2);
 
+            customerVatNo_lbl.Text = labelText(3);
 
-            title_lbl.Text = labelText(45);
-            tamdeed_lbl.Text = labelText(46);
+            masagVatNo_lbl.Text = labelText(4);
 
+            accountNo_lbl.Text = labelText(5);
+            clientName_lbl.Text = labelText(6);
+            billAddressName_lbl.Text = labelText(7);
+            billAddressPhone_lbl.Text = labelText(8);
 
+            spRef_lbl.Text = labelText(9);
+            reference_lbl.Text = labelText(10);
+            date_lbl.Text = labelText(11);
+            spName_lbl.Text = labelText(12);
+            spCellPhone_lbl.Text = labelText(13);
+
+            lineNo_lbl.Text = labelText(14);
+            sku_lbl.Text = labelText(15);
+            itemName_lbl.Text = labelText(16);
+            qty_lbl.Text = labelText(17);
+            unitPrice_lbl.Text = labelText(18);
+            extendedPrice_lbl.Text = labelText(19);
+
+            subtotal_lbl.Text = labelText(20);
+            vatAmount_lbl.Text = labelText(21);
+            amountInWords_lbl.Text = labelText(22);
+            amount_lbl.Text = labelText(23);
+
+            deliveryInfo_lbl.Text = labelText(24);
+            deliveryDate_lbl.Text = labelText(25);
+            shipAddress_lbl.Text = labelText(26);
+            shippingMode_lbl.Text = labelText(27);
+
+            paymentTerms_lbl.Text = labelText(28);
+            cash_lbl.Text = labelText(29);
+            notes_lbl.Text = labelText(30);
+
+            thanksMessage_lbl.Text = labelText(31);
+            callTel_lbl.Text = labelText(32);
+
+            customerAcceptance_lbl.Text = labelText(33);
+            authorizedSign_lbl.Text = labelText(34);
+            dateSeal_lbl.Text = labelText(35);
+
+            preparedBy_lbl.Text = labelText(36);
+            approvedBy_lbl.Text = labelText(37);
+            confirmedBy_lbl.Text = labelText(38);
+            receivedBy_lbl.Text = labelText(39);
+            postedBy_lbl.Text = labelText(40);
+
+            saleManager_lbl.Text = labelText(41);
+            departmentManager_lbl.Text = labelText(42);
+            accountsManager_lbl.Text = labelText(43);
+            costomerEnd_lbl.Text = labelText(44);
+            postingDate_lbl.Text = labelText(45);
+
+            distribution_lbl.Text = labelText(46);
+            info_lbl.Text = labelText(47);
         }
 
         protected override string dictionaryStore()
