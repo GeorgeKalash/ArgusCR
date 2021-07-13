@@ -34,11 +34,11 @@ namespace ArgusCR1012.Delivery.Templates
             deliveryNo_data.Text = webObject.record.header.reference; 
             deliveryDate_data.Text = ((DateTime)webObject.record.header.date).ToString(sessionInfo.dateFormat);
             soRef_data.Text = webObject.record.header.soRef;
-            spName_data.Text = webObject.record.header.spName;
-            spCellPhone_data.Text = webObject.record.header.spCellPhone;
+            //spName_data.Text = webObject.record.header.spName;
+            //spCellPhone_data.Text = webObject.record.header.spCellPhone;
             deliveryLocation_data.Text = string.Format("{0}, {1}", webObject.record.shipAddress?.city,webObject.record.shipAddress?.countryName);
-            attention_data.Text = webObject.record.header.attention;
-            deliveryCellPhone_data.Text = webObject.record.header.deliveryCellPhone;
+            //attention_data.Text = webObject.record.header.attention;
+            //deliveryCellPhone_data.Text = webObject.record.header.deliveryCellPhone;
             driverName_data.Text = webObject.record.header.driverName;
             printSignature_lbl.Text = reportSignature();
 
