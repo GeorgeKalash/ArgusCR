@@ -61,18 +61,14 @@ namespace ArgusCR1012.Manufacturing.Templates
             reference_data.Text = webObject.record.header.reference;
             date_data.Text = webObject.record.header.date.ToString(sessionInfo.dateFormat);
             qty_data.Text = webObject.record.header.siteName;
-
-           
+            rmCost_data.Text = webObject.record.header.rmCost.ToString("N2");
 
             bomName_data.Text = webObject.record.header.bomName;
             itemName_data.Text = webObject.record.header.itemName;
             siteName_data.Text = webObject.record.header.qty.ToString("N3");
             rmSiteName_data.Text = webObject.record.header.rmSiteName;
             notes_data.Text = webObject.record.header.notes;
-
-            
-            
-
+        
             base.OnBeforePrint(e);
         }
 
@@ -85,7 +81,6 @@ namespace ArgusCR1012.Manufacturing.Templates
         protected override void labelsText()
         {
             assembly_lbl.Text = labelText(0);
-
             dtName_lbl.Text = labelText(1);
             reference_lbl.Text = labelText(2);
             date_lbl.Text = labelText(3);
@@ -97,7 +92,6 @@ namespace ArgusCR1012.Manufacturing.Templates
             siteName_lbl.Text = labelText(8);
             rmSite_lbl.Text = labelText(9);
             notes_lbl.Text = labelText(10);
-
             sku_lbl.Text = labelText(11);
             itemName_lbl.Text = labelText(12);
             rmSiteName_lbl.Text = labelText(13);
@@ -110,6 +104,5 @@ namespace ArgusCR1012.Manufacturing.Templates
         {
             return "Custom\\R1012\\MF102";
         }
-
     }
 }
