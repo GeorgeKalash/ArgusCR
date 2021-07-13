@@ -100,18 +100,6 @@
     <Compile Include="Sales\SATRX01.Designer.cs">
       <DependentUpon>SATRX01.cs</DependentUpon>
     </Compile>
-    <Compile Include="Sales\SATRX02.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Sales\SATRX02.Designer.cs">
-      <DependentUpon>SATRX02.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Sales\SATRX03.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Sales\SATRX03.Designer.cs">
-      <DependentUpon>SATRX03.cs</DependentUpon>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Properties\licenses.licx" />
@@ -123,12 +111,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Sales\SATRX01.resx">
       <DependentUpon>SATRX01.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Sales\SATRX02.resx">
-      <DependentUpon>SATRX02.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Sales\SATRX03.resx">
-      <DependentUpon>SATRX03.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

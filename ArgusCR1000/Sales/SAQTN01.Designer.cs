@@ -596,7 +596,7 @@
             this.xrLabel10.StylePriority.UseTextAlignment = false;
             this.xrLabel10.Text = "xrLabel10";
             this.xrLabel10.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
-            this.xrLabel10.TextFormatString = "{0:n0}";
+            this.xrLabel10.TextFormatString = "{0:n2}";
             // 
             // xrLabel5
             // 

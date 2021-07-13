@@ -29,6 +29,7 @@ namespace ArgusCR1012.Sales.Templates
         /// </summary>
         private void InitializeComponent()
         {
+            DevExpress.XtraPrinting.BarCode.QRCodeGenerator qrCodeGenerator1 = new DevExpress.XtraPrinting.BarCode.QRCodeGenerator();
             this.PageHeader = new DevExpress.XtraReports.UI.PageHeaderBand();
             this.xrTable6 = new DevExpress.XtraReports.UI.XRTable();
             this.xrTableRow4 = new DevExpress.XtraReports.UI.XRTableRow();
@@ -160,6 +161,7 @@ namespace ArgusCR1012.Sales.Templates
             this.xrTableCell2 = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrPanel2 = new DevExpress.XtraReports.UI.XRPanel();
             this.invoice_lbl = new DevExpress.XtraReports.UI.XRLabel();
+            this.QRCode = new DevExpress.XtraReports.UI.XRBarCode();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable12)).BeginInit();
@@ -1782,9 +1784,10 @@ namespace ArgusCR1012.Sales.Templates
             // 
             // xrPanel2
             // 
-            this.xrPanel2.BackColor = System.Drawing.Color.DarkSlateBlue;
+            this.xrPanel2.BackColor = System.Drawing.Color.Transparent;
             this.xrPanel2.BorderColor = System.Drawing.Color.Black;
             this.xrPanel2.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+            this.QRCode,
             this.invoice_lbl});
             this.xrPanel2.LocationFloat = new DevExpress.Utils.PointFloat(504.1667F, 12.5F);
             this.xrPanel2.Name = "xrPanel2";
@@ -1797,19 +1800,27 @@ namespace ArgusCR1012.Sales.Templates
             this.invoice_lbl.BorderColor = System.Drawing.Color.Transparent;
             this.invoice_lbl.BorderWidth = 0F;
             this.invoice_lbl.Font = new System.Drawing.Font("Arial", 14F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
-            this.invoice_lbl.ForeColor = System.Drawing.Color.White;
-            this.invoice_lbl.LocationFloat = new DevExpress.Utils.PointFloat(84.04675F, 24.54165F);
+            this.invoice_lbl.ForeColor = System.Drawing.Color.Black;
+            this.invoice_lbl.LocationFloat = new DevExpress.Utils.PointFloat(4.390015F, 25.58331F);
             this.invoice_lbl.Multiline = true;
             this.invoice_lbl.Name = "invoice_lbl";
             this.invoice_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.invoice_lbl.SizeF = new System.Drawing.SizeF(100F, 23F);
+            this.invoice_lbl.SizeF = new System.Drawing.SizeF(82.29156F, 23F);
             this.invoice_lbl.StylePriority.UseBorderColor = false;
             this.invoice_lbl.StylePriority.UseBorderWidth = false;
             this.invoice_lbl.StylePriority.UseFont = false;
             this.invoice_lbl.StylePriority.UseForeColor = false;
             this.invoice_lbl.StylePriority.UseTextAlignment = false;
             this.invoice_lbl.Text = "Invoice";
-            this.invoice_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopCenter;
+            this.invoice_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            // 
+            // QRCode
+            // 
+            this.QRCode.LocationFloat = new DevExpress.Utils.PointFloat(120F, 5F);
+            this.QRCode.Name = "QRCode";
+            this.QRCode.Padding = new DevExpress.XtraPrinting.PaddingInfo(10, 10, 0, 0, 96F);
+            this.QRCode.SizeF = new System.Drawing.SizeF(64F, 64F);
+            this.QRCode.Symbology = qrCodeGenerator1;
             // 
             // SAIVC01
             // 
@@ -1973,5 +1984,6 @@ namespace ArgusCR1012.Sales.Templates
         private DevExpress.XtraReports.UI.XRLabel xrLabel13;
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell39;
         private DevExpress.XtraReports.UI.XRLabel xrLabel12;
+        private DevExpress.XtraReports.UI.XRBarCode QRCode;
     }
 }
