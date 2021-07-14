@@ -30,9 +30,9 @@ namespace ArgusCR1012.Manufacturing.Templates
         private void InitializeComponent()
         {
             this.ReportHeader = new DevExpress.XtraReports.UI.ReportHeaderBand();
-            this.siteRef_data = new DevExpress.XtraReports.UI.XRLabel();
+            this.rmSiteName_data = new DevExpress.XtraReports.UI.XRLabel();
             this.siteRef_lbl = new DevExpress.XtraReports.UI.XRLabel();
-            this.site_data = new DevExpress.XtraReports.UI.XRLabel();
+            this.siteName_data = new DevExpress.XtraReports.UI.XRLabel();
             this.site_lbl = new DevExpress.XtraReports.UI.XRLabel();
             this.rmCost_data = new DevExpress.XtraReports.UI.XRLabel();
             this.rmCost_lbl = new DevExpress.XtraReports.UI.XRLabel();
@@ -84,9 +84,9 @@ namespace ArgusCR1012.Manufacturing.Templates
             // ReportHeader
             // 
             this.ReportHeader.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
-            this.siteRef_data,
+            this.rmSiteName_data,
             this.siteRef_lbl,
-            this.site_data,
+            this.siteName_data,
             this.site_lbl,
             this.rmCost_data,
             this.rmCost_lbl,
@@ -98,17 +98,17 @@ namespace ArgusCR1012.Manufacturing.Templates
             this.ReportHeader.HeightF = 296.875F;
             this.ReportHeader.Name = "ReportHeader";
             // 
-            // siteRef_data
+            // rmSiteName_data
             // 
-            this.siteRef_data.Borders = ((DevExpress.XtraPrinting.BorderSide)((DevExpress.XtraPrinting.BorderSide.Right | DevExpress.XtraPrinting.BorderSide.Bottom)));
-            this.siteRef_data.LocationFloat = new DevExpress.Utils.PointFloat(140.2052F, 237.2917F);
-            this.siteRef_data.Multiline = true;
-            this.siteRef_data.Name = "siteRef_data";
-            this.siteRef_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(8, 2, 10, 0, 100F);
-            this.siteRef_data.SizeF = new System.Drawing.SizeF(230.467F, 37.5F);
-            this.siteRef_data.StylePriority.UseBorders = false;
-            this.siteRef_data.StylePriority.UsePadding = false;
-            this.siteRef_data.Text = "siteRef_data";
+            this.rmSiteName_data.Borders = ((DevExpress.XtraPrinting.BorderSide)((DevExpress.XtraPrinting.BorderSide.Right | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.rmSiteName_data.LocationFloat = new DevExpress.Utils.PointFloat(140.2052F, 237.2917F);
+            this.rmSiteName_data.Multiline = true;
+            this.rmSiteName_data.Name = "rmSiteName_data";
+            this.rmSiteName_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(8, 2, 10, 0, 100F);
+            this.rmSiteName_data.SizeF = new System.Drawing.SizeF(230.467F, 37.5F);
+            this.rmSiteName_data.StylePriority.UseBorders = false;
+            this.rmSiteName_data.StylePriority.UsePadding = false;
+            this.rmSiteName_data.Text = "rmSiteName_data";
             // 
             // siteRef_lbl
             // 
@@ -127,17 +127,17 @@ namespace ArgusCR1012.Manufacturing.Templates
             this.siteRef_lbl.StylePriority.UsePadding = false;
             this.siteRef_lbl.Text = "Component Site:";
             // 
-            // site_data
+            // siteName_data
             // 
-            this.site_data.Borders = ((DevExpress.XtraPrinting.BorderSide)((DevExpress.XtraPrinting.BorderSide.Right | DevExpress.XtraPrinting.BorderSide.Bottom)));
-            this.site_data.LocationFloat = new DevExpress.Utils.PointFloat(524.8159F, 237.2917F);
-            this.site_data.Multiline = true;
-            this.site_data.Name = "site_data";
-            this.site_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(8, 2, 10, 0, 100F);
-            this.site_data.SizeF = new System.Drawing.SizeF(262.1841F, 37.5F);
-            this.site_data.StylePriority.UseBorders = false;
-            this.site_data.StylePriority.UsePadding = false;
-            this.site_data.Text = "site_data";
+            this.siteName_data.Borders = ((DevExpress.XtraPrinting.BorderSide)((DevExpress.XtraPrinting.BorderSide.Right | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.siteName_data.LocationFloat = new DevExpress.Utils.PointFloat(524.8159F, 237.2917F);
+            this.siteName_data.Multiline = true;
+            this.siteName_data.Name = "siteName_data";
+            this.siteName_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(8, 2, 10, 0, 100F);
+            this.siteName_data.SizeF = new System.Drawing.SizeF(262.1841F, 37.5F);
+            this.siteName_data.StylePriority.UseBorders = false;
+            this.siteName_data.StylePriority.UsePadding = false;
+            this.siteName_data.Text = "siteName_data";
             // 
             // site_lbl
             // 
@@ -852,9 +852,9 @@ namespace ArgusCR1012.Manufacturing.Templates
         private DevExpress.XtraReports.UI.XRTableCell date_data;
         private DevExpress.XtraReports.UI.XRTableCell itemName_lbl;
         private DevExpress.XtraReports.UI.XRTableCell itemName_data;
-        private DevExpress.XtraReports.UI.XRLabel siteRef_data;
+        private DevExpress.XtraReports.UI.XRLabel rmSiteName_data;
         private DevExpress.XtraReports.UI.XRLabel siteRef_lbl;
-        private DevExpress.XtraReports.UI.XRLabel site_data;
+        private DevExpress.XtraReports.UI.XRLabel siteName_data;
         private DevExpress.XtraReports.UI.XRLabel site_lbl;
         private DevExpress.XtraReports.UI.XRLabel rmCost_data;
         private DevExpress.XtraReports.UI.XRLabel rmCost_lbl;

@@ -60,14 +60,14 @@ namespace ArgusCR1012.Manufacturing.Templates
             reference_data.Text = webObject.record.header.reference;
             date_data.Text = webObject.record.header.date.ToString(sessionInfo.dateFormat);
             notes_data.Text = webObject.record.header.notes;
-            siteRef_data.Text = webObject.record.header.siteRef.ToString();
+            siteName_data.Text = webObject.record.header.siteName;
 
             bomName_data.Text = webObject.record.header.bomName;
             bomRef_data.Text = webObject.record.header.bomRef;
             itemName_data.Text = webObject.record.header.itemName;
             qty_data.Text = webObject.record.header.qty.ToString();
             rmCost_data.Text = webObject.record.header.rmCost.ToString("N2");
-            site_data.Text = webObject.record.header.site.ToString();
+            rmSiteName_data.Text = webObject.record.header.rmSiteName;
 
             base.OnBeforePrint(e);
         }
