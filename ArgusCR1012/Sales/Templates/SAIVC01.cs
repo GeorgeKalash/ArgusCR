@@ -20,37 +20,30 @@ namespace ArgusCR1012.Sales.Templates
 
         protected override void OnBeforePrint(PrintEventArgs e)
         {
-            SharedClasses.JsonProtocol.GetStructure<QuotationPrintLayout> webObject = deserializeGet<QuotationPrintLayout>();
+            SharedClasses.JsonProtocol.GetStructure<TrxPrintView> webObject = deserializeGet<TrxPrintView>();
 
             DataSource = webObject.record.items;
 
-            clientName_data.Text = webObject.record.header.clientName;
+            clientName_data.Text = webObject.record.trxHeader.clientName;
             billAddressName_data.Text = webObject.record.billAddress?.name;
             billAddressPhone_data.Text = webObject.record.billAddress?.phone;
 
-            spRef_data.Text = webObject.record.header.spRef;
-            reference_data.Text = webObject.record.header.reference;
-            date_data.Text = webObject.record.header.date.ToString(sessionInfo.dateFormat);
-            spName_data.Text = webObject.record.header.spName;
-            spCellPhone_data.Text = webObject.record.header.spCellPhone;
+            spRef_data.Text = webObject.record.trxHeader.spRef;
+            reference_data.Text = webObject.record.trxHeader.reference;
+            date_data.Text = webObject.record.trxHeader.date.ToString(sessionInfo.dateFormat);
+            spName_data.Text = webObject.record.trxHeader.spName;
+            //spCellPhone_data.Text = webObject.record.trxHeader.spCellPhone;
 
-            subtotal_data.Text = webObject.record.header.subtotal.ToString("N2");
-            vatAmount_data.Text = webObject.record.header.vatAmount.ToString("N2");
-            amountInWords_data.Text = SharedClasses.NumberToWords.multiLingualNumberInText((decimal)webObject.record.header.amount, 2, Convert.ToInt16(sessionInfo.languageId));
-            amount_data.Text = webObject.record.header.amount.ToString("N2");
+            subtotal_data.Text = webObject.record.trxHeader.subtotal.ToString("N2");
+            vatAmount_data.Text = webObject.record.trxHeader.vatAmount.ToString("N2");
+            amountInWords_data.Text = SharedClasses.NumberToWords.multiLingualNumberInText((decimal)webObject.record.trxHeader.amount, 2, Convert.ToInt16(sessionInfo.languageId));
+            amount_data.Text = webObject.record.trxHeader.amount.ToString("N2");
 
-            if (webObject.record.header.deliveryDate != null)
-                deliveryDate_data.Text = ((DateTime)webObject.record.header.deliveryDate).ToString(sessionInfo.dateFormat);
-
-            if (webObject.record.shipAddress != null)
-            {
-                shipToAddress_data.Text = string.Format("{0}\\r\\n{1}\\r\\n{2}", webObject.record.shipAddress.street1, webObject.record.shipAddress.street2, webObject.record.shipAddress.city);
-            }
-
-            QRCode.Text = "Invoice Ref: " + webObject.record.header.reference;
+            QRCode.Text = "Invoice Ref: " + webObject.record.trxHeader.reference;
             QRCode.Text += string.Format("\nVAT No: {0}", "123456");
-            QRCode.Text += string.Format("\nClient Name: {0}", webObject.record.header.clientName);
-            QRCode.Text += string.Format("\nInvoice Amount: {0}", webObject.record.header.amount);
+            QRCode.Text += string.Format("\nClient Name: {0}", webObject.record.trxHeader.clientName);
+            QRCode.Text += string.Format("\nVAT No: {0}", webObject.record.trxHeader.clientVATNo);
+            QRCode.Text += string.Format("\nInvoice Amount: {0}", webObject.record.trxHeader.amount);
 
             base.OnBeforePrint(e);
         }
