@@ -31,15 +31,18 @@ namespace ArgusCR1012.Delivery.Templates
             clientName_data.Text = webObject.record.header.clientName;
             contactName_data.Text = webObject.record.shipAddress?.name;  
             clientCellPhone_data.Text = webObject.record.shipAddress?.phone; 
+
             deliveryNo_data.Text = webObject.record.header.reference; 
             deliveryDate_data.Text = ((DateTime)webObject.record.header.date).ToString(sessionInfo.dateFormat);
             soRef_data.Text = webObject.record.header.soRef;
-            //spName_data.Text = webObject.record.header.spName;
-            //spCellPhone_data.Text = webObject.record.header.spCellPhone;
+            spName_data.Text = webObject.record.header.spName;
+            spCellPhone_data.Text = webObject.record.header.spCellPhone;
+
             deliveryLocation_data.Text = string.Format("{0}, {1}", webObject.record.shipAddress?.city,webObject.record.shipAddress?.countryName);
-            //attention_data.Text = webObject.record.header.attention;
-            //deliveryCellPhone_data.Text = webObject.record.header.deliveryCellPhone;
+           
             driverName_data.Text = webObject.record.header.driverName;
+            driverCellPhone_data.Text = webObject.record.header.driverCellPhone;
+
             printSignature_lbl.Text = reportSignature();
 
             base.OnBeforePrint(e);
@@ -96,8 +99,6 @@ namespace ArgusCR1012.Delivery.Templates
             bussinessInfo_lbl.Text = labelText(38);
             printSignature_lbl.Text = labelText(39);
             numberpage_lbl.Text = labelText(40);
-
-      
         }
 
         protected override void OnDataSourceRowChanged(DataSourceRowEventArgs e)
