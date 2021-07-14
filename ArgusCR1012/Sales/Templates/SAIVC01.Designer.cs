@@ -1020,8 +1020,6 @@ namespace ArgusCR1012.Sales.Templates
             this.xrPanel3.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
-            this.xrPanel3.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
-            this.QRCode});
             this.xrPanel3.LocationFloat = new DevExpress.Utils.PointFloat(649.375F, 0F);
             this.xrPanel3.Name = "xrPanel3";
             this.xrPanel3.SizeF = new System.Drawing.SizeF(126.8747F, 125.1041F);
@@ -1030,10 +1028,10 @@ namespace ArgusCR1012.Sales.Templates
             // 
             // QRCode
             // 
-            this.QRCode.LocationFloat = new DevExpress.Utils.PointFloat(6F, 6F);
+            this.QRCode.LocationFloat = new DevExpress.Utils.PointFloat(125.9209F, 0F);
             this.QRCode.Name = "QRCode";
             this.QRCode.Padding = new DevExpress.XtraPrinting.PaddingInfo(10, 10, 0, 0, 100F);
-            this.QRCode.SizeF = new System.Drawing.SizeF(102F, 102F);
+            this.QRCode.SizeF = new System.Drawing.SizeF(100F, 100F);
             this.QRCode.Symbology = qrCodeGenerator1;
             // 
             // xrTable15
@@ -1356,9 +1354,9 @@ namespace ArgusCR1012.Sales.Templates
             this.xrPanel1.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
             this.tamdeed_lbl,
             this.title_lbl});
-            this.xrPanel1.LocationFloat = new DevExpress.Utils.PointFloat(12.50005F, 12.5F);
+            this.xrPanel1.LocationFloat = new DevExpress.Utils.PointFloat(12.5F, 12.5F);
             this.xrPanel1.Name = "xrPanel1";
-            this.xrPanel1.SizeF = new System.Drawing.SizeF(490F, 75F);
+            this.xrPanel1.SizeF = new System.Drawing.SizeF(490F, 77.70834F);
             this.xrPanel1.StylePriority.UseBorders = false;
             // 
             // ReportHeader
@@ -1372,7 +1370,7 @@ namespace ArgusCR1012.Sales.Templates
             this.xrTable1,
             this.xrPanel2,
             this.xrPanel1});
-            this.ReportHeader.HeightF = 293.75F;
+            this.ReportHeader.HeightF = 328.125F;
             this.ReportHeader.Name = "ReportHeader";
             // 
             // accountNo_lbl
@@ -1384,11 +1382,11 @@ namespace ArgusCR1012.Sales.Templates
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.accountNo_lbl.BorderWidth = 1F;
             this.accountNo_lbl.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold);
-            this.accountNo_lbl.LocationFloat = new DevExpress.Utils.PointFloat(12.50005F, 150F);
+            this.accountNo_lbl.LocationFloat = new DevExpress.Utils.PointFloat(12.5F, 187.5F);
             this.accountNo_lbl.Multiline = true;
             this.accountNo_lbl.Name = "accountNo_lbl";
             this.accountNo_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 4, 0, 100F);
-            this.accountNo_lbl.SizeF = new System.Drawing.SizeF(323.9583F, 25.36462F);
+            this.accountNo_lbl.SizeF = new System.Drawing.SizeF(323.9583F, 25F);
             this.accountNo_lbl.StylePriority.UseBackColor = false;
             this.accountNo_lbl.StylePriority.UseBorderDashStyle = false;
             this.accountNo_lbl.StylePriority.UseBorders = false;
@@ -1404,12 +1402,12 @@ namespace ArgusCR1012.Sales.Templates
             this.xrTable3.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
-            this.xrTable3.LocationFloat = new DevExpress.Utils.PointFloat(386.4583F, 150F);
+            this.xrTable3.LocationFloat = new DevExpress.Utils.PointFloat(387.5F, 187.5F);
             this.xrTable3.Name = "xrTable3";
             this.xrTable3.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable3.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow3});
-            this.xrTable3.SizeF = new System.Drawing.SizeF(389.7915F, 25.36462F);
+            this.xrTable3.SizeF = new System.Drawing.SizeF(389.7915F, 25F);
             this.xrTable3.StylePriority.UseBorders = false;
             // 
             // xrTableRow3
@@ -1453,7 +1451,7 @@ namespace ArgusCR1012.Sales.Templates
             this.xrTable5.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
-            this.xrTable5.LocationFloat = new DevExpress.Utils.PointFloat(386.4583F, 175.3646F);
+            this.xrTable5.LocationFloat = new DevExpress.Utils.PointFloat(387.5F, 212.5F);
             this.xrTable5.Name = "xrTable5";
             this.xrTable5.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable5.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
@@ -1580,7 +1578,7 @@ namespace ArgusCR1012.Sales.Templates
             this.xrTable4.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
-            this.xrTable4.LocationFloat = new DevExpress.Utils.PointFloat(12.50005F, 175.3646F);
+            this.xrTable4.LocationFloat = new DevExpress.Utils.PointFloat(12.5F, 212.5F);
             this.xrTable4.Name = "xrTable4";
             this.xrTable4.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable4.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
@@ -1687,7 +1685,7 @@ namespace ArgusCR1012.Sales.Templates
             this.xrTable2.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
-            this.xrTable2.LocationFloat = new DevExpress.Utils.PointFloat(386.4583F, 100F);
+            this.xrTable2.LocationFloat = new DevExpress.Utils.PointFloat(387.5F, 125F);
             this.xrTable2.Name = "xrTable2";
             this.xrTable2.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable2.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
@@ -1733,7 +1731,7 @@ namespace ArgusCR1012.Sales.Templates
             this.xrTable1.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
-            this.xrTable1.LocationFloat = new DevExpress.Utils.PointFloat(12.5F, 99.99997F);
+            this.xrTable1.LocationFloat = new DevExpress.Utils.PointFloat(12.5F, 125F);
             this.xrTable1.Name = "xrTable1";
             this.xrTable1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable1.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
@@ -1779,10 +1777,11 @@ namespace ArgusCR1012.Sales.Templates
             this.xrPanel2.BackColor = System.Drawing.Color.Transparent;
             this.xrPanel2.BorderColor = System.Drawing.Color.Black;
             this.xrPanel2.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+            this.QRCode,
             this.invoice_lbl});
-            this.xrPanel2.LocationFloat = new DevExpress.Utils.PointFloat(502.5001F, 12.5F);
+            this.xrPanel2.LocationFloat = new DevExpress.Utils.PointFloat(502.4999F, 12.5F);
             this.xrPanel2.Name = "xrPanel2";
-            this.xrPanel2.SizeF = new System.Drawing.SizeF(273.7499F, 75F);
+            this.xrPanel2.SizeF = new System.Drawing.SizeF(271.25F, 100F);
             this.xrPanel2.StylePriority.UseBackColor = false;
             this.xrPanel2.StylePriority.UseBorderColor = false;
             // 
