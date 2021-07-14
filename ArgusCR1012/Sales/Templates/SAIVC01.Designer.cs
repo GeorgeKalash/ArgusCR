@@ -97,7 +97,6 @@ namespace ArgusCR1012.Sales.Templates
             this.info_lbl = new DevExpress.XtraReports.UI.XRLabel();
             this.distribution_lbl = new DevExpress.XtraReports.UI.XRLabel();
             this.xrPanel3 = new DevExpress.XtraReports.UI.XRPanel();
-            this.QRCode = new DevExpress.XtraReports.UI.XRBarCode();
             this.xrTable15 = new DevExpress.XtraReports.UI.XRTable();
             this.xrTableRow28 = new DevExpress.XtraReports.UI.XRTableRow();
             this.xrTableCell60 = new DevExpress.XtraReports.UI.XRTableCell();
@@ -120,6 +119,7 @@ namespace ArgusCR1012.Sales.Templates
             this.costomerEnd_lbl = new DevExpress.XtraReports.UI.XRTableCell();
             this.postingDate_lbl = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTableCell39 = new DevExpress.XtraReports.UI.XRTableCell();
+            this.QRCode = new DevExpress.XtraReports.UI.XRBarCode();
             this.title_lbl = new DevExpress.XtraReports.UI.XRLabel();
             this.tamdeed_lbl = new DevExpress.XtraReports.UI.XRLabel();
             this.xrPanel1 = new DevExpress.XtraReports.UI.XRPanel();
@@ -1026,14 +1026,6 @@ namespace ArgusCR1012.Sales.Templates
             this.xrPanel3.StylePriority.UseBackColor = false;
             this.xrPanel3.StylePriority.UseBorders = false;
             // 
-            // QRCode
-            // 
-            this.QRCode.LocationFloat = new DevExpress.Utils.PointFloat(125.9209F, 0F);
-            this.QRCode.Name = "QRCode";
-            this.QRCode.Padding = new DevExpress.XtraPrinting.PaddingInfo(10, 10, 0, 0, 100F);
-            this.QRCode.SizeF = new System.Drawing.SizeF(100F, 100F);
-            this.QRCode.Symbology = qrCodeGenerator1;
-            // 
             // xrTable15
             // 
             this.xrTable15.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
@@ -1305,6 +1297,14 @@ namespace ArgusCR1012.Sales.Templates
             this.xrTableCell39.StylePriority.UseBackColor = false;
             this.xrTableCell39.Weight = 0.93783925604290719D;
             // 
+            // QRCode
+            // 
+            this.QRCode.LocationFloat = new DevExpress.Utils.PointFloat(171.25F, 0F);
+            this.QRCode.Name = "QRCode";
+            this.QRCode.Padding = new DevExpress.XtraPrinting.PaddingInfo(10, 10, 0, 0, 100F);
+            this.QRCode.SizeF = new System.Drawing.SizeF(100F, 100F);
+            this.QRCode.Symbology = qrCodeGenerator1;
+            // 
             // title_lbl
             // 
             this.title_lbl.BackColor = System.Drawing.Color.White;
@@ -1354,7 +1354,7 @@ namespace ArgusCR1012.Sales.Templates
             this.xrPanel1.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
             this.tamdeed_lbl,
             this.title_lbl});
-            this.xrPanel1.LocationFloat = new DevExpress.Utils.PointFloat(12.5F, 12.5F);
+            this.xrPanel1.LocationFloat = new DevExpress.Utils.PointFloat(12.49991F, 22.50001F);
             this.xrPanel1.Name = "xrPanel1";
             this.xrPanel1.SizeF = new System.Drawing.SizeF(490F, 77.70834F);
             this.xrPanel1.StylePriority.UseBorders = false;
