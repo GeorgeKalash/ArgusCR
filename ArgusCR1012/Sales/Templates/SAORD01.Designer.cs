@@ -563,7 +563,7 @@ namespace ArgusCR1012.Sales.Templates
             this.itemName_data.Name = "itemName_data";
             this.itemName_data.StylePriority.UseTextAlignment = false;
             this.itemName_data.Text = "itemName_data";
-            this.itemName_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            this.itemName_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             this.itemName_data.Weight = 1.905346488937381D;
             // 
             // qty_data
@@ -603,7 +603,7 @@ namespace ArgusCR1012.Sales.Templates
             this.xrLabel14,
             this.xrLabel16,
             this.anyNote_lbl});
-            this.ReportFooter.HeightF = 264.05F;
+            this.ReportFooter.HeightF = 262.8F;
             this.ReportFooter.Name = "ReportFooter";
             // 
             // xrTable2
@@ -997,7 +997,7 @@ namespace ArgusCR1012.Sales.Templates
             this.PageFooter.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
             this.xrLabel13,
             this.distribution_lbl});
-            this.PageFooter.HeightF = 38.67308F;
+            this.PageFooter.HeightF = 36.91476F;
             this.PageFooter.Name = "PageFooter";
             // 
             // xrLabel13
