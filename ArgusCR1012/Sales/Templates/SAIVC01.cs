@@ -32,7 +32,7 @@ namespace ArgusCR1012.Sales.Templates
             reference_data.Text = webObject.record.trxHeader.reference;
             date_data.Text = webObject.record.trxHeader.date.ToString(sessionInfo.dateFormat);
             spName_data.Text = webObject.record.trxHeader.spName;
-            //spCellPhone_data.Text = webObject.record.trxHeader.spCellPhone;
+            spCellPhone_data.Text = webObject.record.trxHeader.spCellPhone;
 
             subtotal_data.Text = webObject.record.trxHeader.subtotal.ToString("N2");
             vatAmount_data.Text = webObject.record.trxHeader.vatAmount.ToString("N2");
@@ -44,6 +44,9 @@ namespace ArgusCR1012.Sales.Templates
             QRCode.Text += string.Format("\nClient Name: {0}", webObject.record.trxHeader.clientName);
             QRCode.Text += string.Format("\nVAT No: {0}", webObject.record.trxHeader.clientVATNo);
             QRCode.Text += string.Format("\nInvoice Amount: {0}", webObject.record.trxHeader.amount);
+
+            deliveryDate_data.Text = ((DateTime)webObject.record.trxHeader.date).ToString(sessionInfo.dateFormat);
+            
 
             base.OnBeforePrint(e);
         }
@@ -89,7 +92,7 @@ namespace ArgusCR1012.Sales.Templates
 
             deliveryInfo_lbl.Text = labelText(24);
             deliveryDate_lbl.Text = labelText(25);
-            shipAddress_lbl.Text = labelText(26);
+            deliveryLocation_lbl.Text = labelText(26);
             shippingMode_lbl.Text = labelText(27);
 
             paymentTerms_lbl.Text = labelText(28);
@@ -116,6 +119,7 @@ namespace ArgusCR1012.Sales.Templates
             postingDate_lbl.Text = labelText(45);
 
             distribution_lbl.Text = labelText(46);
+            info_lbl.Text = labelText(47);
         }
 
         protected override string dictionaryStore()
