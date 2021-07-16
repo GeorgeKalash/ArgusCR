@@ -32,7 +32,7 @@ namespace ArgusCR1012.Sales.Templates
             reference_data.Text = webObject.record.trxHeader.reference;
             date_data.Text = webObject.record.trxHeader.date.ToString(sessionInfo.dateFormat);
             spName_data.Text = webObject.record.trxHeader.spName;
-            spCellPhone_data.Text = webObject.record.trxHeader.spCellPhone;
+            //spCellPhone_data.Text = webObject.record.trxHeader.spCellPhone;
 
             subtotal_data.Text = webObject.record.trxHeader.subtotal.ToString("N2");
             vatAmount_data.Text = webObject.record.trxHeader.vatAmount.ToString("N2");

@@ -791,6 +791,7 @@
             this.xrLabel12,
             this.xrLabel30,
             this.xrLabel27});
+            this.ReportFooter.Expanded = false;
             this.ReportFooter.HeightF = 115.5422F;
             this.ReportFooter.Name = "ReportFooter";
             // 
@@ -1200,6 +1201,7 @@
             this.Detail1});
             this.DetailReport.DataMember = "record.items";
             this.DetailReport.DataSource = this.jsonDataSource2;
+            this.DetailReport.Expanded = false;
             this.DetailReport.Level = 0;
             this.DetailReport.Name = "DetailReport";
             // 
