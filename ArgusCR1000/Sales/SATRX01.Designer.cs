@@ -1201,7 +1201,6 @@
             this.Detail1});
             this.DetailReport.DataMember = "record.items";
             this.DetailReport.DataSource = this.jsonDataSource2;
-            this.DetailReport.Expanded = false;
             this.DetailReport.Level = 0;
             this.DetailReport.Name = "DetailReport";
             // 
