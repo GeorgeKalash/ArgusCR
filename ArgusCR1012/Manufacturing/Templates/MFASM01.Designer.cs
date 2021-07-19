@@ -100,8 +100,7 @@ namespace ArgusCR1012.Manufacturing.Templates
             // 
             // rmSiteName_data
             // 
-            this.rmSiteName_data.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
-            | DevExpress.XtraPrinting.BorderSide.Right) 
+            this.rmSiteName_data.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Top | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.rmSiteName_data.LocationFloat = new DevExpress.Utils.PointFloat(140.2052F, 237.2917F);
             this.rmSiteName_data.Multiline = true;
@@ -114,7 +113,7 @@ namespace ArgusCR1012.Manufacturing.Templates
             // 
             // siteRef_lbl
             // 
-            this.siteRef_lbl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.siteRef_lbl.BackColor = System.Drawing.Color.Azure;
             this.siteRef_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
@@ -132,8 +131,7 @@ namespace ArgusCR1012.Manufacturing.Templates
             // 
             // siteName_data
             // 
-            this.siteName_data.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
-            | DevExpress.XtraPrinting.BorderSide.Right) 
+            this.siteName_data.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Top | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.siteName_data.LocationFloat = new DevExpress.Utils.PointFloat(524.8159F, 237.2917F);
             this.siteName_data.Multiline = true;
@@ -146,9 +144,8 @@ namespace ArgusCR1012.Manufacturing.Templates
             // 
             // site_lbl
             // 
-            this.site_lbl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.site_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
-            | DevExpress.XtraPrinting.BorderSide.Right) 
+            this.site_lbl.BackColor = System.Drawing.Color.Azure;
+            this.site_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Top | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.site_lbl.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold);
             this.site_lbl.LocationFloat = new DevExpress.Utils.PointFloat(370.6722F, 237.2917F);
@@ -164,9 +161,7 @@ namespace ArgusCR1012.Manufacturing.Templates
             // 
             // rmCost_data
             // 
-            this.rmCost_data.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
-            | DevExpress.XtraPrinting.BorderSide.Right) 
-            | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.rmCost_data.Borders = ((DevExpress.XtraPrinting.BorderSide)((DevExpress.XtraPrinting.BorderSide.Top | DevExpress.XtraPrinting.BorderSide.Right)));
             this.rmCost_data.LocationFloat = new DevExpress.Utils.PointFloat(524.8159F, 199.7917F);
             this.rmCost_data.Multiline = true;
             this.rmCost_data.Name = "rmCost_data";
@@ -175,13 +170,13 @@ namespace ArgusCR1012.Manufacturing.Templates
             this.rmCost_data.StylePriority.UseBorders = false;
             this.rmCost_data.StylePriority.UsePadding = false;
             this.rmCost_data.Text = "rmCost_data.";
+            this.rmCost_data.TextFormatString = "{0:n3}";
             // 
             // rmCost_lbl
             // 
-            this.rmCost_lbl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.rmCost_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
-            | DevExpress.XtraPrinting.BorderSide.Right) 
-            | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.rmCost_lbl.BackColor = System.Drawing.Color.Azure;
+            this.rmCost_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+            | DevExpress.XtraPrinting.BorderSide.Right)));
             this.rmCost_lbl.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold);
             this.rmCost_lbl.LocationFloat = new DevExpress.Utils.PointFloat(370.6722F, 199.7917F);
             this.rmCost_lbl.Multiline = true;
@@ -196,9 +191,7 @@ namespace ArgusCR1012.Manufacturing.Templates
             // 
             // qty_data
             // 
-            this.qty_data.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
-            | DevExpress.XtraPrinting.BorderSide.Right) 
-            | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.qty_data.Borders = ((DevExpress.XtraPrinting.BorderSide)((DevExpress.XtraPrinting.BorderSide.Top | DevExpress.XtraPrinting.BorderSide.Right)));
             this.qty_data.LocationFloat = new DevExpress.Utils.PointFloat(524.8159F, 164.375F);
             this.qty_data.Multiline = true;
             this.qty_data.Name = "qty_data";
@@ -207,13 +200,13 @@ namespace ArgusCR1012.Manufacturing.Templates
             this.qty_data.StylePriority.UseBorders = false;
             this.qty_data.StylePriority.UsePadding = false;
             this.qty_data.Text = "qty_data";
+            this.qty_data.TextFormatString = "{0:n3}";
             // 
             // qty_lbl
             // 
-            this.qty_lbl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.qty_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
-            | DevExpress.XtraPrinting.BorderSide.Right) 
-            | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.qty_lbl.BackColor = System.Drawing.Color.Azure;
+            this.qty_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+            | DevExpress.XtraPrinting.BorderSide.Right)));
             this.qty_lbl.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold);
             this.qty_lbl.LocationFloat = new DevExpress.Utils.PointFloat(370.6722F, 164.375F);
             this.qty_lbl.Multiline = true;
@@ -228,9 +221,7 @@ namespace ArgusCR1012.Manufacturing.Templates
             // 
             // notes_data
             // 
-            this.notes_data.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
-            | DevExpress.XtraPrinting.BorderSide.Right) 
-            | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.notes_data.Borders = ((DevExpress.XtraPrinting.BorderSide)((DevExpress.XtraPrinting.BorderSide.Top | DevExpress.XtraPrinting.BorderSide.Right)));
             this.notes_data.LocationFloat = new DevExpress.Utils.PointFloat(140.2052F, 164.375F);
             this.notes_data.Multiline = true;
             this.notes_data.Name = "notes_data";
@@ -242,10 +233,9 @@ namespace ArgusCR1012.Manufacturing.Templates
             // 
             // notes_lbl
             // 
-            this.notes_lbl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.notes_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
-            | DevExpress.XtraPrinting.BorderSide.Right) 
-            | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.notes_lbl.BackColor = System.Drawing.Color.Azure;
+            this.notes_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+            | DevExpress.XtraPrinting.BorderSide.Right)));
             this.notes_lbl.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold);
             this.notes_lbl.LocationFloat = new DevExpress.Utils.PointFloat(12.5F, 164.375F);
             this.notes_lbl.Multiline = true;
@@ -279,7 +269,7 @@ namespace ArgusCR1012.Manufacturing.Templates
             // 
             // assembly_lbl
             // 
-            this.assembly_lbl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.assembly_lbl.BackColor = System.Drawing.Color.LightSkyBlue;
             this.assembly_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
@@ -310,10 +300,9 @@ namespace ArgusCR1012.Manufacturing.Templates
             // 
             // dtName_lbl
             // 
-            this.dtName_lbl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.dtName_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
-            | DevExpress.XtraPrinting.BorderSide.Right) 
-            | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.dtName_lbl.BackColor = System.Drawing.Color.Azure;
+            this.dtName_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+            | DevExpress.XtraPrinting.BorderSide.Right)));
             this.dtName_lbl.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold);
             this.dtName_lbl.Multiline = true;
             this.dtName_lbl.Name = "dtName_lbl";
@@ -329,9 +318,8 @@ namespace ArgusCR1012.Manufacturing.Templates
             // 
             // dtName_data
             // 
-            this.dtName_data.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
-            | DevExpress.XtraPrinting.BorderSide.Right) 
-            | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.dtName_data.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+            | DevExpress.XtraPrinting.BorderSide.Right)));
             this.dtName_data.Font = new System.Drawing.Font("Times New Roman", 10F);
             this.dtName_data.Multiline = true;
             this.dtName_data.Name = "dtName_data";
@@ -346,10 +334,9 @@ namespace ArgusCR1012.Manufacturing.Templates
             // 
             // bomName_lbl
             // 
-            this.bomName_lbl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.bomName_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
-            | DevExpress.XtraPrinting.BorderSide.Right) 
-            | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.bomName_lbl.BackColor = System.Drawing.Color.Azure;
+            this.bomName_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+            | DevExpress.XtraPrinting.BorderSide.Right)));
             this.bomName_lbl.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold);
             this.bomName_lbl.Multiline = true;
             this.bomName_lbl.Name = "bomName_lbl";
@@ -365,9 +352,8 @@ namespace ArgusCR1012.Manufacturing.Templates
             // 
             // bomName_data
             // 
-            this.bomName_data.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
-            | DevExpress.XtraPrinting.BorderSide.Right) 
-            | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.bomName_data.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+            | DevExpress.XtraPrinting.BorderSide.Right)));
             this.bomName_data.Font = new System.Drawing.Font("Times New Roman", 10F);
             this.bomName_data.Multiline = true;
             this.bomName_data.Name = "bomName_data";
@@ -392,10 +378,9 @@ namespace ArgusCR1012.Manufacturing.Templates
             // 
             // reference_lbl
             // 
-            this.reference_lbl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.reference_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
-            | DevExpress.XtraPrinting.BorderSide.Right) 
-            | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.reference_lbl.BackColor = System.Drawing.Color.Azure;
+            this.reference_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+            | DevExpress.XtraPrinting.BorderSide.Right)));
             this.reference_lbl.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold);
             this.reference_lbl.Multiline = true;
             this.reference_lbl.Name = "reference_lbl";
@@ -411,9 +396,8 @@ namespace ArgusCR1012.Manufacturing.Templates
             // 
             // reference_data
             // 
-            this.reference_data.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
-            | DevExpress.XtraPrinting.BorderSide.Right) 
-            | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.reference_data.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+            | DevExpress.XtraPrinting.BorderSide.Right)));
             this.reference_data.Font = new System.Drawing.Font("Times New Roman", 10F);
             this.reference_data.Multiline = true;
             this.reference_data.Name = "reference_data";
@@ -428,10 +412,9 @@ namespace ArgusCR1012.Manufacturing.Templates
             // 
             // bomRef_lbl
             // 
-            this.bomRef_lbl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.bomRef_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
-            | DevExpress.XtraPrinting.BorderSide.Right) 
-            | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.bomRef_lbl.BackColor = System.Drawing.Color.Azure;
+            this.bomRef_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+            | DevExpress.XtraPrinting.BorderSide.Right)));
             this.bomRef_lbl.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold);
             this.bomRef_lbl.Multiline = true;
             this.bomRef_lbl.Name = "bomRef_lbl";
@@ -447,9 +430,8 @@ namespace ArgusCR1012.Manufacturing.Templates
             // 
             // bomRef_data
             // 
-            this.bomRef_data.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
-            | DevExpress.XtraPrinting.BorderSide.Right) 
-            | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.bomRef_data.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+            | DevExpress.XtraPrinting.BorderSide.Right)));
             this.bomRef_data.Font = new System.Drawing.Font("Times New Roman", 10F);
             this.bomRef_data.Multiline = true;
             this.bomRef_data.Name = "bomRef_data";
@@ -474,10 +456,9 @@ namespace ArgusCR1012.Manufacturing.Templates
             // 
             // date_lbl
             // 
-            this.date_lbl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.date_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
-            | DevExpress.XtraPrinting.BorderSide.Right) 
-            | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.date_lbl.BackColor = System.Drawing.Color.Azure;
+            this.date_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+            | DevExpress.XtraPrinting.BorderSide.Right)));
             this.date_lbl.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold);
             this.date_lbl.Multiline = true;
             this.date_lbl.Name = "date_lbl";
@@ -493,9 +474,8 @@ namespace ArgusCR1012.Manufacturing.Templates
             // 
             // date_data
             // 
-            this.date_data.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
-            | DevExpress.XtraPrinting.BorderSide.Right) 
-            | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.date_data.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+            | DevExpress.XtraPrinting.BorderSide.Right)));
             this.date_data.Font = new System.Drawing.Font("Times New Roman", 10F);
             this.date_data.Multiline = true;
             this.date_data.Name = "date_data";
@@ -506,14 +486,14 @@ namespace ArgusCR1012.Manufacturing.Templates
             this.date_data.StylePriority.UseTextAlignment = false;
             this.date_data.Text = "date_data";
             this.date_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
+            this.date_data.TextFormatString = "{0:dd/MM/yyyy}";
             this.date_data.Weight = 0.88244574841583079D;
             // 
             // itemName_lbl
             // 
-            this.itemName_lbl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.itemName_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
-            | DevExpress.XtraPrinting.BorderSide.Right) 
-            | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.itemName_lbl.BackColor = System.Drawing.Color.Azure;
+            this.itemName_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+            | DevExpress.XtraPrinting.BorderSide.Right)));
             this.itemName_lbl.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold);
             this.itemName_lbl.Multiline = true;
             this.itemName_lbl.Name = "itemName_lbl";
@@ -529,9 +509,8 @@ namespace ArgusCR1012.Manufacturing.Templates
             // 
             // itemName_data
             // 
-            this.itemName_data.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
-            | DevExpress.XtraPrinting.BorderSide.Right) 
-            | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.itemName_data.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+            | DevExpress.XtraPrinting.BorderSide.Right)));
             this.itemName_data.Font = new System.Drawing.Font("Times New Roman", 10F);
             this.itemName_data.Multiline = true;
             this.itemName_data.Name = "itemName_data";
@@ -576,7 +555,7 @@ namespace ArgusCR1012.Manufacturing.Templates
             // 
             // sku_lbl
             // 
-            this.sku_lbl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.sku_lbl.BackColor = System.Drawing.Color.Azure;
             this.sku_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
@@ -595,7 +574,7 @@ namespace ArgusCR1012.Manufacturing.Templates
             // 
             // productionItem_lbl
             // 
-            this.productionItem_lbl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.productionItem_lbl.BackColor = System.Drawing.Color.Azure;
             this.productionItem_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
@@ -608,13 +587,13 @@ namespace ArgusCR1012.Manufacturing.Templates
             this.productionItem_lbl.StylePriority.UseFont = false;
             this.productionItem_lbl.StylePriority.UsePadding = false;
             this.productionItem_lbl.StylePriority.UseTextAlignment = false;
-            this.productionItem_lbl.Text = "Production Item";
+            this.productionItem_lbl.Text = "Component Item";
             this.productionItem_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopCenter;
             this.productionItem_lbl.Weight = 1.7064088580189245D;
             // 
             // componentSite_lbl
             // 
-            this.componentSite_lbl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.componentSite_lbl.BackColor = System.Drawing.Color.Azure;
             this.componentSite_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
@@ -627,13 +606,13 @@ namespace ArgusCR1012.Manufacturing.Templates
             this.componentSite_lbl.StylePriority.UseFont = false;
             this.componentSite_lbl.StylePriority.UsePadding = false;
             this.componentSite_lbl.StylePriority.UseTextAlignment = false;
-            this.componentSite_lbl.Text = "Component Site";
+            this.componentSite_lbl.Text = "Site Name";
             this.componentSite_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopCenter;
             this.componentSite_lbl.Weight = 1.8275176538961231D;
             // 
             // designQty_lbl
             // 
-            this.designQty_lbl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.designQty_lbl.BackColor = System.Drawing.Color.Azure;
             this.designQty_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
@@ -652,7 +631,7 @@ namespace ArgusCR1012.Manufacturing.Templates
             // 
             // productionQty_lbl
             // 
-            this.productionQty_lbl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.productionQty_lbl.BackColor = System.Drawing.Color.Azure;
             this.productionQty_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
@@ -671,7 +650,7 @@ namespace ArgusCR1012.Manufacturing.Templates
             // 
             // costs_lbl
             // 
-            this.costs_lbl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.costs_lbl.BackColor = System.Drawing.Color.Azure;
             this.costs_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
@@ -786,6 +765,7 @@ namespace ArgusCR1012.Manufacturing.Templates
             this.designQty_data.StylePriority.UsePadding = false;
             this.designQty_data.StylePriority.UseTextAlignment = false;
             this.designQty_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
+            this.designQty_data.TextFormatString = "{0:n3}";
             this.designQty_data.Weight = 1.1849197319452485D;
             // 
             // productionQty_data
@@ -804,6 +784,7 @@ namespace ArgusCR1012.Manufacturing.Templates
             this.productionQty_data.StylePriority.UsePadding = false;
             this.productionQty_data.StylePriority.UseTextAlignment = false;
             this.productionQty_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
+            this.productionQty_data.TextFormatString = "{0:n3}";
             this.productionQty_data.Weight = 1.3765508894240681D;
             // 
             // costs_data
@@ -822,6 +803,7 @@ namespace ArgusCR1012.Manufacturing.Templates
             this.costs_data.StylePriority.UsePadding = false;
             this.costs_data.StylePriority.UseTextAlignment = false;
             this.costs_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
+            this.costs_data.TextFormatString = "{0:#,#}";
             this.costs_data.Weight = 0.91511764839617271D;
             // 
             // MFASM01
