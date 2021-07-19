@@ -96,7 +96,6 @@ namespace ArgusCR1012.Sales.Templates
             this.PageFooter = new DevExpress.XtraReports.UI.PageFooterBand();
             this.info_lbl = new DevExpress.XtraReports.UI.XRLabel();
             this.distribution_lbl = new DevExpress.XtraReports.UI.XRLabel();
-            this.xrPanel3 = new DevExpress.XtraReports.UI.XRPanel();
             this.xrTable15 = new DevExpress.XtraReports.UI.XRTable();
             this.xrTableRow28 = new DevExpress.XtraReports.UI.XRTableRow();
             this.xrTableCell60 = new DevExpress.XtraReports.UI.XRTableCell();
@@ -124,6 +123,7 @@ namespace ArgusCR1012.Sales.Templates
             this.tamdeed_lbl = new DevExpress.XtraReports.UI.XRLabel();
             this.xrPanel1 = new DevExpress.XtraReports.UI.XRPanel();
             this.ReportHeader = new DevExpress.XtraReports.UI.ReportHeaderBand();
+            this.invoice_lbl = new DevExpress.XtraReports.UI.XRLabel();
             this.accountNo_lbl = new DevExpress.XtraReports.UI.XRLabel();
             this.xrTable3 = new DevExpress.XtraReports.UI.XRTable();
             this.xrTableRow3 = new DevExpress.XtraReports.UI.XRTableRow();
@@ -159,8 +159,6 @@ namespace ArgusCR1012.Sales.Templates
             this.xrTableRow1 = new DevExpress.XtraReports.UI.XRTableRow();
             this.customerVatNo_lbl = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTableCell2 = new DevExpress.XtraReports.UI.XRTableCell();
-            this.xrPanel2 = new DevExpress.XtraReports.UI.XRPanel();
-            this.invoice_lbl = new DevExpress.XtraReports.UI.XRLabel();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable12)).BeginInit();
@@ -971,7 +969,6 @@ namespace ArgusCR1012.Sales.Templates
             this.PageFooter.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
             this.info_lbl,
             this.distribution_lbl,
-            this.xrPanel3,
             this.xrTable15,
             this.xrTable14,
             this.xrTable13});
@@ -985,7 +982,7 @@ namespace ArgusCR1012.Sales.Templates
             this.info_lbl.Multiline = true;
             this.info_lbl.Name = "info_lbl";
             this.info_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.info_lbl.SizeF = new System.Drawing.SizeF(763.7501F, 23F);
+            this.info_lbl.SizeF = new System.Drawing.SizeF(763.7496F, 23F);
             this.info_lbl.StylePriority.UseFont = false;
             this.info_lbl.StylePriority.UseTextAlignment = false;
             this.info_lbl.Text = "Jedda -2nd industrial Area. Phone Number: 012-6110657, Fax: 012-6110639, P.O Box " +
@@ -1014,18 +1011,6 @@ namespace ArgusCR1012.Sales.Templates
     "Master file.";
             this.distribution_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopCenter;
             // 
-            // xrPanel3
-            // 
-            this.xrPanel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.xrPanel3.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
-            | DevExpress.XtraPrinting.BorderSide.Right) 
-            | DevExpress.XtraPrinting.BorderSide.Bottom)));
-            this.xrPanel3.LocationFloat = new DevExpress.Utils.PointFloat(649.375F, 0F);
-            this.xrPanel3.Name = "xrPanel3";
-            this.xrPanel3.SizeF = new System.Drawing.SizeF(126.8747F, 125.1041F);
-            this.xrPanel3.StylePriority.UseBackColor = false;
-            this.xrPanel3.StylePriority.UseBorders = false;
-            // 
             // xrTable15
             // 
             this.xrTable15.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
@@ -1036,7 +1021,7 @@ namespace ArgusCR1012.Sales.Templates
             this.xrTable15.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable15.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow28});
-            this.xrTable15.SizeF = new System.Drawing.SizeF(636.875F, 61.45834F);
+            this.xrTable15.SizeF = new System.Drawing.SizeF(763.7496F, 61.45834F);
             this.xrTable15.StylePriority.UseBorders = false;
             // 
             // xrTableRow28
@@ -1100,7 +1085,7 @@ namespace ArgusCR1012.Sales.Templates
             this.xrTable14.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable14.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow27});
-            this.xrTable14.SizeF = new System.Drawing.SizeF(636.875F, 26.04167F);
+            this.xrTable14.SizeF = new System.Drawing.SizeF(763.7496F, 26.04167F);
             this.xrTable14.StylePriority.UseBorders = false;
             // 
             // xrTableRow27
@@ -1199,7 +1184,7 @@ namespace ArgusCR1012.Sales.Templates
             this.xrTable13.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable13.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow25});
-            this.xrTable13.SizeF = new System.Drawing.SizeF(636.8749F, 37.60413F);
+            this.xrTable13.SizeF = new System.Drawing.SizeF(763.7496F, 37.60413F);
             this.xrTable13.StylePriority.UseBorders = false;
             // 
             // xrTableRow25
@@ -1299,11 +1284,23 @@ namespace ArgusCR1012.Sales.Templates
             // 
             // QRCode
             // 
-            this.QRCode.LocationFloat = new DevExpress.Utils.PointFloat(171.25F, 0F);
+            this.QRCode.Alignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
+            this.QRCode.AnchorHorizontal = ((DevExpress.XtraReports.UI.HorizontalAnchorStyles)((DevExpress.XtraReports.UI.HorizontalAnchorStyles.Left | DevExpress.XtraReports.UI.HorizontalAnchorStyles.Right)));
+            this.QRCode.AnchorVertical = ((DevExpress.XtraReports.UI.VerticalAnchorStyles)((DevExpress.XtraReports.UI.VerticalAnchorStyles.Top | DevExpress.XtraReports.UI.VerticalAnchorStyles.Bottom)));
+            this.QRCode.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.QRCode.LocationFloat = new DevExpress.Utils.PointFloat(676.2496F, 22.50001F);
             this.QRCode.Name = "QRCode";
-            this.QRCode.Padding = new DevExpress.XtraPrinting.PaddingInfo(10, 10, 0, 0, 100F);
+            this.QRCode.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F);
+            this.QRCode.ShowText = false;
             this.QRCode.SizeF = new System.Drawing.SizeF(100F, 100F);
+            this.QRCode.StylePriority.UseBorders = false;
+            this.QRCode.StylePriority.UseBorderWidth = false;
+            this.QRCode.StylePriority.UseFont = false;
+            this.QRCode.StylePriority.UsePadding = false;
+            this.QRCode.StylePriority.UseTextAlignment = false;
+            qrCodeGenerator1.CompactionMode = DevExpress.XtraPrinting.BarCode.QRCodeCompactionMode.Byte;
             this.QRCode.Symbology = qrCodeGenerator1;
+            this.QRCode.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             // 
             // title_lbl
             // 
@@ -1356,22 +1353,42 @@ namespace ArgusCR1012.Sales.Templates
             this.title_lbl});
             this.xrPanel1.LocationFloat = new DevExpress.Utils.PointFloat(12.49991F, 22.50001F);
             this.xrPanel1.Name = "xrPanel1";
-            this.xrPanel1.SizeF = new System.Drawing.SizeF(490F, 77.70834F);
+            this.xrPanel1.SizeF = new System.Drawing.SizeF(495.3953F, 77.70834F);
             this.xrPanel1.StylePriority.UseBorders = false;
             // 
             // ReportHeader
             // 
             this.ReportHeader.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+            this.QRCode,
+            this.invoice_lbl,
             this.accountNo_lbl,
             this.xrTable3,
             this.xrTable5,
             this.xrTable4,
             this.xrTable2,
             this.xrTable1,
-            this.xrPanel2,
             this.xrPanel1});
             this.ReportHeader.HeightF = 328.125F;
             this.ReportHeader.Name = "ReportHeader";
+            // 
+            // invoice_lbl
+            // 
+            this.invoice_lbl.BorderColor = System.Drawing.Color.Transparent;
+            this.invoice_lbl.BorderWidth = 0F;
+            this.invoice_lbl.Font = new System.Drawing.Font("Arial", 14F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
+            this.invoice_lbl.ForeColor = System.Drawing.Color.Black;
+            this.invoice_lbl.LocationFloat = new DevExpress.Utils.PointFloat(12.50005F, 113.125F);
+            this.invoice_lbl.Multiline = true;
+            this.invoice_lbl.Name = "invoice_lbl";
+            this.invoice_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.invoice_lbl.SizeF = new System.Drawing.SizeF(82.29156F, 23F);
+            this.invoice_lbl.StylePriority.UseBorderColor = false;
+            this.invoice_lbl.StylePriority.UseBorderWidth = false;
+            this.invoice_lbl.StylePriority.UseFont = false;
+            this.invoice_lbl.StylePriority.UseForeColor = false;
+            this.invoice_lbl.StylePriority.UseTextAlignment = false;
+            this.invoice_lbl.Text = "Invoice";
+            this.invoice_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             // 
             // accountNo_lbl
             // 
@@ -1685,7 +1702,7 @@ namespace ArgusCR1012.Sales.Templates
             this.xrTable2.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
-            this.xrTable2.LocationFloat = new DevExpress.Utils.PointFloat(387.5F, 125F);
+            this.xrTable2.LocationFloat = new DevExpress.Utils.PointFloat(386.458F, 150.625F);
             this.xrTable2.Name = "xrTable2";
             this.xrTable2.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable2.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
@@ -1731,7 +1748,7 @@ namespace ArgusCR1012.Sales.Templates
             this.xrTable1.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
-            this.xrTable1.LocationFloat = new DevExpress.Utils.PointFloat(12.5F, 125F);
+            this.xrTable1.LocationFloat = new DevExpress.Utils.PointFloat(12.4999F, 150.625F);
             this.xrTable1.Name = "xrTable1";
             this.xrTable1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable1.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
@@ -1772,38 +1789,6 @@ namespace ArgusCR1012.Sales.Templates
             this.xrTableCell2.StylePriority.UsePadding = false;
             this.xrTableCell2.Weight = 1.6875001525878908D;
             // 
-            // xrPanel2
-            // 
-            this.xrPanel2.BackColor = System.Drawing.Color.Transparent;
-            this.xrPanel2.BorderColor = System.Drawing.Color.Black;
-            this.xrPanel2.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
-            this.QRCode,
-            this.invoice_lbl});
-            this.xrPanel2.LocationFloat = new DevExpress.Utils.PointFloat(502.4999F, 12.5F);
-            this.xrPanel2.Name = "xrPanel2";
-            this.xrPanel2.SizeF = new System.Drawing.SizeF(271.25F, 100F);
-            this.xrPanel2.StylePriority.UseBackColor = false;
-            this.xrPanel2.StylePriority.UseBorderColor = false;
-            // 
-            // invoice_lbl
-            // 
-            this.invoice_lbl.BorderColor = System.Drawing.Color.Transparent;
-            this.invoice_lbl.BorderWidth = 0F;
-            this.invoice_lbl.Font = new System.Drawing.Font("Arial", 14F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
-            this.invoice_lbl.ForeColor = System.Drawing.Color.Black;
-            this.invoice_lbl.LocationFloat = new DevExpress.Utils.PointFloat(4.390015F, 25.58331F);
-            this.invoice_lbl.Multiline = true;
-            this.invoice_lbl.Name = "invoice_lbl";
-            this.invoice_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.invoice_lbl.SizeF = new System.Drawing.SizeF(82.29156F, 23F);
-            this.invoice_lbl.StylePriority.UseBorderColor = false;
-            this.invoice_lbl.StylePriority.UseBorderWidth = false;
-            this.invoice_lbl.StylePriority.UseFont = false;
-            this.invoice_lbl.StylePriority.UseForeColor = false;
-            this.invoice_lbl.StylePriority.UseTextAlignment = false;
-            this.invoice_lbl.Text = "Invoice";
-            this.invoice_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
-            // 
             // SAIVC01
             // 
             this.Bands.AddRange(new DevExpress.XtraReports.UI.Band[] {
@@ -1843,8 +1828,6 @@ namespace ArgusCR1012.Sales.Templates
         private DevExpress.XtraReports.UI.XRLabel tamdeed_lbl;
         private DevExpress.XtraReports.UI.XRPanel xrPanel1;
         private DevExpress.XtraReports.UI.ReportHeaderBand ReportHeader;
-        private DevExpress.XtraReports.UI.XRPanel xrPanel2;
-        private DevExpress.XtraReports.UI.XRLabel invoice_lbl;
         private DevExpress.XtraReports.UI.XRTable xrTable2;
         private DevExpress.XtraReports.UI.XRTableRow xrTableRow2;
         private DevExpress.XtraReports.UI.XRTableCell masagVatNo_lbl;
@@ -1962,9 +1945,9 @@ namespace ArgusCR1012.Sales.Templates
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell63;
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell64;
         private DevExpress.XtraReports.UI.XRLabel distribution_lbl;
-        private DevExpress.XtraReports.UI.XRPanel xrPanel3;
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell39;
-        private DevExpress.XtraReports.UI.XRBarCode QRCode;
         private DevExpress.XtraReports.UI.XRLabel info_lbl;
+        private DevExpress.XtraReports.UI.XRBarCode QRCode;
+        private DevExpress.XtraReports.UI.XRLabel invoice_lbl;
     }
 }
