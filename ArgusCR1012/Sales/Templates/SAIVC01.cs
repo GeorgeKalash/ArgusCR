@@ -45,8 +45,8 @@ namespace ArgusCR1012.Sales.Templates
             QRCode.Text += string.Format("\nVAT No: {0}", webObject.record.trxHeader.clientVATNo);
             QRCode.Text += string.Format("\nInvoice Amount: {0}", webObject.record.trxHeader.amount);
           
-            if (webObject.record.trxHeader.deliveryDate != null)
-                deliveryDate_data.Text = ((DateTime)webObject.record.trxHeader.deliveryDate).ToString(sessionInfo.dateFormat);
+            //if (webObject.record.trxHeader.deliveryDate != null)
+            //    deliveryDate_data.Text = ((DateTime)webObject.record.trxHeader.deliveryDate).ToString(sessionInfo.dateFormat);
            
             base.OnBeforePrint(e);
         }
