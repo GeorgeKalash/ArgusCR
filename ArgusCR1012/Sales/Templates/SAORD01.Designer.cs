@@ -254,6 +254,7 @@ namespace ArgusCR1012.Sales.Templates
             this.date_data.Name = "date_data";
             this.date_data.StylePriority.UseBackColor = false;
             this.date_data.Text = "date_data";
+            this.date_data.TextFormatString = "{0:dd/MM/yyyy}";
             this.date_data.Weight = 8.0217244292130587D;
             // 
             // xrTableRow15
@@ -273,7 +274,7 @@ namespace ArgusCR1012.Sales.Templates
             this.reference_lbl.StylePriority.UseBackColor = false;
             this.reference_lbl.StylePriority.UsePadding = false;
             this.reference_lbl.StylePriority.UseTextAlignment = false;
-            this.reference_lbl.Text = "REFERENCE:";
+            this.reference_lbl.Text = "Reference:";
             this.reference_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             this.reference_lbl.Weight = 4.8343481156596786D;
             // 
@@ -508,7 +509,7 @@ namespace ArgusCR1012.Sales.Templates
             // 
             this.Detail.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
             this.xrTable3});
-            this.Detail.HeightF = 40.83341F;
+            this.Detail.HeightF = 30.83344F;
             this.Detail.Name = "Detail";
             // 
             // xrTable3
@@ -521,7 +522,7 @@ namespace ArgusCR1012.Sales.Templates
             this.xrTable3.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable3.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow3});
-            this.xrTable3.SizeF = new System.Drawing.SizeF(774.2513F, 40.83341F);
+            this.xrTable3.SizeF = new System.Drawing.SizeF(774.2513F, 30.83344F);
             this.xrTable3.StylePriority.UseBorders = false;
             // 
             // xrTableRow3
@@ -575,6 +576,7 @@ namespace ArgusCR1012.Sales.Templates
             this.qty_data.StylePriority.UseTextAlignment = false;
             this.qty_data.Text = "qty_data";
             this.qty_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            this.qty_data.TextFormatString = "{0:#,#}";
             this.qty_data.Weight = 0.68717481875616782D;
             // 
             // notes_data
@@ -743,7 +745,7 @@ namespace ArgusCR1012.Sales.Templates
             this.preparedSig_lbl.Multiline = true;
             this.preparedSig_lbl.Name = "preparedSig_lbl";
             this.preparedSig_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.preparedSig_lbl.SizeF = new System.Drawing.SizeF(161.5724F, 74.99996F);
+            this.preparedSig_lbl.SizeF = new System.Drawing.SizeF(162.5F, 74.99997F);
             this.preparedSig_lbl.StylePriority.UseBorders = false;
             this.preparedSig_lbl.StylePriority.UsePadding = false;
             this.preparedSig_lbl.StylePriority.UseTextAlignment = false;
@@ -758,7 +760,7 @@ namespace ArgusCR1012.Sales.Templates
             this.preparedDate_lbl.Multiline = true;
             this.preparedDate_lbl.Name = "preparedDate_lbl";
             this.preparedDate_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.preparedDate_lbl.SizeF = new System.Drawing.SizeF(161.5724F, 39.58333F);
+            this.preparedDate_lbl.SizeF = new System.Drawing.SizeF(162.5F, 39.58333F);
             this.preparedDate_lbl.StylePriority.UseBorders = false;
             this.preparedDate_lbl.StylePriority.UsePadding = false;
             this.preparedDate_lbl.StylePriority.UseTextAlignment = false;
@@ -792,6 +794,7 @@ namespace ArgusCR1012.Sales.Templates
             this.xrLabel19.StylePriority.UsePadding = false;
             this.xrLabel19.StylePriority.UseTextAlignment = false;
             this.xrLabel19.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            this.xrLabel19.TextFormatString = "{0:dd/MM/yyyy}";
             // 
             // receivedBy_lbl
             // 
@@ -869,6 +872,7 @@ namespace ArgusCR1012.Sales.Templates
             this.xrLabel16.StylePriority.UsePadding = false;
             this.xrLabel16.StylePriority.UseTextAlignment = false;
             this.xrLabel16.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            this.xrLabel16.TextFormatString = "{0:dd/MM/yyyy}";
             // 
             // anyNote_lbl
             // 

@@ -303,6 +303,7 @@ namespace ArgusCR1012.Manufacturing.Templates
             this.date_data.Multiline = true;
             this.date_data.Name = "date_data";
             this.date_data.Text = "date_data";
+            this.date_data.TextFormatString = "{0:dd/MM/yyyy}";
             this.date_data.Weight = 2.2961990075698417D;
             // 
             // xrTableRow1
@@ -345,13 +346,14 @@ namespace ArgusCR1012.Manufacturing.Templates
             this.bomQty_data.Multiline = true;
             this.bomQty_data.Name = "bomQty_data";
             this.bomQty_data.Text = "bomQty_data";
+            this.bomQty_data.TextFormatString = "{0:#,#}";
             this.bomQty_data.Weight = 2.2961987081667754D;
             // 
             // Detail
             // 
             this.Detail.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
             this.xrTable4});
-            this.Detail.HeightF = 40.83328F;
+            this.Detail.HeightF = 30.83331F;
             this.Detail.Name = "Detail";
             // 
             // xrTable4
@@ -361,7 +363,7 @@ namespace ArgusCR1012.Manufacturing.Templates
             this.xrTable4.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable4.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow4});
-            this.xrTable4.SizeF = new System.Drawing.SizeF(788.3333F, 40.00003F);
+            this.xrTable4.SizeF = new System.Drawing.SizeF(788.3333F, 30.83331F);
             // 
             // xrTableRow4
             // 
@@ -428,14 +430,15 @@ namespace ArgusCR1012.Manufacturing.Templates
             this.qty_data.StylePriority.UseBorders = false;
             this.qty_data.StylePriority.UseTextAlignment = false;
             this.qty_data.Text = "quantity";
-            this.qty_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            this.qty_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
+            this.qty_data.TextFormatString = "{0:#,#}";
             this.qty_data.Weight = 1.0943149911547572D;
             // 
             // PageHeader
             // 
             this.PageHeader.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
             this.xrTable3});
-            this.PageHeader.HeightF = 42.50002F;
+            this.PageHeader.HeightF = 32.50001F;
             this.PageHeader.Name = "PageHeader";
             // 
             // xrTable3
@@ -446,7 +449,7 @@ namespace ArgusCR1012.Manufacturing.Templates
             this.xrTable3.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable3.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow3});
-            this.xrTable3.SizeF = new System.Drawing.SizeF(788.3334F, 42.50002F);
+            this.xrTable3.SizeF = new System.Drawing.SizeF(788.3334F, 32.50001F);
             this.xrTable3.StylePriority.UseBackColor = false;
             // 
             // xrTableRow3
@@ -464,9 +467,11 @@ namespace ArgusCR1012.Manufacturing.Templates
             this.lineNo_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.lineNo_lbl.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold);
             this.lineNo_lbl.Multiline = true;
             this.lineNo_lbl.Name = "lineNo_lbl";
             this.lineNo_lbl.StylePriority.UseBorders = false;
+            this.lineNo_lbl.StylePriority.UseFont = false;
             this.lineNo_lbl.StylePriority.UseTextAlignment = false;
             this.lineNo_lbl.Text = "lineNo";
             this.lineNo_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
@@ -477,9 +482,11 @@ namespace ArgusCR1012.Manufacturing.Templates
             this.sku_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.sku_lbl.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold);
             this.sku_lbl.Multiline = true;
             this.sku_lbl.Name = "sku_lbl";
             this.sku_lbl.StylePriority.UseBorders = false;
+            this.sku_lbl.StylePriority.UseFont = false;
             this.sku_lbl.StylePriority.UseTextAlignment = false;
             this.sku_lbl.Text = "SKU";
             this.sku_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
@@ -490,9 +497,11 @@ namespace ArgusCR1012.Manufacturing.Templates
             this.itemName_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.itemName_lbl.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold);
             this.itemName_lbl.Multiline = true;
             this.itemName_lbl.Name = "itemName_lbl";
             this.itemName_lbl.StylePriority.UseBorders = false;
+            this.itemName_lbl.StylePriority.UseFont = false;
             this.itemName_lbl.StylePriority.UseTextAlignment = false;
             this.itemName_lbl.Text = "Name";
             this.itemName_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
@@ -503,9 +512,11 @@ namespace ArgusCR1012.Manufacturing.Templates
             this.qty_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.qty_lbl.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold);
             this.qty_lbl.Multiline = true;
             this.qty_lbl.Name = "qty_lbl";
             this.qty_lbl.StylePriority.UseBorders = false;
+            this.qty_lbl.StylePriority.UseFont = false;
             this.qty_lbl.StylePriority.UseTextAlignment = false;
             this.qty_lbl.Text = "Quantity";
             this.qty_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
