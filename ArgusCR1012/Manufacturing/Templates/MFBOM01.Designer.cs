@@ -346,7 +346,7 @@ namespace ArgusCR1012.Manufacturing.Templates
             this.bomQty_data.Multiline = true;
             this.bomQty_data.Name = "bomQty_data";
             this.bomQty_data.Text = "bomQty_data";
-            this.bomQty_data.TextFormatString = "{0:#,#}";
+            this.bomQty_data.TextFormatString = "{0:n3}";
             this.bomQty_data.Weight = 2.2961987081667754D;
             // 
             // Detail
@@ -431,7 +431,7 @@ namespace ArgusCR1012.Manufacturing.Templates
             this.qty_data.StylePriority.UseTextAlignment = false;
             this.qty_data.Text = "quantity";
             this.qty_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
-            this.qty_data.TextFormatString = "{0:#,#}";
+            this.qty_data.TextFormatString = "{0:n3}";
             this.qty_data.Weight = 1.0943149911547572D;
             // 
             // PageHeader

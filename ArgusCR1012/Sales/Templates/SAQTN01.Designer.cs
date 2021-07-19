@@ -561,7 +561,7 @@ namespace ArgusCR1012.Sales.Templates
             this.qty_data.StylePriority.UseTextAlignment = false;
             this.qty_data.Text = "qty_data";
             this.qty_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
-            this.qty_data.TextFormatString = "{0:#,#}";
+            this.qty_data.TextFormatString = "{0:n3}";
             this.qty_data.Weight = 0.82494875650630084D;
             // 
             // unitPrice_data
@@ -573,7 +573,7 @@ namespace ArgusCR1012.Sales.Templates
             this.unitPrice_data.StylePriority.UseTextAlignment = false;
             this.unitPrice_data.Text = "unitPrice_data";
             this.unitPrice_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
-            this.unitPrice_data.TextFormatString = "{0:#,#}";
+            this.unitPrice_data.TextFormatString = "{0:n3}";
             this.unitPrice_data.Weight = 0.60061585399571571D;
             // 
             // extendedPrice_data
@@ -585,7 +585,7 @@ namespace ArgusCR1012.Sales.Templates
             this.extendedPrice_data.StylePriority.UseTextAlignment = false;
             this.extendedPrice_data.Text = "extendedPrice_data";
             this.extendedPrice_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
-            this.extendedPrice_data.TextFormatString = "{0:#,#}";
+            this.extendedPrice_data.TextFormatString = "{0:n3}";
             this.extendedPrice_data.Weight = 0.85785857417327549D;
             // 
             // ReportFooter
@@ -689,7 +689,7 @@ namespace ArgusCR1012.Sales.Templates
             this.amount_data.StylePriority.UseTextAlignment = false;
             this.amount_data.Text = "amount_data";
             this.amount_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
-            this.amount_data.TextFormatString = "{0:#,#}";
+            this.amount_data.TextFormatString = "{0:n3}";
             // 
             // vatAmount_data
             // 
@@ -703,7 +703,7 @@ namespace ArgusCR1012.Sales.Templates
             this.vatAmount_data.StylePriority.UseTextAlignment = false;
             this.vatAmount_data.Text = "vatAmount_data";
             this.vatAmount_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
-            this.vatAmount_data.TextFormatString = "{0:#,#}";
+            this.vatAmount_data.TextFormatString = "{0:n3}";
             // 
             // subtotal_data
             // 
@@ -718,6 +718,7 @@ namespace ArgusCR1012.Sales.Templates
             this.subtotal_data.StylePriority.UseTextAlignment = false;
             this.subtotal_data.Text = "subtotal_data";
             this.subtotal_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            this.subtotal_data.TextFormatString = "{0:n3}";
             // 
             // totalSR_lbl
             // 

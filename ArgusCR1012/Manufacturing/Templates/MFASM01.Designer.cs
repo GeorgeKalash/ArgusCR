@@ -170,7 +170,7 @@ namespace ArgusCR1012.Manufacturing.Templates
             this.rmCost_data.StylePriority.UseBorders = false;
             this.rmCost_data.StylePriority.UsePadding = false;
             this.rmCost_data.Text = "rmCost_data.";
-            this.rmCost_data.TextFormatString = "{0:#,#}";
+            this.rmCost_data.TextFormatString = "{0:n3}";
             // 
             // rmCost_lbl
             // 
@@ -199,7 +199,7 @@ namespace ArgusCR1012.Manufacturing.Templates
             this.qty_data.StylePriority.UseBorders = false;
             this.qty_data.StylePriority.UsePadding = false;
             this.qty_data.Text = "qty_data";
-            this.qty_data.TextFormatString = "{0:#,#}";
+            this.qty_data.TextFormatString = "{0:n3}";
             // 
             // qty_lbl
             // 
@@ -763,7 +763,7 @@ namespace ArgusCR1012.Manufacturing.Templates
             this.designQty_data.StylePriority.UsePadding = false;
             this.designQty_data.StylePriority.UseTextAlignment = false;
             this.designQty_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
-            this.designQty_data.TextFormatString = "{0:#,#}";
+            this.designQty_data.TextFormatString = "{0:n3}";
             this.designQty_data.Weight = 1.1849197319452485D;
             // 
             // productionQty_data
@@ -782,7 +782,7 @@ namespace ArgusCR1012.Manufacturing.Templates
             this.productionQty_data.StylePriority.UsePadding = false;
             this.productionQty_data.StylePriority.UseTextAlignment = false;
             this.productionQty_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
-            this.productionQty_data.TextFormatString = "{0:#,#}";
+            this.productionQty_data.TextFormatString = "{0:n3}";
             this.productionQty_data.Weight = 1.3765508894240681D;
             // 
             // costs_data

@@ -576,7 +576,7 @@ namespace ArgusCR1012.Sales.Templates
             this.qty_data.StylePriority.UseTextAlignment = false;
             this.qty_data.Text = "qty_data";
             this.qty_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
-            this.qty_data.TextFormatString = "{0:#,#}";
+            this.qty_data.TextFormatString = "{0:n3}";
             this.qty_data.Weight = 0.68717481875616782D;
             // 
             // notes_data
