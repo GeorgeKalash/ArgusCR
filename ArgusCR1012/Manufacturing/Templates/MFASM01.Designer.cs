@@ -175,7 +175,8 @@ namespace ArgusCR1012.Manufacturing.Templates
             // rmCost_lbl
             // 
             this.rmCost_lbl.BackColor = System.Drawing.Color.Azure;
-            this.rmCost_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)((DevExpress.XtraPrinting.BorderSide.Top | DevExpress.XtraPrinting.BorderSide.Right)));
+            this.rmCost_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+            | DevExpress.XtraPrinting.BorderSide.Right)));
             this.rmCost_lbl.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold);
             this.rmCost_lbl.LocationFloat = new DevExpress.Utils.PointFloat(370.6722F, 199.7917F);
             this.rmCost_lbl.Multiline = true;
@@ -204,7 +205,8 @@ namespace ArgusCR1012.Manufacturing.Templates
             // qty_lbl
             // 
             this.qty_lbl.BackColor = System.Drawing.Color.Azure;
-            this.qty_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)((DevExpress.XtraPrinting.BorderSide.Top | DevExpress.XtraPrinting.BorderSide.Right)));
+            this.qty_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+            | DevExpress.XtraPrinting.BorderSide.Right)));
             this.qty_lbl.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold);
             this.qty_lbl.LocationFloat = new DevExpress.Utils.PointFloat(370.6722F, 164.375F);
             this.qty_lbl.Multiline = true;
@@ -585,7 +587,7 @@ namespace ArgusCR1012.Manufacturing.Templates
             this.productionItem_lbl.StylePriority.UseFont = false;
             this.productionItem_lbl.StylePriority.UsePadding = false;
             this.productionItem_lbl.StylePriority.UseTextAlignment = false;
-            this.productionItem_lbl.Text = "Production Item";
+            this.productionItem_lbl.Text = "Component Item";
             this.productionItem_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopCenter;
             this.productionItem_lbl.Weight = 1.7064088580189245D;
             // 
@@ -604,7 +606,7 @@ namespace ArgusCR1012.Manufacturing.Templates
             this.componentSite_lbl.StylePriority.UseFont = false;
             this.componentSite_lbl.StylePriority.UsePadding = false;
             this.componentSite_lbl.StylePriority.UseTextAlignment = false;
-            this.componentSite_lbl.Text = "Component Site";
+            this.componentSite_lbl.Text = "Site Name";
             this.componentSite_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopCenter;
             this.componentSite_lbl.Weight = 1.8275176538961231D;
             // 
