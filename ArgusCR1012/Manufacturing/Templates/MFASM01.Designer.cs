@@ -76,6 +76,10 @@ namespace ArgusCR1012.Manufacturing.Templates
             this.designQty_data = new DevExpress.XtraReports.UI.XRTableCell();
             this.productionQty_data = new DevExpress.XtraReports.UI.XRTableCell();
             this.costs_data = new DevExpress.XtraReports.UI.XRTableCell();
+            this.PageFooter = new DevExpress.XtraReports.UI.PageFooterBand();
+            this.pagesNumber_lbl = new DevExpress.XtraReports.UI.XRPageInfo();
+            this.printSignature_lbl = new DevExpress.XtraReports.UI.XRLabel();
+            this.ReportFooter = new DevExpress.XtraReports.UI.ReportFooterBand();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable2)).BeginInit();
@@ -806,12 +810,52 @@ namespace ArgusCR1012.Manufacturing.Templates
             this.costs_data.TextFormatString = "{0:#,#}";
             this.costs_data.Weight = 0.91511764839617271D;
             // 
+            // PageFooter
+            // 
+            this.PageFooter.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+            this.pagesNumber_lbl,
+            this.printSignature_lbl});
+            this.PageFooter.HeightF = 26.04167F;
+            this.PageFooter.Name = "PageFooter";
+            // 
+            // pagesNumber_lbl
+            // 
+            this.pagesNumber_lbl.BackColor = System.Drawing.Color.PowderBlue;
+            this.pagesNumber_lbl.LocationFloat = new DevExpress.Utils.PointFloat(687.5F, 0F);
+            this.pagesNumber_lbl.Name = "pagesNumber_lbl";
+            this.pagesNumber_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.pagesNumber_lbl.SizeF = new System.Drawing.SizeF(98.51514F, 23F);
+            this.pagesNumber_lbl.StylePriority.UseBackColor = false;
+            this.pagesNumber_lbl.StylePriority.UseTextAlignment = false;
+            this.pagesNumber_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            this.pagesNumber_lbl.TextFormatString = "Page {0} of {1}";
+            // 
+            // printSignature_lbl
+            // 
+            this.printSignature_lbl.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.printSignature_lbl.LocationFloat = new DevExpress.Utils.PointFloat(137.5F, 0F);
+            this.printSignature_lbl.Multiline = true;
+            this.printSignature_lbl.Name = "printSignature_lbl";
+            this.printSignature_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.printSignature_lbl.SizeF = new System.Drawing.SizeF(447.0301F, 23.00002F);
+            this.printSignature_lbl.StylePriority.UseFont = false;
+            this.printSignature_lbl.StylePriority.UseTextAlignment = false;
+            this.printSignature_lbl.Text = "printSignature";
+            this.printSignature_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
+            // 
+            // ReportFooter
+            // 
+            this.ReportFooter.HeightF = 26.04167F;
+            this.ReportFooter.Name = "ReportFooter";
+            // 
             // MFASM01
             // 
             this.Bands.AddRange(new DevExpress.XtraReports.UI.Band[] {
             this.ReportHeader,
             this.PageHeader,
-            this.Detail_data});
+            this.Detail_data,
+            this.PageFooter,
+            this.ReportFooter});
             this.Margins = new System.Drawing.Printing.Margins(27, 26, 100, 100);
             this.Version = "20.1";
             ((System.ComponentModel.ISupportInitialize)(this.xrTable3)).EndInit();
@@ -871,5 +915,9 @@ namespace ArgusCR1012.Manufacturing.Templates
         private DevExpress.XtraReports.UI.XRLabel qty_lbl;
         private DevExpress.XtraReports.UI.XRLabel notes_data;
         private DevExpress.XtraReports.UI.XRLabel notes_lbl;
+        private DevExpress.XtraReports.UI.PageFooterBand PageFooter;
+        private DevExpress.XtraReports.UI.XRLabel printSignature_lbl;
+        private DevExpress.XtraReports.UI.XRPageInfo pagesNumber_lbl;
+        private DevExpress.XtraReports.UI.ReportFooterBand ReportFooter;
     }
 }

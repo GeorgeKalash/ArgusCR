@@ -81,9 +81,6 @@ namespace ArgusCR1012.Manufacturing.Templates
             qty_lbl.Text = labelText(17);
             percentage_lbl.Text = labelText(18);
             siteName_lbl.Text = labelText(19);
-        
-            printSignature_lbl.Text = labelText(20);
-            pageNumber_lbl.Text = labelText(21);
         }
 
         protected override string dictionaryStore()

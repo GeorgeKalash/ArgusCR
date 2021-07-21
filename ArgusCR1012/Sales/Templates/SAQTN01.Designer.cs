@@ -1214,7 +1214,7 @@ namespace ArgusCR1012.Sales.Templates
             this.xrLabel12,
             this.xrPanel3,
             this.xrTable6});
-            this.PageFooter.HeightF = 156.9444F;
+            this.PageFooter.HeightF = 149.0971F;
             this.PageFooter.Name = "PageFooter";
             // 
             // xrLabel12

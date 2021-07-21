@@ -80,7 +80,7 @@ namespace ArgusCR1012.Manufacturing.Templates
             this.percentage_lbl = new DevExpress.XtraReports.UI.XRTableCell();
             this.siteName_lbl = new DevExpress.XtraReports.UI.XRTableCell();
             this.ReportFooter = new DevExpress.XtraReports.UI.ReportFooterBand();
-            this.pageNumber_lbl = new DevExpress.XtraReports.UI.XRPageInfo();
+            this.pagesNumber_lbl = new DevExpress.XtraReports.UI.XRPageInfo();
             this.printSignature_lbl = new DevExpress.XtraReports.UI.XRLabel();
             this.PageFooter = new DevExpress.XtraReports.UI.PageFooterBand();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable1)).BeginInit();
@@ -745,17 +745,17 @@ namespace ArgusCR1012.Manufacturing.Templates
             this.ReportFooter.HeightF = 31.54195F;
             this.ReportFooter.Name = "ReportFooter";
             // 
-            // pageNumber_lbl
+            // pagesNumber_lbl
             // 
-            this.pageNumber_lbl.BackColor = System.Drawing.Color.PowderBlue;
-            this.pageNumber_lbl.LocationFloat = new DevExpress.Utils.PointFloat(706.2501F, 0F);
-            this.pageNumber_lbl.Name = "pageNumber_lbl";
-            this.pageNumber_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.pageNumber_lbl.SizeF = new System.Drawing.SizeF(98.51514F, 23F);
-            this.pageNumber_lbl.StylePriority.UseBackColor = false;
-            this.pageNumber_lbl.StylePriority.UseTextAlignment = false;
-            this.pageNumber_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
-            this.pageNumber_lbl.TextFormatString = "Page {0} of {1}";
+            this.pagesNumber_lbl.BackColor = System.Drawing.Color.PowderBlue;
+            this.pagesNumber_lbl.LocationFloat = new DevExpress.Utils.PointFloat(706.2501F, 0F);
+            this.pagesNumber_lbl.Name = "pagesNumber_lbl";
+            this.pagesNumber_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.pagesNumber_lbl.SizeF = new System.Drawing.SizeF(98.51514F, 23F);
+            this.pagesNumber_lbl.StylePriority.UseBackColor = false;
+            this.pagesNumber_lbl.StylePriority.UseTextAlignment = false;
+            this.pagesNumber_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            this.pagesNumber_lbl.TextFormatString = "Page {0} of {1}";
             // 
             // printSignature_lbl
             // 
@@ -773,7 +773,7 @@ namespace ArgusCR1012.Manufacturing.Templates
             // PageFooter
             // 
             this.PageFooter.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
-            this.pageNumber_lbl,
+            this.pagesNumber_lbl,
             this.printSignature_lbl});
             this.PageFooter.HeightF = 32.08339F;
             this.PageFooter.Name = "PageFooter";
@@ -836,7 +836,7 @@ namespace ArgusCR1012.Manufacturing.Templates
         private DevExpress.XtraReports.UI.XRTableCell description_lbl;
         private DevExpress.XtraReports.UI.XRTableCell description_data;
         private DevExpress.XtraReports.UI.ReportFooterBand ReportFooter;
-        private DevExpress.XtraReports.UI.XRPageInfo pageNumber_lbl;
+        private DevExpress.XtraReports.UI.XRPageInfo pagesNumber_lbl;
         private DevExpress.XtraReports.UI.XRLabel printSignature_lbl;
         private DevExpress.XtraReports.UI.XRLabel tamdeedTitle_lbl;
         private DevExpress.XtraReports.UI.XRLabel masagTitle_lbl;

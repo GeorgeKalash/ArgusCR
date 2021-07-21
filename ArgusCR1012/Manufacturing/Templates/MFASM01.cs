@@ -69,7 +69,9 @@ namespace ArgusCR1012.Manufacturing.Templates
             rmCost_data.Text = webObject.record.header.rmCost.ToString("N2");
             rmSiteName_data.Text = webObject.record.header.rmSiteName;
 
+            printSignature_lbl.Text = reportSignature();
             base.OnBeforePrint(e);
+       
         }
 
         protected override void OnDataSourceRowChanged(DataSourceRowEventArgs e)
@@ -101,7 +103,6 @@ namespace ArgusCR1012.Manufacturing.Templates
             designQty_lbl.Text = labelText(15);
             productionQty_lbl.Text = labelText(16);
             costs_lbl.Text = labelText(17);
-
         }
 
         protected override string dictionaryStore()

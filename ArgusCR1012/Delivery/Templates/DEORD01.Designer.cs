@@ -114,7 +114,7 @@ namespace ArgusCR1012.Delivery.Templates
             this.PageFooter = new DevExpress.XtraReports.UI.PageFooterBand();
             this.bussinessInfo_lbl = new DevExpress.XtraReports.UI.XRLabel();
             this.printSignature_lbl = new DevExpress.XtraReports.UI.XRLabel();
-            this.numberpage_lbl = new DevExpress.XtraReports.UI.XRPageInfo();
+            this.pagesNumber_lbl = new DevExpress.XtraReports.UI.XRPageInfo();
             this.distributionDriver_lbl = new DevExpress.XtraReports.UI.XRLabel();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable4)).BeginInit();
@@ -1259,7 +1259,7 @@ namespace ArgusCR1012.Delivery.Templates
             this.PageFooter.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
             this.bussinessInfo_lbl,
             this.printSignature_lbl,
-            this.numberpage_lbl,
+            this.pagesNumber_lbl,
             this.distributionDriver_lbl});
             this.PageFooter.HeightF = 125.9377F;
             this.PageFooter.Name = "PageFooter";
@@ -1296,17 +1296,17 @@ namespace ArgusCR1012.Delivery.Templates
             this.printSignature_lbl.Text = "printSignature";
             this.printSignature_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
             // 
-            // numberpage_lbl
+            // pagesNumber_lbl
             // 
-            this.numberpage_lbl.BackColor = System.Drawing.Color.PowderBlue;
-            this.numberpage_lbl.LocationFloat = new DevExpress.Utils.PointFloat(712.5F, 87.5F);
-            this.numberpage_lbl.Name = "numberpage_lbl";
-            this.numberpage_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.numberpage_lbl.SizeF = new System.Drawing.SizeF(105.7315F, 23F);
-            this.numberpage_lbl.StylePriority.UseBackColor = false;
-            this.numberpage_lbl.StylePriority.UseTextAlignment = false;
-            this.numberpage_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
-            this.numberpage_lbl.TextFormatString = "Page {0} of {1}";
+            this.pagesNumber_lbl.BackColor = System.Drawing.Color.PowderBlue;
+            this.pagesNumber_lbl.LocationFloat = new DevExpress.Utils.PointFloat(712.5F, 87.5F);
+            this.pagesNumber_lbl.Name = "pagesNumber_lbl";
+            this.pagesNumber_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.pagesNumber_lbl.SizeF = new System.Drawing.SizeF(105.7315F, 23F);
+            this.pagesNumber_lbl.StylePriority.UseBackColor = false;
+            this.pagesNumber_lbl.StylePriority.UseTextAlignment = false;
+            this.pagesNumber_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            this.pagesNumber_lbl.TextFormatString = "Page {0} of {1}";
             // 
             // distributionDriver_lbl
             // 
@@ -1421,7 +1421,7 @@ namespace ArgusCR1012.Delivery.Templates
         private DevExpress.XtraReports.UI.XRLabel shippingMode_data;
         private DevExpress.XtraReports.UI.XRLabel shippingMode_lbl;
         private DevExpress.XtraReports.UI.XRLabel printSignature_lbl;
-        private DevExpress.XtraReports.UI.XRPageInfo numberpage_lbl;
+        private DevExpress.XtraReports.UI.XRPageInfo pagesNumber_lbl;
         public DevExpress.XtraReports.UI.XRLabel dlDetails_lbl;
         private DevExpress.XtraReports.UI.XRLabel deliveryNote_lbl;
         private DevExpress.XtraReports.UI.XRTableCell clientRef_data;
