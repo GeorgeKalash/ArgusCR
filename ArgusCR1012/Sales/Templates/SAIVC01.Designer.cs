@@ -1444,7 +1444,7 @@ namespace ArgusCR1012.Sales.Templates
             this.accountNo_lbl.Multiline = true;
             this.accountNo_lbl.Name = "accountNo_lbl";
             this.accountNo_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 4, 0, 100F);
-            this.accountNo_lbl.SizeF = new System.Drawing.SizeF(323.9583F, 25F);
+            this.accountNo_lbl.SizeF = new System.Drawing.SizeF(339.1667F, 25F);
             this.accountNo_lbl.StylePriority.UseBackColor = false;
             this.accountNo_lbl.StylePriority.UseBorderDashStyle = false;
             this.accountNo_lbl.StylePriority.UseBorders = false;
@@ -1650,7 +1650,7 @@ namespace ArgusCR1012.Sales.Templates
             this.xrTableRow11,
             this.xrTableRow12,
             this.xrTableRow13});
-            this.xrTable4.SizeF = new System.Drawing.SizeF(323.9583F, 107.3437F);
+            this.xrTable4.SizeF = new System.Drawing.SizeF(339.1667F, 107.3437F);
             this.xrTable4.StylePriority.UseBorders = false;
             this.xrTable4.StylePriority.UseTextAlignment = false;
             this.xrTable4.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
@@ -1801,7 +1801,7 @@ namespace ArgusCR1012.Sales.Templates
             this.xrTable1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable1.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow1});
-            this.xrTable1.SizeF = new System.Drawing.SizeF(323.9584F, 36.87503F);
+            this.xrTable1.SizeF = new System.Drawing.SizeF(339.1667F, 36.87503F);
             this.xrTable1.StylePriority.UseBorders = false;
             // 
             // xrTableRow1

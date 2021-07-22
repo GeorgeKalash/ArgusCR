@@ -512,7 +512,7 @@ namespace ArgusCR1012.Manufacturing.Templates
             // 
             // xrTable4
             // 
-            this.xrTable4.LocationFloat = new DevExpress.Utils.PointFloat(23.95833F, 0F);
+            this.xrTable4.LocationFloat = new DevExpress.Utils.PointFloat(25F, 0F);
             this.xrTable4.Name = "xrTable4";
             this.xrTable4.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable4.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
@@ -542,7 +542,7 @@ namespace ArgusCR1012.Manufacturing.Templates
             this.lineNo_data.StylePriority.UseTextAlignment = false;
             this.lineNo_data.Text = "lineNo";
             this.lineNo_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
-            this.lineNo_data.Weight = 0.29613100841679763D;
+            this.lineNo_data.Weight = 0.38008829117178189D;
             // 
             // skuComponent_data
             // 
@@ -557,7 +557,7 @@ namespace ArgusCR1012.Manufacturing.Templates
             this.skuComponent_data.StylePriority.UseTextAlignment = false;
             this.skuComponent_data.Text = "sku";
             this.skuComponent_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
-            this.skuComponent_data.Weight = 0.58846116774404134D;
+            this.skuComponent_data.Weight = 0.66596006517078354D;
             // 
             // itemNameComponent_data
             // 
@@ -572,7 +572,7 @@ namespace ArgusCR1012.Manufacturing.Templates
             this.itemNameComponent_data.StylePriority.UseTextAlignment = false;
             this.itemNameComponent_data.Text = "name";
             this.itemNameComponent_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
-            this.itemNameComponent_data.Weight = 1.8742020132670021D;
+            this.itemNameComponent_data.Weight = 1.9581596980864624D;
             // 
             // qty_data
             // 
@@ -588,7 +588,7 @@ namespace ArgusCR1012.Manufacturing.Templates
             this.qty_data.Text = "quantity";
             this.qty_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
             this.qty_data.TextFormatString = "{0:n3}";
-            this.qty_data.Weight = 0.68511653439273468D;
+            this.qty_data.Weight = 0.51074429308007008D;
             // 
             // percentage_data
             // 
@@ -603,7 +603,7 @@ namespace ArgusCR1012.Manufacturing.Templates
             this.percentage_data.StylePriority.UseTextAlignment = false;
             this.percentage_data.Text = "percentage_data";
             this.percentage_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
-            this.percentage_data.Weight = 0.56349963080935517D;
+            this.percentage_data.Weight = 0.4924580071208331D;
             // 
             // siteName_data
             // 
@@ -630,7 +630,7 @@ namespace ArgusCR1012.Manufacturing.Templates
             // xrTable3
             // 
             this.xrTable3.BackColor = System.Drawing.Color.Azure;
-            this.xrTable3.LocationFloat = new DevExpress.Utils.PointFloat(23.95833F, 0F);
+            this.xrTable3.LocationFloat = new DevExpress.Utils.PointFloat(25F, 0F);
             this.xrTable3.Name = "xrTable3";
             this.xrTable3.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable3.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
@@ -663,7 +663,7 @@ namespace ArgusCR1012.Manufacturing.Templates
             this.lineNo_lbl.StylePriority.UseTextAlignment = false;
             this.lineNo_lbl.Text = "lineNo";
             this.lineNo_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
-            this.lineNo_lbl.Weight = 0.20274553159367142D;
+            this.lineNo_lbl.Weight = 0.26022679099453561D;
             // 
             // skuComponent_lbl
             // 
@@ -678,7 +678,7 @@ namespace ArgusCR1012.Manufacturing.Templates
             this.skuComponent_lbl.StylePriority.UseTextAlignment = false;
             this.skuComponent_lbl.Text = "SKU";
             this.skuComponent_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
-            this.skuComponent_lbl.Weight = 0.40288877571136583D;
+            this.skuComponent_lbl.Weight = 0.455948281443816D;
             // 
             // itemNameComponent_lbl
             // 
@@ -693,7 +693,7 @@ namespace ArgusCR1012.Manufacturing.Templates
             this.itemNameComponent_lbl.StylePriority.UseTextAlignment = false;
             this.itemNameComponent_lbl.Text = "Name";
             this.itemNameComponent_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
-            this.itemNameComponent_lbl.Weight = 1.28316868819479D;
+            this.itemNameComponent_lbl.Weight = 1.3406502552533575D;
             // 
             // qty_lbl
             // 
@@ -708,7 +708,7 @@ namespace ArgusCR1012.Manufacturing.Templates
             this.qty_lbl.StylePriority.UseTextAlignment = false;
             this.qty_lbl.Text = "Quantity";
             this.qty_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
-            this.qty_lbl.Weight = 0.46906424373436895D;
+            this.qty_lbl.Weight = 0.34967987410916235D;
             // 
             // percentage_lbl
             // 
@@ -723,7 +723,7 @@ namespace ArgusCR1012.Manufacturing.Templates
             this.percentage_lbl.StylePriority.UseTextAlignment = false;
             this.percentage_lbl.Text = "Percentage";
             this.percentage_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
-            this.percentage_lbl.Weight = 0.38579841739114817D;
+            this.percentage_lbl.Weight = 0.33716045482447271D;
             // 
             // siteName_lbl
             // 
@@ -748,7 +748,7 @@ namespace ArgusCR1012.Manufacturing.Templates
             // 
             // pagesNumber_lbl
             // 
-            this.pagesNumber_lbl.BackColor = System.Drawing.Color.PowderBlue;
+            this.pagesNumber_lbl.BackColor = System.Drawing.Color.White;
             this.pagesNumber_lbl.LocationFloat = new DevExpress.Utils.PointFloat(706.2501F, 0F);
             this.pagesNumber_lbl.Name = "pagesNumber_lbl";
             this.pagesNumber_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);

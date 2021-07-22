@@ -1285,12 +1285,14 @@ namespace ArgusCR1012.Delivery.Templates
             // 
             // printSignature_lbl
             // 
+            this.printSignature_lbl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.printSignature_lbl.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.printSignature_lbl.LocationFloat = new DevExpress.Utils.PointFloat(137.5F, 87.5F);
             this.printSignature_lbl.Multiline = true;
             this.printSignature_lbl.Name = "printSignature_lbl";
             this.printSignature_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.printSignature_lbl.SizeF = new System.Drawing.SizeF(447.0302F, 23F);
+            this.printSignature_lbl.StylePriority.UseBackColor = false;
             this.printSignature_lbl.StylePriority.UseFont = false;
             this.printSignature_lbl.StylePriority.UseTextAlignment = false;
             this.printSignature_lbl.Text = "printSignature";
@@ -1298,7 +1300,7 @@ namespace ArgusCR1012.Delivery.Templates
             // 
             // pagesNumber_lbl
             // 
-            this.pagesNumber_lbl.BackColor = System.Drawing.Color.PowderBlue;
+            this.pagesNumber_lbl.BackColor = System.Drawing.Color.White;
             this.pagesNumber_lbl.LocationFloat = new DevExpress.Utils.PointFloat(712.5F, 87.5F);
             this.pagesNumber_lbl.Name = "pagesNumber_lbl";
             this.pagesNumber_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
