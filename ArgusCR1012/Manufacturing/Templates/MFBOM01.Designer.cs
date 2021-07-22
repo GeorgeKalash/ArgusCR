@@ -95,7 +95,7 @@ namespace ArgusCR1012.Manufacturing.Templates
             this.tamdeedTitle_lbl,
             this.masagTitle_lbl,
             this.xrTable1});
-            this.ReportHeader.HeightF = 342.5415F;
+            this.ReportHeader.HeightF = 325.8748F;
             this.ReportHeader.Name = "ReportHeader";
             // 
             // bomTitle_lbl
@@ -742,6 +742,7 @@ namespace ArgusCR1012.Manufacturing.Templates
             // 
             // ReportFooter
             // 
+            this.ReportFooter.Expanded = false;
             this.ReportFooter.HeightF = 31.54195F;
             this.ReportFooter.Name = "ReportFooter";
             // 
