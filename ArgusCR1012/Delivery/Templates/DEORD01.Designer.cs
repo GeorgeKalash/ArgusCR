@@ -1261,7 +1261,7 @@ namespace ArgusCR1012.Delivery.Templates
             this.printSignature_lbl,
             this.pagesNumber_lbl,
             this.distributionDriver_lbl});
-            this.PageFooter.HeightF = 125.9377F;
+            this.PageFooter.HeightF = 110.5F;
             this.PageFooter.Name = "PageFooter";
             this.PageFooter.StylePriority.UseBackColor = false;
             // 

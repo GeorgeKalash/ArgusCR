@@ -982,7 +982,7 @@ namespace ArgusCR1012.Sales.Templates
             this.xrTable15,
             this.xrTable14,
             this.xrTable13});
-            this.PageFooter.HeightF = 190.0834F;
+            this.PageFooter.HeightF = 169.875F;
             this.PageFooter.Name = "PageFooter";
             // 
             // info_lbl

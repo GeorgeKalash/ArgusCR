@@ -1001,7 +1001,7 @@ namespace ArgusCR1012.Sales.Templates
             this.PageFooter.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
             this.xrLabel13,
             this.distribution_lbl});
-            this.PageFooter.HeightF = 36.91476F;
+            this.PageFooter.HeightF = 34.79169F;
             this.PageFooter.Name = "PageFooter";
             // 
             // xrLabel13

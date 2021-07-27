@@ -68,7 +68,6 @@ namespace ArgusCR1012.Manufacturing.Templates
             this.skuComponent_data = new DevExpress.XtraReports.UI.XRTableCell();
             this.itemNameComponent_data = new DevExpress.XtraReports.UI.XRTableCell();
             this.qty_data = new DevExpress.XtraReports.UI.XRTableCell();
-            this.percentage_data = new DevExpress.XtraReports.UI.XRTableCell();
             this.siteName_data = new DevExpress.XtraReports.UI.XRTableCell();
             this.PageHeader = new DevExpress.XtraReports.UI.PageHeaderBand();
             this.xrTable3 = new DevExpress.XtraReports.UI.XRTable();
@@ -77,7 +76,6 @@ namespace ArgusCR1012.Manufacturing.Templates
             this.skuComponent_lbl = new DevExpress.XtraReports.UI.XRTableCell();
             this.itemNameComponent_lbl = new DevExpress.XtraReports.UI.XRTableCell();
             this.qty_lbl = new DevExpress.XtraReports.UI.XRTableCell();
-            this.percentage_lbl = new DevExpress.XtraReports.UI.XRTableCell();
             this.siteName_lbl = new DevExpress.XtraReports.UI.XRTableCell();
             this.ReportFooter = new DevExpress.XtraReports.UI.ReportFooterBand();
             this.pagesNumber_lbl = new DevExpress.XtraReports.UI.XRPageInfo();
@@ -517,7 +515,7 @@ namespace ArgusCR1012.Manufacturing.Templates
             this.xrTable4.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable4.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow4});
-            this.xrTable4.SizeF = new System.Drawing.SizeF(799.5569F, 30.83331F);
+            this.xrTable4.SizeF = new System.Drawing.SizeF(798.5152F, 30.83331F);
             // 
             // xrTableRow4
             // 
@@ -526,7 +524,6 @@ namespace ArgusCR1012.Manufacturing.Templates
             this.skuComponent_data,
             this.itemNameComponent_data,
             this.qty_data,
-            this.percentage_data,
             this.siteName_data});
             this.xrTableRow4.Name = "xrTableRow4";
             this.xrTableRow4.Weight = 1D;
@@ -590,21 +587,6 @@ namespace ArgusCR1012.Manufacturing.Templates
             this.qty_data.TextFormatString = "{0:n3}";
             this.qty_data.Weight = 0.51074429308007008D;
             // 
-            // percentage_data
-            // 
-            this.percentage_data.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
-            | DevExpress.XtraPrinting.BorderSide.Right) 
-            | DevExpress.XtraPrinting.BorderSide.Bottom)));
-            this.percentage_data.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[percentage]")});
-            this.percentage_data.Multiline = true;
-            this.percentage_data.Name = "percentage_data";
-            this.percentage_data.StylePriority.UseBorders = false;
-            this.percentage_data.StylePriority.UseTextAlignment = false;
-            this.percentage_data.Text = "percentage_data";
-            this.percentage_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
-            this.percentage_data.Weight = 0.4924580071208331D;
-            // 
             // siteName_data
             // 
             this.siteName_data.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
@@ -635,7 +617,7 @@ namespace ArgusCR1012.Manufacturing.Templates
             this.xrTable3.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable3.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow3});
-            this.xrTable3.SizeF = new System.Drawing.SizeF(799.5569F, 32.50001F);
+            this.xrTable3.SizeF = new System.Drawing.SizeF(798.5152F, 32.50001F);
             this.xrTable3.StylePriority.UseBackColor = false;
             // 
             // xrTableRow3
@@ -645,7 +627,6 @@ namespace ArgusCR1012.Manufacturing.Templates
             this.skuComponent_lbl,
             this.itemNameComponent_lbl,
             this.qty_lbl,
-            this.percentage_lbl,
             this.siteName_lbl});
             this.xrTableRow3.Name = "xrTableRow3";
             this.xrTableRow3.Weight = 1D;
@@ -709,21 +690,6 @@ namespace ArgusCR1012.Manufacturing.Templates
             this.qty_lbl.Text = "Quantity";
             this.qty_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             this.qty_lbl.Weight = 0.34967987410916235D;
-            // 
-            // percentage_lbl
-            // 
-            this.percentage_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
-            | DevExpress.XtraPrinting.BorderSide.Right) 
-            | DevExpress.XtraPrinting.BorderSide.Bottom)));
-            this.percentage_lbl.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold);
-            this.percentage_lbl.Multiline = true;
-            this.percentage_lbl.Name = "percentage_lbl";
-            this.percentage_lbl.StylePriority.UseBorders = false;
-            this.percentage_lbl.StylePriority.UseFont = false;
-            this.percentage_lbl.StylePriority.UseTextAlignment = false;
-            this.percentage_lbl.Text = "Percentage";
-            this.percentage_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
-            this.percentage_lbl.Weight = 0.33716045482447271D;
             // 
             // siteName_lbl
             // 
@@ -848,9 +814,7 @@ namespace ArgusCR1012.Manufacturing.Templates
         private DevExpress.XtraReports.UI.XRTableCell itemName_data;
         private DevExpress.XtraReports.UI.XRTableCell bomQty_lbl;
         private DevExpress.XtraReports.UI.XRTableCell bomQty_data;
-        private DevExpress.XtraReports.UI.XRTableCell percentage_data;
         private DevExpress.XtraReports.UI.XRTableCell siteName_data;
-        private DevExpress.XtraReports.UI.XRTableCell percentage_lbl;
         private DevExpress.XtraReports.UI.XRTableCell siteName_lbl;
         private DevExpress.XtraReports.UI.PageFooterBand PageFooter;
     }

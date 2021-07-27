@@ -750,7 +750,7 @@ namespace ArgusCR1012.Manufacturing.Templates
             this.componentSite_data.StylePriority.UseFont = false;
             this.componentSite_data.StylePriority.UsePadding = false;
             this.componentSite_data.StylePriority.UseTextAlignment = false;
-            this.componentSite_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopCenter;
+            this.componentSite_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
             this.componentSite_data.Weight = 1.9288450279777374D;
             // 
             // designQty_data
@@ -787,7 +787,7 @@ namespace ArgusCR1012.Manufacturing.Templates
             this.productionQty_data.StylePriority.UseFont = false;
             this.productionQty_data.StylePriority.UsePadding = false;
             this.productionQty_data.StylePriority.UseTextAlignment = false;
-            this.productionQty_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
+            this.productionQty_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
             this.productionQty_data.TextFormatString = "{0:n3}";
             this.productionQty_data.Weight = 1.3765508894240681D;
             // 
@@ -815,7 +815,7 @@ namespace ArgusCR1012.Manufacturing.Templates
             this.PageFooter.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
             this.pagesNumber_lbl,
             this.printSignature_lbl});
-            this.PageFooter.HeightF = 26.04167F;
+            this.PageFooter.HeightF = 23.00002F;
             this.PageFooter.Name = "PageFooter";
             // 
             // pagesNumber_lbl
@@ -845,6 +845,7 @@ namespace ArgusCR1012.Manufacturing.Templates
             // 
             // ReportFooter
             // 
+            this.ReportFooter.Expanded = false;
             this.ReportFooter.HeightF = 26.04167F;
             this.ReportFooter.Name = "ReportFooter";
             // 
