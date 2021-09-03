@@ -144,6 +144,24 @@
       <DependentUpon>MFBOM01.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Purchase\Templates\PUIVC01.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Purchase\Templates\PUIVC01.Designer.cs">
+      <DependentUpon>PUIVC01.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\Templates\PUORD01.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Purchase\Templates\PUORD01.Designer.cs">
+      <DependentUpon>PUORD01.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\Templates\PUSHP01.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Purchase\Templates\PUSHP01.Designer.cs">
+      <DependentUpon>PUSHP01.cs</DependentUpon>
+    </Compile>
     <Compile Include="Sales\Templates\SAIVC01.cs">
       <SubType>Component</SubType>
     </Compile>
