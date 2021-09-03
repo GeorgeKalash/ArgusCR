@@ -40,7 +40,8 @@ namespace ArgusCR1012.Sales.Templates
             amount_data.Text = webObject.record.trxHeader.amount.ToString("N2");
 
             QRCode.Text = "Invoice Ref: " + webObject.record.trxHeader.reference;
-            QRCode.Text += string.Format("\nVAT No: {0}", "123456");
+            QRCode.Text += string.Format("\nSupplier Name: {0}", webObject.record.companyInfo.name);
+            QRCode.Text += string.Format("\nVAT No: {0}", webObject.record.companyInfo.taxNo);
             QRCode.Text += string.Format("\nClient Name: {0}", webObject.record.trxHeader.clientName);
             QRCode.Text += string.Format("\nVAT No: {0}", webObject.record.trxHeader.clientVATNo);
             QRCode.Text += string.Format("\nInvoice Amount: {0}", webObject.record.trxHeader.amount);
