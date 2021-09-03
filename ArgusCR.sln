@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharedClasses", "..\..\Shar
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AionRPT", "..\..\Aion\AionRPT\AionRPT.csproj", "{415EA0CB-E0CB-44C4-9094-8B1562DE7C9B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AionDS", "..\..\Aion\AionDS\AionDS.csproj", "{E35EA772-2BE0-4052-A79A-4000B33A7173}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +59,10 @@ Global
 		{415EA0CB-E0CB-44C4-9094-8B1562DE7C9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{415EA0CB-E0CB-44C4-9094-8B1562DE7C9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{415EA0CB-E0CB-44C4-9094-8B1562DE7C9B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E35EA772-2BE0-4052-A79A-4000B33A7173}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E35EA772-2BE0-4052-A79A-4000B33A7173}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E35EA772-2BE0-4052-A79A-4000B33A7173}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E35EA772-2BE0-4052-A79A-4000B33A7173}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
