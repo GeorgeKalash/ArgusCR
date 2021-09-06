@@ -65,7 +65,7 @@
             this.xrTableRow5 = new DevExpress.XtraReports.UI.XRTableRow();
             this.plantName_lbl = new DevExpress.XtraReports.UI.XRTableCell();
             this.currencyName_data = new DevExpress.XtraReports.UI.XRTableCell();
-            this.currency_lbl = new DevExpress.XtraReports.UI.XRTableCell();
+            this.currencyName_lbl = new DevExpress.XtraReports.UI.XRTableCell();
             this.reference_data = new DevExpress.XtraReports.UI.XRTableCell();
             this.reference_lbl = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTableRow4 = new DevExpress.XtraReports.UI.XRTableRow();
@@ -649,22 +649,22 @@
             this.currencyName_data.Text = "currencyName_data";
             this.currencyName_data.Weight = 1.3072195223066596D;
             // 
-            // currency_lbl
+            // currencyName_lbl
             // 
-            this.currency_lbl.BackColor = System.Drawing.Color.Azure;
-            this.currency_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+            this.currencyName_lbl.BackColor = System.Drawing.Color.Azure;
+            this.currencyName_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
-            this.currency_lbl.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold);
-            this.currency_lbl.Multiline = true;
-            this.currency_lbl.Name = "currency_lbl";
-            this.currency_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(7, 2, 8, 0, 100F);
-            this.currency_lbl.StylePriority.UseBackColor = false;
-            this.currency_lbl.StylePriority.UseBorders = false;
-            this.currency_lbl.StylePriority.UseFont = false;
-            this.currency_lbl.StylePriority.UsePadding = false;
-            this.currency_lbl.Text = "currency_lbl";
-            this.currency_lbl.Weight = 0.6927804776933405D;
+            this.currencyName_lbl.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold);
+            this.currencyName_lbl.Multiline = true;
+            this.currencyName_lbl.Name = "currencyName_lbl";
+            this.currencyName_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(7, 2, 8, 0, 100F);
+            this.currencyName_lbl.StylePriority.UseBackColor = false;
+            this.currencyName_lbl.StylePriority.UseBorders = false;
+            this.currencyName_lbl.StylePriority.UseFont = false;
+            this.currencyName_lbl.StylePriority.UsePadding = false;
+            this.currencyName_lbl.Text = "currencyName_lbl";
+            this.currencyName_lbl.Weight = 0.6927804776933405D;
             // 
             // reference_data
             // 
@@ -701,7 +701,7 @@
             this.xrTableRow4.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
             this.reference_lbl,
             this.reference_data,
-            this.currency_lbl,
+            this.currencyName_lbl,
             this.currencyName_data});
             this.xrTableRow4.Name = "xrTableRow4";
             this.xrTableRow4.Weight = 1D;
@@ -950,7 +950,7 @@
         private DevExpress.XtraReports.UI.XRTableCell vendorRef_lbl;
         private DevExpress.XtraReports.UI.XRTableRow xrTableRow5;
         private DevExpress.XtraReports.UI.XRTableCell currencyName_data;
-        private DevExpress.XtraReports.UI.XRTableCell currency_lbl;
+        private DevExpress.XtraReports.UI.XRTableCell currencyName_lbl;
         private DevExpress.XtraReports.UI.XRTableCell reference_data;
         private DevExpress.XtraReports.UI.XRTableCell reference_lbl;
         private DevExpress.XtraReports.UI.XRTableRow xrTableRow4;

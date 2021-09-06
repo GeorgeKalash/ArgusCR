@@ -50,7 +50,7 @@ namespace ArgusCR1012.Purchase.Templates
             vendorName_lbl.Text = labelText(4);
 
             date_lbl.Text = labelText(5);
-            currency_lbl.Text = labelText(6);
+            currencyName_lbl.Text = labelText(6);
             plantName_lbl.Text = labelText(7);
             pmName_lbl.Text = labelText(8);
             deliveryDate_lbl.Text = labelText(9);
