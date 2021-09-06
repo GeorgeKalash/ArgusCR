@@ -192,6 +192,15 @@
       <DependentUpon>MFBOM01.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Purchase\Templates\PUIVC01.resx">
+      <DependentUpon>PUIVC01.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\Templates\PUORD01.resx">
+      <DependentUpon>PUORD01.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\Templates\PUSHP01.resx">
+      <DependentUpon>PUSHP01.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Sales\Templates\SAIVC01.resx">
       <DependentUpon>SAIVC01.cs</DependentUpon>
     </EmbeddedResource>
