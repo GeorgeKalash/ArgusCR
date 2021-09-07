@@ -21,7 +21,7 @@ namespace ArgusCR1012.Purchase.Templates
 
         protected override void OnBeforePrint(PrintEventArgs e)
         {
-            SharedClasses.JsonProtocol.GetStructure<ArgusDS.Purchase.Reports.OrderPrintLayout> webObject = deserializeGet<ArgusDS.Purchase.Reports.OrderPrintLayout>();
+            SharedClasses.JsonProtocol.GetStructure<ArgusDS.Purchase.Reports.InvoicePrintLayout> webObject = deserializeGet<ArgusDS.Purchase.Reports.InvoicePrintLayout>();
             DataSource = webObject.record.items;
 
             dtName_data.Text = webObject.record.header.dtName;

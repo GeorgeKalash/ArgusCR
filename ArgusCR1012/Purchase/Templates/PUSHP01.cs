@@ -21,7 +21,7 @@ namespace ArgusCR1012.Purchase.Templates
 
         protected override void OnBeforePrint(PrintEventArgs e)
         {
-            SharedClasses.JsonProtocol.GetStructure<ArgusDS.Purchase.Reports.OrderPrintLayout> webObject = deserializeGet<ArgusDS.Purchase.Reports.OrderPrintLayout>();
+            SharedClasses.JsonProtocol.GetStructure<ArgusDS.Purchase.Reports.ShipmentPrintLayout> webObject = deserializeGet<ArgusDS.Purchase.Reports.ShipmentPrintLayout>();
             DataSource = webObject.record.items;
 
             dtName_data.Text = webObject.record.header.dtName;
@@ -31,8 +31,9 @@ namespace ArgusCR1012.Purchase.Templates
 
             date_data.Text = webObject.record.header.date.ToString(sessionInfo.dateFormat);
             plantName_data.Text = webObject.record.header.plantName;
-            siteName_data.Text = webObject.record.header.pmName;
-          
+            siteName_data.Text = webObject.record.header.siteName;
+            poRef_data.Text = webObject.record.header.poRef;
+
 
             printSignature_lbl.Text = reportSignature();
             base.OnBeforePrint(e);
