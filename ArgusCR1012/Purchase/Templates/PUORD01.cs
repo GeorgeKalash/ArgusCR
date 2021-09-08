@@ -61,9 +61,10 @@ namespace ArgusCR1012.Purchase.Templates
             qty_lbl.Text = labelText(13);
             unitPrice_lbl.Text = labelText(14);
             vatAmount_lbl.Text = labelText(15);
-            mdValue_lbl.Text = labelText(16);
+            mdAmount_lbl.Text = labelText(16);
             extendedPrice_lbl.Text = labelText(17);
-            notes_lbl.Text = labelText(18);
+            amount_lbl.Text = labelText(18);
+            notes_lbl.Text = labelText(19);
         }
 
         protected override string dictionaryStore()
