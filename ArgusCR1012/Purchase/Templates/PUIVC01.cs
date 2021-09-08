@@ -33,7 +33,8 @@ namespace ArgusCR1012.Purchase.Templates
             currencyName_data.Text = webObject.record.header.currencyName;
             plantName_data.Text = webObject.record.header.plantName;
             pmName_data.Text = webObject.record.header.pmName;
-          
+            dueDate_data.Text = webObject.record.header.dueDate.ToString(sessionInfo.dateFormat);
+
             printSignature_lbl.Text = reportSignature();
             base.OnBeforePrint(e);
         }
@@ -50,15 +51,16 @@ namespace ArgusCR1012.Purchase.Templates
             currencyName_lbl.Text = labelText(6);
             plantName_lbl.Text = labelText(7);
             pmName_lbl.Text = labelText(8);
+            dueDate_lbl.Text = labelText(9);
 
-            sku_lbl.Text = labelText(9);
-            itemName_lbl.Text = labelText(10);
-            qty_lbl.Text = labelText(11);
-            unitPrice_lbl.Text = labelText(12);
-            vatAmount_lbl.Text = labelText(13);
-            mdValue_lbl.Text = labelText(14);
-            extendedPrice_lbl.Text = labelText(15);
-            notes_lbl.Text = labelText(16);
+            sku_lbl.Text = labelText(10);
+            itemName_lbl.Text = labelText(11);
+            qty_lbl.Text = labelText(12);
+            unitPrice_lbl.Text = labelText(13);
+            vatAmount_lbl.Text = labelText(14);
+            mdValue_lbl.Text = labelText(15);
+            extendedPrice_lbl.Text = labelText(16);
+            notes_lbl.Text = labelText(17);
         }
 
         protected override string dictionaryStore()

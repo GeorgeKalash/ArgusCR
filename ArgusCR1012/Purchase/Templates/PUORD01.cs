@@ -34,7 +34,7 @@ namespace ArgusCR1012.Purchase.Templates
             currencyName_data.Text = webObject.record.header.currencyName;
             plantName_data.Text = webObject.record.header.plantName;
             pmName_data.Text = webObject.record.header.pmName;
-            deliveryDate_data.Text = webObject.record.header.date.ToString(sessionInfo.dateFormat);
+            deliveryDate_data.Text = ((DateTime)webObject.record.header.deliveryDate).ToString(sessionInfo.dateFormat);
             exWorksCheckBox.Checked = webObject.record.header.exWorks == true;
 
             printSignature_lbl.Text = reportSignature();

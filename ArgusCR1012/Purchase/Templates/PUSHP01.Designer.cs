@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            DevExpress.XtraReports.UI.XRSummary xrSummary1 = new DevExpress.XtraReports.UI.XRSummary();
             this.ReportHeader = new DevExpress.XtraReports.UI.ReportHeaderBand();
             this.shipment_lbl = new DevExpress.XtraReports.UI.XRLabel();
             this.xrTable3 = new DevExpress.XtraReports.UI.XRTable();
@@ -57,18 +58,18 @@
             this.sku_lbl = new DevExpress.XtraReports.UI.XRTableCell();
             this.itemName_lbl = new DevExpress.XtraReports.UI.XRTableCell();
             this.qty_lbl = new DevExpress.XtraReports.UI.XRTableCell();
-            this.site_lbl = new DevExpress.XtraReports.UI.XRTableCell();
             this.Detail = new DevExpress.XtraReports.UI.DetailBand();
             this.xrTable2 = new DevExpress.XtraReports.UI.XRTable();
             this.xrTableRow2 = new DevExpress.XtraReports.UI.XRTableRow();
             this.sku_data = new DevExpress.XtraReports.UI.XRTableCell();
             this.itemName_data = new DevExpress.XtraReports.UI.XRTableCell();
             this.qty_data = new DevExpress.XtraReports.UI.XRTableCell();
-            this.site_data = new DevExpress.XtraReports.UI.XRTableCell();
             this.ReportFooter = new DevExpress.XtraReports.UI.ReportFooterBand();
             this.PageFooter = new DevExpress.XtraReports.UI.PageFooterBand();
             this.pagesNumber_lbl = new DevExpress.XtraReports.UI.XRPageInfo();
             this.printSignature_lbl = new DevExpress.XtraReports.UI.XRLabel();
+            this.GroupFooter1 = new DevExpress.XtraReports.UI.GroupFooterBand();
+            this.groupSumQty = new DevExpress.XtraReports.UI.XRLabel();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable2)).BeginInit();
@@ -409,15 +410,14 @@
             this.xrTable1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable1.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow1});
-            this.xrTable1.SizeF = new System.Drawing.SizeF(742.265F, 30.62499F);
+            this.xrTable1.SizeF = new System.Drawing.SizeF(746.4319F, 30.62499F);
             // 
             // xrTableRow1
             // 
             this.xrTableRow1.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
             this.sku_lbl,
             this.itemName_lbl,
-            this.qty_lbl,
-            this.site_lbl});
+            this.qty_lbl});
             this.xrTableRow1.Name = "xrTableRow1";
             this.xrTableRow1.Weight = 1D;
             // 
@@ -478,25 +478,6 @@
             this.qty_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopCenter;
             this.qty_lbl.Weight = 1.0884488948153215D;
             // 
-            // site_lbl
-            // 
-            this.site_lbl.BackColor = System.Drawing.Color.Azure;
-            this.site_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
-            | DevExpress.XtraPrinting.BorderSide.Right) 
-            | DevExpress.XtraPrinting.BorderSide.Bottom)));
-            this.site_lbl.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold);
-            this.site_lbl.Multiline = true;
-            this.site_lbl.Name = "site_lbl";
-            this.site_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 5, 0, 100F);
-            this.site_lbl.StylePriority.UseBackColor = false;
-            this.site_lbl.StylePriority.UseBorders = false;
-            this.site_lbl.StylePriority.UseFont = false;
-            this.site_lbl.StylePriority.UsePadding = false;
-            this.site_lbl.StylePriority.UseTextAlignment = false;
-            this.site_lbl.Text = "site_lbl";
-            this.site_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopCenter;
-            this.site_lbl.Weight = 2.8719904488678178D;
-            // 
             // Detail
             // 
             this.Detail.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
@@ -511,15 +492,14 @@
             this.xrTable2.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable2.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow2});
-            this.xrTable2.SizeF = new System.Drawing.SizeF(742.265F, 31.66666F);
+            this.xrTable2.SizeF = new System.Drawing.SizeF(746.4319F, 31.66666F);
             // 
             // xrTableRow2
             // 
             this.xrTableRow2.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
             this.sku_data,
             this.itemName_data,
-            this.qty_data,
-            this.site_data});
+            this.qty_data});
             this.xrTableRow2.Name = "xrTableRow2";
             this.xrTableRow2.Weight = 1D;
             // 
@@ -583,30 +563,9 @@
             this.qty_data.StylePriority.UsePadding = false;
             this.qty_data.StylePriority.UseTextAlignment = false;
             this.qty_data.Text = "qty_data";
-            this.qty_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
+            this.qty_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
             this.qty_data.TextFormatString = "{0:n2}";
             this.qty_data.Weight = 1.0823387952967694D;
-            // 
-            // site_data
-            // 
-            this.site_data.BackColor = System.Drawing.Color.Transparent;
-            this.site_data.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
-            | DevExpress.XtraPrinting.BorderSide.Right) 
-            | DevExpress.XtraPrinting.BorderSide.Bottom)));
-            this.site_data.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[siteName]")});
-            this.site_data.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold);
-            this.site_data.Multiline = true;
-            this.site_data.Name = "site_data";
-            this.site_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 5, 0, 100F);
-            this.site_data.StylePriority.UseBackColor = false;
-            this.site_data.StylePriority.UseBorders = false;
-            this.site_data.StylePriority.UseFont = false;
-            this.site_data.StylePriority.UsePadding = false;
-            this.site_data.StylePriority.UseTextAlignment = false;
-            this.site_data.Text = "site_data";
-            this.site_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
-            this.site_data.Weight = 2.87810054838637D;
             // 
             // ReportFooter
             // 
@@ -646,6 +605,33 @@
             this.printSignature_lbl.Text = "printSignature";
             this.printSignature_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
             // 
+            // GroupFooter1
+            // 
+            this.GroupFooter1.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+            this.groupSumQty});
+            this.GroupFooter1.HeightF = 27.08333F;
+            this.GroupFooter1.Name = "GroupFooter1";
+            // 
+            // groupSumQty
+            // 
+            this.groupSumQty.CanGrow = false;
+            this.groupSumQty.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "sumSum([qty])")});
+            this.groupSumQty.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold);
+            this.groupSumQty.LocationFloat = new DevExpress.Utils.PointFloat(626.5356F, 0F);
+            this.groupSumQty.Name = "groupSumQty";
+            this.groupSumQty.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 5, 0, 100F);
+            this.groupSumQty.SizeF = new System.Drawing.SizeF(157.3962F, 27.08333F);
+            this.groupSumQty.StylePriority.UseFont = false;
+            this.groupSumQty.StylePriority.UsePadding = false;
+            this.groupSumQty.StylePriority.UseTextAlignment = false;
+            xrSummary1.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
+            this.groupSumQty.Summary = xrSummary1;
+            this.groupSumQty.Text = "groupSumQty";
+            this.groupSumQty.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
+            this.groupSumQty.TextFormatString = "{0:n2}";
+            this.groupSumQty.WordWrap = false;
+            // 
             // PUSHP01
             // 
             this.Bands.AddRange(new DevExpress.XtraReports.UI.Band[] {
@@ -653,7 +639,8 @@
             this.PageHeader,
             this.Detail,
             this.ReportFooter,
-            this.PageFooter});
+            this.PageFooter,
+            this.GroupFooter1});
             this.Margins = new System.Drawing.Printing.Margins(0, 0, 100, 100);
             this.PageHeight = 1169;
             this.PageWidth = 827;
@@ -681,12 +668,10 @@
         private DevExpress.XtraReports.UI.XRTableCell sku_lbl;
         private DevExpress.XtraReports.UI.XRTableCell itemName_lbl;
         private DevExpress.XtraReports.UI.XRTableCell qty_lbl;
-        private DevExpress.XtraReports.UI.XRTableCell site_lbl;
         private DevExpress.XtraReports.UI.XRTable xrTable2;
         private DevExpress.XtraReports.UI.XRTableRow xrTableRow2;
         private DevExpress.XtraReports.UI.XRTableCell sku_data;
         private DevExpress.XtraReports.UI.XRTableCell itemName_data;
-        private DevExpress.XtraReports.UI.XRTableCell site_data;
         private DevExpress.XtraReports.UI.XRTable xrTable3;
         private DevExpress.XtraReports.UI.XRTableRow xrTableRow3;
         private DevExpress.XtraReports.UI.XRTableCell dtName_lbl;
@@ -710,5 +695,7 @@
         private DevExpress.XtraReports.UI.XRTableCell poRef_data;
         private DevExpress.XtraReports.UI.XRLabel shipment_lbl;
         private DevExpress.XtraReports.UI.XRTableCell qty_data;
+        private DevExpress.XtraReports.UI.GroupFooterBand GroupFooter1;
+        private DevExpress.XtraReports.UI.XRLabel groupSumQty;
     }
 }
