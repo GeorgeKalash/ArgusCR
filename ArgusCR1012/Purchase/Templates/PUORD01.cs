@@ -37,6 +37,10 @@ namespace ArgusCR1012.Purchase.Templates
             deliveryDate_data.Text = ((DateTime)webObject.record.header.deliveryDate).ToString(sessionInfo.dateFormat);
             exWorksCheckBox.Checked = webObject.record.header.exWorks == true;
 
+            subtotal_data.Text = webObject.record.header.subtotal.ToString("N2");
+            vatAmount_data.Text = webObject.record.header.vatAmount.ToString("N2");
+            amount_data.Text = webObject.record.header.amount.ToString("N2");
+
             printSignature_lbl.Text = reportSignature();
             base.OnBeforePrint(e);
         }
@@ -60,11 +64,15 @@ namespace ArgusCR1012.Purchase.Templates
             itemName_lbl.Text = labelText(12);
             qty_lbl.Text = labelText(13);
             unitPrice_lbl.Text = labelText(14);
-            vatAmount_lbl.Text = labelText(15);
+            vtAmount_lbl.Text = labelText(15);
             mdAmount_lbl.Text = labelText(16);
             extendedPrice_lbl.Text = labelText(17);
-            amount_lbl.Text = labelText(18);
-            notes_lbl.Text = labelText(19);
+            notes_lbl.Text = labelText(18);
+
+            TotalQuantity_lbl.Text = labelText(19);
+            subtotal_lbl.Text = labelText(20);
+            vatAmount_lbl.Text = labelText(21);
+            amount_lbl.Text = labelText(22);
         }
 
         protected override string dictionaryStore()

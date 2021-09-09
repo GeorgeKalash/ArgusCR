@@ -35,6 +35,10 @@ namespace ArgusCR1012.Purchase.Templates
             pmName_data.Text = webObject.record.header.pmName;
             dueDate_data.Text = webObject.record.header.dueDate.ToString(sessionInfo.dateFormat);
 
+            subtotal_data.Text = webObject.record.header.subtotal.ToString("N2");
+            vatAmount_data.Text = webObject.record.header.vatAmount.ToString("N2");
+            amount_data.Text = webObject.record.header.amount.ToString("N2");
+
             printSignature_lbl.Text = reportSignature();
             base.OnBeforePrint(e);
         }
@@ -57,11 +61,16 @@ namespace ArgusCR1012.Purchase.Templates
             itemName_lbl.Text = labelText(11);
             qty_lbl.Text = labelText(12);
             unitPrice_lbl.Text = labelText(13);
-            vatAmount_lbl.Text = labelText(14);
+            vtAmount_lbl.Text = labelText(14);
             mdAmount_lbl.Text = labelText(15);
             extendedPrice_lbl.Text = labelText(16);
-            amount_lbl.Text = labelText(17);
-            notes_lbl.Text = labelText(18);
+            notes_lbl.Text = labelText(17);
+
+            TotalQuantity_lbl.Text = labelText(18);
+            subtotal_lbl.Text = labelText(19);
+            vatAmount_lbl.Text = labelText(20);
+            amount_lbl.Text = labelText(21);
+
         }
 
         protected override string dictionaryStore()
