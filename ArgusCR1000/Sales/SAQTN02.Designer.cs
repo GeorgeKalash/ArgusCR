@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             DevExpress.XtraReports.UI.XRSummary xrSummary1 = new DevExpress.XtraReports.UI.XRSummary();
             this.Title = new DevExpress.XtraReports.UI.XRControlStyle();
             this.DetailCaption1 = new DevExpress.XtraReports.UI.XRControlStyle();
@@ -561,7 +560,7 @@
             this.xrLabel11.StylePriority.UseTextAlignment = false;
             this.xrLabel11.Text = "xrLabel11";
             this.xrLabel11.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
-            this.xrLabel11.TextFormatString = "{0:#,#.00}";
+            this.xrLabel11.TextFormatString = "{0:n0}";
             // 
             // xrLabel10
             // 
@@ -583,7 +582,7 @@
             this.xrLabel10.StylePriority.UseTextAlignment = false;
             this.xrLabel10.Text = "xrLabel10";
             this.xrLabel10.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
-            this.xrLabel10.TextFormatString = "{0:#,#.00}";
+            this.xrLabel10.TextFormatString = "{0:n0}";
             // 
             // xrLabel5
             // 
@@ -675,7 +674,7 @@
             this.xrLabel29.StylePriority.UseTextAlignment = false;
             this.xrLabel29.Text = "xrLabel29";
             this.xrLabel29.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
-            this.xrLabel29.TextFormatString = "{0:#,#.00}";
+            this.xrLabel29.TextFormatString = "{0:n0}";
             // 
             // xrLabel28
             // 
@@ -710,7 +709,7 @@
             this.xrLabel12.Summary = xrSummary1;
             this.xrLabel12.Text = "xrLabel12";
             this.xrLabel12.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
-            this.xrLabel12.TextFormatString = "{0:#,#.00}";
+            this.xrLabel12.TextFormatString = "{0:n0}";
             // 
             // xrLabel21
             // 
@@ -741,7 +740,7 @@
             this.xrLabel30.StylePriority.UseTextAlignment = false;
             this.xrLabel30.Text = "xrLabel30";
             this.xrLabel30.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
-            this.xrLabel30.TextFormatString = "{0:#,#.00}";
+            this.xrLabel30.TextFormatString = "{0:n0}";
             // 
             // xrLabel27
             // 
@@ -783,9 +782,6 @@
             // 
             this.calculatedField1.Name = "calculatedField1";
             // 
-            // objectDataSource1
-            // 
-            // 
             // xrCrossBandBox1
             // 
             this.xrCrossBandBox1.AnchorVertical = ((DevExpress.XtraReports.UI.VerticalAnchorStyles)((DevExpress.XtraReports.UI.VerticalAnchorStyles.Top | DevExpress.XtraReports.UI.VerticalAnchorStyles.Bottom)));
@@ -826,7 +822,7 @@
             this.xrCrossBandBox3.StartPointFloat = new DevExpress.Utils.PointFloat(2.083333F, 192.7083F);
             this.xrCrossBandBox3.WidthF = 620.8334F;
             // 
-            // R1000_51300_02
+            // SAQTN02
             // 
             this.Bands.AddRange(new DevExpress.XtraReports.UI.Band[] {
             this.TopMargin,
@@ -854,7 +850,7 @@
             this.DetailData3_Odd,
             this.PageInfo,
             this.xrControlStyle1});
-            this.Version = "18.2";
+            this.Version = "20.1";
             ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
 
         }

@@ -596,7 +596,7 @@
             this.xrLabel10.StylePriority.UseTextAlignment = false;
             this.xrLabel10.Text = "xrLabel10";
             this.xrLabel10.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
-            this.xrLabel10.TextFormatString = "{0:n2}";
+            this.xrLabel10.TextFormatString = "{0:n0}";
             // 
             // xrLabel5
             // 
@@ -701,7 +701,7 @@
             this.subtotal_data.StylePriority.UseTextAlignment = false;
             this.subtotal_data.Text = "subtotal_data";
             this.subtotal_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
-            this.subtotal_data.TextFormatString = "{0:#,#.00}";
+            this.subtotal_data.TextFormatString = "{0:n0}";
             this.subtotal_data.WordWrap = false;
             // 
             // xrLabel21
@@ -731,7 +731,7 @@
             this.tdAmount_data.StylePriority.UseTextAlignment = false;
             this.tdAmount_data.Text = "tdAmount_data";
             this.tdAmount_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
-            this.tdAmount_data.TextFormatString = "{0:#,#.00}";
+            this.tdAmount_data.TextFormatString = "{0:n0}";
             this.tdAmount_data.WordWrap = false;
             // 
             // amount_data
@@ -746,7 +746,7 @@
             this.amount_data.StylePriority.UseTextAlignment = false;
             this.amount_data.Text = "amount_data";
             this.amount_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
-            this.amount_data.TextFormatString = "{0:#,#.00}";
+            this.amount_data.TextFormatString = "{0:n0}";
             this.amount_data.WordWrap = false;
             // 
             // xrLabel27
