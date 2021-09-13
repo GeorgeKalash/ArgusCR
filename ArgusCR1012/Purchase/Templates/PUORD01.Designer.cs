@@ -662,7 +662,7 @@
             // pagesNumber_lbl
             // 
             this.pagesNumber_lbl.BackColor = System.Drawing.Color.White;
-            this.pagesNumber_lbl.LocationFloat = new DevExpress.Utils.PointFloat(683.5905F, 3.178914E-05F);
+            this.pagesNumber_lbl.LocationFloat = new DevExpress.Utils.PointFloat(702.7347F, 0F);
             this.pagesNumber_lbl.Name = "pagesNumber_lbl";
             this.pagesNumber_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.pagesNumber_lbl.SizeF = new System.Drawing.SizeF(98.51514F, 23F);
@@ -674,7 +674,7 @@
             // printSignature_lbl
             // 
             this.printSignature_lbl.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.printSignature_lbl.LocationFloat = new DevExpress.Utils.PointFloat(121.875F, 3.178914E-05F);
+            this.printSignature_lbl.LocationFloat = new DevExpress.Utils.PointFloat(26.65079F, 0F);
             this.printSignature_lbl.Multiline = true;
             this.printSignature_lbl.Name = "printSignature_lbl";
             this.printSignature_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -682,7 +682,7 @@
             this.printSignature_lbl.StylePriority.UseFont = false;
             this.printSignature_lbl.StylePriority.UseTextAlignment = false;
             this.printSignature_lbl.Text = "printSignature";
-            this.printSignature_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
+            this.printSignature_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             // 
             // pmName_data
             // 
@@ -1154,7 +1154,7 @@
             this.ReportFooter,
             this.PageFooter,
             this.GroupFooter1});
-            this.Margins = new System.Drawing.Printing.Margins(0, 1, 100, 100);
+            this.Margins = new System.Drawing.Printing.Margins(0, 1, 15, 20);
             this.PageHeight = 1169;
             this.PageWidth = 827;
             this.PaperKind = System.Drawing.Printing.PaperKind.A4;

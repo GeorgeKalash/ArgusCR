@@ -80,6 +80,7 @@ namespace ArgusCR1012.Manufacturing.Templates
             itemNameComponent_lbl.Text = labelText(16);
             qty_lbl.Text = labelText(17);
             siteName_lbl.Text = labelText(18);
+            totalQuantity_lbl.Text = labelText(19);
         }
 
         protected override string dictionaryStore()

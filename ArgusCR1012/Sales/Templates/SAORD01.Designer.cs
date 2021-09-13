@@ -1039,7 +1039,7 @@ namespace ArgusCR1012.Sales.Templates
             this.ReportFooter,
             this.PageHeader,
             this.PageFooter});
-            this.Margins = new System.Drawing.Printing.Margins(14, 12, 100, 100);
+            this.Margins = new System.Drawing.Printing.Margins(14, 12, 15, 20);
             this.PageHeight = 1169;
             this.PageWidth = 827;
             this.PaperKind = System.Drawing.Printing.PaperKind.A4;
