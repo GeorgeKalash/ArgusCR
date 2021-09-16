@@ -1423,11 +1423,11 @@ namespace ArgusCR1012.Sales.Templates
             // QRCode
             // 
             this.QRCode.Alignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
-            this.QRCode.LocationFloat = new DevExpress.Utils.PointFloat(701.2496F, 10.00001F);
+            this.QRCode.LocationFloat = new DevExpress.Utils.PointFloat(674.3748F, 10.00001F);
             this.QRCode.Name = "QRCode";
             this.QRCode.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F);
             this.QRCode.ShowText = false;
-            this.QRCode.SizeF = new System.Drawing.SizeF(100F, 100F);
+            this.QRCode.SizeF = new System.Drawing.SizeF(126.8748F, 140.625F);
             this.QRCode.StylePriority.UsePadding = false;
             qrCodeGenerator1.CompactionMode = DevExpress.XtraPrinting.BarCode.QRCodeCompactionMode.Byte;
             this.QRCode.Symbology = qrCodeGenerator1;
@@ -1749,7 +1749,7 @@ namespace ArgusCR1012.Sales.Templates
             this.xrTable2.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
-            this.xrTable2.LocationFloat = new DevExpress.Utils.PointFloat(423.9583F, 125F);
+            this.xrTable2.LocationFloat = new DevExpress.Utils.PointFloat(422.9164F, 150.625F);
             this.xrTable2.Name = "xrTable2";
             this.xrTable2.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable2.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
@@ -1795,7 +1795,7 @@ namespace ArgusCR1012.Sales.Templates
             this.xrTable1.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
-            this.xrTable1.LocationFloat = new DevExpress.Utils.PointFloat(25F, 125F);
+            this.xrTable1.LocationFloat = new DevExpress.Utils.PointFloat(25F, 150.625F);
             this.xrTable1.Name = "xrTable1";
             this.xrTable1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable1.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
