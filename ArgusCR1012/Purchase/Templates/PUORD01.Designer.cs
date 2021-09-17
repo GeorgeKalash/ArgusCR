@@ -340,7 +340,7 @@
             this.sku_data.StylePriority.UseTextAlignment = false;
             this.sku_data.Text = "sku_data";
             this.sku_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
-            this.sku_data.Weight = 0.63181440316308579D;
+            this.sku_data.Weight = 0.670919377922585D;
             // 
             // itemName_data
             // 
@@ -359,7 +359,7 @@
             this.itemName_data.StylePriority.UseTextAlignment = false;
             this.itemName_data.Text = "itemName_data";
             this.itemName_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
-            this.itemName_data.Weight = 1.7936564029770206D;
+            this.itemName_data.Weight = 1.7545514282175214D;
             // 
             // qty_data
             // 
