@@ -39,14 +39,14 @@ namespace ArgusCR1012.Sales.Templates
             amountInWords_data.Text = SharedClasses.NumberToWords.multiLingualNumberInText((decimal)webObject.record.trxHeader.amount, 2, Convert.ToInt16(sessionInfo.languageId));
             amount_data.Text = webObject.record.trxHeader.amount.ToString("N2");
 
-            QRCode.Text = "رقم الفاتورة" + webObject.record.trxHeader.reference;
-            QRCode.Text += string.Format("\n{تاريخ الفاتورة: {0", webObject.record.trxHeader.date.ToString(sessionInfo.dateFormat));
-            QRCode.Text += string.Format("\n{اسم المورد: {0", webObject.record.companyInfo?.name);
-            QRCode.Text += string.Format("\n{الرقم الضريبي : {0", webObject.record.companyInfo?.taxNo);
-            QRCode.Text += string.Format("\n{اسم العميل: {0", webObject.record.trxHeader.clientName);
-            QRCode.Text += string.Format("\n{الرقم الضريبي : {0", webObject.record.trxHeader.clientVATNo);
-            QRCode.Text += string.Format("\n{إجمالي الضريبة: {0", webObject.record.trxHeader.vatAmount);
-            QRCode.Text += string.Format("\n{إجمالي المبلغ: {0", webObject.record.trxHeader.amount);
+            QRCode.Text = "رقم الفاتورة:" + webObject.record.trxHeader.reference;
+            QRCode.Text += string.Format("\nتاريخ الفاتورة:{0}", webObject.record.trxHeader.date.ToString(sessionInfo.dateFormat));
+            QRCode.Text += string.Format("\nاسم المورد:{0}", webObject.record.companyInfo?.name);
+            QRCode.Text += string.Format("\nالرقم الضريبي:{0}", webObject.record.companyInfo?.taxNo);
+            QRCode.Text += string.Format("\nاسم العميل:{0}", webObject.record.trxHeader.clientName);
+            QRCode.Text += string.Format("\nالرقم الضريبي :{0}", webObject.record.trxHeader.clientVATNo);
+            QRCode.Text += string.Format("\nإجمالي الضريبة:{0}", webObject.record.trxHeader.vatAmount);
+            QRCode.Text += string.Format("\nإجمالي المبلغ:{0}", webObject.record.trxHeader.amount);
           
             //if (webObject.record.trxHeader.deliveryDate != null)
             //    deliveryDate_data.Text = ((DateTime)webObject.record.trxHeader.deliveryDate).ToString(sessionInfo.dateFormat);
