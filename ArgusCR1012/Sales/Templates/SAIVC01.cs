@@ -39,8 +39,7 @@ namespace ArgusCR1012.Sales.Templates
             amountInWords_data.Text = SharedClasses.NumberToWords.multiLingualNumberInText((decimal)webObject.record.trxHeader.amount, 2, Convert.ToInt16(sessionInfo.languageId));
             amount_data.Text = webObject.record.trxHeader.amount.ToString("N2");
 
-            
-           
+
             QRCode.Text += string.Format("\nالبائع:{0}", webObject.record.companyInfo?.name);
             QRCode.Text += string.Format("\nالرقم الضريبي:{0}", webObject.record.companyInfo?.taxNo);
             QRCode.Text = "رقم الفاتورة:" + webObject.record.trxHeader.reference;
