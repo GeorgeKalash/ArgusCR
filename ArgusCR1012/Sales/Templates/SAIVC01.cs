@@ -43,7 +43,7 @@ namespace ArgusCR1012.Sales.Templates
             QRCode.Text = string.Format("\nالبائع:{0}", webObject.record.companyInfo?.name);
             QRCode.Text += string.Format("\nالرقم الضريبي:{0}", webObject.record.companyInfo?.taxNo);
             QRCode.Text += string.Format( "            رقم الفاتورة:" + webObject.record.trxHeader.reference);
-            QRCode.Text += string.Format("\nتاريخ الفاتورة:{0}", webObject.record.trxHeader.date.ToString(sessionInfo.dateFormat));
+            QRCode.Text += string.Format("\nتاريخ الفاتورة:{0}", webObject.record.trxHeader.logTime);
             QRCode.Text += string.Format("\nإجمالي الضريبة:{0}", webObject.record.trxHeader.vatAmount.ToString("N2"));
             QRCode.Text += string.Format("\nإجمالي المبلغ:{0}", webObject.record.trxHeader.amount.ToString("N2"));
           
