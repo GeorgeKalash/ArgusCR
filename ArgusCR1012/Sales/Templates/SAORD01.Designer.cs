@@ -268,10 +268,13 @@ namespace ArgusCR1012.Sales.Templates
             // reference_lbl
             // 
             this.reference_lbl.BackColor = System.Drawing.Color.Azure;
+            this.reference_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+            | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.reference_lbl.Multiline = true;
             this.reference_lbl.Name = "reference_lbl";
             this.reference_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(12, 2, 0, 0, 100F);
             this.reference_lbl.StylePriority.UseBackColor = false;
+            this.reference_lbl.StylePriority.UseBorders = false;
             this.reference_lbl.StylePriority.UsePadding = false;
             this.reference_lbl.StylePriority.UseTextAlignment = false;
             this.reference_lbl.Text = "Reference:";
@@ -304,8 +307,7 @@ namespace ArgusCR1012.Sales.Templates
             // spName_lbl
             // 
             this.spName_lbl.BackColor = System.Drawing.Color.Azure;
-            this.spName_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
-            | DevExpress.XtraPrinting.BorderSide.Right) 
+            this.spName_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.spName_lbl.Multiline = true;
             this.spName_lbl.Name = "spName_lbl";
@@ -344,10 +346,13 @@ namespace ArgusCR1012.Sales.Templates
             // spCellPhone_lbl
             // 
             this.spCellPhone_lbl.BackColor = System.Drawing.Color.Azure;
+            this.spCellPhone_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+            | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.spCellPhone_lbl.Multiline = true;
             this.spCellPhone_lbl.Name = "spCellPhone_lbl";
             this.spCellPhone_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(12, 2, 0, 0, 100F);
             this.spCellPhone_lbl.StylePriority.UseBackColor = false;
+            this.spCellPhone_lbl.StylePriority.UseBorders = false;
             this.spCellPhone_lbl.StylePriority.UsePadding = false;
             this.spCellPhone_lbl.StylePriority.UseTextAlignment = false;
             this.spCellPhone_lbl.Text = "Contact No:";
@@ -412,10 +417,13 @@ namespace ArgusCR1012.Sales.Templates
             // clientName_lbl
             // 
             this.clientName_lbl.BackColor = System.Drawing.Color.Azure;
+            this.clientName_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+            | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.clientName_lbl.Multiline = true;
             this.clientName_lbl.Name = "clientName_lbl";
             this.clientName_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(12, 2, 0, 0, 100F);
             this.clientName_lbl.StylePriority.UseBackColor = false;
+            this.clientName_lbl.StylePriority.UseBorders = false;
             this.clientName_lbl.StylePriority.UsePadding = false;
             this.clientName_lbl.StylePriority.UseTextAlignment = false;
             this.clientName_lbl.Text = "Customer:";
@@ -444,8 +452,7 @@ namespace ArgusCR1012.Sales.Templates
             // billAddressName_lbl
             // 
             this.billAddressName_lbl.BackColor = System.Drawing.Color.Azure;
-            this.billAddressName_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
-            | DevExpress.XtraPrinting.BorderSide.Right) 
+            this.billAddressName_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.billAddressName_lbl.Multiline = true;
             this.billAddressName_lbl.Name = "billAddressName_lbl";
@@ -484,10 +491,13 @@ namespace ArgusCR1012.Sales.Templates
             // billAddressPhone_lbl
             // 
             this.billAddressPhone_lbl.BackColor = System.Drawing.Color.Azure;
+            this.billAddressPhone_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+            | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.billAddressPhone_lbl.Multiline = true;
             this.billAddressPhone_lbl.Name = "billAddressPhone_lbl";
             this.billAddressPhone_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(12, 2, 0, 0, 100F);
             this.billAddressPhone_lbl.StylePriority.UseBackColor = false;
+            this.billAddressPhone_lbl.StylePriority.UseBorders = false;
             this.billAddressPhone_lbl.StylePriority.UsePadding = false;
             this.billAddressPhone_lbl.StylePriority.UseTextAlignment = false;
             this.billAddressPhone_lbl.Text = "Contact No:";
@@ -553,7 +563,7 @@ namespace ArgusCR1012.Sales.Templates
             this.sku_data.Name = "sku_data";
             this.sku_data.StylePriority.UseTextAlignment = false;
             this.sku_data.Text = "sku_data";
-            this.sku_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            this.sku_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             this.sku_data.Weight = 1.0026879863687404D;
             // 
             // itemName_data
