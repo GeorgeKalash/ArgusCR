@@ -79,7 +79,6 @@ namespace ArgusCR1012.Manufacturing.Templates
             this.PageFooter = new DevExpress.XtraReports.UI.PageFooterBand();
             this.pagesNumber_lbl = new DevExpress.XtraReports.UI.XRPageInfo();
             this.printSignature_lbl = new DevExpress.XtraReports.UI.XRLabel();
-            this.ReportFooter = new DevExpress.XtraReports.UI.ReportFooterBand();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable2)).BeginInit();
@@ -841,20 +840,13 @@ namespace ArgusCR1012.Manufacturing.Templates
             this.printSignature_lbl.Text = "printSignature";
             this.printSignature_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             // 
-            // ReportFooter
-            // 
-            this.ReportFooter.Expanded = false;
-            this.ReportFooter.HeightF = 26.04167F;
-            this.ReportFooter.Name = "ReportFooter";
-            // 
             // MFASM01
             // 
             this.Bands.AddRange(new DevExpress.XtraReports.UI.Band[] {
             this.ReportHeader,
             this.PageHeader,
             this.Detail_data,
-            this.PageFooter,
-            this.ReportFooter});
+            this.PageFooter});
             this.Margins = new System.Drawing.Printing.Margins(0, 0, 15, 20);
             this.PageHeight = 1169;
             this.PageWidth = 827;
@@ -920,6 +912,5 @@ namespace ArgusCR1012.Manufacturing.Templates
         private DevExpress.XtraReports.UI.PageFooterBand PageFooter;
         private DevExpress.XtraReports.UI.XRLabel printSignature_lbl;
         private DevExpress.XtraReports.UI.XRPageInfo pagesNumber_lbl;
-        private DevExpress.XtraReports.UI.ReportFooterBand ReportFooter;
     }
 }

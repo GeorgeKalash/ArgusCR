@@ -78,7 +78,6 @@ namespace ArgusCR1012.Manufacturing.Templates
             this.itemNameComponent_lbl = new DevExpress.XtraReports.UI.XRTableCell();
             this.qty_lbl = new DevExpress.XtraReports.UI.XRTableCell();
             this.siteName_lbl = new DevExpress.XtraReports.UI.XRTableCell();
-            this.ReportFooter = new DevExpress.XtraReports.UI.ReportFooterBand();
             this.pagesNumber_lbl = new DevExpress.XtraReports.UI.XRPageInfo();
             this.printSignature_lbl = new DevExpress.XtraReports.UI.XRLabel();
             this.PageFooter = new DevExpress.XtraReports.UI.PageFooterBand();
@@ -713,12 +712,6 @@ namespace ArgusCR1012.Manufacturing.Templates
             this.siteName_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             this.siteName_lbl.Weight = 0.65026904245270711D;
             // 
-            // ReportFooter
-            // 
-            this.ReportFooter.Expanded = false;
-            this.ReportFooter.HeightF = 31.54195F;
-            this.ReportFooter.Name = "ReportFooter";
-            // 
             // pagesNumber_lbl
             // 
             this.pagesNumber_lbl.BackColor = System.Drawing.Color.White;
@@ -822,7 +815,6 @@ namespace ArgusCR1012.Manufacturing.Templates
             this.ReportHeader,
             this.Detail,
             this.PageHeader,
-            this.ReportFooter,
             this.PageFooter,
             this.GroupFooter1});
             this.Margins = new System.Drawing.Printing.Margins(0, 0, 15, 20);
@@ -878,7 +870,6 @@ namespace ArgusCR1012.Manufacturing.Templates
         private DevExpress.XtraReports.UI.XRTableCell lineNo_lbl;
         private DevExpress.XtraReports.UI.XRTableCell description_lbl;
         private DevExpress.XtraReports.UI.XRTableCell description_data;
-        private DevExpress.XtraReports.UI.ReportFooterBand ReportFooter;
         private DevExpress.XtraReports.UI.XRPageInfo pagesNumber_lbl;
         private DevExpress.XtraReports.UI.XRLabel printSignature_lbl;
         private DevExpress.XtraReports.UI.XRLabel tamdeedTitle_lbl;

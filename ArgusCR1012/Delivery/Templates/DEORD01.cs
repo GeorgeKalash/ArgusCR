@@ -43,8 +43,6 @@ namespace ArgusCR1012.Delivery.Templates
             driverName_data.Text = webObject.record.header.driverName;
             driverCellPhone_data.Text = webObject.record.header.driverCellPhone;
 
-            printSignature_lbl.Text = reportSignature();
-
             base.OnBeforePrint(e);
         }
 

@@ -56,6 +56,7 @@ namespace ArgusCR1012.Purchase.Templates
             sku_lbl.Text = labelText(9);
             itemName_lbl.Text = labelText(10);
             qty_lbl.Text = labelText(11);
+            totalQuantity_lbl.Text = labelText(12);
         }
 
         protected override string dictionaryStore()

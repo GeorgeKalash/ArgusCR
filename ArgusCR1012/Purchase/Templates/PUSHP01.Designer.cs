@@ -64,15 +64,18 @@
             this.sku_data = new DevExpress.XtraReports.UI.XRTableCell();
             this.itemName_data = new DevExpress.XtraReports.UI.XRTableCell();
             this.qty_data = new DevExpress.XtraReports.UI.XRTableCell();
-            this.ReportFooter = new DevExpress.XtraReports.UI.ReportFooterBand();
             this.PageFooter = new DevExpress.XtraReports.UI.PageFooterBand();
             this.pagesNumber_lbl = new DevExpress.XtraReports.UI.XRPageInfo();
             this.printSignature_lbl = new DevExpress.XtraReports.UI.XRLabel();
             this.GroupFooter1 = new DevExpress.XtraReports.UI.GroupFooterBand();
-            this.groupSumQty = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrTable6 = new DevExpress.XtraReports.UI.XRTable();
+            this.xrTableRow12 = new DevExpress.XtraReports.UI.XRTableRow();
+            this.totalQuantity_lbl = new DevExpress.XtraReports.UI.XRTableCell();
+            this.xrTableCell3 = new DevExpress.XtraReports.UI.XRTableCell();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.xrTable6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             // 
             // ReportHeader
@@ -80,7 +83,7 @@
             this.ReportHeader.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
             this.shipment_lbl,
             this.xrTable3});
-            this.ReportHeader.HeightF = 230.2083F;
+            this.ReportHeader.HeightF = 223.9583F;
             this.ReportHeader.Name = "ReportHeader";
             // 
             // shipment_lbl
@@ -567,11 +570,6 @@
             this.qty_data.TextFormatString = "{0:n2}";
             this.qty_data.Weight = 1.0823387952967694D;
             // 
-            // ReportFooter
-            // 
-            this.ReportFooter.Expanded = false;
-            this.ReportFooter.Name = "ReportFooter";
-            // 
             // PageFooter
             // 
             this.PageFooter.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
@@ -608,29 +606,64 @@
             // GroupFooter1
             // 
             this.GroupFooter1.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
-            this.groupSumQty});
-            this.GroupFooter1.HeightF = 27.08333F;
+            this.xrTable6});
+            this.GroupFooter1.HeightF = 42.29152F;
             this.GroupFooter1.Name = "GroupFooter1";
             // 
-            // groupSumQty
+            // xrTable6
             // 
-            this.groupSumQty.CanGrow = false;
-            this.groupSumQty.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            this.xrTable6.LocationFloat = new DevExpress.Utils.PointFloat(37.5F, 12.5F);
+            this.xrTable6.Name = "xrTable6";
+            this.xrTable6.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
+            this.xrTable6.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
+            this.xrTableRow12});
+            this.xrTable6.SizeF = new System.Drawing.SizeF(746.4318F, 29.79152F);
+            // 
+            // xrTableRow12
+            // 
+            this.xrTableRow12.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
+            this.totalQuantity_lbl,
+            this.xrTableCell3});
+            this.xrTableRow12.Name = "xrTableRow12";
+            this.xrTableRow12.Weight = 1D;
+            // 
+            // totalQuantity_lbl
+            // 
+            this.totalQuantity_lbl.BackColor = System.Drawing.Color.Azure;
+            this.totalQuantity_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+            | DevExpress.XtraPrinting.BorderSide.Right)));
+            this.totalQuantity_lbl.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold);
+            this.totalQuantity_lbl.Multiline = true;
+            this.totalQuantity_lbl.Name = "totalQuantity_lbl";
+            this.totalQuantity_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 4, 0, 100F);
+            this.totalQuantity_lbl.StylePriority.UseBackColor = false;
+            this.totalQuantity_lbl.StylePriority.UseBorders = false;
+            this.totalQuantity_lbl.StylePriority.UseFont = false;
+            this.totalQuantity_lbl.StylePriority.UsePadding = false;
+            this.totalQuantity_lbl.Text = "totalQuantity_lbl";
+            this.totalQuantity_lbl.Weight = 1.5767189540117359D;
+            // 
+            // xrTableCell3
+            // 
+            this.xrTableCell3.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+            | DevExpress.XtraPrinting.BorderSide.Right)));
+            this.xrTableCell3.CanGrow = false;
+            this.xrTableCell3.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "sumSum([qty])")});
-            this.groupSumQty.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold);
-            this.groupSumQty.LocationFloat = new DevExpress.Utils.PointFloat(626.5356F, 0F);
-            this.groupSumQty.Name = "groupSumQty";
-            this.groupSumQty.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 5, 0, 100F);
-            this.groupSumQty.SizeF = new System.Drawing.SizeF(157.3962F, 27.08333F);
-            this.groupSumQty.StylePriority.UseFont = false;
-            this.groupSumQty.StylePriority.UsePadding = false;
-            this.groupSumQty.StylePriority.UseTextAlignment = false;
+            this.xrTableCell3.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold);
+            this.xrTableCell3.Name = "xrTableCell3";
+            this.xrTableCell3.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 4, 0, 100F);
+            this.xrTableCell3.StylePriority.UseBorders = false;
+            this.xrTableCell3.StylePriority.UseFont = false;
+            this.xrTableCell3.StylePriority.UsePadding = false;
+            this.xrTableCell3.StylePriority.UseTextAlignment = false;
             xrSummary1.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
-            this.groupSumQty.Summary = xrSummary1;
-            this.groupSumQty.Text = "groupSumQty";
-            this.groupSumQty.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
-            this.groupSumQty.TextFormatString = "{0:n2}";
-            this.groupSumQty.WordWrap = false;
+            this.xrTableCell3.Summary = xrSummary1;
+            this.xrTableCell3.Text = "xrTableCell3";
+            this.xrTableCell3.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
+            this.xrTableCell3.TextFormatString = "{0:n2}";
+            this.xrTableCell3.Weight = 0.42131525447234114D;
+            this.xrTableCell3.WordWrap = false;
             // 
             // PUSHP01
             // 
@@ -638,7 +671,6 @@
             this.ReportHeader,
             this.PageHeader,
             this.Detail,
-            this.ReportFooter,
             this.PageFooter,
             this.GroupFooter1});
             this.Margins = new System.Drawing.Printing.Margins(0, 0, 15, 20);
@@ -649,6 +681,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.xrTable3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.xrTable6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
 
         }
@@ -659,7 +692,6 @@
         private DevExpress.XtraReports.UI.ReportHeaderBand ReportHeader;
         private DevExpress.XtraReports.UI.PageHeaderBand PageHeader;
         private DevExpress.XtraReports.UI.DetailBand Detail;
-        private DevExpress.XtraReports.UI.ReportFooterBand ReportFooter;
         private DevExpress.XtraReports.UI.PageFooterBand PageFooter;
         private DevExpress.XtraReports.UI.XRLabel printSignature_lbl;
         private DevExpress.XtraReports.UI.XRPageInfo pagesNumber_lbl;
@@ -696,6 +728,9 @@
         private DevExpress.XtraReports.UI.XRLabel shipment_lbl;
         private DevExpress.XtraReports.UI.XRTableCell qty_data;
         private DevExpress.XtraReports.UI.GroupFooterBand GroupFooter1;
-        private DevExpress.XtraReports.UI.XRLabel groupSumQty;
+        private DevExpress.XtraReports.UI.XRTable xrTable6;
+        private DevExpress.XtraReports.UI.XRTableRow xrTableRow12;
+        private DevExpress.XtraReports.UI.XRTableCell totalQuantity_lbl;
+        private DevExpress.XtraReports.UI.XRTableCell xrTableCell3;
     }
 }

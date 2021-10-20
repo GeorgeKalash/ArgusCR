@@ -113,8 +113,6 @@ namespace ArgusCR1012.Delivery.Templates
             this.shipingDeliveryInfo_lbl = new DevExpress.XtraReports.UI.XRLabel();
             this.PageFooter = new DevExpress.XtraReports.UI.PageFooterBand();
             this.bussinessInfo_lbl = new DevExpress.XtraReports.UI.XRLabel();
-            this.printSignature_lbl = new DevExpress.XtraReports.UI.XRLabel();
-            this.pagesNumber_lbl = new DevExpress.XtraReports.UI.XRPageInfo();
             this.distributionDriver_lbl = new DevExpress.XtraReports.UI.XRLabel();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable4)).BeginInit();
@@ -1258,10 +1256,8 @@ namespace ArgusCR1012.Delivery.Templates
             this.PageFooter.BackColor = System.Drawing.Color.Azure;
             this.PageFooter.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
             this.bussinessInfo_lbl,
-            this.printSignature_lbl,
-            this.pagesNumber_lbl,
             this.distributionDriver_lbl});
-            this.PageFooter.HeightF = 110.5F;
+            this.PageFooter.HeightF = 87.58411F;
             this.PageFooter.Name = "PageFooter";
             this.PageFooter.StylePriority.UseBackColor = false;
             // 
@@ -1282,33 +1278,6 @@ namespace ArgusCR1012.Delivery.Templates
     "ox 15442, Jeddah 215442 KSA. Email: info@Tamdeed.com.sa  website: www.Tamdeed.co" +
     "m.sa.";
             this.bussinessInfo_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
-            // 
-            // printSignature_lbl
-            // 
-            this.printSignature_lbl.BackColor = System.Drawing.Color.Transparent;
-            this.printSignature_lbl.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.printSignature_lbl.LocationFloat = new DevExpress.Utils.PointFloat(25F, 87.5F);
-            this.printSignature_lbl.Multiline = true;
-            this.printSignature_lbl.Name = "printSignature_lbl";
-            this.printSignature_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.printSignature_lbl.SizeF = new System.Drawing.SizeF(447.0302F, 23F);
-            this.printSignature_lbl.StylePriority.UseBackColor = false;
-            this.printSignature_lbl.StylePriority.UseFont = false;
-            this.printSignature_lbl.StylePriority.UseTextAlignment = false;
-            this.printSignature_lbl.Text = "printSignature";
-            this.printSignature_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
-            // 
-            // pagesNumber_lbl
-            // 
-            this.pagesNumber_lbl.BackColor = System.Drawing.Color.Transparent;
-            this.pagesNumber_lbl.LocationFloat = new DevExpress.Utils.PointFloat(699.3517F, 87.5F);
-            this.pagesNumber_lbl.Name = "pagesNumber_lbl";
-            this.pagesNumber_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.pagesNumber_lbl.SizeF = new System.Drawing.SizeF(105.7315F, 23F);
-            this.pagesNumber_lbl.StylePriority.UseBackColor = false;
-            this.pagesNumber_lbl.StylePriority.UseTextAlignment = false;
-            this.pagesNumber_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
-            this.pagesNumber_lbl.TextFormatString = "Page {0} of {1}";
             // 
             // distributionDriver_lbl
             // 
@@ -1425,8 +1394,6 @@ namespace ArgusCR1012.Delivery.Templates
         private DevExpress.XtraReports.UI.XRLabel distributionDriver_lbl;
         private DevExpress.XtraReports.UI.XRLabel shippingMode_data;
         private DevExpress.XtraReports.UI.XRLabel shippingMode_lbl;
-        private DevExpress.XtraReports.UI.XRLabel printSignature_lbl;
-        private DevExpress.XtraReports.UI.XRPageInfo pagesNumber_lbl;
         public DevExpress.XtraReports.UI.XRLabel dlDetails_lbl;
         private DevExpress.XtraReports.UI.XRLabel deliveryNote_lbl;
         private DevExpress.XtraReports.UI.XRTableCell clientRef_data;
