@@ -83,7 +83,7 @@
             this.ReportHeader.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
             this.shipment_lbl,
             this.xrTable3});
-            this.ReportHeader.HeightF = 223.9583F;
+            this.ReportHeader.HeightF = 220.8333F;
             this.ReportHeader.Name = "ReportHeader";
             // 
             // shipment_lbl
@@ -517,7 +517,7 @@
             this.sku_data.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold);
             this.sku_data.Multiline = true;
             this.sku_data.Name = "sku_data";
-            this.sku_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 5, 0, 100F);
+            this.sku_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(4, 2, 5, 0, 100F);
             this.sku_data.StylePriority.UseBackColor = false;
             this.sku_data.StylePriority.UseBorders = false;
             this.sku_data.StylePriority.UseFont = false;
@@ -538,7 +538,7 @@
             this.itemName_data.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold);
             this.itemName_data.Multiline = true;
             this.itemName_data.Name = "itemName_data";
-            this.itemName_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 5, 0, 100F);
+            this.itemName_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(4, 2, 5, 0, 100F);
             this.itemName_data.StylePriority.UseBackColor = false;
             this.itemName_data.StylePriority.UseBorders = false;
             this.itemName_data.StylePriority.UseFont = false;
@@ -559,7 +559,7 @@
             this.qty_data.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold);
             this.qty_data.Multiline = true;
             this.qty_data.Name = "qty_data";
-            this.qty_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 5, 0, 100F);
+            this.qty_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 4, 5, 0, 100F);
             this.qty_data.StylePriority.UseBackColor = false;
             this.qty_data.StylePriority.UseBorders = false;
             this.qty_data.StylePriority.UseFont = false;
@@ -630,8 +630,9 @@
             // totalQuantity_lbl
             // 
             this.totalQuantity_lbl.BackColor = System.Drawing.Color.Azure;
-            this.totalQuantity_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
-            | DevExpress.XtraPrinting.BorderSide.Right)));
+            this.totalQuantity_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+            | DevExpress.XtraPrinting.BorderSide.Right) 
+            | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.totalQuantity_lbl.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold);
             this.totalQuantity_lbl.Multiline = true;
             this.totalQuantity_lbl.Name = "totalQuantity_lbl";
@@ -645,8 +646,9 @@
             // 
             // xrTableCell3
             // 
-            this.xrTableCell3.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
-            | DevExpress.XtraPrinting.BorderSide.Right)));
+            this.xrTableCell3.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+            | DevExpress.XtraPrinting.BorderSide.Right) 
+            | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell3.CanGrow = false;
             this.xrTableCell3.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "sumSum([qty])")});

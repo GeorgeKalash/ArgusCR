@@ -115,7 +115,7 @@
             this.xrTable4,
             this.purchaseInvoice_lbl,
             this.xrTable3});
-            this.ReportHeader.HeightF = 263.5416F;
+            this.ReportHeader.HeightF = 255.2083F;
             this.ReportHeader.Name = "ReportHeader";
             // 
             // xrTable4
@@ -525,7 +525,7 @@
             this.sku_lbl.StylePriority.UseTextAlignment = false;
             this.sku_lbl.Text = "sku_lbl";
             this.sku_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopCenter;
-            this.sku_lbl.Weight = 1.0769096128406785D;
+            this.sku_lbl.Weight = 1.0821260469315295D;
             // 
             // itemName_lbl
             // 
@@ -544,7 +544,7 @@
             this.itemName_lbl.StylePriority.UseTextAlignment = false;
             this.itemName_lbl.Text = "itemName_lbl";
             this.itemName_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopCenter;
-            this.itemName_lbl.Weight = 1.9539660803989947D;
+            this.itemName_lbl.Weight = 2.0611924491694258D;
             // 
             // qty_lbl
             // 
@@ -563,7 +563,7 @@
             this.qty_lbl.StylePriority.UseTextAlignment = false;
             this.qty_lbl.Text = "qty_lbl";
             this.qty_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopCenter;
-            this.qty_lbl.Weight = 0.46595374282316127D;
+            this.qty_lbl.Weight = 0.46376830988617979D;
             // 
             // unitPrice_lbl
             // 
@@ -582,7 +582,7 @@
             this.unitPrice_lbl.StylePriority.UseTextAlignment = false;
             this.unitPrice_lbl.Text = "unitPrice_lbl";
             this.unitPrice_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopCenter;
-            this.unitPrice_lbl.Weight = 0.74163707096305143D;
+            this.unitPrice_lbl.Weight = 0.72141734431416782D;
             // 
             // vtAmount_lbl
             // 
@@ -601,7 +601,7 @@
             this.vtAmount_lbl.StylePriority.UseTextAlignment = false;
             this.vtAmount_lbl.Text = "vtAmount_lbl";
             this.vtAmount_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopCenter;
-            this.vtAmount_lbl.Weight = 0.46376828078765453D;
+            this.vtAmount_lbl.Weight = 0.4637683004447174D;
             // 
             // mdAmount_lbl
             // 
@@ -620,7 +620,7 @@
             this.mdAmount_lbl.StylePriority.UseTextAlignment = false;
             this.mdAmount_lbl.Text = "mdAmount_lbl";
             this.mdAmount_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopCenter;
-            this.mdAmount_lbl.Weight = 1.1435290057262735D;
+            this.mdAmount_lbl.Weight = 0.72141734574628413D;
             // 
             // extendedPrice_lbl
             // 
@@ -639,7 +639,7 @@
             this.extendedPrice_lbl.StylePriority.UseTextAlignment = false;
             this.extendedPrice_lbl.Text = "extendedPrice_lbl";
             this.extendedPrice_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopCenter;
-            this.extendedPrice_lbl.Weight = 0.9416479937363349D;
+            this.extendedPrice_lbl.Weight = 0.72141733776048955D;
             // 
             // notes_lbl
             // 
@@ -658,7 +658,7 @@
             this.notes_lbl.StylePriority.UseTextAlignment = false;
             this.notes_lbl.Text = "notes_lbl";
             this.notes_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopCenter;
-            this.notes_lbl.Weight = 1.2125882127238512D;
+            this.notes_lbl.Weight = 1.7648928657472056D;
             // 
             // Detail
             // 
@@ -709,7 +709,7 @@
             this.sku_data.StylePriority.UseTextAlignment = false;
             this.sku_data.Text = "sku_data";
             this.sku_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
-            this.sku_data.Weight = 1.1138935788062674D;
+            this.sku_data.Weight = 1.1192892408598294D;
             // 
             // itemName_data
             // 
@@ -728,7 +728,7 @@
             this.itemName_data.StylePriority.UseTextAlignment = false;
             this.itemName_data.Text = "itemName_data";
             this.itemName_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
-            this.itemName_data.Weight = 2.0210707750364634D;
+            this.itemName_data.Weight = 2.13197983498213D;
             // 
             // qty_data
             // 
@@ -748,7 +748,7 @@
             this.qty_data.Text = "qty_data";
             this.qty_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
             this.qty_data.TextFormatString = "{0:n2}";
-            this.qty_data.Weight = 0.48195566008065971D;
+            this.qty_data.Weight = 0.47969505139802365D;
             // 
             // unitPrice_data
             // 
@@ -768,7 +768,7 @@
             this.unitPrice_data.Text = "unitPrice_data";
             this.unitPrice_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
             this.unitPrice_data.TextFormatString = "{0:n2}";
-            this.unitPrice_data.Weight = 0.76710724228358418D;
+            this.unitPrice_data.Weight = 0.74619246421258745D;
             // 
             // vtAmount_data
             // 
@@ -788,7 +788,7 @@
             this.vtAmount_data.Text = "vtAmount_data";
             this.vtAmount_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
             this.vtAmount_data.TextFormatString = "{0:n2}";
-            this.vtAmount_data.Weight = 0.47969538878591289D;
+            this.vtAmount_data.Weight = 0.47969601908226089D;
             // 
             // mdAmount_data
             // 
@@ -808,7 +808,7 @@
             this.mdAmount_data.Text = "mdAmount_data";
             this.mdAmount_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
             this.mdAmount_data.TextFormatString = "{0:n2}";
-            this.mdAmount_data.Weight = 1.1828006203680159D;
+            this.mdAmount_data.Weight = 0.74619248984822506D;
             // 
             // extendedPrice_data
             // 
@@ -828,7 +828,7 @@
             this.extendedPrice_data.Text = "extendedPrice_data";
             this.extendedPrice_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
             this.extendedPrice_data.TextFormatString = "{0:n2}";
-            this.extendedPrice_data.Weight = 0.97398696235193816D;
+            this.extendedPrice_data.Weight = 0.74619281979547047D;
             // 
             // notes_data
             // 
@@ -847,7 +847,7 @@
             this.notes_data.StylePriority.UseTextAlignment = false;
             this.notes_data.Text = "notes_data";
             this.notes_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
-            this.notes_data.Weight = 1.2542316837612737D;
+            this.notes_data.Weight = 1.8255039912955886D;
             // 
             // PageFooter
             // 
@@ -1095,9 +1095,8 @@
             // 
             // xrTableCell6
             // 
-            this.xrTableCell6.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
-            | DevExpress.XtraPrinting.BorderSide.Right) 
-            | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.xrTableCell6.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+            | DevExpress.XtraPrinting.BorderSide.Right)));
             this.xrTableCell6.CanGrow = false;
             this.xrTableCell6.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "sumSum([qty])")});

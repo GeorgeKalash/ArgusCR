@@ -131,6 +131,12 @@
     <Compile Include="Delivery\Templates\DEORD01.Designer.cs">
       <DependentUpon>DEORD01.cs</DependentUpon>
     </Compile>
+    <Compile Include="Financials\Templates\Report1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Financials\Templates\Report1.Designer.cs">
+      <DependentUpon>Report1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Manufacturing\Templates\MFASM01.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -184,6 +190,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Delivery\Templates\DEORD01.resx">
       <DependentUpon>DEORD01.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Financials\Templates\Report1.resx">
+      <DependentUpon>Report1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Manufacturing\Templates\MFASM01.resx">
       <DependentUpon>MFASM01.cs</DependentUpon>

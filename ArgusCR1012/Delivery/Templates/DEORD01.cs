@@ -95,6 +95,7 @@ namespace ArgusCR1012.Delivery.Templates
 
             distributionDriver_lbl.Text = labelText(37);
             bussinessInfo_lbl.Text = labelText(38);
+            paper_lbl.Text = labelText(39);
         }
 
         protected override void OnDataSourceRowChanged(DataSourceRowEventArgs e)
