@@ -579,7 +579,7 @@ namespace ArgusCR1012.Sales.Templates
             this.itemName_data.StylePriority.UseTextAlignment = false;
             this.itemName_data.Text = "itemName_data";
             this.itemName_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
-            this.itemName_data.Weight = 1.986632820332223D;
+            this.itemName_data.Weight = 1.9012252385991897D;
             // 
             // qty_data
             // 
@@ -593,7 +593,7 @@ namespace ArgusCR1012.Sales.Templates
             this.qty_data.Text = "qty_data";
             this.qty_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
             this.qty_data.TextFormatString = "{0:n3}";
-            this.qty_data.Weight = 0.605888487361326D;
+            this.qty_data.Weight = 0.69129606909435926D;
             // 
             // notes_data
             // 
@@ -980,7 +980,7 @@ namespace ArgusCR1012.Sales.Templates
             this.itemName_lbl.StylePriority.UseTextAlignment = false;
             this.itemName_lbl.Text = "DETAIL PRODUCT DESCRIPTION";
             this.itemName_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
-            this.itemName_lbl.Weight = 3.197766397289608D;
+            this.itemName_lbl.Weight = 3.0602914297416866D;
             // 
             // qty_lbl
             // 
@@ -995,7 +995,7 @@ namespace ArgusCR1012.Sales.Templates
             this.qty_lbl.StylePriority.UseTextAlignment = false;
             this.qty_lbl.Text = "QUANTITY\r\n(unit of measure)\r\n";
             this.qty_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
-            this.qty_lbl.Weight = 0.97526260379407148D;
+            this.qty_lbl.Weight = 1.1127375713419929D;
             // 
             // notes_lbl
             // 

@@ -556,7 +556,9 @@ namespace ArgusCR1012.Manufacturing.Templates
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[sku]")});
             this.skuComponent_data.Multiline = true;
             this.skuComponent_data.Name = "skuComponent_data";
+            this.skuComponent_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(6, 2, 0, 0, 100F);
             this.skuComponent_data.StylePriority.UseBorders = false;
+            this.skuComponent_data.StylePriority.UsePadding = false;
             this.skuComponent_data.StylePriority.UseTextAlignment = false;
             this.skuComponent_data.Text = "sku";
             this.skuComponent_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
@@ -571,7 +573,9 @@ namespace ArgusCR1012.Manufacturing.Templates
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[itemName]")});
             this.itemNameComponent_data.Multiline = true;
             this.itemNameComponent_data.Name = "itemNameComponent_data";
+            this.itemNameComponent_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(6, 2, 0, 0, 100F);
             this.itemNameComponent_data.StylePriority.UseBorders = false;
+            this.itemNameComponent_data.StylePriority.UsePadding = false;
             this.itemNameComponent_data.StylePriority.UseTextAlignment = false;
             this.itemNameComponent_data.Text = "name";
             this.itemNameComponent_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
@@ -586,7 +590,9 @@ namespace ArgusCR1012.Manufacturing.Templates
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[qty]")});
             this.qty_data.Multiline = true;
             this.qty_data.Name = "qty_data";
+            this.qty_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 6, 0, 0, 100F);
             this.qty_data.StylePriority.UseBorders = false;
+            this.qty_data.StylePriority.UsePadding = false;
             this.qty_data.StylePriority.UseTextAlignment = false;
             this.qty_data.Text = "quantity";
             this.qty_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
@@ -602,10 +608,12 @@ namespace ArgusCR1012.Manufacturing.Templates
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[siteName]")});
             this.siteName_data.Multiline = true;
             this.siteName_data.Name = "siteName_data";
+            this.siteName_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(6, 2, 0, 0, 100F);
             this.siteName_data.StylePriority.UseBorders = false;
+            this.siteName_data.StylePriority.UsePadding = false;
             this.siteName_data.StylePriority.UseTextAlignment = false;
             this.siteName_data.Text = "siteName_data";
-            this.siteName_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            this.siteName_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             this.siteName_data.Weight = 0.949785420658651D;
             // 
             // PageHeader
@@ -778,7 +786,7 @@ namespace ArgusCR1012.Manufacturing.Templates
             this.totalQuantity_lbl.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold);
             this.totalQuantity_lbl.Multiline = true;
             this.totalQuantity_lbl.Name = "totalQuantity_lbl";
-            this.totalQuantity_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(5, 2, 5, 0, 100F);
+            this.totalQuantity_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(6, 2, 5, 0, 100F);
             this.totalQuantity_lbl.StylePriority.UseBackColor = false;
             this.totalQuantity_lbl.StylePriority.UseBorders = false;
             this.totalQuantity_lbl.StylePriority.UseFont = false;
@@ -796,7 +804,7 @@ namespace ArgusCR1012.Manufacturing.Templates
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "sumSum([qty])")});
             this.xrTableCell2.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold);
             this.xrTableCell2.Name = "xrTableCell2";
-            this.xrTableCell2.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 5, 5, 0, 100F);
+            this.xrTableCell2.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 6, 5, 0, 100F);
             this.xrTableCell2.StylePriority.UseBorders = false;
             this.xrTableCell2.StylePriority.UseFont = false;
             this.xrTableCell2.StylePriority.UsePadding = false;
