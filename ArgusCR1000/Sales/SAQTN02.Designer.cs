@@ -153,12 +153,12 @@
             this.xrLabel13,
             this.xrLabel19,
             this.xrLabel1});
-            this.TopMargin.HeightF = 289.2917F;
+            this.TopMargin.HeightF = 289F;
             this.TopMargin.Name = "TopMargin";
             // 
             // xrLabel32
             // 
-            this.xrLabel32.Font = new System.Drawing.Font("Times New Roman", 10F);
+            this.xrLabel32.Font = new System.Drawing.Font("Times New Roman", 9F);
             this.xrLabel32.LocationFloat = new DevExpress.Utils.PointFloat(326F, 77F);
             this.xrLabel32.Multiline = true;
             this.xrLabel32.Name = "xrLabel32";
@@ -169,17 +169,17 @@
             // 
             // xrLabel31
             // 
-            this.xrLabel31.Font = new System.Drawing.Font("Times New Roman", 10F);
+            this.xrLabel31.Font = new System.Drawing.Font("Times New Roman", 9F);
             this.xrLabel31.LocationFloat = new DevExpress.Utils.PointFloat(5.000019F, 77F);
             this.xrLabel31.Multiline = true;
             this.xrLabel31.Name = "xrLabel31";
             this.xrLabel31.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel31.SizeF = new System.Drawing.SizeF(278.1666F, 100F);
+            this.xrLabel31.SizeF = new System.Drawing.SizeF(278.1666F, 108.1667F);
             this.xrLabel31.StylePriority.UseFont = false;
             this.xrLabel31.StylePriority.UseTextAlignment = false;
-            this.xrLabel31.Text = "Office: +961-9-936110\r\nCell:  +961-76-888468\r\nP.O.Box: 1658, Jounieh, Lebanon\r\nSa" +
-    "hel Alma, Quartiers des oliviers, Street No. 1, Bldg No. 946, 4th Floor\r\nJounieh" +
-    ", Lebanon.\r\n";
+            this.xrLabel31.Text = "VAT: 183831-601\r\nOffice: +961-9-936110\r\nCell:  +961-76-888468\r\nP.O.Box: 1658, Jou" +
+    "nieh, Lebanon\r\nSahel Alma, Quartiers des oliviers, Street No. 1, Bldg No. 946, 4" +
+    "th Floor\r\nJounieh, Lebanon.\r\n";
             this.xrLabel31.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             // 
             // xrLabel24
@@ -786,7 +786,7 @@
             // 
             this.xrCrossBandBox1.AnchorVertical = ((DevExpress.XtraReports.UI.VerticalAnchorStyles)((DevExpress.XtraReports.UI.VerticalAnchorStyles.Top | DevExpress.XtraReports.UI.VerticalAnchorStyles.Bottom)));
             this.xrCrossBandBox1.EndBand = this.TopMargin;
-            this.xrCrossBandBox1.EndPointFloat = new DevExpress.Utils.PointFloat(2.000014F, 187.5417F);
+            this.xrCrossBandBox1.EndPointFloat = new DevExpress.Utils.PointFloat(2.000014F, 187.25F);
             this.xrCrossBandBox1.Name = "xrCrossBandBox1";
             this.xrCrossBandBox1.StartBand = this.TopMargin;
             this.xrCrossBandBox1.StartPointFloat = new DevExpress.Utils.PointFloat(2.000014F, 51.04167F);
@@ -796,7 +796,7 @@
             // 
             this.xrCrossBandBox2.AnchorVertical = ((DevExpress.XtraReports.UI.VerticalAnchorStyles)((DevExpress.XtraReports.UI.VerticalAnchorStyles.Top | DevExpress.XtraReports.UI.VerticalAnchorStyles.Bottom)));
             this.xrCrossBandBox2.EndBand = this.TopMargin;
-            this.xrCrossBandBox2.EndPointFloat = new DevExpress.Utils.PointFloat(322.2917F, 187.5417F);
+            this.xrCrossBandBox2.EndPointFloat = new DevExpress.Utils.PointFloat(322.2917F, 187.25F);
             this.xrCrossBandBox2.Name = "xrCrossBandBox2";
             this.xrCrossBandBox2.StartBand = this.TopMargin;
             this.xrCrossBandBox2.StartPointFloat = new DevExpress.Utils.PointFloat(322.2917F, 51.04167F);
@@ -816,7 +816,7 @@
             // 
             this.xrCrossBandBox3.AnchorVertical = ((DevExpress.XtraReports.UI.VerticalAnchorStyles)((DevExpress.XtraReports.UI.VerticalAnchorStyles.Top | DevExpress.XtraReports.UI.VerticalAnchorStyles.Bottom)));
             this.xrCrossBandBox3.EndBand = this.TopMargin;
-            this.xrCrossBandBox3.EndPointFloat = new DevExpress.Utils.PointFloat(2.083333F, 228.125F);
+            this.xrCrossBandBox3.EndPointFloat = new DevExpress.Utils.PointFloat(2.083333F, 227.8333F);
             this.xrCrossBandBox3.Name = "xrCrossBandBox3";
             this.xrCrossBandBox3.StartBand = this.TopMargin;
             this.xrCrossBandBox3.StartPointFloat = new DevExpress.Utils.PointFloat(2.083333F, 192.7083F);

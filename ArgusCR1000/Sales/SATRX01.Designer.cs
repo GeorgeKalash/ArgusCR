@@ -601,12 +601,12 @@
             this.xrLabel31.Multiline = true;
             this.xrLabel31.Name = "xrLabel31";
             this.xrLabel31.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel31.SizeF = new System.Drawing.SizeF(266.7083F, 100F);
+            this.xrLabel31.SizeF = new System.Drawing.SizeF(266.7083F, 114.5833F);
             this.xrLabel31.StylePriority.UseFont = false;
             this.xrLabel31.StylePriority.UseTextAlignment = false;
-            this.xrLabel31.Text = "Office: +961-9-936110\r\nCell:  +961-76-888468\r\nP.O.Box: 1658, Jounieh, Lebanon\r\nSa" +
-    "hel Alma, Quartiers des oliviers, Street No. 1, Bldg No. 946, 4th Floor\r\nJounieh" +
-    ", Lebanon.\r\n";
+            this.xrLabel31.Text = "VAT: 183831-601\r\nOffice: +961-9-936110\r\nCell:  +961-76-888468\r\nP.O.Box: 1658, Jou" +
+    "nieh, Lebanon\r\nSahel Alma, Quartiers des oliviers, Street No. 1, Bldg No. 946, 4" +
+    "th Floor\r\nJounieh, Lebanon.\r\n";
             this.xrLabel31.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             // 
             // xrLabel23
@@ -791,7 +791,6 @@
             this.xrLabel12,
             this.xrLabel30,
             this.xrLabel27});
-            this.ReportFooter.Expanded = false;
             this.ReportFooter.HeightF = 115.5422F;
             this.ReportFooter.Name = "ReportFooter";
             // 
