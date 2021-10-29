@@ -21,13 +21,14 @@ namespace ArgusCR1012.Sales.Templates
         protected override void OnBeforePrint(PrintEventArgs e)
         {
             SharedClasses.JsonProtocol.GetStructure<TrxPrintView> webObject = deserializeGet<TrxPrintView>();
-
             DataSource = webObject.record.items;
 
+            clientVATNo_data.Text = webObject.record.trxHeader.clientVATNo;
             clientName_data.Text = webObject.record.trxHeader.clientName;
             billAddressName_data.Text = webObject.record.billAddress?.name;
             billAddressPhone_data.Text = webObject.record.billAddress?.phone;
 
+            taxNo_data.Text = webObject.record.companyInfo.taxNo;
             spRef_data.Text = webObject.record.trxHeader.spRef;
             reference_data.Text = webObject.record.trxHeader.reference;
             date_data.Text = webObject.record.trxHeader.date.ToString(sessionInfo.dateFormat);
@@ -123,6 +124,9 @@ namespace ArgusCR1012.Sales.Templates
 
             distribution_lbl.Text = labelText(46);
             info_lbl.Text = labelText(47);
+            vat_lbl.Text = labelText(48);
+            Markdown_lbl.Text = labelText(49);
+            weight_lbl.Text = labelText(50);
         }
 
         protected override string dictionaryStore()
