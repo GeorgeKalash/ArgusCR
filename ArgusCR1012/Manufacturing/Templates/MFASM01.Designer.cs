@@ -30,8 +30,8 @@ namespace ArgusCR1012.Manufacturing.Templates
         private void InitializeComponent()
         {
             this.ReportHeader = new DevExpress.XtraReports.UI.ReportHeaderBand();
-            this.rmSiteName_data = new DevExpress.XtraReports.UI.XRLabel();
-            this.siteRef_lbl = new DevExpress.XtraReports.UI.XRLabel();
+            this.machineName_data = new DevExpress.XtraReports.UI.XRLabel();
+            this.machineName_lbl = new DevExpress.XtraReports.UI.XRLabel();
             this.siteName_data = new DevExpress.XtraReports.UI.XRLabel();
             this.site_lbl = new DevExpress.XtraReports.UI.XRLabel();
             this.rmCost_data = new DevExpress.XtraReports.UI.XRLabel();
@@ -87,8 +87,8 @@ namespace ArgusCR1012.Manufacturing.Templates
             // ReportHeader
             // 
             this.ReportHeader.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
-            this.rmSiteName_data,
-            this.siteRef_lbl,
+            this.machineName_data,
+            this.machineName_lbl,
             this.siteName_data,
             this.site_lbl,
             this.rmCost_data,
@@ -101,36 +101,36 @@ namespace ArgusCR1012.Manufacturing.Templates
             this.ReportHeader.HeightF = 296.875F;
             this.ReportHeader.Name = "ReportHeader";
             // 
-            // rmSiteName_data
+            // machineName_data
             // 
-            this.rmSiteName_data.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Top | DevExpress.XtraPrinting.BorderSide.Right) 
+            this.machineName_data.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Top | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
-            this.rmSiteName_data.LocationFloat = new DevExpress.Utils.PointFloat(154.1637F, 237.2917F);
-            this.rmSiteName_data.Multiline = true;
-            this.rmSiteName_data.Name = "rmSiteName_data";
-            this.rmSiteName_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(8, 2, 10, 0, 100F);
-            this.rmSiteName_data.SizeF = new System.Drawing.SizeF(230.4669F, 37.5F);
-            this.rmSiteName_data.StylePriority.UseBorders = false;
-            this.rmSiteName_data.StylePriority.UsePadding = false;
-            this.rmSiteName_data.Text = "rmSiteName_data";
+            this.machineName_data.LocationFloat = new DevExpress.Utils.PointFloat(154.1637F, 237.2917F);
+            this.machineName_data.Multiline = true;
+            this.machineName_data.Name = "machineName_data";
+            this.machineName_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(8, 2, 10, 0, 100F);
+            this.machineName_data.SizeF = new System.Drawing.SizeF(230.4669F, 37.5F);
+            this.machineName_data.StylePriority.UseBorders = false;
+            this.machineName_data.StylePriority.UsePadding = false;
+            this.machineName_data.Text = "machineName_data";
             // 
-            // siteRef_lbl
+            // machineName_lbl
             // 
-            this.siteRef_lbl.BackColor = System.Drawing.Color.Azure;
-            this.siteRef_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+            this.machineName_lbl.BackColor = System.Drawing.Color.Azure;
+            this.machineName_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
-            this.siteRef_lbl.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold);
-            this.siteRef_lbl.LocationFloat = new DevExpress.Utils.PointFloat(26.45848F, 237.2917F);
-            this.siteRef_lbl.Multiline = true;
-            this.siteRef_lbl.Name = "siteRef_lbl";
-            this.siteRef_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(8, 2, 10, 0, 100F);
-            this.siteRef_lbl.SizeF = new System.Drawing.SizeF(127.7052F, 37.5F);
-            this.siteRef_lbl.StylePriority.UseBackColor = false;
-            this.siteRef_lbl.StylePriority.UseBorders = false;
-            this.siteRef_lbl.StylePriority.UseFont = false;
-            this.siteRef_lbl.StylePriority.UsePadding = false;
-            this.siteRef_lbl.Text = "Component Site:";
+            this.machineName_lbl.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold);
+            this.machineName_lbl.LocationFloat = new DevExpress.Utils.PointFloat(26.45848F, 237.2917F);
+            this.machineName_lbl.Multiline = true;
+            this.machineName_lbl.Name = "machineName_lbl";
+            this.machineName_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(8, 2, 10, 0, 100F);
+            this.machineName_lbl.SizeF = new System.Drawing.SizeF(127.7052F, 37.5F);
+            this.machineName_lbl.StylePriority.UseBackColor = false;
+            this.machineName_lbl.StylePriority.UseBorders = false;
+            this.machineName_lbl.StylePriority.UseFont = false;
+            this.machineName_lbl.StylePriority.UsePadding = false;
+            this.machineName_lbl.Text = "Machine:";
             // 
             // siteName_data
             // 
@@ -899,8 +899,8 @@ namespace ArgusCR1012.Manufacturing.Templates
         private DevExpress.XtraReports.UI.XRTableCell date_data;
         private DevExpress.XtraReports.UI.XRTableCell itemName_lbl;
         private DevExpress.XtraReports.UI.XRTableCell itemName_data;
-        private DevExpress.XtraReports.UI.XRLabel rmSiteName_data;
-        private DevExpress.XtraReports.UI.XRLabel siteRef_lbl;
+        private DevExpress.XtraReports.UI.XRLabel machineName_data;
+        private DevExpress.XtraReports.UI.XRLabel machineName_lbl;
         private DevExpress.XtraReports.UI.XRLabel siteName_data;
         private DevExpress.XtraReports.UI.XRLabel site_lbl;
         private DevExpress.XtraReports.UI.XRLabel rmCost_data;

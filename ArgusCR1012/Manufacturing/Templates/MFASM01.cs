@@ -67,7 +67,7 @@ namespace ArgusCR1012.Manufacturing.Templates
             itemName_data.Text = webObject.record.header.itemName;
             qty_data.Text = webObject.record.header.qty.ToString();
             rmCost_data.Text = webObject.record.header.rmCost.ToString("N2");
-           
+            machineName_data.Text = webObject.record.header.machineName;
 
             printSignature_lbl.Text = reportSignature();
             base.OnBeforePrint(e);
@@ -88,7 +88,7 @@ namespace ArgusCR1012.Manufacturing.Templates
             reference_lbl.Text = labelText(2);
             date_lbl.Text = labelText(3);
             notes_lbl.Text = labelText(4);
-            siteRef_lbl.Text = labelText(5);
+            machineName_lbl.Text = labelText(5);
 
             bomName_lbl.Text = labelText(6);
             bomRef_lbl.Text = labelText(7);
