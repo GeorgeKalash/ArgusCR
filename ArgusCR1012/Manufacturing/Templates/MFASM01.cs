@@ -67,7 +67,7 @@ namespace ArgusCR1012.Manufacturing.Templates
             itemName_data.Text = webObject.record.header.itemName;
             qty_data.Text = webObject.record.header.qty.ToString();
             rmCost_data.Text = webObject.record.header.rmCost.ToString("N2");
-            rmSiteName_data.Text = webObject.record.header.rmSiteName;
+           
 
             printSignature_lbl.Text = reportSignature();
             base.OnBeforePrint(e);
