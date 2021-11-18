@@ -20,24 +20,29 @@ namespace ArgusCR1012.Sales.Templates
         {
             SharedClasses.JsonProtocol.GetStructure<TrxPrintView> webObject = deserializeGet<TrxPrintView>();
             DataSource = webObject.record.items;
+       
+            reference_data.Text = webObject.record.trxHeader.reference;
+            date_data.Text = webObject.record.trxHeader.date.ToString(sessionInfo.dateFormat);
+            spName_data.Text = webObject.record.trxHeader.spName;
 
-            //clientVATNo_data.Text = webObject.record.trxHeader.clientVATNo;
-            //reference_data.Text = webObject.record.trxHeader.clientName;
+            clientName_data.Text = webObject.record.trxHeader.clientName;
+            clientVATNo_data.Text = webObject.record.trxHeader.clientVATNo;
+
+
+            //spCellPhone_data.Text = webObject.record.trxHeader.spCellPhone;
             //date_data.Text = webObject.record.billAddress?.name;
             //billAddressPhone_data.Text = webObject.record.billAddress?.phone;
 
             taxNo_data.Text = webObject.record.companyInfo.taxNo;
-            reference_data.Text = webObject.record.trxHeader.reference;
-            date_data.Text = webObject.record.trxHeader.date.ToString(sessionInfo.dateFormat);
-            //clientName_lbl.Text = webObject.record.trxHeader.spName;
-            //spCellPhone_data.Text = webObject.record.trxHeader.spCellPhone;
-
-            //subtotal_data.Text = webObject.record.trxHeader.subtotal.ToString("N2");
-            //vatAmount_data.Text = webObject.record.trxHeader.vatAmount.ToString("N2");
+      
+            subtotal_data.Text = webObject.record.trxHeader.subtotal.ToString("N2");
+            vatAmount_data.Text = webObject.record.trxHeader.vatAmount.ToString("N2");
+            amount_data.Text = webObject.record.trxHeader.amount.ToString("N2");
             amountInWords_data.Text = SharedClasses.NumberToWords.multiLingualNumberInText((decimal)webObject.record.trxHeader.amount, 2, Convert.ToInt16(sessionInfo.languageId));
-            //amount_data.Text = webObject.record.trxHeader.amount.ToString("N2");
 
-           
+            clientName2_data.Text = webObject.record.trxHeader.clientName;
+            spName2_data.Text = webObject.record.trxHeader.spName;
+
             QRCode.Text = string.Format("\nالبائع:{0}", webObject.record.companyInfo?.name);
             QRCode.Text += string.Format("\nالرقم الضريبي:{0}", webObject.record.companyInfo?.taxNo);
             QRCode.Text += string.Format( "رقم الفاتورة:" + webObject.record.trxHeader.reference);
