@@ -21,16 +21,15 @@ namespace ArgusCR1012.Sales.Templates
             SharedClasses.JsonProtocol.GetStructure<TrxPrintView> webObject = deserializeGet<TrxPrintView>();
             DataSource = webObject.record.items;
 
-            clientVATNo_data.Text = webObject.record.trxHeader.clientVATNo;
-            reference_data.Text = webObject.record.trxHeader.clientName;
-            date_data.Text = webObject.record.billAddress?.name;
-            billAddressPhone_data.Text = webObject.record.billAddress?.phone;
+            //clientVATNo_data.Text = webObject.record.trxHeader.clientVATNo;
+            //reference_data.Text = webObject.record.trxHeader.clientName;
+            //date_data.Text = webObject.record.billAddress?.name;
+            //billAddressPhone_data.Text = webObject.record.billAddress?.phone;
 
             taxNo_data.Text = webObject.record.companyInfo.taxNo;
-           
             reference_data.Text = webObject.record.trxHeader.reference;
             date_data.Text = webObject.record.trxHeader.date.ToString(sessionInfo.dateFormat);
-            spName_data.Text = webObject.record.trxHeader.spName;
+            //clientName_lbl.Text = webObject.record.trxHeader.spName;
             //spCellPhone_data.Text = webObject.record.trxHeader.spCellPhone;
 
             //subtotal_data.Text = webObject.record.trxHeader.subtotal.ToString("N2");
