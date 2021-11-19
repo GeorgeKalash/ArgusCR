@@ -1225,21 +1225,21 @@ namespace ArgusCR1012.Sales.Templates
             // xrLabel3
             // 
             this.xrLabel3.Borders = DevExpress.XtraPrinting.BorderSide.Bottom;
-            this.xrLabel3.LocationFloat = new DevExpress.Utils.PointFloat(340F, 285.257F);
+            this.xrLabel3.LocationFloat = new DevExpress.Utils.PointFloat(335F, 285.257F);
             this.xrLabel3.Multiline = true;
             this.xrLabel3.Name = "xrLabel3";
             this.xrLabel3.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel3.SizeF = new System.Drawing.SizeF(135F, 12.49997F);
+            this.xrLabel3.SizeF = new System.Drawing.SizeF(140F, 12.49997F);
             this.xrLabel3.StylePriority.UseBorders = false;
             // 
             // xrLabel2
             // 
             this.xrLabel2.Borders = DevExpress.XtraPrinting.BorderSide.Top;
-            this.xrLabel2.LocationFloat = new DevExpress.Utils.PointFloat(340F, 100F);
+            this.xrLabel2.LocationFloat = new DevExpress.Utils.PointFloat(335F, 100F);
             this.xrLabel2.Multiline = true;
             this.xrLabel2.Name = "xrLabel2";
             this.xrLabel2.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel2.SizeF = new System.Drawing.SizeF(135F, 26.46529F);
+            this.xrLabel2.SizeF = new System.Drawing.SizeF(140F, 26.46529F);
             this.xrLabel2.StylePriority.UseBorders = false;
             // 
             // xrPageInfo1
@@ -1330,7 +1330,7 @@ namespace ArgusCR1012.Sales.Templates
             // QRCode
             // 
             this.QRCode.Alignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
-            this.QRCode.LocationFloat = new DevExpress.Utils.PointFloat(340F, 126.4653F);
+            this.QRCode.LocationFloat = new DevExpress.Utils.PointFloat(335F, 126.47F);
             this.QRCode.Name = "QRCode";
             this.QRCode.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F);
             this.QRCode.ShowText = false;
@@ -1645,7 +1645,7 @@ namespace ArgusCR1012.Sales.Templates
             this.xrTableRow32,
             this.xrTableRow34,
             this.xrTableRow35});
-            this.xrTable4.SizeF = new System.Drawing.SizeF(315F, 197.757F);
+            this.xrTable4.SizeF = new System.Drawing.SizeF(310F, 197.757F);
             this.xrTable4.StylePriority.UseBorders = false;
             this.xrTable4.StylePriority.UseTextAlignment = false;
             this.xrTable4.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
@@ -1919,11 +1919,14 @@ namespace ArgusCR1012.Sales.Templates
             // spName_data
             // 
             this.spName_data.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.spName_data.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+            | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.spName_data.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.spName_data.Multiline = true;
             this.spName_data.Name = "spName_data";
             this.spName_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(4, 2, 0, 0, 100F);
             this.spName_data.StylePriority.UseBackColor = false;
+            this.spName_data.StylePriority.UseBorders = false;
             this.spName_data.StylePriority.UseFont = false;
             this.spName_data.StylePriority.UsePadding = false;
             this.spName_data.StylePriority.UseTextAlignment = false;
