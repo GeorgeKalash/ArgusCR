@@ -25,22 +25,24 @@ namespace ArgusCR1012.Sales.Templates
             date_data.Text = webObject.record.trxHeader.date.ToString(sessionInfo.dateFormat);
             spName_data.Text = webObject.record.trxHeader.spName;
 
-            clientName_data.Text = webObject.record.trxHeader.clientName;
-            clientVATNo_data.Text = webObject.record.trxHeader.clientVATNo;
+            clientName_data.Text = webObject.record.client.name;
+            clientVATNo_data.Text = webObject.record.client.vatNumber;
+            phoneNumber_lbl.Text = webObject.record.quickView.phone;
 
 
-            //spCellPhone_data.Text = webObject.record.trxHeader.spCellPhone;
-            //date_data.Text = webObject.record.billAddress?.name;
             //billAddressPhone_data.Text = webObject.record.billAddress?.phone;
 
             companyName_data.Text = webObject.record.companyInfo.name;
             taxNo_data.Text = webObject.record.companyInfo.taxNo;
-
       
             subtotal_data.Text = webObject.record.trxHeader.subtotal.ToString("N2");
+            tdAmount_data.Text = webObject.record.trxHeader.tdAmount.ToString();
+
             vatAmount_data.Text = webObject.record.trxHeader.vatAmount.ToString("N2");
             amount_data.Text = webObject.record.trxHeader.amount.ToString("N2");
             amountInWords_data.Text = SharedClasses.NumberToWords.multiLingualNumberInText((decimal)webObject.record.trxHeader.amount, 2, Convert.ToInt16(sessionInfo.languageId));
+
+            notes_data.Text = webObject.record.trxHeader.description;
 
             clientName2_data.Text = webObject.record.trxHeader.clientName;
             spName2_data.Text = webObject.record.trxHeader.spName;
@@ -52,10 +54,6 @@ namespace ArgusCR1012.Sales.Templates
             QRCode.Text += string.Format("\nإجمالي الضريبة:{0}", webObject.record.trxHeader.vatAmount.ToString("N2"));
             QRCode.Text += string.Format("\nإجمالي المبلغ:{0}", webObject.record.trxHeader.amount.ToString("N2"));
 
-
-            //if (webObject.record.trxHeader.deliveryDate != null)
-            //    deliveryDate_data.Text = ((DateTime)webObject.record.trxHeader.deliveryDate).ToString(sessionInfo.dateFormat);
-        
             base.OnBeforePrint(e);
         }
 
@@ -68,7 +66,7 @@ namespace ArgusCR1012.Sales.Templates
             invoiceInfo_lbl.Text = labelText(2);
             reference_lbl.Text = labelText(3);
             date_lbl.Text = labelText(4);
-            branch_lbl.Text = labelText(5);
+            plant_lbl.Text = labelText(5);
             license_lbl.Text = labelText(6);
             commercialRecord_lbl.Text = labelText(7);
             address_lbl.Text = labelText(8);
