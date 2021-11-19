@@ -33,7 +33,9 @@ namespace ArgusCR1012.Sales.Templates
             //date_data.Text = webObject.record.billAddress?.name;
             //billAddressPhone_data.Text = webObject.record.billAddress?.phone;
 
+            companyName_data.Text = webObject.record.companyInfo.name;
             taxNo_data.Text = webObject.record.companyInfo.taxNo;
+
       
             subtotal_data.Text = webObject.record.trxHeader.subtotal.ToString("N2");
             vatAmount_data.Text = webObject.record.trxHeader.vatAmount.ToString("N2");
@@ -60,10 +62,58 @@ namespace ArgusCR1012.Sales.Templates
 
         protected override void labelsText()
         {
-            taxInvoice_lbl.Text = labelText(0);
-          
+            tamdeedVatNo_lbl.Text = labelText(0);
+            taxInvoice_lbl.Text = labelText(1);
 
+            invoiceInfo_lbl.Text = labelText(2);
+            reference_lbl.Text = labelText(3);
+            date_lbl.Text = labelText(4);
+            branch_lbl.Text = labelText(5);
+            license_lbl.Text = labelText(6);
+            commercialRecord_lbl.Text = labelText(7);
+            address_lbl.Text = labelText(8);
+            spName_lbl.Text = labelText(9);
+
+            clientInfo_lbl.Text = labelText(10);
+            clientName_lbl.Text = labelText(11);
+            clientVATNo_lbl.Text = labelText(12);
+            phoneNumber_lbl.Text = labelText(13);
+            cAddress_lbl.Text = labelText(14);
+            exhibitionManager_lbl.Text = labelText(15);
+
+
+            sku_lbl.Text = labelText(16);
+            itemName_lbl.Text = labelText(17);
+            qty_lbl.Text = labelText(18);
+            unitPrice_lbl.Text = labelText(19);
+            subtotal_lbl.Text = labelText(20);
+            discount_lbl.Text = labelText(21);
+            vat_lbl.Text = labelText(22);
+            vatAmount_lbl.Text = labelText(23);
+            extendedPrice_lbl.Text = labelText(24);
+
+            total_lbl.Text = labelText(25);
+
+            deliveryOrderRef_lbl.Text = labelText(26);
+            notes_lbl.Text = labelText(27);
+
+            subtotal2_lbl.Text = labelText(28);
+            discount2_lbl.Text = labelText(29);
+            idk_lbl.Text = labelText(30);
+            vatAmount2_lbl.Text = labelText(31);
+            amount2_data.Text = labelText(32);
+
+            text_lbl.Text = labelText(33);
+
+            clientSig_lbl.Text = labelText(34);
+            cName_lbl.Text = labelText(35);
+            cSig_lbl.Text = labelText(36);
+
+            sPSig_lbl.Text = labelText(37);
+            saPeName_lbl.Text = labelText(38);
+            sPeSig_lbl.Text = labelText(39);
         }
+
 
         protected override string dictionaryStore()
         {
