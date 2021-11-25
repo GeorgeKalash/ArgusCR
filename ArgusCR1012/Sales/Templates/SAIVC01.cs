@@ -23,12 +23,13 @@ namespace ArgusCR1012.Sales.Templates
        
             reference_data.Text = webObject.record.trxHeader.reference;
             date_data.Text = webObject.record.trxHeader.date.ToString(sessionInfo.dateFormat);
+            cellPhone_data.Text = webObject.record.salesPerson.cellPhone;
             spName_data.Text = webObject.record.trxHeader.spName;
+         
 
             clientName_data.Text = webObject.record.client.name;
             clientVATNo_data.Text = webObject.record.client.vatNumber;
             phoneNumber_lbl.Text = webObject.record.quickView.phone;
-
 
             //billAddressPhone_data.Text = webObject.record.billAddress?.phone;
 
@@ -79,7 +80,6 @@ namespace ArgusCR1012.Sales.Templates
             cAddress_lbl.Text = labelText(14);
             exhibitionManager_lbl.Text = labelText(15);
 
-
             sku_lbl.Text = labelText(16);
             itemName_lbl.Text = labelText(17);
             qty_lbl.Text = labelText(18);
@@ -111,8 +111,6 @@ namespace ArgusCR1012.Sales.Templates
             saPeName_lbl.Text = labelText(38);
             sPeSig_lbl.Text = labelText(39);
         }
-
-
         protected override string dictionaryStore()
         {
             return "Custom\\R1012\\SA103";
