@@ -20,30 +20,32 @@ namespace ArgusCR1012.Sales.Templates
         {
             SharedClasses.JsonProtocol.GetStructure<TrxPrintView> webObject = deserializeGet<TrxPrintView>();
             DataSource = webObject.record.items;
-       
+
+            companyName_data.Text = webObject.record.companyInfo.name;
+            taxNo_data.Text = webObject.record.companyInfo.taxNo;
+
             reference_data.Text = webObject.record.trxHeader.reference;
             date_data.Text = webObject.record.trxHeader.date.ToString(sessionInfo.dateFormat);
+          //plantName_data.Text = webObject.record.trxHeader.reference;
+            licenseNo_data.Text = webObject.record.companyInfo.licenseNo;
+            crNo_data.Text = webObject.record.companyInfo.crNo;
+         // address_data.Text = webObject.record.billAddress.address;
+            spName_data.Text = webObject.record.salesPerson.name;
             cellPhone_data.Text = webObject.record.salesPerson.cellPhone;
-            spName_data.Text = webObject.record.trxHeader.spName;
-         
 
             clientName_data.Text = webObject.record.client.name;
             clientVATNo_data.Text = webObject.record.client.vatNumber;
             phoneNumber_lbl.Text = webObject.record.quickView.phone;
-
-            //billAddressPhone_data.Text = webObject.record.billAddress?.phone;
-
-            companyName_data.Text = webObject.record.companyInfo.name;
-            taxNo_data.Text = webObject.record.companyInfo.taxNo;
       
             subtotal_data.Text = webObject.record.trxHeader.subtotal.ToString("N2");
             tdAmount_data.Text = webObject.record.trxHeader.tdAmount.ToString();
-
+            subtotal2_data.Text = webObject.record.trxHeader.subtotal.ToString("N2");
             vatAmount_data.Text = webObject.record.trxHeader.vatAmount.ToString("N2");
             amount_data.Text = webObject.record.trxHeader.amount.ToString("N2");
             amountInWords_data.Text = SharedClasses.NumberToWords.multiLingualNumberInText((decimal)webObject.record.trxHeader.amount, 2, Convert.ToInt16(sessionInfo.languageId));
 
-            notes_data.Text = webObject.record.trxHeader.description;
+            deliveryOrders_data.Text = webObject.record.deliveryOrders;
+            description_data.Text = webObject.record.trxHeader.description;
 
             clientName2_data.Text = webObject.record.trxHeader.clientName;
             spName2_data.Text = webObject.record.trxHeader.spName;
@@ -57,7 +59,6 @@ namespace ArgusCR1012.Sales.Templates
 
             base.OnBeforePrint(e);
         }
-
 
         protected override void labelsText()
         {
