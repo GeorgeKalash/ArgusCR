@@ -30,6 +30,7 @@ namespace ArgusCR1012.Sales.Templates
             licenseNo_data.Text = webObject.record.companyInfo.licenseNo;
             crNo_data.Text = webObject.record.companyInfo.crNo;
             address_data.Text = webObject.record.companyInfo.address?.countryName;
+
             spName_data.Text = webObject.record.salesPerson.name;
             cellPhone_data.Text = webObject.record.salesPerson.cellPhone;
 
