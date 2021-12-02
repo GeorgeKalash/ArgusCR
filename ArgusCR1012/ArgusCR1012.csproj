@@ -162,6 +162,7 @@
     <Compile Include="Purchase\Templates\PUSHP01.Designer.cs">
       <DependentUpon>PUSHP01.cs</DependentUpon>
     </Compile>
+    <Compile Include="Sales\Templates\KSAeInvoiceQrCode.cs" />
     <Compile Include="Sales\Templates\SAIVC01.cs">
       <SubType>Component</SubType>
     </Compile>
