@@ -34,6 +34,7 @@ namespace ArgusCR1012.Sales.Templates
             DevExpress.XtraReports.UI.XRSummary xrSummary2 = new DevExpress.XtraReports.UI.XRSummary();
             DevExpress.XtraReports.UI.XRSummary xrSummary3 = new DevExpress.XtraReports.UI.XRSummary();
             DevExpress.XtraReports.UI.XRSummary xrSummary4 = new DevExpress.XtraReports.UI.XRSummary();
+            DevExpress.XtraReports.UI.XRSummary xrSummary5 = new DevExpress.XtraReports.UI.XRSummary();
             DevExpress.XtraPrinting.BarCode.QRCodeGenerator qrCodeGenerator1 = new DevExpress.XtraPrinting.BarCode.QRCodeGenerator();
             this.PageHeader = new DevExpress.XtraReports.UI.PageHeaderBand();
             this.xrTable6 = new DevExpress.XtraReports.UI.XRTable();
@@ -98,8 +99,8 @@ namespace ArgusCR1012.Sales.Templates
             this.discount2_lbl = new DevExpress.XtraReports.UI.XRTableCell();
             this.tdAmount_data = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTableRow21 = new DevExpress.XtraReports.UI.XRTableRow();
-            this.idk_lbl = new DevExpress.XtraReports.UI.XRTableCell();
-            this.subtotal2_data = new DevExpress.XtraReports.UI.XRTableCell();
+            this.totalSub_lbl = new DevExpress.XtraReports.UI.XRTableCell();
+            this.totalSub_data = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTableRow8 = new DevExpress.XtraReports.UI.XRTableRow();
             this.vatAmount2_lbl = new DevExpress.XtraReports.UI.XRTableCell();
             this.vatAmount_data = new DevExpress.XtraReports.UI.XRTableCell();
@@ -1049,35 +1050,40 @@ namespace ArgusCR1012.Sales.Templates
             // xrTableRow21
             // 
             this.xrTableRow21.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
-            this.idk_lbl,
-            this.subtotal2_data});
+            this.totalSub_lbl,
+            this.totalSub_data});
             this.xrTableRow21.Name = "xrTableRow21";
             this.xrTableRow21.Weight = 1D;
             // 
-            // idk_lbl
+            // totalSub_lbl
             // 
-            this.idk_lbl.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.idk_lbl.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.idk_lbl.Multiline = true;
-            this.idk_lbl.Name = "idk_lbl";
-            this.idk_lbl.StylePriority.UseBackColor = false;
-            this.idk_lbl.StylePriority.UseFont = false;
-            this.idk_lbl.StylePriority.UseTextAlignment = false;
-            this.idk_lbl.Text = "Total Amount Subject To  Vat";
-            this.idk_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
-            this.idk_lbl.Weight = 4.77015217835267D;
+            this.totalSub_lbl.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.totalSub_lbl.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.totalSub_lbl.Multiline = true;
+            this.totalSub_lbl.Name = "totalSub_lbl";
+            this.totalSub_lbl.StylePriority.UseBackColor = false;
+            this.totalSub_lbl.StylePriority.UseFont = false;
+            this.totalSub_lbl.StylePriority.UseTextAlignment = false;
+            this.totalSub_lbl.Text = "Total Amount Subject To  Vat";
+            this.totalSub_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
+            this.totalSub_lbl.Weight = 4.77015217835267D;
             // 
-            // subtotal2_data
+            // totalSub_data
             // 
-            this.subtotal2_data.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.subtotal2_data.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold);
-            this.subtotal2_data.Multiline = true;
-            this.subtotal2_data.Name = "subtotal2_data";
-            this.subtotal2_data.StylePriority.UseBackColor = false;
-            this.subtotal2_data.StylePriority.UseFont = false;
-            this.subtotal2_data.StylePriority.UseTextAlignment = false;
-            this.subtotal2_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
-            this.subtotal2_data.Weight = 2.2011905098490616D;
+            this.totalSub_data.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.totalSub_data.CanGrow = false;
+            this.totalSub_data.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[ReportItems.subtotal_data] - [ReportItems.tdAmount_data]")});
+            this.totalSub_data.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold);
+            this.totalSub_data.Name = "totalSub_data";
+            this.totalSub_data.StylePriority.UseBackColor = false;
+            this.totalSub_data.StylePriority.UseFont = false;
+            this.totalSub_data.StylePriority.UseTextAlignment = false;
+            xrSummary5.Running = DevExpress.XtraReports.UI.SummaryRunning.Report;
+            this.totalSub_data.Summary = xrSummary5;
+            this.totalSub_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
+            this.totalSub_data.Weight = 2.2011905098490616D;
+            this.totalSub_data.WordWrap = false;
             // 
             // xrTableRow8
             // 
@@ -1359,7 +1365,7 @@ namespace ArgusCR1012.Sales.Templates
             this.QRCode.Name = "QRCode";
             this.QRCode.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F);
             this.QRCode.ShowText = false;
-            this.QRCode.SizeF = new System.Drawing.SizeF(135F, 131.26F);
+            this.QRCode.SizeF = new System.Drawing.SizeF(140F, 131.26F);
             this.QRCode.StylePriority.UsePadding = false;
             this.QRCode.StylePriority.UseTextAlignment = false;
             qrCodeGenerator1.CompactionMode = DevExpress.XtraPrinting.BarCode.QRCodeCompactionMode.Byte;
@@ -2073,7 +2079,7 @@ namespace ArgusCR1012.Sales.Templates
         private DevExpress.XtraReports.UI.XRTableRow xrTableRow20;
         private DevExpress.XtraReports.UI.XRTableCell tdAmount_data;
         private DevExpress.XtraReports.UI.XRTableRow xrTableRow21;
-        private DevExpress.XtraReports.UI.XRTableCell subtotal2_data;
+        private DevExpress.XtraReports.UI.XRTableCell totalSub_data;
         private DevExpress.XtraReports.UI.XRBarCode QRCode;
         private DevExpress.XtraReports.UI.XRTableCell vat_lbl;
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell2;
@@ -2128,7 +2134,7 @@ namespace ArgusCR1012.Sales.Templates
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell38;
         private DevExpress.XtraReports.UI.XRTableCell subtotal2_lbl;
         private DevExpress.XtraReports.UI.XRTableCell discount2_lbl;
-        private DevExpress.XtraReports.UI.XRTableCell idk_lbl;
+        private DevExpress.XtraReports.UI.XRTableCell totalSub_lbl;
         private DevExpress.XtraReports.UI.XRTableRow xrTableRow8;
         private DevExpress.XtraReports.UI.XRTableCell vatAmount2_lbl;
         private DevExpress.XtraReports.UI.XRTableCell vatAmount_data;
