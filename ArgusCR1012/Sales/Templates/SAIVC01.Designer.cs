@@ -34,7 +34,6 @@ namespace ArgusCR1012.Sales.Templates
             DevExpress.XtraReports.UI.XRSummary xrSummary2 = new DevExpress.XtraReports.UI.XRSummary();
             DevExpress.XtraReports.UI.XRSummary xrSummary3 = new DevExpress.XtraReports.UI.XRSummary();
             DevExpress.XtraReports.UI.XRSummary xrSummary4 = new DevExpress.XtraReports.UI.XRSummary();
-            DevExpress.XtraReports.UI.XRSummary xrSummary5 = new DevExpress.XtraReports.UI.XRSummary();
             DevExpress.XtraPrinting.BarCode.QRCodeGenerator qrCodeGenerator1 = new DevExpress.XtraPrinting.BarCode.QRCodeGenerator();
             this.PageHeader = new DevExpress.XtraReports.UI.PageHeaderBand();
             this.xrTable6 = new DevExpress.XtraReports.UI.XRTable();
@@ -1071,19 +1070,14 @@ namespace ArgusCR1012.Sales.Templates
             // totalSub_data
             // 
             this.totalSub_data.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.totalSub_data.CanGrow = false;
-            this.totalSub_data.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[ReportItems.subtotal_data] - [ReportItems.tdAmount_data]")});
             this.totalSub_data.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold);
+            this.totalSub_data.Multiline = true;
             this.totalSub_data.Name = "totalSub_data";
             this.totalSub_data.StylePriority.UseBackColor = false;
             this.totalSub_data.StylePriority.UseFont = false;
             this.totalSub_data.StylePriority.UseTextAlignment = false;
-            xrSummary5.Running = DevExpress.XtraReports.UI.SummaryRunning.Report;
-            this.totalSub_data.Summary = xrSummary5;
             this.totalSub_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
             this.totalSub_data.Weight = 2.2011905098490616D;
-            this.totalSub_data.WordWrap = false;
             // 
             // xrTableRow8
             // 
@@ -1370,6 +1364,7 @@ namespace ArgusCR1012.Sales.Templates
             this.QRCode.StylePriority.UseTextAlignment = false;
             qrCodeGenerator1.CompactionMode = DevExpress.XtraPrinting.BarCode.QRCodeCompactionMode.Byte;
             this.QRCode.Symbology = qrCodeGenerator1;
+            this.QRCode.TextAlignment = DevExpress.XtraPrinting.TextAlignment.BottomCenter;
             // 
             // xrTable5
             // 
