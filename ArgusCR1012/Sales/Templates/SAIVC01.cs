@@ -29,10 +29,11 @@ namespace ArgusCR1012.Sales.Templates
           //plantName_data.Text = webObject.record.trxHeader.reference;
             licenseNo_data.Text = webObject.record.companyInfo.licenseNo;
             crNo_data.Text = webObject.record.companyInfo.crNo;
+
             address_data.Text = webObject.record.companyInfo.address?.countryName;
 
-            spName_data.Text = webObject.record.salesPerson.name;
-            cellPhone_data.Text = webObject.record.salesPerson.cellPhone;
+            spName_data.Text = webObject.record.salesPerson?.name;
+            cellPhone_data.Text = webObject.record.salesPerson?.cellPhone;
 
             clientName_data.Text = webObject.record.client.name;
             clientVATNo_data.Text = webObject.record.client.vatNumber;
