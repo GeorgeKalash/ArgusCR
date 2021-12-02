@@ -26,19 +26,19 @@ namespace ArgusCR1012.Sales.Templates
 
             reference_data.Text = webObject.record.trxHeader.reference;
             date_data.Text = webObject.record.trxHeader.date.ToString(sessionInfo.dateFormat);
-          //plantName_data.Text = webObject.record.trxHeader.reference;
+            //plant_data.Text = webObject.record.trxHeader.plantName;
             licenseNo_data.Text = webObject.record.companyInfo.licenseNo;
             crNo_data.Text = webObject.record.companyInfo.crNo;
-
-            address_data.Text = webObject.record.companyInfo.address?.countryName;
-
+            address_data.Text = webObject.record.companyInfo.address?.street1;
             spName_data.Text = webObject.record.salesPerson?.name;
             cellPhone_data.Text = webObject.record.salesPerson?.cellPhone;
 
             clientName_data.Text = webObject.record.client.name;
             clientVATNo_data.Text = webObject.record.client.vatNumber;
             idNo_data.Text = webObject.record.idNo;
-            phoneNumber_lbl.Text = webObject.record.quickView.phone;
+            phoneNumber_lbl.Text = webObject.record.billAddress?.phone;
+            cAddress_data.Text = webObject.record.billAddress?.street1;
+          
 
             subtotal_data.Text = webObject.record.trxHeader.subtotal.ToString("N2");
             tdAmount_data.Text = webObject.record.trxHeader.tdAmount.ToString();
@@ -75,6 +75,7 @@ namespace ArgusCR1012.Sales.Templates
             clientInfo_lbl.Text = labelText(10);
             clientName_lbl.Text = labelText(11);
             clientVATNo_lbl.Text = labelText(12);
+
             phoneNumber_lbl.Text = labelText(13);
             cAddress_lbl.Text = labelText(14);
             exhibitionManager_lbl.Text = labelText(15);
