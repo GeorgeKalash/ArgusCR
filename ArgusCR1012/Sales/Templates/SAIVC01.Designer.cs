@@ -230,7 +230,7 @@ namespace ArgusCR1012.Sales.Templates
             this.sku_lbl.StylePriority.UseTextAlignment = false;
             this.sku_lbl.Text = "SKU";
             this.sku_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
-            this.sku_lbl.Weight = 1.4054968675037982D;
+            this.sku_lbl.Weight = 1.599951223927595D;
             // 
             // itemName_lbl
             // 
@@ -246,7 +246,7 @@ namespace ArgusCR1012.Sales.Templates
             this.itemName_lbl.StylePriority.UseTextAlignment = false;
             this.itemName_lbl.Text = "Item Name";
             this.itemName_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
-            this.itemName_lbl.Weight = 3.0787080782044285D;
+            this.itemName_lbl.Weight = 2.8842537217806319D;
             // 
             // qty_lbl
             // 
@@ -411,7 +411,7 @@ namespace ArgusCR1012.Sales.Templates
             this.sku_data.StylePriority.UsePadding = false;
             this.sku_data.StylePriority.UseTextAlignment = false;
             this.sku_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
-            this.sku_data.Weight = 0.93485251221995613D;
+            this.sku_data.Weight = 1.0641918426344923D;
             // 
             // itemName_data
             // 
@@ -427,7 +427,7 @@ namespace ArgusCR1012.Sales.Templates
             this.itemName_data.StylePriority.UsePadding = false;
             this.itemName_data.StylePriority.UseTextAlignment = false;
             this.itemName_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
-            this.itemName_data.Weight = 2.0477721732378562D;
+            this.itemName_data.Weight = 1.9184328428233202D;
             // 
             // qty_data
             // 
