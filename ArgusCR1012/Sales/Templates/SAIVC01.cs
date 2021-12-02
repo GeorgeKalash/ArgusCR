@@ -42,7 +42,7 @@ namespace ArgusCR1012.Sales.Templates
 
             subtotal_data.Text = webObject.record.trxHeader.subtotal.ToString("N2");
             tdAmount_data.Text = webObject.record.trxHeader.tdAmount.ToString();
-
+            totalSub_data.Text = webObject.record.trxHeader.subtotal.ToString("N2");
             vatAmount_data.Text = webObject.record.trxHeader.vatAmount.ToString("N2");
             amount_data.Text = webObject.record.trxHeader.amount.ToString("N2");
             amountInWords_data.Text = SharedClasses.NumberToWords.multiLingualNumberInText((decimal)webObject.record.trxHeader.amount, 2, Convert.ToInt16(sessionInfo.languageId));
