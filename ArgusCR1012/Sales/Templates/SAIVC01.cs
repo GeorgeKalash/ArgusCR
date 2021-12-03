@@ -55,6 +55,9 @@ namespace ArgusCR1012.Sales.Templates
 
             QRCode.Text = new KSAeInvoiceQrCode(webObject.record.companyInfo.name, webObject.record.companyInfo.taxNo, ((DateTime)webObject.record.logTime).ToString(), webObject.record.trxHeader.amount.ToString(), webObject.record.trxHeader.vatAmount.ToString()).ToBase64();
 
+            double TotalAmountNonSubjectToTax = webObject.record.trxHeader.subtotal - (webObject.record.trxHeader.tdAmount ?? 0);
+            //xxxxxxxxxxxx.Text = TotalAmountNonSubjectToTax.ToString("N2");
+
             base.OnBeforePrint(e);
         }
 
