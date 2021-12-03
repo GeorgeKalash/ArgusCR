@@ -26,7 +26,7 @@ namespace ArgusCR1012.Sales.Templates
 
             reference_data.Text = webObject.record.trxHeader.reference;
             date_data.Text = webObject.record.trxHeader.date.ToString(sessionInfo.dateFormat);
-            //plant_data.Text = webObject.record.trxHeader.plantName;
+            plant_data.Text = webObject.record.trxHeader.plantName;
             licenseNo_data.Text = webObject.record.companyInfo.licenseNo;
             crNo_data.Text = webObject.record.companyInfo.crNo;
             address_data.Text = webObject.record.companyInfo.address?.street1;
