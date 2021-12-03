@@ -42,7 +42,10 @@ namespace ArgusCR1012.Sales.Templates
 
             subtotal_data.Text = webObject.record.trxHeader.subtotal.ToString("N2");
             tdAmount_data.Text = webObject.record.trxHeader.tdAmount.ToString();
-            totalSub_data.Text = webObject.record.trxHeader.subtotal.ToString("N2");
+
+            double TotalAmountNonSubjectToTax = webObject.record.trxHeader.subtotal - (webObject.record.trxHeader.tdAmount ?? 0);
+            totalSub_data.Text = TotalAmountNonSubjectToTax.ToString("N2");
+
             vatAmount_data.Text = webObject.record.trxHeader.vatAmount.ToString("N2");
             amount_data.Text = webObject.record.trxHeader.amount.ToString("N2");
             amountInWords_data.Text = SharedClasses.NumberToWords.multiLingualNumberInText((decimal)webObject.record.trxHeader.amount, 2, Convert.ToInt16(sessionInfo.languageId));
@@ -55,8 +58,6 @@ namespace ArgusCR1012.Sales.Templates
 
             QRCode.Text = new KSAeInvoiceQrCode(webObject.record.companyInfo.name, webObject.record.companyInfo.taxNo, ((DateTime)webObject.record.logTime).ToString(), webObject.record.trxHeader.amount.ToString(), webObject.record.trxHeader.vatAmount.ToString()).ToBase64();
 
-            double TotalAmountNonSubjectToTax = webObject.record.trxHeader.subtotal - (webObject.record.trxHeader.tdAmount ?? 0);
-            //xxxxxxxxxxxx.Text = TotalAmountNonSubjectToTax.ToString("N2");
 
             base.OnBeforePrint(e);
         }
