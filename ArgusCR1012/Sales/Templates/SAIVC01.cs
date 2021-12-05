@@ -33,6 +33,7 @@ namespace ArgusCR1012.Sales.Templates
             spName_data.Text = webObject.record.salesPerson?.name;
             cellPhone_data.Text = webObject.record.salesPerson?.cellPhone;
 
+            clientRef_data.Text = webObject.record.client.reference;
             clientName_data.Text = webObject.record.client.name;
             clientVATNo_data.Text = webObject.record.client.vatNumber;
             idNo_data.Text = webObject.record.idNo;

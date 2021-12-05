@@ -129,6 +129,7 @@ namespace ArgusCR1012.Sales.Templates
             this.clientInfo_lbl = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTableRow16 = new DevExpress.XtraReports.UI.XRTableRow();
             this.clientName_data = new DevExpress.XtraReports.UI.XRTableCell();
+            this.clientRef_data = new DevExpress.XtraReports.UI.XRTableCell();
             this.clientName_lbl = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTableRow17 = new DevExpress.XtraReports.UI.XRTableRow();
             this.clientVATNo_data = new DevExpress.XtraReports.UI.XRTableCell();
@@ -1415,6 +1416,7 @@ namespace ArgusCR1012.Sales.Templates
             // 
             this.xrTableRow16.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
             this.clientName_data,
+            this.clientRef_data,
             this.clientName_lbl});
             this.xrTableRow16.Name = "xrTableRow16";
             this.xrTableRow16.Weight = 1D;
@@ -1422,16 +1424,36 @@ namespace ArgusCR1012.Sales.Templates
             // clientName_data
             // 
             this.clientName_data.BackColor = System.Drawing.Color.White;
+            this.clientName_data.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+            | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.clientName_data.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.clientName_data.Multiline = true;
             this.clientName_data.Name = "clientName_data";
-            this.clientName_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(15, 4, 0, 0, 100F);
+            this.clientName_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.clientName_data.StylePriority.UseBackColor = false;
+            this.clientName_data.StylePriority.UseBorders = false;
             this.clientName_data.StylePriority.UseFont = false;
             this.clientName_data.StylePriority.UsePadding = false;
             this.clientName_data.StylePriority.UseTextAlignment = false;
             this.clientName_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
-            this.clientName_data.Weight = 16.570698410178156D;
+            this.clientName_data.Weight = 12.055187619951806D;
+            // 
+            // clientRef_data
+            // 
+            this.clientRef_data.BackColor = System.Drawing.Color.White;
+            this.clientRef_data.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Top | DevExpress.XtraPrinting.BorderSide.Right) 
+            | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.clientRef_data.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.clientRef_data.Multiline = true;
+            this.clientRef_data.Name = "clientRef_data";
+            this.clientRef_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.clientRef_data.StylePriority.UseBackColor = false;
+            this.clientRef_data.StylePriority.UseBorders = false;
+            this.clientRef_data.StylePriority.UseFont = false;
+            this.clientRef_data.StylePriority.UsePadding = false;
+            this.clientRef_data.StylePriority.UseTextAlignment = false;
+            this.clientRef_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
+            this.clientRef_data.Weight = 4.5155107902263518D;
             // 
             // clientName_lbl
             // 
@@ -2160,5 +2182,6 @@ namespace ArgusCR1012.Sales.Templates
         private DevExpress.XtraReports.UI.XRTableCell discount_lbl;
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell1;
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell4;
+        private DevExpress.XtraReports.UI.XRTableCell clientRef_data;
     }
 }
