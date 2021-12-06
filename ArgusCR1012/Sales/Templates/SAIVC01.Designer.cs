@@ -975,6 +975,7 @@ namespace ArgusCR1012.Sales.Templates
             this.xrTable12.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.xrTable12.BorderWidth = 0.5F;
             this.xrTable12.LocationFloat = new DevExpress.Utils.PointFloat(539.5832F, 32F);
             this.xrTable12.Name = "xrTable12";
             this.xrTable12.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
@@ -986,6 +987,7 @@ namespace ArgusCR1012.Sales.Templates
             this.xrTableRow9});
             this.xrTable12.SizeF = new System.Drawing.SizeF(262.5163F, 123.3333F);
             this.xrTable12.StylePriority.UseBorders = false;
+            this.xrTable12.StylePriority.UseBorderWidth = false;
             this.xrTable12.StylePriority.UseTextAlignment = false;
             this.xrTable12.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             // 
@@ -1159,6 +1161,7 @@ namespace ArgusCR1012.Sales.Templates
             this.xrTable11.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.xrTable11.BorderWidth = 0.5F;
             this.xrTable11.LocationFloat = new DevExpress.Utils.PointFloat(25F, 32F);
             this.xrTable11.Name = "xrTable11";
             this.xrTable11.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
@@ -1167,6 +1170,7 @@ namespace ArgusCR1012.Sales.Templates
             this.xrTableRow14});
             this.xrTable11.SizeF = new System.Drawing.SizeF(383.1075F, 93.74994F);
             this.xrTable11.StylePriority.UseBorders = false;
+            this.xrTable11.StylePriority.UseBorderWidth = false;
             this.xrTable11.StylePriority.UseTextAlignment = false;
             this.xrTable11.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             // 
@@ -1261,22 +1265,26 @@ namespace ArgusCR1012.Sales.Templates
             // xrLabel3
             // 
             this.xrLabel3.Borders = DevExpress.XtraPrinting.BorderSide.Bottom;
+            this.xrLabel3.BorderWidth = 0.5F;
             this.xrLabel3.LocationFloat = new DevExpress.Utils.PointFloat(335F, 285.257F);
             this.xrLabel3.Multiline = true;
             this.xrLabel3.Name = "xrLabel3";
             this.xrLabel3.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.xrLabel3.SizeF = new System.Drawing.SizeF(140F, 12.49997F);
             this.xrLabel3.StylePriority.UseBorders = false;
+            this.xrLabel3.StylePriority.UseBorderWidth = false;
             // 
             // xrLabel2
             // 
             this.xrLabel2.Borders = DevExpress.XtraPrinting.BorderSide.Top;
+            this.xrLabel2.BorderWidth = 0.5F;
             this.xrLabel2.LocationFloat = new DevExpress.Utils.PointFloat(335F, 100F);
             this.xrLabel2.Multiline = true;
             this.xrLabel2.Name = "xrLabel2";
             this.xrLabel2.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.xrLabel2.SizeF = new System.Drawing.SizeF(140F, 26.46529F);
             this.xrLabel2.StylePriority.UseBorders = false;
+            this.xrLabel2.StylePriority.UseBorderWidth = false;
             // 
             // xrPageInfo1
             // 
@@ -1379,6 +1387,7 @@ namespace ArgusCR1012.Sales.Templates
             this.xrTable5.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.xrTable5.BorderWidth = 0.5F;
             this.xrTable5.LocationFloat = new DevExpress.Utils.PointFloat(475F, 100F);
             this.xrTable5.Name = "xrTable5";
             this.xrTable5.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 4, 0, 100F);
@@ -1392,6 +1401,7 @@ namespace ArgusCR1012.Sales.Templates
             this.xrTableRow33});
             this.xrTable5.SizeF = new System.Drawing.SizeF(324.0995F, 197.757F);
             this.xrTable5.StylePriority.UseBorders = false;
+            this.xrTable5.StylePriority.UseBorderWidth = false;
             this.xrTable5.StylePriority.UsePadding = false;
             this.xrTable5.StylePriority.UseTextAlignment = false;
             this.xrTable5.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
@@ -1689,6 +1699,7 @@ namespace ArgusCR1012.Sales.Templates
             this.xrTable4.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.xrTable4.BorderWidth = 0.5F;
             this.xrTable4.LocationFloat = new DevExpress.Utils.PointFloat(25F, 100F);
             this.xrTable4.Name = "xrTable4";
             this.xrTable4.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
@@ -1702,6 +1713,7 @@ namespace ArgusCR1012.Sales.Templates
             this.xrTableRow35});
             this.xrTable4.SizeF = new System.Drawing.SizeF(310F, 197.757F);
             this.xrTable4.StylePriority.UseBorders = false;
+            this.xrTable4.StylePriority.UseBorderWidth = false;
             this.xrTable4.StylePriority.UseTextAlignment = false;
             this.xrTable4.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             // 
@@ -2011,7 +2023,7 @@ namespace ArgusCR1012.Sales.Templates
             this.taxInvoice_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
-            this.taxInvoice_lbl.BorderWidth = 2F;
+            this.taxInvoice_lbl.BorderWidth = 1.5F;
             this.taxInvoice_lbl.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
             this.taxInvoice_lbl.LocationFloat = new DevExpress.Utils.PointFloat(321.0554F, 23.95836F);
             this.taxInvoice_lbl.Multiline = true;
