@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Drawing;
 using System.Text;
 
-
 public class KSAeInvoiceQrCode
 {
     byte[] vendorName;
@@ -12,11 +11,12 @@ public class KSAeInvoiceQrCode
     byte[] amount;
     byte[] vatAmount;
 
-    public KSAeInvoiceQrCode(string _vendorName, string _vatNo, string _invoiceDate, string _amount, string _vatAmount)
+    public KSAeInvoiceQrCode(string _vendorName, string _vatNo, DateTime _invoiceDate, string _amount, string _vatAmount)
     {
+        string dt = _invoiceDate.ToString("yyyy-MM-ddTHH:mm:ss") + "+03";
         vendorName = Encoding.UTF8.GetBytes(_vendorName);
         VatNo = Encoding.UTF8.GetBytes(_vatNo);
-        invoiceDate = Encoding.UTF8.GetBytes(_invoiceDate);
+        invoiceDate = Encoding.UTF8.GetBytes(dt);
         amount = Encoding.UTF8.GetBytes(_amount);
         vatAmount = Encoding.UTF8.GetBytes(_vatAmount);
     }
