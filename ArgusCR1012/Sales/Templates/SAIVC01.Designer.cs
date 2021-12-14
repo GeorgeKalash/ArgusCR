@@ -252,7 +252,7 @@ namespace ArgusCR1012.Sales.Templates
             this.itemName_lbl.StylePriority.UseTextAlignment = false;
             this.itemName_lbl.Text = "اسم الصنف\r\nItem Name";
             this.itemName_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
-            this.itemName_lbl.Weight = 2.3658350738338161D;
+            this.itemName_lbl.Weight = 2.4011490748734841D;
             // 
             // qty_lbl
             // 
@@ -268,7 +268,7 @@ namespace ArgusCR1012.Sales.Templates
             this.qty_lbl.StylePriority.UseTextAlignment = false;
             this.qty_lbl.Text = "الكمیة\r\nQty";
             this.qty_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
-            this.qty_lbl.Weight = 0.74394755309519756D;
+            this.qty_lbl.Weight = 0.7086335520555298D;
             // 
             // unitPrice_lbl
             // 
@@ -418,7 +418,7 @@ namespace ArgusCR1012.Sales.Templates
             this.itemName_data.StylePriority.UsePadding = false;
             this.itemName_data.StylePriority.UseTextAlignment = false;
             this.itemName_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
-            this.itemName_data.Weight = 1.5736120123196624D;
+            this.itemName_data.Weight = 1.5971005239012084D;
             // 
             // qty_data
             // 
@@ -435,7 +435,7 @@ namespace ArgusCR1012.Sales.Templates
             this.qty_data.StylePriority.UseTextAlignment = false;
             this.qty_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
             this.qty_data.TextFormatString = "{0:n2}";
-            this.qty_data.Weight = 0.49482939520895863D;
+            this.qty_data.Weight = 0.47134088362741272D;
             // 
             // unitPrice_data
             // 
@@ -590,7 +590,7 @@ namespace ArgusCR1012.Sales.Templates
             // 
             // saPeName_lbl
             // 
-            this.saPeName_lbl.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold);
+            this.saPeName_lbl.Font = new System.Drawing.Font("Times New Roman", 9.75F);
             this.saPeName_lbl.Multiline = true;
             this.saPeName_lbl.Name = "saPeName_lbl";
             this.saPeName_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(5, 2, 8, 0, 100F);
@@ -617,7 +617,7 @@ namespace ArgusCR1012.Sales.Templates
             // 
             // sPeSig_lbl
             // 
-            this.sPeSig_lbl.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold);
+            this.sPeSig_lbl.Font = new System.Drawing.Font("Times New Roman", 9.75F);
             this.sPeSig_lbl.Multiline = true;
             this.sPeSig_lbl.Name = "sPeSig_lbl";
             this.sPeSig_lbl.StylePriority.UseFont = false;
@@ -675,7 +675,7 @@ namespace ArgusCR1012.Sales.Templates
             // 
             // cName_lbl
             // 
-            this.cName_lbl.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold);
+            this.cName_lbl.Font = new System.Drawing.Font("Times New Roman", 9.75F);
             this.cName_lbl.Multiline = true;
             this.cName_lbl.Name = "cName_lbl";
             this.cName_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(5, 2, 8, 0, 100F);
@@ -702,7 +702,7 @@ namespace ArgusCR1012.Sales.Templates
             // 
             // cSig_lbl
             // 
-            this.cSig_lbl.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold);
+            this.cSig_lbl.Font = new System.Drawing.Font("Times New Roman", 9.75F);
             this.cSig_lbl.Multiline = true;
             this.cSig_lbl.Name = "cSig_lbl";
             this.cSig_lbl.StylePriority.UseFont = false;
@@ -781,7 +781,7 @@ namespace ArgusCR1012.Sales.Templates
             this.total_lbl.StylePriority.UseTextAlignment = false;
             this.total_lbl.Text = " الاجمالـــــي\r\nTotal";
             this.total_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
-            this.total_lbl.Weight = 2.8053174680785009D;
+            this.total_lbl.Weight = 2.8442970531728835D;
             // 
             // xrTableCell48
             // 
@@ -802,7 +802,7 @@ namespace ArgusCR1012.Sales.Templates
             this.xrTableCell48.Summary = xrSummary1;
             this.xrTableCell48.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
             this.xrTableCell48.TextFormatString = "{0:n2}";
-            this.xrTableCell48.Weight = 0.58985330002628911D;
+            this.xrTableCell48.Weight = 0.55087371493190629D;
             this.xrTableCell48.WordWrap = false;
             // 
             // xrTableCell49
@@ -820,7 +820,7 @@ namespace ArgusCR1012.Sales.Templates
             this.xrTableCell49.StylePriority.UseTextAlignment = false;
             this.xrTableCell49.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
             this.xrTableCell49.TextFormatString = "{0:n2}";
-            this.xrTableCell49.Weight = 0.61988911499085486D;
+            this.xrTableCell49.Weight = 0.63544948372814736D;
             this.xrTableCell49.WordWrap = false;
             // 
             // xrTableCell50
@@ -842,7 +842,7 @@ namespace ArgusCR1012.Sales.Templates
             this.xrTableCell50.Summary = xrSummary2;
             this.xrTableCell50.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
             this.xrTableCell50.TextFormatString = "{0:n2}";
-            this.xrTableCell50.Weight = 1.0088490327985105D;
+            this.xrTableCell50.Weight = 1.012758865570575D;
             this.xrTableCell50.WordWrap = false;
             // 
             // xrTableCell51
@@ -859,7 +859,7 @@ namespace ArgusCR1012.Sales.Templates
             this.xrTableCell51.StylePriority.UsePadding = false;
             this.xrTableCell51.StylePriority.UseTextAlignment = false;
             this.xrTableCell51.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
-            this.xrTableCell51.Weight = 0.5634070803459359D;
+            this.xrTableCell51.Weight = 0.54393687883657882D;
             // 
             // xrTableCell53
             // 
