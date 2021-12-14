@@ -440,8 +440,6 @@ namespace ArgusCR1012.Sales.Templates
             // unitPrice_data
             // 
             this.unitPrice_data.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.unitPrice_data.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[unitPrice]")});
             this.unitPrice_data.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.unitPrice_data.Multiline = true;
             this.unitPrice_data.Name = "unitPrice_data";
