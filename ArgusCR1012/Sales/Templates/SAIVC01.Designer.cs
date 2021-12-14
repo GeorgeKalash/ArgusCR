@@ -539,14 +539,16 @@ namespace ArgusCR1012.Sales.Templates
             // 
             // xrTable13
             // 
-            this.xrTable13.LocationFloat = new DevExpress.Utils.PointFloat(75.00003F, 251.7916F);
+            this.xrTable13.LocationFloat = new DevExpress.Utils.PointFloat(65.62503F, 251.7916F);
             this.xrTable13.Name = "xrTable13";
             this.xrTable13.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable13.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow25,
             this.xrTableRow23,
             this.xrTableRow24});
-            this.xrTable13.SizeF = new System.Drawing.SizeF(260F, 103.125F);
+            this.xrTable13.SizeF = new System.Drawing.SizeF(269.375F, 103.125F);
+            this.xrTable13.StylePriority.UseTextAlignment = false;
+            this.xrTable13.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopCenter;
             // 
             // xrTableRow25
             // 
@@ -624,14 +626,14 @@ namespace ArgusCR1012.Sales.Templates
             // 
             // xrTable14
             // 
-            this.xrTable14.LocationFloat = new DevExpress.Utils.PointFloat(514.0995F, 251.7917F);
+            this.xrTable14.LocationFloat = new DevExpress.Utils.PointFloat(452.6412F, 251.7917F);
             this.xrTable14.Name = "xrTable14";
             this.xrTable14.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable14.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow26,
             this.xrTableRow27,
             this.xrTableRow28});
-            this.xrTable14.SizeF = new System.Drawing.SizeF(243.1088F, 103.125F);
+            this.xrTable14.SizeF = new System.Drawing.SizeF(304.5671F, 103.125F);
             // 
             // xrTableRow26
             // 
@@ -645,12 +647,12 @@ namespace ArgusCR1012.Sales.Templates
             this.clientSig_lbl.Font = new System.Drawing.Font("Times New Roman", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
             this.clientSig_lbl.Multiline = true;
             this.clientSig_lbl.Name = "clientSig_lbl";
-            this.clientSig_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(90, 2, 8, 0, 100F);
+            this.clientSig_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 8, 0, 100F);
             this.clientSig_lbl.StylePriority.UseFont = false;
             this.clientSig_lbl.StylePriority.UsePadding = false;
             this.clientSig_lbl.StylePriority.UseTextAlignment = false;
             this.clientSig_lbl.Text = "العمیل";
-            this.clientSig_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
+            this.clientSig_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopCenter;
             this.clientSig_lbl.Weight = 3.6563450720294846D;
             // 
             // xrTableRow27
@@ -1295,7 +1297,7 @@ namespace ArgusCR1012.Sales.Templates
             this.taxNo_data.Font = new System.Drawing.Font("Times New Roman", 10F);
             this.taxNo_data.Multiline = true;
             this.taxNo_data.Name = "taxNo_data";
-            this.taxNo_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(5, 2, 6, 0, 100F);
+            this.taxNo_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(5, 2, 10, 0, 100F);
             this.taxNo_data.StylePriority.UseBorders = false;
             this.taxNo_data.StylePriority.UseFont = false;
             this.taxNo_data.StylePriority.UsePadding = false;
