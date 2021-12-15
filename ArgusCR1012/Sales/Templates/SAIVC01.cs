@@ -5,7 +5,8 @@ using System.Drawing;
 using System.Drawing.Printing;
 using DevExpress.XtraReports.UI;
 using ArgusDS.Sales.Reports;
-
+using ArgusDS.Inventory;
+using System.Collections.Generic;
 
 namespace ArgusCR1012.Sales.Templates
 {
@@ -54,7 +55,7 @@ namespace ArgusCR1012.Sales.Templates
 
             vatAmount_data.Text = webObject.record.trxHeader.vatAmount.ToString("N2");
             amount_data.Text = webObject.record.trxHeader.amount.ToString("N2");
-            amountInWords_data.Text = SharedClasses.NumberToWords.multiLingualNumberInText((decimal)webObject.record.trxHeader.amount, 2, Convert.ToInt16(sessionInfo.languageId));
+            amountInWords_data.Text = SharedClasses.NumberToWords.multiLingualNumberInText((decimal)webObject.record.trxHeader.amount, 2, 2);
 
             deliveryOrders_data.Text = webObject.record.deliveryOrders;
             description_data.Text = webObject.record.trxHeader.description;
@@ -64,8 +65,15 @@ namespace ArgusCR1012.Sales.Templates
 
             QRCode.Text = new KSAeInvoiceQrCode(webObject.record.companyInfo.name, webObject.record.companyInfo.taxNo, (DateTime)webObject.record.logTime, webObject.record.trxHeader.amount.ToString(), webObject.record.trxHeader.vatAmount.ToString()).ToBase64();
 
-
             base.OnBeforePrint(e);
+        }
+
+        protected override void OnDataSourceRowChanged(DataSourceRowEventArgs e)
+        {
+            ArgusDS.Sales.ItemView obj = ((List<ArgusDS.Sales.ItemView>)DataSource)[e.CurrentRow];
+            double netUnitPrice = obj.unitPrice - (obj.mdAmount ?? 0);
+            unitPrice_data.Text = netUnitPrice.ToString("N2");
+            base.OnDataSourceRowChanged(e);
         }
 
         protected override void labelsText()
