@@ -224,7 +224,7 @@ namespace ArgusCR1012.Sales.Templates
             // 
             // sku_lbl
             // 
-            this.sku_lbl.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.sku_lbl.BackColor = System.Drawing.Color.Azure;
             this.sku_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right)));
             this.sku_lbl.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Bold);
@@ -240,7 +240,7 @@ namespace ArgusCR1012.Sales.Templates
             // 
             // itemName_lbl
             // 
-            this.itemName_lbl.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.itemName_lbl.BackColor = System.Drawing.Color.Azure;
             this.itemName_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right)));
             this.itemName_lbl.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Bold);
@@ -256,7 +256,7 @@ namespace ArgusCR1012.Sales.Templates
             // 
             // qty_lbl
             // 
-            this.qty_lbl.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.qty_lbl.BackColor = System.Drawing.Color.Azure;
             this.qty_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right)));
             this.qty_lbl.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Bold);
@@ -272,7 +272,7 @@ namespace ArgusCR1012.Sales.Templates
             // 
             // unitPrice_lbl
             // 
-            this.unitPrice_lbl.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.unitPrice_lbl.BackColor = System.Drawing.Color.Azure;
             this.unitPrice_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right)));
             this.unitPrice_lbl.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Bold);
@@ -288,7 +288,7 @@ namespace ArgusCR1012.Sales.Templates
             // 
             // subtotal_lbl
             // 
-            this.subtotal_lbl.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.subtotal_lbl.BackColor = System.Drawing.Color.Azure;
             this.subtotal_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right)));
             this.subtotal_lbl.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Bold);
@@ -304,7 +304,7 @@ namespace ArgusCR1012.Sales.Templates
             // 
             // vat_lbl
             // 
-            this.vat_lbl.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.vat_lbl.BackColor = System.Drawing.Color.Azure;
             this.vat_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right)));
             this.vat_lbl.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Bold);
@@ -320,7 +320,7 @@ namespace ArgusCR1012.Sales.Templates
             // 
             // vatAmount_lbl
             // 
-            this.vatAmount_lbl.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.vatAmount_lbl.BackColor = System.Drawing.Color.Azure;
             this.vatAmount_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right)));
             this.vatAmount_lbl.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Bold);
@@ -336,7 +336,7 @@ namespace ArgusCR1012.Sales.Templates
             // 
             // extendedPrice_lbl
             // 
-            this.extendedPrice_lbl.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.extendedPrice_lbl.BackColor = System.Drawing.Color.Azure;
             this.extendedPrice_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right)));
             this.extendedPrice_lbl.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Bold);
@@ -774,7 +774,7 @@ namespace ArgusCR1012.Sales.Templates
             // 
             // total_lbl
             // 
-            this.total_lbl.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.total_lbl.BackColor = System.Drawing.Color.Azure;
             this.total_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.total_lbl.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.total_lbl.Multiline = true;
@@ -943,7 +943,7 @@ namespace ArgusCR1012.Sales.Templates
             // 
             // subtotal2_lbl
             // 
-            this.subtotal2_lbl.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.subtotal2_lbl.BackColor = System.Drawing.Color.LightSkyBlue;
             this.subtotal2_lbl.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold);
             this.subtotal2_lbl.Multiline = true;
             this.subtotal2_lbl.Name = "subtotal2_lbl";
@@ -976,7 +976,7 @@ namespace ArgusCR1012.Sales.Templates
             // 
             // discount2_lbl
             // 
-            this.discount2_lbl.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.discount2_lbl.BackColor = System.Drawing.Color.LightSkyBlue;
             this.discount2_lbl.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold);
             this.discount2_lbl.Multiline = true;
             this.discount2_lbl.Name = "discount2_lbl";
@@ -1009,7 +1009,7 @@ namespace ArgusCR1012.Sales.Templates
             // 
             // totalSub_lbl
             // 
-            this.totalSub_lbl.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.totalSub_lbl.BackColor = System.Drawing.Color.LightSkyBlue;
             this.totalSub_lbl.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold);
             this.totalSub_lbl.Multiline = true;
             this.totalSub_lbl.Name = "totalSub_lbl";
@@ -1042,7 +1042,7 @@ namespace ArgusCR1012.Sales.Templates
             // 
             // vatAmount2_lbl
             // 
-            this.vatAmount2_lbl.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.vatAmount2_lbl.BackColor = System.Drawing.Color.LightSkyBlue;
             this.vatAmount2_lbl.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold);
             this.vatAmount2_lbl.Multiline = true;
             this.vatAmount2_lbl.Name = "vatAmount2_lbl";
@@ -1075,7 +1075,7 @@ namespace ArgusCR1012.Sales.Templates
             // 
             // amount2_data
             // 
-            this.amount2_data.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.amount2_data.BackColor = System.Drawing.Color.LightSkyBlue;
             this.amount2_data.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold);
             this.amount2_data.Multiline = true;
             this.amount2_data.Name = "amount2_data";
@@ -1126,7 +1126,7 @@ namespace ArgusCR1012.Sales.Templates
             // 
             // deliveryOrderRef_lbl
             // 
-            this.deliveryOrderRef_lbl.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.deliveryOrderRef_lbl.BackColor = System.Drawing.Color.LightSkyBlue;
             this.deliveryOrderRef_lbl.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.deliveryOrderRef_lbl.Multiline = true;
             this.deliveryOrderRef_lbl.Name = "deliveryOrderRef_lbl";
@@ -1163,7 +1163,7 @@ namespace ArgusCR1012.Sales.Templates
             // 
             // notes_lbl
             // 
-            this.notes_lbl.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.notes_lbl.BackColor = System.Drawing.Color.LightSkyBlue;
             this.notes_lbl.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.notes_lbl.Multiline = true;
             this.notes_lbl.Name = "notes_lbl";
@@ -1357,11 +1357,11 @@ namespace ArgusCR1012.Sales.Templates
             // 
             // clientInfo_lbl
             // 
-            this.clientInfo_lbl.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.clientInfo_lbl.BackColor = System.Drawing.Color.LightSkyBlue;
             this.clientInfo_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
-            this.clientInfo_lbl.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold);
+            this.clientInfo_lbl.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold);
             this.clientInfo_lbl.Multiline = true;
             this.clientInfo_lbl.Name = "clientInfo_lbl";
             this.clientInfo_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(15, 2, 0, 0, 100F);
@@ -1419,7 +1419,7 @@ namespace ArgusCR1012.Sales.Templates
             // 
             // clientName_lbl
             // 
-            this.clientName_lbl.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.clientName_lbl.BackColor = System.Drawing.Color.Azure;
             this.clientName_lbl.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold);
             this.clientName_lbl.Multiline = true;
             this.clientName_lbl.Name = "clientName_lbl";
@@ -1456,7 +1456,7 @@ namespace ArgusCR1012.Sales.Templates
             // 
             // clientVATNo_lbl
             // 
-            this.clientVATNo_lbl.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.clientVATNo_lbl.BackColor = System.Drawing.Color.Azure;
             this.clientVATNo_lbl.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold);
             this.clientVATNo_lbl.Multiline = true;
             this.clientVATNo_lbl.Name = "clientVATNo_lbl";
@@ -1493,7 +1493,7 @@ namespace ArgusCR1012.Sales.Templates
             // 
             // idNo_lbl
             // 
-            this.idNo_lbl.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.idNo_lbl.BackColor = System.Drawing.Color.Azure;
             this.idNo_lbl.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold);
             this.idNo_lbl.Multiline = true;
             this.idNo_lbl.Name = "idNo_lbl";
@@ -1530,7 +1530,7 @@ namespace ArgusCR1012.Sales.Templates
             // 
             // phoneNumber_lbl
             // 
-            this.phoneNumber_lbl.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.phoneNumber_lbl.BackColor = System.Drawing.Color.Azure;
             this.phoneNumber_lbl.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold);
             this.phoneNumber_lbl.Multiline = true;
             this.phoneNumber_lbl.Name = "phoneNumber_lbl";
@@ -1567,7 +1567,7 @@ namespace ArgusCR1012.Sales.Templates
             // 
             // cAddress_lbl
             // 
-            this.cAddress_lbl.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.cAddress_lbl.BackColor = System.Drawing.Color.Azure;
             this.cAddress_lbl.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold);
             this.cAddress_lbl.Multiline = true;
             this.cAddress_lbl.Name = "cAddress_lbl";
@@ -1623,7 +1623,7 @@ namespace ArgusCR1012.Sales.Templates
             // 
             // exhibitionManager_lbl
             // 
-            this.exhibitionManager_lbl.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.exhibitionManager_lbl.BackColor = System.Drawing.Color.Azure;
             this.exhibitionManager_lbl.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold);
             this.exhibitionManager_lbl.Multiline = true;
             this.exhibitionManager_lbl.Name = "exhibitionManager_lbl";
@@ -1668,11 +1668,11 @@ namespace ArgusCR1012.Sales.Templates
             // 
             // invoiceInfo_lbl
             // 
-            this.invoiceInfo_lbl.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.invoiceInfo_lbl.BackColor = System.Drawing.Color.LightSkyBlue;
             this.invoiceInfo_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
-            this.invoiceInfo_lbl.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold);
+            this.invoiceInfo_lbl.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold);
             this.invoiceInfo_lbl.Multiline = true;
             this.invoiceInfo_lbl.Name = "invoiceInfo_lbl";
             this.invoiceInfo_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(15, 2, 0, 0, 100F);
@@ -1695,7 +1695,7 @@ namespace ArgusCR1012.Sales.Templates
             // 
             // reference_lbl
             // 
-            this.reference_lbl.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.reference_lbl.BackColor = System.Drawing.Color.Azure;
             this.reference_lbl.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold);
             this.reference_lbl.Multiline = true;
             this.reference_lbl.Name = "reference_lbl";
@@ -1732,7 +1732,7 @@ namespace ArgusCR1012.Sales.Templates
             // 
             // date_lbl
             // 
-            this.date_lbl.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.date_lbl.BackColor = System.Drawing.Color.Azure;
             this.date_lbl.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold);
             this.date_lbl.Multiline = true;
             this.date_lbl.Name = "date_lbl";
@@ -1769,7 +1769,7 @@ namespace ArgusCR1012.Sales.Templates
             // 
             // plant_lbl
             // 
-            this.plant_lbl.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.plant_lbl.BackColor = System.Drawing.Color.Azure;
             this.plant_lbl.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold);
             this.plant_lbl.Multiline = true;
             this.plant_lbl.Name = "plant_lbl";
@@ -1808,7 +1808,7 @@ namespace ArgusCR1012.Sales.Templates
             // 
             // license_lbl
             // 
-            this.license_lbl.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.license_lbl.BackColor = System.Drawing.Color.Azure;
             this.license_lbl.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold);
             this.license_lbl.Multiline = true;
             this.license_lbl.Name = "license_lbl";
@@ -1837,7 +1837,7 @@ namespace ArgusCR1012.Sales.Templates
             // 
             // commercialRecord_lbl
             // 
-            this.commercialRecord_lbl.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.commercialRecord_lbl.BackColor = System.Drawing.Color.Azure;
             this.commercialRecord_lbl.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold);
             this.commercialRecord_lbl.Multiline = true;
             this.commercialRecord_lbl.Name = "commercialRecord_lbl";
@@ -1874,7 +1874,7 @@ namespace ArgusCR1012.Sales.Templates
             // 
             // address_lbl
             // 
-            this.address_lbl.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.address_lbl.BackColor = System.Drawing.Color.Azure;
             this.address_lbl.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold);
             this.address_lbl.Multiline = true;
             this.address_lbl.Name = "address_lbl";
@@ -1912,7 +1912,7 @@ namespace ArgusCR1012.Sales.Templates
             // 
             // spName_lbl
             // 
-            this.spName_lbl.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.spName_lbl.BackColor = System.Drawing.Color.Azure;
             this.spName_lbl.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold);
             this.spName_lbl.Multiline = true;
             this.spName_lbl.Name = "spName_lbl";
@@ -1961,7 +1961,7 @@ namespace ArgusCR1012.Sales.Templates
             // 
             // taxInvoice_lbl
             // 
-            this.taxInvoice_lbl.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.taxInvoice_lbl.BackColor = System.Drawing.Color.Azure;
             this.taxInvoice_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
