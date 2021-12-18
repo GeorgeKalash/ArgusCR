@@ -72,12 +72,12 @@ namespace ArgusCR1012.Sales.Templates
         protected override void OnDataSourceRowChanged(DataSourceRowEventArgs e)
         {
             ArgusDS.Sales.ItemView obj = ((List<ArgusDS.Sales.ItemView>)DataSource)[e.CurrentRow];
+            
             double netUnitPrice = obj.unitPrice - (obj.mdValue ?? 0);
-            double lup = netUnitPrice * obj.qty;
-            double epWithVAT = lup + obj.vatAmount;
+            double epWithVAT = obj.extendedPrice + obj.vatAmount;
 
             unitPrice_data.Text = netUnitPrice.ToString("N2");
-            lineUnitPrice.Text = lup.ToString("N2");
+
             extendedPriceWithVAT_data.Text = epWithVAT.ToString("N2");
 
             base.OnDataSourceRowChanged(e);
