@@ -12,6 +12,7 @@ namespace ArgusCR1012.Sales.Templates
 {
     public partial class SAIVC01 : Reports.BaseReport
     {
+  
       public SAIVC01()
         {
             InitializeComponent();
@@ -71,8 +72,14 @@ namespace ArgusCR1012.Sales.Templates
         protected override void OnDataSourceRowChanged(DataSourceRowEventArgs e)
         {
             ArgusDS.Sales.ItemView obj = ((List<ArgusDS.Sales.ItemView>)DataSource)[e.CurrentRow];
-            double netUnitPrice = obj.unitPrice - (obj.mdAmount ?? 0);
+            double netUnitPrice = obj.unitPrice - (obj.mdValue ?? 0);
+            double lup = netUnitPrice * obj.qty;
+            double epWithVAT = lup + obj.vatAmount;
+
             unitPrice_data.Text = netUnitPrice.ToString("N2");
+            lineUnitPrice.Text = lup.ToString("N2");
+            extendedPriceWithVAT_data.Text = epWithVAT.ToString("N2");
+
             base.OnDataSourceRowChanged(e);
         }
 
@@ -136,3 +143,4 @@ namespace ArgusCR1012.Sales.Templates
 
     }
 }
+
