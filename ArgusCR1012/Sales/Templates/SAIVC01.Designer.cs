@@ -1474,7 +1474,6 @@ namespace ArgusCR1012.Sales.Templates
             this.idNo_lbl.StylePriority.UseFont = false;
             this.idNo_lbl.StylePriority.UsePadding = false;
             this.idNo_lbl.StylePriority.UseTextAlignment = false;
-            this.idNo_lbl.Text = "Id No.";
             this.idNo_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
             this.idNo_lbl.Weight = 5.7011237127329375D;
             // 
