@@ -52,7 +52,8 @@ namespace ArgusCR1012.Sales.Templates
             if (webObject.record.bpDefaultIDCategoryId != null)
             {
                 ArgusDS.BusinessPartners.MasterIDNumberView otherID = webObject.record.masterIDs.FirstOrDefault(x => x.incId == webObject.record.bpDefaultIDCategoryId);
-                idNo_data.Text = otherID.idNum;
+                if (otherID != null)
+                    idNo_data.Text = otherID.idNum;
             }
 
             phoneNumber_lbl.Text = webObject.record.billAddress?.phone;
