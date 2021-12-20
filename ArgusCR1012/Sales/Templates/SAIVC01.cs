@@ -7,6 +7,7 @@ using DevExpress.XtraReports.UI;
 using ArgusDS.Sales.Reports;
 using ArgusDS.Inventory;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace ArgusCR1012.Sales.Templates
 {
@@ -42,8 +43,18 @@ namespace ArgusCR1012.Sales.Templates
 
             clientRef_data.Text = webObject.record.client.reference;
             clientName_data.Text = webObject.record.client.name;
-            clientVATNo_data.Text = webObject.record.client.vatNumber;
-            idNo_data.Text = webObject.record.idNo;
+
+            ArgusDS.BusinessPartners.MasterIDNumberView vatID = webObject.record.masterIDs.FirstOrDefault(x => x.incId == 1);
+
+            if (vatID != null)
+                clientVATNo_data.Text = vatID.idNum;
+
+            if (webObject.record.bpDefaultIDCategoryId != null)
+            {
+                ArgusDS.BusinessPartners.MasterIDNumberView otherID = webObject.record.masterIDs.FirstOrDefault(x => x.incId == webObject.record.bpDefaultIDCategoryId);
+                idNo_data.Text = otherID.idNum;
+            }
+
             phoneNumber_lbl.Text = webObject.record.billAddress?.phone;
             cAddress_data.Text = webObject.record.billAddress?.street1;
           
