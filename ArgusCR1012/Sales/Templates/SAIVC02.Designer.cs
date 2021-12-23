@@ -158,12 +158,12 @@ namespace ArgusCR1012.Sales.Templates
             // 
             // TopMargin
             // 
-            this.TopMargin.HeightF = 10.00001F;
+            this.TopMargin.HeightF = 110F;
             this.TopMargin.Name = "TopMargin";
             // 
             // BottomMargin
             // 
-            this.BottomMargin.HeightF = 11.24999F;
+            this.BottomMargin.HeightF = 80F;
             this.BottomMargin.Name = "BottomMargin";
             // 
             // Detail
@@ -1640,7 +1640,7 @@ namespace ArgusCR1012.Sales.Templates
             this.PageHeader,
             this.ReportFooter});
             this.Font = new System.Drawing.Font("Arial", 9.75F);
-            this.Margins = new System.Drawing.Printing.Margins(0, 0, 10, 11);
+            this.Margins = new System.Drawing.Printing.Margins(0, 0, 110, 80);
             this.PageHeight = 1169;
             this.PageWidth = 827;
             this.PaperKind = System.Drawing.Printing.PaperKind.Custom;
