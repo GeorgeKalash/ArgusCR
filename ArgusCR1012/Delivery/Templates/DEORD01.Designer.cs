@@ -541,7 +541,7 @@ namespace ArgusCR1012.Delivery.Templates
             // 
             this.PageHeader.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
             this.xrTable1});
-            this.PageHeader.HeightF = 35.74985F;
+            this.PageHeader.HeightF = 25.74984F;
             this.PageHeader.Name = "PageHeader";
             // 
             // xrTable1
@@ -551,7 +551,7 @@ namespace ArgusCR1012.Delivery.Templates
             this.xrTable1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable1.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow1});
-            this.xrTable1.SizeF = new System.Drawing.SizeF(780.0832F, 35.74985F);
+            this.xrTable1.SizeF = new System.Drawing.SizeF(780.0832F, 25.74984F);
             // 
             // xrTableRow1
             // 
@@ -653,7 +653,7 @@ namespace ArgusCR1012.Delivery.Templates
             // 
             this.Detail.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
             this.xrTable3});
-            this.Detail.HeightF = 30.2084F;
+            this.Detail.HeightF = 23.33344F;
             this.Detail.Name = "Detail";
             // 
             // xrTable3
@@ -666,7 +666,7 @@ namespace ArgusCR1012.Delivery.Templates
             this.xrTable3.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable3.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow3});
-            this.xrTable3.SizeF = new System.Drawing.SizeF(780.0832F, 30.2084F);
+            this.xrTable3.SizeF = new System.Drawing.SizeF(780.0832F, 23.33344F);
             this.xrTable3.StylePriority.UseBorders = false;
             // 
             // xrTableRow3
@@ -685,7 +685,7 @@ namespace ArgusCR1012.Delivery.Templates
             this.lineNo_data.Multiline = true;
             this.lineNo_data.Name = "lineNo_data";
             this.lineNo_data.Text = "lineNo";
-            this.lineNo_data.Weight = 0.38730126561870559D;
+            this.lineNo_data.Weight = 0.38778342959767881D;
             // 
             // sku_data
             // 
@@ -698,7 +698,7 @@ namespace ArgusCR1012.Delivery.Templates
             this.sku_data.StylePriority.UseTextAlignment = false;
             this.sku_data.Text = "sku_data";
             this.sku_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
-            this.sku_data.Weight = 0.88253962914863471D;
+            this.sku_data.Weight = 0.883638465530491D;
             // 
             // itemName_data
             // 
@@ -711,7 +711,7 @@ namespace ArgusCR1012.Delivery.Templates
             this.itemName_data.StylePriority.UseTextAlignment = false;
             this.itemName_data.Text = "itemName_data";
             this.itemName_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
-            this.itemName_data.Weight = 1.9996339864730401D;
+            this.itemName_data.Weight = 2.00212300438501D;
             // 
             // qty_data
             // 
@@ -725,7 +725,7 @@ namespace ArgusCR1012.Delivery.Templates
             this.qty_data.Text = "qty_data";
             this.qty_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
             this.qty_data.TextFormatString = "{0:n3}";
-            this.qty_data.Weight = 0.6872862850807544D;
+            this.qty_data.Weight = 0.68814176257406612D;
             // 
             // notes_data
             // 
@@ -734,7 +734,7 @@ namespace ArgusCR1012.Delivery.Templates
             this.notes_data.Multiline = true;
             this.notes_data.Name = "notes_data";
             this.notes_data.Text = "notes_data";
-            this.notes_data.Weight = 1.0498247193870784D;
+            this.notes_data.Weight = 1.0448992236209675D;
             // 
             // ReportFooter
             // 
