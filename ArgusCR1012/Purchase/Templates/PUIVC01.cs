@@ -28,6 +28,7 @@ namespace ArgusCR1012.Purchase.Templates
             reference_data.Text = webObject.record.header.reference;
             vendorRef_data.Text = webObject.record.header.vendorRef;
             vendorName_data.Text = webObject.record.header.vendorName;
+            description_data.Text = webObject.record.header.description;
 
             date_data.Text = webObject.record.header.date.ToString(sessionInfo.dateFormat);
             currencyName_data.Text = webObject.record.header.currencyName;
@@ -70,6 +71,7 @@ namespace ArgusCR1012.Purchase.Templates
             subtotal_lbl.Text = labelText(19);
             vatAmount_lbl.Text = labelText(20);
             amount_lbl.Text = labelText(21);
+            description_lbl.Text = labelText(22);
 
         }
 
