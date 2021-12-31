@@ -679,36 +679,38 @@
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[record.billAddress.street1] + char(13) +\n[record.billAddress.city] + char(13) +\n" +
                     "[record.billAddress.countryName] + char(13) +\n[record.billAddress.phone]")});
             this.xrLabel32.Font = new System.Drawing.Font("Times New Roman", 10F);
-            this.xrLabel32.LocationFloat = new DevExpress.Utils.PointFloat(336.75F, 77.00002F);
+            this.xrLabel32.LocationFloat = new DevExpress.Utils.PointFloat(394.7277F, 77.00002F);
             this.xrLabel32.Multiline = true;
             this.xrLabel32.Name = "xrLabel32";
             this.xrLabel32.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel32.SizeF = new System.Drawing.SizeF(276.0833F, 79F);
+            this.xrLabel32.SizeF = new System.Drawing.SizeF(218.1056F, 79F);
             this.xrLabel32.StylePriority.UseFont = false;
+            this.xrLabel32.StylePriority.UseTextAlignment = false;
+            this.xrLabel32.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
             // 
             // xrLabel23
             // 
             this.xrLabel23.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[record].[trxHeader].[clientName]")});
             this.xrLabel23.Font = new System.Drawing.Font("Times New Roman", 9F);
-            this.xrLabel23.LocationFloat = new DevExpress.Utils.PointFloat(336.75F, 56F);
+            this.xrLabel23.LocationFloat = new DevExpress.Utils.PointFloat(394.7277F, 56F);
             this.xrLabel23.Multiline = true;
             this.xrLabel23.Name = "xrLabel23";
             this.xrLabel23.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel23.SizeF = new System.Drawing.SizeF(276.083F, 17.70835F);
+            this.xrLabel23.SizeF = new System.Drawing.SizeF(218.1053F, 17.70835F);
             this.xrLabel23.StylePriority.UseFont = false;
             this.xrLabel23.StylePriority.UseTextAlignment = false;
             this.xrLabel23.Text = "xrLabel23";
-            this.xrLabel23.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            this.xrLabel23.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
             // 
             // xrLabel1
             // 
             this.xrLabel1.Font = new System.Drawing.Font("Times New Roman", 20F, System.Drawing.FontStyle.Bold);
-            this.xrLabel1.LocationFloat = new DevExpress.Utils.PointFloat(404.2496F, 10.00001F);
+            this.xrLabel1.LocationFloat = new DevExpress.Utils.PointFloat(394.7274F, 10.00001F);
             this.xrLabel1.Multiline = true;
             this.xrLabel1.Name = "xrLabel1";
             this.xrLabel1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel1.SizeF = new System.Drawing.SizeF(208.5833F, 35.41663F);
+            this.xrLabel1.SizeF = new System.Drawing.SizeF(218.1055F, 35.41663F);
             this.xrLabel1.StylePriority.UseFont = false;
             this.xrLabel1.StylePriority.UseTextAlignment = false;
             this.xrLabel1.Text = "Sales Invoice";
