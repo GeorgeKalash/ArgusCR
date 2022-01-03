@@ -446,7 +446,7 @@ namespace ArgusCR1012.Sales.Templates
             this.taxInvoice_lbl.StylePriority.UseFont = false;
             this.taxInvoice_lbl.StylePriority.UsePadding = false;
             this.taxInvoice_lbl.StylePriority.UseTextAlignment = false;
-            this.taxInvoice_lbl.Text = "فاتورة مبيعات ضريبية مبسطة\r\nTax Invoice Simplified";
+            this.taxInvoice_lbl.Text = "فاتورة مبيعات ضريبية مبسطة\r\nSimplified Tax Invoice";
             this.taxInvoice_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopCenter;
             // 
             // xrTable4
