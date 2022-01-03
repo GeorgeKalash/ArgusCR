@@ -56,7 +56,7 @@ namespace ArgusCR1016.Sales.Templates
 
         protected override string dictionaryStore()
         {
-            return "Custom\\R1016\\SA101";
+            return "Custom\\R1016\\SA102";
         }
     }
 }

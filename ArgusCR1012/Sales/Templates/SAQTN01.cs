@@ -98,7 +98,7 @@ namespace ArgusCR1012.Sales.Templates
 
         protected override string dictionaryStore()
         {
-            return "Custom\\R1012\\SA102";
+            return "Custom\\R1012\\SA101";
         }
         private void ReportFooter_BeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e)
         {
