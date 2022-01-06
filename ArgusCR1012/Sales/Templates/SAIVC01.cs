@@ -46,10 +46,14 @@ namespace ArgusCR1012.Sales.Templates
             clientRef_data.Text = webObject.record.client.reference;
             clientName_data.Text = webObject.record.client.name;
 
-            ArgusDS.BusinessPartners.MasterIDNumberView vatID = webObject.record.masterIDs.FirstOrDefault(x => x.incId == BPIDC_VAT);
+            if (webObject.record.masterIDs != null)
+            {
+                ArgusDS.BusinessPartners.MasterIDNumberView vatID = webObject.record.masterIDs.FirstOrDefault(x => x.incId == BPIDC_VAT);
+                if (vatID != null)
+                    clientVATNo_data.Text = vatID.idNum;
+            }
 
-            if (vatID != null)
-                clientVATNo_data.Text = vatID.idNum;
+
 
             if (webObject.record.bpDefaultIDCategoryId != null)
             {
