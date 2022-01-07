@@ -99,19 +99,22 @@
     <Compile Include="BaseReport.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Sales\Templates\SAORD01.cs">
+    <Compile Include="Manufacturing\Templates\MF103.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Sales\Templates\SAORD01.Designer.cs">
-      <DependentUpon>SAORD01.cs</DependentUpon>
+    <Compile Include="Manufacturing\Templates\MF103.Designer.cs">
+      <DependentUpon>MF103.cs</DependentUpon>
     </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Properties\licenses.licx" />
-    <EmbeddedResource Include="Sales\Templates\SAORD01.resx">
-      <DependentUpon>SAORD01.cs</DependentUpon>
+    <EmbeddedResource Include="Manufacturing\Templates\MF103.resx">
+      <DependentUpon>MF103.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Sales\Templates\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

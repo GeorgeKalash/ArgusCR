@@ -6,27 +6,39 @@ using System.Drawing;
 using System.Drawing.Printing;
 using ArgusDS.Sales.Reports;
 
-namespace ArgusCR1016.Sales.Templates
+namespace ArgusCR1016.Manufacturing.Templates
 {
-    public partial class SAORD01 : Reports.BaseReport
+    public partial class MF103 : Reports.BaseReport
     {
-        public SAORD01()
+        public MF103()
         {
             InitializeComponent();
         }
 
+
         protected override void OnBeforePrint(PrintEventArgs e)
         {
-            SharedClasses.JsonProtocol.GetStructure<QuotationPrintLayout> webObject = deserializeGet<QuotationPrintLayout>();
-            DataSource = webObject.record.items;
+            SharedClasses.JsonProtocol.GetStructure<ArgusDS.Manufacturing.Reports.MF103> webObject = deserializeGet<ArgusDS.Manufacturing.Reports.MF103>();
 
-            
+            jobRef_data.Text = webObject.record.jobRef;
+
+            date_data.Text = webObject.record.date.ToString(sessionInfo.dateFormat);
+            orderedby_data.Text = webObject.record.orderedby;
+            deliveryDate_data.Text = webObject.record.deliveryDate;
+
+            clientName_data.Text = webObject.record.clientName;
+            clientPhone_data.Text = webObject.record.clientPhone;
+            clientEmail_data.Text = webObject.record.clientEmail;
+            price_data.Text = webObject.record.price.ToString("N2");
+
+            description_data.Text = webObject.record.description;
+
+            designName_data.Text = webObject.record.designName;
+            hours_data.Text = webObject.record.hours;
 
             base.OnBeforePrint(e);
         }
 
-
-  
         protected override void labelsText()
         {
             clientOrder_lbl.Text = labelText(0);
@@ -56,7 +68,8 @@ namespace ArgusCR1016.Sales.Templates
 
         protected override string dictionaryStore()
         {
-            return "Custom\\R1016\\SA102";
+            return "Custom\\R1016\\MF103";
         }
     }
 }
+
