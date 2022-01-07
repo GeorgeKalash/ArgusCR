@@ -22,6 +22,9 @@ namespace ArgusCR1016.Manufacturing.Templates
 
             jobRef_data.Text = webObject.record.jobRef;
 
+            BarCode.Text =  webObject.record.jobRef;
+
+
             date_data.Text = webObject.record.date.ToString(sessionInfo.dateFormat);
             orderedby_data.Text = webObject.record.orderedby;
             deliveryDate_data.Text = webObject.record.deliveryDate;
