@@ -396,10 +396,12 @@ namespace ArgusCR1016.Manufacturing.Templates
             // 
             // BarCode
             // 
-            this.BarCode.LocationFloat = new DevExpress.Utils.PointFloat(71.29996F, 12.5F);
+            this.BarCode.LocationFloat = new DevExpress.Utils.PointFloat(5F, 5F);
+            this.BarCode.Module = 1.5F;
             this.BarCode.Name = "BarCode";
             this.BarCode.Padding = new DevExpress.XtraPrinting.PaddingInfo(10, 10, 0, 0, 96F);
-            this.BarCode.SizeF = new System.Drawing.SizeF(200F, 51.04167F);
+            this.BarCode.ShowText = false;
+            this.BarCode.SizeF = new System.Drawing.SizeF(315F, 62F);
             this.BarCode.Symbology = code128Generator1;
             // 
             // xrTable2
