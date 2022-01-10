@@ -27,12 +27,14 @@ namespace ArgusCR1016.Manufacturing.Templates
 
             date_data.Text = webObject.record.date.ToString(sessionInfo.dateFormat);
             orderedby_data.Text = webObject.record.orderedby;
-            deliveryDate_data.Text = webObject.record.deliveryDate;
+
+            if (webObject.record.deliveryDate != null)
+            { deliveryDate_data.Text = webObject.record.deliveryDate.ToString(sessionInfo.dateFormat); }
 
             clientName_data.Text = webObject.record.clientName;
             clientPhone_data.Text = webObject.record.clientPhone;
             clientEmail_data.Text = webObject.record.clientEmail;
-            price_data.Text = webObject.record.price.ToString("N2");
+           
 
             description_data.Text = webObject.record.description;
 
