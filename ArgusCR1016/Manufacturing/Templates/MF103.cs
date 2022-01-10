@@ -29,7 +29,8 @@ namespace ArgusCR1016.Manufacturing.Templates
             orderedby_data.Text = webObject.record.orderedby;
 
             if (webObject.record.deliveryDate != null)
-            { deliveryDate_data.Text = webObject.record.deliveryDate.ToString(sessionInfo.dateFormat); }
+            { deliveryDate_data.Text = ((DateTime)webObject.record.deliveryDate) + " " + ((DateTime)webObject.record.deliveryDate).ToString("HH:mm");
+            }
 
             clientName_data.Text = webObject.record.clientName;
             clientPhone_data.Text = webObject.record.clientPhone;
@@ -39,7 +40,8 @@ namespace ArgusCR1016.Manufacturing.Templates
             description_data.Text = webObject.record.description;
 
             designName_data.Text = webObject.record.designName;
-            hours_data.Text = webObject.record.hours;
+         
+            //ringSize_data = property 10 / metalType_data = property 12 / metalColor_data = property 13 // 
 
             base.OnBeforePrint(e);
         }
