@@ -40,7 +40,22 @@ namespace ArgusCR1016.Manufacturing.Templates
             description_data.Text = webObject.record.description;
 
             designName_data.Text = webObject.record.designName;
-         
+
+            if (webObject.record.userDefinedLists.ContainsKey(10))
+            {
+                ringSize_data.Text = webObject.record.userDefinedLists[10];
+            }
+
+            if (webObject.record.userDefinedLists.ContainsKey(12))
+            {
+                metalType_data.Text = webObject.record.userDefinedLists[12];
+            }
+
+            if (webObject.record.userDefinedLists.ContainsKey(13))
+            {
+                metalColor_data.Text = webObject.record.userDefinedLists[13];
+            }
+
             //ringSize_data = property 10 / metalType_data = property 12 / metalColor_data = property 13 // 
 
             base.OnBeforePrint(e);
