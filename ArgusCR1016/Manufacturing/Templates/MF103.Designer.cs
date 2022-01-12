@@ -434,7 +434,7 @@ namespace ArgusCR1016.Manufacturing.Templates
             // date_lbl
             // 
             this.date_lbl.BackColor = System.Drawing.Color.White;
-            this.date_lbl.Borders = DevExpress.XtraPrinting.BorderSide.None;
+            this.date_lbl.Borders = DevExpress.XtraPrinting.BorderSide.Left;
             this.date_lbl.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.date_lbl.Multiline = true;
             this.date_lbl.Name = "date_lbl";
@@ -451,7 +451,7 @@ namespace ArgusCR1016.Manufacturing.Templates
             // date_data
             // 
             this.date_data.BackColor = System.Drawing.Color.White;
-            this.date_data.Borders = DevExpress.XtraPrinting.BorderSide.None;
+            this.date_data.Borders = DevExpress.XtraPrinting.BorderSide.Right;
             this.date_data.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.date_data.Multiline = true;
             this.date_data.Name = "date_data";
@@ -482,7 +482,7 @@ namespace ArgusCR1016.Manufacturing.Templates
             // orderedby_data
             // 
             this.orderedby_data.BackColor = System.Drawing.Color.White;
-            this.orderedby_data.Borders = DevExpress.XtraPrinting.BorderSide.None;
+            this.orderedby_data.Borders = DevExpress.XtraPrinting.BorderSide.Right;
             this.orderedby_data.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.orderedby_data.Multiline = true;
             this.orderedby_data.Name = "orderedby_data";
@@ -513,7 +513,7 @@ namespace ArgusCR1016.Manufacturing.Templates
             // deliveryDate_data
             // 
             this.deliveryDate_data.BackColor = System.Drawing.Color.White;
-            this.deliveryDate_data.Borders = DevExpress.XtraPrinting.BorderSide.None;
+            this.deliveryDate_data.Borders = DevExpress.XtraPrinting.BorderSide.Right;
             this.deliveryDate_data.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.deliveryDate_data.Multiline = true;
             this.deliveryDate_data.Name = "deliveryDate_data";
