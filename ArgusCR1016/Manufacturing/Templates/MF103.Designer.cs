@@ -33,13 +33,6 @@ namespace ArgusCR1016.Manufacturing.Templates
             this.TopMargin = new DevExpress.XtraReports.UI.TopMarginBand();
             this.BottomMargin = new DevExpress.XtraReports.UI.BottomMarginBand();
             this.Detail = new DevExpress.XtraReports.UI.DetailBand();
-            this.xrTable7 = new DevExpress.XtraReports.UI.XRTable();
-            this.xrTableRow8 = new DevExpress.XtraReports.UI.XRTableRow();
-            this.xrTableCell2 = new DevExpress.XtraReports.UI.XRTableCell();
-            this.xrTable4 = new DevExpress.XtraReports.UI.XRTable();
-            this.xrTableRow5 = new DevExpress.XtraReports.UI.XRTableRow();
-            this.description_lbl = new DevExpress.XtraReports.UI.XRTableCell();
-            this.description_data = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTable5 = new DevExpress.XtraReports.UI.XRTable();
             this.xrTableRow6 = new DevExpress.XtraReports.UI.XRTableRow();
             this.ringSize_lbl = new DevExpress.XtraReports.UI.XRTableCell();
@@ -48,6 +41,13 @@ namespace ArgusCR1016.Manufacturing.Templates
             this.metalType_data = new DevExpress.XtraReports.UI.XRTableCell();
             this.metalColor_lbl = new DevExpress.XtraReports.UI.XRTableCell();
             this.metalColor_data = new DevExpress.XtraReports.UI.XRTableCell();
+            this.xrTable7 = new DevExpress.XtraReports.UI.XRTable();
+            this.xrTableRow8 = new DevExpress.XtraReports.UI.XRTableRow();
+            this.xrTableCell2 = new DevExpress.XtraReports.UI.XRTableCell();
+            this.xrTable4 = new DevExpress.XtraReports.UI.XRTable();
+            this.xrTableRow5 = new DevExpress.XtraReports.UI.XRTableRow();
+            this.description_lbl = new DevExpress.XtraReports.UI.XRTableCell();
+            this.description_data = new DevExpress.XtraReports.UI.XRTableCell();
             this.ReportHeader = new DevExpress.XtraReports.UI.ReportHeaderBand();
             this.xrTable1 = new DevExpress.XtraReports.UI.XRTable();
             this.xrTableRow1 = new DevExpress.XtraReports.UI.XRTableRow();
@@ -85,9 +85,9 @@ namespace ArgusCR1016.Manufacturing.Templates
             this.hours_data = new DevExpress.XtraReports.UI.XRTableCell();
             this.resinWeight_lbl = new DevExpress.XtraReports.UI.XRTableCell();
             this.resinWeight_data = new DevExpress.XtraReports.UI.XRTableCell();
+            ((System.ComponentModel.ISupportInitialize)(this.xrTable5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.xrTable5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable3)).BeginInit();
@@ -96,22 +96,137 @@ namespace ArgusCR1016.Manufacturing.Templates
             // 
             // TopMargin
             // 
-            this.TopMargin.HeightF = 12F;
+            this.TopMargin.HeightF = 7.833338F;
             this.TopMargin.Name = "TopMargin";
             // 
             // BottomMargin
             // 
-            this.BottomMargin.HeightF = 11.33324F;
+            this.BottomMargin.HeightF = 6.000519F;
             this.BottomMargin.Name = "BottomMargin";
             // 
             // Detail
             // 
             this.Detail.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+            this.xrTable5,
             this.xrTable7,
-            this.xrTable4,
-            this.xrTable5});
-            this.Detail.HeightF = 245.9165F;
+            this.xrTable4});
+            this.Detail.HeightF = 197.9997F;
             this.Detail.Name = "Detail";
+            // 
+            // xrTable5
+            // 
+            this.xrTable5.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+            | DevExpress.XtraPrinting.BorderSide.Right) 
+            | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.xrTable5.LocationFloat = new DevExpress.Utils.PointFloat(9.999935F, 173.833F);
+            this.xrTable5.Name = "xrTable5";
+            this.xrTable5.Padding = new DevExpress.XtraPrinting.PaddingInfo(6, 2, 0, 0, 100F);
+            this.xrTable5.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
+            this.xrTableRow6});
+            this.xrTable5.SizeF = new System.Drawing.SizeF(562.9998F, 24.1667F);
+            this.xrTable5.StylePriority.UseBorders = false;
+            this.xrTable5.StylePriority.UsePadding = false;
+            // 
+            // xrTableRow6
+            // 
+            this.xrTableRow6.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
+            this.ringSize_lbl,
+            this.ringSize_data,
+            this.metalType_lbl,
+            this.metalType_data,
+            this.metalColor_lbl,
+            this.metalColor_data});
+            this.xrTableRow6.Name = "xrTableRow6";
+            this.xrTableRow6.Weight = 1D;
+            // 
+            // ringSize_lbl
+            // 
+            this.ringSize_lbl.BackColor = System.Drawing.Color.White;
+            this.ringSize_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top)));
+            this.ringSize_lbl.Font = new System.Drawing.Font("Arial", 9F);
+            this.ringSize_lbl.Multiline = true;
+            this.ringSize_lbl.Name = "ringSize_lbl";
+            this.ringSize_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(6, 2, 4, 0, 100F);
+            this.ringSize_lbl.StylePriority.UseBackColor = false;
+            this.ringSize_lbl.StylePriority.UseBorders = false;
+            this.ringSize_lbl.StylePriority.UseFont = false;
+            this.ringSize_lbl.StylePriority.UsePadding = false;
+            this.ringSize_lbl.StylePriority.UseTextAlignment = false;
+            this.ringSize_lbl.Text = "Ring Size:\r\n";
+            this.ringSize_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
+            this.ringSize_lbl.Weight = 0.77186965933659135D;
+            // 
+            // ringSize_data
+            // 
+            this.ringSize_data.BackColor = System.Drawing.Color.White;
+            this.ringSize_data.Borders = DevExpress.XtraPrinting.BorderSide.Top;
+            this.ringSize_data.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ringSize_data.Multiline = true;
+            this.ringSize_data.Name = "ringSize_data";
+            this.ringSize_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 6, 0, 100F);
+            this.ringSize_data.StylePriority.UseBackColor = false;
+            this.ringSize_data.StylePriority.UseBorders = false;
+            this.ringSize_data.StylePriority.UseFont = false;
+            this.ringSize_data.StylePriority.UsePadding = false;
+            this.ringSize_data.Weight = 1.4057500828846765D;
+            // 
+            // metalType_lbl
+            // 
+            this.metalType_lbl.BackColor = System.Drawing.Color.White;
+            this.metalType_lbl.Borders = DevExpress.XtraPrinting.BorderSide.Top;
+            this.metalType_lbl.Font = new System.Drawing.Font("Arial", 9F);
+            this.metalType_lbl.Multiline = true;
+            this.metalType_lbl.Name = "metalType_lbl";
+            this.metalType_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(6, 2, 4, 0, 100F);
+            this.metalType_lbl.StylePriority.UseBackColor = false;
+            this.metalType_lbl.StylePriority.UseBorders = false;
+            this.metalType_lbl.StylePriority.UseFont = false;
+            this.metalType_lbl.StylePriority.UsePadding = false;
+            this.metalType_lbl.Text = "Metal Type:";
+            this.metalType_lbl.Weight = 0.80817080977074718D;
+            // 
+            // metalType_data
+            // 
+            this.metalType_data.BackColor = System.Drawing.Color.White;
+            this.metalType_data.Borders = DevExpress.XtraPrinting.BorderSide.Top;
+            this.metalType_data.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.metalType_data.Multiline = true;
+            this.metalType_data.Name = "metalType_data";
+            this.metalType_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 6, 0, 100F);
+            this.metalType_data.StylePriority.UseBackColor = false;
+            this.metalType_data.StylePriority.UseBorders = false;
+            this.metalType_data.StylePriority.UseFont = false;
+            this.metalType_data.StylePriority.UsePadding = false;
+            this.metalType_data.Weight = 1.0142094480079846D;
+            // 
+            // metalColor_lbl
+            // 
+            this.metalColor_lbl.BackColor = System.Drawing.Color.White;
+            this.metalColor_lbl.Borders = DevExpress.XtraPrinting.BorderSide.Top;
+            this.metalColor_lbl.Font = new System.Drawing.Font("Arial", 9F);
+            this.metalColor_lbl.Multiline = true;
+            this.metalColor_lbl.Name = "metalColor_lbl";
+            this.metalColor_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(6, 2, 4, 0, 100F);
+            this.metalColor_lbl.StylePriority.UseBackColor = false;
+            this.metalColor_lbl.StylePriority.UseBorders = false;
+            this.metalColor_lbl.StylePriority.UseFont = false;
+            this.metalColor_lbl.StylePriority.UsePadding = false;
+            this.metalColor_lbl.Text = "Metal Color:";
+            this.metalColor_lbl.Weight = 0.82332762081150912D;
+            // 
+            // metalColor_data
+            // 
+            this.metalColor_data.BackColor = System.Drawing.Color.White;
+            this.metalColor_data.Borders = ((DevExpress.XtraPrinting.BorderSide)((DevExpress.XtraPrinting.BorderSide.Top | DevExpress.XtraPrinting.BorderSide.Right)));
+            this.metalColor_data.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.metalColor_data.Multiline = true;
+            this.metalColor_data.Name = "metalColor_data";
+            this.metalColor_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 6, 0, 100F);
+            this.metalColor_data.StylePriority.UseBackColor = false;
+            this.metalColor_data.StylePriority.UseBorders = false;
+            this.metalColor_data.StylePriority.UseFont = false;
+            this.metalColor_data.StylePriority.UsePadding = false;
+            this.metalColor_data.Weight = 1.1766723791884908D;
             // 
             // xrTable7
             // 
@@ -123,7 +238,7 @@ namespace ArgusCR1016.Manufacturing.Templates
             this.xrTable7.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable7.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow8});
-            this.xrTable7.SizeF = new System.Drawing.SizeF(563F, 159.2497F);
+            this.xrTable7.SizeF = new System.Drawing.SizeF(563F, 135.2914F);
             this.xrTable7.StylePriority.UseBorderDashStyle = false;
             this.xrTable7.StylePriority.UseBorders = false;
             // 
@@ -154,12 +269,12 @@ namespace ArgusCR1016.Manufacturing.Templates
             this.xrTable4.BorderDashStyle = DevExpress.XtraPrinting.BorderDashStyle.Solid;
             this.xrTable4.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right)));
-            this.xrTable4.LocationFloat = new DevExpress.Utils.PointFloat(10.00015F, 159.2498F);
+            this.xrTable4.LocationFloat = new DevExpress.Utils.PointFloat(10.00032F, 135.2914F);
             this.xrTable4.Name = "xrTable4";
             this.xrTable4.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable4.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow5});
-            this.xrTable4.SizeF = new System.Drawing.SizeF(562.9999F, 48.54167F);
+            this.xrTable4.SizeF = new System.Drawing.SizeF(562.9999F, 38.5416F);
             this.xrTable4.StylePriority.UseBorderDashStyle = false;
             this.xrTable4.StylePriority.UseBorders = false;
             // 
@@ -175,10 +290,10 @@ namespace ArgusCR1016.Manufacturing.Templates
             // 
             this.description_lbl.BackColor = System.Drawing.Color.White;
             this.description_lbl.Borders = DevExpress.XtraPrinting.BorderSide.Left;
-            this.description_lbl.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold);
+            this.description_lbl.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.description_lbl.Multiline = true;
             this.description_lbl.Name = "description_lbl";
-            this.description_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(4, 5, 8, 0, 100F);
+            this.description_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(4, 4, 2, 0, 100F);
             this.description_lbl.StylePriority.UseBackColor = false;
             this.description_lbl.StylePriority.UseBorders = false;
             this.description_lbl.StylePriority.UseFont = false;
@@ -186,7 +301,7 @@ namespace ArgusCR1016.Manufacturing.Templates
             this.description_lbl.StylePriority.UseTextAlignment = false;
             this.description_lbl.Text = "Description:";
             this.description_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
-            this.description_lbl.Weight = 0.46689919974999572D;
+            this.description_lbl.Weight = 0.37961257940745863D;
             // 
             // description_data
             // 
@@ -195,134 +310,19 @@ namespace ArgusCR1016.Manufacturing.Templates
             this.description_data.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.description_data.Multiline = true;
             this.description_data.Name = "description_data";
-            this.description_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 8, 0, 100F);
+            this.description_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(4, 2, 2, 0, 100F);
             this.description_data.StylePriority.UseBackColor = false;
             this.description_data.StylePriority.UseBorders = false;
             this.description_data.StylePriority.UseFont = false;
             this.description_data.StylePriority.UsePadding = false;
-            this.description_data.Weight = 1.4987950641597383D;
-            // 
-            // xrTable5
-            // 
-            this.xrTable5.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
-            | DevExpress.XtraPrinting.BorderSide.Right) 
-            | DevExpress.XtraPrinting.BorderSide.Bottom)));
-            this.xrTable5.LocationFloat = new DevExpress.Utils.PointFloat(10.00015F, 207.7914F);
-            this.xrTable5.Name = "xrTable5";
-            this.xrTable5.Padding = new DevExpress.XtraPrinting.PaddingInfo(6, 2, 0, 0, 100F);
-            this.xrTable5.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
-            this.xrTableRow6});
-            this.xrTable5.SizeF = new System.Drawing.SizeF(562.9999F, 38.12502F);
-            this.xrTable5.StylePriority.UseBorders = false;
-            this.xrTable5.StylePriority.UsePadding = false;
-            // 
-            // xrTableRow6
-            // 
-            this.xrTableRow6.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
-            this.ringSize_lbl,
-            this.ringSize_data,
-            this.metalType_lbl,
-            this.metalType_data,
-            this.metalColor_lbl,
-            this.metalColor_data});
-            this.xrTableRow6.Name = "xrTableRow6";
-            this.xrTableRow6.Weight = 1D;
-            // 
-            // ringSize_lbl
-            // 
-            this.ringSize_lbl.BackColor = System.Drawing.Color.White;
-            this.ringSize_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top)));
-            this.ringSize_lbl.Font = new System.Drawing.Font("Arial", 9F);
-            this.ringSize_lbl.Multiline = true;
-            this.ringSize_lbl.Name = "ringSize_lbl";
-            this.ringSize_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(6, 2, 9, 0, 100F);
-            this.ringSize_lbl.StylePriority.UseBackColor = false;
-            this.ringSize_lbl.StylePriority.UseBorders = false;
-            this.ringSize_lbl.StylePriority.UseFont = false;
-            this.ringSize_lbl.StylePriority.UsePadding = false;
-            this.ringSize_lbl.StylePriority.UseTextAlignment = false;
-            this.ringSize_lbl.Text = "Ring Size:\r\n";
-            this.ringSize_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
-            this.ringSize_lbl.Weight = 0.77186965933659135D;
-            // 
-            // ringSize_data
-            // 
-            this.ringSize_data.BackColor = System.Drawing.Color.White;
-            this.ringSize_data.Borders = DevExpress.XtraPrinting.BorderSide.Top;
-            this.ringSize_data.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ringSize_data.Multiline = true;
-            this.ringSize_data.Name = "ringSize_data";
-            this.ringSize_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 9, 0, 100F);
-            this.ringSize_data.StylePriority.UseBackColor = false;
-            this.ringSize_data.StylePriority.UseBorders = false;
-            this.ringSize_data.StylePriority.UseFont = false;
-            this.ringSize_data.StylePriority.UsePadding = false;
-            this.ringSize_data.Weight = 1.4057500828846765D;
-            // 
-            // metalType_lbl
-            // 
-            this.metalType_lbl.BackColor = System.Drawing.Color.White;
-            this.metalType_lbl.Borders = DevExpress.XtraPrinting.BorderSide.Top;
-            this.metalType_lbl.Font = new System.Drawing.Font("Arial", 9F);
-            this.metalType_lbl.Multiline = true;
-            this.metalType_lbl.Name = "metalType_lbl";
-            this.metalType_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(6, 2, 9, 0, 100F);
-            this.metalType_lbl.StylePriority.UseBackColor = false;
-            this.metalType_lbl.StylePriority.UseBorders = false;
-            this.metalType_lbl.StylePriority.UseFont = false;
-            this.metalType_lbl.StylePriority.UsePadding = false;
-            this.metalType_lbl.Text = "Metal Type:";
-            this.metalType_lbl.Weight = 0.80817080977074718D;
-            // 
-            // metalType_data
-            // 
-            this.metalType_data.BackColor = System.Drawing.Color.White;
-            this.metalType_data.Borders = DevExpress.XtraPrinting.BorderSide.Top;
-            this.metalType_data.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.metalType_data.Multiline = true;
-            this.metalType_data.Name = "metalType_data";
-            this.metalType_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 9, 0, 100F);
-            this.metalType_data.StylePriority.UseBackColor = false;
-            this.metalType_data.StylePriority.UseBorders = false;
-            this.metalType_data.StylePriority.UseFont = false;
-            this.metalType_data.StylePriority.UsePadding = false;
-            this.metalType_data.Weight = 1.0142094480079846D;
-            // 
-            // metalColor_lbl
-            // 
-            this.metalColor_lbl.BackColor = System.Drawing.Color.White;
-            this.metalColor_lbl.Borders = DevExpress.XtraPrinting.BorderSide.Top;
-            this.metalColor_lbl.Font = new System.Drawing.Font("Arial", 9F);
-            this.metalColor_lbl.Multiline = true;
-            this.metalColor_lbl.Name = "metalColor_lbl";
-            this.metalColor_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(6, 2, 9, 0, 100F);
-            this.metalColor_lbl.StylePriority.UseBackColor = false;
-            this.metalColor_lbl.StylePriority.UseBorders = false;
-            this.metalColor_lbl.StylePriority.UseFont = false;
-            this.metalColor_lbl.StylePriority.UsePadding = false;
-            this.metalColor_lbl.Text = "Metal Color:";
-            this.metalColor_lbl.Weight = 0.82332762081150912D;
-            // 
-            // metalColor_data
-            // 
-            this.metalColor_data.BackColor = System.Drawing.Color.White;
-            this.metalColor_data.Borders = ((DevExpress.XtraPrinting.BorderSide)((DevExpress.XtraPrinting.BorderSide.Top | DevExpress.XtraPrinting.BorderSide.Right)));
-            this.metalColor_data.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.metalColor_data.Multiline = true;
-            this.metalColor_data.Name = "metalColor_data";
-            this.metalColor_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 9, 0, 100F);
-            this.metalColor_data.StylePriority.UseBackColor = false;
-            this.metalColor_data.StylePriority.UseBorders = false;
-            this.metalColor_data.StylePriority.UseFont = false;
-            this.metalColor_data.StylePriority.UsePadding = false;
-            this.metalColor_data.Weight = 1.1766723791884908D;
+            this.description_data.Weight = 1.5860816845022754D;
             // 
             // ReportHeader
             // 
             this.ReportHeader.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
             this.xrTable1,
             this.xrTable2});
-            this.ReportHeader.HeightF = 100.6251F;
+            this.ReportHeader.HeightF = 64.62506F;
             this.ReportHeader.Name = "ReportHeader";
             // 
             // xrTable1
@@ -332,7 +332,7 @@ namespace ArgusCR1016.Manufacturing.Templates
             this.xrTable1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable1.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow1});
-            this.xrTable1.SizeF = new System.Drawing.SizeF(562.9999F, 71.25002F);
+            this.xrTable1.SizeF = new System.Drawing.SizeF(562.9999F, 43.08338F);
             // 
             // xrTableRow1
             // 
@@ -349,10 +349,10 @@ namespace ArgusCR1016.Manufacturing.Templates
             this.clientOrder_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
-            this.clientOrder_lbl.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold);
+            this.clientOrder_lbl.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
             this.clientOrder_lbl.Multiline = true;
             this.clientOrder_lbl.Name = "clientOrder_lbl";
-            this.clientOrder_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 22, 0, 100F);
+            this.clientOrder_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 12, 0, 100F);
             this.clientOrder_lbl.StylePriority.UseBackColor = false;
             this.clientOrder_lbl.StylePriority.UseBorders = false;
             this.clientOrder_lbl.StylePriority.UseFont = false;
@@ -371,7 +371,7 @@ namespace ArgusCR1016.Manufacturing.Templates
             this.jobRef_data.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold);
             this.jobRef_data.Multiline = true;
             this.jobRef_data.Name = "jobRef_data";
-            this.jobRef_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 20, 0, 100F);
+            this.jobRef_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 12, 0, 100F);
             this.jobRef_data.StylePriority.UseBackColor = false;
             this.jobRef_data.StylePriority.UseBorders = false;
             this.jobRef_data.StylePriority.UseFont = false;
@@ -397,23 +397,24 @@ namespace ArgusCR1016.Manufacturing.Templates
             // BarCode
             // 
             this.BarCode.Alignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
-            this.BarCode.LocationFloat = new DevExpress.Utils.PointFloat(10F, 5.000003F);
+            this.BarCode.LocationFloat = new DevExpress.Utils.PointFloat(10F, 1.999998F);
             this.BarCode.Module = 1F;
             this.BarCode.Name = "BarCode";
             this.BarCode.Padding = new DevExpress.XtraPrinting.PaddingInfo(10, 10, 0, 0, 96F);
-            this.BarCode.SizeF = new System.Drawing.SizeF(221.8333F, 62F);
+            this.BarCode.ShowText = false;
+            this.BarCode.SizeF = new System.Drawing.SizeF(221.83F, 38F);
             this.BarCode.StylePriority.UseTextAlignment = false;
             this.BarCode.Symbology = code128Generator1;
             this.BarCode.TextAlignment = DevExpress.XtraPrinting.TextAlignment.BottomCenter;
             // 
             // xrTable2
             // 
-            this.xrTable2.LocationFloat = new DevExpress.Utils.PointFloat(9.999998F, 71.25004F);
+            this.xrTable2.LocationFloat = new DevExpress.Utils.PointFloat(9.999935F, 43.08338F);
             this.xrTable2.Name = "xrTable2";
             this.xrTable2.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable2.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow2});
-            this.xrTable2.SizeF = new System.Drawing.SizeF(562.9999F, 29.37502F);
+            this.xrTable2.SizeF = new System.Drawing.SizeF(562.9999F, 21.54168F);
             // 
             // xrTableRow2
             // 
@@ -436,7 +437,7 @@ namespace ArgusCR1016.Manufacturing.Templates
             this.date_lbl.Font = new System.Drawing.Font("Arial", 9F);
             this.date_lbl.Multiline = true;
             this.date_lbl.Name = "date_lbl";
-            this.date_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 4, 8, 0, 100F);
+            this.date_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 4, 3, 0, 100F);
             this.date_lbl.StylePriority.UseBackColor = false;
             this.date_lbl.StylePriority.UseBorders = false;
             this.date_lbl.StylePriority.UseFont = false;
@@ -453,7 +454,7 @@ namespace ArgusCR1016.Manufacturing.Templates
             this.date_data.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.date_data.Multiline = true;
             this.date_data.Name = "date_data";
-            this.date_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 8, 0, 100F);
+            this.date_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 3, 0, 100F);
             this.date_data.StylePriority.UseBackColor = false;
             this.date_data.StylePriority.UseBorders = false;
             this.date_data.StylePriority.UseFont = false;
@@ -467,7 +468,7 @@ namespace ArgusCR1016.Manufacturing.Templates
             this.orderedBy_lbl.Font = new System.Drawing.Font("Arial", 9F);
             this.orderedBy_lbl.Multiline = true;
             this.orderedBy_lbl.Name = "orderedBy_lbl";
-            this.orderedBy_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 4, 8, 0, 100F);
+            this.orderedBy_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 4, 3, 0, 100F);
             this.orderedBy_lbl.StylePriority.UseBackColor = false;
             this.orderedBy_lbl.StylePriority.UseBorders = false;
             this.orderedBy_lbl.StylePriority.UseFont = false;
@@ -484,12 +485,12 @@ namespace ArgusCR1016.Manufacturing.Templates
             this.orderedby_data.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.orderedby_data.Multiline = true;
             this.orderedby_data.Name = "orderedby_data";
-            this.orderedby_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 8, 0, 100F);
+            this.orderedby_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 3, 0, 100F);
             this.orderedby_data.StylePriority.UseBackColor = false;
             this.orderedby_data.StylePriority.UseBorders = false;
             this.orderedby_data.StylePriority.UseFont = false;
             this.orderedby_data.StylePriority.UsePadding = false;
-            this.orderedby_data.Weight = 1.2561920313377144D;
+            this.orderedby_data.Weight = 1.2169897943311883D;
             // 
             // deliveryDate_lbl
             // 
@@ -498,7 +499,7 @@ namespace ArgusCR1016.Manufacturing.Templates
             this.deliveryDate_lbl.Font = new System.Drawing.Font("Arial", 9F);
             this.deliveryDate_lbl.Multiline = true;
             this.deliveryDate_lbl.Name = "deliveryDate_lbl";
-            this.deliveryDate_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 4, 8, 0, 100F);
+            this.deliveryDate_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 4, 3, 0, 100F);
             this.deliveryDate_lbl.StylePriority.UseBackColor = false;
             this.deliveryDate_lbl.StylePriority.UseBorders = false;
             this.deliveryDate_lbl.StylePriority.UseFont = false;
@@ -506,7 +507,7 @@ namespace ArgusCR1016.Manufacturing.Templates
             this.deliveryDate_lbl.StylePriority.UseTextAlignment = false;
             this.deliveryDate_lbl.Text = "Delivery Date:";
             this.deliveryDate_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
-            this.deliveryDate_lbl.Weight = 0.89446828034748349D;
+            this.deliveryDate_lbl.Weight = 0.93367051735400952D;
             // 
             // deliveryDate_data
             // 
@@ -515,7 +516,7 @@ namespace ArgusCR1016.Manufacturing.Templates
             this.deliveryDate_data.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.deliveryDate_data.Multiline = true;
             this.deliveryDate_data.Name = "deliveryDate_data";
-            this.deliveryDate_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 8, 0, 100F);
+            this.deliveryDate_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 3, 0, 100F);
             this.deliveryDate_data.StylePriority.UseBackColor = false;
             this.deliveryDate_data.StylePriority.UseBorders = false;
             this.deliveryDate_data.StylePriority.UseFont = false;
@@ -527,7 +528,7 @@ namespace ArgusCR1016.Manufacturing.Templates
             this.PageHeader.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
             this.client_lbl,
             this.xrTable3});
-            this.PageHeader.HeightF = 59.58338F;
+            this.PageHeader.HeightF = 45.20828F;
             this.PageHeader.Name = "PageHeader";
             // 
             // client_lbl
@@ -535,12 +536,12 @@ namespace ArgusCR1016.Manufacturing.Templates
             this.client_lbl.BackColor = System.Drawing.Color.White;
             this.client_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
-            this.client_lbl.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold);
+            this.client_lbl.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.client_lbl.LocationFloat = new DevExpress.Utils.PointFloat(9.999998F, 0F);
             this.client_lbl.Multiline = true;
             this.client_lbl.Name = "client_lbl";
-            this.client_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(4, 2, 19, 0, 100F);
-            this.client_lbl.SizeF = new System.Drawing.SizeF(81.33334F, 59.58338F);
+            this.client_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(4, 2, 12, 0, 100F);
+            this.client_lbl.SizeF = new System.Drawing.SizeF(72.4274F, 45.20828F);
             this.client_lbl.StylePriority.UseBackColor = false;
             this.client_lbl.StylePriority.UseBorders = false;
             this.client_lbl.StylePriority.UseFont = false;
@@ -554,13 +555,13 @@ namespace ArgusCR1016.Manufacturing.Templates
             this.xrTable3.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
-            this.xrTable3.LocationFloat = new DevExpress.Utils.PointFloat(91.33334F, 0F);
+            this.xrTable3.LocationFloat = new DevExpress.Utils.PointFloat(82.4274F, 0F);
             this.xrTable3.Name = "xrTable3";
             this.xrTable3.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable3.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow3,
             this.xrTableRow4});
-            this.xrTable3.SizeF = new System.Drawing.SizeF(481.6665F, 59.58338F);
+            this.xrTable3.SizeF = new System.Drawing.SizeF(490.5725F, 45.20828F);
             this.xrTable3.StylePriority.UseBorders = false;
             // 
             // xrTableRow3
@@ -581,7 +582,7 @@ namespace ArgusCR1016.Manufacturing.Templates
             this.name_lbl.Font = new System.Drawing.Font("Arial", 9F);
             this.name_lbl.Multiline = true;
             this.name_lbl.Name = "name_lbl";
-            this.name_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 4, 5, 0, 100F);
+            this.name_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 4, 4, 0, 100F);
             this.name_lbl.StylePriority.UseBackColor = false;
             this.name_lbl.StylePriority.UseBorders = false;
             this.name_lbl.StylePriority.UseFont = false;
@@ -599,7 +600,7 @@ namespace ArgusCR1016.Manufacturing.Templates
             this.clientName_data.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.clientName_data.Multiline = true;
             this.clientName_data.Name = "clientName_data";
-            this.clientName_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 5, 0, 100F);
+            this.clientName_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 4, 0, 100F);
             this.clientName_data.StylePriority.UseBackColor = false;
             this.clientName_data.StylePriority.UseBorders = false;
             this.clientName_data.StylePriority.UseFont = false;
@@ -632,7 +633,7 @@ namespace ArgusCR1016.Manufacturing.Templates
             this.clientPhone_data.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.clientPhone_data.Multiline = true;
             this.clientPhone_data.Name = "clientPhone_data";
-            this.clientPhone_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 5, 0, 100F);
+            this.clientPhone_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 4, 0, 100F);
             this.clientPhone_data.StylePriority.UseBackColor = false;
             this.clientPhone_data.StylePriority.UseBorders = false;
             this.clientPhone_data.StylePriority.UseFont = false;
@@ -657,7 +658,7 @@ namespace ArgusCR1016.Manufacturing.Templates
             this.price_lbl.Font = new System.Drawing.Font("Arial", 9F);
             this.price_lbl.Multiline = true;
             this.price_lbl.Name = "price_lbl";
-            this.price_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 4, 6, 0, 100F);
+            this.price_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 4, 4, 0, 100F);
             this.price_lbl.StylePriority.UseBackColor = false;
             this.price_lbl.StylePriority.UseBorders = false;
             this.price_lbl.StylePriority.UseFont = false;
@@ -675,7 +676,7 @@ namespace ArgusCR1016.Manufacturing.Templates
             this.price_data.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.price_data.Multiline = true;
             this.price_data.Name = "price_data";
-            this.price_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 5, 0, 100F);
+            this.price_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 4, 0, 100F);
             this.price_data.StylePriority.UseBackColor = false;
             this.price_data.StylePriority.UseBorders = false;
             this.price_data.StylePriority.UseFont = false;
@@ -708,7 +709,7 @@ namespace ArgusCR1016.Manufacturing.Templates
             this.clientEmail_data.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.clientEmail_data.Multiline = true;
             this.clientEmail_data.Name = "clientEmail_data";
-            this.clientEmail_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 5, 0, 100F);
+            this.clientEmail_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 4, 0, 100F);
             this.clientEmail_data.StylePriority.UseBackColor = false;
             this.clientEmail_data.StylePriority.UseBorders = false;
             this.clientEmail_data.StylePriority.UseFont = false;
@@ -719,7 +720,7 @@ namespace ArgusCR1016.Manufacturing.Templates
             // 
             this.ReportFooter.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
             this.xrTable6});
-            this.ReportFooter.HeightF = 38.12501F;
+            this.ReportFooter.HeightF = 24.16669F;
             this.ReportFooter.Name = "ReportFooter";
             // 
             // xrTable6
@@ -727,12 +728,12 @@ namespace ArgusCR1016.Manufacturing.Templates
             this.xrTable6.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
-            this.xrTable6.LocationFloat = new DevExpress.Utils.PointFloat(9.999998F, 0F);
+            this.xrTable6.LocationFloat = new DevExpress.Utils.PointFloat(10.00032F, 0F);
             this.xrTable6.Name = "xrTable6";
             this.xrTable6.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable6.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow7});
-            this.xrTable6.SizeF = new System.Drawing.SizeF(562.9999F, 38.12501F);
+            this.xrTable6.SizeF = new System.Drawing.SizeF(562.9999F, 24.16669F);
             this.xrTable6.StylePriority.UseBorders = false;
             // 
             // xrTableRow7
@@ -755,7 +756,7 @@ namespace ArgusCR1016.Manufacturing.Templates
             this.designName_lbl.Font = new System.Drawing.Font("Arial", 9F);
             this.designName_lbl.Multiline = true;
             this.designName_lbl.Name = "designName_lbl";
-            this.designName_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(6, 2, 9, 0, 100F);
+            this.designName_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(6, 2, 4, 0, 100F);
             this.designName_lbl.StylePriority.UseBackColor = false;
             this.designName_lbl.StylePriority.UseBorders = false;
             this.designName_lbl.StylePriority.UseFont = false;
@@ -772,7 +773,7 @@ namespace ArgusCR1016.Manufacturing.Templates
             this.designName_data.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.designName_data.Multiline = true;
             this.designName_data.Name = "designName_data";
-            this.designName_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 9, 0, 100F);
+            this.designName_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 6, 0, 100F);
             this.designName_data.StylePriority.UseBackColor = false;
             this.designName_data.StylePriority.UseBorders = false;
             this.designName_data.StylePriority.UseFont = false;
@@ -786,7 +787,7 @@ namespace ArgusCR1016.Manufacturing.Templates
             this.hours_lbl.Font = new System.Drawing.Font("Arial", 9F);
             this.hours_lbl.Multiline = true;
             this.hours_lbl.Name = "hours_lbl";
-            this.hours_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(6, 2, 9, 0, 100F);
+            this.hours_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(6, 2, 4, 0, 100F);
             this.hours_lbl.StylePriority.UseBackColor = false;
             this.hours_lbl.StylePriority.UseBorders = false;
             this.hours_lbl.StylePriority.UseFont = false;
@@ -801,7 +802,7 @@ namespace ArgusCR1016.Manufacturing.Templates
             this.hours_data.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.hours_data.Multiline = true;
             this.hours_data.Name = "hours_data";
-            this.hours_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 9, 0, 100F);
+            this.hours_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 6, 0, 100F);
             this.hours_data.StylePriority.UseBackColor = false;
             this.hours_data.StylePriority.UseBorders = false;
             this.hours_data.StylePriority.UseFont = false;
@@ -815,7 +816,7 @@ namespace ArgusCR1016.Manufacturing.Templates
             this.resinWeight_lbl.Font = new System.Drawing.Font("Arial", 9F);
             this.resinWeight_lbl.Multiline = true;
             this.resinWeight_lbl.Name = "resinWeight_lbl";
-            this.resinWeight_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(6, 2, 9, 0, 100F);
+            this.resinWeight_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(6, 2, 4, 0, 100F);
             this.resinWeight_lbl.StylePriority.UseBackColor = false;
             this.resinWeight_lbl.StylePriority.UseBorders = false;
             this.resinWeight_lbl.StylePriority.UseFont = false;
@@ -831,7 +832,7 @@ namespace ArgusCR1016.Manufacturing.Templates
             this.resinWeight_data.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.resinWeight_data.Multiline = true;
             this.resinWeight_data.Name = "resinWeight_data";
-            this.resinWeight_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 9, 0, 100F);
+            this.resinWeight_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 6, 0, 100F);
             this.resinWeight_data.StylePriority.UseBackColor = false;
             this.resinWeight_data.StylePriority.UseBorders = false;
             this.resinWeight_data.StylePriority.UseFont = false;
@@ -848,14 +849,14 @@ namespace ArgusCR1016.Manufacturing.Templates
             this.PageHeader,
             this.ReportFooter});
             this.Font = new System.Drawing.Font("Arial", 9.75F);
-            this.Margins = new System.Drawing.Printing.Margins(0, 0, 12, 11);
+            this.Margins = new System.Drawing.Printing.Margins(0, 0, 8, 6);
             this.PageHeight = 827;
             this.PageWidth = 583;
             this.PaperKind = System.Drawing.Printing.PaperKind.A5;
             this.Version = "20.1";
+            ((System.ComponentModel.ISupportInitialize)(this.xrTable5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.xrTable5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable3)).EndInit();
