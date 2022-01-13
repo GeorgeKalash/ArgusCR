@@ -125,6 +125,12 @@
     <Compile Include="BaseReport.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="CashAndBanks\Templates\CA101.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CashAndBanks\Templates\CA101.Designer.cs">
+      <DependentUpon>CA101.cs</DependentUpon>
+    </Compile>
     <Compile Include="Delivery\Templates\DEORD01.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -189,6 +195,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="CashAndBanks\Templates\CA101.resx">
+      <DependentUpon>CA101.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Delivery\Templates\DEORD01.resx">
       <DependentUpon>DEORD01.cs</DependentUpon>
     </EmbeddedResource>
