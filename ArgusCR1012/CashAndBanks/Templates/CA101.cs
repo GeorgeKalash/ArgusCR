@@ -16,17 +16,34 @@ namespace ArgusCR1012.CashAndBanks.Templates
 
         protected override void OnBeforePrint(PrintEventArgs e)
         {
-            SharedClasses.JsonProtocol.GetStructure<ArgusDS.Cash.Reports.CA101> webObject = deserializeGet<ArgusDS.Cash.Reports.CA101>();
-            DataSource = webObject.record;
-
-
+            SharedClasses.JsonProtocol.GetStructure<ArgusDS.Cash.Reports.CA101> obj = deserializeGet<ArgusDS.Cash.Reports.CA101>();
+         
+           
+            reference_data.Text = obj.record.reference;
+            date_data.Text = obj.record.date.ToString("dd/MM/yyyy");
+            currencyRef_data.Text = obj.record.currencyRef;
+            fromCARef_data.Text = obj.record.fromCARef;
+            toCARef_data.Text = obj.record.toCARef;
+            fromCAName_data.Text = obj.record.fromCAName;
+            toCAName_data.Text = obj.record.toCAName;
+            amount_data.Text = obj.record.amount.ToString("N2");
+            notes_data.Text = obj.record.notes;
             base.OnBeforePrint(e);
 
         }
 
         protected override void labelsText()
         {
-          
+            Transfers_lbl.Text = labelText(0);
+
+            dtName_lbl.Text = labelText(1);
+            reference_lbl.Text = labelText(2);
+            date_lbl.Text = labelText(3);
+            currencyRef_lbl.Text = labelText(4);
+            fromCAName_lbl.Text = labelText(5);
+            toCAName_lbl.Text = labelText(6);
+            amount_lbl.Text = labelText(7);
+            notes_lbl.Text = labelText(8);
         }
 
         protected override string dictionaryStore()
