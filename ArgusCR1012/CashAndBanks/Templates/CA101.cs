@@ -17,8 +17,8 @@ namespace ArgusCR1012.CashAndBanks.Templates
         protected override void OnBeforePrint(PrintEventArgs e)
         {
             SharedClasses.JsonProtocol.GetStructure<ArgusDS.Cash.Reports.CA101> obj = deserializeGet<ArgusDS.Cash.Reports.CA101>();
-         
-           
+
+            dtName_data.Text = obj.record.dtName;
             reference_data.Text = obj.record.reference;
             date_data.Text = obj.record.date.ToString("dd/MM/yyyy");
             currencyRef_data.Text = obj.record.currencyRef;
