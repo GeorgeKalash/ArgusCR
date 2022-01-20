@@ -105,11 +105,47 @@
     <Compile Include="Manufacturing\Templates\MF103.Designer.cs">
       <DependentUpon>MF103.cs</DependentUpon>
     </Compile>
+    <Compile Include="Manufacturing\Templates\MF104\IssueOfMaterialsSubReports.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Manufacturing\Templates\MF104\IssueOfMaterialsSubReports.Designer.cs">
+      <DependentUpon>IssueOfMaterialsSubReports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manufacturing\Templates\MF104\LaborTimeSubReports.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Manufacturing\Templates\MF104\LaborTimeSubReports.Designer.cs">
+      <DependentUpon>LaborTimeSubReports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manufacturing\Templates\MF104\MF104.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Manufacturing\Templates\MF104\MF104.Designer.cs">
+      <DependentUpon>MF104.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manufacturing\Templates\MF104\OverheadsSubReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Manufacturing\Templates\MF104\OverheadsSubReport.Designer.cs">
+      <DependentUpon>OverheadsSubReport.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Manufacturing\Templates\MF103.resx">
       <DependentUpon>MF103.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manufacturing\Templates\MF104\IssueOfMaterialsSubReports.resx">
+      <DependentUpon>IssueOfMaterialsSubReports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manufacturing\Templates\MF104\LaborTimeSubReports.resx">
+      <DependentUpon>LaborTimeSubReports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manufacturing\Templates\MF104\MF104.resx">
+      <DependentUpon>MF104.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manufacturing\Templates\MF104\OverheadsSubReport.resx">
+      <DependentUpon>OverheadsSubReport.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
   </ItemGroup>
