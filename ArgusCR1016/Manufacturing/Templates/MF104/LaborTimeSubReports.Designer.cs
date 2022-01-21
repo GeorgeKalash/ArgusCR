@@ -1,5 +1,5 @@
 ﻿
-namespace ArgusRPT.Manufacturing.MF104
+namespace ArgusCR1016.Manufacturing.Templates.MF104
 {
     partial class LaborTimeSubReports
     {
@@ -34,6 +34,7 @@ namespace ArgusRPT.Manufacturing.MF104
             this.Detail = new DevExpress.XtraReports.UI.DetailBand();
             this.ReportHeader = new DevExpress.XtraReports.UI.ReportHeaderBand();
             this.PageHeader = new DevExpress.XtraReports.UI.PageHeaderBand();
+            this.realTimeElapsed_lbl = new DevExpress.XtraReports.UI.XRLabel();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             // 
             // TopMargin
@@ -53,13 +54,28 @@ namespace ArgusRPT.Manufacturing.MF104
             // 
             // ReportHeader
             // 
-            this.ReportHeader.Expanded = false;
+            this.ReportHeader.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+            this.realTimeElapsed_lbl});
+            this.ReportHeader.HeightF = 47.91667F;
             this.ReportHeader.Name = "ReportHeader";
             // 
             // PageHeader
             // 
             this.PageHeader.Expanded = false;
             this.PageHeader.Name = "PageHeader";
+            // 
+            // realTimeElapsed_lbl
+            // 
+            this.realTimeElapsed_lbl.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold);
+            this.realTimeElapsed_lbl.LocationFloat = new DevExpress.Utils.PointFloat(26.04168F, 0F);
+            this.realTimeElapsed_lbl.Multiline = true;
+            this.realTimeElapsed_lbl.Name = "realTimeElapsed_lbl";
+            this.realTimeElapsed_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.realTimeElapsed_lbl.SizeF = new System.Drawing.SizeF(216.6667F, 23F);
+            this.realTimeElapsed_lbl.StylePriority.UseFont = false;
+            this.realTimeElapsed_lbl.StylePriority.UseTextAlignment = false;
+            this.realTimeElapsed_lbl.Text = "realTimeElapsed_lbl";
+            this.realTimeElapsed_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             // 
             // LaborTimeSubReports
             // 
@@ -86,5 +102,6 @@ namespace ArgusRPT.Manufacturing.MF104
         private DevExpress.XtraReports.UI.DetailBand Detail;
         private DevExpress.XtraReports.UI.ReportHeaderBand ReportHeader;
         private DevExpress.XtraReports.UI.PageHeaderBand PageHeader;
+        private DevExpress.XtraReports.UI.XRLabel realTimeElapsed_lbl;
     }
 }

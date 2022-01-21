@@ -1,17 +1,54 @@
-﻿using DevExpress.XtraReports.UI;
+﻿using ArgusDS.Manufacturing;
+using DevExpress.XtraReports.UI;
 using System;
 using System.Collections;
 using System.ComponentModel;
 using System.Drawing;
+using System.Drawing.Printing;
 
-namespace ArgusRPT.Manufacturing.MF104
+namespace ArgusCR1016.Manufacturing.Templates.MF104
+{ 
+    public partial class IssueOfMaterialsSubReports : Reports.BaseReport
 {
-    public partial class IssueOfMaterialsSubReports : DevExpress.XtraReports.UI.XtraReport
-    {
+        public BindingList<JobOrderView> data;
+
         public IssueOfMaterialsSubReports()
         {
             InitializeComponent();
         }
+  
+
+        protected override void OnBeforePrint(PrintEventArgs e)
+        {
+            DataSource = data;
+            base.OnBeforePrint(e);
+        }
+
+        private void IssueOfMaterialsSubReports_DataSourceRowChanged(object sender, DataSourceRowEventArgs e)
+        {
+
+           
+        }
+
+        protected override void labelsText()
+        {
+            issueOfMaterials_lbl.Text = labelText(0);
+
+            itemRef_lbl.Text = labelText(1);
+            itemName_lbl.Text = labelText(2);
+            qty_lbl.Text = labelText(3);
+            pcs_lbl.Text = labelText(4);
+            cost_lbl.Text = labelText(5);
+            extendedCost_lbl.Text = labelText(6);
+        }
+
+
+
+        protected override string dictionaryStore()
+        {
+            return "MF104.IM";
+        }
 
     }
 }
+

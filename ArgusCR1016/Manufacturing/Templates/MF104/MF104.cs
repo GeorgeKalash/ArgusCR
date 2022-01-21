@@ -5,7 +5,7 @@ using System.ComponentModel;
 using System.Drawing;
 using System.Drawing.Printing;
 
-namespace ArgusRPT.Manufacturing.MF104
+namespace ArgusCR1016.Manufacturing.Templates.MF104
 {
     public partial class MF104 : Reports.BaseReport
     {
@@ -33,7 +33,8 @@ namespace ArgusRPT.Manufacturing.MF104
         {
             jobOrderPricing_lbl.Text = labelText(0);
 
-      
+            documentType_lbl.Text = labelText(1);
+            documentRef_lbl.Text = labelText(2);
         }
 
         protected override string dictionaryStore()

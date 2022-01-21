@@ -1,5 +1,5 @@
 ﻿
-namespace ArgusRPT.Manufacturing.MF104
+namespace ArgusCR1016.Manufacturing.Templates.MF104
 {
     partial class MF104
     {
@@ -32,21 +32,21 @@ namespace ArgusRPT.Manufacturing.MF104
             this.TopMargin = new DevExpress.XtraReports.UI.TopMarginBand();
             this.BottomMargin = new DevExpress.XtraReports.UI.BottomMarginBand();
             this.Detail = new DevExpress.XtraReports.UI.DetailBand();
+            this.IssueOfMaterialsSubBand = new DevExpress.XtraReports.UI.SubBand();
+            this.IssueOfMaterialsSubReports = new DevExpress.XtraReports.UI.XRSubreport();
+            this.OverheadsSubBand = new DevExpress.XtraReports.UI.SubBand();
+            this.OverheadsSubReport = new DevExpress.XtraReports.UI.XRSubreport();
+            this.LaborTimeSubBand = new DevExpress.XtraReports.UI.SubBand();
+            this.LaborTimeSubReports = new DevExpress.XtraReports.UI.XRSubreport();
             this.PageHeader = new DevExpress.XtraReports.UI.PageHeaderBand();
             this.xrTable1 = new DevExpress.XtraReports.UI.XRTable();
             this.xrTableRow1 = new DevExpress.XtraReports.UI.XRTableRow();
-            this.xrTableCell1 = new DevExpress.XtraReports.UI.XRTableCell();
+            this.documentType_lbl = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTableCell2 = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTableRow2 = new DevExpress.XtraReports.UI.XRTableRow();
-            this.xrTableCell3 = new DevExpress.XtraReports.UI.XRTableCell();
+            this.documentRef_lbl = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTableCell4 = new DevExpress.XtraReports.UI.XRTableCell();
             this.jobOrderPricing_lbl = new DevExpress.XtraReports.UI.XRLabel();
-            this.IssueOfMaterialsSubBand = new DevExpress.XtraReports.UI.SubBand();
-            this.OverheadsSubBand = new DevExpress.XtraReports.UI.SubBand();
-            this.LaborTimeSubBand = new DevExpress.XtraReports.UI.SubBand();
-            this.IssueOfMaterialsSubReports = new DevExpress.XtraReports.UI.XRSubreport();
-            this.OverheadsSubReport = new DevExpress.XtraReports.UI.XRSubreport();
-            this.LaborTimeSubReports = new DevExpress.XtraReports.UI.XRSubreport();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             // 
@@ -69,6 +69,48 @@ namespace ArgusRPT.Manufacturing.MF104
             this.OverheadsSubBand,
             this.LaborTimeSubBand});
             // 
+            // IssueOfMaterialsSubBand
+            // 
+            this.IssueOfMaterialsSubBand.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+            this.IssueOfMaterialsSubReports});
+            this.IssueOfMaterialsSubBand.HeightF = 23F;
+            this.IssueOfMaterialsSubBand.Name = "IssueOfMaterialsSubBand";
+            // 
+            // IssueOfMaterialsSubReports
+            // 
+            this.IssueOfMaterialsSubReports.LocationFloat = new DevExpress.Utils.PointFloat(9.999998F, 0F);
+            this.IssueOfMaterialsSubReports.Name = "IssueOfMaterialsSubReports";
+            this.IssueOfMaterialsSubReports.ReportSource = new ArgusCR1016.Manufacturing.Templates.MF104.IssueOfMaterialsSubReports();
+            this.IssueOfMaterialsSubReports.SizeF = new System.Drawing.SizeF(802.9166F, 23F);
+            // 
+            // OverheadsSubBand
+            // 
+            this.OverheadsSubBand.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+            this.OverheadsSubReport});
+            this.OverheadsSubBand.HeightF = 23F;
+            this.OverheadsSubBand.Name = "OverheadsSubBand";
+            // 
+            // OverheadsSubReport
+            // 
+            this.OverheadsSubReport.LocationFloat = new DevExpress.Utils.PointFloat(9.999998F, 0F);
+            this.OverheadsSubReport.Name = "OverheadsSubReport";
+            this.OverheadsSubReport.ReportSource = new ArgusCR1016.Manufacturing.Templates.MF104.OverheadsSubReport();
+            this.OverheadsSubReport.SizeF = new System.Drawing.SizeF(802.9166F, 23F);
+            // 
+            // LaborTimeSubBand
+            // 
+            this.LaborTimeSubBand.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+            this.LaborTimeSubReports});
+            this.LaborTimeSubBand.HeightF = 23F;
+            this.LaborTimeSubBand.Name = "LaborTimeSubBand";
+            // 
+            // LaborTimeSubReports
+            // 
+            this.LaborTimeSubReports.LocationFloat = new DevExpress.Utils.PointFloat(9.999998F, 0F);
+            this.LaborTimeSubReports.Name = "LaborTimeSubReports";
+            this.LaborTimeSubReports.ReportSource = new ArgusCR1016.Manufacturing.Templates.MF104.LaborTimeSubReports();
+            this.LaborTimeSubReports.SizeF = new System.Drawing.SizeF(802.9166F, 23F);
+            // 
             // PageHeader
             // 
             this.PageHeader.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
@@ -89,21 +131,21 @@ namespace ArgusRPT.Manufacturing.MF104
             // xrTableRow1
             // 
             this.xrTableRow1.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
-            this.xrTableCell1,
+            this.documentType_lbl,
             this.xrTableCell2});
             this.xrTableRow1.Name = "xrTableRow1";
             this.xrTableRow1.Weight = 1D;
             // 
-            // xrTableCell1
+            // documentType_lbl
             // 
-            this.xrTableCell1.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold);
-            this.xrTableCell1.Multiline = true;
-            this.xrTableCell1.Name = "xrTableCell1";
-            this.xrTableCell1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 5, 0, 100F);
-            this.xrTableCell1.StylePriority.UseFont = false;
-            this.xrTableCell1.StylePriority.UsePadding = false;
-            this.xrTableCell1.Text = "Document Type:";
-            this.xrTableCell1.Weight = 0.65122605439224857D;
+            this.documentType_lbl.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold);
+            this.documentType_lbl.Multiline = true;
+            this.documentType_lbl.Name = "documentType_lbl";
+            this.documentType_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 5, 0, 100F);
+            this.documentType_lbl.StylePriority.UseFont = false;
+            this.documentType_lbl.StylePriority.UsePadding = false;
+            this.documentType_lbl.Text = "Document Type:";
+            this.documentType_lbl.Weight = 0.65122605439224857D;
             // 
             // xrTableCell2
             // 
@@ -116,21 +158,21 @@ namespace ArgusRPT.Manufacturing.MF104
             // xrTableRow2
             // 
             this.xrTableRow2.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
-            this.xrTableCell3,
+            this.documentRef_lbl,
             this.xrTableCell4});
             this.xrTableRow2.Name = "xrTableRow2";
             this.xrTableRow2.Weight = 1D;
             // 
-            // xrTableCell3
+            // documentRef_lbl
             // 
-            this.xrTableCell3.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold);
-            this.xrTableCell3.Multiline = true;
-            this.xrTableCell3.Name = "xrTableCell3";
-            this.xrTableCell3.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 5, 0, 100F);
-            this.xrTableCell3.StylePriority.UseFont = false;
-            this.xrTableCell3.StylePriority.UsePadding = false;
-            this.xrTableCell3.Text = "Document Ref:";
-            this.xrTableCell3.Weight = 0.65122605439224857D;
+            this.documentRef_lbl.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold);
+            this.documentRef_lbl.Multiline = true;
+            this.documentRef_lbl.Name = "documentRef_lbl";
+            this.documentRef_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 5, 0, 100F);
+            this.documentRef_lbl.StylePriority.UseFont = false;
+            this.documentRef_lbl.StylePriority.UsePadding = false;
+            this.documentRef_lbl.Text = "Document Ref:";
+            this.documentRef_lbl.Weight = 0.65122605439224857D;
             // 
             // xrTableCell4
             // 
@@ -152,48 +194,6 @@ namespace ArgusRPT.Manufacturing.MF104
             this.jobOrderPricing_lbl.StylePriority.UseTextAlignment = false;
             this.jobOrderPricing_lbl.Text = "Job Order for Pricing";
             this.jobOrderPricing_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
-            // 
-            // IssueOfMaterialsSubBand
-            // 
-            this.IssueOfMaterialsSubBand.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
-            this.IssueOfMaterialsSubReports});
-            this.IssueOfMaterialsSubBand.HeightF = 23F;
-            this.IssueOfMaterialsSubBand.Name = "IssueOfMaterialsSubBand";
-            // 
-            // OverheadsSubBand
-            // 
-            this.OverheadsSubBand.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
-            this.OverheadsSubReport});
-            this.OverheadsSubBand.HeightF = 23F;
-            this.OverheadsSubBand.Name = "OverheadsSubBand";
-            // 
-            // LaborTimeSubBand
-            // 
-            this.LaborTimeSubBand.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
-            this.LaborTimeSubReports});
-            this.LaborTimeSubBand.HeightF = 23F;
-            this.LaborTimeSubBand.Name = "LaborTimeSubBand";
-            // 
-            // IssueOfMaterialsSubReports
-            // 
-            this.IssueOfMaterialsSubReports.LocationFloat = new DevExpress.Utils.PointFloat(9.999998F, 0F);
-            this.IssueOfMaterialsSubReports.Name = "IssueOfMaterialsSubReports";
-            this.IssueOfMaterialsSubReports.ReportSource = new ArgusRPT.Manufacturing.MF104.IssueOfMaterialsSubReports();
-            this.IssueOfMaterialsSubReports.SizeF = new System.Drawing.SizeF(802.9166F, 23F);
-            // 
-            // OverheadsSubReport
-            // 
-            this.OverheadsSubReport.LocationFloat = new DevExpress.Utils.PointFloat(9.999998F, 0F);
-            this.OverheadsSubReport.Name = "OverheadsSubReport";
-            this.OverheadsSubReport.ReportSource = new ArgusRPT.Manufacturing.MF104.OverheadsSubReport();
-            this.OverheadsSubReport.SizeF = new System.Drawing.SizeF(802.9166F, 23F);
-            // 
-            // LaborTimeSubReports
-            // 
-            this.LaborTimeSubReports.LocationFloat = new DevExpress.Utils.PointFloat(9.999998F, 0F);
-            this.LaborTimeSubReports.Name = "LaborTimeSubReports";
-            this.LaborTimeSubReports.ReportSource = new ArgusRPT.Manufacturing.MF104.LaborTimeSubReports();
-            this.LaborTimeSubReports.SizeF = new System.Drawing.SizeF(802.9166F, 23F);
             // 
             // MF104
             // 
@@ -221,17 +221,17 @@ namespace ArgusRPT.Manufacturing.MF104
         private DevExpress.XtraReports.UI.PageHeaderBand PageHeader;
         private DevExpress.XtraReports.UI.XRTable xrTable1;
         private DevExpress.XtraReports.UI.XRTableRow xrTableRow1;
-        private DevExpress.XtraReports.UI.XRTableCell xrTableCell1;
+        private DevExpress.XtraReports.UI.XRTableCell documentType_lbl;
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell2;
         private DevExpress.XtraReports.UI.XRTableRow xrTableRow2;
-        private DevExpress.XtraReports.UI.XRTableCell xrTableCell3;
+        private DevExpress.XtraReports.UI.XRTableCell documentRef_lbl;
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell4;
         private DevExpress.XtraReports.UI.XRLabel jobOrderPricing_lbl;
         private DevExpress.XtraReports.UI.SubBand IssueOfMaterialsSubBand;
         private DevExpress.XtraReports.UI.SubBand OverheadsSubBand;
         private DevExpress.XtraReports.UI.SubBand LaborTimeSubBand;
-        private DevExpress.XtraReports.UI.XRSubreport IssueOfMaterialsSubReports;
         private DevExpress.XtraReports.UI.XRSubreport OverheadsSubReport;
         private DevExpress.XtraReports.UI.XRSubreport LaborTimeSubReports;
+        private DevExpress.XtraReports.UI.XRSubreport IssueOfMaterialsSubReports;
     }
 }
