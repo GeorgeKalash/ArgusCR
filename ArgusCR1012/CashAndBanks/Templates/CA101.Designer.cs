@@ -298,8 +298,7 @@ namespace ArgusCR1012.CashAndBanks.Templates
             // fromCARef_data
             // 
             this.fromCARef_data.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.fromCARef_data.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
-            | DevExpress.XtraPrinting.BorderSide.Right) 
+            this.fromCARef_data.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.fromCARef_data.Multiline = true;
             this.fromCARef_data.Name = "fromCARef_data";
@@ -311,8 +310,7 @@ namespace ArgusCR1012.CashAndBanks.Templates
             // fromCAName_data
             // 
             this.fromCAName_data.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.fromCAName_data.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
-            | DevExpress.XtraPrinting.BorderSide.Right) 
+            this.fromCAName_data.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Top | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.fromCAName_data.Multiline = true;
             this.fromCAName_data.Name = "fromCAName_data";
@@ -348,8 +346,7 @@ namespace ArgusCR1012.CashAndBanks.Templates
             // toCARef_data
             // 
             this.toCARef_data.BackColor = System.Drawing.Color.White;
-            this.toCARef_data.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
-            | DevExpress.XtraPrinting.BorderSide.Right) 
+            this.toCARef_data.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.toCARef_data.Multiline = true;
             this.toCARef_data.Name = "toCARef_data";
@@ -361,8 +358,7 @@ namespace ArgusCR1012.CashAndBanks.Templates
             // toCAName_data
             // 
             this.toCAName_data.BackColor = System.Drawing.Color.White;
-            this.toCAName_data.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
-            | DevExpress.XtraPrinting.BorderSide.Right) 
+            this.toCAName_data.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Top | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.toCAName_data.Multiline = true;
             this.toCAName_data.Name = "toCAName_data";
