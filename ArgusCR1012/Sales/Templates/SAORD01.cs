@@ -22,10 +22,11 @@ namespace ArgusCR1012.Sales.Templates
 
             clientRef_data.Text = webObject.record.header.clientRef;
             clientName_data.Text = webObject.record.header.clientName;
+            shipAddress_data.Text = string.Format("{0}\\r\\n{1}\\r\\n{2}", webObject.record.shipAddress.street1, webObject.record.shipAddress.street2, webObject.record.shipAddress.city);
 
             reference_data.Text = webObject.record.header.reference;
             date_data.Text = webObject.record.header.date.ToString(sessionInfo.dateFormat);
-            plant_data.Text = webObject.record.header.plName;
+     
             spName_data.Text = webObject.record.header.spName;
 
             description_data.Text = webObject.record.header.description;
