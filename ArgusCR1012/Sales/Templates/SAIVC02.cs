@@ -110,7 +110,7 @@ namespace ArgusCR1012.Sales.Templates
             discount2_lbl.Text = labelText(22);
             totalSub_lbl.Text = labelText(23);
             vatAmount2_lbl.Text = labelText(24);
-            amount2_data.Text = labelText(25);
+            amount_lbl.Text = labelText(25);
 
             text_lbl.Text = labelText(26);
 

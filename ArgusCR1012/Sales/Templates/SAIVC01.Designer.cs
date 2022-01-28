@@ -100,7 +100,7 @@ namespace ArgusCR1012.Sales.Templates
             this.vatAmount2_lbl = new DevExpress.XtraReports.UI.XRTableCell();
             this.vatAmount_data = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTableRow9 = new DevExpress.XtraReports.UI.XRTableRow();
-            this.amount2_data = new DevExpress.XtraReports.UI.XRTableCell();
+            this.amount_lbl = new DevExpress.XtraReports.UI.XRTableCell();
             this.amount_data = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTable11 = new DevExpress.XtraReports.UI.XRTable();
             this.xrTableRow10 = new DevExpress.XtraReports.UI.XRTableRow();
@@ -1062,23 +1062,23 @@ namespace ArgusCR1012.Sales.Templates
             // xrTableRow9
             // 
             this.xrTableRow9.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
-            this.amount2_data,
+            this.amount_lbl,
             this.amount_data});
             this.xrTableRow9.Name = "xrTableRow9";
             this.xrTableRow9.Weight = 1D;
             // 
-            // amount2_data
+            // amount_lbl
             // 
-            this.amount2_data.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.amount2_data.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold);
-            this.amount2_data.Multiline = true;
-            this.amount2_data.Name = "amount2_data";
-            this.amount2_data.StylePriority.UseBackColor = false;
-            this.amount2_data.StylePriority.UseFont = false;
-            this.amount2_data.StylePriority.UseTextAlignment = false;
-            this.amount2_data.Text = "إجمالي المبلغ بعد الضريبة";
-            this.amount2_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
-            this.amount2_data.Weight = 4.7701536319566644D;
+            this.amount_lbl.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.amount_lbl.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold);
+            this.amount_lbl.Multiline = true;
+            this.amount_lbl.Name = "amount_lbl";
+            this.amount_lbl.StylePriority.UseBackColor = false;
+            this.amount_lbl.StylePriority.UseFont = false;
+            this.amount_lbl.StylePriority.UseTextAlignment = false;
+            this.amount_lbl.Text = "إجمالي المبلغ بعد الضريبة";
+            this.amount_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
+            this.amount_lbl.Weight = 4.7701536319566644D;
             // 
             // amount_data
             // 
@@ -2107,7 +2107,7 @@ namespace ArgusCR1012.Sales.Templates
         private DevExpress.XtraReports.UI.XRTableCell vatAmount2_lbl;
         private DevExpress.XtraReports.UI.XRTableCell vatAmount_data;
         private DevExpress.XtraReports.UI.XRTableRow xrTableRow9;
-        private DevExpress.XtraReports.UI.XRTableCell amount2_data;
+        private DevExpress.XtraReports.UI.XRTableCell amount_lbl;
         private DevExpress.XtraReports.UI.XRTableCell amount_data;
         private DevExpress.XtraReports.UI.XRTable xrTable1;
         private DevExpress.XtraReports.UI.XRTableRow xrTableRow5;
