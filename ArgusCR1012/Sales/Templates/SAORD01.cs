@@ -5,6 +5,7 @@ using System.Drawing;
 using System.Drawing.Printing;
 using DevExpress.XtraReports.UI;
 using ArgusDS.Sales.Reports;
+using System.Linq;
 
 namespace ArgusCR1012.Sales.Templates
 {
@@ -17,17 +18,31 @@ namespace ArgusCR1012.Sales.Templates
 
         protected override void OnBeforePrint(PrintEventArgs e)
         {
-            SharedClasses.JsonProtocol.GetStructure<QuotationPrintLayout> webObject = deserializeGet<QuotationPrintLayout>();
+            const int BPIDC_VAT = 2;
+
+            SharedClasses.JsonProtocol.GetStructure<OrderPrintLayout> webObject = deserializeGet<OrderPrintLayout>();
             DataSource = webObject.record.items;
+
+            companyName_data.Text = webObject.record.companyInfo.name;
+            taxNo_data.Text = webObject.record.companyInfo.taxNo;
 
             clientRef_data.Text = webObject.record.header.clientRef;
             clientName_data.Text = webObject.record.header.clientName;
-            shipAddress_data.Text = webObject.record.shipAddress?.city;
+            if (webObject.record.masterIDs != null)
+            {
+                ArgusDS.BusinessPartners.MasterIDNumberView vatID = webObject.record.masterIDs.FirstOrDefault(x => x.incId == BPIDC_VAT);
+                if (vatID != null)
+                    clientVATNo_data.Text = vatID.idNum;
+            }
+            shipAddress_data.Text = webObject.record.shipAddress?.street1;
+          
+
             reference_data.Text = webObject.record.header.reference;
             date_data.Text = webObject.record.header.date.ToString(sessionInfo.dateFormat);
-     
+            plant_data.Text = webObject.record.header.plantName;
             spName_data.Text = webObject.record.header.spName;
 
+            deliveryOrders_data.Text = webObject.record.deliveryOrders;
             description_data.Text = webObject.record.header.description;
 
             subtotal_data.Text = webObject.record.header.subtotal.ToString("N2");
