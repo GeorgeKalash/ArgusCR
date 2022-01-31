@@ -34,8 +34,10 @@ namespace ArgusCR1012.Sales.Templates
                 if (vatID != null)
                     clientVATNo_data.Text = vatID.idNum;
             }
+            phoneNumber_data.Text = webObject.record.shipAddress?.phone;
             shipAddress_data.Text = webObject.record.shipAddress?.street1;
-          
+
+
 
             reference_data.Text = webObject.record.header.reference;
             date_data.Text = webObject.record.header.date.ToString(sessionInfo.dateFormat);
