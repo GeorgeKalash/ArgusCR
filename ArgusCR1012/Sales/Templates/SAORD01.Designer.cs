@@ -76,7 +76,7 @@ namespace ArgusCR1012.Sales.Templates
             this.qty_data = new DevExpress.XtraReports.UI.XRTableCell();
             this.lineUnitPrice = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTableCell2 = new DevExpress.XtraReports.UI.XRTableCell();
-            this.xrTableCell3 = new DevExpress.XtraReports.UI.XRTableCell();
+            this.netPrice_data = new DevExpress.XtraReports.UI.XRTableCell();
             this.extendedPriceWithVAT_data = new DevExpress.XtraReports.UI.XRTableCell();
             this.ReportFooter = new DevExpress.XtraReports.UI.ReportFooterBand();
             this.xrTable12 = new DevExpress.XtraReports.UI.XRTable();
@@ -676,7 +676,7 @@ namespace ArgusCR1012.Sales.Templates
             this.qty_data,
             this.lineUnitPrice,
             this.xrTableCell2,
-            this.xrTableCell3,
+            this.netPrice_data,
             this.extendedPriceWithVAT_data});
             this.xrTableRow22.Name = "xrTableRow22";
             this.xrTableRow22.Weight = 1D;
@@ -765,20 +765,20 @@ namespace ArgusCR1012.Sales.Templates
             this.xrTableCell2.TextFormatString = "{0:n2}";
             this.xrTableCell2.Weight = 0.60527262879135613D;
             // 
-            // xrTableCell3
+            // netPrice_data
             // 
-            this.xrTableCell3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.xrTableCell3.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.xrTableCell3.Multiline = true;
-            this.xrTableCell3.Name = "xrTableCell3";
-            this.xrTableCell3.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 4, 0, 0, 100F);
-            this.xrTableCell3.StylePriority.UseBackColor = false;
-            this.xrTableCell3.StylePriority.UseFont = false;
-            this.xrTableCell3.StylePriority.UsePadding = false;
-            this.xrTableCell3.StylePriority.UseTextAlignment = false;
-            this.xrTableCell3.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
-            this.xrTableCell3.TextFormatString = "{0:n2}";
-            this.xrTableCell3.Weight = 0.67909703425118084D;
+            this.netPrice_data.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.netPrice_data.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.netPrice_data.Multiline = true;
+            this.netPrice_data.Name = "netPrice_data";
+            this.netPrice_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 4, 0, 0, 100F);
+            this.netPrice_data.StylePriority.UseBackColor = false;
+            this.netPrice_data.StylePriority.UseFont = false;
+            this.netPrice_data.StylePriority.UsePadding = false;
+            this.netPrice_data.StylePriority.UseTextAlignment = false;
+            this.netPrice_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
+            this.netPrice_data.TextFormatString = "{0:n2}";
+            this.netPrice_data.Weight = 0.67909703425118084D;
             // 
             // extendedPriceWithVAT_data
             // 
@@ -1347,7 +1347,7 @@ namespace ArgusCR1012.Sales.Templates
         private DevExpress.XtraReports.UI.XRTableCell qty_data;
         private DevExpress.XtraReports.UI.XRTableCell lineUnitPrice;
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell2;
-        private DevExpress.XtraReports.UI.XRTableCell xrTableCell3;
+        private DevExpress.XtraReports.UI.XRTableCell netPrice_data;
         private DevExpress.XtraReports.UI.XRTableCell extendedPriceWithVAT_data;
         private DevExpress.XtraReports.UI.XRTable xrTable12;
         private DevExpress.XtraReports.UI.XRTableRow xrTableRow19;

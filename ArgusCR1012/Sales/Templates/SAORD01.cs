@@ -6,6 +6,8 @@ using System.Drawing.Printing;
 using DevExpress.XtraReports.UI;
 using ArgusDS.Sales.Reports;
 using System.Linq;
+using System.Collections.Generic;
+
 
 namespace ArgusCR1012.Sales.Templates
 {
@@ -54,6 +56,15 @@ namespace ArgusCR1012.Sales.Templates
             spName2_data.Text = webObject.record.header.spName;
 
             base.OnBeforePrint(e);
+        }
+        protected override void OnDataSourceRowChanged(DataSourceRowEventArgs e)
+        {
+            ArgusDS.Sales.ItemView obj = ((List<ArgusDS.Sales.ItemView>)DataSource)[e.CurrentRow];
+
+            double netUnitPrice = obj.unitPrice - (obj.mdValue ?? 0);
+            netPrice_data.Text = netUnitPrice.ToString("N2");
+
+            base.OnDataSourceRowChanged(e);
         }
 
         protected override void labelsText()
