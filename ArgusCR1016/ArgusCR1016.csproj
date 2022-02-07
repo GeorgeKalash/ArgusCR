@@ -130,6 +130,12 @@
       <DependentUpon>OverheadsSubReport.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sales\SA101b.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Sales\SA101b.Designer.cs">
+      <DependentUpon>SA101b.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Manufacturing\Templates\MF103.resx">
@@ -148,6 +154,9 @@
       <DependentUpon>OverheadsSubReport.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Sales\SA101b.resx">
+      <DependentUpon>SA101b.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
