@@ -117,6 +117,9 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="companyAddress_data.ExpressionBindings" xml:space="preserve">
+    <value>[record.companyInfo.address.name]+ char(13) +[record.companyInfo.address.street1]+ char(13) +[record.companyInfo.address.city]+ char(13) +[record.companyInfo.address.countryName]+ char(13)  +[record.companyInfo.address.phone]+ char(13) +[record.companyInfo.address.phone2] </value>
+  </data>
   <metadata name="jsonDataSource1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
