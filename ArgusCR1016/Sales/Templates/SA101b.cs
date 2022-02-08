@@ -6,7 +6,7 @@ using System.Drawing;
 using System.Drawing.Printing;
 using ArgusDS.Sales.Reports;
 
-namespace ArgusCR1016.Sales
+namespace ArgusCR1016.Sales.Templates
 {
     public partial class SA101b : Reports.BaseReport
     {
