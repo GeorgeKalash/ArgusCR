@@ -50,6 +50,7 @@ namespace ArgusCR1016.Sales
             this.xrTableRow3 = new DevExpress.XtraReports.UI.XRTableRow();
             this.client_lbl = new DevExpress.XtraReports.UI.XRTableCell();
             this.clientRef_data = new DevExpress.XtraReports.UI.XRTableCell();
+            this.clientName_data = new DevExpress.XtraReports.UI.XRTableCell();
             this.date_lbl = new DevExpress.XtraReports.UI.XRTableCell();
             this.date_data = new DevExpress.XtraReports.UI.XRTableCell();
             this.PageHeader = new DevExpress.XtraReports.UI.PageHeaderBand();
@@ -67,7 +68,6 @@ namespace ArgusCR1016.Sales
             this.PageFooter = new DevExpress.XtraReports.UI.PageFooterBand();
             this.pagesNumber_lbl = new DevExpress.XtraReports.UI.XRPageInfo();
             this.printSignature = new DevExpress.XtraReports.UI.XRLabel();
-            this.clientName_data = new DevExpress.XtraReports.UI.XRTableCell();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable1)).BeginInit();
@@ -122,6 +122,8 @@ namespace ArgusCR1016.Sales
             this.itemRef_data.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.itemRef_data.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[sku]")});
             this.itemRef_data.Font = new System.Drawing.Font("Times New Roman", 10F);
             this.itemRef_data.Multiline = true;
             this.itemRef_data.Name = "itemRef_data";
@@ -282,6 +284,8 @@ namespace ArgusCR1016.Sales
             this.unitCost_data.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.unitCost_data.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[unitCost]")});
             this.unitCost_data.Font = new System.Drawing.Font("Times New Roman", 10F);
             this.unitCost_data.Multiline = true;
             this.unitCost_data.Name = "unitCost_data";
@@ -380,6 +384,21 @@ namespace ArgusCR1016.Sales
             this.clientRef_data.Text = "clientRef_data";
             this.clientRef_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
             this.clientRef_data.Weight = 0.55361139342177246D;
+            // 
+            // clientName_data
+            // 
+            this.clientName_data.Borders = DevExpress.XtraPrinting.BorderSide.None;
+            this.clientName_data.Font = new System.Drawing.Font("Times New Roman", 10F);
+            this.clientName_data.Multiline = true;
+            this.clientName_data.Name = "clientName_data";
+            this.clientName_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(8, 2, 10, 0, 100F);
+            this.clientName_data.StylePriority.UseBorders = false;
+            this.clientName_data.StylePriority.UseFont = false;
+            this.clientName_data.StylePriority.UsePadding = false;
+            this.clientName_data.StylePriority.UseTextAlignment = false;
+            this.clientName_data.Text = "clientName_data";
+            this.clientName_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
+            this.clientName_data.Weight = 1.3956279139177081D;
             // 
             // date_lbl
             // 
@@ -649,21 +668,6 @@ namespace ArgusCR1016.Sales
             this.printSignature.StylePriority.UseTextAlignment = false;
             this.printSignature.Text = "printSignature";
             this.printSignature.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
-            // 
-            // clientName_data
-            // 
-            this.clientName_data.Borders = DevExpress.XtraPrinting.BorderSide.None;
-            this.clientName_data.Font = new System.Drawing.Font("Times New Roman", 10F);
-            this.clientName_data.Multiline = true;
-            this.clientName_data.Name = "clientName_data";
-            this.clientName_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(8, 2, 10, 0, 100F);
-            this.clientName_data.StylePriority.UseBorders = false;
-            this.clientName_data.StylePriority.UseFont = false;
-            this.clientName_data.StylePriority.UsePadding = false;
-            this.clientName_data.StylePriority.UseTextAlignment = false;
-            this.clientName_data.Text = "clientName_data";
-            this.clientName_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
-            this.clientName_data.Weight = 1.3956279139177081D;
             // 
             // SA101b
             // 
