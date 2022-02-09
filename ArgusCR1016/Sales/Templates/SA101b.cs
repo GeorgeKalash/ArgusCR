@@ -1,15 +1,14 @@
 ﻿using DevExpress.XtraReports.UI;
-using System;
-using System.Collections;
-using System.ComponentModel;
-using System.Drawing;
 using System.Drawing.Printing;
 using ArgusDS.Sales.Reports;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace ArgusCR1016.Sales.Templates
 {
     public partial class SA101b : Reports.BaseReport
     {
+        List<ArgusDS.Inventory.ItemDimensionView> dimensions;
         public SA101b()
         {
             InitializeComponent();
@@ -19,6 +18,8 @@ namespace ArgusCR1016.Sales.Templates
         {
        
             SharedClasses.JsonProtocol.GetStructure<QuotationPrintLayoutWithDimensions> webObject = deserializeGet<QuotationPrintLayoutWithDimensions>();
+            dimensions = webObject.record.dimensions;
+
             DataSource = webObject.record.items;
 
             clientRef_data.Text = webObject.record.header.clientRef;
@@ -46,6 +47,15 @@ namespace ArgusCR1016.Sales.Templates
             unitPrice_lbl.Text = labelText(10);
             unitCost_lbl.Text = labelText(11);
 
+        }
+
+        protected override void OnDataSourceRowChanged(DataSourceRowEventArgs e)
+        {
+            ArgusDS.Sales.QuotationItem obj = ((List<ArgusDS.Sales.QuotationItem>)DataSource)[e.CurrentRow];
+            size_data.Text = dimensions.FirstOrDefault(x => x.itemId == obj.itemId && x.dimension == 2)?.value;
+            diamonds_data.Text = dimensions.FirstOrDefault(x => x.itemId == obj.itemId && x.dimension == 4)?.value;
+            otherStones_data.Text = dimensions.FirstOrDefault(x => x.itemId == obj.itemId && x.dimension == 6)?.value;
+            base.OnDataSourceRowChanged(e);
         }
 
         protected override string dictionaryStore()
