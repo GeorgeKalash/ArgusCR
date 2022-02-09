@@ -8,7 +8,7 @@ namespace ArgusCR1016.Sales.Templates
 {
     public partial class SA101b : Reports.BaseReport
     {
-        List<ArgusDS.Inventory.ItemDimensionView> dimensions;
+        //List<ArgusDS.Inventory.ItemDimensionView> dimensions;
         List<ArgusDS.Inventory.UserDefinedTextView> userDefinedTextViews;
         public SA101b()
         {
@@ -19,7 +19,7 @@ namespace ArgusCR1016.Sales.Templates
         {
        
             SharedClasses.JsonProtocol.GetStructure<QuotationPrintLayoutWithDimensions> webObject = deserializeGet<QuotationPrintLayoutWithDimensions>();
-            dimensions = webObject.record.dimensions;
+            //dimensions = webObject.record.dimensions;
             userDefinedTextViews = webObject.record.userDefinedTextViews;
 
             DataSource = webObject.record.items;
@@ -53,10 +53,10 @@ namespace ArgusCR1016.Sales.Templates
 
         protected override void OnDataSourceRowChanged(DataSourceRowEventArgs e)
         {
-            ArgusDS.Sales.QuotationItem obj = ((List<ArgusDS.Sales.QuotationItem>)DataSource)[e.CurrentRow];
-            size_data.Text = userDefinedTextViews.FirstOrDefault(x => x.itemId == obj.itemId && x.dimension == 2)?.value;
-            diamonds_data.Text = userDefinedTextViews.FirstOrDefault(x => x.itemId == obj.itemId && x.dimension == 4)?.value;
-            otherStones_data.Text = userDefinedTextViews.FirstOrDefault(x => x.itemId == obj.itemId && x.dimension == 6)?.value;
+            ArgusDS.Sales.QuotationItem obj = ((List<ArgusDS.Sales.QuotationItemView>)DataSource)[e.CurrentRow];
+            size_data.Text = userDefinedTextViews.FirstOrDefault(x => x.itemId == obj.itemId && x.dimension == 5)?.value;
+            diamonds_data.Text = userDefinedTextViews.FirstOrDefault(x => x.itemId == obj.itemId && x.dimension == 1)?.value;
+            otherStones_data.Text = userDefinedTextViews.FirstOrDefault(x => x.itemId == obj.itemId && x.dimension == 4)?.value;
             base.OnDataSourceRowChanged(e);
         }
 
