@@ -31,11 +31,11 @@ namespace ArgusCR1012.Manufacturing.Templates
 
             reference_data.Text = webObject.record.header.reference;
             name_data.Text = webObject.record.header.name;
-            type_data.Text = webObject.record.header.type.ToString();
-            sku_data.Text = webObject.record.header.description;
+            type_data.Text = webObject.record.header.typeName;
+            sku_data.Text = webObject.record.header.sku;
             itemName_data.Text = webObject.record.header.itemName;
 
-            status_data.Text = webObject.record.header.activeStatus.ToString();
+            status_data.Text = webObject.record.header.statusName;
             version_data.Text = webObject.record.header.version;
             date_data.Text = ((DateTime)webObject.record.header.date).ToString(sessionInfo.dateFormat);
             description_data.Text = webObject.record.header.description;
