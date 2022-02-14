@@ -767,16 +767,16 @@
             // xrLabel26
             // 
             this.xrLabel26.Font = new System.Drawing.Font("Times New Roman", 9.75F);
-            this.xrLabel26.LocationFloat = new DevExpress.Utils.PointFloat(5.00002F, 13.87507F);
+            this.xrLabel26.LocationFloat = new DevExpress.Utils.PointFloat(5.000019F, 13.87507F);
             this.xrLabel26.Multiline = true;
             this.xrLabel26.Name = "xrLabel26";
             this.xrLabel26.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel26.SizeF = new System.Drawing.SizeF(248.9583F, 100.7501F);
+            this.xrLabel26.SizeF = new System.Drawing.SizeF(278.1666F, 100.7501F);
             this.xrLabel26.StylePriority.UseFont = false;
             this.xrLabel26.StylePriority.UseTextAlignment = false;
             this.xrLabel26.Text = "BANK AUDI\r\nBranch: Jounieh, Fouad Chehab, Lebanon\r\nAccount Number: 191205-01\r\nAcc" +
-    "ount Name: SoftMachine SARL\r\nSwift Code: AUDBLBBX\r\nIBAN: LB64 0056 0001 9120 546" +
-    "1 0020 0701";
+    "ount Name: SoftMachine SARL\r\nSwift Code: AUDBLBBX\r\nIBAN: LB92 0056 0000 0000 001" +
+    "9 1205 0010";
             this.xrLabel26.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             // 
             // xrControlStyle1
