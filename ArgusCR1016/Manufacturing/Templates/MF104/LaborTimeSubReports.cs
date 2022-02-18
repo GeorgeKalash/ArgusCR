@@ -1,7 +1,9 @@
 ﻿using ArgusDS.Manufacturing;
+using ArgusDS.Manufacturing.Reports;
 using DevExpress.XtraReports.UI;
 using System;
 using System.Collections;
+using System.Collections.Generic;
 using System.ComponentModel;
 using System.Drawing;
 using System.Drawing.Printing;
@@ -10,7 +12,7 @@ namespace ArgusCR1016.Manufacturing.Templates.MF104
 {
     public partial class LaborTimeSubReports : Reports.BaseReport
     {
-        public BindingList<JobOrderView> data;
+        public List<MF104_TimeUnit> data;
         public LaborTimeSubReports()
         {
             InitializeComponent();

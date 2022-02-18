@@ -22,9 +22,18 @@ namespace ArgusCR1016.Manufacturing.Templates.MF104
         protected override void OnBeforePrint(PrintEventArgs e)
         {
 
-            SharedClasses.JsonProtocol.QryStructure<ArgusDS.Manufacturing.Reports.MF104> webObject = deserializeList<ArgusDS.Manufacturing.Reports.MF104>();
-            DataSource = webObject.list;
-    
+            SharedClasses.JsonProtocol.GetStructure<ArgusDS.Manufacturing.Reports.MF104> webObject = deserializeGet<ArgusDS.Manufacturing.Reports.MF104>();
+            DataSource = webObject.record;
+
+            ((IssueOfMaterialsSubReports)(IssueOfMaterialsSubReports.ReportSource)).data = webObject.record.rawMaterials;
+            ((Reports.BaseReport)(IssueOfMaterialsSubReports.ReportSource)).setSessionInfo(sessionInfo);
+
+            ((LaborTimeSubReports)(LaborTimeSubReports.ReportSource)).data = webObject.record.laborTime;
+            ((Reports.BaseReport)(IssueOfMaterialsSubReports.ReportSource)).setSessionInfo(sessionInfo);
+
+            ((OverheadsSubReport)(OverheadsSubReport.ReportSource)).data = webObject.record.overheadViews;
+            ((Reports.BaseReport)(IssueOfMaterialsSubReports.ReportSource)).setSessionInfo(sessionInfo);
+
 
             base.OnBeforePrint(e);
         }

@@ -2,6 +2,7 @@
 using DevExpress.XtraReports.UI;
 using System;
 using System.Collections;
+using System.Collections.Generic;
 using System.ComponentModel;
 using System.Drawing;
 using System.Drawing.Printing;
@@ -10,7 +11,7 @@ namespace ArgusCR1016.Manufacturing.Templates.MF104
 {
     public partial class OverheadsSubReport : Reports.BaseReport
     {
-        public BindingList<JobOverheadView> data;
+        public List<JobOverheadView> data;
         public OverheadsSubReport()
         {
             InitializeComponent();
