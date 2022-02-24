@@ -24,6 +24,8 @@ namespace ArgusCR1016.Manufacturing.Templates.MF104
 
             SharedClasses.JsonProtocol.GetStructure<ArgusDS.Manufacturing.Reports.MF104> webObject = deserializeGet<ArgusDS.Manufacturing.Reports.MF104>();
             DataSource = webObject.record;
+            dtName_data.Text = webObject.record.jobOrder.dtName;
+            reference_data.Text = webObject.record.jobOrder.reference;
 
             ((IssueOfMaterialsSubReports)(IssueOfMaterialsSubReports.ReportSource)).data = webObject.record.rawMaterials;
             ((Reports.BaseReport)(IssueOfMaterialsSubReports.ReportSource)).setSessionInfo(sessionInfo);

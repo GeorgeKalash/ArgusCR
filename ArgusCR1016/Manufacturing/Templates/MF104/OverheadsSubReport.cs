@@ -17,7 +17,6 @@ namespace ArgusCR1016.Manufacturing.Templates.MF104
             InitializeComponent();
         }
 
-
         protected override void OnBeforePrint(PrintEventArgs e)
         {
             DataSource = data;

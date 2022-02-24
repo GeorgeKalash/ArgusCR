@@ -42,10 +42,10 @@ namespace ArgusCR1016.Manufacturing.Templates.MF104
             this.xrTable1 = new DevExpress.XtraReports.UI.XRTable();
             this.xrTableRow1 = new DevExpress.XtraReports.UI.XRTableRow();
             this.documentType_lbl = new DevExpress.XtraReports.UI.XRTableCell();
-            this.xrTableCell2 = new DevExpress.XtraReports.UI.XRTableCell();
+            this.dtName_data = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTableRow2 = new DevExpress.XtraReports.UI.XRTableRow();
             this.documentRef_lbl = new DevExpress.XtraReports.UI.XRTableCell();
-            this.xrTableCell4 = new DevExpress.XtraReports.UI.XRTableCell();
+            this.reference_data = new DevExpress.XtraReports.UI.XRTableCell();
             this.jobOrderPricing_lbl = new DevExpress.XtraReports.UI.XRLabel();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
@@ -132,7 +132,7 @@ namespace ArgusCR1016.Manufacturing.Templates.MF104
             // 
             this.xrTableRow1.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
             this.documentType_lbl,
-            this.xrTableCell2});
+            this.dtName_data});
             this.xrTableRow1.Name = "xrTableRow1";
             this.xrTableRow1.Weight = 1D;
             // 
@@ -145,21 +145,22 @@ namespace ArgusCR1016.Manufacturing.Templates.MF104
             this.documentType_lbl.StylePriority.UseFont = false;
             this.documentType_lbl.StylePriority.UsePadding = false;
             this.documentType_lbl.Text = "Document Type:";
-            this.documentType_lbl.Weight = 0.65122605439224857D;
+            this.documentType_lbl.Weight = 0.58583094684356007D;
             // 
-            // xrTableCell2
+            // dtName_data
             // 
-            this.xrTableCell2.Multiline = true;
-            this.xrTableCell2.Name = "xrTableCell2";
-            this.xrTableCell2.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 4, 0, 100F);
-            this.xrTableCell2.StylePriority.UsePadding = false;
-            this.xrTableCell2.Weight = 1.3487739456077514D;
+            this.dtName_data.Multiline = true;
+            this.dtName_data.Name = "dtName_data";
+            this.dtName_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 4, 0, 100F);
+            this.dtName_data.StylePriority.UsePadding = false;
+            this.dtName_data.Text = "dtName_data";
+            this.dtName_data.Weight = 1.41416905315644D;
             // 
             // xrTableRow2
             // 
             this.xrTableRow2.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
             this.documentRef_lbl,
-            this.xrTableCell4});
+            this.reference_data});
             this.xrTableRow2.Name = "xrTableRow2";
             this.xrTableRow2.Weight = 1D;
             // 
@@ -172,15 +173,16 @@ namespace ArgusCR1016.Manufacturing.Templates.MF104
             this.documentRef_lbl.StylePriority.UseFont = false;
             this.documentRef_lbl.StylePriority.UsePadding = false;
             this.documentRef_lbl.Text = "Document Ref:";
-            this.documentRef_lbl.Weight = 0.65122605439224857D;
+            this.documentRef_lbl.Weight = 0.58583094684356007D;
             // 
-            // xrTableCell4
+            // reference_data
             // 
-            this.xrTableCell4.Multiline = true;
-            this.xrTableCell4.Name = "xrTableCell4";
-            this.xrTableCell4.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 4, 0, 100F);
-            this.xrTableCell4.StylePriority.UsePadding = false;
-            this.xrTableCell4.Weight = 1.3487739456077514D;
+            this.reference_data.Multiline = true;
+            this.reference_data.Name = "reference_data";
+            this.reference_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 4, 0, 100F);
+            this.reference_data.StylePriority.UsePadding = false;
+            this.reference_data.Text = "reference_data\r\n";
+            this.reference_data.Weight = 1.41416905315644D;
             // 
             // jobOrderPricing_lbl
             // 
@@ -222,10 +224,10 @@ namespace ArgusCR1016.Manufacturing.Templates.MF104
         private DevExpress.XtraReports.UI.XRTable xrTable1;
         private DevExpress.XtraReports.UI.XRTableRow xrTableRow1;
         private DevExpress.XtraReports.UI.XRTableCell documentType_lbl;
-        private DevExpress.XtraReports.UI.XRTableCell xrTableCell2;
+        private DevExpress.XtraReports.UI.XRTableCell dtName_data;
         private DevExpress.XtraReports.UI.XRTableRow xrTableRow2;
         private DevExpress.XtraReports.UI.XRTableCell documentRef_lbl;
-        private DevExpress.XtraReports.UI.XRTableCell xrTableCell4;
+        private DevExpress.XtraReports.UI.XRTableCell reference_data;
         private DevExpress.XtraReports.UI.XRLabel jobOrderPricing_lbl;
         private DevExpress.XtraReports.UI.SubBand IssueOfMaterialsSubBand;
         private DevExpress.XtraReports.UI.SubBand OverheadsSubBand;

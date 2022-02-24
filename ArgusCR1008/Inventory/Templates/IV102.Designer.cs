@@ -93,7 +93,7 @@ namespace ArgusCR1008.Inventory.Templates
             // 
             // TopMargin
             // 
-            this.TopMargin.HeightF = 13.33334F;
+            this.TopMargin.HeightF = 40F;
             this.TopMargin.Name = "TopMargin";
             // 
             // BottomMargin
@@ -751,7 +751,7 @@ namespace ArgusCR1008.Inventory.Templates
             this.CrossBandControls.AddRange(new DevExpress.XtraReports.UI.XRCrossBandControl[] {
             this.xrCrossBandBox1});
             this.Font = new System.Drawing.Font("Arial", 9.75F);
-            this.Margins = new System.Drawing.Printing.Margins(0, 0, 13, 10);
+            this.Margins = new System.Drawing.Printing.Margins(0, 0, 40, 10);
             this.PageHeight = 827;
             this.PageWidth = 583;
             this.PaperKind = System.Drawing.Printing.PaperKind.A5;
