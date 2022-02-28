@@ -1,0 +1,476 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <metadata name="jsonDataSource1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <data name="customJsonSource1.Json" xml:space="preserve">
+    <value>{
+    "record": {
+        "trxId": 0,
+        "items": [
+            {
+                "netWeight": null,
+                "netVolume": null,
+                "siteName": "",
+                "muName": "",
+                "spName": "",
+                "categoryRef": null,
+                "categoryName": "Yearly Maintenance",
+                "length": null,
+                "width": null,
+                "depth": null,
+                "categoryId": 2,
+                "ivtItem": false,
+                "trxId": 112,
+                "seqNo": 1,
+                "baseQty": 1.0,
+                "sku": "ASYM",
+                "itemName": "Argus semi-yearly maintenance",
+                "siteId": 1,
+                "muId": 1,
+                "spId": null,
+                "applyVat": false,
+                "unitCost": 0.0,
+                "itemId": 7,
+                "priceType": 1,
+                "basePrice": 0.0,
+                "volume": 0.0,
+                "weight": 0.0,
+                "unitPrice": 1875.0,
+                "upo": 0.0,
+                "qty": 1.0,
+                "mdAmount": 0.0,
+                "mdType": 1,
+                "mdValue": 0.0,
+                "vatPct": 11.0,
+                "vatAmount": 206.25,
+                "extendedPrice": 1875.0,
+                "notes": ""
+            },
+            {
+                "netWeight": null,
+                "netVolume": null,
+                "siteName": "",
+                "muName": "",
+                "spName": "",
+                "categoryRef": null,
+                "categoryName": "Cloud Subscription",
+                "length": null,
+                "width": null,
+                "depth": null,
+                "categoryId": 3,
+                "ivtItem": null,
+                "trxId": 112,
+                "seqNo": 2,
+                "baseQty": 1.0,
+                "sku": "ASAS",
+                "itemName": "Aion Semi Annual Subsription",
+                "siteId": 1,
+                "muId": 1,
+                "spId": null,
+                "applyVat": false,
+                "unitCost": 0.0,
+                "itemId": 6,
+                "priceType": 1,
+                "basePrice": 0.0,
+                "volume": 0.0,
+                "weight": 0.0,
+                "unitPrice": 1500.0,
+                "upo": 0.0,
+                "qty": 1.0,
+                "mdAmount": 0.0,
+                "mdType": 1,
+                "mdValue": 0.0,
+                "vatPct": 0.0,
+                "vatAmount": 0.0,
+                "extendedPrice": 1500.0,
+                "notes": null
+            }
+        ],
+        "quickView": {
+            "yearOpenAmount": 0.0,
+            "invoicedAmount": 3581.25,
+            "saleReturnAmount": 0.0,
+            "receivedAmount": 0.0,
+            "balance": 3581.25,
+            "phone": "01/886222 ext: 158",
+            "phone2": "",
+            "phone3": "",
+            "lastInvoiceDate": "/Date(1625097600000)/",
+            "lastReceiptDate": null,
+            "asOfDate": "/Date(-62135596800000)/",
+            "clientId": 0
+        },
+        "trxHeader": {
+            "ttName": null,
+            "dtName": null,
+            "plName": null,
+            "ptName": null,
+            "spName": "Randa Alsayed",
+            "currencyName": "USD",
+            "siteName": null,
+            "szName": "Lebanon",
+            "printStatusName": "Yes",
+            "spRef": "RS",
+            "statusName": "raw",
+            "dgName": null,
+            "decimals": 0,
+            "clientRef": "CMC",
+            "shipAddressId": null,
+            "billAddressId": 7,
+            "recordId": 112,
+            "plantId": null,
+            "dgId": 512,
+            "glId": null,
+            "clientId": 9,
+            "baseAmount": 3581.25,
+            "costPrice": 0.0,
+            "szId": 2,
+            "siteId": 1,
+            "clientName": "Century Motor Company",
+            "plId": 1,
+            "ptId": 1,
+            "dueDate": "/Date(1627689600000)/",
+            "currencyId": 1,
+            "subtotal": 3375.0,
+            "tdType": null,
+            "tdPct": null,
+            "tdAmount": 0.0,
+            "isVattable": false,
+            "vatAmount": 206.25,
+            "miscAmount": 0.0,
+            "amount": 3581.25,
+            "exRate": 1.0,
+            "weight": 0.0,
+            "volume": 0.0,
+            "batchId": null,
+            "spId": 2,
+            "oDocId": null,
+            "description": "",
+            "printStatus": 2,
+            "qty": 2.0,
+            "listPrice": 3375.0,
+            "mdValue": 0.0,
+            "mdPct": 0.0,
+            "dtId": 4,
+            "reference": "0070",
+            "status": 1,
+            "releaseStatus": null,
+            "date": "/Date(1625097600000)/"
+        },
+        "billAddress": {
+            "recordId": 7,
+            "countryName": "Lebanon",
+            "stateName": null,
+            "name": "Century Motor Company",
+            "street1": "Zalka highway",
+            "street2": "",
+            "city": "Zalka",
+            "postalCode": "",
+            "countryId": 1,
+            "stateId": null,
+            "phone": "01/886222 ext: 158",
+            "phone2": "",
+            "phone3": ""
+        }
+    },
+    "statusId": 1,
+    "message": ""
+}</value>
+  </data>
+  <metadata name="jsonDataSource2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 56</value>
+  </metadata>
+  <data name="customJsonSource2.Json" xml:space="preserve">
+    <value>{
+    "record": {
+        "trxId": 0,
+        "items": [
+            {
+                "netWeight": null,
+                "netVolume": null,
+                "siteName": "",
+                "muName": "",
+                "spName": "",
+                "categoryRef": null,
+                "categoryName": "Yearly Maintenance",
+                "length": null,
+                "width": null,
+                "depth": null,
+                "categoryId": 2,
+                "ivtItem": false,
+                "trxId": 112,
+                "seqNo": 1,
+                "baseQty": 1.0,
+                "sku": "ASYM",
+                "itemName": "Argus semi-yearly maintenance",
+                "siteId": 1,
+                "muId": 1,
+                "spId": null,
+                "applyVat": false,
+                "unitCost": 0.0,
+                "itemId": 7,
+                "priceType": 1,
+                "basePrice": 0.0,
+                "volume": 0.0,
+                "weight": 0.0,
+                "unitPrice": 1875.0,
+                "upo": 0.0,
+                "qty": 1.0,
+                "mdAmount": 0.0,
+                "mdType": 1,
+                "mdValue": 0.0,
+                "vatPct": 11.0,
+                "vatAmount": 206.25,
+                "extendedPrice": 1875.0,
+                "notes": ""
+            },
+            {
+                "netWeight": null,
+                "netVolume": null,
+                "siteName": "",
+                "muName": "",
+                "spName": "",
+                "categoryRef": null,
+                "categoryName": "Cloud Subscription",
+                "length": null,
+                "width": null,
+                "depth": null,
+                "categoryId": 3,
+                "ivtItem": null,
+                "trxId": 112,
+                "seqNo": 2,
+                "baseQty": 1.0,
+                "sku": "ASAS",
+                "itemName": "Aion Semi Annual Subsription",
+                "siteId": 1,
+                "muId": 1,
+                "spId": null,
+                "applyVat": false,
+                "unitCost": 0.0,
+                "itemId": 6,
+                "priceType": 1,
+                "basePrice": 0.0,
+                "volume": 0.0,
+                "weight": 0.0,
+                "unitPrice": 1500.0,
+                "upo": 0.0,
+                "qty": 1.0,
+                "mdAmount": 0.0,
+                "mdType": 1,
+                "mdValue": 0.0,
+                "vatPct": 0.0,
+                "vatAmount": 0.0,
+                "extendedPrice": 1500.0,
+                "notes": null
+            }
+        ],
+        "quickView": {
+            "yearOpenAmount": 0.0,
+            "invoicedAmount": 3581.25,
+            "saleReturnAmount": 0.0,
+            "receivedAmount": 0.0,
+            "balance": 3581.25,
+            "phone": "01/886222 ext: 158",
+            "phone2": "",
+            "phone3": "",
+            "lastInvoiceDate": "/Date(1625097600000)/",
+            "lastReceiptDate": null,
+            "asOfDate": "/Date(-62135596800000)/",
+            "clientId": 0
+        },
+        "trxHeader": {
+            "ttName": null,
+            "dtName": null,
+            "plName": null,
+            "ptName": null,
+            "spName": "Randa Alsayed",
+            "currencyName": "USD",
+            "siteName": null,
+            "szName": "Lebanon",
+            "printStatusName": "Yes",
+            "spRef": "RS",
+            "statusName": "raw",
+            "dgName": null,
+            "decimals": 0,
+            "clientRef": "CMC",
+            "shipAddressId": null,
+            "billAddressId": 7,
+            "recordId": 112,
+            "plantId": null,
+            "dgId": 512,
+            "glId": null,
+            "clientId": 9,
+            "baseAmount": 3581.25,
+            "costPrice": 0.0,
+            "szId": 2,
+            "siteId": 1,
+            "clientName": "Century Motor Company",
+            "plId": 1,
+            "ptId": 1,
+            "dueDate": "/Date(1627689600000)/",
+            "currencyId": 1,
+            "subtotal": 3375.0,
+            "tdType": null,
+            "tdPct": null,
+            "tdAmount": 0.0,
+            "isVattable": false,
+            "vatAmount": 206.25,
+            "miscAmount": 0.0,
+            "amount": 3581.25,
+            "exRate": 1.0,
+            "weight": 0.0,
+            "volume": 0.0,
+            "batchId": null,
+            "spId": 2,
+            "oDocId": null,
+            "description": "",
+            "printStatus": 2,
+            "qty": 2.0,
+            "listPrice": 3375.0,
+            "mdValue": 0.0,
+            "mdPct": 0.0,
+            "dtId": 4,
+            "reference": "0070",
+            "status": 1,
+            "releaseStatus": null,
+            "date": "/Date(1625097600000)/"
+        },
+        "billAddress": {
+            "recordId": 7,
+            "countryName": "Lebanon",
+            "stateName": null,
+            "name": "Century Motor Company",
+            "street1": "Zalka highway",
+            "street2": "",
+            "city": "Zalka",
+            "postalCode": "",
+            "countryId": 1,
+            "stateId": null,
+            "phone": "01/886222 ext: 158",
+            "phone2": "",
+            "phone3": ""
+        }
+    },
+    "statusId": 1,
+    "message": ""
+}</value>
+  </data>
+</root>
