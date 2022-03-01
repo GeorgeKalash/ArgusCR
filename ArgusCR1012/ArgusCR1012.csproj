@@ -175,6 +175,12 @@
       <DependentUpon>PUSHP01.cs</DependentUpon>
     </Compile>
     <Compile Include="Sales\Templates\KSAeInvoiceQrCode.cs" />
+    <Compile Include="Sales\Templates\SA104.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Sales\Templates\SA104.Designer.cs">
+      <DependentUpon>SA104.cs</DependentUpon>
+    </Compile>
     <Compile Include="Sales\Templates\SAIVC01.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -225,6 +231,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Purchase\Templates\PUSHP01.resx">
       <DependentUpon>PUSHP01.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales\Templates\SA104.resx">
+      <DependentUpon>SA104.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Sales\Templates\SAIVC01.resx">
       <DependentUpon>SAIVC01.cs</DependentUpon>
