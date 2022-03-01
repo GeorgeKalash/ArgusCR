@@ -67,24 +67,18 @@ namespace ArgusCR1012.Sales.Templates
             phoneNumber_lbl.Text = webObject.record.billAddress?.phone;
             cAddress_data.Text = webObject.record.billAddress?.street1;
           
-
             subtotal_data.Text = webObject.record.trxHeader.subtotal.ToString("N2");
-            tdAmount_data.Text = webObject.record.trxHeader.tdAmount.ToString();
-
-            double TotalAmountNonSubjectToTax = webObject.record.trxHeader.subtotal - (webObject.record.trxHeader.tdAmount ?? 0);
-            totalSub_data.Text = TotalAmountNonSubjectToTax.ToString("N2");
-
             vatAmount_data.Text = webObject.record.trxHeader.vatAmount.ToString("N2");
             amount_data.Text = webObject.record.trxHeader.amount.ToString("N2");
+
             amountInWords_data.Text = SharedClasses.NumberToWords.multiLingualNumberInText((decimal)webObject.record.trxHeader.amount, 2, 2);
 
-            description_data.Text = webObject.record.trxHeader.description;
+            description_data.Text = webObject.record.trxHeader.notes;
 
             clientName2_data.Text = webObject.record.trxHeader.clientName;
             spName2_data.Text = webObject.record.trxHeader.spName;
 
             QRCode.Text = new KSAeInvoiceQrCode(webObject.record.companyInfo.name, webObject.record.companyInfo.taxNo, (DateTime)webObject.record.logTime, webObject.record.trxHeader.amount.ToString(), webObject.record.trxHeader.vatAmount.ToString()).ToBase64();
-
             base.OnBeforePrint(e);
         }
 
@@ -138,21 +132,17 @@ namespace ArgusCR1012.Sales.Templates
 
             notes_lbl.Text = labelText(26);
 
-            subtotal2_lbl.Text = labelText(27);
-            discount2_lbl.Text = labelText(28);
-            totalSub_lbl.Text = labelText(29);
-            vatAmount2_lbl.Text = labelText(30);
-            amount_lbl.Text = labelText(31);
+            totalSub_lbl.Text = labelText(27);
+            vatAmount2_lbl.Text = labelText(28);
+            amount_lbl.Text = labelText(29);
 
-            text_lbl.Text = labelText(32);
+            clientSig_lbl.Text = labelText(30);
+            cName_lbl.Text = labelText(31);
+            cSig_lbl.Text = labelText(32);
 
-            clientSig_lbl.Text = labelText(33);
-            cName_lbl.Text = labelText(34);
-            cSig_lbl.Text = labelText(35);
-
-            sPSig_lbl.Text = labelText(36);
-            saPeName_lbl.Text = labelText(37);
-            sPeSig_lbl.Text = labelText(38);
+            sPSig_lbl.Text = labelText(33);
+            saPeName_lbl.Text = labelText(34);
+            sPeSig_lbl.Text = labelText(35);
         }
         protected override string dictionaryStore()
         {
