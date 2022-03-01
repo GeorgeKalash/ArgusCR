@@ -35,7 +35,7 @@ namespace ArgusCR1012.Sales.Templates
             {
                 date_data.Text = ((DateTime)webObject.record.logTime).ToString(sessionInfo.dateFormat) + " " + ((DateTime)webObject.record.logTime).ToString("HH:mm");
             }
-
+            plant_data.Text = webObject.record.trxHeader.plantName;
             licenseNo_data.Text = webObject.record.companyInfo.licenseNo;
             crNo_data.Text = webObject.record.companyInfo.crNo;
             address_data.Text = webObject.record.companyInfo.address?.street1;
@@ -90,7 +90,7 @@ namespace ArgusCR1012.Sales.Templates
 
         protected override void OnDataSourceRowChanged(DataSourceRowEventArgs e)
         {
-            ArgusDS.Sales.ItemView obj = ((List<ArgusDS.Sales.ItemView>)DataSource)[e.CurrentRow];
+            ArgusDS.Sales.ReturnItemView obj = ((List<ArgusDS.Sales.ReturnItemView>)DataSource)[e.CurrentRow];
             
             double netUnitPrice = obj.unitPrice - (obj.mdValue ?? 0);
             double epWithVAT = obj.extendedPrice + obj.vatAmount;
@@ -136,24 +136,23 @@ namespace ArgusCR1012.Sales.Templates
 
             total_lbl.Text = labelText(25);
 
-            deliveryOrderRef_lbl.Text = labelText(26);
-            notes_lbl.Text = labelText(27);
+            notes_lbl.Text = labelText(26);
 
-            subtotal2_lbl.Text = labelText(28);
-            discount2_lbl.Text = labelText(29);
-            totalSub_lbl.Text = labelText(30);
-            vatAmount2_lbl.Text = labelText(31);
-            amount_lbl.Text = labelText(32);
+            subtotal2_lbl.Text = labelText(27);
+            discount2_lbl.Text = labelText(28);
+            totalSub_lbl.Text = labelText(29);
+            vatAmount2_lbl.Text = labelText(30);
+            amount_lbl.Text = labelText(31);
 
-            text_lbl.Text = labelText(33);
+            text_lbl.Text = labelText(32);
 
-            clientSig_lbl.Text = labelText(34);
-            cName_lbl.Text = labelText(35);
-            cSig_lbl.Text = labelText(36);
+            clientSig_lbl.Text = labelText(33);
+            cName_lbl.Text = labelText(34);
+            cSig_lbl.Text = labelText(35);
 
-            sPSig_lbl.Text = labelText(37);
-            saPeName_lbl.Text = labelText(38);
-            sPeSig_lbl.Text = labelText(39);
+            sPSig_lbl.Text = labelText(36);
+            saPeName_lbl.Text = labelText(37);
+            sPeSig_lbl.Text = labelText(38);
         }
         protected override string dictionaryStore()
         {
