@@ -137,12 +137,10 @@ namespace ArgusCR1012.Sales.Templates
             amount_lbl.Text = labelText(29);
 
             clientSig_lbl.Text = labelText(30);
-            cName_lbl.Text = labelText(31);
-            cSig_lbl.Text = labelText(32);
 
-            sPSig_lbl.Text = labelText(33);
-            saPeName_lbl.Text = labelText(34);
-            sPeSig_lbl.Text = labelText(35);
+            sPSig_lbl.Text = labelText(31);
+            saPeName_lbl.Text = labelText(32);
+            sPeSig_lbl.Text = labelText(33);
         }
         protected override string dictionaryStore()
         {

@@ -39,15 +39,16 @@ namespace ArgusCR1012.Financials
             receiptVoucher_lbl.Text = labelText(0);
 
             dtName_lbl.Text = labelText(1);
-            date_lbl.Text = labelText(2);
-            reference_lbl.Text = labelText(3);
+            reference_lbl.Text = labelText(2);
+            date_lbl.Text = labelText(3);
             plant_lbl.Text = labelText(4);
             account_lbl.Text = labelText(5);
-            cashAccount_lbl.Text = labelText(6);
-            currency_lbl.Text = labelText(7);
-            paymentMethod_lbl.Text = labelText(8);
+            paymentMethod_lbl.Text = labelText(6);
+            cashAccount_lbl.Text = labelText(7);
+            currency_lbl.Text = labelText(8);      
             amount_lbl.Text = labelText(9);
             notes_lbl.Text = labelText(10);
+            receiverSign_lbl.Text = labelText(11);
         }
         protected override string dictionaryStore()
         {
