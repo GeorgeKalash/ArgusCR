@@ -65,7 +65,7 @@ namespace ArgusCR1012.Sales.Templates
                 }
             }
 
-            phoneNumber_lbl.Text = webObject.record.billAddress?.phone;
+            phoneNumber_data.Text = webObject.record.billAddress?.phone;
             cAddress_data.Text = webObject.record.billAddress?.street1;
           
 

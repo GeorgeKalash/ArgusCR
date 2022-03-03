@@ -54,6 +54,7 @@ namespace ArgusCR1012.Sales.Templates
             this.xrTableCell3 = new DevExpress.XtraReports.UI.XRTableCell();
             this.extendedPriceWithVAT_data = new DevExpress.XtraReports.UI.XRTableCell();
             this.ReportFooter = new DevExpress.XtraReports.UI.ReportFooterBand();
+            this.invoiceRef_data = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel1 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrTable13 = new DevExpress.XtraReports.UI.XRTable();
             this.xrTableRow25 = new DevExpress.XtraReports.UI.XRTableRow();
@@ -506,6 +507,7 @@ namespace ArgusCR1012.Sales.Templates
             // ReportFooter
             // 
             this.ReportFooter.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+            this.invoiceRef_data,
             this.xrLabel1,
             this.xrTable13,
             this.xrTable14,
@@ -516,13 +518,30 @@ namespace ArgusCR1012.Sales.Templates
             this.ReportFooter.HeightF = 263.7221F;
             this.ReportFooter.Name = "ReportFooter";
             // 
+            // invoiceRef_data
+            // 
+            this.invoiceRef_data.Font = new System.Drawing.Font("Times New Roman", 11F);
+            this.invoiceRef_data.LocationFloat = new DevExpress.Utils.PointFloat(405.1921F, 135.6251F);
+            this.invoiceRef_data.Multiline = true;
+            this.invoiceRef_data.Name = "invoiceRef_data";
+            this.invoiceRef_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.invoiceRef_data.SizeF = new System.Drawing.SizeF(218.7662F, 32.29167F);
+            this.invoiceRef_data.StylePriority.UseFont = false;
+            this.invoiceRef_data.StylePriority.UseTextAlignment = false;
+            this.invoiceRef_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
+            // 
             // xrLabel1
             // 
-            this.xrLabel1.LocationFloat = new DevExpress.Utils.PointFloat(25F, 135.6251F);
+            this.xrLabel1.Font = new System.Drawing.Font("Times New Roman", 11F);
+            this.xrLabel1.LocationFloat = new DevExpress.Utils.PointFloat(623.9583F, 135.6251F);
             this.xrLabel1.Multiline = true;
             this.xrLabel1.Name = "xrLabel1";
             this.xrLabel1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel1.SizeF = new System.Drawing.SizeF(777.0995F, 32.29167F);
+            this.xrLabel1.SizeF = new System.Drawing.SizeF(178.1412F, 32.29167F);
+            this.xrLabel1.StylePriority.UseFont = false;
+            this.xrLabel1.StylePriority.UseTextAlignment = false;
+            this.xrLabel1.Text = "تم الإرجاع من فاتورة مبيعات رقم";
+            this.xrLabel1.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
             // 
             // xrTable13
             // 
@@ -1108,7 +1127,7 @@ namespace ArgusCR1012.Sales.Templates
             this.taxNo_data.StylePriority.UsePadding = false;
             this.taxNo_data.StylePriority.UseTextAlignment = false;
             this.taxNo_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
-            this.taxNo_data.Weight = 1.055679392747529D;
+            this.taxNo_data.Weight = 0.99236694686664584D;
             // 
             // tamdeedVatNo_lbl
             // 
@@ -1123,7 +1142,7 @@ namespace ArgusCR1012.Sales.Templates
             this.tamdeedVatNo_lbl.StylePriority.UseTextAlignment = false;
             this.tamdeedVatNo_lbl.Text = "رقم ضریبة القیمة المضافة";
             this.tamdeedVatNo_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
-            this.tamdeedVatNo_lbl.Weight = 0.944320607252471D;
+            this.tamdeedVatNo_lbl.Weight = 1.0076330531333542D;
             // 
             // QRCode
             // 
@@ -1780,11 +1799,11 @@ namespace ArgusCR1012.Sales.Templates
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.taxInvoice_lbl.BorderWidth = 1.5F;
             this.taxInvoice_lbl.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
-            this.taxInvoice_lbl.LocationFloat = new DevExpress.Utils.PointFloat(315.2083F, 23.95835F);
+            this.taxInvoice_lbl.LocationFloat = new DevExpress.Utils.PointFloat(323.5416F, 23.95835F);
             this.taxInvoice_lbl.Multiline = true;
             this.taxInvoice_lbl.Name = "taxInvoice_lbl";
             this.taxInvoice_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 7, 0, 100F);
-            this.taxInvoice_lbl.SizeF = new System.Drawing.SizeF(144.2744F, 55.20831F);
+            this.taxInvoice_lbl.SizeF = new System.Drawing.SizeF(135.9411F, 55.20831F);
             this.taxInvoice_lbl.StylePriority.UseBackColor = false;
             this.taxInvoice_lbl.StylePriority.UseBorders = false;
             this.taxInvoice_lbl.StylePriority.UseBorderWidth = false;
@@ -1944,5 +1963,6 @@ namespace ArgusCR1012.Sales.Templates
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell50;
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell1;
         private DevExpress.XtraReports.UI.XRLabel xrLabel1;
+        private DevExpress.XtraReports.UI.XRLabel invoiceRef_data;
     }
 }

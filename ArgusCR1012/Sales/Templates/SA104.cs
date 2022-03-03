@@ -64,7 +64,7 @@ namespace ArgusCR1012.Sales.Templates
                 }
             }
 
-            phoneNumber_lbl.Text = webObject.record.billAddress?.phone;
+            phoneNumber_data.Text = webObject.record.billAddress?.phone;
             cAddress_data.Text = webObject.record.billAddress?.street1;
           
             subtotal_data.Text = webObject.record.trxHeader.subtotal.ToString("N2");
@@ -74,6 +74,7 @@ namespace ArgusCR1012.Sales.Templates
             amountInWords_data.Text = SharedClasses.NumberToWords.multiLingualNumberInText((decimal)webObject.record.trxHeader.amount, 2, 2);
 
             description_data.Text = webObject.record.trxHeader.notes;
+            invoiceRef_data.Text = webObject.record.trxHeader.invoiceRef;
 
             clientName2_data.Text = webObject.record.trxHeader.clientName;
             spName2_data.Text = webObject.record.trxHeader.spName;
@@ -98,50 +99,9 @@ namespace ArgusCR1012.Sales.Templates
 
         protected override void labelsText()
         {
-            tamdeedVatNo_lbl.Text = labelText(0);
-            taxInvoice_lbl.Text = labelText(1);
 
-            invoiceInfo_lbl.Text = labelText(2);
-            reference_lbl.Text = labelText(3);
-            date_lbl.Text = labelText(4);
-            plant_lbl.Text = labelText(5);
-            license_lbl.Text = labelText(6);
-            commercialRecord_lbl.Text = labelText(7);
-            address_lbl.Text = labelText(8);
-            spName_lbl.Text = labelText(9);
-
-            clientInfo_lbl.Text = labelText(10);
-            clientName_lbl.Text = labelText(11);
-            clientVATNo_lbl.Text = labelText(12);
-
-            phoneNumber_lbl.Text = labelText(13);
-            cAddress_lbl.Text = labelText(14);
-            exhibitionManager_lbl.Text = labelText(15);
-
-            sku_lbl.Text = labelText(16);
-            itemName_lbl.Text = labelText(17);
-            qty_lbl.Text = labelText(18);
-            unitPrice_lbl.Text = labelText(19);
-            subtotal_lbl.Text = labelText(20);
-      
-            vat_lbl.Text = labelText(22);
-            vatAmount_lbl.Text = labelText(23);
-            extendedPrice_lbl.Text = labelText(24);
-
-            total_lbl.Text = labelText(25);
-
-            notes_lbl.Text = labelText(26);
-
-            totalSub_lbl.Text = labelText(27);
-            vatAmount2_lbl.Text = labelText(28);
-            amount_lbl.Text = labelText(29);
-
-            clientSig_lbl.Text = labelText(30);
-
-            sPSig_lbl.Text = labelText(31);
-            saPeName_lbl.Text = labelText(32);
-            sPeSig_lbl.Text = labelText(33);
         }
+
         protected override string dictionaryStore()
         {
             return "Custom\\R1012\\SA104";

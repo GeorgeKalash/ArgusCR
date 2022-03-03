@@ -27,6 +27,9 @@ namespace ArgusCR1012.Delivery.Templates
             SharedClasses.JsonProtocol.GetStructure<ArgusDS.Delivery.Reports.OrderPrintLayout> webObject = deserializeGet<ArgusDS.Delivery.Reports.OrderPrintLayout>();
             DataSource = webObject.record.items;
 
+            companyName_data.Text = webObject.record.companyInfo.name;
+            taxNo_data.Text = webObject.record.companyInfo.taxNo;
+
             clientRef_data.Text = webObject.record.header.clientRef; 
             clientName_data.Text = webObject.record.header.clientName;
             contactName_data.Text = webObject.record.shipAddress?.name;  
@@ -49,53 +52,52 @@ namespace ArgusCR1012.Delivery.Templates
         protected override void labelsText()
         {
             deliveryNote_lbl.Text = labelText(0);
-            dlDetails_lbl.Text = labelText(1);
-            mTitle_lbl.Text = labelText(2);
-            tamdeed_lbl.Text = labelText(3);
-        
-            customer_lbl.Text = labelText(4);
-            clientName_lbl.Text = labelText(5);
-            contactName_lbl.Text = labelText(6);
-            clientCellPhone_lbl.Text = labelText(7);
 
-            deliveryNo_lbl.Text = labelText(8);
-            deliveryDate_lbl.Text = labelText(9);
-            soRef_lbl.Text = labelText(10);
-            spName_lbl.Text = labelText(11);
-            spCellPhone_lbl.Text = labelText(12);
+            tamdeedVatNo_lbl.Text = labelText(1);
 
-            lineNo_lbl.Text = labelText(13);
-            sku_lbl.Text = labelText(14);
-            itemName_lbl.Text = labelText(15);
-            qty_lbl.Text = labelText(16);
-            notes_lbl.Text = labelText(17);
+            customer_lbl.Text = labelText(2);
+            clientName_lbl.Text = labelText(3);
+            contactName_lbl.Text = labelText(4);
+            clientCellPhone_lbl.Text = labelText(5);
 
-            shipingDeliveryInfo_lbl.Text = labelText(18);
-            deliveryLocation_lbl.Text = labelText(19);
-            attention_lbl.Text = labelText(20);
-            deliveryCellPhone_lbl.Text = labelText(21);
-            shippingMode_lbl.Text = labelText(22);
-            byTamdeed_lbl.Text = labelText(23);
+            deliveryNo_lbl.Text = labelText(6);
+            deliveryDate_lbl.Text = labelText(7);
+            soRef_lbl.Text = labelText(8);
+            spName_lbl.Text = labelText(9);
+            spCellPhone_lbl.Text = labelText(10);
 
-            vTDeliveryInfo_lbl.Text = labelText(24);
-            note_lbl.Text = labelText(25);
-            dispatchTime_lbl.Text = labelText(26);
-            arrivalTime_lbl.Text = labelText(27);
+            lineNo_lbl.Text = labelText(11);
+            sku_lbl.Text = labelText(12);
+            itemName_lbl.Text = labelText(13);
+            qty_lbl.Text = labelText(14);
+            notes_lbl.Text = labelText(15);
 
-            preparedBy_lbl.Text = labelText(28);
-            driverName_lbl.Text = labelText(29);
-            driverCellPhone_lbl.Text = labelText(30);
-            driverSig_lbl.Text = labelText(31);
+            shipingDeliveryInfo_lbl.Text = labelText(16);
+            deliveryLocation_lbl.Text = labelText(17);
+            attention_lbl.Text = labelText(18);
+            deliveryCellPhone_lbl.Text = labelText(19);
+            shippingMode_lbl.Text = labelText(20);
+            byTamdeed_lbl.Text = labelText(21);
 
-            thankYou_lbl.Text = labelText(32);
-            anyQuestion_lbl.Text = labelText(33);
-            custAcceptance_lbl.Text = labelText(34);
-            authorizedSig_lbl.Text = labelText(35);
-            authorizedDate_lbl.Text = labelText(36);
+            vTDeliveryInfo_lbl.Text = labelText(22);
+            note_lbl.Text = labelText(23);
+            dispatchTime_lbl.Text = labelText(24);
+            arrivalTime_lbl.Text = labelText(25);
 
-            distributionDriver_lbl.Text = labelText(37);
-            bussinessInfo_lbl.Text = labelText(38);
-            paper_lbl.Text = labelText(39);
+            preparedBy_lbl.Text = labelText(26);
+            driverName_lbl.Text = labelText(27);
+            driverCellPhone_lbl.Text = labelText(28);
+            driverSig_lbl.Text = labelText(29);
+
+            thankYou_lbl.Text = labelText(30);
+            anyQuestion_lbl.Text = labelText(31);
+            custAcceptance_lbl.Text = labelText(32);
+            authorizedSig_lbl.Text = labelText(33);
+            authorizedDate_lbl.Text = labelText(34);
+
+            distributionDriver_lbl.Text = labelText(35);
+            bussinessInfo_lbl.Text = labelText(36);
+            paper_lbl.Text = labelText(37);
         }
 
         protected override void OnDataSourceRowChanged(DataSourceRowEventArgs e)

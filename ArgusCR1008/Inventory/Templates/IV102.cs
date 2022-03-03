@@ -41,16 +41,15 @@ namespace ArgusCR1008.Inventory.Templates
             reference_lbl.Text = labelText(2);
             date_lbl.Text = labelText(3);
             plantName_lbl.Text = labelText(4);
+            city_lbl.Text = labelText(5);
 
-            fromSite_lbl.Text = labelText(5);
-            toSite_lbl.Text = labelText(6);
-            notes_lbl.Text = labelText(7);
+            fromSite_lbl.Text = labelText(6);
+            toSite_lbl.Text = labelText(7);
+            notes_lbl.Text = labelText(8);
 
-            sku_lbl.Text = labelText(8);
-            itemName_lbl.Text = labelText(9);
-            qty_lbl.Text = labelText(10);
-
-            city_lbl.Text = labelText(11);
+            sku_lbl.Text = labelText(9);
+            itemName_lbl.Text = labelText(10);
+            qty_lbl.Text = labelText(11);
         }
 
         protected override string dictionaryStore()
