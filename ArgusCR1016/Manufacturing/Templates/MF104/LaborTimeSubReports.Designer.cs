@@ -33,8 +33,8 @@ namespace ArgusCR1016.Manufacturing.Templates.MF104
             this.BottomMargin = new DevExpress.XtraReports.UI.BottomMarginBand();
             this.Detail = new DevExpress.XtraReports.UI.DetailBand();
             this.ReportHeader = new DevExpress.XtraReports.UI.ReportHeaderBand();
-            this.PageHeader = new DevExpress.XtraReports.UI.PageHeaderBand();
             this.realTimeElapsed_lbl = new DevExpress.XtraReports.UI.XRLabel();
+            this.PageHeader = new DevExpress.XtraReports.UI.PageHeaderBand();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             // 
             // TopMargin
@@ -49,25 +49,19 @@ namespace ArgusCR1016.Manufacturing.Templates.MF104
             // 
             // Detail
             // 
-            this.Detail.Expanded = false;
             this.Detail.Name = "Detail";
             // 
             // ReportHeader
             // 
             this.ReportHeader.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
             this.realTimeElapsed_lbl});
-            this.ReportHeader.HeightF = 47.91667F;
+            this.ReportHeader.HeightF = 62.5F;
             this.ReportHeader.Name = "ReportHeader";
-            // 
-            // PageHeader
-            // 
-            this.PageHeader.Expanded = false;
-            this.PageHeader.Name = "PageHeader";
             // 
             // realTimeElapsed_lbl
             // 
-            this.realTimeElapsed_lbl.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold);
-            this.realTimeElapsed_lbl.LocationFloat = new DevExpress.Utils.PointFloat(26.04168F, 0F);
+            this.realTimeElapsed_lbl.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
+            this.realTimeElapsed_lbl.LocationFloat = new DevExpress.Utils.PointFloat(25F, 25F);
             this.realTimeElapsed_lbl.Multiline = true;
             this.realTimeElapsed_lbl.Name = "realTimeElapsed_lbl";
             this.realTimeElapsed_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -76,6 +70,11 @@ namespace ArgusCR1016.Manufacturing.Templates.MF104
             this.realTimeElapsed_lbl.StylePriority.UseTextAlignment = false;
             this.realTimeElapsed_lbl.Text = "realTimeElapsed_lbl";
             this.realTimeElapsed_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            // 
+            // PageHeader
+            // 
+            this.PageHeader.HeightF = 61.45833F;
+            this.PageHeader.Name = "PageHeader";
             // 
             // LaborTimeSubReports
             // 

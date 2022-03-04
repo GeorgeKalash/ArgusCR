@@ -120,13 +120,13 @@ namespace ArgusCR1016.Manufacturing.Templates.MF104
             // 
             // xrTable1
             // 
-            this.xrTable1.LocationFloat = new DevExpress.Utils.PointFloat(9.999998F, 10.00001F);
+            this.xrTable1.LocationFloat = new DevExpress.Utils.PointFloat(37.5F, 37.5F);
             this.xrTable1.Name = "xrTable1";
             this.xrTable1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable1.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow1,
             this.xrTableRow2});
-            this.xrTable1.SizeF = new System.Drawing.SizeF(382.2916F, 62.49998F);
+            this.xrTable1.SizeF = new System.Drawing.SizeF(382.2916F, 53.12498F);
             // 
             // xrTableRow1
             // 
@@ -186,7 +186,7 @@ namespace ArgusCR1016.Manufacturing.Templates.MF104
             // 
             // jobOrderPricing_lbl
             // 
-            this.jobOrderPricing_lbl.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold);
+            this.jobOrderPricing_lbl.Font = new System.Drawing.Font("Times New Roman", 16F, System.Drawing.FontStyle.Bold);
             this.jobOrderPricing_lbl.LocationFloat = new DevExpress.Utils.PointFloat(513.9583F, 10.00001F);
             this.jobOrderPricing_lbl.Multiline = true;
             this.jobOrderPricing_lbl.Name = "jobOrderPricing_lbl";

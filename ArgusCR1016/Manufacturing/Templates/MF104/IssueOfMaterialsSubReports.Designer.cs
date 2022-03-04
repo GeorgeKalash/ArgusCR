@@ -41,6 +41,7 @@ namespace ArgusCR1016.Manufacturing.Templates.MF104
             this.cost_data = new DevExpress.XtraReports.UI.XRTableCell();
             this.extendedCost_data = new DevExpress.XtraReports.UI.XRTableCell();
             this.ReportHeader = new DevExpress.XtraReports.UI.ReportHeaderBand();
+            this.xrLabel1 = new DevExpress.XtraReports.UI.XRLabel();
             this.issueOfMaterials_lbl = new DevExpress.XtraReports.UI.XRLabel();
             this.PageHeader = new DevExpress.XtraReports.UI.PageHeaderBand();
             this.xrTable1 = new DevExpress.XtraReports.UI.XRTable();
@@ -52,7 +53,6 @@ namespace ArgusCR1016.Manufacturing.Templates.MF104
             this.cost_lbl = new DevExpress.XtraReports.UI.XRTableCell();
             this.extendedCost_lbl = new DevExpress.XtraReports.UI.XRTableCell();
             this.ReportFooter = new DevExpress.XtraReports.UI.ReportFooterBand();
-            this.xrLabel1 = new DevExpress.XtraReports.UI.XRLabel();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
@@ -100,6 +100,8 @@ namespace ArgusCR1016.Manufacturing.Templates.MF104
             this.itemRef_data.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.itemRef_data.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[sku]")});
             this.itemRef_data.Font = new System.Drawing.Font("Arial", 9.75F);
             this.itemRef_data.Multiline = true;
             this.itemRef_data.Name = "itemRef_data";
@@ -117,6 +119,8 @@ namespace ArgusCR1016.Manufacturing.Templates.MF104
             this.itemName_data.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.itemName_data.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[itemName]")});
             this.itemName_data.Font = new System.Drawing.Font("Arial", 9.75F);
             this.itemName_data.Multiline = true;
             this.itemName_data.Name = "itemName_data";
@@ -134,6 +138,8 @@ namespace ArgusCR1016.Manufacturing.Templates.MF104
             this.qty_data.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.qty_data.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[qty]")});
             this.qty_data.Font = new System.Drawing.Font("Arial", 9.75F);
             this.qty_data.Multiline = true;
             this.qty_data.Name = "qty_data";
@@ -151,6 +157,8 @@ namespace ArgusCR1016.Manufacturing.Templates.MF104
             this.pcs_data.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.pcs_data.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[pcs]")});
             this.pcs_data.Font = new System.Drawing.Font("Arial", 9.75F);
             this.pcs_data.Multiline = true;
             this.pcs_data.Name = "pcs_data";
@@ -168,6 +176,8 @@ namespace ArgusCR1016.Manufacturing.Templates.MF104
             this.cost_data.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.cost_data.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[cost]")});
             this.cost_data.Font = new System.Drawing.Font("Arial", 9.75F);
             this.cost_data.Multiline = true;
             this.cost_data.Name = "cost_data";
@@ -185,6 +195,8 @@ namespace ArgusCR1016.Manufacturing.Templates.MF104
             this.extendedCost_data.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.extendedCost_data.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[extendedCost]")});
             this.extendedCost_data.Font = new System.Drawing.Font("Arial", 9.75F);
             this.extendedCost_data.Multiline = true;
             this.extendedCost_data.Name = "extendedCost_data";
@@ -202,17 +214,24 @@ namespace ArgusCR1016.Manufacturing.Templates.MF104
             this.ReportHeader.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
             this.xrLabel1,
             this.issueOfMaterials_lbl});
-            this.ReportHeader.HeightF = 65.41667F;
             this.ReportHeader.Name = "ReportHeader";
+            // 
+            // xrLabel1
+            // 
+            this.xrLabel1.LocationFloat = new DevExpress.Utils.PointFloat(25F, 62.5F);
+            this.xrLabel1.Multiline = true;
+            this.xrLabel1.Name = "xrLabel1";
+            this.xrLabel1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel1.SizeF = new System.Drawing.SizeF(160.4167F, 23.95833F);
             // 
             // issueOfMaterials_lbl
             // 
-            this.issueOfMaterials_lbl.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold);
-            this.issueOfMaterials_lbl.LocationFloat = new DevExpress.Utils.PointFloat(27.08333F, 0F);
+            this.issueOfMaterials_lbl.Font = new System.Drawing.Font("Arial", 11F, System.Drawing.FontStyle.Bold);
+            this.issueOfMaterials_lbl.LocationFloat = new DevExpress.Utils.PointFloat(25F, 25F);
             this.issueOfMaterials_lbl.Multiline = true;
             this.issueOfMaterials_lbl.Name = "issueOfMaterials_lbl";
             this.issueOfMaterials_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.issueOfMaterials_lbl.SizeF = new System.Drawing.SizeF(216.6667F, 23F);
+            this.issueOfMaterials_lbl.SizeF = new System.Drawing.SizeF(214.5834F, 23F);
             this.issueOfMaterials_lbl.StylePriority.UseFont = false;
             this.issueOfMaterials_lbl.StylePriority.UseTextAlignment = false;
             this.issueOfMaterials_lbl.Text = "issueOfMaterials_lbl";
@@ -346,14 +365,6 @@ namespace ArgusCR1016.Manufacturing.Templates.MF104
             // 
             this.ReportFooter.HeightF = 36.45833F;
             this.ReportFooter.Name = "ReportFooter";
-            // 
-            // xrLabel1
-            // 
-            this.xrLabel1.LocationFloat = new DevExpress.Utils.PointFloat(38.5417F, 31.45835F);
-            this.xrLabel1.Multiline = true;
-            this.xrLabel1.Name = "xrLabel1";
-            this.xrLabel1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
-            this.xrLabel1.SizeF = new System.Drawing.SizeF(162.5F, 23.95833F);
             // 
             // IssueOfMaterialsSubReports
             // 

@@ -44,7 +44,7 @@ namespace Reports
         {
 
         }
-        public void setSessionInfo(Dictionary<string, string> _reportHeaders)
+        public virtual void setSessionInfo(Dictionary<string, string> _reportHeaders)
         {
             sessionInfo = new ReportHeaders()
             {
@@ -59,8 +59,6 @@ namespace Reports
                 RightToLeft = DevExpress.XtraReports.UI.RightToLeft.Yes;
                 RightToLeftLayout = DevExpress.XtraReports.UI.RightToLeftLayout.Yes;
             }
-
-            initSubReports();
         }
 
         public void setSessionInfo(ReportHeaders _sessionInfo)
