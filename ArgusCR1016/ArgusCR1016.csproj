@@ -112,12 +112,6 @@
     <Compile Include="Manufacturing\Templates\MF104\IssueOfMaterialsSubReports.Designer.cs">
       <DependentUpon>IssueOfMaterialsSubReports.cs</DependentUpon>
     </Compile>
-    <Compile Include="Manufacturing\Templates\MF104\LaborTimeSubReports.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Manufacturing\Templates\MF104\LaborTimeSubReports.Designer.cs">
-      <DependentUpon>LaborTimeSubReports.cs</DependentUpon>
-    </Compile>
     <Compile Include="Manufacturing\Templates\MF104\MF104.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -144,9 +138,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Manufacturing\Templates\MF104\IssueOfMaterialsSubReports.resx">
       <DependentUpon>IssueOfMaterialsSubReports.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Manufacturing\Templates\MF104\LaborTimeSubReports.resx">
-      <DependentUpon>LaborTimeSubReports.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Manufacturing\Templates\MF104\MF104.resx">
       <DependentUpon>MF104.cs</DependentUpon>

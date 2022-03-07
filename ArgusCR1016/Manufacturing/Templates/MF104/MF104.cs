@@ -23,7 +23,6 @@ namespace ArgusCR1016.Manufacturing.Templates.MF104
         {
             base.setSessionInfo(_reportHeaders);
             ((Reports.BaseReport)(IssueOfMaterialsSubReports.ReportSource)).setSessionInfo(sessionInfo);
-            ((Reports.BaseReport)(LaborTimeSubReports.ReportSource)).setSessionInfo(sessionInfo);
             ((Reports.BaseReport)(OverheadsSubReport.ReportSource)).setSessionInfo(sessionInfo);
             initSubReports();
         }
@@ -36,22 +35,15 @@ namespace ArgusCR1016.Manufacturing.Templates.MF104
             reference_data.Text = webObject.record.jobOrder.reference;
 
             ((IssueOfMaterialsSubReports)(IssueOfMaterialsSubReports.ReportSource)).data = webObject.record.rawMaterials;
-
-
-            ((LaborTimeSubReports)(LaborTimeSubReports.ReportSource)).data = webObject.record.laborTime;
-
-
             ((OverheadsSubReport)(OverheadsSubReport.ReportSource)).data = webObject.record.overheadViews;
 
-
-
+            printSignature_lbl.Text = reportSignature();
             base.OnBeforePrint(e);
         }
 
         protected override void labelsText()
         {
             jobOrderPricing_lbl.Text = labelText(0);
-
             documentType_lbl.Text = labelText(1);
             documentRef_lbl.Text = labelText(2);
         }
