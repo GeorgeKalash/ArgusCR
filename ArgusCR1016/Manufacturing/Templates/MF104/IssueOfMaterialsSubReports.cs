@@ -11,7 +11,7 @@ namespace ArgusCR1016.Manufacturing.Templates.MF104
 { 
     public partial class IssueOfMaterialsSubReports : Reports.BaseReport
 {
-        public List<ConsumptionSummaryView> data;
+        public List<ArgusDS.Manufacturing.Reports.MF203> data;
 
         public IssueOfMaterialsSubReports()
         {

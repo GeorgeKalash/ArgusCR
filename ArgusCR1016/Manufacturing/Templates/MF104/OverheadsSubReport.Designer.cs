@@ -152,6 +152,7 @@ namespace ArgusCR1016.Manufacturing.Templates.MF104
             this.qty_data.StylePriority.UsePadding = false;
             this.qty_data.StylePriority.UseTextAlignment = false;
             this.qty_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
+            this.qty_data.TextFormatString = "{0:n2}";
             this.qty_data.Weight = 0.73164067727150128D;
             // 
             // cost_data
@@ -170,6 +171,7 @@ namespace ArgusCR1016.Manufacturing.Templates.MF104
             this.cost_data.StylePriority.UsePadding = false;
             this.cost_data.StylePriority.UseTextAlignment = false;
             this.cost_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
+            this.cost_data.TextFormatString = "{0:n2}";
             this.cost_data.Weight = 0.73164151469489291D;
             // 
             // extendedCost_data
@@ -188,6 +190,7 @@ namespace ArgusCR1016.Manufacturing.Templates.MF104
             this.extendedCost_data.StylePriority.UsePadding = false;
             this.extendedCost_data.StylePriority.UseTextAlignment = false;
             this.extendedCost_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
+            this.extendedCost_data.TextFormatString = "{0:n2}";
             this.extendedCost_data.Weight = 0.7316404886216934D;
             // 
             // ReportHeader
@@ -368,6 +371,7 @@ namespace ArgusCR1016.Manufacturing.Templates.MF104
             xrSummary1.Running = DevExpress.XtraReports.UI.SummaryRunning.Report;
             this.xrTableCell3.Summary = xrSummary1;
             this.xrTableCell3.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
+            this.xrTableCell3.TextFormatString = "{0:n2}";
             this.xrTableCell3.Weight = 0.73164067727150128D;
             this.xrTableCell3.WordWrap = false;
             // 
@@ -387,6 +391,7 @@ namespace ArgusCR1016.Manufacturing.Templates.MF104
             xrSummary2.Running = DevExpress.XtraReports.UI.SummaryRunning.Report;
             this.xrTableCell4.Summary = xrSummary2;
             this.xrTableCell4.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
+            this.xrTableCell4.TextFormatString = "{0:n2}";
             this.xrTableCell4.Weight = 0.73164151469489291D;
             this.xrTableCell4.WordWrap = false;
             // 
@@ -406,6 +411,7 @@ namespace ArgusCR1016.Manufacturing.Templates.MF104
             xrSummary3.Running = DevExpress.XtraReports.UI.SummaryRunning.Report;
             this.xrTableCell5.Summary = xrSummary3;
             this.xrTableCell5.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
+            this.xrTableCell5.TextFormatString = "{0:n2}";
             this.xrTableCell5.Weight = 0.7316404886216934D;
             this.xrTableCell5.WordWrap = false;
             // 

@@ -189,13 +189,13 @@ namespace ArgusCR1016.Manufacturing.Templates.MF104
             this.PageFooter.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
             this.printSignature_lbl,
             this.pagesNumber_lbl});
-            this.PageFooter.HeightF = 35.50002F;
+            this.PageFooter.HeightF = 35.50003F;
             this.PageFooter.Name = "PageFooter";
             // 
             // printSignature_lbl
             // 
             this.printSignature_lbl.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.printSignature_lbl.LocationFloat = new DevExpress.Utils.PointFloat(12.5F, 12.5F);
+            this.printSignature_lbl.LocationFloat = new DevExpress.Utils.PointFloat(37.5F, 10.00001F);
             this.printSignature_lbl.Multiline = true;
             this.printSignature_lbl.Name = "printSignature_lbl";
             this.printSignature_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -208,10 +208,10 @@ namespace ArgusCR1016.Manufacturing.Templates.MF104
             // pagesNumber_lbl
             // 
             this.pagesNumber_lbl.BackColor = System.Drawing.Color.Transparent;
-            this.pagesNumber_lbl.LocationFloat = new DevExpress.Utils.PointFloat(712.5F, 12.5F);
+            this.pagesNumber_lbl.LocationFloat = new DevExpress.Utils.PointFloat(704.1667F, 10.00001F);
             this.pagesNumber_lbl.Name = "pagesNumber_lbl";
             this.pagesNumber_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.pagesNumber_lbl.SizeF = new System.Drawing.SizeF(98.51514F, 23F);
+            this.pagesNumber_lbl.SizeF = new System.Drawing.SizeF(108.7499F, 23F);
             this.pagesNumber_lbl.StylePriority.UseBackColor = false;
             this.pagesNumber_lbl.StylePriority.UseTextAlignment = false;
             this.pagesNumber_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
