@@ -36,7 +36,6 @@ namespace ArgusCR1016.Manufacturing.Templates.MF104
             this.IssueOfMaterialsSubReports = new DevExpress.XtraReports.UI.XRSubreport();
             this.OverheadsSubBand = new DevExpress.XtraReports.UI.SubBand();
             this.OverheadsSubReport = new DevExpress.XtraReports.UI.XRSubreport();
-            this.PageHeader = new DevExpress.XtraReports.UI.PageHeaderBand();
             this.xrTable1 = new DevExpress.XtraReports.UI.XRTable();
             this.xrTableRow1 = new DevExpress.XtraReports.UI.XRTableRow();
             this.documentType_lbl = new DevExpress.XtraReports.UI.XRTableCell();
@@ -48,6 +47,7 @@ namespace ArgusCR1016.Manufacturing.Templates.MF104
             this.PageFooter = new DevExpress.XtraReports.UI.PageFooterBand();
             this.printSignature_lbl = new DevExpress.XtraReports.UI.XRLabel();
             this.pagesNumber_lbl = new DevExpress.XtraReports.UI.XRPageInfo();
+            this.ReportHeader = new DevExpress.XtraReports.UI.ReportHeaderBand();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             // 
@@ -74,6 +74,7 @@ namespace ArgusCR1016.Manufacturing.Templates.MF104
             this.IssueOfMaterialsSubBand.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
             this.IssueOfMaterialsSubReports});
             this.IssueOfMaterialsSubBand.HeightF = 23F;
+            this.IssueOfMaterialsSubBand.KeepTogether = true;
             this.IssueOfMaterialsSubBand.Name = "IssueOfMaterialsSubBand";
             // 
             // IssueOfMaterialsSubReports
@@ -88,6 +89,7 @@ namespace ArgusCR1016.Manufacturing.Templates.MF104
             this.OverheadsSubBand.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
             this.OverheadsSubReport});
             this.OverheadsSubBand.HeightF = 23F;
+            this.OverheadsSubBand.KeepTogether = true;
             this.OverheadsSubBand.Name = "OverheadsSubBand";
             // 
             // OverheadsSubReport
@@ -97,17 +99,9 @@ namespace ArgusCR1016.Manufacturing.Templates.MF104
             this.OverheadsSubReport.ReportSource = new ArgusCR1016.Manufacturing.Templates.MF104.OverheadsSubReport();
             this.OverheadsSubReport.SizeF = new System.Drawing.SizeF(802.9166F, 23F);
             // 
-            // PageHeader
-            // 
-            this.PageHeader.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
-            this.xrTable1,
-            this.jobOrderPricing_lbl});
-            this.PageHeader.HeightF = 103.125F;
-            this.PageHeader.Name = "PageHeader";
-            // 
             // xrTable1
             // 
-            this.xrTable1.LocationFloat = new DevExpress.Utils.PointFloat(37.5F, 50F);
+            this.xrTable1.LocationFloat = new DevExpress.Utils.PointFloat(37.5F, 37.5F);
             this.xrTable1.Name = "xrTable1";
             this.xrTable1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable1.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
@@ -174,7 +168,7 @@ namespace ArgusCR1016.Manufacturing.Templates.MF104
             // jobOrderPricing_lbl
             // 
             this.jobOrderPricing_lbl.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
-            this.jobOrderPricing_lbl.LocationFloat = new DevExpress.Utils.PointFloat(513.9583F, 10.00001F);
+            this.jobOrderPricing_lbl.LocationFloat = new DevExpress.Utils.PointFloat(513.9584F, 0F);
             this.jobOrderPricing_lbl.Multiline = true;
             this.jobOrderPricing_lbl.Name = "jobOrderPricing_lbl";
             this.jobOrderPricing_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -182,14 +176,14 @@ namespace ArgusCR1016.Manufacturing.Templates.MF104
             this.jobOrderPricing_lbl.StylePriority.UseFont = false;
             this.jobOrderPricing_lbl.StylePriority.UseTextAlignment = false;
             this.jobOrderPricing_lbl.Text = "Job Order for Pricing";
-            this.jobOrderPricing_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
+            this.jobOrderPricing_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopCenter;
             // 
             // PageFooter
             // 
             this.PageFooter.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
             this.printSignature_lbl,
             this.pagesNumber_lbl});
-            this.PageFooter.HeightF = 35.50003F;
+            this.PageFooter.HeightF = 33.00003F;
             this.PageFooter.Name = "PageFooter";
             // 
             // printSignature_lbl
@@ -217,14 +211,22 @@ namespace ArgusCR1016.Manufacturing.Templates.MF104
             this.pagesNumber_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             this.pagesNumber_lbl.TextFormatString = "Page {0} of {1}";
             // 
+            // ReportHeader
+            // 
+            this.ReportHeader.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+            this.jobOrderPricing_lbl,
+            this.xrTable1});
+            this.ReportHeader.HeightF = 90.62498F;
+            this.ReportHeader.Name = "ReportHeader";
+            // 
             // MF104
             // 
             this.Bands.AddRange(new DevExpress.XtraReports.UI.Band[] {
             this.TopMargin,
             this.BottomMargin,
             this.Detail,
-            this.PageHeader,
-            this.PageFooter});
+            this.PageFooter,
+            this.ReportHeader});
             this.Font = new System.Drawing.Font("Arial", 9.75F);
             this.Margins = new System.Drawing.Printing.Margins(0, 0, 30, 10);
             this.PageHeight = 1169;
@@ -241,7 +243,6 @@ namespace ArgusCR1016.Manufacturing.Templates.MF104
         private DevExpress.XtraReports.UI.TopMarginBand TopMargin;
         private DevExpress.XtraReports.UI.BottomMarginBand BottomMargin;
         private DevExpress.XtraReports.UI.DetailBand Detail;
-        private DevExpress.XtraReports.UI.PageHeaderBand PageHeader;
         private DevExpress.XtraReports.UI.XRTable xrTable1;
         private DevExpress.XtraReports.UI.XRTableRow xrTableRow1;
         private DevExpress.XtraReports.UI.XRTableCell documentType_lbl;
@@ -257,5 +258,6 @@ namespace ArgusCR1016.Manufacturing.Templates.MF104
         private DevExpress.XtraReports.UI.PageFooterBand PageFooter;
         private DevExpress.XtraReports.UI.XRPageInfo pagesNumber_lbl;
         private DevExpress.XtraReports.UI.XRLabel printSignature_lbl;
+        private DevExpress.XtraReports.UI.ReportHeaderBand ReportHeader;
     }
 }

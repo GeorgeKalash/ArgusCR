@@ -30,7 +30,7 @@ namespace ArgusCR1016.Manufacturing.Templates.MF104
         {
 
             SharedClasses.JsonProtocol.GetStructure<ArgusDS.Manufacturing.Reports.MF104> webObject = deserializeGet<ArgusDS.Manufacturing.Reports.MF104>();
-    
+      
             dtName_data.Text = webObject.record.jobOrder.dtName;
             reference_data.Text = webObject.record.jobOrder.reference;
 
