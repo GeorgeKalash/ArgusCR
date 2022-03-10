@@ -176,7 +176,7 @@ namespace ArgusCR1016.Manufacturing.Templates.MF104
             this.jobOrderPricing_lbl.StylePriority.UseFont = false;
             this.jobOrderPricing_lbl.StylePriority.UseTextAlignment = false;
             this.jobOrderPricing_lbl.Text = "Job Order for Pricing";
-            this.jobOrderPricing_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopCenter;
+            this.jobOrderPricing_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
             // 
             // PageFooter
             // 
