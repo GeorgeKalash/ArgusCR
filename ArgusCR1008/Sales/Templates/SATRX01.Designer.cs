@@ -34,6 +34,8 @@
             this.DetailData3_Odd = new DevExpress.XtraReports.UI.XRControlStyle();
             this.PageInfo = new DevExpress.XtraReports.UI.XRControlStyle();
             this.TopMargin = new DevExpress.XtraReports.UI.TopMarginBand();
+            this.xrLabel1 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel2 = new DevExpress.XtraReports.UI.XRLabel();
             this.volume_data = new DevExpress.XtraReports.UI.XRLabel();
             this.description_data = new DevExpress.XtraReports.UI.XRLabel();
             this.date_data = new DevExpress.XtraReports.UI.XRLabel();
@@ -127,6 +129,8 @@
             // TopMargin
             // 
             this.TopMargin.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+            this.xrLabel1,
+            this.xrLabel2,
             this.volume_data,
             this.description_data,
             this.date_data,
@@ -150,9 +154,34 @@
             this.clientName_data,
             this.szName_data});
             this.TopMargin.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Underline);
-            this.TopMargin.HeightF = 295.8333F;
+            this.TopMargin.HeightF = 296F;
             this.TopMargin.Name = "TopMargin";
             this.TopMargin.StylePriority.UseFont = false;
+            // 
+            // xrLabel1
+            // 
+            this.xrLabel1.Font = new System.Drawing.Font("Arial", 14F);
+            this.xrLabel1.LocationFloat = new DevExpress.Utils.PointFloat(192F, 33.00001F);
+            this.xrLabel1.Multiline = true;
+            this.xrLabel1.Name = "xrLabel1";
+            this.xrLabel1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel1.SizeF = new System.Drawing.SizeF(194.6666F, 23F);
+            this.xrLabel1.StylePriority.UseFont = false;
+            this.xrLabel1.StylePriority.UseTextAlignment = false;
+            this.xrLabel1.Text = "Facture A Suivre";
+            this.xrLabel1.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
+            // 
+            // xrLabel2
+            // 
+            this.xrLabel2.Font = new System.Drawing.Font("Times New Roman", 9.75F);
+            this.xrLabel2.LocationFloat = new DevExpress.Utils.PointFloat(192F, 9.999974F);
+            this.xrLabel2.Multiline = true;
+            this.xrLabel2.Name = "xrLabel2";
+            this.xrLabel2.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 4, 0, 100F);
+            this.xrLabel2.SizeF = new System.Drawing.SizeF(27.08334F, 23.00003F);
+            this.xrLabel2.StylePriority.UseFont = false;
+            this.xrLabel2.StylePriority.UsePadding = false;
+            this.xrLabel2.Text = "BL";
             // 
             // volume_data
             // 
@@ -345,7 +374,7 @@
             // clientName_data
             // 
             this.clientName_data.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold);
-            this.clientName_data.LocationFloat = new DevExpress.Utils.PointFloat(278.8757F, 27.66663F);
+            this.clientName_data.LocationFloat = new DevExpress.Utils.PointFloat(374.3341F, 9.999974F);
             this.clientName_data.Multiline = true;
             this.clientName_data.Name = "clientName_data";
             this.clientName_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -356,7 +385,7 @@
             // szName_data
             // 
             this.szName_data.Font = new System.Drawing.Font("Times New Roman", 9F);
-            this.szName_data.LocationFloat = new DevExpress.Utils.PointFloat(9.99999F, 27.66663F);
+            this.szName_data.LocationFloat = new DevExpress.Utils.PointFloat(2.459212F, 10.00001F);
             this.szName_data.Multiline = true;
             this.szName_data.Name = "szName_data";
             this.szName_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -369,7 +398,7 @@
             this.BottomMargin.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
             this.pageInfo1,
             this.pageInfo2});
-            this.BottomMargin.HeightF = 38.54167F;
+            this.BottomMargin.HeightF = 39F;
             this.BottomMargin.Name = "BottomMargin";
             // 
             // pageInfo1
@@ -579,5 +608,7 @@
         private DevExpress.XtraReports.UI.XRTableCell tableCell8;
         private DevExpress.XtraReports.UI.XRTableCell tableCell13;
         private DevExpress.XtraReports.UI.XRLabel volume_data;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel2;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel1;
     }
 }

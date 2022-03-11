@@ -32,15 +32,17 @@ namespace ArgusCR1008.Sales.Templates
 
             clientName_data.Text = webObject.record.trxHeader.clientName;
             date_data.Text = webObject.record.trxHeader.date.ToString("dd/MM/yy");
-            if (webObject.record.quickView.balance != null)
-            {
-                balance_data.Text = ((double)webObject.record.quickView.balance).ToString("N0");
-                balance2_data.Text = ((double)webObject.record.quickView.balance).ToString("N0");
-            }
-            else
-            {
-                balance_data.Text = balance2_data.Text = string.Empty;
-            }
+
+         //   if (webObject.record.quickView.balance != null)
+         //  {
+         //        balance_data.Text = ((double)webObject.record.quickView.balance).ToString("N0");
+         //       balance2_data.Text = ((double)webObject.record.quickView.balance).ToString("N0");
+         //   }
+         //  else
+         //   {
+         //       balance_data.Text = balance2_data.Text = string.Empty;
+         //   }
+
             phone2_data.Text = webObject.record.quickView.phone2;
             phone3_data.Text = webObject.record.quickView.phone3;
             phone_data.Text = webObject.record.quickView.phone;
