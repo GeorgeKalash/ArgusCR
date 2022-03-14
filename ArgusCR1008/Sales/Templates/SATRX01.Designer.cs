@@ -42,9 +42,6 @@
             this.reference_data = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel3 = new DevExpress.XtraReports.UI.XRLabel();
             this.amount_data = new DevExpress.XtraReports.UI.XRLabel();
-            this.xrCheckBox3 = new DevExpress.XtraReports.UI.XRCheckBox();
-            this.xrCheckBox2 = new DevExpress.XtraReports.UI.XRCheckBox();
-            this.xrCheckBox1 = new DevExpress.XtraReports.UI.XRCheckBox();
             this.spRef_data = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLine7 = new DevExpress.XtraReports.UI.XRLine();
             this.xrLine6 = new DevExpress.XtraReports.UI.XRLine();
@@ -137,9 +134,6 @@
             this.reference_data,
             this.xrLabel3,
             this.amount_data,
-            this.xrCheckBox3,
-            this.xrCheckBox2,
-            this.xrCheckBox1,
             this.spRef_data,
             this.xrLine7,
             this.xrLine6,
@@ -160,28 +154,28 @@
             // 
             // xrLabel1
             // 
-            this.xrLabel1.Font = new System.Drawing.Font("Arial", 14F);
-            this.xrLabel1.LocationFloat = new DevExpress.Utils.PointFloat(192F, 33.00001F);
+            this.xrLabel1.Font = new System.Drawing.Font("Arial", 9.75F);
+            this.xrLabel1.LocationFloat = new DevExpress.Utils.PointFloat(192F, 74.87497F);
             this.xrLabel1.Multiline = true;
             this.xrLabel1.Name = "xrLabel1";
             this.xrLabel1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel1.SizeF = new System.Drawing.SizeF(194.6666F, 23F);
+            this.xrLabel1.SizeF = new System.Drawing.SizeF(65.97226F, 23.00002F);
             this.xrLabel1.StylePriority.UseFont = false;
-            this.xrLabel1.StylePriority.UseTextAlignment = false;
-            this.xrLabel1.Text = "Facture A Suivre";
-            this.xrLabel1.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
+            this.xrLabel1.Text = "N° SERIE";
             // 
             // xrLabel2
             // 
-            this.xrLabel2.Font = new System.Drawing.Font("Times New Roman", 9.75F);
-            this.xrLabel2.LocationFloat = new DevExpress.Utils.PointFloat(192F, 9.999974F);
+            this.xrLabel2.Font = new System.Drawing.Font("Times New Roman", 11F);
+            this.xrLabel2.LocationFloat = new DevExpress.Utils.PointFloat(206.3065F, 9.999974F);
             this.xrLabel2.Multiline = true;
             this.xrLabel2.Name = "xrLabel2";
             this.xrLabel2.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 4, 0, 100F);
-            this.xrLabel2.SizeF = new System.Drawing.SizeF(27.08334F, 23.00003F);
+            this.xrLabel2.SizeF = new System.Drawing.SizeF(156.7916F, 23.00003F);
             this.xrLabel2.StylePriority.UseFont = false;
             this.xrLabel2.StylePriority.UsePadding = false;
-            this.xrLabel2.Text = "BL";
+            this.xrLabel2.StylePriority.UseTextAlignment = false;
+            this.xrLabel2.Text = "BON DE LIVRAISON";
+            this.xrLabel2.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopCenter;
             // 
             // volume_data
             // 
@@ -231,66 +225,36 @@
             this.xrLabel3.Name = "xrLabel3";
             this.xrLabel3.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.xrLabel3.SizeF = new System.Drawing.SizeF(34.02778F, 23F);
-            this.xrLabel3.Text = "FC :";
+            this.xrLabel3.Text = "BL :";
             // 
             // amount_data
             // 
             this.amount_data.Font = new System.Drawing.Font("Arial", 9F);
-            this.amount_data.LocationFloat = new DevExpress.Utils.PointFloat(225.9575F, 74.87497F);
+            this.amount_data.LocationFloat = new DevExpress.Utils.PointFloat(257.9722F, 74.87497F);
             this.amount_data.Multiline = true;
             this.amount_data.Name = "amount_data";
             this.amount_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.amount_data.SizeF = new System.Drawing.SizeF(122.8341F, 23F);
+            this.amount_data.SizeF = new System.Drawing.SizeF(105.1258F, 23.00002F);
             this.amount_data.StylePriority.UseFont = false;
             this.amount_data.StylePriority.UseTextAlignment = false;
             this.amount_data.Text = "amount_data";
-            this.amount_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopCenter;
+            this.amount_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
             this.amount_data.TextFormatString = "{0:n0}";
-            // 
-            // xrCheckBox3
-            // 
-            this.xrCheckBox3.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold);
-            this.xrCheckBox3.LocationFloat = new DevExpress.Utils.PointFloat(10.00002F, 207.1111F);
-            this.xrCheckBox3.Name = "xrCheckBox3";
-            this.xrCheckBox3.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrCheckBox3.SizeF = new System.Drawing.SizeF(100F, 23F);
-            this.xrCheckBox3.StylePriority.UseFont = false;
-            this.xrCheckBox3.Text = "FE";
-            // 
-            // xrCheckBox2
-            // 
-            this.xrCheckBox2.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold);
-            this.xrCheckBox2.LocationFloat = new DevExpress.Utils.PointFloat(10.00002F, 184.1111F);
-            this.xrCheckBox2.Name = "xrCheckBox2";
-            this.xrCheckBox2.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrCheckBox2.SizeF = new System.Drawing.SizeF(100F, 23F);
-            this.xrCheckBox2.StylePriority.UseFont = false;
-            this.xrCheckBox2.Text = "Souder";
-            // 
-            // xrCheckBox1
-            // 
-            this.xrCheckBox1.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold);
-            this.xrCheckBox1.LocationFloat = new DevExpress.Utils.PointFloat(10.00002F, 161.1111F);
-            this.xrCheckBox1.Name = "xrCheckBox1";
-            this.xrCheckBox1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrCheckBox1.SizeF = new System.Drawing.SizeF(100F, 23F);
-            this.xrCheckBox1.StylePriority.UseFont = false;
-            this.xrCheckBox1.Text = "CIL";
             // 
             // spRef_data
             // 
             this.spRef_data.BackColor = System.Drawing.Color.Transparent;
             this.spRef_data.Font = new System.Drawing.Font("Arial", 9F);
-            this.spRef_data.LocationFloat = new DevExpress.Utils.PointFloat(225.9575F, 104.0832F);
+            this.spRef_data.LocationFloat = new DevExpress.Utils.PointFloat(257.9722F, 97.87499F);
             this.spRef_data.Multiline = true;
             this.spRef_data.Name = "spRef_data";
             this.spRef_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.spRef_data.SizeF = new System.Drawing.SizeF(122.8341F, 23.00002F);
+            this.spRef_data.SizeF = new System.Drawing.SizeF(105.1258F, 23.00002F);
             this.spRef_data.StylePriority.UseBackColor = false;
             this.spRef_data.StylePriority.UseFont = false;
             this.spRef_data.StylePriority.UseTextAlignment = false;
             this.spRef_data.Text = "spRef_data";
-            this.spRef_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            this.spRef_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             // 
             // xrLine7
             // 
@@ -373,19 +337,21 @@
             // 
             // clientName_data
             // 
-            this.clientName_data.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold);
-            this.clientName_data.LocationFloat = new DevExpress.Utils.PointFloat(374.3341F, 9.999974F);
+            this.clientName_data.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Bold);
+            this.clientName_data.LocationFloat = new DevExpress.Utils.PointFloat(206.3064F, 33.00001F);
             this.clientName_data.Multiline = true;
             this.clientName_data.Name = "clientName_data";
             this.clientName_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.clientName_data.SizeF = new System.Drawing.SizeF(183.6658F, 23F);
+            this.clientName_data.SizeF = new System.Drawing.SizeF(156.7915F, 23F);
             this.clientName_data.StylePriority.UseFont = false;
+            this.clientName_data.StylePriority.UseTextAlignment = false;
             this.clientName_data.Text = "clientName_data";
+            this.clientName_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopCenter;
             // 
             // szName_data
             // 
             this.szName_data.Font = new System.Drawing.Font("Times New Roman", 9F);
-            this.szName_data.LocationFloat = new DevExpress.Utils.PointFloat(2.459212F, 10.00001F);
+            this.szName_data.LocationFloat = new DevExpress.Utils.PointFloat(10.00012F, 33.00001F);
             this.szName_data.Multiline = true;
             this.szName_data.Name = "szName_data";
             this.szName_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -595,9 +561,6 @@
         private DevExpress.XtraReports.UI.XRLine xrLine7;
         private DevExpress.XtraReports.UI.XRLine xrLine6;
         private DevExpress.XtraReports.UI.XRLine xrLine5;
-        private DevExpress.XtraReports.UI.XRCheckBox xrCheckBox3;
-        private DevExpress.XtraReports.UI.XRCheckBox xrCheckBox2;
-        private DevExpress.XtraReports.UI.XRCheckBox xrCheckBox1;
         private DevExpress.XtraReports.UI.XRLabel amount_data;
         private DevExpress.XtraReports.UI.XRLabel reference_data;
         private DevExpress.XtraReports.UI.XRLabel xrLabel3;
