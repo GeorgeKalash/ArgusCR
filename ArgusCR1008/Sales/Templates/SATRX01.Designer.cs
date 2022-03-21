@@ -148,14 +148,14 @@
             this.clientName_data,
             this.szName_data});
             this.TopMargin.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Underline);
-            this.TopMargin.HeightF = 296F;
+            this.TopMargin.HeightF = 337.6667F;
             this.TopMargin.Name = "TopMargin";
             this.TopMargin.StylePriority.UseFont = false;
             // 
             // xrLabel1
             // 
             this.xrLabel1.Font = new System.Drawing.Font("Arial", 9.75F);
-            this.xrLabel1.LocationFloat = new DevExpress.Utils.PointFloat(192F, 74.87497F);
+            this.xrLabel1.LocationFloat = new DevExpress.Utils.PointFloat(192F, 112.3749F);
             this.xrLabel1.Multiline = true;
             this.xrLabel1.Name = "xrLabel1";
             this.xrLabel1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -166,7 +166,7 @@
             // xrLabel2
             // 
             this.xrLabel2.Font = new System.Drawing.Font("Times New Roman", 11F);
-            this.xrLabel2.LocationFloat = new DevExpress.Utils.PointFloat(206.3065F, 9.999974F);
+            this.xrLabel2.LocationFloat = new DevExpress.Utils.PointFloat(206.3065F, 47.49994F);
             this.xrLabel2.Multiline = true;
             this.xrLabel2.Name = "xrLabel2";
             this.xrLabel2.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 4, 0, 100F);
@@ -179,7 +179,7 @@
             // 
             // volume_data
             // 
-            this.volume_data.LocationFloat = new DevExpress.Utils.PointFloat(431.7916F, 262.8333F);
+            this.volume_data.LocationFloat = new DevExpress.Utils.PointFloat(431.7916F, 300.3333F);
             this.volume_data.Multiline = true;
             this.volume_data.Name = "volume_data";
             this.volume_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -192,7 +192,7 @@
             this.description_data.AutoWidth = true;
             this.description_data.CanShrink = true;
             this.description_data.Font = new System.Drawing.Font("Arial", 12F);
-            this.description_data.LocationFloat = new DevExpress.Utils.PointFloat(169.7222F, 161.1111F);
+            this.description_data.LocationFloat = new DevExpress.Utils.PointFloat(169.7222F, 198.6111F);
             this.description_data.Multiline = true;
             this.description_data.Name = "description_data";
             this.description_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -202,7 +202,7 @@
             // 
             // date_data
             // 
-            this.date_data.LocationFloat = new DevExpress.Utils.PointFloat(10.00004F, 104.0832F);
+            this.date_data.LocationFloat = new DevExpress.Utils.PointFloat(10.00007F, 141.5832F);
             this.date_data.Multiline = true;
             this.date_data.Name = "date_data";
             this.date_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -211,7 +211,7 @@
             // 
             // reference_data
             // 
-            this.reference_data.LocationFloat = new DevExpress.Utils.PointFloat(44.02779F, 74.87496F);
+            this.reference_data.LocationFloat = new DevExpress.Utils.PointFloat(44.02782F, 112.3749F);
             this.reference_data.Multiline = true;
             this.reference_data.Name = "reference_data";
             this.reference_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -220,7 +220,7 @@
             // 
             // xrLabel3
             // 
-            this.xrLabel3.LocationFloat = new DevExpress.Utils.PointFloat(10.00002F, 74.87496F);
+            this.xrLabel3.LocationFloat = new DevExpress.Utils.PointFloat(10.00005F, 112.3749F);
             this.xrLabel3.Multiline = true;
             this.xrLabel3.Name = "xrLabel3";
             this.xrLabel3.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -230,7 +230,7 @@
             // amount_data
             // 
             this.amount_data.Font = new System.Drawing.Font("Arial", 9F);
-            this.amount_data.LocationFloat = new DevExpress.Utils.PointFloat(257.9722F, 74.87497F);
+            this.amount_data.LocationFloat = new DevExpress.Utils.PointFloat(257.9722F, 112.3749F);
             this.amount_data.Multiline = true;
             this.amount_data.Name = "amount_data";
             this.amount_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -245,7 +245,7 @@
             // 
             this.spRef_data.BackColor = System.Drawing.Color.Transparent;
             this.spRef_data.Font = new System.Drawing.Font("Arial", 9F);
-            this.spRef_data.LocationFloat = new DevExpress.Utils.PointFloat(257.9722F, 97.87499F);
+            this.spRef_data.LocationFloat = new DevExpress.Utils.PointFloat(257.9722F, 135.375F);
             this.spRef_data.Multiline = true;
             this.spRef_data.Name = "spRef_data";
             this.spRef_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -258,54 +258,54 @@
             // 
             // xrLine7
             // 
-            this.xrLine7.LocationFloat = new DevExpress.Utils.PointFloat(390.8889F, 155.5556F);
+            this.xrLine7.LocationFloat = new DevExpress.Utils.PointFloat(390.8889F, 193.0556F);
             this.xrLine7.Name = "xrLine7";
             this.xrLine7.SizeF = new System.Drawing.SizeF(165.1111F, 2F);
             // 
             // xrLine6
             // 
             this.xrLine6.LineDirection = DevExpress.XtraReports.UI.LineDirection.Vertical;
-            this.xrLine6.LocationFloat = new DevExpress.Utils.PointFloat(556F, 64.99999F);
+            this.xrLine6.LocationFloat = new DevExpress.Utils.PointFloat(556F, 102.5F);
             this.xrLine6.Name = "xrLine6";
-            this.xrLine6.SizeF = new System.Drawing.SizeF(2F, 92.50001F);
+            this.xrLine6.SizeF = new System.Drawing.SizeF(2.083374F, 92.50001F);
             // 
             // xrLine5
             // 
             this.xrLine5.LineDirection = DevExpress.XtraReports.UI.LineDirection.Vertical;
-            this.xrLine5.LocationFloat = new DevExpress.Utils.PointFloat(388.8889F, 66.99999F);
+            this.xrLine5.LocationFloat = new DevExpress.Utils.PointFloat(388.8889F, 104.5F);
             this.xrLine5.Name = "xrLine5";
             this.xrLine5.SizeF = new System.Drawing.SizeF(2F, 90.50001F);
             // 
             // xrLine4
             // 
-            this.xrLine4.LocationFloat = new DevExpress.Utils.PointFloat(4.459213F, 140F);
+            this.xrLine4.LocationFloat = new DevExpress.Utils.PointFloat(4.459238F, 177.5F);
             this.xrLine4.Name = "xrLine4";
             this.xrLine4.SizeF = new System.Drawing.SizeF(185.5408F, 2.083328F);
             // 
             // xrLine3
             // 
             this.xrLine3.LineDirection = DevExpress.XtraReports.UI.LineDirection.Vertical;
-            this.xrLine3.LocationFloat = new DevExpress.Utils.PointFloat(187.9167F, 66.99999F);
+            this.xrLine3.LocationFloat = new DevExpress.Utils.PointFloat(187.9167F, 104.5F);
             this.xrLine3.Name = "xrLine3";
             this.xrLine3.SizeF = new System.Drawing.SizeF(2.083328F, 73.00002F);
             // 
             // xrLine2
             // 
             this.xrLine2.LineDirection = DevExpress.XtraReports.UI.LineDirection.Vertical;
-            this.xrLine2.LocationFloat = new DevExpress.Utils.PointFloat(2.459213F, 64.99999F);
+            this.xrLine2.LocationFloat = new DevExpress.Utils.PointFloat(2.459256F, 102.5F);
             this.xrLine2.Name = "xrLine2";
             this.xrLine2.SizeF = new System.Drawing.SizeF(2F, 76.66659F);
             // 
             // xrLine1
             // 
-            this.xrLine1.LocationFloat = new DevExpress.Utils.PointFloat(4.459206F, 64.99999F);
+            this.xrLine1.LocationFloat = new DevExpress.Utils.PointFloat(4.459238F, 102.5F);
             this.xrLine1.Name = "xrLine1";
             this.xrLine1.SizeF = new System.Drawing.SizeF(551.5407F, 2F);
             // 
             // phone3_data
             // 
             this.phone3_data.Font = new System.Drawing.Font("Times New Roman", 9F);
-            this.phone3_data.LocationFloat = new DevExpress.Utils.PointFloat(400.4166F, 118.6666F);
+            this.phone3_data.LocationFloat = new DevExpress.Utils.PointFloat(400.4166F, 156.1665F);
             this.phone3_data.Multiline = true;
             this.phone3_data.Name = "phone3_data";
             this.phone3_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -316,7 +316,7 @@
             // phone2_data
             // 
             this.phone2_data.Font = new System.Drawing.Font("Times New Roman", 9F);
-            this.phone2_data.LocationFloat = new DevExpress.Utils.PointFloat(400.4166F, 95.66663F);
+            this.phone2_data.LocationFloat = new DevExpress.Utils.PointFloat(400.4166F, 133.1666F);
             this.phone2_data.Multiline = true;
             this.phone2_data.Name = "phone2_data";
             this.phone2_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -327,7 +327,7 @@
             // phone_data
             // 
             this.phone_data.Font = new System.Drawing.Font("Times New Roman", 9F);
-            this.phone_data.LocationFloat = new DevExpress.Utils.PointFloat(400.4166F, 72.66661F);
+            this.phone_data.LocationFloat = new DevExpress.Utils.PointFloat(400.4166F, 110.1666F);
             this.phone_data.Multiline = true;
             this.phone_data.Name = "phone_data";
             this.phone_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -338,7 +338,7 @@
             // clientName_data
             // 
             this.clientName_data.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Bold);
-            this.clientName_data.LocationFloat = new DevExpress.Utils.PointFloat(206.3064F, 33.00001F);
+            this.clientName_data.LocationFloat = new DevExpress.Utils.PointFloat(206.3064F, 70.49998F);
             this.clientName_data.Multiline = true;
             this.clientName_data.Name = "clientName_data";
             this.clientName_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -351,7 +351,7 @@
             // szName_data
             // 
             this.szName_data.Font = new System.Drawing.Font("Times New Roman", 9F);
-            this.szName_data.LocationFloat = new DevExpress.Utils.PointFloat(10.00012F, 33.00001F);
+            this.szName_data.LocationFloat = new DevExpress.Utils.PointFloat(10.00015F, 70.49998F);
             this.szName_data.Multiline = true;
             this.szName_data.Name = "szName_data";
             this.szName_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -515,7 +515,7 @@
             this.Detail,
             this.ReportFooter});
             this.Font = new System.Drawing.Font("Arial", 9.75F);
-            this.Margins = new System.Drawing.Printing.Margins(9, 11, 296, 39);
+            this.Margins = new System.Drawing.Printing.Margins(9, 11, 338, 39);
             this.PageHeight = 827;
             this.PageWidth = 583;
             this.PaperKind = System.Drawing.Printing.PaperKind.A5;
