@@ -49,7 +49,12 @@ namespace ArgusCR1016.Manufacturing.Templates.MF104
             this.pagesNumber_lbl = new DevExpress.XtraReports.UI.XRPageInfo();
             this.ReportHeader = new DevExpress.XtraReports.UI.ReportHeaderBand();
             this.ReportFooter = new DevExpress.XtraReports.UI.ReportFooterBand();
+            this.xrTable2 = new DevExpress.XtraReports.UI.XRTable();
+            this.xrTableRow3 = new DevExpress.XtraReports.UI.XRTableRow();
+            this.grandTotal_lbl = new DevExpress.XtraReports.UI.XRTableCell();
+            this.grandTotal_data = new DevExpress.XtraReports.UI.XRTableCell();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.xrTable2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             // 
             // TopMargin
@@ -222,7 +227,49 @@ namespace ArgusCR1016.Manufacturing.Templates.MF104
             // 
             // ReportFooter
             // 
+            this.ReportFooter.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+            this.xrTable2});
+            this.ReportFooter.HeightF = 25F;
             this.ReportFooter.Name = "ReportFooter";
+            // 
+            // xrTable2
+            // 
+            this.xrTable2.LocationFloat = new DevExpress.Utils.PointFloat(471.4583F, 0F);
+            this.xrTable2.Name = "xrTable2";
+            this.xrTable2.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
+            this.xrTable2.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
+            this.xrTableRow3});
+            this.xrTable2.SizeF = new System.Drawing.SizeF(341.4583F, 25F);
+            // 
+            // xrTableRow3
+            // 
+            this.xrTableRow3.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
+            this.grandTotal_lbl,
+            this.grandTotal_data});
+            this.xrTableRow3.Name = "xrTableRow3";
+            this.xrTableRow3.Weight = 1D;
+            // 
+            // grandTotal_lbl
+            // 
+            this.grandTotal_lbl.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.grandTotal_lbl.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold);
+            this.grandTotal_lbl.Multiline = true;
+            this.grandTotal_lbl.Name = "grandTotal_lbl";
+            this.grandTotal_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(10, 2, 2, 0, 100F);
+            this.grandTotal_lbl.StylePriority.UseBackColor = false;
+            this.grandTotal_lbl.StylePriority.UseFont = false;
+            this.grandTotal_lbl.StylePriority.UsePadding = false;
+            this.grandTotal_lbl.Text = "Grand Total:";
+            this.grandTotal_lbl.Weight = 1D;
+            // 
+            // grandTotal_data
+            // 
+            this.grandTotal_data.Multiline = true;
+            this.grandTotal_data.Name = "grandTotal_data";
+            this.grandTotal_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(10, 2, 4, 0, 100F);
+            this.grandTotal_data.StylePriority.UsePadding = false;
+            this.grandTotal_data.Text = "grandTotal_data";
+            this.grandTotal_data.Weight = 1D;
             // 
             // MF104
             // 
@@ -240,6 +287,7 @@ namespace ArgusCR1016.Manufacturing.Templates.MF104
             this.PaperKind = System.Drawing.Printing.PaperKind.A4;
             this.Version = "20.1";
             ((System.ComponentModel.ISupportInitialize)(this.xrTable1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.xrTable2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
 
         }
@@ -266,5 +314,9 @@ namespace ArgusCR1016.Manufacturing.Templates.MF104
         private DevExpress.XtraReports.UI.XRLabel printSignature_lbl;
         private DevExpress.XtraReports.UI.ReportHeaderBand ReportHeader;
         private DevExpress.XtraReports.UI.ReportFooterBand ReportFooter;
+        private DevExpress.XtraReports.UI.XRTable xrTable2;
+        private DevExpress.XtraReports.UI.XRTableRow xrTableRow3;
+        private DevExpress.XtraReports.UI.XRTableCell grandTotal_lbl;
+        private DevExpress.XtraReports.UI.XRTableCell grandTotal_data;
     }
 }

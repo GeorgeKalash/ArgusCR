@@ -33,7 +33,9 @@ namespace ArgusCR1016.Manufacturing.Templates.MF104
       
             dtName_data.Text = webObject.record.jobOrder.dtName;
             reference_data.Text = webObject.record.jobOrder.reference;
-                        
+            grandTotal_data.Text = webObject.record.jobOrder.RMCost.ToString() + webObject.record.jobOrder.overheadAmount.ToString();
+
+
             ((IssueOfMaterialsSubReports)(IssueOfMaterialsSubReports.ReportSource)).data = webObject.record.rawMaterials;
             ((OverheadsSubReport)(OverheadsSubReport.ReportSource)).data = webObject.record.overheadViews;
 
@@ -46,6 +48,7 @@ namespace ArgusCR1016.Manufacturing.Templates.MF104
             jobOrderPricing_lbl.Text = labelText(0);
             documentType_lbl.Text = labelText(1);
             documentRef_lbl.Text = labelText(2);
+            grandTotal_lbl.Text = labelText(3);
         }
 
         protected override string dictionaryStore()
