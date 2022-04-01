@@ -33,7 +33,9 @@ namespace ArgusCR1016.Manufacturing.Templates.MF104
       
             dtName_data.Text = webObject.record.jobOrder.dtName;
             reference_data.Text = webObject.record.jobOrder.reference;
-            grandTotal_data.Text = webObject.record.jobOrder.RMCost.ToString() + webObject.record.jobOrder.overheadAmount.ToString();
+            
+            double grandTotal = (webObject.record.jobOrder.RMCost?? 0) + (webObject.record.jobOrder.overheadAmount?? 0);
+            grandTotal_data.Text = grandTotal.ToString("N2");
 
 
             ((IssueOfMaterialsSubReports)(IssueOfMaterialsSubReports.ReportSource)).data = webObject.record.rawMaterials;

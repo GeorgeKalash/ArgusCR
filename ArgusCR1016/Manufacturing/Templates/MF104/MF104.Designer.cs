@@ -252,6 +252,7 @@ namespace ArgusCR1016.Manufacturing.Templates.MF104
             // grandTotal_lbl
             // 
             this.grandTotal_lbl.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.grandTotal_lbl.CanGrow = false;
             this.grandTotal_lbl.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold);
             this.grandTotal_lbl.Name = "grandTotal_lbl";
             this.grandTotal_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(10, 9, 2, 0, 100F);
@@ -262,11 +263,12 @@ namespace ArgusCR1016.Manufacturing.Templates.MF104
             this.grandTotal_lbl.Text = "Grand Total:";
             this.grandTotal_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
             this.grandTotal_lbl.Weight = 1.7108845031433742D;
+            this.grandTotal_lbl.WordWrap = false;
             // 
             // grandTotal_data
             // 
+            this.grandTotal_data.CanGrow = false;
             this.grandTotal_data.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold);
-            this.grandTotal_data.Multiline = true;
             this.grandTotal_data.Name = "grandTotal_data";
             this.grandTotal_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(10, 2, 4, 0, 100F);
             this.grandTotal_data.StylePriority.UseFont = false;
@@ -274,6 +276,7 @@ namespace ArgusCR1016.Manufacturing.Templates.MF104
             this.grandTotal_data.StylePriority.UseTextAlignment = false;
             this.grandTotal_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopCenter;
             this.grandTotal_data.Weight = 0.28781682034246081D;
+            this.grandTotal_data.WordWrap = false;
             // 
             // MF104
             // 

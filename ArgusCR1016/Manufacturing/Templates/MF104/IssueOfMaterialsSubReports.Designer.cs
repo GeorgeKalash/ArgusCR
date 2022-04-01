@@ -161,6 +161,7 @@ namespace ArgusCR1016.Manufacturing.Templates.MF104
             this.qty_data.StylePriority.UseTextAlignment = false;
             this.qty_data.Text = "qty_data";
             this.qty_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopCenter;
+            this.qty_data.TextFormatString = "{0:n2}";
             this.qty_data.Weight = 0.61862385522336516D;
             // 
             // pcs_data
@@ -462,6 +463,7 @@ namespace ArgusCR1016.Manufacturing.Templates.MF104
             this.xrTableCell3.Summary = xrSummary2;
             this.xrTableCell3.Text = "xrTableCell3";
             this.xrTableCell3.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            this.xrTableCell3.TextFormatString = "{0:n2}";
             this.xrTableCell3.Weight = 0.63293579282609225D;
             this.xrTableCell3.WordWrap = false;
             // 
@@ -482,6 +484,7 @@ namespace ArgusCR1016.Manufacturing.Templates.MF104
             this.xrTableCell4.Summary = xrSummary3;
             this.xrTableCell4.Text = "xrTableCell4";
             this.xrTableCell4.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            this.xrTableCell4.TextFormatString = "{0:n2}";
             this.xrTableCell4.Weight = 0.77358776199483481D;
             this.xrTableCell4.WordWrap = false;
             // 
