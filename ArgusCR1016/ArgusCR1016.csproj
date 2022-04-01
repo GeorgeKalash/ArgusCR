@@ -131,6 +131,12 @@
     <Compile Include="Sales\Templates\SA101b.Designer.cs">
       <DependentUpon>SA101b.cs</DependentUpon>
     </Compile>
+    <Compile Include="Sales\Templates\SA103.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Sales\Templates\SA103.Designer.cs">
+      <DependentUpon>SA103.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Manufacturing\Templates\MF103.resx">
@@ -148,6 +154,9 @@
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Sales\Templates\SA101b.resx">
       <DependentUpon>SA101b.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales\Templates\SA103.resx">
+      <DependentUpon>SA103.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup />
