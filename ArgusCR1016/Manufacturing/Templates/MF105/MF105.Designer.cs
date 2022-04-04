@@ -74,7 +74,7 @@ namespace ArgusCR1016.Manufacturing.Templates.MF105
             this.IssueOfMaterialsSubReport.LocationFloat = new DevExpress.Utils.PointFloat(9.999998F, 0F);
             this.IssueOfMaterialsSubReport.Name = "IssueOfMaterialsSubReport";
             this.IssueOfMaterialsSubReport.ReportSource = new ArgusCR1016.Manufacturing.Templates.MF105.IssueOfMaterialsSubReport();
-            this.IssueOfMaterialsSubReport.SizeF = new System.Drawing.SizeF(802.9166F, 23F);
+            this.IssueOfMaterialsSubReport.SizeF = new System.Drawing.SizeF(1138.083F, 23F);
             // 
             // OverheadsSubBand
             // 
@@ -89,12 +89,12 @@ namespace ArgusCR1016.Manufacturing.Templates.MF105
             this.CategorySubReport.LocationFloat = new DevExpress.Utils.PointFloat(9.999998F, 0F);
             this.CategorySubReport.Name = "CategorySubReport";
             this.CategorySubReport.ReportSource = new ArgusCR1016.Manufacturing.Templates.MF105.CategorySubReport();
-            this.CategorySubReport.SizeF = new System.Drawing.SizeF(802.9166F, 23F);
+            this.CategorySubReport.SizeF = new System.Drawing.SizeF(1138.083F, 23F);
             // 
             // workSheet_lbl
             // 
             this.workSheet_lbl.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
-            this.workSheet_lbl.LocationFloat = new DevExpress.Utils.PointFloat(513.9583F, 0F);
+            this.workSheet_lbl.LocationFloat = new DevExpress.Utils.PointFloat(849.1251F, 0F);
             this.workSheet_lbl.Multiline = true;
             this.workSheet_lbl.Name = "workSheet_lbl";
             this.workSheet_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -109,17 +109,17 @@ namespace ArgusCR1016.Manufacturing.Templates.MF105
             this.PageFooter.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
             this.printSignature_lbl,
             this.pagesNumber_lbl});
-            this.PageFooter.HeightF = 33.00003F;
+            this.PageFooter.HeightF = 39.16677F;
             this.PageFooter.Name = "PageFooter";
             // 
             // printSignature_lbl
             // 
             this.printSignature_lbl.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.printSignature_lbl.LocationFloat = new DevExpress.Utils.PointFloat(37.5F, 10.00001F);
+            this.printSignature_lbl.LocationFloat = new DevExpress.Utils.PointFloat(9.999998F, 12.5F);
             this.printSignature_lbl.Multiline = true;
             this.printSignature_lbl.Name = "printSignature_lbl";
             this.printSignature_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.printSignature_lbl.SizeF = new System.Drawing.SizeF(490.4195F, 23.00002F);
+            this.printSignature_lbl.SizeF = new System.Drawing.SizeF(676.2528F, 23.00002F);
             this.printSignature_lbl.StylePriority.UseFont = false;
             this.printSignature_lbl.StylePriority.UseTextAlignment = false;
             this.printSignature_lbl.Text = "printSignature";
@@ -128,10 +128,10 @@ namespace ArgusCR1016.Manufacturing.Templates.MF105
             // pagesNumber_lbl
             // 
             this.pagesNumber_lbl.BackColor = System.Drawing.Color.Transparent;
-            this.pagesNumber_lbl.LocationFloat = new DevExpress.Utils.PointFloat(704.1667F, 10.00001F);
+            this.pagesNumber_lbl.LocationFloat = new DevExpress.Utils.PointFloat(1037.5F, 12.5F);
             this.pagesNumber_lbl.Name = "pagesNumber_lbl";
             this.pagesNumber_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.pagesNumber_lbl.SizeF = new System.Drawing.SizeF(108.7499F, 23F);
+            this.pagesNumber_lbl.SizeF = new System.Drawing.SizeF(110.5834F, 23F);
             this.pagesNumber_lbl.StylePriority.UseBackColor = false;
             this.pagesNumber_lbl.StylePriority.UseTextAlignment = false;
             this.pagesNumber_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
@@ -153,9 +153,10 @@ namespace ArgusCR1016.Manufacturing.Templates.MF105
             this.PageFooter,
             this.ReportHeader});
             this.Font = new System.Drawing.Font("Arial", 9.75F);
-            this.Margins = new System.Drawing.Printing.Margins(0, 3, 38, 10);
-            this.PageHeight = 1169;
-            this.PageWidth = 827;
+            this.Landscape = true;
+            this.Margins = new System.Drawing.Printing.Margins(0, 0, 38, 10);
+            this.PageHeight = 827;
+            this.PageWidth = 1169;
             this.PaperKind = System.Drawing.Printing.PaperKind.A4;
             this.Version = "20.1";
             ((System.ComponentModel.ISupportInitialize)(this)).EndInit();

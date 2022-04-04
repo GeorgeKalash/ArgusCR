@@ -34,8 +34,27 @@ namespace ArgusCR1016.Manufacturing.Templates.MF105
 
         protected override void labelsText()
         {
-           
-        }
+            issued_lbl.Text = labelText(0);
+            returned_lbl.Text = labelText(1);
+            lost_lbl.Text = labelText(2);
+
+            itemRef_lbl.Text = labelText(3);
+            description_lbl.Text = labelText(4);
+            shape_lbl.Text = labelText(5);
+            size_lbl.Text = labelText(6);
+            cost_lbl.Text = labelText(7);
+
+            nbOfStones1_lbl.Text = labelText(8);
+            weight1_lbl.Text = labelText(9);
+
+            nbOfStones2_lbl.Text = labelText(10);
+            weight2_lbl.Text = labelText(11);
+
+            nbOfStones3_lbl.Text = labelText(12);
+            weight3_lbl.Text = labelText(13);
+
+            Signature_lbl.Text = labelText(14);
+         }
 
         protected override string dictionaryStore()
         {

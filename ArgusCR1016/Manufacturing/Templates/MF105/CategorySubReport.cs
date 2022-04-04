@@ -35,7 +35,10 @@ namespace ArgusCR1016.Manufacturing.Templates.MF105
 
         protected override void labelsText()
         {
-    
+            itemCategoryRef_lbl.Text = labelText(0);
+            itemCategoryName_lbl.Text = labelText(1);
+            nbOfStones_lbl.Text = labelText(2);
+            weight_lbl.Text = labelText(3);
         }
 
         protected override string dictionaryStore()
