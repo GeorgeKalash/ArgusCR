@@ -124,6 +124,24 @@
     <Compile Include="Manufacturing\Templates\MF104\OverheadsSubReport.Designer.cs">
       <DependentUpon>OverheadsSubReport.cs</DependentUpon>
     </Compile>
+    <Compile Include="Manufacturing\Templates\MF105\CategorySubReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Manufacturing\Templates\MF105\CategorySubReport.Designer.cs">
+      <DependentUpon>CategorySubReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manufacturing\Templates\MF105\IssueOfMaterialsSubReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Manufacturing\Templates\MF105\IssueOfMaterialsSubReport.Designer.cs">
+      <DependentUpon>IssueOfMaterialsSubReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manufacturing\Templates\MF105\MF105.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Manufacturing\Templates\MF105\MF105.Designer.cs">
+      <DependentUpon>MF105.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Sales\Templates\SA101b.cs">
       <SubType>Component</SubType>
@@ -150,6 +168,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Manufacturing\Templates\MF104\OverheadsSubReport.resx">
       <DependentUpon>OverheadsSubReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manufacturing\Templates\MF105\CategorySubReport.resx">
+      <DependentUpon>CategorySubReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manufacturing\Templates\MF105\IssueOfMaterialsSubReport.resx">
+      <DependentUpon>IssueOfMaterialsSubReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manufacturing\Templates\MF105\MF105.resx">
+      <DependentUpon>MF105.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Sales\Templates\SA101b.resx">
