@@ -44,7 +44,15 @@ namespace ArgusCR1016.Manufacturing.Templates.MF105
         protected override void labelsText()
         {
             workSheet_lbl.Text = labelText(0);
+            orderNum_lbl.Text = labelText(1);
+            orderTo_lbl.Text = labelText(2);
+            labor_lbl.Text = labelText(3);
+            date_lbl.Text = labelText(4);
+            weightBefore_lbl.Text = labelText(5);
+            weightAfter_lbl.Text = labelText(6);
+            remarks_lbl.Text = labelText(7);
         }
+
         protected override string dictionaryStore()
         {
             return "Custom\\R1016\\MF105";
