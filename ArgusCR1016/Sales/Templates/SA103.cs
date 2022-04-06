@@ -24,14 +24,14 @@ namespace ArgusCR1016.Sales.Templates
             DataSource = webObject.record.items;
 
             vatNumber_data.Text = webObject.record.companyInfo.taxNo;
-            reference_data.Text = webObject.record.trxHeader.reference;
+            date_data.Text = ((DateTime)webObject.record.trxHeader.date).ToString(sessionInfo.dateFormat);
 
-            if (webObject.record.logTime != null)
-            {
-                date_data.Text = ((DateTime)webObject.record.logTime).ToString(sessionInfo.dateFormat) + " " + ((DateTime)webObject.record.logTime).ToString("HH:mm");
-            }
+            companyAddress_data.Text = webObject.record.companyInfo.address?.street1;
 
             clientName_data.Text = webObject.record.client.name;
+            clientAddress_data.Text = webObject.record.billAddress?.street1;
+
+            reference_data.Text = webObject.record.trxHeader.reference;
 
             amountInWords_data.Text = SharedClasses.NumberToWords.multiLingualNumberInText((decimal)webObject.record.trxHeader.amount, 2, 2);
 
@@ -47,27 +47,28 @@ namespace ArgusCR1016.Sales.Templates
         protected override void labelsText()
         {
             vatNumber_lbl.Text = labelText(0);
-            invoice_lbl.Text = labelText(1);
+            date_lbl.Text = labelText(1);
+            invoice_lbl.Text = labelText(2);
 
-            usd_lbl.Text = labelText(2);
+            usd_lbl.Text = labelText(3);
 
-            description_lbl.Text = labelText(3);
-            weight_lbl.Text = labelText(4);
-            qty_lbl.Text = labelText(5);
-            unitPrice_lbl.Text = labelText(6);
-            amount_lbl.Text = labelText(7);
+            description_lbl.Text = labelText(4);
+            weight_lbl.Text = labelText(5);
+            qty_lbl.Text = labelText(6);
+            unitPrice_lbl.Text = labelText(7);
+            amount_lbl.Text = labelText(8);
 
-            subtotal_lbl.Text = labelText(8);
-            discount_lbl.Text = labelText(9);
+            subtotal_lbl.Text = labelText(9);
+            discount_lbl.Text = labelText(10);
 
-            vat_lbl.Text = labelText(10);
-            netTotal_lbl.Text = labelText(11);
+            vat_lbl.Text = labelText(11);
+            netTotal_lbl.Text = labelText(12);
 
-            totalPieces_lbl.Text = labelText(12);
-            totalWeight_lbl.Text = labelText(13);
+            totalPieces_lbl.Text = labelText(13);
+            totalWeight_lbl.Text = labelText(14);
 
-            footerText1_lbl.Text = labelText(14);
-            footerText2_lbl.Text = labelText(15);
+            footerText1_lbl.Text = labelText(15);
+            footerText2_lbl.Text = labelText(16);
         }
 
         protected override string dictionaryStore()
