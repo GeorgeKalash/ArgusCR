@@ -26,14 +26,17 @@ namespace ArgusCR1016.Sales.Templates
             vatNumber_data.Text = webObject.record.companyInfo.taxNo;
             date_data.Text = ((DateTime)webObject.record.trxHeader.date).ToString(sessionInfo.dateFormat);
 
-            companyAddress_data.Text = webObject.record.companyInfo.address?.street1;
+            companyAddress1_data.Text = webObject.record.companyInfo.address?.street1;
+            companyAddress2_data.Text = webObject.record.companyInfo.address?.city + ""+webObject.record.companyInfo.address?.countryName;
+            companyAddress3_data.Text = webObject.record.companyInfo.address?.phone;
 
             clientName_data.Text = webObject.record.client.name;
-            clientAddress_data.Text = webObject.record.billAddress?.street1;
+            clientAddress1_data.Text = webObject.record.billAddress?.city +""+ webObject.record.billAddress?.countryName;
+            clientAddress2_data.Text = webObject.record.billAddress?.phone;
 
             reference_data.Text = webObject.record.trxHeader.reference;
 
-            amountInWords_data.Text = SharedClasses.NumberToWords.multiLingualNumberInText((decimal)webObject.record.trxHeader.amount, 2, 2);
+            amountInWords_data.Text = SharedClasses.NumberToWords.multiLingualNumberInText((decimal)webObject.record.trxHeader.amount, 6, 1);
 
             subtotal_data.Text = webObject.record.trxHeader.subtotal.ToString("N2");
             tdAmount_data.Text = webObject.record.trxHeader.tdAmount.ToString();
