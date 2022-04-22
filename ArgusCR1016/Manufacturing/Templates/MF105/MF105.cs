@@ -23,19 +23,23 @@ namespace ArgusCR1016.Manufacturing.Templates.MF105
         public override void setSessionInfo(Dictionary<string, string> _reportHeaders)
         {
             base.setSessionInfo(_reportHeaders);
-            ((Reports.BaseReport)(Templates.MF105.IssueOfMaterialsSubReport.ReportSource)).setSessionInfo(sessionInfo);
-            ((Reports.BaseReport)(Templates.MF105.CategorySubReport.ReportSource)).setSessionInfo(sessionInfo);
+            ((Reports.BaseReport)(IssueOfMaterialsSubReport.ReportSource)).setSessionInfo(sessionInfo);
+            ((Reports.BaseReport)(CategorySubReport.ReportSource)).setSessionInfo(sessionInfo);
             initSubReports();
         }
 
         protected override void OnBeforePrint(PrintEventArgs e)
         {
-
             SharedClasses.JsonProtocol.GetStructure<ArgusDS.Manufacturing.Reports.MF105> webObject = deserializeGet<ArgusDS.Manufacturing.Reports.MF105>();
-      
-                 
-            ((IssueOfMaterialsSubReport)(Templates.MF105.IssueOfMaterialsSubReport.ReportSource)).data = webObject.record.rawMaterials;
-            ((CategorySubReport)(Templates.MF105.CategorySubReport.ReportSource)).data = webObject.record.categories;
+            orderNum_data.Text = webObject.record.workSheet.wcRef;
+
+            laborRef_data.Text = webObject.record.workSheet.laborRef;
+            laborName_data.Text = webObject.record.workSheet.laborName;
+            date_data.Text = webObject.record.workSheet.date.ToString(sessionInfo.dateFormat);
+            remarks_data.Text = webObject.record.workSheet.notes;
+
+            ((IssueOfMaterialsSubReport)(IssueOfMaterialsSubReport.ReportSource)).data = webObject.record.rawMaterials;
+            ((CategorySubReport)(CategorySubReport.ReportSource)).data = webObject.record.categories;
 
             printSignature_lbl.Text = reportSignature();
             base.OnBeforePrint(e);
