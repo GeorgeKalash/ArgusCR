@@ -41,7 +41,7 @@ namespace ArgusCR1012.Sales.Templates
             cellPhone_data.Text = webObject.record.salesPerson?.cellPhone;
 
             clientRef_data.Text = webObject.record.client.reference;
-            clientName_data.Text = webObject.record.client.name;
+            clientName_data.Text = webObject.record.trxHeader.clientName;
 
             subtotal_data.Text = webObject.record.trxHeader.subtotal.ToString("N2");
             tdAmount_data.Text = webObject.record.trxHeader.tdAmount.ToString();

@@ -44,7 +44,7 @@ namespace ArgusCR1012.Sales.Templates
             cellPhone_data.Text = webObject.record.salesPerson?.cellPhone;
 
             clientRef_data.Text = webObject.record.client.reference;
-            clientName_data.Text = webObject.record.client.name;
+            clientName_data.Text = webObject.record.trxHeader.clientName;
 
             if (webObject.record.masterIDs != null)
             {
