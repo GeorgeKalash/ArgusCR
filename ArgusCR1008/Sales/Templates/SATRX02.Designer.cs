@@ -35,6 +35,7 @@
             this.DetailData3_Odd = new DevExpress.XtraReports.UI.XRControlStyle();
             this.PageInfo = new DevExpress.XtraReports.UI.XRControlStyle();
             this.TopMargin = new DevExpress.XtraReports.UI.TopMarginBand();
+            this.description_data = new DevExpress.XtraReports.UI.XRLabel();
             this.balance2_data = new DevExpress.XtraReports.UI.XRLabel();
             this.spName_data = new DevExpress.XtraReports.UI.XRLabel();
             this.date_data = new DevExpress.XtraReports.UI.XRLabel();
@@ -133,6 +134,7 @@
             // TopMargin
             // 
             this.TopMargin.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+            this.description_data,
             this.balance2_data,
             this.spName_data,
             this.date_data,
@@ -146,6 +148,19 @@
             this.xrPanel1});
             this.TopMargin.HeightF = 296.375F;
             this.TopMargin.Name = "TopMargin";
+            // 
+            // description_data
+            // 
+            this.description_data.AutoWidth = true;
+            this.description_data.CanShrink = true;
+            this.description_data.Font = new System.Drawing.Font("Arial", 11F);
+            this.description_data.LocationFloat = new DevExpress.Utils.PointFloat(2.000038F, 82.5F);
+            this.description_data.Multiline = true;
+            this.description_data.Name = "description_data";
+            this.description_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.description_data.SizeF = new System.Drawing.SizeF(260F, 94.99999F);
+            this.description_data.StylePriority.UseFont = false;
+            this.description_data.Text = "description_data";
             // 
             // balance2_data
             // 
@@ -728,5 +743,6 @@
         private DevExpress.XtraReports.UI.XRLabel volume_data;
         private DevExpress.XtraReports.UI.XRLabel amount_data;
         private DevExpress.XtraReports.UI.XRLabel balance_data;
+        private DevExpress.XtraReports.UI.XRLabel description_data;
     }
 }

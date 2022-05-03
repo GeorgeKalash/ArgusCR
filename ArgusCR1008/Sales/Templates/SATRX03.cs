@@ -30,6 +30,7 @@ namespace ArgusCR1008.Sales.Templates
             SharedClasses.JsonProtocol.GetStructure<TrxPrintView> webObject = deserializeGet<TrxPrintView>();
             DataSource = webObject.record.items;
 
+            description_data.Text = webObject.record.trxHeader.description;
             clientName_data.Text = webObject.record.trxHeader.clientName;
             date_data.Text = webObject.record.trxHeader.date.ToString("dd/MM/yy");
 

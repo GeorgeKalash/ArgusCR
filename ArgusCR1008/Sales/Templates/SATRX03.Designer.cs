@@ -34,6 +34,7 @@
             this.DetailData3_Odd = new DevExpress.XtraReports.UI.XRControlStyle();
             this.PageInfo = new DevExpress.XtraReports.UI.XRControlStyle();
             this.TopMargin = new DevExpress.XtraReports.UI.TopMarginBand();
+            this.description_data = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel3 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel2 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel1 = new DevExpress.XtraReports.UI.XRLabel();
@@ -125,6 +126,7 @@
             // TopMargin
             // 
             this.TopMargin.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+            this.description_data,
             this.xrLabel3,
             this.xrLabel2,
             this.xrLabel1,
@@ -136,8 +138,21 @@
             this.xrLabel24,
             this.xrLabel23,
             this.xrLabel22});
-            this.TopMargin.HeightF = 298.0833F;
+            this.TopMargin.HeightF = 326.2083F;
             this.TopMargin.Name = "TopMargin";
+            // 
+            // description_data
+            // 
+            this.description_data.AutoWidth = true;
+            this.description_data.CanShrink = true;
+            this.description_data.Font = new System.Drawing.Font("Arial", 11F);
+            this.description_data.LocationFloat = new DevExpress.Utils.PointFloat(1.999966F, 119.8333F);
+            this.description_data.Multiline = true;
+            this.description_data.Name = "description_data";
+            this.description_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.description_data.SizeF = new System.Drawing.SizeF(260F, 80.87498F);
+            this.description_data.StylePriority.UseFont = false;
+            this.description_data.Text = "description_data";
             // 
             // xrLabel3
             // 
@@ -170,7 +185,7 @@
             // xrLabel1
             // 
             this.xrLabel1.Font = new System.Drawing.Font("Arial", 16F);
-            this.xrLabel1.LocationFloat = new DevExpress.Utils.PointFloat(87.49998F, 96.83326F);
+            this.xrLabel1.LocationFloat = new DevExpress.Utils.PointFloat(94.45838F, 85.37492F);
             this.xrLabel1.Multiline = true;
             this.xrLabel1.Name = "xrLabel1";
             this.xrLabel1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -534,7 +549,7 @@
             this.groupHeaderBand1,
             this.groupFooterBand1});
             this.Font = new System.Drawing.Font("Arial", 9.75F);
-            this.Margins = new System.Drawing.Printing.Margins(24, 0, 298, 47);
+            this.Margins = new System.Drawing.Printing.Margins(24, 0, 326, 47);
             this.PageHeight = 827;
             this.PageWidth = 583;
             this.PaperKind = System.Drawing.Printing.PaperKind.A5;
@@ -591,5 +606,6 @@
         private DevExpress.XtraReports.UI.XRLabel xrLabel2;
         private DevExpress.XtraReports.UI.XRLabel xrLabel1;
         private DevExpress.XtraReports.UI.XRLabel xrLabel3;
+        private DevExpress.XtraReports.UI.XRLabel description_data;
     }
 }
