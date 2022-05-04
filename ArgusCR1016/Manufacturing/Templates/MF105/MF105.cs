@@ -32,11 +32,12 @@ namespace ArgusCR1016.Manufacturing.Templates.MF105
         {
             SharedClasses.JsonProtocol.GetStructure<ArgusDS.Manufacturing.Reports.MF105> webObject = deserializeGet<ArgusDS.Manufacturing.Reports.MF105>();
             orderNum_data.Text = webObject.record.workSheet.wcRef;
-
+            orderTo_data.Text = webObject.record.jobOrder.clientName;
             laborRef_data.Text = webObject.record.workSheet.laborRef;
             laborName_data.Text = webObject.record.workSheet.laborName;
             date_data.Text = webObject.record.workSheet.date.ToString(sessionInfo.dateFormat);
             remarks_data.Text = webObject.record.workSheet.notes;
+            refBarcode.Text = webObject.record.workSheet.reference;
 
             ((IssueOfMaterialsSubReport)(IssueOfMaterialsSubReport.ReportSource)).data = webObject.record.rawMaterials;
             ((CategorySubReport)(CategorySubReport.ReportSource)).data = webObject.record.categories;
