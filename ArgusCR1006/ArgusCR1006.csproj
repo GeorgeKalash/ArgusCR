@@ -86,6 +86,7 @@
     <Compile Include="BaseReport.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="POS\KSAeInvoiceQrCode.cs" />
     <Compile Include="POS\PS101.cs">
       <SubType>Component</SubType>
     </Compile>
