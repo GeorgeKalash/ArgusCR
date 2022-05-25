@@ -218,7 +218,7 @@ namespace ArgusCR1016.Manufacturing.Templates.MF105
             this.cost_data.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.cost_data.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[udt1]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[udt3]")});
             this.cost_data.Font = new System.Drawing.Font("Arial", 8F);
             this.cost_data.Multiline = true;
             this.cost_data.Name = "cost_data";
