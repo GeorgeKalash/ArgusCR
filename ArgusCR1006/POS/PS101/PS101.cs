@@ -1,17 +1,26 @@
 ﻿using DevExpress.XtraReports.UI;
 using System;
 using System.Collections;
+using System.Collections.Generic;
 using System.ComponentModel;
 using System.Drawing;
 using System.Drawing.Printing;
 
-namespace ArgusCR1006.POS
+namespace ArgusCR1006.POS.PS101
 {
     public partial class PS101 : Reports.BaseReport
     {
         public PS101()
         {
             InitializeComponent();
+        }
+
+        public override void setSessionInfo(Dictionary<string, string> _reportHeaders)
+        {
+            base.setSessionInfo(_reportHeaders);
+            ((Reports.BaseReport)(InvoiceItemsSubReports.ReportSource)).setSessionInfo(sessionInfo);
+            ((Reports.BaseReport)(InvoiceReceiptSubReports.ReportSource)).setSessionInfo(sessionInfo);
+            initSubReports();
         }
 
         protected override void OnBeforePrint(PrintEventArgs e)
@@ -34,24 +43,21 @@ namespace ArgusCR1006.POS
                 address_data.Text = webObject.record.address.street1;
             }
 
-            amountBeforeTax_data.Text = webObject.record.invoiceView.subtotal.ToString("N2");
-            taxValue_data.Text = webObject.record.invoiceView.amount.ToString("N2");
-            amountAfterTax_data.Text = webObject.record.invoiceView.amount.ToString("N2");
-            QRCode.Text = new KSAeInvoiceQrCode(webObject.record.companyInfo.name, webObject.record.companyInfo.taxNo, (DateTime)webObject.record.logTime, webObject.record.invoiceView.amount.ToString(), webObject.record.invoiceView.vatAmount.ToString()).ToBase64();
+           ((InvoiceItemsSubReports)(InvoiceItemsSubReports.ReportSource)).data = webObject.record.invoiceItems;
+           ((InvoiceReceiptSubReports)(InvoiceReceiptSubReports.ReportSource)).data = webObject.record.receipts;
 
-            total_data.Text = SharedClasses.NumberToWords.multiLingualNumberInText((decimal)webObject.record.invoiceView.amount, 2, 2);
-
+            printSignature_lbl.Text = reportSignature();
             base.OnBeforePrint(e);
         }
 
         protected override void labelsText()
         {
+
         }
 
         protected override string dictionaryStore()
         {
             return "Custom\\R1006\\PS101";
         }
-
     }
 }
