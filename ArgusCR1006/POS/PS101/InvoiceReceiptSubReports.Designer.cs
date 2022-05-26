@@ -47,17 +47,17 @@ namespace ArgusCR1006.POS.PS101
             this.explanation_lbl = new DevExpress.XtraReports.UI.XRTableCell();
             this.Amount_lbl = new DevExpress.XtraReports.UI.XRTableCell();
             this.cardType_lbl = new DevExpress.XtraReports.UI.XRTableCell();
-            this.checkCardNo_lbl = new DevExpress.XtraReports.UI.XRTableCell();
-            this.paymentMethod_lbl = new DevExpress.XtraReports.UI.XRTableCell();
-            this.currencySymbol_lbl = new DevExpress.XtraReports.UI.XRTableCell();
+            this.ccRef_lbl = new DevExpress.XtraReports.UI.XRTableCell();
+            this.typeName_lbl = new DevExpress.XtraReports.UI.XRTableCell();
+            this.currencyRef_lbl = new DevExpress.XtraReports.UI.XRTableCell();
             this.cashAccountRef_lbl = new DevExpress.XtraReports.UI.XRTableCell();
             this.ReportFooter = new DevExpress.XtraReports.UI.ReportFooterBand();
+            this.clientSignature_lbl = new DevExpress.XtraReports.UI.XRLabel();
+            this.spSignature_lbl = new DevExpress.XtraReports.UI.XRLabel();
             this.xrTable9 = new DevExpress.XtraReports.UI.XRTable();
             this.xrTableRow9 = new DevExpress.XtraReports.UI.XRTableRow();
             this.total_data = new DevExpress.XtraReports.UI.XRTableCell();
             this.total_lbl = new DevExpress.XtraReports.UI.XRTableCell();
-            this.clientSignature_lbl = new DevExpress.XtraReports.UI.XRLabel();
-            this.spSignature_lbl = new DevExpress.XtraReports.UI.XRLabel();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable9)).BeginInit();
@@ -164,6 +164,8 @@ namespace ArgusCR1006.POS.PS101
             this.xrTableCell11.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.xrTableCell11.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[ccRef]")});
             this.xrTableCell11.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold);
             this.xrTableCell11.Multiline = true;
             this.xrTableCell11.Name = "xrTableCell11";
@@ -182,6 +184,8 @@ namespace ArgusCR1006.POS.PS101
             this.xrTableCell12.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.xrTableCell12.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[typeName]")});
             this.xrTableCell12.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold);
             this.xrTableCell12.Multiline = true;
             this.xrTableCell12.Name = "xrTableCell12";
@@ -201,6 +205,8 @@ namespace ArgusCR1006.POS.PS101
             this.xrTableCell13.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.xrTableCell13.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[currencyRef]")});
             this.xrTableCell13.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold);
             this.xrTableCell13.Multiline = true;
             this.xrTableCell13.Name = "xrTableCell13";
@@ -219,6 +225,8 @@ namespace ArgusCR1006.POS.PS101
             this.xrTableCell14.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.xrTableCell14.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[cashAccountRef]")});
             this.xrTableCell14.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold);
             this.xrTableCell14.Multiline = true;
             this.xrTableCell14.Name = "xrTableCell14";
@@ -254,9 +262,9 @@ namespace ArgusCR1006.POS.PS101
             this.explanation_lbl,
             this.Amount_lbl,
             this.cardType_lbl,
-            this.checkCardNo_lbl,
-            this.paymentMethod_lbl,
-            this.currencySymbol_lbl,
+            this.ccRef_lbl,
+            this.typeName_lbl,
+            this.currencyRef_lbl,
             this.cashAccountRef_lbl});
             this.xrTableRow8.Name = "xrTableRow8";
             this.xrTableRow8.Weight = 1D;
@@ -315,59 +323,59 @@ namespace ArgusCR1006.POS.PS101
             this.cardType_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopCenter;
             this.cardType_lbl.Weight = 0.94076407692649144D;
             // 
-            // checkCardNo_lbl
+            // ccRef_lbl
             // 
-            this.checkCardNo_lbl.BackColor = System.Drawing.Color.White;
-            this.checkCardNo_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+            this.ccRef_lbl.BackColor = System.Drawing.Color.White;
+            this.ccRef_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right)));
-            this.checkCardNo_lbl.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold);
-            this.checkCardNo_lbl.Multiline = true;
-            this.checkCardNo_lbl.Name = "checkCardNo_lbl";
-            this.checkCardNo_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 5, 0, 100F);
-            this.checkCardNo_lbl.StylePriority.UseBackColor = false;
-            this.checkCardNo_lbl.StylePriority.UseBorders = false;
-            this.checkCardNo_lbl.StylePriority.UseFont = false;
-            this.checkCardNo_lbl.StylePriority.UsePadding = false;
-            this.checkCardNo_lbl.StylePriority.UseTextAlignment = false;
-            this.checkCardNo_lbl.Text = "رقم الشيك \\ البطاقة";
-            this.checkCardNo_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopCenter;
-            this.checkCardNo_lbl.Weight = 1.0429885309392757D;
+            this.ccRef_lbl.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold);
+            this.ccRef_lbl.Multiline = true;
+            this.ccRef_lbl.Name = "ccRef_lbl";
+            this.ccRef_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 5, 0, 100F);
+            this.ccRef_lbl.StylePriority.UseBackColor = false;
+            this.ccRef_lbl.StylePriority.UseBorders = false;
+            this.ccRef_lbl.StylePriority.UseFont = false;
+            this.ccRef_lbl.StylePriority.UsePadding = false;
+            this.ccRef_lbl.StylePriority.UseTextAlignment = false;
+            this.ccRef_lbl.Text = "رقم الشيك \\ البطاقة";
+            this.ccRef_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopCenter;
+            this.ccRef_lbl.Weight = 1.0429885309392757D;
             // 
-            // paymentMethod_lbl
+            // typeName_lbl
             // 
-            this.paymentMethod_lbl.BackColor = System.Drawing.Color.White;
-            this.paymentMethod_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+            this.typeName_lbl.BackColor = System.Drawing.Color.White;
+            this.typeName_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right)));
-            this.paymentMethod_lbl.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold);
-            this.paymentMethod_lbl.Multiline = true;
-            this.paymentMethod_lbl.Name = "paymentMethod_lbl";
-            this.paymentMethod_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 5, 0, 100F);
-            this.paymentMethod_lbl.StylePriority.UseBackColor = false;
-            this.paymentMethod_lbl.StylePriority.UseBorders = false;
-            this.paymentMethod_lbl.StylePriority.UseFont = false;
-            this.paymentMethod_lbl.StylePriority.UsePadding = false;
-            this.paymentMethod_lbl.StylePriority.UseTextAlignment = false;
-            this.paymentMethod_lbl.Text = "طريقة الدفع";
-            this.paymentMethod_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopCenter;
-            this.paymentMethod_lbl.Weight = 0.88250091552734378D;
+            this.typeName_lbl.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold);
+            this.typeName_lbl.Multiline = true;
+            this.typeName_lbl.Name = "typeName_lbl";
+            this.typeName_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 5, 0, 100F);
+            this.typeName_lbl.StylePriority.UseBackColor = false;
+            this.typeName_lbl.StylePriority.UseBorders = false;
+            this.typeName_lbl.StylePriority.UseFont = false;
+            this.typeName_lbl.StylePriority.UsePadding = false;
+            this.typeName_lbl.StylePriority.UseTextAlignment = false;
+            this.typeName_lbl.Text = "طريقة الدفع";
+            this.typeName_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopCenter;
+            this.typeName_lbl.Weight = 0.88250091552734378D;
             // 
-            // currencySymbol_lbl
+            // currencyRef_lbl
             // 
-            this.currencySymbol_lbl.BackColor = System.Drawing.Color.White;
-            this.currencySymbol_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+            this.currencyRef_lbl.BackColor = System.Drawing.Color.White;
+            this.currencyRef_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right)));
-            this.currencySymbol_lbl.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold);
-            this.currencySymbol_lbl.Multiline = true;
-            this.currencySymbol_lbl.Name = "currencySymbol_lbl";
-            this.currencySymbol_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 5, 0, 100F);
-            this.currencySymbol_lbl.StylePriority.UseBackColor = false;
-            this.currencySymbol_lbl.StylePriority.UseBorders = false;
-            this.currencySymbol_lbl.StylePriority.UseFont = false;
-            this.currencySymbol_lbl.StylePriority.UsePadding = false;
-            this.currencySymbol_lbl.StylePriority.UseTextAlignment = false;
-            this.currencySymbol_lbl.Text = "رمز العملة";
-            this.currencySymbol_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopCenter;
-            this.currencySymbol_lbl.Weight = 0.75042749578302559D;
+            this.currencyRef_lbl.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold);
+            this.currencyRef_lbl.Multiline = true;
+            this.currencyRef_lbl.Name = "currencyRef_lbl";
+            this.currencyRef_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 5, 0, 100F);
+            this.currencyRef_lbl.StylePriority.UseBackColor = false;
+            this.currencyRef_lbl.StylePriority.UseBorders = false;
+            this.currencyRef_lbl.StylePriority.UseFont = false;
+            this.currencyRef_lbl.StylePriority.UsePadding = false;
+            this.currencyRef_lbl.StylePriority.UseTextAlignment = false;
+            this.currencyRef_lbl.Text = "رمز العملة";
+            this.currencyRef_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopCenter;
+            this.currencyRef_lbl.Weight = 0.75042749578302559D;
             // 
             // cashAccountRef_lbl
             // 
@@ -393,16 +401,49 @@ namespace ArgusCR1006.POS.PS101
             this.clientSignature_lbl,
             this.spSignature_lbl,
             this.xrTable9});
+            this.ReportFooter.HeightF = 85.5F;
             this.ReportFooter.Name = "ReportFooter";
+            // 
+            // clientSignature_lbl
+            // 
+            this.clientSignature_lbl.BackColor = System.Drawing.Color.White;
+            this.clientSignature_lbl.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold);
+            this.clientSignature_lbl.LocationFloat = new DevExpress.Utils.PointFloat(62.5F, 62.5F);
+            this.clientSignature_lbl.Multiline = true;
+            this.clientSignature_lbl.Name = "clientSignature_lbl";
+            this.clientSignature_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 4, 0, 100F);
+            this.clientSignature_lbl.SizeF = new System.Drawing.SizeF(100F, 23F);
+            this.clientSignature_lbl.StylePriority.UseBackColor = false;
+            this.clientSignature_lbl.StylePriority.UseFont = false;
+            this.clientSignature_lbl.StylePriority.UsePadding = false;
+            this.clientSignature_lbl.StylePriority.UseTextAlignment = false;
+            this.clientSignature_lbl.Text = "توقيع العميل";
+            this.clientSignature_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopCenter;
+            // 
+            // spSignature_lbl
+            // 
+            this.spSignature_lbl.BackColor = System.Drawing.Color.White;
+            this.spSignature_lbl.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold);
+            this.spSignature_lbl.LocationFloat = new DevExpress.Utils.PointFloat(650F, 62.5F);
+            this.spSignature_lbl.Multiline = true;
+            this.spSignature_lbl.Name = "spSignature_lbl";
+            this.spSignature_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 4, 0, 100F);
+            this.spSignature_lbl.SizeF = new System.Drawing.SizeF(100F, 23F);
+            this.spSignature_lbl.StylePriority.UseBackColor = false;
+            this.spSignature_lbl.StylePriority.UseFont = false;
+            this.spSignature_lbl.StylePriority.UsePadding = false;
+            this.spSignature_lbl.StylePriority.UseTextAlignment = false;
+            this.spSignature_lbl.Text = "توقيع البائع";
+            this.spSignature_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopCenter;
             // 
             // xrTable9
             // 
-            this.xrTable9.LocationFloat = new DevExpress.Utils.PointFloat(59.10746F, 10.00001F);
+            this.xrTable9.LocationFloat = new DevExpress.Utils.PointFloat(12.5F, 10.00001F);
             this.xrTable9.Name = "xrTable9";
             this.xrTable9.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable9.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow9});
-            this.xrTable9.SizeF = new System.Drawing.SizeF(550F, 25F);
+            this.xrTable9.SizeF = new System.Drawing.SizeF(795.5416F, 25F);
             // 
             // xrTableRow9
             // 
@@ -426,7 +467,7 @@ namespace ArgusCR1006.POS.PS101
             this.total_data.StylePriority.UsePadding = false;
             this.total_data.StylePriority.UseTextAlignment = false;
             this.total_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
-            this.total_data.Weight = 1.6593639026988638D;
+            this.total_data.Weight = 1.7142857641407341D;
             // 
             // total_lbl
             // 
@@ -445,39 +486,7 @@ namespace ArgusCR1006.POS.PS101
             this.total_lbl.StylePriority.UseTextAlignment = false;
             this.total_lbl.Text = "المجموع";
             this.total_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
-            this.total_lbl.Weight = 0.34063609730113636D;
-            // 
-            // clientSignature_lbl
-            // 
-            this.clientSignature_lbl.BackColor = System.Drawing.Color.White;
-            this.clientSignature_lbl.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold);
-            this.clientSignature_lbl.LocationFloat = new DevExpress.Utils.PointFloat(258.3333F, 76.04166F);
-            this.clientSignature_lbl.Multiline = true;
-            this.clientSignature_lbl.Name = "clientSignature_lbl";
-            this.clientSignature_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 4, 0, 100F);
-            this.clientSignature_lbl.SizeF = new System.Drawing.SizeF(100F, 23F);
-            this.clientSignature_lbl.StylePriority.UseBackColor = false;
-            this.clientSignature_lbl.StylePriority.UseFont = false;
-            this.clientSignature_lbl.StylePriority.UsePadding = false;
-            this.clientSignature_lbl.StylePriority.UseTextAlignment = false;
-            this.clientSignature_lbl.Text = "توقيع العميل";
-            this.clientSignature_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopCenter;
-            // 
-            // spSignature_lbl
-            // 
-            this.spSignature_lbl.BackColor = System.Drawing.Color.White;
-            this.spSignature_lbl.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold);
-            this.spSignature_lbl.LocationFloat = new DevExpress.Utils.PointFloat(608.3334F, 76.04166F);
-            this.spSignature_lbl.Multiline = true;
-            this.spSignature_lbl.Name = "spSignature_lbl";
-            this.spSignature_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 4, 0, 100F);
-            this.spSignature_lbl.SizeF = new System.Drawing.SizeF(100F, 23F);
-            this.spSignature_lbl.StylePriority.UseBackColor = false;
-            this.spSignature_lbl.StylePriority.UseFont = false;
-            this.spSignature_lbl.StylePriority.UsePadding = false;
-            this.spSignature_lbl.StylePriority.UseTextAlignment = false;
-            this.spSignature_lbl.Text = "توقيع البائع";
-            this.spSignature_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopCenter;
+            this.total_lbl.Weight = 0.28571423585926603D;
             // 
             // InvoiceReceiptSubReports
             // 
@@ -520,9 +529,9 @@ namespace ArgusCR1006.POS.PS101
         private DevExpress.XtraReports.UI.XRTableCell explanation_lbl;
         private DevExpress.XtraReports.UI.XRTableCell Amount_lbl;
         private DevExpress.XtraReports.UI.XRTableCell cardType_lbl;
-        private DevExpress.XtraReports.UI.XRTableCell checkCardNo_lbl;
-        private DevExpress.XtraReports.UI.XRTableCell paymentMethod_lbl;
-        private DevExpress.XtraReports.UI.XRTableCell currencySymbol_lbl;
+        private DevExpress.XtraReports.UI.XRTableCell ccRef_lbl;
+        private DevExpress.XtraReports.UI.XRTableCell typeName_lbl;
+        private DevExpress.XtraReports.UI.XRTableCell currencyRef_lbl;
         private DevExpress.XtraReports.UI.XRTableCell cashAccountRef_lbl;
         private DevExpress.XtraReports.UI.ReportFooterBand ReportFooter;
         private DevExpress.XtraReports.UI.XRTable xrTable9;

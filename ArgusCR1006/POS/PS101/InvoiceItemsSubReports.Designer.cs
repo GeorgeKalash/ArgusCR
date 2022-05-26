@@ -74,13 +74,13 @@ namespace ArgusCR1006.POS.PS101
             this.xrTableCell68 = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTable7 = new DevExpress.XtraReports.UI.XRTable();
             this.xrTableRow7 = new DevExpress.XtraReports.UI.XRTableRow();
-            this.amountBeforeTax_lbl = new DevExpress.XtraReports.UI.XRTableCell();
+            this.subtotal2_lbl = new DevExpress.XtraReports.UI.XRTableCell();
             this.amountBeforeTax_data = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTableRow16 = new DevExpress.XtraReports.UI.XRTableRow();
-            this.taxValue_lbl = new DevExpress.XtraReports.UI.XRTableCell();
+            this.vatAmount_lbl = new DevExpress.XtraReports.UI.XRTableCell();
             this.taxValue_data = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTableRow17 = new DevExpress.XtraReports.UI.XRTableRow();
-            this.amountAfterTax_lbl = new DevExpress.XtraReports.UI.XRTableCell();
+            this.amount_lbl = new DevExpress.XtraReports.UI.XRTableCell();
             this.amountAfterTax_data = new DevExpress.XtraReports.UI.XRTableCell();
             this.QRCode = new DevExpress.XtraReports.UI.XRBarCode();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable10)).BeginInit();
@@ -513,7 +513,7 @@ namespace ArgusCR1006.POS.PS101
             this.xrTable11,
             this.xrTable7,
             this.QRCode});
-            this.ReportFooter.HeightF = 192.2962F;
+            this.ReportFooter.HeightF = 170.1282F;
             this.ReportFooter.Name = "ReportFooter";
             // 
             // xrTable11
@@ -699,42 +699,42 @@ namespace ArgusCR1006.POS.PS101
             // 
             // xrTable7
             // 
-            this.xrTable7.LocationFloat = new DevExpress.Utils.PointFloat(386.5483F, 74.67345F);
+            this.xrTable7.LocationFloat = new DevExpress.Utils.PointFloat(375F, 37.5F);
             this.xrTable7.Name = "xrTable7";
             this.xrTable7.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 5, 0, 100F);
             this.xrTable7.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow7,
             this.xrTableRow16,
             this.xrTableRow17});
-            this.xrTable7.SizeF = new System.Drawing.SizeF(328.2451F, 65.11405F);
+            this.xrTable7.SizeF = new System.Drawing.SizeF(437.6201F, 65.11406F);
             this.xrTable7.StylePriority.UsePadding = false;
             // 
             // xrTableRow7
             // 
             this.xrTableRow7.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
-            this.amountBeforeTax_lbl,
+            this.subtotal2_lbl,
             this.amountBeforeTax_data});
             this.xrTableRow7.Name = "xrTableRow7";
             this.xrTableRow7.Weight = 1D;
             // 
-            // amountBeforeTax_lbl
+            // subtotal2_lbl
             // 
-            this.amountBeforeTax_lbl.BackColor = System.Drawing.Color.White;
-            this.amountBeforeTax_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+            this.subtotal2_lbl.BackColor = System.Drawing.Color.White;
+            this.subtotal2_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
-            this.amountBeforeTax_lbl.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.amountBeforeTax_lbl.Multiline = true;
-            this.amountBeforeTax_lbl.Name = "amountBeforeTax_lbl";
-            this.amountBeforeTax_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 4, 0, 100F);
-            this.amountBeforeTax_lbl.StylePriority.UseBackColor = false;
-            this.amountBeforeTax_lbl.StylePriority.UseBorders = false;
-            this.amountBeforeTax_lbl.StylePriority.UseFont = false;
-            this.amountBeforeTax_lbl.StylePriority.UsePadding = false;
-            this.amountBeforeTax_lbl.StylePriority.UseTextAlignment = false;
-            this.amountBeforeTax_lbl.Text = "المبلغ قبل الضريبة";
-            this.amountBeforeTax_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopCenter;
-            this.amountBeforeTax_lbl.Weight = 1.2348351645082307D;
+            this.subtotal2_lbl.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.subtotal2_lbl.Multiline = true;
+            this.subtotal2_lbl.Name = "subtotal2_lbl";
+            this.subtotal2_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 4, 0, 100F);
+            this.subtotal2_lbl.StylePriority.UseBackColor = false;
+            this.subtotal2_lbl.StylePriority.UseBorders = false;
+            this.subtotal2_lbl.StylePriority.UseFont = false;
+            this.subtotal2_lbl.StylePriority.UsePadding = false;
+            this.subtotal2_lbl.StylePriority.UseTextAlignment = false;
+            this.subtotal2_lbl.Text = "المبلغ قبل الضريبة";
+            this.subtotal2_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopCenter;
+            this.subtotal2_lbl.Weight = 1.2348351645082307D;
             // 
             // amountBeforeTax_data
             // 
@@ -759,29 +759,29 @@ namespace ArgusCR1006.POS.PS101
             // xrTableRow16
             // 
             this.xrTableRow16.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
-            this.taxValue_lbl,
+            this.vatAmount_lbl,
             this.taxValue_data});
             this.xrTableRow16.Name = "xrTableRow16";
             this.xrTableRow16.Weight = 1D;
             // 
-            // taxValue_lbl
+            // vatAmount_lbl
             // 
-            this.taxValue_lbl.BackColor = System.Drawing.Color.White;
-            this.taxValue_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+            this.vatAmount_lbl.BackColor = System.Drawing.Color.White;
+            this.vatAmount_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
-            this.taxValue_lbl.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.taxValue_lbl.Multiline = true;
-            this.taxValue_lbl.Name = "taxValue_lbl";
-            this.taxValue_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 4, 0, 100F);
-            this.taxValue_lbl.StylePriority.UseBackColor = false;
-            this.taxValue_lbl.StylePriority.UseBorders = false;
-            this.taxValue_lbl.StylePriority.UseFont = false;
-            this.taxValue_lbl.StylePriority.UsePadding = false;
-            this.taxValue_lbl.StylePriority.UseTextAlignment = false;
-            this.taxValue_lbl.Text = "قيمة الضريبة %15";
-            this.taxValue_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopCenter;
-            this.taxValue_lbl.Weight = 1.2348351645082305D;
+            this.vatAmount_lbl.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.vatAmount_lbl.Multiline = true;
+            this.vatAmount_lbl.Name = "vatAmount_lbl";
+            this.vatAmount_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 4, 0, 100F);
+            this.vatAmount_lbl.StylePriority.UseBackColor = false;
+            this.vatAmount_lbl.StylePriority.UseBorders = false;
+            this.vatAmount_lbl.StylePriority.UseFont = false;
+            this.vatAmount_lbl.StylePriority.UsePadding = false;
+            this.vatAmount_lbl.StylePriority.UseTextAlignment = false;
+            this.vatAmount_lbl.Text = "قيمة الضريبة %15";
+            this.vatAmount_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopCenter;
+            this.vatAmount_lbl.Weight = 1.2348351645082305D;
             // 
             // taxValue_data
             // 
@@ -789,6 +789,8 @@ namespace ArgusCR1006.POS.PS101
             this.taxValue_data.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.taxValue_data.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[vatAmount]")});
             this.taxValue_data.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.taxValue_data.Multiline = true;
             this.taxValue_data.Name = "taxValue_data";
@@ -804,29 +806,29 @@ namespace ArgusCR1006.POS.PS101
             // xrTableRow17
             // 
             this.xrTableRow17.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
-            this.amountAfterTax_lbl,
+            this.amount_lbl,
             this.amountAfterTax_data});
             this.xrTableRow17.Name = "xrTableRow17";
             this.xrTableRow17.Weight = 1D;
             // 
-            // amountAfterTax_lbl
+            // amount_lbl
             // 
-            this.amountAfterTax_lbl.BackColor = System.Drawing.Color.White;
-            this.amountAfterTax_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+            this.amount_lbl.BackColor = System.Drawing.Color.White;
+            this.amount_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
-            this.amountAfterTax_lbl.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.amountAfterTax_lbl.Multiline = true;
-            this.amountAfterTax_lbl.Name = "amountAfterTax_lbl";
-            this.amountAfterTax_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 4, 0, 100F);
-            this.amountAfterTax_lbl.StylePriority.UseBackColor = false;
-            this.amountAfterTax_lbl.StylePriority.UseBorders = false;
-            this.amountAfterTax_lbl.StylePriority.UseFont = false;
-            this.amountAfterTax_lbl.StylePriority.UsePadding = false;
-            this.amountAfterTax_lbl.StylePriority.UseTextAlignment = false;
-            this.amountAfterTax_lbl.Text = "المبلغ بعد الضريبة";
-            this.amountAfterTax_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopCenter;
-            this.amountAfterTax_lbl.Weight = 1.2348351645082305D;
+            this.amount_lbl.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.amount_lbl.Multiline = true;
+            this.amount_lbl.Name = "amount_lbl";
+            this.amount_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 4, 0, 100F);
+            this.amount_lbl.StylePriority.UseBackColor = false;
+            this.amount_lbl.StylePriority.UseBorders = false;
+            this.amount_lbl.StylePriority.UseFont = false;
+            this.amount_lbl.StylePriority.UsePadding = false;
+            this.amount_lbl.StylePriority.UseTextAlignment = false;
+            this.amount_lbl.Text = "المبلغ بعد الضريبة";
+            this.amount_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopCenter;
+            this.amount_lbl.Weight = 1.2348351645082305D;
             // 
             // amountAfterTax_data
             // 
@@ -851,11 +853,11 @@ namespace ArgusCR1006.POS.PS101
             // QRCode
             // 
             this.QRCode.Alignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
-            this.QRCode.LocationFloat = new DevExpress.Utils.PointFloat(201.8738F, 61.03619F);
+            this.QRCode.LocationFloat = new DevExpress.Utils.PointFloat(100F, 37.5F);
             this.QRCode.Name = "QRCode";
             this.QRCode.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F);
             this.QRCode.ShowText = false;
-            this.QRCode.SizeF = new System.Drawing.SizeF(124.4827F, 131.26F);
+            this.QRCode.SizeF = new System.Drawing.SizeF(124.4827F, 132.6282F);
             this.QRCode.StylePriority.UsePadding = false;
             this.QRCode.StylePriority.UseTextAlignment = false;
             qrCodeGenerator1.CompactionMode = DevExpress.XtraPrinting.BarCode.QRCodeCompactionMode.Byte;
@@ -923,13 +925,13 @@ namespace ArgusCR1006.POS.PS101
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell68;
         private DevExpress.XtraReports.UI.XRTable xrTable7;
         private DevExpress.XtraReports.UI.XRTableRow xrTableRow7;
-        private DevExpress.XtraReports.UI.XRTableCell amountBeforeTax_lbl;
+        private DevExpress.XtraReports.UI.XRTableCell subtotal2_lbl;
         private DevExpress.XtraReports.UI.XRTableCell amountBeforeTax_data;
         private DevExpress.XtraReports.UI.XRTableRow xrTableRow16;
-        private DevExpress.XtraReports.UI.XRTableCell taxValue_lbl;
+        private DevExpress.XtraReports.UI.XRTableCell vatAmount_lbl;
         private DevExpress.XtraReports.UI.XRTableCell taxValue_data;
         private DevExpress.XtraReports.UI.XRTableRow xrTableRow17;
-        private DevExpress.XtraReports.UI.XRTableCell amountAfterTax_lbl;
+        private DevExpress.XtraReports.UI.XRTableCell amount_lbl;
         private DevExpress.XtraReports.UI.XRTableCell amountAfterTax_data;
         private DevExpress.XtraReports.UI.XRBarCode QRCode;
     }

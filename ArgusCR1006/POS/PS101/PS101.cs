@@ -52,6 +52,22 @@ namespace ArgusCR1006.POS.PS101
 
         protected override void labelsText()
         {
+            vatNo_lbl.Text = labelText(0);
+
+            vatNo_lbl.Text = labelText(0);
+            vatNo_lbl.Text = labelText(0);
+            vatNo_lbl.Text = labelText(0);
+            vatNo_lbl.Text = labelText(0);
+            vatNo_lbl.Text = labelText(0);
+
+            vatNo_lbl.Text = labelText(0);
+            vatNo_lbl.Text = labelText(0);
+            vatNo_lbl.Text = labelText(0);
+            vatNo_lbl.Text = labelText(0);
+            vatNo_lbl.Text = labelText(0);
+            vatNo_lbl.Text = labelText(0);
+            vatNo_lbl.Text = labelText(0);
+
 
         }
 
