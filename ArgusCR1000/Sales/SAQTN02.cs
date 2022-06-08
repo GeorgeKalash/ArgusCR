@@ -10,5 +10,33 @@ namespace ArgusCR1000.Sales.Templates
             InitializeComponent();           
         }
 
+        protected override string dictionaryStore()
+        {
+            return base.dictionaryStore() + "SA101";
+        }
+
+        protected override void labelsText()
+        {
+            base.labelsText();
+        }
+
+        protected override void OnBeforePrint(PrintEventArgs e)
+        {
+            SharedClasses.JsonProtocol.GetStructure<QuotationPrintLayout> webObject = deserializeGet<QuotationPrintLayout>();
+            DataSource = webObject.record.items;
+
+            vat_data.Text = webObject.record.header.vatAmount.ToString("N0");
+            amount_data.Text = webObject.record.header.amount.ToString("N0");
+            subtotal_data.Text = webObject.record.header.subtotal.ToString("N0");
+            clientRef_data.Text = webObject.record.header.clientRef;
+            currencyRef_data.Text = webObject.record.header.currencyName;
+            clientName_data.Text = webObject.record.header.clientName;
+            date_data.Text = webObject.record.header.date.ToString("dd/MM/yy");
+            description_data.Text = webObject.record.header.description;
+            reference_data.Text = webObject.record.header.reference;
+            if (webObject.record.billAddress != null)
+                address_data.Text = webObject.record.billAddress.street1 + "\r\n" + webObject.record.billAddress.city + "\r\n" + webObject.record.billAddress.countryName;
+            base.OnBeforePrint(e);
+        }
     }
 }
