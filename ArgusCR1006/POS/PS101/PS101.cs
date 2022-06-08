@@ -14,6 +14,10 @@ namespace ArgusCR1006.POS.PS101
         {
             InitializeComponent();
         }
+        protected override string reportName()
+        {
+            return title_lbl.Text;
+        }
 
         public override void setSessionInfo(Dictionary<string, string> _reportHeaders)
         {
@@ -32,12 +36,12 @@ namespace ArgusCR1006.POS.PS101
 
             reference_data.Text = webObject.record.invoiceView.reference;
             date_data.Text = webObject.record.invoiceView.date.ToString(sessionInfo.dateFormat);
-
+            total_data.Text = SharedClasses.NumberToWords.multiLingualNumberInText((decimal)webObject.record.invoiceView.amount, 2, 2);
             spName_data.Text = webObject.record.invoiceView.spName;
             plant_data.Text = webObject.record.invoiceView.plantName;
-
-            if (webObject.record.address != null)
-            {
+             
+          if (webObject.record.address != null)
+           {
                 clientName_data.Text = webObject.record.address.name;
                 phoneNumber_data.Text = webObject.record.address.phone;
                 address_data.Text = webObject.record.address.street1;
@@ -54,21 +58,23 @@ namespace ArgusCR1006.POS.PS101
         {
             vatNo_lbl.Text = labelText(0);
 
-            vatNo_lbl.Text = labelText(0);
-            vatNo_lbl.Text = labelText(0);
-            vatNo_lbl.Text = labelText(0);
-            vatNo_lbl.Text = labelText(0);
-            vatNo_lbl.Text = labelText(0);
+            reference_lbl.Text = labelText(1);
+            date_lbl.Text = labelText(2);
+            title_lbl.Text = labelText(3);
+            spName_lbl.Text = labelText(4);
+            plant_lbl.Text = labelText(5);
 
-            vatNo_lbl.Text = labelText(0);
-            vatNo_lbl.Text = labelText(0);
-            vatNo_lbl.Text = labelText(0);
-            vatNo_lbl.Text = labelText(0);
-            vatNo_lbl.Text = labelText(0);
-            vatNo_lbl.Text = labelText(0);
-            vatNo_lbl.Text = labelText(0);
+            clientName_lbl.Text = labelText(6);
+            phoneNumber_lbl.Text = labelText(7);
+            address_lbl.Text = labelText(8);
+            nationality_lbl.Text = labelText(9);
+            idNumber_lbl.Text = labelText(10);
+            expirydate_lbl.Text = labelText(11);
+            versionNumber_lbl.Text = labelText(12);
 
-
+            total_lbl.Text = labelText(13);
+            spSignature_lbl.Text = labelText(14);
+            clientSignature_lbl.Text = labelText(15);
         }
 
         protected override string dictionaryStore()

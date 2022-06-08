@@ -1,5 +1,4 @@
-﻿using ArgusDS.Manufacturing;
-using DevExpress.XtraReports.UI;
+﻿using DevExpress.XtraReports.UI;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -20,14 +19,12 @@ namespace ArgusCR1006.POS.PS101
 
         protected override void OnBeforePrint(PrintEventArgs e)
         {
-            //total_data.Text = SharedClasses.NumberToWords.multiLingualNumberInText((decimal)webObject.record.invoiceView.amount, 2, 2);
             DataSource = data;
             base.OnBeforePrint(e);
         }
 
         private void InvoiceReceiptSubReports_DataSourceRowChanged(object sender, DataSourceRowEventArgs e)
         {
-
 
         }
 
@@ -40,11 +37,6 @@ namespace ArgusCR1006.POS.PS101
             cardType_lbl.Text = labelText(4);
             Amount_lbl.Text = labelText(5);
             explanation_lbl.Text = labelText(6);
-
-            total_lbl.Text = labelText(7);
-
-            spSignature_lbl.Text = labelText(8);
-            clientSignature_lbl.Text = labelText(9);
         }
 
         protected override string dictionaryStore()

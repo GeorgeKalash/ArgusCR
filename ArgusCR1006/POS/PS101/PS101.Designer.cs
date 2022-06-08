@@ -105,16 +105,24 @@ namespace ArgusCR1006.POS.PS101
             this.xrTableCell92 = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTableCell93 = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTableCell94 = new DevExpress.XtraReports.UI.XRTableCell();
+            this.ReportFooter = new DevExpress.XtraReports.UI.ReportFooterBand();
+            this.clientSignature_lbl = new DevExpress.XtraReports.UI.XRLabel();
+            this.spSignature_lbl = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrTable9 = new DevExpress.XtraReports.UI.XRTable();
+            this.xrTableRow9 = new DevExpress.XtraReports.UI.XRTableRow();
+            this.total_data = new DevExpress.XtraReports.UI.XRTableCell();
+            this.total_lbl = new DevExpress.XtraReports.UI.XRTableCell();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.xrTable9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             // 
             // TopMargin
             // 
-            this.TopMargin.HeightF = 0F;
+            this.TopMargin.HeightF = 73.75F;
             this.TopMargin.Name = "TopMargin";
             // 
             // BottomMargin
@@ -1115,6 +1123,99 @@ namespace ArgusCR1006.POS.PS101
             this.xrTableCell94.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
             this.xrTableCell94.Weight = 1.4858616964211047D;
             // 
+            // ReportFooter
+            // 
+            this.ReportFooter.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+            this.clientSignature_lbl,
+            this.spSignature_lbl,
+            this.xrTable9});
+            this.ReportFooter.HeightF = 124.9906F;
+            this.ReportFooter.Name = "ReportFooter";
+            // 
+            // clientSignature_lbl
+            // 
+            this.clientSignature_lbl.BackColor = System.Drawing.Color.White;
+            this.clientSignature_lbl.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold);
+            this.clientSignature_lbl.LocationFloat = new DevExpress.Utils.PointFloat(637.5F, 50F);
+            this.clientSignature_lbl.Multiline = true;
+            this.clientSignature_lbl.Name = "clientSignature_lbl";
+            this.clientSignature_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 4, 0, 100F);
+            this.clientSignature_lbl.SizeF = new System.Drawing.SizeF(100F, 23F);
+            this.clientSignature_lbl.StylePriority.UseBackColor = false;
+            this.clientSignature_lbl.StylePriority.UseFont = false;
+            this.clientSignature_lbl.StylePriority.UsePadding = false;
+            this.clientSignature_lbl.StylePriority.UseTextAlignment = false;
+            this.clientSignature_lbl.Text = "توقيع العميل";
+            this.clientSignature_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopCenter;
+            // 
+            // spSignature_lbl
+            // 
+            this.spSignature_lbl.BackColor = System.Drawing.Color.White;
+            this.spSignature_lbl.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold);
+            this.spSignature_lbl.LocationFloat = new DevExpress.Utils.PointFloat(1012.5F, 50F);
+            this.spSignature_lbl.Multiline = true;
+            this.spSignature_lbl.Name = "spSignature_lbl";
+            this.spSignature_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 4, 0, 100F);
+            this.spSignature_lbl.SizeF = new System.Drawing.SizeF(100F, 23F);
+            this.spSignature_lbl.StylePriority.UseBackColor = false;
+            this.spSignature_lbl.StylePriority.UseFont = false;
+            this.spSignature_lbl.StylePriority.UsePadding = false;
+            this.spSignature_lbl.StylePriority.UseTextAlignment = false;
+            this.spSignature_lbl.Text = "توقيع البائع";
+            this.spSignature_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopCenter;
+            // 
+            // xrTable9
+            // 
+            this.xrTable9.LocationFloat = new DevExpress.Utils.PointFloat(600F, 12.5F);
+            this.xrTable9.Name = "xrTable9";
+            this.xrTable9.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
+            this.xrTable9.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
+            this.xrTableRow9});
+            this.xrTable9.SizeF = new System.Drawing.SizeF(549.9532F, 25F);
+            // 
+            // xrTableRow9
+            // 
+            this.xrTableRow9.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
+            this.total_data,
+            this.total_lbl});
+            this.xrTableRow9.Name = "xrTableRow9";
+            this.xrTableRow9.Weight = 1D;
+            // 
+            // total_data
+            // 
+            this.total_data.BackColor = System.Drawing.Color.White;
+            this.total_data.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+            | DevExpress.XtraPrinting.BorderSide.Right) 
+            | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.total_data.Multiline = true;
+            this.total_data.Name = "total_data";
+            this.total_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 4, 4, 0, 100F);
+            this.total_data.StylePriority.UseBackColor = false;
+            this.total_data.StylePriority.UseBorders = false;
+            this.total_data.StylePriority.UsePadding = false;
+            this.total_data.StylePriority.UseTextAlignment = false;
+            this.total_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
+            this.total_data.Weight = 1.7142857641407341D;
+            // 
+            // total_lbl
+            // 
+            this.total_lbl.BackColor = System.Drawing.Color.White;
+            this.total_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+            | DevExpress.XtraPrinting.BorderSide.Right) 
+            | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.total_lbl.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold);
+            this.total_lbl.Multiline = true;
+            this.total_lbl.Name = "total_lbl";
+            this.total_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 4, 4, 0, 100F);
+            this.total_lbl.StylePriority.UseBackColor = false;
+            this.total_lbl.StylePriority.UseBorders = false;
+            this.total_lbl.StylePriority.UseFont = false;
+            this.total_lbl.StylePriority.UsePadding = false;
+            this.total_lbl.StylePriority.UseTextAlignment = false;
+            this.total_lbl.Text = "المجموع";
+            this.total_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
+            this.total_lbl.Weight = 0.28571423585926603D;
+            // 
             // PS101
             // 
             this.Bands.AddRange(new DevExpress.XtraReports.UI.Band[] {
@@ -1122,10 +1223,11 @@ namespace ArgusCR1006.POS.PS101
             this.BottomMargin,
             this.Detail,
             this.ReportHeader,
-            this.PageFooter});
+            this.PageFooter,
+            this.ReportFooter});
             this.Font = new System.Drawing.Font("Arial", 9.75F);
             this.Landscape = true;
-            this.Margins = new System.Drawing.Printing.Margins(0, 0, 0, 0);
+            this.Margins = new System.Drawing.Printing.Margins(0, 0, 74, 0);
             this.PageHeight = 827;
             this.PageWidth = 1169;
             this.PaperKind = System.Drawing.Printing.PaperKind.A4;
@@ -1135,6 +1237,7 @@ namespace ArgusCR1006.POS.PS101
             ((System.ComponentModel.ISupportInitialize)(this.xrTable2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.xrTable9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
 
         }
@@ -1214,5 +1317,12 @@ namespace ArgusCR1006.POS.PS101
         private DevExpress.XtraReports.UI.SubBand SubBand2;
         private DevExpress.XtraReports.UI.XRSubreport InvoiceItemsSubReports;
         private DevExpress.XtraReports.UI.XRSubreport InvoiceReceiptSubReports;
+        private DevExpress.XtraReports.UI.ReportFooterBand ReportFooter;
+        private DevExpress.XtraReports.UI.XRLabel clientSignature_lbl;
+        private DevExpress.XtraReports.UI.XRLabel spSignature_lbl;
+        private DevExpress.XtraReports.UI.XRTable xrTable9;
+        private DevExpress.XtraReports.UI.XRTableRow xrTableRow9;
+        private DevExpress.XtraReports.UI.XRTableCell total_data;
+        private DevExpress.XtraReports.UI.XRTableCell total_lbl;
     }
 }
