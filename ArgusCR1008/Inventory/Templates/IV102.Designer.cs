@@ -76,6 +76,7 @@ namespace ArgusCR1008.Inventory.Templates
             this.xrTableRow5 = new DevExpress.XtraReports.UI.XRTableRow();
             this.xrTable2 = new DevExpress.XtraReports.UI.XRTable();
             this.ReportHeader = new DevExpress.XtraReports.UI.ReportHeaderBand();
+            this.volume_data = new DevExpress.XtraReports.UI.XRLabel();
             this.xrTable4 = new DevExpress.XtraReports.UI.XRTable();
             this.xrTableRow8 = new DevExpress.XtraReports.UI.XRTableRow();
             this.sku_lbl = new DevExpress.XtraReports.UI.XRTableCell();
@@ -634,6 +635,7 @@ namespace ArgusCR1008.Inventory.Templates
             // ReportHeader
             // 
             this.ReportHeader.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+            this.volume_data,
             this.xrTable4,
             this.xrTable2,
             this.xrTable3,
@@ -641,6 +643,21 @@ namespace ArgusCR1008.Inventory.Templates
             this.materialsTransfer_lbl});
             this.ReportHeader.HeightF = 294F;
             this.ReportHeader.Name = "ReportHeader";
+            // 
+            // volume_data
+            // 
+            this.volume_data.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[volume]")});
+            this.volume_data.LocationFloat = new DevExpress.Utils.PointFloat(430.5442F, 235.0002F);
+            this.volume_data.Multiline = true;
+            this.volume_data.Name = "volume_data";
+            this.volume_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.volume_data.SizeF = new System.Drawing.SizeF(136.2289F, 23F);
+            this.volume_data.StylePriority.UsePadding = false;
+            this.volume_data.StylePriority.UseTextAlignment = false;
+            this.volume_data.Text = "volume_data";
+            this.volume_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
+            this.volume_data.TextFormatString = "{0:n2}";
             // 
             // xrTable4
             // 
@@ -821,5 +838,6 @@ namespace ArgusCR1008.Inventory.Templates
         private DevExpress.XtraReports.UI.XRCrossBandBox xrCrossBandBox1;
         private DevExpress.XtraReports.UI.ReportFooterBand ReportFooter;
         private DevExpress.XtraReports.UI.GroupHeaderBand categoryRef;
+        private DevExpress.XtraReports.UI.XRLabel volume_data;
     }
 }

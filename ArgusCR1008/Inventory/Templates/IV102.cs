@@ -23,13 +23,14 @@ namespace ArgusCR1008.Inventory.Templates
             reference_data.Text = webObject.record.header.reference;
             date_data.Text = webObject.record.header.date.ToString("dd/MM/yyyy");
             plantName_data.Text = webObject.record.header.plantName;
+            city_data.Text = webObject.record.toAddress?.city;
 
             fromSiteRef_data.Text = webObject.record.header.fromSiteRef;
             fromSiteName_data.Text = webObject.record.header.fromSiteName;
             toSiteRef_data.Text = webObject.record.header.toSiteRef;
             toSiteName_data.Text = webObject.record.header.toSiteName;
             notes_data.Text = webObject.record.header.notes;
-            city_data.Text = webObject.record.toAddress?.city;
+
             base.OnBeforePrint(e);
         }
 
