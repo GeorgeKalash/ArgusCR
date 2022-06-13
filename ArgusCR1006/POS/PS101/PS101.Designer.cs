@@ -149,6 +149,7 @@ namespace ArgusCR1006.POS.PS101
             // 
             this.InvoiceItemsSubReports.LocationFloat = new DevExpress.Utils.PointFloat(600F, 0F);
             this.InvoiceItemsSubReports.Name = "InvoiceItemsSubReports";
+            this.InvoiceItemsSubReports.ReportSource = new ArgusCR1006.POS.PS101.InvoiceItemsSubReports();
             this.InvoiceItemsSubReports.SizeF = new System.Drawing.SizeF(549.9583F, 23F);
             // 
             // SubBand2
@@ -162,6 +163,7 @@ namespace ArgusCR1006.POS.PS101
             // 
             this.InvoiceReceiptSubReports.LocationFloat = new DevExpress.Utils.PointFloat(599.9968F, 0F);
             this.InvoiceReceiptSubReports.Name = "InvoiceReceiptSubReports";
+            this.InvoiceReceiptSubReports.ReportSource = new ArgusCR1006.POS.PS101.InvoiceReceiptSubReports();
             this.InvoiceReceiptSubReports.SizeF = new System.Drawing.SizeF(549.9583F, 23F);
             // 
             // ReportHeader
