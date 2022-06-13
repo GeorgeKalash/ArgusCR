@@ -646,10 +646,10 @@ namespace ArgusCR1008.Inventory.Templates
             // 
             // volume_data
             // 
+            this.volume_data.CanGrow = false;
             this.volume_data.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[volume]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "sumSum([volume]*[qty])")});
             this.volume_data.LocationFloat = new DevExpress.Utils.PointFloat(430.5442F, 235.0002F);
-            this.volume_data.Multiline = true;
             this.volume_data.Name = "volume_data";
             this.volume_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.volume_data.SizeF = new System.Drawing.SizeF(136.2289F, 23F);
@@ -658,6 +658,7 @@ namespace ArgusCR1008.Inventory.Templates
             this.volume_data.Text = "volume_data";
             this.volume_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
             this.volume_data.TextFormatString = "{0:n2}";
+            this.volume_data.WordWrap = false;
             // 
             // xrTable4
             // 
