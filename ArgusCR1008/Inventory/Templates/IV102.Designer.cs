@@ -30,6 +30,7 @@ namespace ArgusCR1008.Inventory.Templates
         private void InitializeComponent()
         {
             DevExpress.XtraReports.UI.XRSummary xrSummary1 = new DevExpress.XtraReports.UI.XRSummary();
+            DevExpress.XtraReports.UI.XRSummary xrSummary2 = new DevExpress.XtraReports.UI.XRSummary();
             this.TopMargin = new DevExpress.XtraReports.UI.TopMarginBand();
             this.BottomMargin = new DevExpress.XtraReports.UI.BottomMarginBand();
             this.Detail = new DevExpress.XtraReports.UI.DetailBand();
@@ -655,6 +656,8 @@ namespace ArgusCR1008.Inventory.Templates
             this.volume_data.SizeF = new System.Drawing.SizeF(136.2289F, 23F);
             this.volume_data.StylePriority.UsePadding = false;
             this.volume_data.StylePriority.UseTextAlignment = false;
+            xrSummary2.Running = DevExpress.XtraReports.UI.SummaryRunning.Report;
+            this.volume_data.Summary = xrSummary2;
             this.volume_data.Text = "volume_data";
             this.volume_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
             this.volume_data.TextFormatString = "{0:n2}";
