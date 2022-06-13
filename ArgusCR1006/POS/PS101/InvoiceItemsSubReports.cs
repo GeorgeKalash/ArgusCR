@@ -34,7 +34,7 @@ namespace ArgusCR1006.POS.PS101
         {
             itemRef_lbl.Text = labelText(0);
             description_lbl.Text = labelText(1);
-            purity_lbl.Text = labelText(3);
+            purity_lbl.Text = labelText(2);
             wGold_lbl.Text = labelText(3);
             qty_lbl.Text = labelText(4);
             unitPrice_lbl.Text = labelText(5);

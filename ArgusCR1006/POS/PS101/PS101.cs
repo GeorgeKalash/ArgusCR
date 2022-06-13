@@ -24,6 +24,10 @@ namespace ArgusCR1006.POS.PS101
             base.setSessionInfo(_reportHeaders);
             ((Reports.BaseReport)(InvoiceItemsSubReports.ReportSource)).setSessionInfo(sessionInfo);
             ((Reports.BaseReport)(InvoiceReceiptSubReports.ReportSource)).setSessionInfo(sessionInfo);
+
+            ((Reports.BaseReport)(InvoiceItemsSubReports2.ReportSource)).setSessionInfo(sessionInfo);
+            ((Reports.BaseReport)(InvoiceReceiptSubReports2.ReportSource)).setSessionInfo(sessionInfo);
+
             initSubReports();
         }
 
@@ -36,10 +40,9 @@ namespace ArgusCR1006.POS.PS101
 
             reference_data.Text = webObject.record.invoiceView.reference;
             date_data.Text = webObject.record.invoiceView.date.ToString(sessionInfo.dateFormat);
-            total_data.Text = SharedClasses.NumberToWords.multiLingualNumberInText((decimal)webObject.record.invoiceView.amount, 2, 2);
             spName_data.Text = webObject.record.invoiceView.spName;
             plant_data.Text = webObject.record.invoiceView.plantName;
-             
+        
           if (webObject.record.address != null)
            {
                 clientName_data.Text = webObject.record.address.name;
@@ -47,8 +50,29 @@ namespace ArgusCR1006.POS.PS101
                 address_data.Text = webObject.record.address.street1;
             }
 
-           ((InvoiceItemsSubReports)(InvoiceItemsSubReports.ReportSource)).data = webObject.record.invoiceItems;
+            total_data.Text = SharedClasses.NumberToWords.multiLingualNumberInText((decimal)webObject.record.invoiceView.amount, 2, 2);
+
+            vatNo2_data.Text = webObject.record.companyInfo.taxNo;
+
+            reference2_data.Text = webObject.record.invoiceView.reference;
+            date2_data.Text = webObject.record.invoiceView.date.ToString(sessionInfo.dateFormat);
+            spName2_data.Text = webObject.record.invoiceView.spName;
+            plant2_data.Text = webObject.record.invoiceView.plantName;
+
+            if (webObject.record.address != null)
+            {
+                clientName2_data.Text = webObject.record.address.name;
+                phoneNumber2_data.Text = webObject.record.address.phone;
+                address2_data.Text = webObject.record.address.street1;
+            }
+
+            total2_data.Text = SharedClasses.NumberToWords.multiLingualNumberInText((decimal)webObject.record.invoiceView.amount, 2, 2);
+
+            ((InvoiceItemsSubReports)(InvoiceItemsSubReports.ReportSource)).data = webObject.record.invoiceItems;
            ((InvoiceReceiptSubReports)(InvoiceReceiptSubReports.ReportSource)).data = webObject.record.receipts;
+
+            ((InvoiceItemsSubReports)(InvoiceItemsSubReports2.ReportSource)).data = webObject.record.invoiceItems;
+            ((InvoiceReceiptSubReports)(InvoiceReceiptSubReports2.ReportSource)).data = webObject.record.receipts;
 
             printSignature_lbl.Text = reportSignature();
             base.OnBeforePrint(e);
@@ -75,6 +99,26 @@ namespace ArgusCR1006.POS.PS101
             total_lbl.Text = labelText(13);
             spSignature_lbl.Text = labelText(14);
             clientSignature_lbl.Text = labelText(15);
+
+            vatNo2_lbl.Text = labelText(16);
+
+            reference2_lbl.Text = labelText(17);
+            date2_lbl.Text = labelText(18);
+            title2_lbl.Text = labelText(19);
+            spName2_lbl.Text = labelText(20);
+            plant2_lbl.Text = labelText(21);
+
+            clientName2_lbl.Text = labelText(22);
+            phoneNumber2_lbl.Text = labelText(23);
+            address2_lbl.Text = labelText(24);
+            nationality2_lbl.Text = labelText(25);
+            idNumber2_lbl.Text = labelText(26);
+            expirydate2_lbl.Text = labelText(27);
+            versionNumber2_lbl.Text = labelText(28);
+
+            total2_lbl.Text = labelText(29);
+            spSignature2_lbl.Text = labelText(30);
+            clientSignature2_lbl.Text = labelText(31);
         }
 
         protected override string dictionaryStore()
