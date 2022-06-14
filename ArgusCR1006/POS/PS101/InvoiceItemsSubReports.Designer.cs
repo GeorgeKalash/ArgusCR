@@ -666,8 +666,6 @@ namespace ArgusCR1006.POS.PS101
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell65.BorderWidth = 1F;
             this.xrTableCell65.CanGrow = false;
-            this.xrTableCell65.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "sumSum([trxLine].[unitPrice])")});
             this.xrTableCell65.Font = new System.Drawing.Font("Arial", 6.75F, System.Drawing.FontStyle.Bold);
             this.xrTableCell65.Name = "xrTableCell65";
             this.xrTableCell65.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 4, 3, 0, 100F);
@@ -680,7 +678,6 @@ namespace ArgusCR1006.POS.PS101
             xrSummary3.Running = DevExpress.XtraReports.UI.SummaryRunning.Report;
             this.xrTableCell65.Summary = xrSummary3;
             this.xrTableCell65.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
-            this.xrTableCell65.TextFormatString = "{0:n2}";
             this.xrTableCell65.Weight = 0.89604786960719007D;
             this.xrTableCell65.WordWrap = false;
             // 
@@ -957,7 +954,7 @@ namespace ArgusCR1006.POS.PS101
             this.PageHeader,
             this.ReportFooter});
             this.Font = new System.Drawing.Font("Arial", 9.75F);
-            this.Margins = new System.Drawing.Printing.Margins(0, 277, 0, 0);
+            this.Margins = new System.Drawing.Printing.Margins(0, 276, 0, 0);
             this.PageHeight = 1169;
             this.PageWidth = 827;
             this.PaperKind = System.Drawing.Printing.PaperKind.A4;

@@ -69,7 +69,7 @@ namespace ArgusCR1006.POS.PS101
             // 
             this.Detail.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
             this.xrTable1});
-            this.Detail.HeightF = 19.16666F;
+            this.Detail.HeightF = 19.17F;
             this.Detail.Name = "Detail";
             // 
             // xrTable1
@@ -79,7 +79,7 @@ namespace ArgusCR1006.POS.PS101
             this.xrTable1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable1.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow2});
-            this.xrTable1.SizeF = new System.Drawing.SizeF(549.0001F, 19.16666F);
+            this.xrTable1.SizeF = new System.Drawing.SizeF(549.96F, 19.17F);
             // 
             // xrTableRow2
             // 
@@ -99,6 +99,8 @@ namespace ArgusCR1006.POS.PS101
             this.xrTableCell8.BackColor = System.Drawing.Color.White;
             this.xrTableCell8.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.xrTableCell8.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[receiptRef]")});
             this.xrTableCell8.Font = new System.Drawing.Font("Arial", 8.25F);
             this.xrTableCell8.Multiline = true;
             this.xrTableCell8.Name = "xrTableCell8";
@@ -240,7 +242,7 @@ namespace ArgusCR1006.POS.PS101
             this.xrTable8.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable8.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow8});
-            this.xrTable8.SizeF = new System.Drawing.SizeF(549F, 25F);
+            this.xrTable8.SizeF = new System.Drawing.SizeF(549.96F, 25F);
             // 
             // xrTableRow8
             // 
@@ -395,9 +397,8 @@ namespace ArgusCR1006.POS.PS101
             this.BottomMargin,
             this.Detail,
             this.PageHeader});
-            this.DrawGrid = false;
             this.Font = new System.Drawing.Font("Arial", 9.75F);
-            this.Margins = new System.Drawing.Printing.Margins(0, 278, 0, 0);
+            this.Margins = new System.Drawing.Printing.Margins(0, 271, 0, 0);
             this.PageHeight = 1169;
             this.PageWidth = 827;
             this.PaperKind = System.Drawing.Printing.PaperKind.A4;

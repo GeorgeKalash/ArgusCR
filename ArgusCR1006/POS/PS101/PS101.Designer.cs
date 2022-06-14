@@ -32,11 +32,11 @@ namespace ArgusCR1006.POS.PS101
         /// </summary>
         private void InitializeComponent()
         {
-            this.SubBand1 = new DevExpress.XtraReports.UI.SubBand();
+            this.InvoiceItemSubBand = new DevExpress.XtraReports.UI.SubBand();
             this.InvoiceItemsSubReports2 = new DevExpress.XtraReports.UI.XRSubreport();
             this.InvoiceItemsSubReports = new DevExpress.XtraReports.UI.XRSubreport();
             this.Detail = new DevExpress.XtraReports.UI.DetailBand();
-            this.SubBand2 = new DevExpress.XtraReports.UI.SubBand();
+            this.InvoiceReceiptSubBand = new DevExpress.XtraReports.UI.SubBand();
             this.InvoiceReceiptSubReports2 = new DevExpress.XtraReports.UI.XRSubreport();
             this.InvoiceReceiptSubReports = new DevExpress.XtraReports.UI.XRSubreport();
             this.TopMargin = new DevExpress.XtraReports.UI.TopMarginBand();
@@ -198,15 +198,15 @@ namespace ArgusCR1006.POS.PS101
             ((System.ComponentModel.ISupportInitialize)(this.xrTable9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             // 
-            // SubBand1
+            // InvoiceItemSubBand
             // 
-            this.SubBand1.BorderDashStyle = DevExpress.XtraPrinting.BorderDashStyle.DashDotDot;
-            this.SubBand1.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+            this.InvoiceItemSubBand.BorderDashStyle = DevExpress.XtraPrinting.BorderDashStyle.DashDotDot;
+            this.InvoiceItemSubBand.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
             this.InvoiceItemsSubReports2,
             this.InvoiceItemsSubReports});
-            this.SubBand1.HeightF = 23F;
-            this.SubBand1.KeepTogether = true;
-            this.SubBand1.Name = "SubBand1";
+            this.InvoiceItemSubBand.HeightF = 23F;
+            this.InvoiceItemSubBand.KeepTogether = true;
+            this.InvoiceItemSubBand.Name = "InvoiceItemSubBand";
             // 
             // InvoiceItemsSubReports2
             // 
@@ -224,20 +224,20 @@ namespace ArgusCR1006.POS.PS101
             // 
             // Detail
             // 
-            this.Detail.HeightF = 0F;
+            this.Detail.HeightF = 22.20825F;
             this.Detail.Name = "Detail";
             this.Detail.SubBands.AddRange(new DevExpress.XtraReports.UI.SubBand[] {
-            this.SubBand1,
-            this.SubBand2});
+            this.InvoiceItemSubBand,
+            this.InvoiceReceiptSubBand});
             // 
-            // SubBand2
+            // InvoiceReceiptSubBand
             // 
-            this.SubBand2.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+            this.InvoiceReceiptSubBand.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
             this.InvoiceReceiptSubReports2,
             this.InvoiceReceiptSubReports});
-            this.SubBand2.HeightF = 23F;
-            this.SubBand2.KeepTogether = true;
-            this.SubBand2.Name = "SubBand2";
+            this.InvoiceReceiptSubBand.HeightF = 23F;
+            this.InvoiceReceiptSubBand.KeepTogether = true;
+            this.InvoiceReceiptSubBand.Name = "InvoiceReceiptSubBand";
             // 
             // InvoiceReceiptSubReports2
             // 
@@ -260,7 +260,7 @@ namespace ArgusCR1006.POS.PS101
             // 
             // BottomMargin
             // 
-            this.BottomMargin.HeightF = 0F;
+            this.BottomMargin.HeightF = 10F;
             this.BottomMargin.Name = "BottomMargin";
             // 
             // ReportHeader
@@ -2276,6 +2276,7 @@ namespace ArgusCR1006.POS.PS101
             this.total2_data.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.total2_data.Multiline = true;
             this.total2_data.Name = "total2_data";
             this.total2_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 4, 4, 0, 100F);
             this.total2_data.StylePriority.UseBackColor = false;
@@ -2434,7 +2435,7 @@ namespace ArgusCR1006.POS.PS101
             this.ReportFooter});
             this.Font = new System.Drawing.Font("Arial", 9.75F);
             this.Landscape = true;
-            this.Margins = new System.Drawing.Printing.Margins(0, 0, 86, 0);
+            this.Margins = new System.Drawing.Printing.Margins(0, 0, 86, 10);
             this.PageHeight = 827;
             this.PageWidth = 1169;
             this.PaperKind = System.Drawing.Printing.PaperKind.A4;
@@ -2525,7 +2526,7 @@ namespace ArgusCR1006.POS.PS101
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell94;
         private DevExpress.XtraReports.UI.XRLabel printSignature_lbl;
         private DevExpress.XtraReports.UI.XRPageInfo pagesNumber_lbl;
-        private DevExpress.XtraReports.UI.SubBand SubBand2;
+        private DevExpress.XtraReports.UI.SubBand InvoiceReceiptSubBand;
         private DevExpress.XtraReports.UI.ReportFooterBand ReportFooter;
         private DevExpress.XtraReports.UI.XRLabel clientSignature_lbl;
         private DevExpress.XtraReports.UI.XRLabel spSignature_lbl;
@@ -2536,7 +2537,7 @@ namespace ArgusCR1006.POS.PS101
         private DevExpress.XtraReports.UI.XRSubreport InvoiceItemsSubReports;
         private DevExpress.XtraReports.UI.XRSubreport InvoiceReceiptSubReports;
         private DevExpress.XtraReports.UI.DetailBand Detail;
-        private DevExpress.XtraReports.UI.SubBand SubBand1;
+        private DevExpress.XtraReports.UI.SubBand InvoiceItemSubBand;
         private DevExpress.XtraReports.UI.XRTable xrTable5;
         private DevExpress.XtraReports.UI.XRTableRow xrTableRow5;
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell2;
