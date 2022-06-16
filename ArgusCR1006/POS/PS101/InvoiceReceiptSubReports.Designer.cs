@@ -99,8 +99,6 @@ namespace ArgusCR1006.POS.PS101
             this.xrTableCell8.BackColor = System.Drawing.Color.White;
             this.xrTableCell8.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
-            this.xrTableCell8.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[receiptRef]")});
             this.xrTableCell8.Font = new System.Drawing.Font("Arial", 8.25F);
             this.xrTableCell8.Multiline = true;
             this.xrTableCell8.Name = "xrTableCell8";
@@ -138,6 +136,8 @@ namespace ArgusCR1006.POS.PS101
             this.xrTableCell10.BackColor = System.Drawing.Color.White;
             this.xrTableCell10.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.xrTableCell10.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[ccName]")});
             this.xrTableCell10.Font = new System.Drawing.Font("Arial", 8.25F);
             this.xrTableCell10.Multiline = true;
             this.xrTableCell10.Name = "xrTableCell10";
@@ -156,7 +156,7 @@ namespace ArgusCR1006.POS.PS101
             this.xrTableCell11.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell11.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[ccRef]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[receiptRef]")});
             this.xrTableCell11.Font = new System.Drawing.Font("Arial", 8.25F);
             this.xrTableCell11.Multiline = true;
             this.xrTableCell11.Name = "xrTableCell11";

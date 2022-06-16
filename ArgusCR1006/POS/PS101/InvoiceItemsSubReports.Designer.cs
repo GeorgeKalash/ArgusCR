@@ -37,7 +37,6 @@ namespace ArgusCR1006.POS.PS101
             DevExpress.XtraReports.UI.XRSummary xrSummary6 = new DevExpress.XtraReports.UI.XRSummary();
             DevExpress.XtraReports.UI.XRSummary xrSummary7 = new DevExpress.XtraReports.UI.XRSummary();
             DevExpress.XtraReports.UI.XRSummary xrSummary8 = new DevExpress.XtraReports.UI.XRSummary();
-            DevExpress.XtraPrinting.BarCode.QRCodeGenerator qrCodeGenerator1 = new DevExpress.XtraPrinting.BarCode.QRCodeGenerator();
             this.TopMargin = new DevExpress.XtraReports.UI.TopMarginBand();
             this.BottomMargin = new DevExpress.XtraReports.UI.BottomMarginBand();
             this.Detail = new DevExpress.XtraReports.UI.DetailBand();
@@ -84,7 +83,6 @@ namespace ArgusCR1006.POS.PS101
             this.xrTableRow17 = new DevExpress.XtraReports.UI.XRTableRow();
             this.amount_lbl = new DevExpress.XtraReports.UI.XRTableCell();
             this.amountAfterTax_data = new DevExpress.XtraReports.UI.XRTableCell();
-            this.QRCode = new DevExpress.XtraReports.UI.XRBarCode();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable11)).BeginInit();
@@ -555,9 +553,8 @@ namespace ArgusCR1006.POS.PS101
             // 
             this.ReportFooter.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
             this.xrTable11,
-            this.xrTable7,
-            this.QRCode});
-            this.ReportFooter.HeightF = 135.5865F;
+            this.xrTable7});
+            this.ReportFooter.HeightF = 120.2421F;
             this.ReportFooter.Name = "ReportFooter";
             // 
             // xrTable11
@@ -765,7 +762,7 @@ namespace ArgusCR1006.POS.PS101
             this.xrTableRow7,
             this.xrTableRow16,
             this.xrTableRow17});
-            this.xrTable7.SizeF = new System.Drawing.SizeF(296.6875F, 81.78075F);
+            this.xrTable7.SizeF = new System.Drawing.SizeF(296.6875F, 68.23909F);
             this.xrTable7.StylePriority.UsePadding = false;
             // 
             // xrTableRow7
@@ -929,19 +926,6 @@ namespace ArgusCR1006.POS.PS101
             this.amountAfterTax_data.Weight = 0.65900855664682689D;
             this.amountAfterTax_data.WordWrap = false;
             // 
-            // QRCode
-            // 
-            this.QRCode.Alignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
-            this.QRCode.LocationFloat = new DevExpress.Utils.PointFloat(9.999998F, 28.99998F);
-            this.QRCode.Name = "QRCode";
-            this.QRCode.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F);
-            this.QRCode.ShowText = false;
-            this.QRCode.SizeF = new System.Drawing.SizeF(124.4827F, 106.5865F);
-            this.QRCode.StylePriority.UsePadding = false;
-            this.QRCode.StylePriority.UseTextAlignment = false;
-            qrCodeGenerator1.CompactionMode = DevExpress.XtraPrinting.BarCode.QRCodeCompactionMode.Byte;
-            this.QRCode.Symbology = qrCodeGenerator1;
-            // 
             // InvoiceItemsSubReports
             // 
             this.Bands.AddRange(new DevExpress.XtraReports.UI.Band[] {
@@ -1011,7 +995,6 @@ namespace ArgusCR1006.POS.PS101
         private DevExpress.XtraReports.UI.XRTableRow xrTableRow17;
         private DevExpress.XtraReports.UI.XRTableCell amount_lbl;
         private DevExpress.XtraReports.UI.XRTableCell amountAfterTax_data;
-        private DevExpress.XtraReports.UI.XRBarCode QRCode;
         private DevExpress.XtraReports.UI.XRTableCell purity_data;
     }
 }

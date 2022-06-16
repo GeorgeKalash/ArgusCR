@@ -21,7 +21,7 @@ namespace ArgusCR1006.POS.PS101
         {
             DataSource = data;
 
-       // QRCode.Text = new KSAeInvoiceQrCode(webObject.record.companyInfo.name, webObject.record.companyInfo.taxNo, (DateTime)webObject.record.logTime, webObject.record.invoiceView.amount.ToString(), webObject.record.invoiceView.vatAmount.ToString()).ToBase64();
+
             base.OnBeforePrint(e);
         }
 
