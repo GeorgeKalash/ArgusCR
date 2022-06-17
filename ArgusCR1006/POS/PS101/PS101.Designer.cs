@@ -259,7 +259,7 @@ namespace ArgusCR1006.POS.PS101
             // 
             // TopMargin
             // 
-            this.TopMargin.HeightF = 61.79487F;
+            this.TopMargin.HeightF = 113.8782F;
             this.TopMargin.Name = "TopMargin";
             // 
             // BottomMargin
@@ -2467,7 +2467,7 @@ namespace ArgusCR1006.POS.PS101
             this.ReportFooter});
             this.Font = new System.Drawing.Font("Arial", 9.75F);
             this.Landscape = true;
-            this.Margins = new System.Drawing.Printing.Margins(0, 0, 62, 10);
+            this.Margins = new System.Drawing.Printing.Margins(0, 0, 114, 10);
             this.PageHeight = 827;
             this.PageWidth = 1169;
             this.PaperKind = System.Drawing.Printing.PaperKind.A4;
