@@ -84,7 +84,6 @@ namespace ArgusCR112.POS.PS101
             this.companyName_lbl = new DevExpress.XtraReports.UI.XRTableCell();
             this.PageFooter = new DevExpress.XtraReports.UI.PageFooterBand();
             this.pagesNumber_lbl = new DevExpress.XtraReports.UI.XRPageInfo();
-            this.printSignature_lbl = new DevExpress.XtraReports.UI.XRLabel();
             this.ReportFooter = new DevExpress.XtraReports.UI.ReportFooterBand();
             this.clientSignature_lbl = new DevExpress.XtraReports.UI.XRLabel();
             this.spSignature_lbl = new DevExpress.XtraReports.UI.XRLabel();
@@ -755,8 +754,7 @@ namespace ArgusCR112.POS.PS101
             // PageFooter
             // 
             this.PageFooter.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
-            this.pagesNumber_lbl,
-            this.printSignature_lbl});
+            this.pagesNumber_lbl});
             this.PageFooter.HeightF = 29.99999F;
             this.PageFooter.Name = "PageFooter";
             // 
@@ -773,21 +771,6 @@ namespace ArgusCR112.POS.PS101
             this.pagesNumber_lbl.StylePriority.UseTextAlignment = false;
             this.pagesNumber_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
             this.pagesNumber_lbl.TextFormatString = "Page {0} of {1}";
-            // 
-            // printSignature_lbl
-            // 
-            this.printSignature_lbl.BackColor = System.Drawing.Color.White;
-            this.printSignature_lbl.Font = new System.Drawing.Font("Arial", 7F);
-            this.printSignature_lbl.LocationFloat = new DevExpress.Utils.PointFloat(25.62501F, 9.999974F);
-            this.printSignature_lbl.Multiline = true;
-            this.printSignature_lbl.Name = "printSignature_lbl";
-            this.printSignature_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.printSignature_lbl.SizeF = new System.Drawing.SizeF(542.1722F, 20.00002F);
-            this.printSignature_lbl.StylePriority.UseBackColor = false;
-            this.printSignature_lbl.StylePriority.UseFont = false;
-            this.printSignature_lbl.StylePriority.UseTextAlignment = false;
-            this.printSignature_lbl.Text = "printSignature_lbl";
-            this.printSignature_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             // 
             // ReportFooter
             // 
@@ -945,7 +928,6 @@ namespace ArgusCR112.POS.PS101
         private DevExpress.XtraReports.UI.XRTableRow xrTableRow11;
         private DevExpress.XtraReports.UI.XRTableCell date_data;
         private DevExpress.XtraReports.UI.XRTableCell date_lbl;
-        private DevExpress.XtraReports.UI.XRLabel printSignature_lbl;
         private DevExpress.XtraReports.UI.XRPageInfo pagesNumber_lbl;
         private DevExpress.XtraReports.UI.SubBand InvoiceReceiptSubBand;
         private DevExpress.XtraReports.UI.ReportFooterBand ReportFooter;

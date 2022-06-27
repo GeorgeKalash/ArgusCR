@@ -28,9 +28,11 @@ namespace ArgusCR112.Sales.Templates
 
             SharedClasses.JsonProtocol.GetStructure<TrxPrintView> webObject = deserializeGet<TrxPrintView>();
             DataSource = webObject.record.items;
-
+            logo_data.ImageUrl = webObject.record.companyInfo.logoUrl;
             companyName_data.Text = webObject.record.companyInfo.name;
-            taxNo_data.Text = webObject.record.companyInfo.taxNo;
+            companyStreet_data.Text = webObject.record.companyInfo.address?.street1;
+            companyCity_data.Text = webObject.record.companyInfo.address?.city;
+            companyVatNo_data.Text = webObject.record.companyInfo.taxNo;
 
             reference_data.Text = webObject.record.trxHeader.reference;
 
@@ -40,8 +42,6 @@ namespace ArgusCR112.Sales.Templates
             }
 
             plant_data.Text = webObject.record.trxHeader.plantName;
-            licenseNo_data.Text = webObject.record.companyInfo.licenseNo;
-            crNo_data.Text = webObject.record.companyInfo.crNo;
             address_data.Text = webObject.record.companyInfo.address?.street1;
             spName_data.Text = webObject.record.salesPerson?.name;
             cellPhone_data.Text = webObject.record.salesPerson?.cellPhone;
@@ -55,17 +55,6 @@ namespace ArgusCR112.Sales.Templates
                     clientVATNo_data.Text = vatID.idNum;
             }
 
-
-
-            if (webObject.record.bpDefaultIDCategoryId != null)
-            {
-                ArgusDS.BusinessPartners.MasterIDNumberView otherID = webObject.record.masterIDs.FirstOrDefault(x => x.incId == webObject.record.bpDefaultIDCategoryId);
-                if (otherID != null)
-                {
-                    idNo_data.Text = otherID.idNum;
-                    idNo_lbl.Text = otherID.incName;
-                }
-            }
 
             phoneNumber_data.Text = webObject.record.billAddress?.phone;
             cAddress_data.Text = webObject.record.billAddress?.street1;

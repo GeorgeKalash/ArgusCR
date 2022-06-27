@@ -61,7 +61,6 @@ namespace ArgusCR112.POS.PS101
             ((InvoiceItemsSubReports)(InvoiceItemsSubReports.ReportSource)).data = webObject.record.invoiceItems;
             ((InvoiceReceiptSubReports)(InvoiceReceiptSubReports.ReportSource)).data = webObject.record.receipts;
 
-            printSignature_lbl.Text = reportSignature();
             base.OnBeforePrint(e);
         }
 
