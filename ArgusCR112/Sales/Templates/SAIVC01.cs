@@ -70,7 +70,6 @@ namespace ArgusCR112.Sales.Templates
             amount_data.Text = webObject.record.trxHeader.amount.ToString("N2");
             amountInWords_data.Text = SharedClasses.NumberToWords.multiLingualNumberInText((decimal)webObject.record.trxHeader.amount, 2, 2);
 
-            deliveryOrders_data.Text = webObject.record.deliveryOrders;
             description_data.Text = webObject.record.trxHeader.description;
 
             clientName2_data.Text = webObject.record.trxHeader.clientName;
