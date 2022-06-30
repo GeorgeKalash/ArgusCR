@@ -81,7 +81,6 @@ namespace ArgusCR112.POS.PS101
             this.xrTable1 = new DevExpress.XtraReports.UI.XRTable();
             this.xrTableRow1 = new DevExpress.XtraReports.UI.XRTableRow();
             this.companyName_data = new DevExpress.XtraReports.UI.XRTableCell();
-            this.companyName_lbl = new DevExpress.XtraReports.UI.XRTableCell();
             this.PageFooter = new DevExpress.XtraReports.UI.PageFooterBand();
             this.pagesNumber_lbl = new DevExpress.XtraReports.UI.XRPageInfo();
             this.ReportFooter = new DevExpress.XtraReports.UI.ReportFooterBand();
@@ -166,12 +165,12 @@ namespace ArgusCR112.POS.PS101
             // 
             // xrTable6
             // 
-            this.xrTable6.LocationFloat = new DevExpress.Utils.PointFloat(482.4334F, 63.12501F);
+            this.xrTable6.LocationFloat = new DevExpress.Utils.PointFloat(482.4335F, 80.54482F);
             this.xrTable6.Name = "xrTable6";
             this.xrTable6.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable6.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow6});
-            this.xrTable6.SizeF = new System.Drawing.SizeF(321.2275F, 25F);
+            this.xrTable6.SizeF = new System.Drawing.SizeF(321.2275F, 38.54169F);
             // 
             // xrTableRow6
             // 
@@ -216,12 +215,12 @@ namespace ArgusCR112.POS.PS101
             // 
             // xrTable5
             // 
-            this.xrTable5.LocationFloat = new DevExpress.Utils.PointFloat(482.4335F, 38.12501F);
+            this.xrTable5.LocationFloat = new DevExpress.Utils.PointFloat(482.4335F, 48.25315F);
             this.xrTable5.Name = "xrTable5";
             this.xrTable5.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable5.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow5});
-            this.xrTable5.SizeF = new System.Drawing.SizeF(321.2275F, 25F);
+            this.xrTable5.SizeF = new System.Drawing.SizeF(321.2275F, 32.29167F);
             // 
             // xrTableRow5
             // 
@@ -715,26 +714,26 @@ namespace ArgusCR112.POS.PS101
             // 
             // xrTable1
             // 
-            this.xrTable1.LocationFloat = new DevExpress.Utils.PointFloat(482.4335F, 13.12501F);
+            this.xrTable1.LocationFloat = new DevExpress.Utils.PointFloat(482.4335F, 12.5F);
             this.xrTable1.Name = "xrTable1";
             this.xrTable1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable1.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow1});
-            this.xrTable1.SizeF = new System.Drawing.SizeF(321.2275F, 25F);
+            this.xrTable1.SizeF = new System.Drawing.SizeF(321.2275F, 35.75315F);
             // 
             // xrTableRow1
             // 
             this.xrTableRow1.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
-            this.companyName_data,
-            this.companyName_lbl});
+            this.companyName_data});
             this.xrTableRow1.Name = "xrTableRow1";
             this.xrTableRow1.Weight = 1D;
             // 
             // companyName_data
             // 
             this.companyName_data.BackColor = System.Drawing.Color.White;
-            this.companyName_data.Borders = ((DevExpress.XtraPrinting.BorderSide)((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top)));
-            this.companyName_data.Font = new System.Drawing.Font("Arial", 11F, System.Drawing.FontStyle.Bold);
+            this.companyName_data.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+            | DevExpress.XtraPrinting.BorderSide.Right)));
+            this.companyName_data.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold);
             this.companyName_data.Multiline = true;
             this.companyName_data.Name = "companyName_data";
             this.companyName_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 4, 4, 0, 100F);
@@ -745,23 +744,6 @@ namespace ArgusCR112.POS.PS101
             this.companyName_data.StylePriority.UseTextAlignment = false;
             this.companyName_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
             this.companyName_data.Weight = 1.5219041791973686D;
-            // 
-            // companyName_lbl
-            // 
-            this.companyName_lbl.BackColor = System.Drawing.Color.White;
-            this.companyName_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)((DevExpress.XtraPrinting.BorderSide.Top | DevExpress.XtraPrinting.BorderSide.Right)));
-            this.companyName_lbl.Font = new System.Drawing.Font("Arial", 11F, System.Drawing.FontStyle.Bold);
-            this.companyName_lbl.Multiline = true;
-            this.companyName_lbl.Name = "companyName_lbl";
-            this.companyName_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 4, 4, 0, 100F);
-            this.companyName_lbl.StylePriority.UseBackColor = false;
-            this.companyName_lbl.StylePriority.UseBorders = false;
-            this.companyName_lbl.StylePriority.UseFont = false;
-            this.companyName_lbl.StylePriority.UsePadding = false;
-            this.companyName_lbl.StylePriority.UseTextAlignment = false;
-            this.companyName_lbl.Text = ":إسم الشركة";
-            this.companyName_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
-            this.companyName_lbl.Weight = 0.439666962423075D;
             // 
             // PageFooter
             // 
@@ -927,7 +909,6 @@ namespace ArgusCR112.POS.PS101
         private DevExpress.XtraReports.UI.XRTable xrTable1;
         private DevExpress.XtraReports.UI.XRTableRow xrTableRow1;
         private DevExpress.XtraReports.UI.XRTableCell companyName_data;
-        private DevExpress.XtraReports.UI.XRTableCell companyName_lbl;
         private DevExpress.XtraReports.UI.XRTableCell address_data;
         private DevExpress.XtraReports.UI.XRTableCell address_lbl;
         private DevExpress.XtraReports.UI.XRTableCell phoneNumber_data;
