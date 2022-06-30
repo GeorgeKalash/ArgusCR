@@ -28,9 +28,14 @@ namespace Reports
             package = _package;
         }
 
-        protected virtual string dictionaryStore() 
-        { 
-            return "custom\\R1008\\"; 
+        protected virtual string dictionaryStore() { return null; }
+
+
+        protected virtual string reportName() { return null; }
+
+        protected string reportSignature()
+        {
+            return "[" + reportName() + "]" + " " + sessionInfo.userName + " " + DateTime.Now.ToString();
         }
 
         protected virtual void labelsText() { }
@@ -39,7 +44,7 @@ namespace Reports
         {
 
         }
-        public void setSessionInfo(Dictionary<string, string> _reportHeaders)
+        public virtual void setSessionInfo(Dictionary<string, string> _reportHeaders)
         {
             sessionInfo = new ReportHeaders()
             {
@@ -54,8 +59,6 @@ namespace Reports
                 RightToLeft = DevExpress.XtraReports.UI.RightToLeft.Yes;
                 RightToLeftLayout = DevExpress.XtraReports.UI.RightToLeftLayout.Yes;
             }
-
-            initSubReports();
         }
 
         public void setSessionInfo(ReportHeaders _sessionInfo)
@@ -147,7 +150,7 @@ namespace Reports
             if (status.statusId < 0)
             {
                 SharedClasses.JsonProtocol.ErrorStructure errorObj = JsonConvert.DeserializeObject<SharedClasses.JsonProtocol.ErrorStructure>(jsonData);
-                throw new Exception(errorObj.statusId.ToString() + ": " + errorObj.error);
+                throw new Exception("API Error: "+errorObj.statusId.ToString() + ": " + errorObj.error);
             }
             try
             {

@@ -98,6 +98,24 @@
     <Compile Include="Inventory\Templates\IV103.Designer.cs">
       <DependentUpon>IV103.cs</DependentUpon>
     </Compile>
+    <Compile Include="POS\PS101\InvoiceItemsSubReports.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="POS\PS101\InvoiceItemsSubReports.Designer.cs">
+      <DependentUpon>InvoiceItemsSubReports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="POS\PS101\InvoiceReceiptSubReports.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="POS\PS101\InvoiceReceiptSubReports.Designer.cs">
+      <DependentUpon>InvoiceReceiptSubReports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="POS\PS101\PS101.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="POS\PS101\PS101.Designer.cs">
+      <DependentUpon>PS101.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Sales\Templates\SATRX01.cs">
       <SubType>Component</SubType>
@@ -128,6 +146,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Inventory\Templates\IV103.resx">
       <DependentUpon>IV103.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="POS\PS101\InvoiceItemsSubReports.resx">
+      <DependentUpon>InvoiceItemsSubReports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="POS\PS101\InvoiceReceiptSubReports.resx">
+      <DependentUpon>InvoiceReceiptSubReports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="POS\PS101\PS101.resx">
+      <DependentUpon>PS101.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Sales\Templates\SATRX01.resx">
