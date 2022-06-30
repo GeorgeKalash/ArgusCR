@@ -575,7 +575,7 @@ namespace ArgusCR112.POS.PS101
             xrSummary2.Running = DevExpress.XtraReports.UI.SummaryRunning.Report;
             this.xrTableCell66.Summary = xrSummary2;
             this.xrTableCell66.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
-            this.xrTableCell66.TextFormatString = "{0:n0}";
+            this.xrTableCell66.TextFormatString = "{0:n2}";
             this.xrTableCell66.Weight = 1.2278403451043392D;
             this.xrTableCell66.WordWrap = false;
             // 
@@ -627,7 +627,7 @@ namespace ArgusCR112.POS.PS101
             xrSummary4.Running = DevExpress.XtraReports.UI.SummaryRunning.Report;
             this.xrTableCell68.Summary = xrSummary4;
             this.xrTableCell68.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
-            this.xrTableCell68.TextFormatString = "{0:n0}";
+            this.xrTableCell68.TextFormatString = "{0:n2}";
             this.xrTableCell68.Weight = 1.3841235577377695D;
             this.xrTableCell68.WordWrap = false;
             // 
@@ -692,7 +692,7 @@ namespace ArgusCR112.POS.PS101
             xrSummary5.Running = DevExpress.XtraReports.UI.SummaryRunning.Report;
             this.amountBeforeTax_data.Summary = xrSummary5;
             this.amountBeforeTax_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
-            this.amountBeforeTax_data.TextFormatString = "{0:n0}";
+            this.amountBeforeTax_data.TextFormatString = "{0:n2}";
             this.amountBeforeTax_data.Weight = 0.68956404816287264D;
             this.amountBeforeTax_data.WordWrap = false;
             // 
@@ -800,7 +800,7 @@ namespace ArgusCR112.POS.PS101
             xrSummary7.Running = DevExpress.XtraReports.UI.SummaryRunning.Report;
             this.amountAfterTax_data.Summary = xrSummary7;
             this.amountAfterTax_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
-            this.amountAfterTax_data.TextFormatString = "{0:n0}";
+            this.amountAfterTax_data.TextFormatString = "{0:n2}";
             this.amountAfterTax_data.Weight = 0.68956404816287264D;
             this.amountAfterTax_data.WordWrap = false;
             // 
