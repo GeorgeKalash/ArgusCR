@@ -26,7 +26,7 @@ namespace ArgusCR1016.Manufacturing.Templates
 
 
             date_data.Text = webObject.record.date.ToString(sessionInfo.dateFormat);
-            orderedby_data.Text = webObject.record.orderedby;
+            orderedby_data.Text = webObject.record.spName;
 
             if (webObject.record.deliveryDate != null)
             {
