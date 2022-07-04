@@ -9,7 +9,7 @@ using ArgusDS.Inventory;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace ArgusCR1018.Sales.Templates
+namespace ArgusCR1019.Sales.Templates
 {
     public partial class SAIVC01 : Reports.BaseReport
     {
@@ -99,7 +99,7 @@ namespace ArgusCR1018.Sales.Templates
         }
         protected override string dictionaryStore()
         {
-            return "Custom\\R1018\\SA103";
+            return "Custom\\R1019\\SA103";
         }
 
     }

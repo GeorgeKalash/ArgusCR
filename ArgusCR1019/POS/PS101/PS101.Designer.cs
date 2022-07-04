@@ -2,7 +2,7 @@
 using System;
 using System.Drawing.Printing;
 
-namespace ArgusCR1018.POS.PS101
+namespace ArgusCR1019.POS.PS101
 {
     partial class PS101
     {
@@ -112,7 +112,7 @@ namespace ArgusCR1018.POS.PS101
             // 
             this.InvoiceItemsSubReports.LocationFloat = new DevExpress.Utils.PointFloat(25.62501F, 0F);
             this.InvoiceItemsSubReports.Name = "InvoiceItemsSubReports";
-            this.InvoiceItemsSubReports.ReportSource = new ArgusCR1018.POS.PS101.InvoiceItemsSubReports();
+            this.InvoiceItemsSubReports.ReportSource = new ArgusCR1019.POS.PS101.InvoiceItemsSubReports();
             this.InvoiceItemsSubReports.SizeF = new System.Drawing.SizeF(776.0358F, 23F);
             // 
             // Detail
@@ -135,7 +135,7 @@ namespace ArgusCR1018.POS.PS101
             // 
             this.InvoiceReceiptSubReports.LocationFloat = new DevExpress.Utils.PointFloat(25.62501F, 0F);
             this.InvoiceReceiptSubReports.Name = "InvoiceReceiptSubReports";
-            this.InvoiceReceiptSubReports.ReportSource = new ArgusCR1018.POS.PS101.InvoiceReceiptSubReports();
+            this.InvoiceReceiptSubReports.ReportSource = new ArgusCR1019.POS.PS101.InvoiceReceiptSubReports();
             this.InvoiceReceiptSubReports.SizeF = new System.Drawing.SizeF(776.0359F, 23F);
             // 
             // TopMargin

@@ -6,7 +6,7 @@ using System.ComponentModel;
 using System.Drawing;
 using System.Drawing.Printing;
 
-namespace ArgusCR112.POS.PS101
+namespace ArgusCR1018.POS.PS101
 {
     public partial class InvoiceReceiptSubReports : Reports.BaseReport
     {
@@ -37,7 +37,7 @@ namespace ArgusCR112.POS.PS101
 
         protected override string dictionaryStore()
         {
-            return "Custom\\R112\\PS101.IR";
+            return "Custom\\R1018\\PS101.IR";
         }
     }
 }

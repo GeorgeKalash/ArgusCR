@@ -1,5 +1,5 @@
 ﻿
-namespace ArgusCR1018.Sales.Templates
+namespace ArgusCR1019.Sales.Templates
 {
     partial class SAIVC01
     {

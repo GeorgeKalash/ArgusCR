@@ -1,5 +1,5 @@
 ﻿
-namespace ArgusCR1018.POS.PS101
+namespace ArgusCR1019.POS.PS101
 {
     partial class InvoiceItemsSubReports
     {

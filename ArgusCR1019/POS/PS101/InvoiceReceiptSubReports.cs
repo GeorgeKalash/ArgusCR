@@ -6,40 +6,38 @@ using System.ComponentModel;
 using System.Drawing;
 using System.Drawing.Printing;
 
-namespace ArgusCR1018.POS.PS101
+namespace ArgusCR1019.POS.PS101
 {
-    public partial class InvoiceItemsSubReports : Reports.BaseReport
+    public partial class InvoiceReceiptSubReports : Reports.BaseReport
     {
-        public List<ArgusDS.PointOfSale.Reports.PS101_item> data;
+        public List<ArgusDS.PointOfSale.InvoiceReceiptView> data;
 
-        public InvoiceItemsSubReports()
+        public InvoiceReceiptSubReports()
         {
             InitializeComponent();
         }
 
         protected override void OnBeforePrint(PrintEventArgs e)
         {
+            RightToLeft = DevExpress.XtraReports.UI.RightToLeft.No;
+            RightToLeftLayout = DevExpress.XtraReports.UI.RightToLeftLayout.No;
+
             DataSource = data;
-
-
             base.OnBeforePrint(e);
         }
 
-        private void InvoiceItemsSubReports_DataSourceRowChanged(object sender, DataSourceRowEventArgs e)
+        private void InvoiceReceiptSubReports_DataSourceRowChanged(object sender, DataSourceRowEventArgs e)
         {
 
         }
 
         protected override void labelsText()
         {
-
         }
 
         protected override string dictionaryStore()
         {
-            return "Custom\\R1018\\PS101.II";
+            return "Custom\\R1019\\PS101.IR";
         }
     }
 }
-
-
