@@ -31,7 +31,7 @@ namespace ArgusCR1008.POS.PS101
         protected override void OnBeforePrint(PrintEventArgs e)
         {
             SharedClasses.JsonProtocol.GetStructure<ArgusDS.PointOfSale.Reports.PS101> webObject = deserializeGet<ArgusDS.PointOfSale.Reports.PS101>();
-          //  logo_data.ImageUrl = webObject.record.companyInfo.logoUrl;
+           logo_data.ImageUrl = webObject.record.companyInfo.logoUrl;
 
           //  companyName_data.Text = webObject.record.companyInfo.name;
           //  companyStreet_data.Text = webObject.record.companyInfo.address?.street1;
