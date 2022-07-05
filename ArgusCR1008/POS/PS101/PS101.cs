@@ -31,13 +31,8 @@ namespace ArgusCR1008.POS.PS101
         protected override void OnBeforePrint(PrintEventArgs e)
         {
             SharedClasses.JsonProtocol.GetStructure<ArgusDS.PointOfSale.Reports.PS101> webObject = deserializeGet<ArgusDS.PointOfSale.Reports.PS101>();
-           logo_data.ImageUrl = webObject.record.companyInfo.logoUrl;
 
-          //  companyName_data.Text = webObject.record.companyInfo.name;
-          //  companyStreet_data.Text = webObject.record.companyInfo.address?.street1;
-           // companyCity_data.Text = webObject.record.companyInfo.address?.city;
-           // companyVatNo_data.Text = webObject.record.companyInfo.taxNo;
-
+            logo_data.ImageUrl = webObject.record.companyInfo.logoUrl;
             reference_data.Text = webObject.record.invoiceView.reference;
             date_data.Text = webObject.record.invoiceView.date.ToString(sessionInfo.dateFormat);
             spName_data.Text = webObject.record.invoiceView.spName;
@@ -48,11 +43,8 @@ namespace ArgusCR1008.POS.PS101
                 clientName_data.Text = webObject.record.address.name;
                 phoneNumber_data.Text = webObject.record.address.phone;
                 address_data.Text = webObject.record.address.street1;
-            }
-
-         //   total_data.Text = SharedClasses.NumberToWords.multiLingualNumberInText((decimal)webObject.record.invoiceView.amount, 2, 2);
-           
-            
+            }           
+          
             ((InvoiceItemsSubReports)(InvoiceItemsSubReports.ReportSource)).data = webObject.record.invoiceItems;
             ((InvoiceReceiptSubReports)(InvoiceReceiptSubReports.ReportSource)).data = webObject.record.receipts;
 
