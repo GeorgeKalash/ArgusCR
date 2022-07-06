@@ -85,6 +85,7 @@ namespace ArgusCR1016.Manufacturing.Templates
             this.hours_data = new DevExpress.XtraReports.UI.XRTableCell();
             this.resinWeight_lbl = new DevExpress.XtraReports.UI.XRTableCell();
             this.resinWeight_data = new DevExpress.XtraReports.UI.XRTableCell();
+            this.image_data = new DevExpress.XtraReports.UI.XRPictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable4)).BeginInit();
@@ -255,6 +256,8 @@ namespace ArgusCR1016.Manufacturing.Templates
             this.xrTableCell2.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.xrTableCell2.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+            this.image_data});
             this.xrTableCell2.Font = new System.Drawing.Font("Arial", 9F);
             this.xrTableCell2.Multiline = true;
             this.xrTableCell2.Name = "xrTableCell2";
@@ -835,6 +838,13 @@ namespace ArgusCR1016.Manufacturing.Templates
             this.resinWeight_data.StylePriority.UsePadding = false;
             this.resinWeight_data.Weight = 1.0941383136805476D;
             // 
+            // image_data
+            // 
+            this.image_data.LocationFloat = new DevExpress.Utils.PointFloat(200F, 2F);
+            this.image_data.Name = "image_data";
+            this.image_data.SizeF = new System.Drawing.SizeF(175F, 131F);
+            this.image_data.Sizing = DevExpress.XtraPrinting.ImageSizeMode.ZoomImage;
+            // 
             // MF103
             // 
             this.Bands.AddRange(new DevExpress.XtraReports.UI.Band[] {
@@ -918,5 +928,6 @@ namespace ArgusCR1016.Manufacturing.Templates
         private DevExpress.XtraReports.UI.XRTableRow xrTableRow8;
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell2;
         private DevExpress.XtraReports.UI.XRBarCode BarCode;
+        private DevExpress.XtraReports.UI.XRPictureBox image_data;
     }
 }
