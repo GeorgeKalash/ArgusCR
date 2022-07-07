@@ -100,6 +100,12 @@
     <Compile Include="BaseReport.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Inventory\Reports\IV01.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Inventory\Reports\IV01.Designer.cs">
+      <DependentUpon>IV01.cs</DependentUpon>
+    </Compile>
     <Compile Include="Manufacturing\Templates\MF103.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -162,6 +168,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Inventory\Reports\IV01.resx">
+      <DependentUpon>IV01.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Manufacturing\Templates\MF103.resx">
       <DependentUpon>MF103.cs</DependentUpon>
     </EmbeddedResource>
@@ -198,5 +207,6 @@
   <ItemGroup>
     <Content Include="Resources\logo.jpg" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
