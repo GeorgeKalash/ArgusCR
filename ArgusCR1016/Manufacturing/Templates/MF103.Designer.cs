@@ -44,6 +44,7 @@ namespace ArgusCR1016.Manufacturing.Templates
             this.xrTable7 = new DevExpress.XtraReports.UI.XRTable();
             this.xrTableRow8 = new DevExpress.XtraReports.UI.XRTableRow();
             this.xrTableCell2 = new DevExpress.XtraReports.UI.XRTableCell();
+            this.image_data = new DevExpress.XtraReports.UI.XRPictureBox();
             this.xrTable4 = new DevExpress.XtraReports.UI.XRTable();
             this.xrTableRow5 = new DevExpress.XtraReports.UI.XRTableRow();
             this.description_lbl = new DevExpress.XtraReports.UI.XRTableCell();
@@ -85,7 +86,6 @@ namespace ArgusCR1016.Manufacturing.Templates
             this.hours_data = new DevExpress.XtraReports.UI.XRTableCell();
             this.resinWeight_lbl = new DevExpress.XtraReports.UI.XRTableCell();
             this.resinWeight_data = new DevExpress.XtraReports.UI.XRTableCell();
-            this.image_data = new DevExpress.XtraReports.UI.XRPictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable4)).BeginInit();
@@ -267,6 +267,15 @@ namespace ArgusCR1016.Manufacturing.Templates
             this.xrTableCell2.StylePriority.UseFont = false;
             this.xrTableCell2.StylePriority.UsePadding = false;
             this.xrTableCell2.Weight = 1.6474516827161343D;
+            // 
+            // image_data
+            // 
+            this.image_data.Borders = DevExpress.XtraPrinting.BorderSide.None;
+            this.image_data.LocationFloat = new DevExpress.Utils.PointFloat(200F, 2F);
+            this.image_data.Name = "image_data";
+            this.image_data.SizeF = new System.Drawing.SizeF(175F, 131F);
+            this.image_data.Sizing = DevExpress.XtraPrinting.ImageSizeMode.ZoomImage;
+            this.image_data.StylePriority.UseBorders = false;
             // 
             // xrTable4
             // 
@@ -837,13 +846,6 @@ namespace ArgusCR1016.Manufacturing.Templates
             this.resinWeight_data.StylePriority.UseFont = false;
             this.resinWeight_data.StylePriority.UsePadding = false;
             this.resinWeight_data.Weight = 1.0941383136805476D;
-            // 
-            // image_data
-            // 
-            this.image_data.LocationFloat = new DevExpress.Utils.PointFloat(200F, 2F);
-            this.image_data.Name = "image_data";
-            this.image_data.SizeF = new System.Drawing.SizeF(175F, 131F);
-            this.image_data.Sizing = DevExpress.XtraPrinting.ImageSizeMode.ZoomImage;
             // 
             // MF103
             // 
