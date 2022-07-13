@@ -1,5 +1,5 @@
 ﻿
-namespace ArgusCR1016.Inventory.Reports
+namespace ArgusCR1016.Inventory
 {
     partial class IV01
     {
@@ -32,26 +32,6 @@ namespace ArgusCR1016.Inventory.Reports
             this.TopMargin = new DevExpress.XtraReports.UI.TopMarginBand();
             this.BottomMargin = new DevExpress.XtraReports.UI.BottomMarginBand();
             this.Detail = new DevExpress.XtraReports.UI.DetailBand();
-            this.ReportHeader = new DevExpress.XtraReports.UI.ReportHeaderBand();
-            this.PageHeader = new DevExpress.XtraReports.UI.PageHeaderBand();
-            this.PageFooter = new DevExpress.XtraReports.UI.PageFooterBand();
-            this.printSignature = new DevExpress.XtraReports.UI.XRLabel();
-            this.pagesNumber_lbl = new DevExpress.XtraReports.UI.XRPageInfo();
-            this.title_lbl = new DevExpress.XtraReports.UI.XRLabel();
-            this.xrTable2 = new DevExpress.XtraReports.UI.XRTable();
-            this.xrTableRow2 = new DevExpress.XtraReports.UI.XRTableRow();
-            this.itemRef_lbl = new DevExpress.XtraReports.UI.XRTableCell();
-            this.itemName_lbl = new DevExpress.XtraReports.UI.XRTableCell();
-            this.size_lbl = new DevExpress.XtraReports.UI.XRTableCell();
-            this.form_lbl = new DevExpress.XtraReports.UI.XRTableCell();
-            this.cost_lbl = new DevExpress.XtraReports.UI.XRTableCell();
-            this.qty_lbl = new DevExpress.XtraReports.UI.XRTableCell();
-            this.weight_lbl = new DevExpress.XtraReports.UI.XRTableCell();
-            this.physicalQty_lbl = new DevExpress.XtraReports.UI.XRTableCell();
-            this.physicalWeight_lbl = new DevExpress.XtraReports.UI.XRTableCell();
-            this.diff_lbl = new DevExpress.XtraReports.UI.XRTableCell();
-            this.notes_lbl = new DevExpress.XtraReports.UI.XRTableCell();
-            this.xrLabel1 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrTable1 = new DevExpress.XtraReports.UI.XRTable();
             this.xrTableRow1 = new DevExpress.XtraReports.UI.XRTableRow();
             this.xrTableCell1 = new DevExpress.XtraReports.UI.XRTableCell();
@@ -65,8 +45,28 @@ namespace ArgusCR1016.Inventory.Reports
             this.xrTableCell9 = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTableCell12 = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTableCell13 = new DevExpress.XtraReports.UI.XRTableCell();
-            ((System.ComponentModel.ISupportInitialize)(this.xrTable2)).BeginInit();
+            this.ReportHeader = new DevExpress.XtraReports.UI.ReportHeaderBand();
+            this.title_lbl = new DevExpress.XtraReports.UI.XRLabel();
+            this.PageHeader = new DevExpress.XtraReports.UI.PageHeaderBand();
+            this.physicalInventoryTitle_lbl = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrTable2 = new DevExpress.XtraReports.UI.XRTable();
+            this.xrTableRow2 = new DevExpress.XtraReports.UI.XRTableRow();
+            this.itemRef_lbl = new DevExpress.XtraReports.UI.XRTableCell();
+            this.itemName_lbl = new DevExpress.XtraReports.UI.XRTableCell();
+            this.size_lbl = new DevExpress.XtraReports.UI.XRTableCell();
+            this.form_lbl = new DevExpress.XtraReports.UI.XRTableCell();
+            this.cost_lbl = new DevExpress.XtraReports.UI.XRTableCell();
+            this.qty_lbl = new DevExpress.XtraReports.UI.XRTableCell();
+            this.weight_lbl = new DevExpress.XtraReports.UI.XRTableCell();
+            this.physicalQty_lbl = new DevExpress.XtraReports.UI.XRTableCell();
+            this.physicalWeight_lbl = new DevExpress.XtraReports.UI.XRTableCell();
+            this.diff_lbl = new DevExpress.XtraReports.UI.XRTableCell();
+            this.notes_lbl = new DevExpress.XtraReports.UI.XRTableCell();
+            this.PageFooter = new DevExpress.XtraReports.UI.PageFooterBand();
+            this.pagesNumber_lbl = new DevExpress.XtraReports.UI.XRPageInfo();
+            this.printSignature_lbl = new DevExpress.XtraReports.UI.XRLabel();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.xrTable2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             // 
             // TopMargin
@@ -85,257 +85,6 @@ namespace ArgusCR1016.Inventory.Reports
             this.xrTable1});
             this.Detail.HeightF = 25.00001F;
             this.Detail.Name = "Detail";
-            // 
-            // ReportHeader
-            // 
-            this.ReportHeader.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
-            this.title_lbl});
-            this.ReportHeader.HeightF = 61.24999F;
-            this.ReportHeader.Name = "ReportHeader";
-            // 
-            // PageHeader
-            // 
-            this.PageHeader.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
-            this.xrLabel1,
-            this.xrTable2});
-            this.PageHeader.HeightF = 48.00002F;
-            this.PageHeader.Name = "PageHeader";
-            // 
-            // PageFooter
-            // 
-            this.PageFooter.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
-            this.pagesNumber_lbl,
-            this.printSignature});
-            this.PageFooter.HeightF = 32.99997F;
-            this.PageFooter.Name = "PageFooter";
-            // 
-            // printSignature
-            // 
-            this.printSignature.LocationFloat = new DevExpress.Utils.PointFloat(9.999998F, 9.999974F);
-            this.printSignature.Multiline = true;
-            this.printSignature.Name = "printSignature";
-            this.printSignature.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.printSignature.SizeF = new System.Drawing.SizeF(616.5872F, 23F);
-            this.printSignature.StylePriority.UseTextAlignment = false;
-            this.printSignature.Text = "printSignature";
-            this.printSignature.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
-            // 
-            // pagesNumber_lbl
-            // 
-            this.pagesNumber_lbl.BackColor = System.Drawing.Color.Transparent;
-            this.pagesNumber_lbl.LocationFloat = new DevExpress.Utils.PointFloat(1051.685F, 9.999974F);
-            this.pagesNumber_lbl.Name = "pagesNumber_lbl";
-            this.pagesNumber_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.pagesNumber_lbl.SizeF = new System.Drawing.SizeF(94.81506F, 23F);
-            this.pagesNumber_lbl.StylePriority.UseBackColor = false;
-            this.pagesNumber_lbl.StylePriority.UseTextAlignment = false;
-            this.pagesNumber_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
-            this.pagesNumber_lbl.TextFormatString = "Page {0} of {1}";
-            // 
-            // title_lbl
-            // 
-            this.title_lbl.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.title_lbl.LocationFloat = new DevExpress.Utils.PointFloat(305.2084F, 0F);
-            this.title_lbl.Multiline = true;
-            this.title_lbl.Name = "title_lbl";
-            this.title_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.title_lbl.SizeF = new System.Drawing.SizeF(520.5153F, 39.66667F);
-            this.title_lbl.StylePriority.UseFont = false;
-            this.title_lbl.StylePriority.UseTextAlignment = false;
-            this.title_lbl.Text = "List Of Inventory Items (Loose Stones)";
-            this.title_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
-            // 
-            // xrTable2
-            // 
-            this.xrTable2.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
-            | DevExpress.XtraPrinting.BorderSide.Right)));
-            this.xrTable2.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.xrTable2.LocationFloat = new DevExpress.Utils.PointFloat(9.999998F, 23.00002F);
-            this.xrTable2.Name = "xrTable2";
-            this.xrTable2.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
-            this.xrTable2.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
-            this.xrTableRow2});
-            this.xrTable2.SizeF = new System.Drawing.SizeF(1136.5F, 25.00001F);
-            this.xrTable2.StylePriority.UseBorders = false;
-            this.xrTable2.StylePriority.UseFont = false;
-            this.xrTable2.StylePriority.UseTextAlignment = false;
-            this.xrTable2.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
-            // 
-            // xrTableRow2
-            // 
-            this.xrTableRow2.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
-            this.itemRef_lbl,
-            this.itemName_lbl,
-            this.size_lbl,
-            this.form_lbl,
-            this.cost_lbl,
-            this.qty_lbl,
-            this.weight_lbl,
-            this.physicalQty_lbl,
-            this.physicalWeight_lbl,
-            this.diff_lbl,
-            this.notes_lbl});
-            this.xrTableRow2.Name = "xrTableRow2";
-            this.xrTableRow2.Weight = 1D;
-            // 
-            // itemRef_lbl
-            // 
-            this.itemRef_lbl.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.itemRef_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
-            | DevExpress.XtraPrinting.BorderSide.Right) 
-            | DevExpress.XtraPrinting.BorderSide.Bottom)));
-            this.itemRef_lbl.Multiline = true;
-            this.itemRef_lbl.Name = "itemRef_lbl";
-            this.itemRef_lbl.StylePriority.UseBackColor = false;
-            this.itemRef_lbl.StylePriority.UseBorders = false;
-            this.itemRef_lbl.Text = "Item Ref.";
-            this.itemRef_lbl.Weight = 0.97634066565515121D;
-            // 
-            // itemName_lbl
-            // 
-            this.itemName_lbl.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.itemName_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
-            | DevExpress.XtraPrinting.BorderSide.Right) 
-            | DevExpress.XtraPrinting.BorderSide.Bottom)));
-            this.itemName_lbl.Multiline = true;
-            this.itemName_lbl.Name = "itemName_lbl";
-            this.itemName_lbl.StylePriority.UseBackColor = false;
-            this.itemName_lbl.StylePriority.UseBorders = false;
-            this.itemName_lbl.Text = "Item Name";
-            this.itemName_lbl.Weight = 1.6272344252704138D;
-            // 
-            // size_lbl
-            // 
-            this.size_lbl.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.size_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
-            | DevExpress.XtraPrinting.BorderSide.Right) 
-            | DevExpress.XtraPrinting.BorderSide.Bottom)));
-            this.size_lbl.Multiline = true;
-            this.size_lbl.Name = "size_lbl";
-            this.size_lbl.StylePriority.UseBackColor = false;
-            this.size_lbl.StylePriority.UseBorders = false;
-            this.size_lbl.Text = "Size";
-            this.size_lbl.Weight = 0.61473301831090232D;
-            // 
-            // form_lbl
-            // 
-            this.form_lbl.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.form_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
-            | DevExpress.XtraPrinting.BorderSide.Right) 
-            | DevExpress.XtraPrinting.BorderSide.Bottom)));
-            this.form_lbl.Multiline = true;
-            this.form_lbl.Name = "form_lbl";
-            this.form_lbl.StylePriority.UseBackColor = false;
-            this.form_lbl.StylePriority.UseBorders = false;
-            this.form_lbl.Text = "Form";
-            this.form_lbl.Weight = 0.61473301393100921D;
-            // 
-            // cost_lbl
-            // 
-            this.cost_lbl.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.cost_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
-            | DevExpress.XtraPrinting.BorderSide.Right) 
-            | DevExpress.XtraPrinting.BorderSide.Bottom)));
-            this.cost_lbl.Multiline = true;
-            this.cost_lbl.Name = "cost_lbl";
-            this.cost_lbl.StylePriority.UseBackColor = false;
-            this.cost_lbl.StylePriority.UseBorders = false;
-            this.cost_lbl.Text = "Cost/ct";
-            this.cost_lbl.Weight = 0.61473301161237082D;
-            // 
-            // qty_lbl
-            // 
-            this.qty_lbl.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.qty_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
-            | DevExpress.XtraPrinting.BorderSide.Right) 
-            | DevExpress.XtraPrinting.BorderSide.Bottom)));
-            this.qty_lbl.Multiline = true;
-            this.qty_lbl.Name = "qty_lbl";
-            this.qty_lbl.StylePriority.UseBackColor = false;
-            this.qty_lbl.StylePriority.UseBorders = false;
-            this.qty_lbl.Text = "Qty";
-            this.qty_lbl.Weight = 0.43392919720415812D;
-            // 
-            // weight_lbl
-            // 
-            this.weight_lbl.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.weight_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
-            | DevExpress.XtraPrinting.BorderSide.Right) 
-            | DevExpress.XtraPrinting.BorderSide.Bottom)));
-            this.weight_lbl.Multiline = true;
-            this.weight_lbl.Name = "weight_lbl";
-            this.weight_lbl.StylePriority.UseBackColor = false;
-            this.weight_lbl.StylePriority.UseBorders = false;
-            this.weight_lbl.Text = "Weight";
-            this.weight_lbl.Weight = 0.43392917623815674D;
-            // 
-            // physicalQty_lbl
-            // 
-            this.physicalQty_lbl.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.physicalQty_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Right) 
-            | DevExpress.XtraPrinting.BorderSide.Bottom)));
-            this.physicalQty_lbl.Multiline = true;
-            this.physicalQty_lbl.Name = "physicalQty_lbl";
-            this.physicalQty_lbl.StylePriority.UseBackColor = false;
-            this.physicalQty_lbl.StylePriority.UseBorders = false;
-            this.physicalQty_lbl.Text = "Qty";
-            this.physicalQty_lbl.Weight = 0.43392917977065276D;
-            // 
-            // physicalWeight_lbl
-            // 
-            this.physicalWeight_lbl.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.physicalWeight_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Right) 
-            | DevExpress.XtraPrinting.BorderSide.Bottom)));
-            this.physicalWeight_lbl.Multiline = true;
-            this.physicalWeight_lbl.Name = "physicalWeight_lbl";
-            this.physicalWeight_lbl.StylePriority.UseBackColor = false;
-            this.physicalWeight_lbl.StylePriority.UseBorders = false;
-            this.physicalWeight_lbl.Text = "Weight";
-            this.physicalWeight_lbl.Weight = 0.43392917176676282D;
-            // 
-            // diff_lbl
-            // 
-            this.diff_lbl.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.diff_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Right) 
-            | DevExpress.XtraPrinting.BorderSide.Bottom)));
-            this.diff_lbl.Multiline = true;
-            this.diff_lbl.Name = "diff_lbl";
-            this.diff_lbl.StylePriority.UseBackColor = false;
-            this.diff_lbl.StylePriority.UseBorders = false;
-            this.diff_lbl.Text = "Diff.";
-            this.diff_lbl.Weight = 0.4339291717667631D;
-            // 
-            // notes_lbl
-            // 
-            this.notes_lbl.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.notes_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Right) 
-            | DevExpress.XtraPrinting.BorderSide.Bottom)));
-            this.notes_lbl.Multiline = true;
-            this.notes_lbl.Name = "notes_lbl";
-            this.notes_lbl.StylePriority.UseBackColor = false;
-            this.notes_lbl.StylePriority.UseBorders = false;
-            this.notes_lbl.Text = "Notes";
-            this.notes_lbl.Weight = 1.6019219439377501D;
-            // 
-            // xrLabel1
-            // 
-            this.xrLabel1.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.xrLabel1.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
-            | DevExpress.XtraPrinting.BorderSide.Right) 
-            | DevExpress.XtraPrinting.BorderSide.Bottom)));
-            this.xrLabel1.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold);
-            this.xrLabel1.LocationFloat = new DevExpress.Utils.PointFloat(745F, 0F);
-            this.xrLabel1.Multiline = true;
-            this.xrLabel1.Name = "xrLabel1";
-            this.xrLabel1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 2, 0, 100F);
-            this.xrLabel1.SizeF = new System.Drawing.SizeF(401.5F, 23F);
-            this.xrLabel1.StylePriority.UseBackColor = false;
-            this.xrLabel1.StylePriority.UseBorders = false;
-            this.xrLabel1.StylePriority.UseFont = false;
-            this.xrLabel1.StylePriority.UsePadding = false;
-            this.xrLabel1.StylePriority.UseTextAlignment = false;
-            this.xrLabel1.Text = "Physical Inventory By Controller";
-            this.xrLabel1.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopCenter;
             // 
             // xrTable1
             // 
@@ -557,6 +306,257 @@ namespace ArgusCR1016.Inventory.Reports
             this.xrTableCell13.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             this.xrTableCell13.Weight = 1.6019219439377501D;
             // 
+            // ReportHeader
+            // 
+            this.ReportHeader.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+            this.title_lbl});
+            this.ReportHeader.HeightF = 61.24999F;
+            this.ReportHeader.Name = "ReportHeader";
+            // 
+            // title_lbl
+            // 
+            this.title_lbl.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.title_lbl.LocationFloat = new DevExpress.Utils.PointFloat(305.2084F, 0F);
+            this.title_lbl.Multiline = true;
+            this.title_lbl.Name = "title_lbl";
+            this.title_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.title_lbl.SizeF = new System.Drawing.SizeF(520.5153F, 39.66667F);
+            this.title_lbl.StylePriority.UseFont = false;
+            this.title_lbl.StylePriority.UseTextAlignment = false;
+            this.title_lbl.Text = "List Of Inventory Items (Loose Stones)";
+            this.title_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            // 
+            // PageHeader
+            // 
+            this.PageHeader.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+            this.physicalInventoryTitle_lbl,
+            this.xrTable2});
+            this.PageHeader.HeightF = 48.00002F;
+            this.PageHeader.Name = "PageHeader";
+            // 
+            // physicalInventoryTitle_lbl
+            // 
+            this.physicalInventoryTitle_lbl.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.physicalInventoryTitle_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+            | DevExpress.XtraPrinting.BorderSide.Right) 
+            | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.physicalInventoryTitle_lbl.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold);
+            this.physicalInventoryTitle_lbl.LocationFloat = new DevExpress.Utils.PointFloat(745F, 0F);
+            this.physicalInventoryTitle_lbl.Multiline = true;
+            this.physicalInventoryTitle_lbl.Name = "physicalInventoryTitle_lbl";
+            this.physicalInventoryTitle_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 2, 0, 100F);
+            this.physicalInventoryTitle_lbl.SizeF = new System.Drawing.SizeF(401.5F, 23F);
+            this.physicalInventoryTitle_lbl.StylePriority.UseBackColor = false;
+            this.physicalInventoryTitle_lbl.StylePriority.UseBorders = false;
+            this.physicalInventoryTitle_lbl.StylePriority.UseFont = false;
+            this.physicalInventoryTitle_lbl.StylePriority.UsePadding = false;
+            this.physicalInventoryTitle_lbl.StylePriority.UseTextAlignment = false;
+            this.physicalInventoryTitle_lbl.Text = "Physical Inventory By Controller";
+            this.physicalInventoryTitle_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopCenter;
+            // 
+            // xrTable2
+            // 
+            this.xrTable2.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+            | DevExpress.XtraPrinting.BorderSide.Right)));
+            this.xrTable2.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.xrTable2.LocationFloat = new DevExpress.Utils.PointFloat(9.999998F, 23.00002F);
+            this.xrTable2.Name = "xrTable2";
+            this.xrTable2.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
+            this.xrTable2.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
+            this.xrTableRow2});
+            this.xrTable2.SizeF = new System.Drawing.SizeF(1136.5F, 25.00001F);
+            this.xrTable2.StylePriority.UseBorders = false;
+            this.xrTable2.StylePriority.UseFont = false;
+            this.xrTable2.StylePriority.UseTextAlignment = false;
+            this.xrTable2.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            // 
+            // xrTableRow2
+            // 
+            this.xrTableRow2.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
+            this.itemRef_lbl,
+            this.itemName_lbl,
+            this.size_lbl,
+            this.form_lbl,
+            this.cost_lbl,
+            this.qty_lbl,
+            this.weight_lbl,
+            this.physicalQty_lbl,
+            this.physicalWeight_lbl,
+            this.diff_lbl,
+            this.notes_lbl});
+            this.xrTableRow2.Name = "xrTableRow2";
+            this.xrTableRow2.Weight = 1D;
+            // 
+            // itemRef_lbl
+            // 
+            this.itemRef_lbl.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.itemRef_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+            | DevExpress.XtraPrinting.BorderSide.Right) 
+            | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.itemRef_lbl.Multiline = true;
+            this.itemRef_lbl.Name = "itemRef_lbl";
+            this.itemRef_lbl.StylePriority.UseBackColor = false;
+            this.itemRef_lbl.StylePriority.UseBorders = false;
+            this.itemRef_lbl.Text = "Item Ref.";
+            this.itemRef_lbl.Weight = 0.97634066565515121D;
+            // 
+            // itemName_lbl
+            // 
+            this.itemName_lbl.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.itemName_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+            | DevExpress.XtraPrinting.BorderSide.Right) 
+            | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.itemName_lbl.Multiline = true;
+            this.itemName_lbl.Name = "itemName_lbl";
+            this.itemName_lbl.StylePriority.UseBackColor = false;
+            this.itemName_lbl.StylePriority.UseBorders = false;
+            this.itemName_lbl.Text = "Item Name";
+            this.itemName_lbl.Weight = 1.6272344252704138D;
+            // 
+            // size_lbl
+            // 
+            this.size_lbl.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.size_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+            | DevExpress.XtraPrinting.BorderSide.Right) 
+            | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.size_lbl.Multiline = true;
+            this.size_lbl.Name = "size_lbl";
+            this.size_lbl.StylePriority.UseBackColor = false;
+            this.size_lbl.StylePriority.UseBorders = false;
+            this.size_lbl.Text = "Size";
+            this.size_lbl.Weight = 0.61473301831090232D;
+            // 
+            // form_lbl
+            // 
+            this.form_lbl.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.form_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+            | DevExpress.XtraPrinting.BorderSide.Right) 
+            | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.form_lbl.Multiline = true;
+            this.form_lbl.Name = "form_lbl";
+            this.form_lbl.StylePriority.UseBackColor = false;
+            this.form_lbl.StylePriority.UseBorders = false;
+            this.form_lbl.Text = "Form";
+            this.form_lbl.Weight = 0.61473301393100921D;
+            // 
+            // cost_lbl
+            // 
+            this.cost_lbl.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.cost_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+            | DevExpress.XtraPrinting.BorderSide.Right) 
+            | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.cost_lbl.Multiline = true;
+            this.cost_lbl.Name = "cost_lbl";
+            this.cost_lbl.StylePriority.UseBackColor = false;
+            this.cost_lbl.StylePriority.UseBorders = false;
+            this.cost_lbl.Text = "Cost/ct";
+            this.cost_lbl.Weight = 0.61473301161237082D;
+            // 
+            // qty_lbl
+            // 
+            this.qty_lbl.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.qty_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+            | DevExpress.XtraPrinting.BorderSide.Right) 
+            | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.qty_lbl.Multiline = true;
+            this.qty_lbl.Name = "qty_lbl";
+            this.qty_lbl.StylePriority.UseBackColor = false;
+            this.qty_lbl.StylePriority.UseBorders = false;
+            this.qty_lbl.Text = "Qty";
+            this.qty_lbl.Weight = 0.43392919720415812D;
+            // 
+            // weight_lbl
+            // 
+            this.weight_lbl.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.weight_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+            | DevExpress.XtraPrinting.BorderSide.Right) 
+            | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.weight_lbl.Multiline = true;
+            this.weight_lbl.Name = "weight_lbl";
+            this.weight_lbl.StylePriority.UseBackColor = false;
+            this.weight_lbl.StylePriority.UseBorders = false;
+            this.weight_lbl.Text = "Weight";
+            this.weight_lbl.Weight = 0.43392917623815674D;
+            // 
+            // physicalQty_lbl
+            // 
+            this.physicalQty_lbl.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.physicalQty_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Right) 
+            | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.physicalQty_lbl.Multiline = true;
+            this.physicalQty_lbl.Name = "physicalQty_lbl";
+            this.physicalQty_lbl.StylePriority.UseBackColor = false;
+            this.physicalQty_lbl.StylePriority.UseBorders = false;
+            this.physicalQty_lbl.Text = "Qty";
+            this.physicalQty_lbl.Weight = 0.43392917977065276D;
+            // 
+            // physicalWeight_lbl
+            // 
+            this.physicalWeight_lbl.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.physicalWeight_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Right) 
+            | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.physicalWeight_lbl.Multiline = true;
+            this.physicalWeight_lbl.Name = "physicalWeight_lbl";
+            this.physicalWeight_lbl.StylePriority.UseBackColor = false;
+            this.physicalWeight_lbl.StylePriority.UseBorders = false;
+            this.physicalWeight_lbl.Text = "Weight";
+            this.physicalWeight_lbl.Weight = 0.43392917176676282D;
+            // 
+            // diff_lbl
+            // 
+            this.diff_lbl.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.diff_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Right) 
+            | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.diff_lbl.Multiline = true;
+            this.diff_lbl.Name = "diff_lbl";
+            this.diff_lbl.StylePriority.UseBackColor = false;
+            this.diff_lbl.StylePriority.UseBorders = false;
+            this.diff_lbl.Text = "Diff.";
+            this.diff_lbl.Weight = 0.4339291717667631D;
+            // 
+            // notes_lbl
+            // 
+            this.notes_lbl.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.notes_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Right) 
+            | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.notes_lbl.Multiline = true;
+            this.notes_lbl.Name = "notes_lbl";
+            this.notes_lbl.StylePriority.UseBackColor = false;
+            this.notes_lbl.StylePriority.UseBorders = false;
+            this.notes_lbl.Text = "Notes";
+            this.notes_lbl.Weight = 1.6019219439377501D;
+            // 
+            // PageFooter
+            // 
+            this.PageFooter.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+            this.pagesNumber_lbl,
+            this.printSignature_lbl});
+            this.PageFooter.HeightF = 32.99997F;
+            this.PageFooter.Name = "PageFooter";
+            // 
+            // pagesNumber_lbl
+            // 
+            this.pagesNumber_lbl.BackColor = System.Drawing.Color.Transparent;
+            this.pagesNumber_lbl.LocationFloat = new DevExpress.Utils.PointFloat(1051.685F, 9.999974F);
+            this.pagesNumber_lbl.Name = "pagesNumber_lbl";
+            this.pagesNumber_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.pagesNumber_lbl.SizeF = new System.Drawing.SizeF(94.81506F, 23F);
+            this.pagesNumber_lbl.StylePriority.UseBackColor = false;
+            this.pagesNumber_lbl.StylePriority.UseTextAlignment = false;
+            this.pagesNumber_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
+            this.pagesNumber_lbl.TextFormatString = "Page {0} of {1}";
+            // 
+            // printSignature_lbl
+            // 
+            this.printSignature_lbl.LocationFloat = new DevExpress.Utils.PointFloat(9.999998F, 9.999974F);
+            this.printSignature_lbl.Multiline = true;
+            this.printSignature_lbl.Name = "printSignature_lbl";
+            this.printSignature_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.printSignature_lbl.SizeF = new System.Drawing.SizeF(616.5872F, 23F);
+            this.printSignature_lbl.StylePriority.UseTextAlignment = false;
+            this.printSignature_lbl.Text = "printSignature_lbl";
+            this.printSignature_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            // 
             // IV01
             // 
             this.Bands.AddRange(new DevExpress.XtraReports.UI.Band[] {
@@ -573,8 +573,8 @@ namespace ArgusCR1016.Inventory.Reports
             this.PageWidth = 1169;
             this.PaperKind = System.Drawing.Printing.PaperKind.A4;
             this.Version = "20.1";
-            ((System.ComponentModel.ISupportInitialize)(this.xrTable2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.xrTable2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
 
         }
@@ -587,7 +587,7 @@ namespace ArgusCR1016.Inventory.Reports
         private DevExpress.XtraReports.UI.ReportHeaderBand ReportHeader;
         private DevExpress.XtraReports.UI.PageHeaderBand PageHeader;
         private DevExpress.XtraReports.UI.PageFooterBand PageFooter;
-        private DevExpress.XtraReports.UI.XRLabel printSignature;
+        private DevExpress.XtraReports.UI.XRLabel printSignature_lbl;
         private DevExpress.XtraReports.UI.XRPageInfo pagesNumber_lbl;
         private DevExpress.XtraReports.UI.XRLabel title_lbl;
         private DevExpress.XtraReports.UI.XRTable xrTable1;
@@ -603,7 +603,7 @@ namespace ArgusCR1016.Inventory.Reports
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell9;
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell12;
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell13;
-        private DevExpress.XtraReports.UI.XRLabel xrLabel1;
+        private DevExpress.XtraReports.UI.XRLabel physicalInventoryTitle_lbl;
         private DevExpress.XtraReports.UI.XRTable xrTable2;
         private DevExpress.XtraReports.UI.XRTableRow xrTableRow2;
         private DevExpress.XtraReports.UI.XRTableCell itemRef_lbl;
