@@ -124,6 +124,8 @@ namespace ArgusCR1016.Inventory
             this.xrTableCell1.BackColor = System.Drawing.Color.White;
             this.xrTableCell1.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.xrTableCell1.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", " [sku]")});
             this.xrTableCell1.Font = new System.Drawing.Font("Times New Roman", 9.75F);
             this.xrTableCell1.Multiline = true;
             this.xrTableCell1.Name = "xrTableCell1";
@@ -141,6 +143,8 @@ namespace ArgusCR1016.Inventory
             this.xrTableCell2.BackColor = System.Drawing.Color.White;
             this.xrTableCell2.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.xrTableCell2.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[name]")});
             this.xrTableCell2.Font = new System.Drawing.Font("Times New Roman", 9.75F);
             this.xrTableCell2.Multiline = true;
             this.xrTableCell2.Name = "xrTableCell2";
@@ -158,6 +162,8 @@ namespace ArgusCR1016.Inventory
             this.xrTableCell3.BackColor = System.Drawing.Color.White;
             this.xrTableCell3.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.xrTableCell3.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[size]")});
             this.xrTableCell3.Font = new System.Drawing.Font("Times New Roman", 9.75F);
             this.xrTableCell3.Multiline = true;
             this.xrTableCell3.Name = "xrTableCell3";
@@ -175,6 +181,8 @@ namespace ArgusCR1016.Inventory
             this.xrTableCell4.BackColor = System.Drawing.Color.White;
             this.xrTableCell4.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.xrTableCell4.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[shape]")});
             this.xrTableCell4.Font = new System.Drawing.Font("Times New Roman", 9.75F);
             this.xrTableCell4.Multiline = true;
             this.xrTableCell4.Name = "xrTableCell4";
@@ -192,6 +200,8 @@ namespace ArgusCR1016.Inventory
             this.xrTableCell5.BackColor = System.Drawing.Color.White;
             this.xrTableCell5.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.xrTableCell5.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[cost]")});
             this.xrTableCell5.Font = new System.Drawing.Font("Times New Roman", 9.75F);
             this.xrTableCell5.Multiline = true;
             this.xrTableCell5.Name = "xrTableCell5";
@@ -202,6 +212,7 @@ namespace ArgusCR1016.Inventory
             this.xrTableCell5.StylePriority.UsePadding = false;
             this.xrTableCell5.StylePriority.UseTextAlignment = false;
             this.xrTableCell5.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
+            this.xrTableCell5.TextFormatString = "{0:n2}";
             this.xrTableCell5.Weight = 0.61473301161237082D;
             // 
             // xrTableCell6
@@ -209,6 +220,8 @@ namespace ArgusCR1016.Inventory
             this.xrTableCell6.BackColor = System.Drawing.Color.White;
             this.xrTableCell6.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.xrTableCell6.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[qty]")});
             this.xrTableCell6.Font = new System.Drawing.Font("Times New Roman", 9.75F);
             this.xrTableCell6.Multiline = true;
             this.xrTableCell6.Name = "xrTableCell6";
@@ -219,6 +232,7 @@ namespace ArgusCR1016.Inventory
             this.xrTableCell6.StylePriority.UsePadding = false;
             this.xrTableCell6.StylePriority.UseTextAlignment = false;
             this.xrTableCell6.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
+            this.xrTableCell6.TextFormatString = "{0:n2}";
             this.xrTableCell6.Weight = 0.43392919720415812D;
             // 
             // xrTableCell7
@@ -226,6 +240,8 @@ namespace ArgusCR1016.Inventory
             this.xrTableCell7.BackColor = System.Drawing.Color.White;
             this.xrTableCell7.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.xrTableCell7.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[weight]")});
             this.xrTableCell7.Font = new System.Drawing.Font("Times New Roman", 9.75F);
             this.xrTableCell7.Multiline = true;
             this.xrTableCell7.Name = "xrTableCell7";
@@ -236,6 +252,7 @@ namespace ArgusCR1016.Inventory
             this.xrTableCell7.StylePriority.UsePadding = false;
             this.xrTableCell7.StylePriority.UseTextAlignment = false;
             this.xrTableCell7.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
+            this.xrTableCell7.TextFormatString = "{0:n2}";
             this.xrTableCell7.Weight = 0.43392917623815674D;
             // 
             // xrTableCell8
@@ -253,6 +270,7 @@ namespace ArgusCR1016.Inventory
             this.xrTableCell8.StylePriority.UsePadding = false;
             this.xrTableCell8.StylePriority.UseTextAlignment = false;
             this.xrTableCell8.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
+            this.xrTableCell8.TextFormatString = "{0:n2}";
             this.xrTableCell8.Weight = 0.43392917977065276D;
             // 
             // xrTableCell9
@@ -270,6 +288,7 @@ namespace ArgusCR1016.Inventory
             this.xrTableCell9.StylePriority.UsePadding = false;
             this.xrTableCell9.StylePriority.UseTextAlignment = false;
             this.xrTableCell9.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
+            this.xrTableCell9.TextFormatString = "{0:n2}";
             this.xrTableCell9.Weight = 0.43392917176676282D;
             // 
             // xrTableCell12
@@ -287,6 +306,7 @@ namespace ArgusCR1016.Inventory
             this.xrTableCell12.StylePriority.UsePadding = false;
             this.xrTableCell12.StylePriority.UseTextAlignment = false;
             this.xrTableCell12.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
+            this.xrTableCell12.TextFormatString = "{0:n2}";
             this.xrTableCell12.Weight = 0.4339291717667631D;
             // 
             // xrTableCell13
