@@ -22,7 +22,7 @@ namespace ArgusCR1016.Inventory
         protected override void OnBeforePrint(PrintEventArgs e)
         {
            SharedClasses.JsonProtocol.QryStructure<Custom.CR1016.IV01> obj = deserializeList<Custom.CR1016.IV01>();
-           // DataSource = obj.list;
+           DataSource = obj.list;
 
             printSignature_lbl.Text = reportSignature();
             base.OnBeforePrint(e);
