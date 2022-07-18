@@ -24,6 +24,9 @@ namespace ArgusCR1016.Inventory
            SharedClasses.JsonProtocol.QryStructure<Custom.CR1016.IV01> obj = deserializeList<Custom.CR1016.IV01>();
            DataSource = obj.list;
 
+            itemCategory_param.Text = Parameters.Count > 0 ? Parameters[0].Value.ToString() : string.Empty;
+            itemGroup_param.Text = Parameters.Count > 1 ? Parameters[1].Value.ToString() : string.Empty;
+
             printSignature_lbl.Text = reportSignature();
             base.OnBeforePrint(e);
         }
@@ -49,6 +52,9 @@ namespace ArgusCR1016.Inventory
             diff_lbl.Text = labelText(10);
             notes_lbl.Text = labelText(11);
             physicalInventoryTitle_lbl.Text = labelText(12);
+
+            itemCategory_lbl.Text = labelText(13);
+            itemGroup_lbl.Text = labelText(14);
         }
 
         protected override string dictionaryStore()
