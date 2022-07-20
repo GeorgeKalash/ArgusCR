@@ -73,7 +73,6 @@ namespace ArgusCR1019.Sales.Templates
             description_data.Text = webObject.record.trxHeader.description;
 
             clientName2_data.Text = webObject.record.trxHeader.clientName;
-            spName2_data.Text = webObject.record.trxHeader.spName;
 
             QRCode.Text = new KSAeInvoiceQrCode(webObject.record.companyInfo.name, webObject.record.companyInfo.taxNo, (DateTime)webObject.record.logTime, webObject.record.trxHeader.amount.ToString(), webObject.record.trxHeader.vatAmount.ToString()).ToBase64();
 
