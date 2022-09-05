@@ -99,6 +99,12 @@
     <Compile Include="Sales\SAQTN02.Designer.cs">
       <DependentUpon>SAQTN02.cs</DependentUpon>
     </Compile>
+    <Compile Include="Sales\SATRX03.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Sales\SATRX03.Designer.cs">
+      <DependentUpon>SATRX03.cs</DependentUpon>
+    </Compile>
     <Compile Include="Sales\SATRX02.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -123,6 +129,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Sales\SAQTN02.resx">
       <DependentUpon>SAQTN02.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales\SATRX03.resx">
+      <DependentUpon>SATRX03.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Sales\SATRX02.resx">
       <DependentUpon>SATRX02.cs</DependentUpon>
