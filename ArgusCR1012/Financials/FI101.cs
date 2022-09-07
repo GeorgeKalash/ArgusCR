@@ -7,7 +7,7 @@ using System.Drawing.Printing;
 
 namespace ArgusCR1012.Financials
 {
-    public partial class FI101 : Reports.BaseReport
+    public partial class FI101 : ArgusRPT.BaseReport
     {
         public FI101()
         {

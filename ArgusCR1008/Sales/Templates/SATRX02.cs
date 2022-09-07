@@ -8,7 +8,7 @@ using DevExpress.XtraReports.UI;
 
 namespace ArgusCR1008.Sales.Templates
 {
-    public partial class SATRX02 : Reports.BaseReport
+    public partial class SATRX02 : ArgusRPT.BaseReport
     {
         public SATRX02()
         {

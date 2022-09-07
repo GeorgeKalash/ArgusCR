@@ -3,7 +3,7 @@ using ArgusDS.Sales.Reports;
 
 namespace ArgusCR1000.Sales.Templates
 {
-    public partial class SAQTN01 : Reports.BaseReport
+    public partial class SAQTN01 : ArgusRPT.BaseReport
     {
         public SAQTN01()
         {

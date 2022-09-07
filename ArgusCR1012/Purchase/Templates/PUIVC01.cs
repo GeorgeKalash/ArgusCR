@@ -7,7 +7,7 @@ using System.Drawing.Printing;
 
 namespace ArgusCR1012.Purchase.Templates
 {
-    public partial class PUIVC01 : Reports.BaseReport
+    public partial class PUIVC01 : ArgusRPT.BaseReport
     {
         public PUIVC01()
         {

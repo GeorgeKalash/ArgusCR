@@ -8,7 +8,7 @@ using System.Drawing.Printing;
 
 namespace ArgusCR1016.Manufacturing.Templates.MF105
 {
-    public partial class MF105 : Reports.BaseReport
+    public partial class MF105 : ArgusRPT.BaseReport
     {
         public MF105()
         {
@@ -23,8 +23,8 @@ namespace ArgusCR1016.Manufacturing.Templates.MF105
         public override void setSessionInfo(Dictionary<string, string> _reportHeaders)
         {
             base.setSessionInfo(_reportHeaders);
-            ((Reports.BaseReport)(IssueOfMaterialsSubReport.ReportSource)).setSessionInfo(sessionInfo);
-            ((Reports.BaseReport)(CategorySubReport.ReportSource)).setSessionInfo(sessionInfo);
+            ((ArgusRPT.BaseReport)(IssueOfMaterialsSubReport.ReportSource)).setSessionInfo(sessionInfo);
+            ((ArgusRPT.BaseReport)(CategorySubReport.ReportSource)).setSessionInfo(sessionInfo);
             initSubReports();
         }
 

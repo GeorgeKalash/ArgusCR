@@ -7,7 +7,7 @@ using System.Drawing.Printing;
 
 namespace ArgusCR1008.Inventory.Templates
 {
-    public partial class IV102 : Reports.BaseReport
+    public partial class IV102 : ArgusRPT.BaseReport
     {
         public IV102()
         {

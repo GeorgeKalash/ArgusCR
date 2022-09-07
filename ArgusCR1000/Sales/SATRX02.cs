@@ -3,7 +3,7 @@ using ArgusDS.Sales.Reports;
 
 namespace ArgusCR1000.Sales.Templates
 {
-    public partial class SATRX02 : Reports.BaseReport
+    public partial class SATRX02 : ArgusRPT.BaseReport
     {
         public SATRX02()
         {

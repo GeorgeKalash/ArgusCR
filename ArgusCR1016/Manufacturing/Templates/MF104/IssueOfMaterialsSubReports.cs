@@ -9,7 +9,7 @@ using System.Drawing.Printing;
 
 namespace ArgusCR1016.Manufacturing.Templates.MF104
 { 
-    public partial class IssueOfMaterialsSubReports : Reports.BaseReport
+    public partial class IssueOfMaterialsSubReports : ArgusRPT.BaseReport
 {
         public List<ArgusDS.Manufacturing.Reports.MF203> data;
 

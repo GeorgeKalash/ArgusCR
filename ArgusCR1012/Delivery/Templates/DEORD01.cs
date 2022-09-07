@@ -9,7 +9,7 @@ using ArgusDS.Sales.Reports;
 
 namespace ArgusCR1012.Delivery.Templates
 {
-    public partial class DEORD01 : Reports.BaseReport
+    public partial class DEORD01 : ArgusRPT.BaseReport
     {
         int itemsCounter = 1;
         public DEORD01()

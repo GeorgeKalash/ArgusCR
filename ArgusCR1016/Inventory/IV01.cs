@@ -8,7 +8,7 @@ using System.Drawing.Printing;
 
 namespace ArgusCR1016.Inventory
 {
-    public partial class IV01 : Reports.BaseReport
+    public partial class IV01 : ArgusRPT.BaseReport
     {
         public IV01()
         {

@@ -8,7 +8,7 @@ using ArgusDS.Sales.Reports;
 
 namespace ArgusCR1012.Manufacturing.Templates
 {
-    public partial class MFBOM01 : Reports.BaseReport
+    public partial class MFBOM01 : ArgusRPT.BaseReport
     {
         int itemsCounter = 1;
         public MFBOM01()

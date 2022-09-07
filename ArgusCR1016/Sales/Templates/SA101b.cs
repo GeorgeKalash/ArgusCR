@@ -6,7 +6,7 @@ using System.Linq;
 
 namespace ArgusCR1016.Sales.Templates
 {
-    public partial class SA101b : Reports.BaseReport
+    public partial class SA101b : ArgusRPT.BaseReport
     {
         //List<ArgusDS.Inventory.ItemDimensionView> dimensions;
         List<ArgusDS.Inventory.UserDefinedTextView> userDefinedTextViews;

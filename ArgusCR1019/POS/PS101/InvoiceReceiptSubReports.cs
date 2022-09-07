@@ -8,7 +8,7 @@ using System.Drawing.Printing;
 
 namespace ArgusCR1019.POS.PS101
 {
-    public partial class InvoiceReceiptSubReports : Reports.BaseReport
+    public partial class InvoiceReceiptSubReports : ArgusRPT.BaseReport
     {
         public List<ArgusDS.PointOfSale.InvoiceReceiptView> data;
 

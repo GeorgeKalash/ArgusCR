@@ -8,7 +8,7 @@ using System.Drawing.Printing;
 
 namespace ArgusCR1019.POS.PS101
 {
-    public partial class PS101 : Reports.BaseReport
+    public partial class PS101 : ArgusRPT.BaseReport
     {
         public PS101()
         {
@@ -22,8 +22,8 @@ namespace ArgusCR1019.POS.PS101
         public override void setSessionInfo(Dictionary<string, string> _reportHeaders)
         {
             base.setSessionInfo(_reportHeaders);
-            ((Reports.BaseReport)(InvoiceItemsSubReports.ReportSource)).setSessionInfo(sessionInfo);
-            ((Reports.BaseReport)(InvoiceReceiptSubReports.ReportSource)).setSessionInfo(sessionInfo);
+            ((ArgusRPT.BaseReport)(InvoiceItemsSubReports.ReportSource)).setSessionInfo(sessionInfo);
+            ((ArgusRPT.BaseReport)(InvoiceReceiptSubReports.ReportSource)).setSessionInfo(sessionInfo);
 
             initSubReports();
         }

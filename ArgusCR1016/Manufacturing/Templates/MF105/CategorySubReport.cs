@@ -1,6 +1,5 @@
 ﻿using ArgusDS.Manufacturing;
 using DevExpress.XtraReports.UI;
-using Reports;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -10,11 +9,9 @@ using System.Drawing.Printing;
 
 namespace ArgusCR1016.Manufacturing.Templates.MF105
 {
-    public partial class CategorySubReport : Reports.BaseReport
+    public partial class CategorySubReport : ArgusRPT.BaseReport
     {
         public List<ArgusDS.Manufacturing.Reports.MF105c> data;
-
-        public static BaseReport ReportSource { get; internal set; }
 
         public CategorySubReport()
         {

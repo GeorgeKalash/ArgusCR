@@ -11,7 +11,7 @@ using System.Collections.Generic;
 
 namespace ArgusCR1012.Sales.Templates
 {
-    public partial class SAORD01 : Reports.BaseReport
+    public partial class SAORD01 : ArgusRPT.BaseReport
     {
         public SAORD01()
         {

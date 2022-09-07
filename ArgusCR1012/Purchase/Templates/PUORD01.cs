@@ -8,7 +8,7 @@ using System.Drawing.Printing;
 
 namespace ArgusCR1012.Purchase.Templates
 {
-    public partial class PUORD01 : Reports.BaseReport
+    public partial class PUORD01 : ArgusRPT.BaseReport
     {
         public PUORD01()
         {

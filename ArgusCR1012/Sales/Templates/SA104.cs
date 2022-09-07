@@ -11,7 +11,7 @@ using System.Linq;
 
 namespace ArgusCR1012.Sales.Templates
 {
-    public partial class SA104 : Reports.BaseReport
+    public partial class SA104 : ArgusRPT.BaseReport
     {
   
       public SA104()

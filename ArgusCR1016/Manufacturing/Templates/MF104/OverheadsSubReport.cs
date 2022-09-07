@@ -9,7 +9,7 @@ using System.Drawing.Printing;
 
 namespace ArgusCR1016.Manufacturing.Templates.MF104
 {
-    public partial class OverheadsSubReport : Reports.BaseReport
+    public partial class OverheadsSubReport : ArgusRPT.BaseReport
     {
         public List<JobOverheadView> data;
         public OverheadsSubReport()

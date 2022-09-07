@@ -8,7 +8,7 @@ using ArgusDS.Sales.Reports;
 
 namespace ArgusCR1016.Manufacturing.Templates
 {
-    public partial class MF103 : Reports.BaseReport
+    public partial class MF103 : ArgusRPT.BaseReport
     {
         public MF103()
         {

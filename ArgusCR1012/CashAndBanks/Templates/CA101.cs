@@ -7,7 +7,7 @@ using System.Drawing.Printing;
 
 namespace ArgusCR1012.CashAndBanks.Templates
 {
-    public partial class CA101 : Reports.BaseReport
+    public partial class CA101 : ArgusRPT.BaseReport
     {
         public CA101()
         {
