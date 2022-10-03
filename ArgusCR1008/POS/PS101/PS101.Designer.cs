@@ -33,10 +33,8 @@ namespace ArgusCR1008.POS.PS101
         private void InitializeComponent()
         {
             this.InvoiceItemSubBand = new DevExpress.XtraReports.UI.SubBand();
-            this.InvoiceItemsSubReports = new DevExpress.XtraReports.UI.XRSubreport();
             this.Detail = new DevExpress.XtraReports.UI.DetailBand();
             this.InvoiceReceiptSubBand = new DevExpress.XtraReports.UI.SubBand();
-            this.InvoiceReceiptSubReports = new DevExpress.XtraReports.UI.XRSubreport();
             this.TopMargin = new DevExpress.XtraReports.UI.TopMarginBand();
             this.BottomMargin = new DevExpress.XtraReports.UI.BottomMarginBand();
             this.ReportHeader = new DevExpress.XtraReports.UI.ReportHeaderBand();
@@ -66,6 +64,8 @@ namespace ArgusCR1008.POS.PS101
             this.date_data = new DevExpress.XtraReports.UI.XRTableCell();
             this.PageFooter = new DevExpress.XtraReports.UI.PageFooterBand();
             this.pagesNumber_lbl = new DevExpress.XtraReports.UI.XRPageInfo();
+            this.InvoiceItemsSubReports = new DevExpress.XtraReports.UI.XRSubreport();
+            this.InvoiceReceiptSubReports = new DevExpress.XtraReports.UI.XRSubreport();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable2)).BeginInit();
@@ -79,13 +79,6 @@ namespace ArgusCR1008.POS.PS101
             this.InvoiceItemSubBand.HeightF = 23F;
             this.InvoiceItemSubBand.KeepTogether = true;
             this.InvoiceItemSubBand.Name = "InvoiceItemSubBand";
-            // 
-            // InvoiceItemsSubReports
-            // 
-            this.InvoiceItemsSubReports.LocationFloat = new DevExpress.Utils.PointFloat(25.66113F, 0F);
-            this.InvoiceItemsSubReports.Name = "InvoiceItemsSubReports";
-            this.InvoiceItemsSubReports.ReportSource = new ArgusCR1008.POS.PS101.InvoiceItemsSubReports();
-            this.InvoiceItemsSubReports.SizeF = new System.Drawing.SizeF(775.9997F, 23F);
             // 
             // Detail
             // 
@@ -103,16 +96,9 @@ namespace ArgusCR1008.POS.PS101
             this.InvoiceReceiptSubBand.KeepTogether = true;
             this.InvoiceReceiptSubBand.Name = "InvoiceReceiptSubBand";
             // 
-            // InvoiceReceiptSubReports
-            // 
-            this.InvoiceReceiptSubReports.LocationFloat = new DevExpress.Utils.PointFloat(25.62501F, 0F);
-            this.InvoiceReceiptSubReports.Name = "InvoiceReceiptSubReports";
-            this.InvoiceReceiptSubReports.ReportSource = new ArgusCR1008.POS.PS101.InvoiceReceiptSubReports();
-            this.InvoiceReceiptSubReports.SizeF = new System.Drawing.SizeF(776.0359F, 23F);
-            // 
             // TopMargin
             // 
-            this.TopMargin.HeightF = 62.83652F;
+            this.TopMargin.HeightF = 38.87819F;
             this.TopMargin.Name = "TopMargin";
             // 
             // BottomMargin
@@ -276,7 +262,7 @@ namespace ArgusCR1008.POS.PS101
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.title_lbl.CanGrow = false;
-            this.title_lbl.Font = new System.Drawing.Font("Arial", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
+            this.title_lbl.Font = new System.Drawing.Font("Arial", 14F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
             this.title_lbl.LocationFloat = new DevExpress.Utils.PointFloat(327.1157F, 123.6302F);
             this.title_lbl.Name = "title_lbl";
             this.title_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 6, 0, 100F);
@@ -503,7 +489,7 @@ namespace ArgusCR1008.POS.PS101
             // pagesNumber_lbl
             // 
             this.pagesNumber_lbl.BackColor = System.Drawing.Color.White;
-            this.pagesNumber_lbl.Font = new System.Drawing.Font("Arial", 7F);
+            this.pagesNumber_lbl.Font = new System.Drawing.Font("Arial", 8F);
             this.pagesNumber_lbl.LocationFloat = new DevExpress.Utils.PointFloat(690.7625F, 9.999974F);
             this.pagesNumber_lbl.Name = "pagesNumber_lbl";
             this.pagesNumber_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -514,6 +500,20 @@ namespace ArgusCR1008.POS.PS101
             this.pagesNumber_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
             this.pagesNumber_lbl.TextFormatString = "Page {0} of {1}";
             // 
+            // InvoiceItemsSubReports
+            // 
+            this.InvoiceItemsSubReports.LocationFloat = new DevExpress.Utils.PointFloat(25.66113F, 0F);
+            this.InvoiceItemsSubReports.Name = "InvoiceItemsSubReports";
+            this.InvoiceItemsSubReports.ReportSource = new ArgusCR1008.POS.PS101.InvoiceItemsSubReports();
+            this.InvoiceItemsSubReports.SizeF = new System.Drawing.SizeF(775.9997F, 23F);
+            // 
+            // InvoiceReceiptSubReports
+            // 
+            this.InvoiceReceiptSubReports.LocationFloat = new DevExpress.Utils.PointFloat(25.62501F, 0F);
+            this.InvoiceReceiptSubReports.Name = "InvoiceReceiptSubReports";
+            this.InvoiceReceiptSubReports.ReportSource = new ArgusCR1008.POS.PS101.InvoiceReceiptSubReports();
+            this.InvoiceReceiptSubReports.SizeF = new System.Drawing.SizeF(776.0359F, 23F);
+            // 
             // PS101
             // 
             this.Bands.AddRange(new DevExpress.XtraReports.UI.Band[] {
@@ -523,7 +523,7 @@ namespace ArgusCR1008.POS.PS101
             this.ReportHeader,
             this.PageFooter});
             this.Font = new System.Drawing.Font("Arial", 9.75F);
-            this.Margins = new System.Drawing.Printing.Margins(0, 0, 63, 10);
+            this.Margins = new System.Drawing.Printing.Margins(0, 0, 39, 10);
             this.PageHeight = 1169;
             this.PageWidth = 827;
             this.PaperKind = System.Drawing.Printing.PaperKind.A4;
