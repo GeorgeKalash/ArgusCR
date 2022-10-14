@@ -12,7 +12,7 @@ namespace ArgusCR1008.Sales.Templates
 
         protected override string dictionaryStore()
         {
-            return base.dictionaryStore() + "SA103";
+            return "CR1008.SA103";
         }
 
         protected override void labelsText()

@@ -9,6 +9,10 @@ namespace ArgusCR1000.Sales.Templates
         {
             InitializeComponent();            
         }
+        protected override string dictionaryStore()
+        {
+            return "CR1000.SATRX02";
+        }
         protected override void OnBeforePrint(PrintEventArgs e)
         {
             DataSource = CreateDataSourceFromText();

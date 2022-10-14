@@ -145,5 +145,8 @@
     <Content Include="Resources\SM_header.png" />
     <Content Include="Resources\SM_Letterhead_FOOTER.png" />
   </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
