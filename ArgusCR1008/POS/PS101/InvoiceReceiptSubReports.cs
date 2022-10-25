@@ -34,7 +34,7 @@ namespace ArgusCR1008.POS.PS101
 
         protected override string dictionaryStore()
         {
-            return "Custom\\R1008\\PS101.IR";
+            return "CR1008.PS101.IR";
         }
     }
 }

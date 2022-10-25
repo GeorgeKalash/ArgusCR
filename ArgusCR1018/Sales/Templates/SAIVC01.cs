@@ -99,9 +99,8 @@ namespace ArgusCR1018.Sales.Templates
         }
         protected override string dictionaryStore()
         {
-            return "Custom\\R1018\\SA103";
+            return "CR1018.SA103";
         }
-
     }
 }
 
