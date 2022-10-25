@@ -17,7 +17,6 @@ namespace ArgusCR1016.Manufacturing.Templates.MF105
         {
             InitializeComponent();
         }
-
         protected override void OnBeforePrint(PrintEventArgs e)
         {
             DataSource = data;
@@ -26,8 +25,6 @@ namespace ArgusCR1016.Manufacturing.Templates.MF105
 
         private void CategorySubReport_DataSourceRowChanged(object sender, DataSourceRowEventArgs e)
         {
-
-
         }
 
         protected override void labelsText()
@@ -40,8 +37,7 @@ namespace ArgusCR1016.Manufacturing.Templates.MF105
 
         protected override string dictionaryStore()
         {
-            return "Custom\\R1016\\MF105.CA";
+            return "CR1016.MF105.CA";
         }
-
     }
 }

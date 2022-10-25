@@ -25,7 +25,6 @@ namespace ArgusCR1008.POS.PS101
 
         private void InvoiceReceiptSubReports_DataSourceRowChanged(object sender, DataSourceRowEventArgs e)
         {
-
         }
 
         protected override void labelsText()

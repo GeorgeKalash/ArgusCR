@@ -20,19 +20,15 @@ namespace ArgusCR1008.POS.PS101
         protected override void OnBeforePrint(PrintEventArgs e)
         {
             DataSource = data;
-
-
             base.OnBeforePrint(e);
         }
 
         private void InvoiceItemsSubReports_DataSourceRowChanged(object sender, DataSourceRowEventArgs e)
         {
-
         }
 
         protected override void labelsText()
         {
-
         }
 
         protected override string dictionaryStore()

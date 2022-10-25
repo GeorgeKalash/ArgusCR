@@ -59,7 +59,7 @@ namespace ArgusCR1016.Inventory
 
         protected override string dictionaryStore()
         {
-            return "Custom\\R1016\\IV01";
+            return "CR1016.IV01";
         }
     }
 }

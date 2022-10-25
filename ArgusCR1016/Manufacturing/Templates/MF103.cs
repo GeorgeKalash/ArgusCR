@@ -91,7 +91,7 @@ namespace ArgusCR1016.Manufacturing.Templates
 
         protected override string dictionaryStore()
         {
-            return "Custom\\R1016\\MF103";
+            return "CR1016.MF103";
         }
     }
 }

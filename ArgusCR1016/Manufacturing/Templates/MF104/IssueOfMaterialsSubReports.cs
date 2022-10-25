@@ -18,7 +18,6 @@ namespace ArgusCR1016.Manufacturing.Templates.MF104
             InitializeComponent();
         }
   
-
         protected override void OnBeforePrint(PrintEventArgs e)
         {
             DataSource = data;
@@ -26,9 +25,7 @@ namespace ArgusCR1016.Manufacturing.Templates.MF104
         }
 
         private void IssueOfMaterialsSubReports_DataSourceRowChanged(object sender, DataSourceRowEventArgs e)
-        {
-
-           
+        {     
         }
 
         protected override void labelsText()
@@ -43,13 +40,10 @@ namespace ArgusCR1016.Manufacturing.Templates.MF104
             extendedCost_lbl.Text = labelText(6);
         }
 
-
-
         protected override string dictionaryStore()
         {
-            return "Custom\\R1016\\MF104.IM";
+            return "CR1016.MF104.IM";
         }
-
     }
 }
 

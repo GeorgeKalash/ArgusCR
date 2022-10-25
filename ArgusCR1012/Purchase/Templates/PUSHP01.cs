@@ -38,7 +38,6 @@ namespace ArgusCR1012.Purchase.Templates
             printSignature_lbl.Text = reportSignature();
             base.OnBeforePrint(e);
         }
-
         protected override void labelsText()
         {
             shipment_lbl.Text = labelText(0);
@@ -61,7 +60,7 @@ namespace ArgusCR1012.Purchase.Templates
 
         protected override string dictionaryStore()
         {
-            return "Custom\\R1012\\PU102";
+            return "CR1012.PU102";
         }
     }
 }

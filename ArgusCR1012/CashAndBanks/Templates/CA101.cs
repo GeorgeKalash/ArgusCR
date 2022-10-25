@@ -48,7 +48,7 @@ namespace ArgusCR1012.CashAndBanks.Templates
 
         protected override string dictionaryStore()
         {
-            return "Custom\\R1012\\CA101";
+            return "CR1012.CA101";
         }
     }
 }
