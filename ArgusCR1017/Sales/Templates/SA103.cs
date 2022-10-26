@@ -59,24 +59,7 @@ namespace ArgusCR1017.Sales.Templates
 
         protected override void labelsText()
         {
-            salesInvoice_lbl.Text = labelText(0);
 
-            docRef_lbl.Text = labelText(1);
-            clientRef_lbl.Text = labelText(2);
-            currency_lbl.Text = labelText(3);
-            date_lbl.Text = labelText(4);
-
-            sku_lbl.Text = labelText(5);
-            item_lbl.Text = labelText(6);
-            qty_lbl.Text = labelText(7);
-            price_lbl.Text = labelText(8);
-            mdAmount_lbl.Text = labelText(9);
-            extPrice_lbl.Text = labelText(10);
-
-            subtotal_lbl.Text = labelText(11);
-            discount_lbl.Text = labelText(12);
-            vat_lbl.Text = labelText(13);
-            netPrice_lbl.Text = labelText(14);
         }
 
         protected override string dictionaryStore()
