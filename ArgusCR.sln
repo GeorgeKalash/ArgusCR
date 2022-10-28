@@ -9,8 +9,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArgusCR1012", "ArgusCR1012\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReportViewer", "..\..\Utilities\ReportViewer\ReportViewer.csproj", "{F56B391A-D424-4925-B347-A0CA39E21AEE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArgusRPT", "..\ArgusRPT\ArgusRPT.csproj", "{934CF394-F4DE-4AE8-BDD4-260E28B789DF}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AionRPT", "..\..\Aion\AionRPT\AionRPT.csproj", "{415EA0CB-E0CB-44C4-9094-8B1562DE7C9B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AionDS", "..\..\Aion\AionDS\AionDS.csproj", "{E35EA772-2BE0-4052-A79A-4000B33A7173}"
@@ -31,6 +29,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArgusCR1018", "ArgusCR1018\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArgusCR1024", "ArgusCR1024\ArgusCR1024.csproj", "{411E847A-65A1-4367-A3DF-216ABCE209C0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArgusRPT", "..\ArgusRPT\ArgusRPT.csproj", "{934CF394-F4DE-4AE8-BDD4-260E28B789DF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -49,10 +49,6 @@ Global
 		{F56B391A-D424-4925-B347-A0CA39E21AEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F56B391A-D424-4925-B347-A0CA39E21AEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F56B391A-D424-4925-B347-A0CA39E21AEE}.Release|Any CPU.Build.0 = Release|Any CPU
-		{934CF394-F4DE-4AE8-BDD4-260E28B789DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{934CF394-F4DE-4AE8-BDD4-260E28B789DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{934CF394-F4DE-4AE8-BDD4-260E28B789DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{934CF394-F4DE-4AE8-BDD4-260E28B789DF}.Release|Any CPU.Build.0 = Release|Any CPU
 		{415EA0CB-E0CB-44C4-9094-8B1562DE7C9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{415EA0CB-E0CB-44C4-9094-8B1562DE7C9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{415EA0CB-E0CB-44C4-9094-8B1562DE7C9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -93,6 +89,10 @@ Global
 		{411E847A-65A1-4367-A3DF-216ABCE209C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{411E847A-65A1-4367-A3DF-216ABCE209C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{411E847A-65A1-4367-A3DF-216ABCE209C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{934CF394-F4DE-4AE8-BDD4-260E28B789DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{934CF394-F4DE-4AE8-BDD4-260E28B789DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{934CF394-F4DE-4AE8-BDD4-260E28B789DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{934CF394-F4DE-4AE8-BDD4-260E28B789DF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
