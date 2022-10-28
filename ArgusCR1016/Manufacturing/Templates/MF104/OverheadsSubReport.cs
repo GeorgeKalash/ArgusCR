@@ -25,8 +25,6 @@ namespace ArgusCR1016.Manufacturing.Templates.MF104
 
         private void OverheadsSubReport_DataSourceRowChanged(object sender, DataSourceRowEventArgs e)
         {
-
-
         }
 
         protected override void labelsText()
@@ -42,8 +40,7 @@ namespace ArgusCR1016.Manufacturing.Templates.MF104
 
         protected override string dictionaryStore()
         {
-            return "Custom\\R1016\\MF104.OH";
+            return "CR1016.MF104.OH";
         }
-
     }
 }

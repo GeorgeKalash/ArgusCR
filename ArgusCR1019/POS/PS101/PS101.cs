@@ -57,7 +57,6 @@ namespace ArgusCR1019.POS.PS101
 
             total_data.Text = SharedClasses.NumberToWords.multiLingualNumberInText((decimal)webObject.record.invoiceView.amount, 2, 2);
            
-            
             ((InvoiceItemsSubReports)(InvoiceItemsSubReports.ReportSource)).data = webObject.record.invoiceItems;
             ((InvoiceReceiptSubReports)(InvoiceReceiptSubReports.ReportSource)).data = webObject.record.receipts;
 
@@ -70,7 +69,7 @@ namespace ArgusCR1019.POS.PS101
 
         protected override string dictionaryStore()
         {
-            return "Custom\\R1019\\PS101";
+            return "CR1019.PS101";
         }
     }
 }

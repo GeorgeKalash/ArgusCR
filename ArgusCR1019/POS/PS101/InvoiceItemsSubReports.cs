@@ -20,24 +20,20 @@ namespace ArgusCR1019.POS.PS101
         protected override void OnBeforePrint(PrintEventArgs e)
         {
             DataSource = data;
-
-
             base.OnBeforePrint(e);
         }
 
         private void InvoiceItemsSubReports_DataSourceRowChanged(object sender, DataSourceRowEventArgs e)
         {
-
         }
 
         protected override void labelsText()
         {
-
         }
 
         protected override string dictionaryStore()
         {
-            return "Custom\\R1019\\PS101.II";
+            return "CR1019.PS101.II";
         }
     }
 }

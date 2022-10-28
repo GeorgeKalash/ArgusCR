@@ -28,7 +28,6 @@ namespace ArgusCR1019.POS.PS101
 
         private void InvoiceReceiptSubReports_DataSourceRowChanged(object sender, DataSourceRowEventArgs e)
         {
-
         }
 
         protected override void labelsText()
@@ -37,7 +36,7 @@ namespace ArgusCR1019.POS.PS101
 
         protected override string dictionaryStore()
         {
-            return "Custom\\R1019\\PS101.IR";
+            return "CR1019.PS101.IR";
         }
     }
 }

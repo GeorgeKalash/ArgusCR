@@ -14,7 +14,6 @@ namespace ArgusCR1009.Sales.Templates
         {
             InitializeComponent();
         }
-
         protected override void OnBeforePrint(PrintEventArgs e)
         {
             SharedClasses.JsonProtocol.GetStructure<TrxPrintView> webObject = deserializeGet<TrxPrintView>();
@@ -72,10 +71,9 @@ namespace ArgusCR1009.Sales.Templates
             vat_lbl.Text = labelText(12);
             netPrice_lbl.Text = labelText(13);
         }
-
         protected override string dictionaryStore()
         {
-            return "Custom\\R1009\\SA103";
+            return "CR1009.SA103";
         }
     }
 }

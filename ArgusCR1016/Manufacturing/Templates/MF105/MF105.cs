@@ -47,7 +47,6 @@ namespace ArgusCR1016.Manufacturing.Templates.MF105
             printSignature_lbl.Text = reportSignature();
             base.OnBeforePrint(e);
         }
-
         protected override void labelsText()
         {
             workSheet_lbl.Text = labelText(0);
@@ -62,7 +61,7 @@ namespace ArgusCR1016.Manufacturing.Templates.MF105
 
         protected override string dictionaryStore()
         {
-            return "Custom\\R1016\\MF105";
+            return "CR1016.MF105";
         }
     }
 }
