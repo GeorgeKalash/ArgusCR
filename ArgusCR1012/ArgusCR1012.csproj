@@ -144,6 +144,12 @@
     <Compile Include="Financials\FI101.Designer.cs">
       <DependentUpon>FI101.cs</DependentUpon>
     </Compile>
+    <Compile Include="Financials\FI103.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Financials\FI103.Designer.cs">
+      <DependentUpon>FI103.cs</DependentUpon>
+    </Compile>
     <Compile Include="Manufacturing\Templates\MFASM01.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -216,6 +222,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Financials\FI101.resx">
       <DependentUpon>FI101.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Financials\FI103.resx">
+      <DependentUpon>FI103.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Manufacturing\Templates\MFASM01.resx">
       <DependentUpon>MFASM01.cs</DependentUpon>

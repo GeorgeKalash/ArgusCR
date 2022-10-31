@@ -36,6 +36,8 @@ namespace ArgusCR1012.Financials
             this.xrTable2 = new DevExpress.XtraReports.UI.XRTable();
             this.xrTableRow11 = new DevExpress.XtraReports.UI.XRTableRow();
             this.receiverSign_lbl = new DevExpress.XtraReports.UI.XRTableCell();
+            this.xrTableRow12 = new DevExpress.XtraReports.UI.XRTableRow();
+            this.segmentName_data = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTable1 = new DevExpress.XtraReports.UI.XRTable();
             this.xrTableRow1 = new DevExpress.XtraReports.UI.XRTableRow();
             this.dtName_lbl = new DevExpress.XtraReports.UI.XRTableCell();
@@ -74,8 +76,6 @@ namespace ArgusCR1012.Financials
             this.PageFooter = new DevExpress.XtraReports.UI.PageFooterBand();
             this.pagesNumber_lbl = new DevExpress.XtraReports.UI.XRPageInfo();
             this.printSignature = new DevExpress.XtraReports.UI.XRLabel();
-            this.xrTableRow12 = new DevExpress.XtraReports.UI.XRTableRow();
-            this.segmentName_data = new DevExpress.XtraReports.UI.XRTableCell();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
@@ -134,6 +134,22 @@ namespace ArgusCR1012.Financials
             this.receiverSign_lbl.Text = "اسم المستلم / Receiver Signature";
             this.receiverSign_lbl.Weight = 1D;
             // 
+            // xrTableRow12
+            // 
+            this.xrTableRow12.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
+            this.segmentName_data});
+            this.xrTableRow12.Name = "xrTableRow12";
+            this.xrTableRow12.Weight = 1D;
+            // 
+            // segmentName_data
+            // 
+            this.segmentName_data.Font = new System.Drawing.Font("Arial", 10F);
+            this.segmentName_data.Multiline = true;
+            this.segmentName_data.Name = "segmentName_data";
+            this.segmentName_data.StylePriority.UseFont = false;
+            this.segmentName_data.Text = "segmentName_data";
+            this.segmentName_data.Weight = 1D;
+            // 
             // xrTable1
             // 
             this.xrTable1.LocationFloat = new DevExpress.Utils.PointFloat(65.625F, 87.5F);
@@ -163,7 +179,7 @@ namespace ArgusCR1012.Financials
             // 
             // dtName_lbl
             // 
-            this.dtName_lbl.BackColor = System.Drawing.Color.Azure;
+            this.dtName_lbl.BackColor = System.Drawing.Color.WhiteSmoke;
             this.dtName_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right)));
             this.dtName_lbl.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold);
@@ -199,7 +215,7 @@ namespace ArgusCR1012.Financials
             // 
             // reference_lbl
             // 
-            this.reference_lbl.BackColor = System.Drawing.Color.Azure;
+            this.reference_lbl.BackColor = System.Drawing.Color.WhiteSmoke;
             this.reference_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right)));
             this.reference_lbl.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold);
@@ -235,7 +251,7 @@ namespace ArgusCR1012.Financials
             // 
             // date_lbl
             // 
-            this.date_lbl.BackColor = System.Drawing.Color.Azure;
+            this.date_lbl.BackColor = System.Drawing.Color.WhiteSmoke;
             this.date_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right)));
             this.date_lbl.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold);
@@ -271,7 +287,7 @@ namespace ArgusCR1012.Financials
             // 
             // plant_lbl
             // 
-            this.plant_lbl.BackColor = System.Drawing.Color.Azure;
+            this.plant_lbl.BackColor = System.Drawing.Color.WhiteSmoke;
             this.plant_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right)));
             this.plant_lbl.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold);
@@ -308,7 +324,7 @@ namespace ArgusCR1012.Financials
             // 
             // account_lbl
             // 
-            this.account_lbl.BackColor = System.Drawing.Color.Azure;
+            this.account_lbl.BackColor = System.Drawing.Color.WhiteSmoke;
             this.account_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right)));
             this.account_lbl.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold);
@@ -356,7 +372,7 @@ namespace ArgusCR1012.Financials
             // 
             // paymentMethod_lbl
             // 
-            this.paymentMethod_lbl.BackColor = System.Drawing.Color.Azure;
+            this.paymentMethod_lbl.BackColor = System.Drawing.Color.WhiteSmoke;
             this.paymentMethod_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right)));
             this.paymentMethod_lbl.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold);
@@ -393,7 +409,7 @@ namespace ArgusCR1012.Financials
             // 
             // cashAccount_lbl
             // 
-            this.cashAccount_lbl.BackColor = System.Drawing.Color.Azure;
+            this.cashAccount_lbl.BackColor = System.Drawing.Color.WhiteSmoke;
             this.cashAccount_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right)));
             this.cashAccount_lbl.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold);
@@ -441,7 +457,7 @@ namespace ArgusCR1012.Financials
             // 
             // currency_lbl
             // 
-            this.currency_lbl.BackColor = System.Drawing.Color.Azure;
+            this.currency_lbl.BackColor = System.Drawing.Color.WhiteSmoke;
             this.currency_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right)));
             this.currency_lbl.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold);
@@ -478,7 +494,7 @@ namespace ArgusCR1012.Financials
             // 
             // amount_lbl
             // 
-            this.amount_lbl.BackColor = System.Drawing.Color.Azure;
+            this.amount_lbl.BackColor = System.Drawing.Color.WhiteSmoke;
             this.amount_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right)));
             this.amount_lbl.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold);
@@ -526,7 +542,7 @@ namespace ArgusCR1012.Financials
             // 
             // notes_lbl
             // 
-            this.notes_lbl.BackColor = System.Drawing.Color.Azure;
+            this.notes_lbl.BackColor = System.Drawing.Color.WhiteSmoke;
             this.notes_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
@@ -556,12 +572,13 @@ namespace ArgusCR1012.Financials
             // 
             // receiptVoucher_lbl
             // 
-            this.receiptVoucher_lbl.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.receiptVoucher_lbl.BackColor = System.Drawing.Color.Black;
             this.receiptVoucher_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.receiptVoucher_lbl.BorderWidth = 2F;
             this.receiptVoucher_lbl.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold);
+            this.receiptVoucher_lbl.ForeColor = System.Drawing.Color.White;
             this.receiptVoucher_lbl.LocationFloat = new DevExpress.Utils.PointFloat(317.1718F, 0F);
             this.receiptVoucher_lbl.Multiline = true;
             this.receiptVoucher_lbl.Name = "receiptVoucher_lbl";
@@ -571,6 +588,7 @@ namespace ArgusCR1012.Financials
             this.receiptVoucher_lbl.StylePriority.UseBorders = false;
             this.receiptVoucher_lbl.StylePriority.UseBorderWidth = false;
             this.receiptVoucher_lbl.StylePriority.UseFont = false;
+            this.receiptVoucher_lbl.StylePriority.UseForeColor = false;
             this.receiptVoucher_lbl.StylePriority.UsePadding = false;
             this.receiptVoucher_lbl.StylePriority.UseTextAlignment = false;
             this.receiptVoucher_lbl.Text = "سند قبض\r\nReceipt Voucher";
@@ -608,22 +626,6 @@ namespace ArgusCR1012.Financials
             this.printSignature.StylePriority.UseTextAlignment = false;
             this.printSignature.Text = "printSignature";
             this.printSignature.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
-            // 
-            // xrTableRow12
-            // 
-            this.xrTableRow12.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
-            this.segmentName_data});
-            this.xrTableRow12.Name = "xrTableRow12";
-            this.xrTableRow12.Weight = 1D;
-            // 
-            // segmentName_data
-            // 
-            this.segmentName_data.Font = new System.Drawing.Font("Arial", 10F);
-            this.segmentName_data.Multiline = true;
-            this.segmentName_data.Name = "segmentName_data";
-            this.segmentName_data.StylePriority.UseFont = false;
-            this.segmentName_data.Text = "segmentName_data";
-            this.segmentName_data.Weight = 1D;
             // 
             // FI101
             // 
