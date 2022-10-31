@@ -82,7 +82,7 @@ namespace ArgusCR1012.Financials
             // 
             // TopMargin
             // 
-            this.TopMargin.HeightF = 115F;
+            this.TopMargin.HeightF = 145F;
             this.TopMargin.Name = "TopMargin";
             // 
             // BottomMargin
@@ -636,7 +636,7 @@ namespace ArgusCR1012.Financials
             this.ReportHeader,
             this.PageFooter});
             this.Font = new System.Drawing.Font("Arial", 9.75F);
-            this.Margins = new System.Drawing.Printing.Margins(0, 0, 115, 115);
+            this.Margins = new System.Drawing.Printing.Margins(0, 0, 145, 115);
             this.PageHeight = 1169;
             this.PageWidth = 827;
             this.PaperKind = System.Drawing.Printing.PaperKind.A4;
