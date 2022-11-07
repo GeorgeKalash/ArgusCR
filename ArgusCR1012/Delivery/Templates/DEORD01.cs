@@ -109,7 +109,7 @@ namespace ArgusCR1012.Delivery.Templates
 
         protected override string dictionaryStore()
         {
-            return "Custom\\R1012\\DE101";
+            return "CR1012.DE101";
         }
     }
 }

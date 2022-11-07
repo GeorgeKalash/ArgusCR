@@ -13,7 +13,6 @@ namespace ArgusCR1019.Sales.Templates
 {
     public partial class SAIVC01 : ArgusRPT.BaseReport
     {
-  
       public SAIVC01()
         {
             InitializeComponent();
@@ -98,9 +97,8 @@ namespace ArgusCR1019.Sales.Templates
         }
         protected override string dictionaryStore()
         {
-            return "Custom\\R1019\\SA103";
+            return "CR1019.SA103";
         }
-
     }
 }
 

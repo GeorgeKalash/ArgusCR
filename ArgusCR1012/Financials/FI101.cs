@@ -55,7 +55,7 @@ namespace ArgusCR1012.Financials
         }
         protected override string dictionaryStore()
         {
-            return "Custom\\R1012\\FI101";
+            return "CR1012.FI101";
         }
 
     }

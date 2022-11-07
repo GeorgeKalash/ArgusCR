@@ -67,10 +67,9 @@ namespace ArgusCR1018.POS.PS101
         protected override void labelsText()
         {
         }
-
         protected override string dictionaryStore()
         {
-            return "Custom\\R1018\\PS101";
+            return "CR1018.PS101";
         }
     }
 }

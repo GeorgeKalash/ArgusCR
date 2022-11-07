@@ -54,7 +54,7 @@ namespace ArgusCR1008.Inventory.Templates
 
         protected override string dictionaryStore()
         {
-            return "Custom\\R1008\\IV103";
+            return "CR1008.IV103";
         }
     }
 }
