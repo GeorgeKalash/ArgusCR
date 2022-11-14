@@ -8,7 +8,7 @@ using System.Drawing.Printing;
 
 namespace ArgusCR1018.POS.PS101
 {
-    public partial class PS101 : Reports.BaseReport
+    public partial class PS101 : ArgusRPT.BaseReport
     {
         public PS101()
         {
@@ -22,8 +22,8 @@ namespace ArgusCR1018.POS.PS101
         public override void setSessionInfo(Dictionary<string, string> _reportHeaders)
         {
             base.setSessionInfo(_reportHeaders);
-            ((Reports.BaseReport)(InvoiceItemsSubReports.ReportSource)).setSessionInfo(sessionInfo);
-            ((Reports.BaseReport)(InvoiceReceiptSubReports.ReportSource)).setSessionInfo(sessionInfo);
+            ((ArgusRPT.BaseReport)(InvoiceItemsSubReports.ReportSource)).setSessionInfo(sessionInfo);
+            ((ArgusRPT.BaseReport)(InvoiceReceiptSubReports.ReportSource)).setSessionInfo(sessionInfo);
 
             initSubReports();
         }
@@ -42,6 +42,8 @@ namespace ArgusCR1018.POS.PS101
             companyStreet_data.Text = webObject.record.companyInfo.address?.street1;
             companyCity_data.Text = webObject.record.companyInfo.address?.city;
             companyVatNo_data.Text = webObject.record.companyInfo.taxNo;
+            licenseNo_data.Text = webObject.record.companyInfo.licenseNo;
+            phoneCompany_data.Text = webObject.record.companyInfo.address?.phone;
 
             reference_data.Text = webObject.record.invoiceView.reference;
             date_data.Text = webObject.record.invoiceView.date.ToString(sessionInfo.dateFormat);
@@ -56,8 +58,7 @@ namespace ArgusCR1018.POS.PS101
             }
 
             total_data.Text = SharedClasses.NumberToWords.multiLingualNumberInText((decimal)webObject.record.invoiceView.amount, 2, 2);
-           
-            
+                 
             ((InvoiceItemsSubReports)(InvoiceItemsSubReports.ReportSource)).data = webObject.record.invoiceItems;
             ((InvoiceReceiptSubReports)(InvoiceReceiptSubReports.ReportSource)).data = webObject.record.receipts;
 
