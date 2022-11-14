@@ -9,7 +9,7 @@ using ArgusDS.Inventory;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace ArgusCR1028.Sales.SA103
+namespace ArgusCR1028.Sales
 
 {
     public partial class SA103 : ArgusRPT.BaseReport

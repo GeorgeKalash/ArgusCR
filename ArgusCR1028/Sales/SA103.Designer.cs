@@ -1,5 +1,5 @@
 ﻿
-namespace ArgusCR1028.Sales.SA103
+namespace ArgusCR1028.Sales
 {
     partial class SA103
     {
