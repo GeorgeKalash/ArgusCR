@@ -6,7 +6,7 @@ using System.ComponentModel;
 using System.Drawing;
 using System.Drawing.Printing;
 
-namespace ArgusCR1024.Purchase.Templates.PU103GLD
+namespace ArgusCR1025.Purchase.Templates.PU103GLD
 {
     public partial class InvoiceItemsSubReports : ArgusRPT.BaseReport
     {
@@ -43,11 +43,12 @@ namespace ArgusCR1024.Purchase.Templates.PU103GLD
             notes_lbl.Text = labelText(8);
 
             TotalQuantity_lbl.Text = labelText(9);
+            fodda_lbl.Text = labelText(10);
         }
 
         protected override string dictionaryStore()
         {
-            return "CR1024.PU103.II.GLD";
+            return "CR1025.PU103.II.GLD";
         }
     }
 }
