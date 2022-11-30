@@ -24,8 +24,6 @@ namespace ArgusCR1028.Sales
             RightToLeft = DevExpress.XtraReports.UI.RightToLeft.No;
             RightToLeftLayout = DevExpress.XtraReports.UI.RightToLeftLayout.No;
 
-            const int BPIDC_VAT = 2;
-
             SharedClasses.JsonProtocol.GetStructure<TrxPrintView> webObject = deserializeGet<TrxPrintView>();
             DataSource = webObject.record.items;
 
@@ -48,24 +46,7 @@ namespace ArgusCR1028.Sales
 
             clientRef_data.Text = webObject.record.client.reference;
             clientName_data.Text = webObject.record.trxHeader.clientName;
-
-            if (webObject.record.masterIDs != null)
-            {
-                ArgusDS.BusinessPartners.MasterIDNumberView vatID = webObject.record.masterIDs.FirstOrDefault(x => x.incId == BPIDC_VAT);
-                if (vatID != null)
-                    clientVATNo_data.Text = vatID.idNum;
-            }
-
-            if (webObject.record.bpDefaultIDCategoryId != null)
-            {
-                ArgusDS.BusinessPartners.MasterIDNumberView otherID = webObject.record.masterIDs.FirstOrDefault(x => x.incId == webObject.record.bpDefaultIDCategoryId);
-                if (otherID != null)
-                {
-                    idNo_data.Text = otherID.idNum;
-                    idNo_lbl.Text = otherID.incName;
-                }
-            }
-
+            clientVATNo_data.Text = webObject.record.client.vatNumber;
             cAddress_data.Text = webObject.record.billAddress?.street1;
           
             subtotal_data.Text = webObject.record.trxHeader.subtotal.ToString("N2");
