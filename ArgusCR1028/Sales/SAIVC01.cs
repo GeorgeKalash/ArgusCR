@@ -29,6 +29,8 @@ namespace ArgusCR1028.Sales
             SharedClasses.JsonProtocol.GetStructure<TrxPrintView> webObject = deserializeGet<TrxPrintView>();
             DataSource = webObject.record.items;
 
+            logo_data.ImageUrl = webObject.record.companyInfo.logoUrl;
+
             companyName_data.Text = webObject.record.companyInfo.name;
             taxNo_data.Text = webObject.record.companyInfo.taxNo;
 
@@ -40,7 +42,7 @@ namespace ArgusCR1028.Sales
             }
 
             plant_data.Text = webObject.record.trxHeader.plantName;
-            licenseNo_data.Text = webObject.record.companyInfo.licenseNo;
+            phoneNo_data.Text = webObject.record.companyInfo.address?.phone;
             crNo_data.Text = webObject.record.companyInfo.crNo;
             address_data.Text = webObject.record.companyInfo.address?.street1;
 
