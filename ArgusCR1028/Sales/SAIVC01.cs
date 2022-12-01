@@ -34,11 +34,7 @@ namespace ArgusCR1028.Sales
 
             reference_data.Text = webObject.record.trxHeader.reference;
 
-            if (webObject.record.logTime != null)
-            {
-                date_data.Text = ((DateTime)webObject.record.logTime).ToString(sessionInfo.dateFormat) + " " + ((DateTime)webObject.record.logTime).ToString("HH:mm");
-            }
-
+            date_data.Text = webObject.record.trxHeader.date.ToString(sessionInfo.dateFormat);
             plant_data.Text = webObject.record.trxHeader.plantName;
             phoneNo_data.Text = webObject.record.companyInfo.address?.phone;
             crNo_data.Text = webObject.record.companyInfo.crNo;
