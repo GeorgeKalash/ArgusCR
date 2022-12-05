@@ -7,8 +7,8 @@
     <ProjectGuid>{C2F1EEA5-736F-4AB7-AD1D-0E235BE5D3DB}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ArgusCR1028</RootNamespace>
-    <AssemblyName>ArgusCR1028</AssemblyName>
+    <RootNamespace>ArgusCR120</RootNamespace>
+    <AssemblyName>ArgusCR120</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
