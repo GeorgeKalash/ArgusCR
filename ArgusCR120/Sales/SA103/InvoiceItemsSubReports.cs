@@ -1,12 +1,10 @@
-﻿using System;
+﻿using DevExpress.XtraReports.UI;
+using System;
 using System.Collections;
+using System.Collections.Generic;
 using System.ComponentModel;
 using System.Drawing;
 using System.Drawing.Printing;
-using DevExpress.XtraReports.UI;
-using System.Collections.Generic;
-using System.Linq;
-
 
 namespace ArgusCR120.Sales.SA103
 {
@@ -30,6 +28,19 @@ namespace ArgusCR120.Sales.SA103
 
         private void InvoiceItemsSubReports_DataSourceRowChanged(object sender, DataSourceRowEventArgs e)
         {
+        }
+
+
+        protected override void OnDataSourceRowChanged(DataSourceRowEventArgs e)
+        {
+            ArgusDS.Sales.ItemView obj = ((List<ArgusDS.Sales.ItemView>)DataSource)[e.CurrentRow];
+
+            double netUnitPrice = obj.unitPrice - (obj.mdValue ?? 0);
+            double epWithVAT = obj.extendedPrice + obj.vatAmount;
+
+            unitPrice_data.Text = netUnitPrice.ToString("N2");
+            extendedPriceWithVAT_data.Text = epWithVAT.ToString("N2");
+            base.OnDataSourceRowChanged(e);
         }
 
         protected override void labelsText()

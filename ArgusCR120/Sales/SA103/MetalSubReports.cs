@@ -1,11 +1,10 @@
-﻿using System;
+﻿using DevExpress.XtraReports.UI;
+using System;
 using System.Collections;
+using System.Collections.Generic;
 using System.ComponentModel;
 using System.Drawing;
 using System.Drawing.Printing;
-using DevExpress.XtraReports.UI;
-using System.Collections.Generic;
-using System.Linq;
 
 namespace ArgusCR120.Sales.SA103
 {

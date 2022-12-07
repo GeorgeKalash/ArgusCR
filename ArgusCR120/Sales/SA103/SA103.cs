@@ -5,9 +5,7 @@ using System.Drawing;
 using System.Drawing.Printing;
 using DevExpress.XtraReports.UI;
 using ArgusDS.Sales.Reports;
-using ArgusDS.Inventory;
 using System.Collections.Generic;
-using System.Linq;
 
 namespace ArgusCR120.Sales.SA103
 {
@@ -60,6 +58,9 @@ namespace ArgusCR120.Sales.SA103
             spName2_data.Text = webObject.record.trxHeader.spName;
 
             QRCode.Text = new KSAeInvoiceQrCode(webObject.record.companyInfo.name, webObject.record.companyInfo.taxNo, (DateTime)webObject.record.trxHeader.date, webObject.record.trxHeader.amount.ToString(), webObject.record.trxHeader.vatAmount.ToString()).ToBase64();
+
+            ((InvoiceItemsSubReports)(InvoiceItemsSubReports.ReportSource)).data = webObject.record.items;
+            ((MetalSubReports)(MetalSubReports.ReportSource)).data = webObject.record.metalSummaries;
             base.OnBeforePrint(e);
         }
 
