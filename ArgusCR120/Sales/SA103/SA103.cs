@@ -32,7 +32,6 @@ namespace ArgusCR120.Sales.SA103
             RightToLeftLayout = DevExpress.XtraReports.UI.RightToLeftLayout.No;
 
             SharedClasses.JsonProtocol.GetStructure<TrxPrintView> webObject = deserializeGet<TrxPrintView>();
-            DataSource = webObject.record.items;
 
             logo_data.ImageUrl = webObject.record.companyInfo.logoUrl;
 

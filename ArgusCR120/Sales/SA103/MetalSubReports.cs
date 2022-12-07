@@ -4,7 +4,6 @@ using System.ComponentModel;
 using System.Drawing;
 using System.Drawing.Printing;
 using DevExpress.XtraReports.UI;
-using ArgusDS.Sales.Reports;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -12,7 +11,7 @@ namespace ArgusCR120.Sales.SA103
 {
     public partial class MetalSubReports : ArgusRPT.BaseReport
     {
-        public List<TrxPrintView> data;
+        public List<ArgusDS.Logistics.MetalSummary> data;
 
         public MetalSubReports()
         {
