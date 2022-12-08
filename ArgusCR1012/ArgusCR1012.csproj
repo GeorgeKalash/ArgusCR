@@ -144,7 +144,9 @@
     <Compile Include="Financials\FI101.Designer.cs">
       <DependentUpon>FI101.cs</DependentUpon>
     </Compile>
-    <Compile Include="Financials\FI103.cs" />
+    <Compile Include="Financials\FI103.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Financials\FI103.Designer.cs">
       <DependentUpon>FI103.cs</DependentUpon>
     </Compile>

@@ -99,14 +99,12 @@ namespace ArgusCR1012.Sales.Templates
 
         protected override void labelsText()
         {
-
         }
 
         protected override string dictionaryStore()
         {
-            return "Custom\\R1012\\SA104";
+            return "CR1012.SA104";
         }
-
     }
 }
 

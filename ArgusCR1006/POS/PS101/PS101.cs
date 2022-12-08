@@ -121,10 +121,9 @@ namespace ArgusCR1006.POS.PS101
             spSignature2_lbl.Text = labelText(30);
             clientSignature2_lbl.Text = labelText(31);
         }
-
         protected override string dictionaryStore()
         {
-            return "Custom\\R1006\\PS101";
+            return "CR1006.PS101";
         }
     }
 }

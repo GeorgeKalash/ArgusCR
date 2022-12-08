@@ -11,7 +11,7 @@ using System.Linq;
 
 namespace ArgusCR1018.Sales.Templates
 {
-    public partial class SAIVC01 : Reports.BaseReport
+    public partial class SAIVC01 : ArgusRPT.BaseReport
     {
   
       public SAIVC01()
@@ -99,9 +99,8 @@ namespace ArgusCR1018.Sales.Templates
         }
         protected override string dictionaryStore()
         {
-            return "Custom\\R1018\\SA103";
+            return "CR1018.SA103";
         }
-
     }
 }
 

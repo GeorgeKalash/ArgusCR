@@ -55,28 +55,29 @@ namespace ArgusCR1016.Sales.Templates
 
             usd_lbl.Text = labelText(3);
 
-            description_lbl.Text = labelText(4);
-            weight_lbl.Text = labelText(5);
-            qty_lbl.Text = labelText(6);
-            unitPrice_lbl.Text = labelText(7);
-            amount_lbl.Text = labelText(8);
+            sku_lbl.Text = labelText(4);
+            description_lbl.Text = labelText(5);
+            weight_lbl.Text = labelText(6);
+            qty_lbl.Text = labelText(7);
+            unitPrice_lbl.Text = labelText(8);
+            amount_lbl.Text = labelText(9);
 
-            subtotal_lbl.Text = labelText(9);
-            discount_lbl.Text = labelText(10);
+            subtotal_lbl.Text = labelText(10);
+            discount_lbl.Text = labelText(11);
 
-            vat_lbl.Text = labelText(11);
-            netTotal_lbl.Text = labelText(12);
+            vat_lbl.Text = labelText(12);
+            netTotal_lbl.Text = labelText(13);
 
-            totalPieces_lbl.Text = labelText(13);
-            totalWeight_lbl.Text = labelText(14);
+            totalPieces_lbl.Text = labelText(14);
+            totalWeight_lbl.Text = labelText(15);
 
-            footerText1_lbl.Text = labelText(15);
-            footerText2_lbl.Text = labelText(16);
+            footerText1_lbl.Text = labelText(16);
+            footerText2_lbl.Text = labelText(17);
         }
 
         protected override string dictionaryStore()
         {
-            return "Custom\\R1016\\SA103";
+            return "CR1016.SA103";
         }
     }
 }

@@ -111,7 +111,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="Sales\Templates\SA103.cs" />
+    <Compile Include="Sales\Templates\SA103.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Sales\Templates\SA103.Designer.cs">
       <DependentUpon>SA103.cs</DependentUpon>
     </Compile>

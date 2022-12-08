@@ -1,0 +1,82 @@
+﻿using System;
+using System.Collections;
+using System.ComponentModel;
+using System.Drawing;
+using System.Drawing.Printing;
+using DevExpress.XtraReports.UI;
+using ArgusDS.Sales.Reports;
+using ArgusDS.Inventory;
+using System.Collections.Generic;
+using System.Linq;
+
+namespace ArgusCR1028.Sales
+{
+    public partial class SAIVC01 : ArgusRPT.BaseReport
+    {
+  
+      public SAIVC01()
+        {
+            InitializeComponent();
+        }
+
+        protected override void OnBeforePrint(PrintEventArgs e)
+        {
+            RightToLeft = DevExpress.XtraReports.UI.RightToLeft.No;
+            RightToLeftLayout = DevExpress.XtraReports.UI.RightToLeftLayout.No;
+
+            SharedClasses.JsonProtocol.GetStructure<TrxPrintView> webObject = deserializeGet<TrxPrintView>();
+            DataSource = webObject.record.items;
+
+            logo_data.ImageUrl = webObject.record.companyInfo.logoUrl;
+
+            companyName_data.Text = webObject.record.companyInfo.name;
+            taxNo_data.Text = webObject.record.companyInfo.taxNo;
+
+            reference_data.Text = webObject.record.trxHeader.reference;
+
+            date_data.Text = webObject.record.trxHeader.date.ToString(sessionInfo.dateFormat);
+            plant_data.Text = webObject.record.trxHeader.plantName;
+            phoneNo_data.Text = webObject.record.companyInfo.address?.phone;
+            crNo_data.Text = webObject.record.companyInfo.crNo;
+            address_data.Text = webObject.record.companyInfo.address?.street1;
+
+            clientRef_data.Text = webObject.record.client.reference;
+            clientName_data.Text = webObject.record.trxHeader.clientName;
+            clientVATNo_data.Text = webObject.record.client.vatNumber;
+            cAddress_data.Text = webObject.record.billAddress?.street1;
+          
+            subtotal_data.Text = webObject.record.trxHeader.subtotal.ToString("N2");
+            vatAmount_data.Text = webObject.record.trxHeader.vatAmount.ToString("N2");
+            amount_data.Text = webObject.record.trxHeader.amount.ToString("N2");
+            amountInWords_data.Text = SharedClasses.NumberToWords.multiLingualNumberInText((decimal)webObject.record.trxHeader.amount, 2, 2);
+
+
+            clientName2_data.Text = webObject.record.trxHeader.clientName;
+            spName2_data.Text = webObject.record.trxHeader.spName;
+
+            QRCode.Text = new KSAeInvoiceQrCode(webObject.record.companyInfo.name, webObject.record.companyInfo.taxNo, (DateTime)webObject.record.trxHeader.date, webObject.record.trxHeader.amount.ToString(), webObject.record.trxHeader.vatAmount.ToString()).ToBase64();
+            base.OnBeforePrint(e);
+        }
+
+        protected override void OnDataSourceRowChanged(DataSourceRowEventArgs e)
+        {
+            ArgusDS.Sales.ItemView obj = ((List<ArgusDS.Sales.ItemView>)DataSource)[e.CurrentRow];
+            
+            double netUnitPrice = obj.unitPrice - (obj.mdValue ?? 0);
+            double epWithVAT = obj.extendedPrice + obj.vatAmount;
+
+            unitPrice_data.Text = netUnitPrice.ToString("N2");
+            extendedPriceWithVAT_data.Text = epWithVAT.ToString("N2");
+            base.OnDataSourceRowChanged(e);
+        }
+
+        protected override void labelsText()
+        {
+        }
+
+        protected override string dictionaryStore()
+        {
+            return "CR1028.SA103";
+        }
+    }
+}

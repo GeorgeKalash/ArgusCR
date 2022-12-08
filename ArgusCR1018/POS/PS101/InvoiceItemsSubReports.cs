@@ -8,7 +8,7 @@ using System.Drawing.Printing;
 
 namespace ArgusCR1018.POS.PS101
 {
-    public partial class InvoiceItemsSubReports : Reports.BaseReport
+    public partial class InvoiceItemsSubReports : ArgusRPT.BaseReport
     {
         public List<ArgusDS.PointOfSale.Reports.PS101_item> data;
 
@@ -19,9 +19,10 @@ namespace ArgusCR1018.POS.PS101
 
         protected override void OnBeforePrint(PrintEventArgs e)
         {
+            RightToLeft = DevExpress.XtraReports.UI.RightToLeft.No;
+            RightToLeftLayout = DevExpress.XtraReports.UI.RightToLeftLayout.No;
+
             DataSource = data;
-
-
             base.OnBeforePrint(e);
         }
 
@@ -37,9 +38,7 @@ namespace ArgusCR1018.POS.PS101
 
         protected override string dictionaryStore()
         {
-            return "Custom\\R1018\\PS101.II";
+            return "CR1018.PS101.II";
         }
     }
 }
-
-

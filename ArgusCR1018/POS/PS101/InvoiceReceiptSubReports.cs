@@ -8,7 +8,7 @@ using System.Drawing.Printing;
 
 namespace ArgusCR1018.POS.PS101
 {
-    public partial class InvoiceReceiptSubReports : Reports.BaseReport
+    public partial class InvoiceReceiptSubReports : ArgusRPT.BaseReport
     {
         public List<ArgusDS.PointOfSale.InvoiceReceiptView> data;
 
@@ -28,7 +28,6 @@ namespace ArgusCR1018.POS.PS101
 
         private void InvoiceReceiptSubReports_DataSourceRowChanged(object sender, DataSourceRowEventArgs e)
         {
-
         }
 
         protected override void labelsText()
@@ -37,7 +36,7 @@ namespace ArgusCR1018.POS.PS101
 
         protected override string dictionaryStore()
         {
-            return "Custom\\R1018\\PS101.IR";
+            return "CR1018.PS101.IR";
         }
     }
 }

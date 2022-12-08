@@ -1,7 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
+<<<<<<< HEAD
 VisualStudioVersion = 16.0.31019.35
+=======
+VisualStudioVersion = 16.0.32929.386
+>>>>>>> master
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArgusCR1008", "ArgusCR1008\ArgusCR1008.csproj", "{6F6997C9-3BBC-40CB-AD77-7FE3E321218F}"
 EndProject
@@ -27,10 +31,17 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArgusCR1016", "ArgusCR1016\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArgusRPT", "..\ArgusRPT\ArgusRPT.csproj", "{934CF394-F4DE-4AE8-BDD4-260E28B789DF}"
 EndProject
+<<<<<<< HEAD
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArgusCR1025", "ArgusCR1025\ArgusCR1025.csproj", "{83D0602D-E2F3-48BE-B73F-148A271C5C5B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArgusCR1028", "ArgusCR1028\ArgusCR1028.csproj", "{93B2D24F-6A46-436C-A4C3-C5EEDAEBE18C}"
 EndProject
+=======
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArgusCR1028", "ArgusCR1028\ArgusCR1028.csproj", "{93B2D24F-6A46-436C-A4C3-C5EEDAEBE18C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArgusCR1025", "ArgusCR1025\ArgusCR1025.csproj", "{83D0602D-E2F3-48BE-B73F-148A271C5C5B}"
+EndProject
+>>>>>>> master
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArgusCR1029", "ArgusCR1029\ArgusCR1029.csproj", "{C2F1EEA5-736F-4AB7-AD1D-0E235BE5D3DB}"
 EndProject
 Global
@@ -87,14 +98,24 @@ Global
 		{934CF394-F4DE-4AE8-BDD4-260E28B789DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{934CF394-F4DE-4AE8-BDD4-260E28B789DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{934CF394-F4DE-4AE8-BDD4-260E28B789DF}.Release|Any CPU.Build.0 = Release|Any CPU
+<<<<<<< HEAD
 		{83D0602D-E2F3-48BE-B73F-148A271C5C5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{83D0602D-E2F3-48BE-B73F-148A271C5C5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{83D0602D-E2F3-48BE-B73F-148A271C5C5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{83D0602D-E2F3-48BE-B73F-148A271C5C5B}.Release|Any CPU.Build.0 = Release|Any CPU
+=======
+>>>>>>> master
 		{93B2D24F-6A46-436C-A4C3-C5EEDAEBE18C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{93B2D24F-6A46-436C-A4C3-C5EEDAEBE18C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{93B2D24F-6A46-436C-A4C3-C5EEDAEBE18C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{93B2D24F-6A46-436C-A4C3-C5EEDAEBE18C}.Release|Any CPU.Build.0 = Release|Any CPU
+<<<<<<< HEAD
+=======
+		{83D0602D-E2F3-48BE-B73F-148A271C5C5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83D0602D-E2F3-48BE-B73F-148A271C5C5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83D0602D-E2F3-48BE-B73F-148A271C5C5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83D0602D-E2F3-48BE-B73F-148A271C5C5B}.Release|Any CPU.Build.0 = Release|Any CPU
+>>>>>>> master
 		{C2F1EEA5-736F-4AB7-AD1D-0E235BE5D3DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{C2F1EEA5-736F-4AB7-AD1D-0E235BE5D3DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C2F1EEA5-736F-4AB7-AD1D-0E235BE5D3DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
