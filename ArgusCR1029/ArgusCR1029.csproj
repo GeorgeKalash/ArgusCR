@@ -126,6 +126,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Financials\FI101.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Financials\FI101.Designer.cs">
+      <DependentUpon>FI101.cs</DependentUpon>
+    </Compile>
     <Compile Include="Inventory\IV102.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -154,6 +160,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Financials\FI101.resx">
+      <DependentUpon>FI101.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Inventory\IV102.resx">
       <DependentUpon>IV102.cs</DependentUpon>
     </EmbeddedResource>
@@ -168,8 +177,6 @@
       <DependentUpon>SA103.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Financials\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
