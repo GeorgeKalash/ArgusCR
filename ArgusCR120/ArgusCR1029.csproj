@@ -7,8 +7,8 @@
     <ProjectGuid>{C2F1EEA5-736F-4AB7-AD1D-0E235BE5D3DB}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ArgusCR120</RootNamespace>
-    <AssemblyName>ArgusCR120</AssemblyName>
+    <RootNamespace>ArgusCR1029</RootNamespace>
+    <AssemblyName>ArgusCR1029</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -126,6 +126,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Inventory\IV102.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Inventory\IV102.Designer.cs">
+      <DependentUpon>IV102.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Sales\KSAeInvoiceQrCode.cs" />
     <Compile Include="Sales\SA103\InvoiceItemsSubReports.cs">
@@ -148,6 +154,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Inventory\IV102.resx">
+      <DependentUpon>IV102.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Sales\SA103\InvoiceItemsSubReports.resx">
       <DependentUpon>InvoiceItemsSubReports.cs</DependentUpon>
@@ -159,6 +168,8 @@
       <DependentUpon>SA103.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Financials\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

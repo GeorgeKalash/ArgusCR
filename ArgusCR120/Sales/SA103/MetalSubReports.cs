@@ -6,7 +6,7 @@ using System.ComponentModel;
 using System.Drawing;
 using System.Drawing.Printing;
 
-namespace ArgusCR120.Sales.SA103
+namespace ArgusCR1029.Sales.SA103
 {
     public partial class MetalSubReports : ArgusRPT.BaseReport
     {
@@ -37,7 +37,7 @@ namespace ArgusCR120.Sales.SA103
 
         protected override string dictionaryStore()
         {
-            return "CR120.SA103";
+            return "CR1029.SA103";
         }
     }
 }
