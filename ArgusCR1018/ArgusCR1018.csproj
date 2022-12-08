@@ -129,21 +129,29 @@
     <Compile Include="BaseReport.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="POS\PS101\InvoiceItemsSubReports.cs" />
+    <Compile Include="POS\PS101\InvoiceItemsSubReports.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="POS\PS101\InvoiceItemsSubReports.Designer.cs">
       <DependentUpon>InvoiceItemsSubReports.cs</DependentUpon>
     </Compile>
-    <Compile Include="POS\PS101\InvoiceReceiptSubReports.cs" />
+    <Compile Include="POS\PS101\InvoiceReceiptSubReports.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="POS\PS101\InvoiceReceiptSubReports.Designer.cs">
       <DependentUpon>InvoiceReceiptSubReports.cs</DependentUpon>
     </Compile>
-    <Compile Include="POS\PS101\PS101.cs" />
+    <Compile Include="POS\PS101\PS101.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="POS\PS101\PS101.Designer.cs">
       <DependentUpon>PS101.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Sales\Templates\KSAeInvoiceQrCode.cs" />
-    <Compile Include="Sales\Templates\SAIVC01.cs" />
+    <Compile Include="Sales\Templates\SAIVC01.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Sales\Templates\SAIVC01.Designer.cs">
       <DependentUpon>SAIVC01.cs</DependentUpon>
     </Compile>
