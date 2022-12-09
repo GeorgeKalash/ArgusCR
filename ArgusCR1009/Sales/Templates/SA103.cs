@@ -30,27 +30,17 @@ namespace ArgusCR1009.Sales.Templates
             //ref1_data.Text=?
             //ref2_data.Text=?
 
+            amountInWords_data.Text = SharedClasses.NumberToWords.multiLingualNumberInText((decimal)webObject.record.trxHeader.amount, 2, 2);
 
-            subtotal1_data.Text = webObject.record.trxHeader.subtotal.ToString("N2");
+            total1_data.Text = webObject.record.trxHeader.subtotal.ToString("N2");
+            remise_data.Text = webObject.record.trxHeader.tdAmount.ToString();
+            total2_data.Text = webObject.record.trxHeader.miscAmount.ToString();
+
             tva_data.Text = webObject.record.trxHeader.vatAmount.ToString("N2");
+            // ttc_data.Text = ?
+            //asdi_data.Text=?
+            payer_data.Text= webObject.record.trxHeader.amount.ToString("N2");
 
-
-            /*
-            clientVat_data.Text = webObject.record.client.vatNumber;
-            AddressStreet1_data.Text = webObject.record.billAddress?.street1;
-            AddressCity_data.Text = webObject.record.billAddress?.city;
-            AddressCountryName_data.Text = webObject.record.billAddress?.countryName;
-            AddressPhone_data.Text = webObject.record.billAddress?.phone;
-
-            docRef_data.Text = webObject.record.trxHeader.reference;
-            clientRef_data.Text = webObject.record.trxHeader.clientRef;
-            currency_data.Text = webObject.record.trxHeader.currencyName;
-            date_data.Text = webObject.record.trxHeader.date.ToString(sessionInfo.dateFormat);
-
-
-            discount_data.Text = webObject.record.trxHeader.tdAmount.ToString();
-            netPrice_data.Text = webObject.record.trxHeader.amount.ToString("N2");
-*/
             base.OnBeforePrint(e);
         }
 
