@@ -30,7 +30,7 @@ namespace ArgusCR1009.Sales.Templates
             //ref1_data.Text=?
             //ref2_data.Text=?
 
-            amountInWords_data.Text = SharedClasses.NumberToWords.multiLingualNumberInText((decimal)webObject.record.trxHeader.amount, 2, 2);
+            amountInWords_data.Text = SharedClasses.NumberToWords.multiLingualNumberInText((decimal)webObject.record.trxHeader.amount, 2, 3);
 
             total1_data.Text = webObject.record.trxHeader.subtotal.ToString("N2");
             remise_data.Text = webObject.record.trxHeader.tdAmount.ToString();
