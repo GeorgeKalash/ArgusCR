@@ -43,7 +43,6 @@ namespace ArgusCR1029.Financials.FI104
             accountRef_data.Text = webObject.record.header.accountRef;
             accountName_data.Text = webObject.record.header.accountName;
 
-            printSignature.Text = reportSignature();
             base.OnBeforePrint(e);
         }
 
