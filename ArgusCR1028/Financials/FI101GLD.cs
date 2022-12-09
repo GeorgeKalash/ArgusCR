@@ -41,7 +41,7 @@ namespace ArgusCR1028.Financials
             paymentMethodName_data.Text = obj.record.paymentMethodName;
             amount_data.Text = obj.record.amount.ToString("N2");
             notes_data.Text = obj.record.notes;
-            amountInWords_data.Text = SharedClasses.NumberToWords.multiLingualNumberInText((decimal)obj.record.amount, 2, 2);
+            amountInWords_data.Text = SharedClasses.NumberToWords.multiLingualNumberInText((decimal)obj.record.amount, 4, 2);
             amountInWords_data.Text = string.Format("\"{0}\"", amountInWords_data.Text);
             segmentName_data.Text = obj.record.segmentName;
 

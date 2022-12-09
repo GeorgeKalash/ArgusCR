@@ -16,8 +16,6 @@ namespace ArgusCR1029.Inventory
 
         protected override void OnBeforePrint(PrintEventArgs e)
         {
-            RightToLeft = DevExpress.XtraReports.UI.RightToLeft.No;
-            RightToLeftLayout = DevExpress.XtraReports.UI.RightToLeftLayout.No;
 
             SharedClasses.JsonProtocol.GetStructure<ArgusDS.Inventory.Reports.IV102> webObject = deserializeGet<ArgusDS.Inventory.Reports.IV102>();
             base.OnBeforePrint(e);
