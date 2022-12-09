@@ -26,8 +26,6 @@ namespace ArgusCR1029.Financials.FI104
         private void ItemsSubReports_DataSourceRowChanged(object sender, DataSourceRowEventArgs e)
         {
         }
-
-
         protected override void labelsText()
         {
             metal_lbl.Text = labelText(0);
@@ -37,7 +35,6 @@ namespace ArgusCR1029.Financials.FI104
             qty_lbl.Text = labelText(4);
             labor_lbl.Text = labelText(5);
             totalLabor_lbl.Text = labelText(6);
-
         }
         protected override string dictionaryStore()
         {
