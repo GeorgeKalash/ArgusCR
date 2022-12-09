@@ -117,4 +117,8 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="xrLabel1.Text" xml:space="preserve">
+    <value>social : Gagnoa, Quartier Commerce rue Principale/ Tel.: (+225):01 43 13 13 13/ RCCM : CI-GAG-2021-B-269 
+Compte bancaire N°: CI 01001 011060750005 34 Bridge Bank Group CI / Email: prochemci@gmail.com</value>
+  </data>
 </root>
