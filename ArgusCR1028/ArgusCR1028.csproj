@@ -152,12 +152,6 @@
     <Compile Include="Sales\SA103\SA103.Designer.cs">
       <DependentUpon>SA103.cs</DependentUpon>
     </Compile>
-    <Compile Include="Sales\SAIVC01.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Sales\SAIVC01.Designer.cs">
-      <DependentUpon>SAIVC01.cs</DependentUpon>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Financials\FI101GLD.resx">
@@ -172,9 +166,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Sales\SA103\SA103.resx">
       <DependentUpon>SA103.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Sales\SAIVC01.resx">
-      <DependentUpon>SAIVC01.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup />
