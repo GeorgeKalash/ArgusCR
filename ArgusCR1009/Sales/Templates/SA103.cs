@@ -21,16 +21,14 @@ namespace ArgusCR1009.Sales.Templates
 
             logo_data.ImageUrl = webObject.record.companyInfo.logoUrl;
 
-            reference_data.Text = webObject.record.trxHeader.reference;
-
-            date_data.Text = webObject.record.trxHeader.date.ToString(sessionInfo.dateFormat);
-
             clientRef_data.Text = webObject.record.client.reference;
             clientName_data.Text = webObject.record.trxHeader.clientName;
             clientVATNo_data.Text = webObject.record.client.vatNumber;
             cAddress_data.Text = webObject.record.billAddress?.street1;
 
+            reference_data.Text = webObject.record.trxHeader.reference;
             date_data.Text = webObject.record.trxHeader.date.ToString(sessionInfo.dateFormat);
+            site_data.Text = webObject.record.trxHeader.siteRef;
 
             amountInWords_data.Text = SharedClasses.NumberToWords.multiLingualNumberInText((decimal)webObject.record.trxHeader.amount, 7, 3);
 
