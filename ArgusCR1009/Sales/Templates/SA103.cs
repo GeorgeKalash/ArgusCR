@@ -21,25 +21,22 @@ namespace ArgusCR1009.Sales.Templates
 
             logo_data.ImageUrl = webObject.record.companyInfo.logoUrl;
 
-            nom_data.Text = webObject.record.trxHeader.clientName;
-            adresse_data.Text =  webObject.record.billAddress?.name;
-            //cc_data.Text=?
-
+            reference_data.Text = webObject.record.trxHeader.reference;
 
             date_data.Text = webObject.record.trxHeader.date.ToString(sessionInfo.dateFormat);
-            //ref1_data.Text=?
-            //ref2_data.Text=?
 
-            amountInWords_data.Text = SharedClasses.NumberToWords.multiLingualNumberInText((decimal)webObject.record.trxHeader.amount, 2, 3);
+            clientRef_data.Text = webObject.record.client.reference;
+            clientName_data.Text = webObject.record.trxHeader.clientName;
+            clientVATNo_data.Text = webObject.record.client.vatNumber;
+            cAddress_data.Text = webObject.record.billAddress?.street1;
 
-            total1_data.Text = webObject.record.trxHeader.subtotal.ToString("N2");
-            remise_data.Text = webObject.record.trxHeader.tdAmount.ToString();
-            total2_data.Text = webObject.record.trxHeader.miscAmount.ToString();
+            date_data.Text = webObject.record.trxHeader.date.ToString(sessionInfo.dateFormat);
 
-            tva_data.Text = webObject.record.trxHeader.vatAmount.ToString("N2");
-            // ttc_data.Text = ?
-            //asdi_data.Text=?
-            payer_data.Text= webObject.record.trxHeader.amount.ToString("N2");
+            amountInWords_data.Text = SharedClasses.NumberToWords.multiLingualNumberInText((decimal)webObject.record.trxHeader.amount, 7, 3);
+
+            subtotal_data.Text = webObject.record.trxHeader.subtotal.ToString("N2");
+            tdAmount_data.Text = webObject.record.trxHeader.tdAmount.ToString();
+            amount_data.Text = webObject.record.trxHeader.amount.ToString("N2");
 
             base.OnBeforePrint(e);
         }
@@ -47,6 +44,7 @@ namespace ArgusCR1009.Sales.Templates
         protected override void labelsText()
         {
         }
+
         protected override string dictionaryStore()
         {
             return "CR1009.SA103";
