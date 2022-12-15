@@ -68,6 +68,9 @@ namespace ArgusCR1012.Sales.Templates
             cAddress_data.Text = webObject.record.billAddress?.street1;
           
             subtotal_data.Text = webObject.record.trxHeader.subtotal.ToString("N2");
+            tdAmount_data.Text = webObject.record.trxHeader.tdAmount.ToString();
+            double TotalAmountNonSubjectToTax = webObject.record.trxHeader.subtotal - (webObject.record.trxHeader.tdAmount ?? 0);
+            totalSub_data.Text = TotalAmountNonSubjectToTax.ToString("N2");
             vatAmount_data.Text = webObject.record.trxHeader.vatAmount.ToString("N2");
             amount_data.Text = webObject.record.trxHeader.amount.ToString("N2");
 
