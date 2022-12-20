@@ -53,7 +53,6 @@ namespace ArgusCR1012.Sales.Templates
             }
 
 
-
             if (webObject.record.bpDefaultIDCategoryId != null)
             {
                 ArgusDS.BusinessPartners.MasterIDNumberView otherID = webObject.record.masterIDs.FirstOrDefault(x => x.incId == webObject.record.bpDefaultIDCategoryId);
