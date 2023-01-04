@@ -82,7 +82,7 @@ namespace ArgusCR1012.Financials
             // 
             // TopMargin
             // 
-            this.TopMargin.HeightF = 145F;
+            this.TopMargin.HeightF = 155F;
             this.TopMargin.Name = "TopMargin";
             // 
             // BottomMargin
@@ -608,20 +608,20 @@ namespace ArgusCR1012.Financials
             this.pagesNumber_lbl.LocationFloat = new DevExpress.Utils.PointFloat(677.9166F, 12.5F);
             this.pagesNumber_lbl.Name = "pagesNumber_lbl";
             this.pagesNumber_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.pagesNumber_lbl.SizeF = new System.Drawing.SizeF(98.51514F, 23F);
+            this.pagesNumber_lbl.SizeF = new System.Drawing.SizeF(84.97339F, 23F);
             this.pagesNumber_lbl.StylePriority.UseBackColor = false;
             this.pagesNumber_lbl.StylePriority.UseTextAlignment = false;
-            this.pagesNumber_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            this.pagesNumber_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
             this.pagesNumber_lbl.TextFormatString = "Page {0} of {1}";
             // 
             // printSignature
             // 
             this.printSignature.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.printSignature.LocationFloat = new DevExpress.Utils.PointFloat(50F, 9.999974F);
+            this.printSignature.LocationFloat = new DevExpress.Utils.PointFloat(65.625F, 12.5F);
             this.printSignature.Multiline = true;
             this.printSignature.Name = "printSignature";
             this.printSignature.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.printSignature.SizeF = new System.Drawing.SizeF(377.9195F, 23.00002F);
+            this.printSignature.SizeF = new System.Drawing.SizeF(581.0445F, 23.00002F);
             this.printSignature.StylePriority.UseFont = false;
             this.printSignature.StylePriority.UseTextAlignment = false;
             this.printSignature.Text = "printSignature";
@@ -636,7 +636,7 @@ namespace ArgusCR1012.Financials
             this.ReportHeader,
             this.PageFooter});
             this.Font = new System.Drawing.Font("Arial", 9.75F);
-            this.Margins = new System.Drawing.Printing.Margins(0, 0, 145, 115);
+            this.Margins = new System.Drawing.Printing.Margins(0, 0, 155, 115);
             this.PageHeight = 1169;
             this.PageWidth = 827;
             this.PaperKind = System.Drawing.Printing.PaperKind.A4;

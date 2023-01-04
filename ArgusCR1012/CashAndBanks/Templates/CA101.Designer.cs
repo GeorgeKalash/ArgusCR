@@ -69,12 +69,12 @@ namespace ArgusCR1012.CashAndBanks.Templates
             // 
             // TopMargin
             // 
-            this.TopMargin.HeightF = 40F;
+            this.TopMargin.HeightF = 155F;
             this.TopMargin.Name = "TopMargin";
             // 
             // BottomMargin
             // 
-            this.BottomMargin.HeightF = 0F;
+            this.BottomMargin.HeightF = 115F;
             this.BottomMargin.Name = "BottomMargin";
             // 
             // Detail
@@ -92,11 +92,12 @@ namespace ArgusCR1012.CashAndBanks.Templates
             // 
             // Transfers_lbl
             // 
-            this.Transfers_lbl.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.Transfers_lbl.BackColor = System.Drawing.Color.Black;
             this.Transfers_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.Transfers_lbl.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold);
+            this.Transfers_lbl.ForeColor = System.Drawing.Color.White;
             this.Transfers_lbl.LocationFloat = new DevExpress.Utils.PointFloat(35.00001F, 0F);
             this.Transfers_lbl.Multiline = true;
             this.Transfers_lbl.Name = "Transfers_lbl";
@@ -105,6 +106,7 @@ namespace ArgusCR1012.CashAndBanks.Templates
             this.Transfers_lbl.StylePriority.UseBackColor = false;
             this.Transfers_lbl.StylePriority.UseBorders = false;
             this.Transfers_lbl.StylePriority.UseFont = false;
+            this.Transfers_lbl.StylePriority.UseForeColor = false;
             this.Transfers_lbl.StylePriority.UsePadding = false;
             this.Transfers_lbl.StylePriority.UseTextAlignment = false;
             this.Transfers_lbl.Text = "Transfers";
@@ -137,7 +139,7 @@ namespace ArgusCR1012.CashAndBanks.Templates
             // 
             // dtName_lbl
             // 
-            this.dtName_lbl.BackColor = System.Drawing.Color.Azure;
+            this.dtName_lbl.BackColor = System.Drawing.Color.WhiteSmoke;
             this.dtName_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
@@ -173,7 +175,7 @@ namespace ArgusCR1012.CashAndBanks.Templates
             // 
             // reference_lbl
             // 
-            this.reference_lbl.BackColor = System.Drawing.Color.Azure;
+            this.reference_lbl.BackColor = System.Drawing.Color.WhiteSmoke;
             this.reference_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
@@ -209,7 +211,7 @@ namespace ArgusCR1012.CashAndBanks.Templates
             // 
             // date_lbl
             // 
-            this.date_lbl.BackColor = System.Drawing.Color.Azure;
+            this.date_lbl.BackColor = System.Drawing.Color.WhiteSmoke;
             this.date_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
@@ -245,7 +247,7 @@ namespace ArgusCR1012.CashAndBanks.Templates
             // 
             // currencyRef_lbl
             // 
-            this.currencyRef_lbl.BackColor = System.Drawing.Color.Azure;
+            this.currencyRef_lbl.BackColor = System.Drawing.Color.WhiteSmoke;
             this.currencyRef_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
@@ -282,7 +284,7 @@ namespace ArgusCR1012.CashAndBanks.Templates
             // 
             // fromCAName_lbl
             // 
-            this.fromCAName_lbl.BackColor = System.Drawing.Color.Azure;
+            this.fromCAName_lbl.BackColor = System.Drawing.Color.WhiteSmoke;
             this.fromCAName_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
@@ -330,7 +332,7 @@ namespace ArgusCR1012.CashAndBanks.Templates
             // 
             // toCAName_lbl
             // 
-            this.toCAName_lbl.BackColor = System.Drawing.Color.Azure;
+            this.toCAName_lbl.BackColor = System.Drawing.Color.WhiteSmoke;
             this.toCAName_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
@@ -377,7 +379,7 @@ namespace ArgusCR1012.CashAndBanks.Templates
             // 
             // amount_lbl
             // 
-            this.amount_lbl.BackColor = System.Drawing.Color.Azure;
+            this.amount_lbl.BackColor = System.Drawing.Color.WhiteSmoke;
             this.amount_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
@@ -413,7 +415,7 @@ namespace ArgusCR1012.CashAndBanks.Templates
             // 
             // notes_lbl
             // 
-            this.notes_lbl.BackColor = System.Drawing.Color.Azure;
+            this.notes_lbl.BackColor = System.Drawing.Color.WhiteSmoke;
             this.notes_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
@@ -450,23 +452,23 @@ namespace ArgusCR1012.CashAndBanks.Templates
             // pagesNumber_lbl
             // 
             this.pagesNumber_lbl.BackColor = System.Drawing.Color.Transparent;
-            this.pagesNumber_lbl.LocationFloat = new DevExpress.Utils.PointFloat(702.0833F, 10.00001F);
+            this.pagesNumber_lbl.LocationFloat = new DevExpress.Utils.PointFloat(702.0833F, 10.00004F);
             this.pagesNumber_lbl.Name = "pagesNumber_lbl";
             this.pagesNumber_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.pagesNumber_lbl.SizeF = new System.Drawing.SizeF(98.51514F, 23F);
+            this.pagesNumber_lbl.SizeF = new System.Drawing.SizeF(86.4317F, 23F);
             this.pagesNumber_lbl.StylePriority.UseBackColor = false;
             this.pagesNumber_lbl.StylePriority.UseTextAlignment = false;
-            this.pagesNumber_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            this.pagesNumber_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
             this.pagesNumber_lbl.TextFormatString = "Page {0} of {1}";
             // 
             // printSignature
             // 
             this.printSignature.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.printSignature.LocationFloat = new DevExpress.Utils.PointFloat(26.04167F, 10.00001F);
+            this.printSignature.LocationFloat = new DevExpress.Utils.PointFloat(35.00001F, 9.999974F);
             this.printSignature.Multiline = true;
             this.printSignature.Name = "printSignature";
             this.printSignature.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.printSignature.SizeF = new System.Drawing.SizeF(377.9195F, 23.00002F);
+            this.printSignature.SizeF = new System.Drawing.SizeF(612.7112F, 23.00002F);
             this.printSignature.StylePriority.UseFont = false;
             this.printSignature.StylePriority.UseTextAlignment = false;
             this.printSignature.Text = "printSignature";
@@ -481,7 +483,7 @@ namespace ArgusCR1012.CashAndBanks.Templates
             this.ReportHeader,
             this.PageFooter});
             this.Font = new System.Drawing.Font("Arial", 9.75F);
-            this.Margins = new System.Drawing.Printing.Margins(0, 0, 40, 0);
+            this.Margins = new System.Drawing.Printing.Margins(0, 0, 155, 115);
             this.PageHeight = 1169;
             this.PageWidth = 827;
             this.PaperKind = System.Drawing.Printing.PaperKind.A4;
