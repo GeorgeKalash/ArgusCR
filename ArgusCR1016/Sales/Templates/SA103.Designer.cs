@@ -418,7 +418,7 @@ namespace ArgusCR1016.Sales.Templates
             // 
             // date_lbl
             // 
-            this.date_lbl.Font = new System.Drawing.Font("Arial", 9F);
+            this.date_lbl.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold);
             this.date_lbl.Multiline = true;
             this.date_lbl.Name = "date_lbl";
             this.date_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 4, 0, 100F);
@@ -429,7 +429,7 @@ namespace ArgusCR1016.Sales.Templates
             // 
             // date_data
             // 
-            this.date_data.Font = new System.Drawing.Font("Arial", 9F);
+            this.date_data.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold);
             this.date_data.Multiline = true;
             this.date_data.Name = "date_data";
             this.date_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(4, 2, 4, 0, 100F);
@@ -504,7 +504,7 @@ namespace ArgusCR1016.Sales.Templates
             // 
             // vatNumber_lbl
             // 
-            this.vatNumber_lbl.Font = new System.Drawing.Font("Arial", 9F);
+            this.vatNumber_lbl.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold);
             this.vatNumber_lbl.Multiline = true;
             this.vatNumber_lbl.Name = "vatNumber_lbl";
             this.vatNumber_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 4, 0, 100F);
@@ -515,7 +515,7 @@ namespace ArgusCR1016.Sales.Templates
             // 
             // vatNumber_data
             // 
-            this.vatNumber_data.Font = new System.Drawing.Font("Arial", 9F);
+            this.vatNumber_data.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold);
             this.vatNumber_data.Multiline = true;
             this.vatNumber_data.Name = "vatNumber_data";
             this.vatNumber_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(4, 2, 4, 0, 100F);
