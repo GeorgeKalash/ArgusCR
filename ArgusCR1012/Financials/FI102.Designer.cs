@@ -109,6 +109,7 @@ namespace ArgusCR1012.Financials
             this.xrLabel11 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLine12 = new DevExpress.XtraReports.UI.XRLine();
             this.xrCrossBandBox2 = new DevExpress.XtraReports.UI.XRCrossBandBox();
+            this.xrLine1 = new DevExpress.XtraReports.UI.XRLine();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable19)).BeginInit();
@@ -131,7 +132,8 @@ namespace ArgusCR1012.Financials
             // 
             this.Detail.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
             this.xrTable2});
-            this.Detail.HeightF = 26F;
+            this.Detail.HeightF = 25.83335F;
+            this.Detail.KeepTogether = true;
             this.Detail.Name = "Detail";
             // 
             // xrTable2
@@ -159,8 +161,7 @@ namespace ArgusCR1012.Financials
             // 
             // etRef_data
             // 
-            this.etRef_data.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
-            | DevExpress.XtraPrinting.BorderSide.Right) 
+            this.etRef_data.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.etRef_data.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[etRef]")});
@@ -176,8 +177,7 @@ namespace ArgusCR1012.Financials
             // 
             // etName_data
             // 
-            this.etName_data.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
-            | DevExpress.XtraPrinting.BorderSide.Right) 
+            this.etName_data.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.etName_data.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[etName]")});
@@ -193,8 +193,7 @@ namespace ArgusCR1012.Financials
             // 
             // subtotal_data
             // 
-            this.subtotal_data.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
-            | DevExpress.XtraPrinting.BorderSide.Right) 
+            this.subtotal_data.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.subtotal_data.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[subtotal]")});
@@ -213,8 +212,7 @@ namespace ArgusCR1012.Financials
             // 
             // vatAmount_data
             // 
-            this.vatAmount_data.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
-            | DevExpress.XtraPrinting.BorderSide.Right) 
+            this.vatAmount_data.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.vatAmount_data.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[vatAmount]")});
@@ -233,8 +231,7 @@ namespace ArgusCR1012.Financials
             // 
             // amounts_data
             // 
-            this.amounts_data.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
-            | DevExpress.XtraPrinting.BorderSide.Right) 
+            this.amounts_data.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.amounts_data.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[amount]")});
@@ -253,8 +250,7 @@ namespace ArgusCR1012.Financials
             // 
             // supplierName_data
             // 
-            this.supplierName_data.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
-            | DevExpress.XtraPrinting.BorderSide.Right) 
+            this.supplierName_data.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.supplierName_data.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[supplierName]")});
@@ -270,8 +266,7 @@ namespace ArgusCR1012.Financials
             // 
             // taxRef_data
             // 
-            this.taxRef_data.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
-            | DevExpress.XtraPrinting.BorderSide.Right) 
+            this.taxRef_data.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.taxRef_data.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[taxRef]")});
@@ -287,8 +282,7 @@ namespace ArgusCR1012.Financials
             // 
             // note_data
             // 
-            this.note_data.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
-            | DevExpress.XtraPrinting.BorderSide.Right) 
+            this.note_data.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.note_data.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[notes]")});
@@ -310,6 +304,7 @@ namespace ArgusCR1012.Financials
             this.xrTable17,
             this.xrTable16});
             this.ReportHeader.HeightF = 246.0419F;
+            this.ReportHeader.KeepTogether = true;
             this.ReportHeader.Name = "ReportHeader";
             // 
             // xrTable3
@@ -957,8 +952,9 @@ namespace ArgusCR1012.Financials
             // etRef_lbl
             // 
             this.etRef_lbl.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.etRef_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
-            | DevExpress.XtraPrinting.BorderSide.Right)));
+            this.etRef_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+            | DevExpress.XtraPrinting.BorderSide.Right) 
+            | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.etRef_lbl.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold);
             this.etRef_lbl.Multiline = true;
             this.etRef_lbl.Name = "etRef_lbl";
@@ -975,8 +971,9 @@ namespace ArgusCR1012.Financials
             // etName_lbl
             // 
             this.etName_lbl.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.etName_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
-            | DevExpress.XtraPrinting.BorderSide.Right)));
+            this.etName_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+            | DevExpress.XtraPrinting.BorderSide.Right) 
+            | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.etName_lbl.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold);
             this.etName_lbl.Multiline = true;
             this.etName_lbl.Name = "etName_lbl";
@@ -993,8 +990,9 @@ namespace ArgusCR1012.Financials
             // subtotal_lbl
             // 
             this.subtotal_lbl.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.subtotal_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
-            | DevExpress.XtraPrinting.BorderSide.Right)));
+            this.subtotal_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+            | DevExpress.XtraPrinting.BorderSide.Right) 
+            | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.subtotal_lbl.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold);
             this.subtotal_lbl.Multiline = true;
             this.subtotal_lbl.Name = "subtotal_lbl";
@@ -1011,8 +1009,9 @@ namespace ArgusCR1012.Financials
             // vatAmount_lbl
             // 
             this.vatAmount_lbl.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.vatAmount_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
-            | DevExpress.XtraPrinting.BorderSide.Right)));
+            this.vatAmount_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+            | DevExpress.XtraPrinting.BorderSide.Right) 
+            | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.vatAmount_lbl.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold);
             this.vatAmount_lbl.Multiline = true;
             this.vatAmount_lbl.Name = "vatAmount_lbl";
@@ -1029,8 +1028,9 @@ namespace ArgusCR1012.Financials
             // amounts_lbl
             // 
             this.amounts_lbl.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.amounts_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
-            | DevExpress.XtraPrinting.BorderSide.Right)));
+            this.amounts_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+            | DevExpress.XtraPrinting.BorderSide.Right) 
+            | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.amounts_lbl.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold);
             this.amounts_lbl.Multiline = true;
             this.amounts_lbl.Name = "amounts_lbl";
@@ -1047,8 +1047,9 @@ namespace ArgusCR1012.Financials
             // supplierName_lbl
             // 
             this.supplierName_lbl.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.supplierName_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
-            | DevExpress.XtraPrinting.BorderSide.Right)));
+            this.supplierName_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+            | DevExpress.XtraPrinting.BorderSide.Right) 
+            | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.supplierName_lbl.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold);
             this.supplierName_lbl.Multiline = true;
             this.supplierName_lbl.Name = "supplierName_lbl";
@@ -1065,8 +1066,9 @@ namespace ArgusCR1012.Financials
             // taxRef_lbl
             // 
             this.taxRef_lbl.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.taxRef_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
-            | DevExpress.XtraPrinting.BorderSide.Right)));
+            this.taxRef_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+            | DevExpress.XtraPrinting.BorderSide.Right) 
+            | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.taxRef_lbl.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold);
             this.taxRef_lbl.Multiline = true;
             this.taxRef_lbl.Name = "taxRef_lbl";
@@ -1083,8 +1085,9 @@ namespace ArgusCR1012.Financials
             // note_lbl
             // 
             this.note_lbl.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.note_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
-            | DevExpress.XtraPrinting.BorderSide.Right)));
+            this.note_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+            | DevExpress.XtraPrinting.BorderSide.Right) 
+            | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.note_lbl.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold);
             this.note_lbl.Multiline = true;
             this.note_lbl.Name = "note_lbl";
@@ -1134,26 +1137,28 @@ namespace ArgusCR1012.Financials
             // ReportFooter
             // 
             this.ReportFooter.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+            this.xrLine1,
             this.xrLine10,
             this.xrLine11,
             this.xrLabel10,
             this.xrLabel11,
             this.xrLine12});
-            this.ReportFooter.HeightF = 191.6109F;
+            this.ReportFooter.HeightF = 176.0688F;
+            this.ReportFooter.KeepTogether = true;
             this.ReportFooter.Name = "ReportFooter";
             // 
             // xrLine10
             // 
-            this.xrLine10.LocationFloat = new DevExpress.Utils.PointFloat(145.0556F, 47.99998F);
+            this.xrLine10.LocationFloat = new DevExpress.Utils.PointFloat(145.0556F, 47.99995F);
             this.xrLine10.Name = "xrLine10";
-            this.xrLine10.SizeF = new System.Drawing.SizeF(516.4028F, 2.083336F);
+            this.xrLine10.SizeF = new System.Drawing.SizeF(256.8222F, 2.083332F);
             // 
             // xrLine11
             // 
             this.xrLine11.LineDirection = DevExpress.XtraReports.UI.LineDirection.Vertical;
-            this.xrLine11.LocationFloat = new DevExpress.Utils.PointFloat(401.8778F, 47.99998F);
+            this.xrLine11.LocationFloat = new DevExpress.Utils.PointFloat(401.8778F, 47.99995F);
             this.xrLine11.Name = "xrLine11";
-            this.xrLine11.SizeF = new System.Drawing.SizeF(2.083344F, 112.3194F);
+            this.xrLine11.SizeF = new System.Drawing.SizeF(2.083344F, 96.7774F);
             // 
             // xrLabel10
             // 
@@ -1193,11 +1198,17 @@ namespace ArgusCR1012.Financials
             this.xrCrossBandBox2.AnchorVertical = ((DevExpress.XtraReports.UI.VerticalAnchorStyles)((DevExpress.XtraReports.UI.VerticalAnchorStyles.Top | DevExpress.XtraReports.UI.VerticalAnchorStyles.Bottom)));
             this.xrCrossBandBox2.BorderWidth = 1F;
             this.xrCrossBandBox2.EndBand = this.ReportFooter;
-            this.xrCrossBandBox2.EndPointFloat = new DevExpress.Utils.PointFloat(144.0139F, 161.3611F);
+            this.xrCrossBandBox2.EndPointFloat = new DevExpress.Utils.PointFloat(144.0139F, 145.819F);
             this.xrCrossBandBox2.Name = "xrCrossBandBox2";
             this.xrCrossBandBox2.StartBand = this.ReportFooter;
             this.xrCrossBandBox2.StartPointFloat = new DevExpress.Utils.PointFloat(144.0139F, 10.00001F);
             this.xrCrossBandBox2.WidthF = 518.4861F;
+            // 
+            // xrLine1
+            // 
+            this.xrLine1.LocationFloat = new DevExpress.Utils.PointFloat(403.9612F, 47.99998F);
+            this.xrLine1.Name = "xrLine1";
+            this.xrLine1.SizeF = new System.Drawing.SizeF(256.8222F, 2.083332F);
             // 
             // FI102
             // 
@@ -1309,5 +1320,6 @@ namespace ArgusCR1012.Financials
         private DevExpress.XtraReports.UI.XRLabel xrLabel11;
         private DevExpress.XtraReports.UI.XRLine xrLine12;
         private DevExpress.XtraReports.UI.XRCrossBandBox xrCrossBandBox2;
+        private DevExpress.XtraReports.UI.XRLine xrLine1;
     }
 }
