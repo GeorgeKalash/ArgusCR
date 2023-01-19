@@ -26,9 +26,7 @@ namespace ArgusCR1026.Sales.Templates
 
             amount_data.Text = webObject.record.trxHeader.amount.ToString("N2");
 
-            if (webObject.record.currencyProfileId != null)
-                amountInWords_data.Text = SharedClasses.NumberToWords.multiLingualNumberInText((decimal)webObject.record.trxHeader.amount, webObject.record.currencyProfileId, 2);
-
+            amountInWords_data.Text = SharedClasses.NumberToWords.multiLingualNumberInText((decimal)webObject.record.trxHeader.amount, 2, 2);
             base.OnBeforePrint(e);
         }
 
