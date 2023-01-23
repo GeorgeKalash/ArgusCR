@@ -1,7 +1,7 @@
 ﻿
 namespace ArgusCR1026.Sales.Templates
 {
-    partial class SA103
+    partial class SA103B
     {
         /// <summary>
         /// Required designer variable.

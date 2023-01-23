@@ -2,7 +2,7 @@
 using System;
 using System.Drawing.Printing;
 
-namespace ArgusCR1028.Sales.SA103
+namespace ArgusCR1026.Sales.Templates.SA103
 {
     partial class SA103
     {
@@ -153,12 +153,13 @@ namespace ArgusCR1028.Sales.SA103
             // 
             this.InvoiceItemsSubReports.LocationFloat = new DevExpress.Utils.PointFloat(24.99994F, 0F);
             this.InvoiceItemsSubReports.Name = "InvoiceItemsSubReports";
-            this.InvoiceItemsSubReports.ReportSource = new ArgusCR1028.Sales.SA103.InvoiceItemsSubReports();
+            this.InvoiceItemsSubReports.ReportSource = new ArgusCR1026.Sales.Templates.SA103.InvoiceItemsSubReports();
             this.InvoiceItemsSubReports.SizeF = new System.Drawing.SizeF(777.0995F, 23F);
             // 
             // Detail
             // 
             this.Detail.HeightF = 0F;
+            this.Detail.KeepTogether = true;
             this.Detail.KeepTogetherWithDetailReports = true;
             this.Detail.Name = "Detail";
             this.Detail.SubBands.AddRange(new DevExpress.XtraReports.UI.SubBand[] {
@@ -177,7 +178,7 @@ namespace ArgusCR1028.Sales.SA103
             // 
             this.MetalSubReports.LocationFloat = new DevExpress.Utils.PointFloat(24.99994F, 12.5F);
             this.MetalSubReports.Name = "MetalSubReports";
-            this.MetalSubReports.ReportSource = new ArgusCR1028.Sales.SA103.MetalSubReports();
+            this.MetalSubReports.ReportSource = new ArgusCR1026.Sales.Templates.SA103.MetalSubReports();
             this.MetalSubReports.SizeF = new System.Drawing.SizeF(777.0995F, 23F);
             // 
             // TopMargin

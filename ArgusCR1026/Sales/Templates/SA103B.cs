@@ -8,9 +8,9 @@ using System.Drawing.Printing;
 
 namespace ArgusCR1026.Sales.Templates
 {
-    public partial class SA103 : ArgusRPT.BaseReport
+    public partial class SA103B : ArgusRPT.BaseReport
     {
-        public SA103()
+        public SA103B()
         {
             InitializeComponent();
         }
@@ -32,7 +32,7 @@ namespace ArgusCR1026.Sales.Templates
 
         protected override string dictionaryStore()
         {
-            return "CR1026.SA103";
+            return "CR1026.SA103B";
         }
     }
 }
