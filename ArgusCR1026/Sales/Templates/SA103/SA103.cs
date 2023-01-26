@@ -40,7 +40,7 @@ namespace ArgusCR1026.Sales.Templates.SA103
 
             date_data.Text = webObject.record.trxHeader.date.ToString(sessionInfo.dateFormat);
             plant_data.Text = webObject.record.trxHeader.plantName;
-            phoneNo_data.Text = webObject.record.companyInfo.address?.phone;
+            licenseNo_data.Text = webObject.record.companyInfo.licenseNo;
             crNo_data.Text = webObject.record.companyInfo.crNo;
             address_data.Text = webObject.record.companyInfo.address?.street1;
 
@@ -48,6 +48,7 @@ namespace ArgusCR1026.Sales.Templates.SA103
             clientName_data.Text = webObject.record.trxHeader.clientName;
             clientVATNo_data.Text = webObject.record.client.vatNumber;
             cAddress_data.Text = webObject.record.billAddress?.street1;
+            exhibitionManager_data.Text = webObject.record.trxHeader.contactName;
 
             subtotal_data.Text = webObject.record.trxHeader.subtotal.ToString("N2");
             vatAmount_data.Text = webObject.record.trxHeader.vatAmount.ToString("N2");
