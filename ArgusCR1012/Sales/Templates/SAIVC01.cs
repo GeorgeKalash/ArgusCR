@@ -70,7 +70,7 @@ namespace ArgusCR1012.Sales.Templates
 
             phoneNumber_data.Text = webObject.record.billAddress?.phone;
             cAddress_data.Text = webObject.record.billAddress?.street1;
-            contact_data.Text = webObject.record.trxHeader.contactName;
+          //  contact_data.Text = webObject.record.trxHeader.contactName;
 
             subtotal_data.Text = webObject.record.trxHeader.subtotal.ToString("N2");
             tdAmount_data.Text = webObject.record.trxHeader.tdAmount.ToString();
