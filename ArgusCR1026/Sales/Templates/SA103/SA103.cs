@@ -54,8 +54,6 @@ namespace ArgusCR1026.Sales.Templates.SA103
             vatAmount_data.Text = webObject.record.trxHeader.vatAmount.ToString("N2");
             amount_data.Text = webObject.record.trxHeader.amount.ToString("N2");
 
-            pureMetalQty_data.Text = webObject.record.pureMetalQty.ToString("N2");
-
             amountInWords_data.Text = SharedClasses.NumberToWords.multiLingualNumberInText((decimal)webObject.record.trxHeader.amount, 2, 2);
             goldAmountInWords_data.Text = SharedClasses.NumberToWords.multiLingualNumberInText((decimal)webObject.record.pureMetalQty, 4, 2);
 
