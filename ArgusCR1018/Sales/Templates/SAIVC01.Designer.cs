@@ -352,6 +352,7 @@ namespace ArgusCR1018.Sales.Templates
             this.Detail.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
             this.xrTable7});
             this.Detail.HeightF = 23.12514F;
+            this.Detail.KeepTogether = true;
             this.Detail.Name = "Detail";
             // 
             // xrTable7
@@ -526,6 +527,7 @@ namespace ArgusCR1018.Sales.Templates
             this.xrTable12,
             this.xrTable11});
             this.ReportFooter.HeightF = 291.7924F;
+            this.ReportFooter.KeepTogether = true;
             this.ReportFooter.Name = "ReportFooter";
             // 
             // xrTable13
@@ -1167,6 +1169,7 @@ namespace ArgusCR1018.Sales.Templates
             this.xrTable4,
             this.taxInvoice_lbl});
             this.ReportHeader.HeightF = 373.9585F;
+            this.ReportHeader.KeepTogether = true;
             this.ReportHeader.Name = "ReportHeader";
             // 
             // logo_data

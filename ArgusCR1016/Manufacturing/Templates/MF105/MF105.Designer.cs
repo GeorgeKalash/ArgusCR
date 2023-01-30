@@ -42,8 +42,8 @@ namespace ArgusCR1016.Manufacturing.Templates.MF105
             this.printSignature_lbl = new DevExpress.XtraReports.UI.XRLabel();
             this.pagesNumber_lbl = new DevExpress.XtraReports.UI.XRPageInfo();
             this.ReportHeader = new DevExpress.XtraReports.UI.ReportHeaderBand();
-            this.refBarcode = new DevExpress.XtraReports.UI.XRBarCode();
             this.xrPanel1 = new DevExpress.XtraReports.UI.XRPanel();
+            this.refBarcode = new DevExpress.XtraReports.UI.XRBarCode();
             this.xrTable4 = new DevExpress.XtraReports.UI.XRTable();
             this.xrTableRow7 = new DevExpress.XtraReports.UI.XRTableRow();
             this.remarks_lbl = new DevExpress.XtraReports.UI.XRTableCell();
@@ -89,6 +89,7 @@ namespace ArgusCR1016.Manufacturing.Templates.MF105
             // Detail
             // 
             this.Detail.HeightF = 24.79167F;
+            this.Detail.KeepTogether = true;
             this.Detail.Name = "Detail";
             this.Detail.SubBands.AddRange(new DevExpress.XtraReports.UI.SubBand[] {
             this.IssueOfMaterialsSubBand,
@@ -142,7 +143,7 @@ namespace ArgusCR1016.Manufacturing.Templates.MF105
             this.PageFooter.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
             this.printSignature_lbl,
             this.pagesNumber_lbl});
-            this.PageFooter.HeightF = 35.50002F;
+            this.PageFooter.HeightF = 33.00003F;
             this.PageFooter.Name = "PageFooter";
             // 
             // printSignature_lbl
@@ -161,7 +162,7 @@ namespace ArgusCR1016.Manufacturing.Templates.MF105
             // pagesNumber_lbl
             // 
             this.pagesNumber_lbl.BackColor = System.Drawing.Color.Transparent;
-            this.pagesNumber_lbl.LocationFloat = new DevExpress.Utils.PointFloat(1037.5F, 12.5F);
+            this.pagesNumber_lbl.LocationFloat = new DevExpress.Utils.PointFloat(1037.5F, 9.999974F);
             this.pagesNumber_lbl.Name = "pagesNumber_lbl";
             this.pagesNumber_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.pagesNumber_lbl.SizeF = new System.Drawing.SizeF(110.5834F, 23F);
@@ -176,23 +177,8 @@ namespace ArgusCR1016.Manufacturing.Templates.MF105
             this.xrPanel1,
             this.workSheet_lbl});
             this.ReportHeader.HeightF = 225.1667F;
+            this.ReportHeader.KeepTogether = true;
             this.ReportHeader.Name = "ReportHeader";
-            // 
-            // refBarcode
-            // 
-            this.refBarcode.Borders = DevExpress.XtraPrinting.BorderSide.None;
-            this.refBarcode.Font = new System.Drawing.Font("Arial", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.refBarcode.LocationFloat = new DevExpress.Utils.PointFloat(21.25F, 93.95831F);
-            this.refBarcode.Module = 0.5F;
-            this.refBarcode.Name = "refBarcode";
-            this.refBarcode.Padding = new DevExpress.XtraPrinting.PaddingInfo(10, 10, 0, 0, 100F);
-            this.refBarcode.SizeF = new System.Drawing.SizeF(243.75F, 44.99998F);
-            this.refBarcode.StylePriority.UseBorders = false;
-            this.refBarcode.StylePriority.UseFont = false;
-            this.refBarcode.StylePriority.UseTextAlignment = false;
-            code39Generator1.WideNarrowRatio = 3F;
-            this.refBarcode.Symbology = code39Generator1;
-            this.refBarcode.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             // 
             // xrPanel1
             // 
@@ -211,6 +197,22 @@ namespace ArgusCR1016.Manufacturing.Templates.MF105
             this.xrPanel1.SizeF = new System.Drawing.SizeF(1106.833F, 148.9583F);
             this.xrPanel1.StylePriority.UseBorders = false;
             this.xrPanel1.StylePriority.UseBorderWidth = false;
+            // 
+            // refBarcode
+            // 
+            this.refBarcode.Borders = DevExpress.XtraPrinting.BorderSide.None;
+            this.refBarcode.Font = new System.Drawing.Font("Arial", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.refBarcode.LocationFloat = new DevExpress.Utils.PointFloat(21.25F, 93.95831F);
+            this.refBarcode.Module = 0.5F;
+            this.refBarcode.Name = "refBarcode";
+            this.refBarcode.Padding = new DevExpress.XtraPrinting.PaddingInfo(10, 10, 0, 0, 100F);
+            this.refBarcode.SizeF = new System.Drawing.SizeF(243.75F, 44.99998F);
+            this.refBarcode.StylePriority.UseBorders = false;
+            this.refBarcode.StylePriority.UseFont = false;
+            this.refBarcode.StylePriority.UseTextAlignment = false;
+            code39Generator1.WideNarrowRatio = 3F;
+            this.refBarcode.Symbology = code39Generator1;
+            this.refBarcode.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             // 
             // xrTable4
             // 

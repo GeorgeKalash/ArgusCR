@@ -102,6 +102,7 @@ namespace ArgusCR1012.Financials
             this.xrTable1,
             this.receiptVoucher_lbl});
             this.ReportHeader.HeightF = 696.4643F;
+            this.ReportHeader.KeepTogether = true;
             this.ReportHeader.Name = "ReportHeader";
             // 
             // xrTable2

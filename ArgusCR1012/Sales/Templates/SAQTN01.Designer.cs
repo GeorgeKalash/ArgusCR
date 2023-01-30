@@ -158,6 +158,7 @@ namespace ArgusCR1012.Sales.Templates
             this.xrTable5,
             this.xrTable4});
             this.ReportHeader.HeightF = 262.5F;
+            this.ReportHeader.KeepTogether = true;
             this.ReportHeader.Name = "ReportHeader";
             // 
             // qt_lbl
@@ -496,6 +497,7 @@ namespace ArgusCR1012.Sales.Templates
             this.Detail.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
             this.xrTable7});
             this.Detail.HeightF = 25.41669F;
+            this.Detail.KeepTogether = true;
             this.Detail.Name = "Detail";
             // 
             // xrTable7
@@ -612,6 +614,7 @@ namespace ArgusCR1012.Sales.Templates
             this.dateSeal_lbl,
             this.xrLabel16});
             this.ReportFooter.HeightF = 376.0417F;
+            this.ReportFooter.KeepTogether = true;
             this.ReportFooter.Name = "ReportFooter";
             this.ReportFooter.BeforePrint += new System.Drawing.Printing.PrintEventHandler(this.ReportFooter_BeforePrint);
             // 

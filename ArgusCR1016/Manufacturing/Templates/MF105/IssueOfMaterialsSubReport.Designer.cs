@@ -103,6 +103,7 @@ namespace ArgusCR1016.Manufacturing.Templates.MF105
             this.Detail.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
             this.xrTable3});
             this.Detail.HeightF = 25F;
+            this.Detail.KeepTogether = true;
             this.Detail.Name = "Detail";
             // 
             // xrTable3
@@ -705,6 +706,7 @@ namespace ArgusCR1016.Manufacturing.Templates.MF105
             this.ReportFooter.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
             this.xrTable4});
             this.ReportFooter.HeightF = 25F;
+            this.ReportFooter.KeepTogether = true;
             this.ReportFooter.Name = "ReportFooter";
             // 
             // xrTable4

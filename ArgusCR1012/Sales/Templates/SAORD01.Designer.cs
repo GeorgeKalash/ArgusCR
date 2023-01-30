@@ -133,6 +133,7 @@ namespace ArgusCR1012.Sales.Templates
             this.xrTable5,
             this.xrTable15});
             this.ReportHeader.HeightF = 256.6666F;
+            this.ReportHeader.KeepTogether = true;
             this.ReportHeader.Name = "ReportHeader";
             // 
             // salesOrder_lbl
@@ -649,6 +650,7 @@ namespace ArgusCR1012.Sales.Templates
             this.Detail.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
             this.xrTable7});
             this.Detail.HeightF = 23.12514F;
+            this.Detail.KeepTogether = true;
             this.Detail.Name = "Detail";
             // 
             // xrTable7
@@ -805,6 +807,7 @@ namespace ArgusCR1012.Sales.Templates
             this.xrTable11,
             this.xrTable13});
             this.ReportFooter.HeightF = 205.2083F;
+            this.ReportFooter.KeepTogether = true;
             this.ReportFooter.Name = "ReportFooter";
             // 
             // xrTable12

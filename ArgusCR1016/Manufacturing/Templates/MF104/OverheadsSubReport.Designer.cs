@@ -78,6 +78,7 @@ namespace ArgusCR1016.Manufacturing.Templates.MF104
             this.Detail.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
             this.xrTable2});
             this.Detail.HeightF = 22.91667F;
+            this.Detail.KeepTogether = true;
             this.Detail.Name = "Detail";
             // 
             // xrTable2
@@ -188,6 +189,7 @@ namespace ArgusCR1016.Manufacturing.Templates.MF104
             this.ReportHeader.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
             this.overheads_lbl});
             this.ReportHeader.HeightF = 63.54167F;
+            this.ReportHeader.KeepTogether = true;
             this.ReportHeader.Name = "ReportHeader";
             // 
             // overheads_lbl
@@ -320,6 +322,7 @@ namespace ArgusCR1016.Manufacturing.Templates.MF104
             this.ReportFooter.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
             this.xrTable3});
             this.ReportFooter.HeightF = 22.91667F;
+            this.ReportFooter.KeepTogether = true;
             this.ReportFooter.Name = "ReportFooter";
             // 
             // xrTable3

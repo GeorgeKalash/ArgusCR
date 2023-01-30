@@ -133,6 +133,7 @@ namespace ArgusCR1012.Delivery.Templates
             this.xrTable5,
             this.xrTable4});
             this.ReportHeader.HeightF = 238.2085F;
+            this.ReportHeader.KeepTogether = true;
             this.ReportHeader.Name = "ReportHeader";
             // 
             // deliveryNote_lbl
@@ -733,6 +734,7 @@ namespace ArgusCR1012.Delivery.Templates
             this.Detail.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
             this.xrTable3});
             this.Detail.HeightF = 23.33344F;
+            this.Detail.KeepTogether = true;
             this.Detail.Name = "Detail";
             // 
             // xrTable3
@@ -860,6 +862,7 @@ namespace ArgusCR1012.Delivery.Templates
             this.attention_lbl,
             this.shipingDeliveryInfo_lbl});
             this.ReportFooter.HeightF = 324.4788F;
+            this.ReportFooter.KeepTogether = true;
             this.ReportFooter.Name = "ReportFooter";
             this.ReportFooter.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 0, 0, 0, 100F);
             this.ReportFooter.StylePriority.UsePadding = false;

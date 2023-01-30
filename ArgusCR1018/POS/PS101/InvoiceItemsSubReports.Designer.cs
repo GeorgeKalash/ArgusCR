@@ -98,6 +98,7 @@ namespace ArgusCR1018.POS.PS101
             this.Detail.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
             this.xrTable10});
             this.Detail.HeightF = 18.91907F;
+            this.Detail.KeepTogether = true;
             this.Detail.Name = "Detail";
             // 
             // xrTable10
@@ -460,6 +461,7 @@ namespace ArgusCR1018.POS.PS101
             this.xrTable11,
             this.xrTable7});
             this.ReportFooter.HeightF = 122.7155F;
+            this.ReportFooter.KeepTogether = true;
             this.ReportFooter.Name = "ReportFooter";
             // 
             // xrTable11

@@ -99,6 +99,7 @@ namespace ArgusCR1012.Manufacturing.Templates
             this.notes_lbl,
             this.xrTable3});
             this.ReportHeader.HeightF = 296.875F;
+            this.ReportHeader.KeepTogether = true;
             this.ReportHeader.Name = "ReportHeader";
             // 
             // machineName_data
@@ -673,6 +674,7 @@ namespace ArgusCR1012.Manufacturing.Templates
             this.Detail_data.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
             this.xrTable2});
             this.Detail_data.HeightF = 25.41666F;
+            this.Detail_data.KeepTogether = true;
             this.Detail_data.Name = "Detail_data";
             // 
             // xrTable2
@@ -834,7 +836,7 @@ namespace ArgusCR1012.Manufacturing.Templates
             this.printSignature_lbl.Multiline = true;
             this.printSignature_lbl.Name = "printSignature_lbl";
             this.printSignature_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.printSignature_lbl.SizeF = new System.Drawing.SizeF(377.9195F, 23.00002F);
+            this.printSignature_lbl.SizeF = new System.Drawing.SizeF(610.2112F, 23.00002F);
             this.printSignature_lbl.StylePriority.UseFont = false;
             this.printSignature_lbl.StylePriority.UseTextAlignment = false;
             this.printSignature_lbl.Text = "printSignature";

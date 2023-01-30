@@ -116,6 +116,7 @@ namespace ArgusCR1028.Financials
             this.xrTable1,
             this.receiptVoucher_lbl});
             this.ReportHeader.HeightF = 836.4643F;
+            this.ReportHeader.KeepTogether = true;
             this.ReportHeader.Name = "ReportHeader";
             // 
             // logo_data
@@ -714,7 +715,7 @@ namespace ArgusCR1028.Financials
             this.printSignature.Multiline = true;
             this.printSignature.Name = "printSignature";
             this.printSignature.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.printSignature.SizeF = new System.Drawing.SizeF(421.6695F, 23.00002F);
+            this.printSignature.SizeF = new System.Drawing.SizeF(523.7529F, 23.00002F);
             this.printSignature.StylePriority.UseFont = false;
             this.printSignature.StylePriority.UseTextAlignment = false;
             this.printSignature.Text = "printSignature";

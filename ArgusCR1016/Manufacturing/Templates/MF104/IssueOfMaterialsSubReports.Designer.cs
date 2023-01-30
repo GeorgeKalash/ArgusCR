@@ -90,6 +90,7 @@ namespace ArgusCR1016.Manufacturing.Templates.MF104
             this.Detail.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
             this.xrTable2});
             this.Detail.HeightF = 22.91667F;
+            this.Detail.KeepTogether = true;
             this.Detail.Name = "Detail";
             // 
             // xrTable2
@@ -226,6 +227,7 @@ namespace ArgusCR1016.Manufacturing.Templates.MF104
             this.xrTable1,
             this.issueOfMaterials_lbl});
             this.ReportHeader.HeightF = 104.1667F;
+            this.ReportHeader.KeepTogether = true;
             this.ReportHeader.Name = "ReportHeader";
             // 
             // xrLabel1
@@ -384,6 +386,7 @@ namespace ArgusCR1016.Manufacturing.Templates.MF104
             this.ReportFooter.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
             this.xrTable3});
             this.ReportFooter.HeightF = 25F;
+            this.ReportFooter.KeepTogether = true;
             this.ReportFooter.Name = "ReportFooter";
             // 
             // xrTable3
@@ -501,6 +504,7 @@ namespace ArgusCR1016.Manufacturing.Templates.MF104
             new DevExpress.XtraReports.UI.GroupField("worksheetRef", DevExpress.XtraReports.UI.XRColumnSortOrder.Ascending),
             new DevExpress.XtraReports.UI.GroupField("type", DevExpress.XtraReports.UI.XRColumnSortOrder.Ascending)});
             this.GroupHeader1.HeightF = 31.25F;
+            this.GroupHeader1.KeepTogether = true;
             this.GroupHeader1.Name = "GroupHeader1";
             // 
             // xrLabel2
@@ -521,6 +525,7 @@ namespace ArgusCR1016.Manufacturing.Templates.MF104
             this.GroupFooter1.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
             this.xrTable5});
             this.GroupFooter1.HeightF = 25F;
+            this.GroupFooter1.KeepTogether = true;
             this.GroupFooter1.Name = "GroupFooter1";
             // 
             // xrTable5

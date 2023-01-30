@@ -33,8 +33,10 @@ namespace ArgusCR1008.POS.PS101
         private void InitializeComponent()
         {
             this.InvoiceItemSubBand = new DevExpress.XtraReports.UI.SubBand();
+            this.InvoiceItemsSubReports = new DevExpress.XtraReports.UI.XRSubreport();
             this.Detail = new DevExpress.XtraReports.UI.DetailBand();
             this.InvoiceReceiptSubBand = new DevExpress.XtraReports.UI.SubBand();
+            this.InvoiceReceiptSubReports = new DevExpress.XtraReports.UI.XRSubreport();
             this.TopMargin = new DevExpress.XtraReports.UI.TopMarginBand();
             this.BottomMargin = new DevExpress.XtraReports.UI.BottomMarginBand();
             this.ReportHeader = new DevExpress.XtraReports.UI.ReportHeaderBand();
@@ -64,8 +66,6 @@ namespace ArgusCR1008.POS.PS101
             this.date_data = new DevExpress.XtraReports.UI.XRTableCell();
             this.PageFooter = new DevExpress.XtraReports.UI.PageFooterBand();
             this.pagesNumber_lbl = new DevExpress.XtraReports.UI.XRPageInfo();
-            this.InvoiceItemsSubReports = new DevExpress.XtraReports.UI.XRSubreport();
-            this.InvoiceReceiptSubReports = new DevExpress.XtraReports.UI.XRSubreport();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable2)).BeginInit();
@@ -80,9 +80,17 @@ namespace ArgusCR1008.POS.PS101
             this.InvoiceItemSubBand.KeepTogether = true;
             this.InvoiceItemSubBand.Name = "InvoiceItemSubBand";
             // 
+            // InvoiceItemsSubReports
+            // 
+            this.InvoiceItemsSubReports.LocationFloat = new DevExpress.Utils.PointFloat(25.66113F, 0F);
+            this.InvoiceItemsSubReports.Name = "InvoiceItemsSubReports";
+            this.InvoiceItemsSubReports.ReportSource = new ArgusCR1008.POS.PS101.InvoiceItemsSubReports();
+            this.InvoiceItemsSubReports.SizeF = new System.Drawing.SizeF(775.9997F, 23F);
+            // 
             // Detail
             // 
             this.Detail.HeightF = 0F;
+            this.Detail.KeepTogether = true;
             this.Detail.Name = "Detail";
             this.Detail.SubBands.AddRange(new DevExpress.XtraReports.UI.SubBand[] {
             this.InvoiceItemSubBand,
@@ -95,6 +103,13 @@ namespace ArgusCR1008.POS.PS101
             this.InvoiceReceiptSubBand.HeightF = 23F;
             this.InvoiceReceiptSubBand.KeepTogether = true;
             this.InvoiceReceiptSubBand.Name = "InvoiceReceiptSubBand";
+            // 
+            // InvoiceReceiptSubReports
+            // 
+            this.InvoiceReceiptSubReports.LocationFloat = new DevExpress.Utils.PointFloat(25.62501F, 0F);
+            this.InvoiceReceiptSubReports.Name = "InvoiceReceiptSubReports";
+            this.InvoiceReceiptSubReports.ReportSource = new ArgusCR1008.POS.PS101.InvoiceReceiptSubReports();
+            this.InvoiceReceiptSubReports.SizeF = new System.Drawing.SizeF(776.0359F, 23F);
             // 
             // TopMargin
             // 
@@ -115,6 +130,7 @@ namespace ArgusCR1008.POS.PS101
             this.xrTable3,
             this.xrTable2});
             this.ReportHeader.HeightF = 298.8144F;
+            this.ReportHeader.KeepTogether = true;
             this.ReportHeader.Name = "ReportHeader";
             // 
             // logo_data
@@ -499,20 +515,6 @@ namespace ArgusCR1008.POS.PS101
             this.pagesNumber_lbl.StylePriority.UseTextAlignment = false;
             this.pagesNumber_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
             this.pagesNumber_lbl.TextFormatString = "Page {0} of {1}";
-            // 
-            // InvoiceItemsSubReports
-            // 
-            this.InvoiceItemsSubReports.LocationFloat = new DevExpress.Utils.PointFloat(25.66113F, 0F);
-            this.InvoiceItemsSubReports.Name = "InvoiceItemsSubReports";
-            this.InvoiceItemsSubReports.ReportSource = new ArgusCR1008.POS.PS101.InvoiceItemsSubReports();
-            this.InvoiceItemsSubReports.SizeF = new System.Drawing.SizeF(775.9997F, 23F);
-            // 
-            // InvoiceReceiptSubReports
-            // 
-            this.InvoiceReceiptSubReports.LocationFloat = new DevExpress.Utils.PointFloat(25.62501F, 0F);
-            this.InvoiceReceiptSubReports.Name = "InvoiceReceiptSubReports";
-            this.InvoiceReceiptSubReports.ReportSource = new ArgusCR1008.POS.PS101.InvoiceReceiptSubReports();
-            this.InvoiceReceiptSubReports.SizeF = new System.Drawing.SizeF(776.0359F, 23F);
             // 
             // PS101
             // 

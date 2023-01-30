@@ -66,6 +66,7 @@ namespace ArgusCR1008.POS.PS101
             this.Detail.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
             this.xrTable3});
             this.Detail.HeightF = 23.33666F;
+            this.Detail.KeepTogether = true;
             this.Detail.Name = "Detail";
             // 
             // xrTable3

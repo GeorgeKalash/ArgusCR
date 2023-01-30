@@ -116,6 +116,7 @@ namespace ArgusCR1029.Financials
             this.xrTable1,
             this.receiptVoucher_lbl});
             this.ReportHeader.HeightF = 836.4643F;
+            this.ReportHeader.KeepTogether = true;
             this.ReportHeader.Name = "ReportHeader";
             // 
             // logo_data
@@ -698,7 +699,7 @@ namespace ArgusCR1029.Financials
             // pagesNumber_lbl
             // 
             this.pagesNumber_lbl.BackColor = System.Drawing.Color.Transparent;
-            this.pagesNumber_lbl.LocationFloat = new DevExpress.Utils.PointFloat(664.375F, 9.999974F);
+            this.pagesNumber_lbl.LocationFloat = new DevExpress.Utils.PointFloat(664.3751F, 9.999974F);
             this.pagesNumber_lbl.Name = "pagesNumber_lbl";
             this.pagesNumber_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.pagesNumber_lbl.SizeF = new System.Drawing.SizeF(107.8901F, 23F);
@@ -714,13 +715,13 @@ namespace ArgusCR1029.Financials
             this.printSignature.Multiline = true;
             this.printSignature.Name = "printSignature";
             this.printSignature.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.printSignature.SizeF = new System.Drawing.SizeF(421.6695F, 23.00002F);
+            this.printSignature.SizeF = new System.Drawing.SizeF(570.6279F, 23.00002F);
             this.printSignature.StylePriority.UseFont = false;
             this.printSignature.StylePriority.UseTextAlignment = false;
             this.printSignature.Text = "printSignature";
             this.printSignature.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             // 
-            // FI101AR
+            // FI101
             // 
             this.Bands.AddRange(new DevExpress.XtraReports.UI.Band[] {
             this.TopMargin,

@@ -103,13 +103,13 @@ namespace ArgusCR1012.Financials
             this.printSignature = new DevExpress.XtraReports.UI.XRLabel();
             this.pagesNumber_lbl = new DevExpress.XtraReports.UI.XRPageInfo();
             this.ReportFooter = new DevExpress.XtraReports.UI.ReportFooterBand();
+            this.xrLine1 = new DevExpress.XtraReports.UI.XRLine();
             this.xrLine10 = new DevExpress.XtraReports.UI.XRLine();
             this.xrLine11 = new DevExpress.XtraReports.UI.XRLine();
             this.xrLabel10 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel11 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLine12 = new DevExpress.XtraReports.UI.XRLine();
             this.xrCrossBandBox2 = new DevExpress.XtraReports.UI.XRCrossBandBox();
-            this.xrLine1 = new DevExpress.XtraReports.UI.XRLine();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable19)).BeginInit();
@@ -1116,7 +1116,7 @@ namespace ArgusCR1012.Financials
             this.printSignature.Multiline = true;
             this.printSignature.Name = "printSignature";
             this.printSignature.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.printSignature.SizeF = new System.Drawing.SizeF(499.7945F, 23.00002F);
+            this.printSignature.SizeF = new System.Drawing.SizeF(602.9195F, 23.00002F);
             this.printSignature.StylePriority.UseFont = false;
             this.printSignature.StylePriority.UseTextAlignment = false;
             this.printSignature.Text = "printSignature";
@@ -1146,6 +1146,12 @@ namespace ArgusCR1012.Financials
             this.ReportFooter.HeightF = 176.0688F;
             this.ReportFooter.KeepTogether = true;
             this.ReportFooter.Name = "ReportFooter";
+            // 
+            // xrLine1
+            // 
+            this.xrLine1.LocationFloat = new DevExpress.Utils.PointFloat(403.9612F, 47.99998F);
+            this.xrLine1.Name = "xrLine1";
+            this.xrLine1.SizeF = new System.Drawing.SizeF(256.8222F, 2.083332F);
             // 
             // xrLine10
             // 
@@ -1203,12 +1209,6 @@ namespace ArgusCR1012.Financials
             this.xrCrossBandBox2.StartBand = this.ReportFooter;
             this.xrCrossBandBox2.StartPointFloat = new DevExpress.Utils.PointFloat(144.0139F, 10.00001F);
             this.xrCrossBandBox2.WidthF = 518.4861F;
-            // 
-            // xrLine1
-            // 
-            this.xrLine1.LocationFloat = new DevExpress.Utils.PointFloat(403.9612F, 47.99998F);
-            this.xrLine1.Name = "xrLine1";
-            this.xrLine1.SizeF = new System.Drawing.SizeF(256.8222F, 2.083332F);
             // 
             // FI102
             // 

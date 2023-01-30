@@ -111,6 +111,7 @@ namespace ArgusCR1025.Purchase.Templates.PU103GLD
             // Detail
             // 
             this.Detail.HeightF = 0F;
+            this.Detail.KeepTogether = true;
             this.Detail.KeepTogetherWithDetailReports = true;
             this.Detail.Name = "Detail";
             this.Detail.SubBands.AddRange(new DevExpress.XtraReports.UI.SubBand[] {
@@ -166,6 +167,7 @@ namespace ArgusCR1025.Purchase.Templates.PU103GLD
             this.xrTable9,
             this.xrTable8});
             this.ReportFooter.HeightF = 98.97899F;
+            this.ReportFooter.KeepTogether = true;
             this.ReportFooter.Name = "ReportFooter";
             // 
             // xrTable10

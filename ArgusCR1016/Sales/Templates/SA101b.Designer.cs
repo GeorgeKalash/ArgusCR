@@ -89,6 +89,7 @@ namespace ArgusCR1016.Sales.Templates
             this.Detail.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
             this.xrTable2});
             this.Detail.HeightF = 22.91667F;
+            this.Detail.KeepTogether = true;
             this.Detail.Name = "Detail";
             // 
             // xrTable2
@@ -306,6 +307,7 @@ namespace ArgusCR1016.Sales.Templates
             this.ReportHeader.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
             this.xrTable3});
             this.ReportHeader.HeightF = 113.9063F;
+            this.ReportHeader.KeepTogether = true;
             this.ReportHeader.Name = "ReportHeader";
             // 
             // xrTable3
@@ -647,10 +649,10 @@ namespace ArgusCR1016.Sales.Templates
             // pagesNumber_lbl
             // 
             this.pagesNumber_lbl.BackColor = System.Drawing.Color.Transparent;
-            this.pagesNumber_lbl.LocationFloat = new DevExpress.Utils.PointFloat(712.5F, 12.5F);
+            this.pagesNumber_lbl.LocationFloat = new DevExpress.Utils.PointFloat(718.4849F, 12.5F);
             this.pagesNumber_lbl.Name = "pagesNumber_lbl";
             this.pagesNumber_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.pagesNumber_lbl.SizeF = new System.Drawing.SizeF(98.51514F, 23F);
+            this.pagesNumber_lbl.SizeF = new System.Drawing.SizeF(96.01514F, 23F);
             this.pagesNumber_lbl.StylePriority.UseBackColor = false;
             this.pagesNumber_lbl.StylePriority.UseTextAlignment = false;
             this.pagesNumber_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
@@ -659,11 +661,11 @@ namespace ArgusCR1016.Sales.Templates
             // printSignature
             // 
             this.printSignature.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.printSignature.LocationFloat = new DevExpress.Utils.PointFloat(12.5F, 12.5F);
+            this.printSignature.LocationFloat = new DevExpress.Utils.PointFloat(9.999998F, 12.5F);
             this.printSignature.Multiline = true;
             this.printSignature.Name = "printSignature";
             this.printSignature.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.printSignature.SizeF = new System.Drawing.SizeF(377.9195F, 23.00002F);
+            this.printSignature.SizeF = new System.Drawing.SizeF(635.6279F, 23.00002F);
             this.printSignature.StylePriority.UseFont = false;
             this.printSignature.StylePriority.UseTextAlignment = false;
             this.printSignature.Text = "printSignature";

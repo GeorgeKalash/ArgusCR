@@ -131,6 +131,7 @@ namespace ArgusCR1012.Financials
             this.xrTable1,
             this.functionName_data});
             this.ReportHeader.HeightF = 464.4444F;
+            this.ReportHeader.KeepTogether = true;
             this.ReportHeader.Name = "ReportHeader";
             // 
             // isSubjectToVAT

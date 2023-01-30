@@ -45,6 +45,12 @@ namespace ArgusCR1018.POS.PS101
             this.xrTableRow6 = new DevExpress.XtraReports.UI.XRTableRow();
             this.companyVatNo_data = new DevExpress.XtraReports.UI.XRTableCell();
             this.companyVatNo_lbl = new DevExpress.XtraReports.UI.XRTableCell();
+            this.xrTableRow8 = new DevExpress.XtraReports.UI.XRTableRow();
+            this.licenseNo_data = new DevExpress.XtraReports.UI.XRTableCell();
+            this.licenseNo_lbl = new DevExpress.XtraReports.UI.XRTableCell();
+            this.xrTableRow7 = new DevExpress.XtraReports.UI.XRTableRow();
+            this.phoneCompany_data = new DevExpress.XtraReports.UI.XRTableCell();
+            this.phoneCompany_lbl = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTable5 = new DevExpress.XtraReports.UI.XRTable();
             this.xrTableRow5 = new DevExpress.XtraReports.UI.XRTableRow();
             this.companyCity_data = new DevExpress.XtraReports.UI.XRTableCell();
@@ -90,12 +96,6 @@ namespace ArgusCR1018.POS.PS101
             this.xrTableRow9 = new DevExpress.XtraReports.UI.XRTableRow();
             this.total_data = new DevExpress.XtraReports.UI.XRTableCell();
             this.total_lbl = new DevExpress.XtraReports.UI.XRTableCell();
-            this.xrTableRow7 = new DevExpress.XtraReports.UI.XRTableRow();
-            this.phoneCompany_data = new DevExpress.XtraReports.UI.XRTableCell();
-            this.phoneCompany_lbl = new DevExpress.XtraReports.UI.XRTableCell();
-            this.xrTableRow8 = new DevExpress.XtraReports.UI.XRTableRow();
-            this.licenseNo_data = new DevExpress.XtraReports.UI.XRTableCell();
-            this.licenseNo_lbl = new DevExpress.XtraReports.UI.XRTableCell();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable4)).BeginInit();
@@ -124,6 +124,7 @@ namespace ArgusCR1018.POS.PS101
             // Detail
             // 
             this.Detail.HeightF = 0F;
+            this.Detail.KeepTogether = true;
             this.Detail.Name = "Detail";
             this.Detail.SubBands.AddRange(new DevExpress.XtraReports.UI.SubBand[] {
             this.InvoiceItemSubBand,
@@ -167,6 +168,7 @@ namespace ArgusCR1018.POS.PS101
             this.xrTable2,
             this.xrTable1});
             this.ReportHeader.HeightF = 348.1093F;
+            this.ReportHeader.KeepTogether = true;
             this.ReportHeader.Name = "ReportHeader";
             // 
             // xrTable6
@@ -220,6 +222,88 @@ namespace ArgusCR1018.POS.PS101
             this.companyVatNo_lbl.Text = ":الرقم الضريبي";
             this.companyVatNo_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
             this.companyVatNo_lbl.Weight = 0.52287856346961814D;
+            // 
+            // xrTableRow8
+            // 
+            this.xrTableRow8.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
+            this.licenseNo_data,
+            this.licenseNo_lbl});
+            this.xrTableRow8.Name = "xrTableRow8";
+            this.xrTableRow8.Weight = 1D;
+            // 
+            // licenseNo_data
+            // 
+            this.licenseNo_data.BackColor = System.Drawing.Color.White;
+            this.licenseNo_data.Borders = DevExpress.XtraPrinting.BorderSide.Left;
+            this.licenseNo_data.Font = new System.Drawing.Font("Arial", 11F, System.Drawing.FontStyle.Bold);
+            this.licenseNo_data.Multiline = true;
+            this.licenseNo_data.Name = "licenseNo_data";
+            this.licenseNo_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 4, 4, 0, 100F);
+            this.licenseNo_data.StylePriority.UseBackColor = false;
+            this.licenseNo_data.StylePriority.UseBorders = false;
+            this.licenseNo_data.StylePriority.UseFont = false;
+            this.licenseNo_data.StylePriority.UsePadding = false;
+            this.licenseNo_data.StylePriority.UseTextAlignment = false;
+            this.licenseNo_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
+            this.licenseNo_data.Weight = 1.3801464985718792D;
+            // 
+            // licenseNo_lbl
+            // 
+            this.licenseNo_lbl.BackColor = System.Drawing.Color.White;
+            this.licenseNo_lbl.Borders = DevExpress.XtraPrinting.BorderSide.Right;
+            this.licenseNo_lbl.Font = new System.Drawing.Font("Arial", 11F, System.Drawing.FontStyle.Bold);
+            this.licenseNo_lbl.Multiline = true;
+            this.licenseNo_lbl.Name = "licenseNo_lbl";
+            this.licenseNo_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 4, 4, 0, 100F);
+            this.licenseNo_lbl.StylePriority.UseBackColor = false;
+            this.licenseNo_lbl.StylePriority.UseBorders = false;
+            this.licenseNo_lbl.StylePriority.UseFont = false;
+            this.licenseNo_lbl.StylePriority.UsePadding = false;
+            this.licenseNo_lbl.StylePriority.UseTextAlignment = false;
+            this.licenseNo_lbl.Text = ":رقم التجاري\r\n";
+            this.licenseNo_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
+            this.licenseNo_lbl.Weight = 0.52287856346961814D;
+            // 
+            // xrTableRow7
+            // 
+            this.xrTableRow7.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
+            this.phoneCompany_data,
+            this.phoneCompany_lbl});
+            this.xrTableRow7.Name = "xrTableRow7";
+            this.xrTableRow7.Weight = 1D;
+            // 
+            // phoneCompany_data
+            // 
+            this.phoneCompany_data.BackColor = System.Drawing.Color.White;
+            this.phoneCompany_data.Borders = ((DevExpress.XtraPrinting.BorderSide)((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.phoneCompany_data.Font = new System.Drawing.Font("Arial", 11F, System.Drawing.FontStyle.Bold);
+            this.phoneCompany_data.Multiline = true;
+            this.phoneCompany_data.Name = "phoneCompany_data";
+            this.phoneCompany_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 4, 4, 0, 100F);
+            this.phoneCompany_data.StylePriority.UseBackColor = false;
+            this.phoneCompany_data.StylePriority.UseBorders = false;
+            this.phoneCompany_data.StylePriority.UseFont = false;
+            this.phoneCompany_data.StylePriority.UsePadding = false;
+            this.phoneCompany_data.StylePriority.UseTextAlignment = false;
+            this.phoneCompany_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
+            this.phoneCompany_data.Weight = 1.3801464985718792D;
+            // 
+            // phoneCompany_lbl
+            // 
+            this.phoneCompany_lbl.BackColor = System.Drawing.Color.White;
+            this.phoneCompany_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)((DevExpress.XtraPrinting.BorderSide.Right | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.phoneCompany_lbl.Font = new System.Drawing.Font("Arial", 11F, System.Drawing.FontStyle.Bold);
+            this.phoneCompany_lbl.Multiline = true;
+            this.phoneCompany_lbl.Name = "phoneCompany_lbl";
+            this.phoneCompany_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 4, 4, 0, 100F);
+            this.phoneCompany_lbl.StylePriority.UseBackColor = false;
+            this.phoneCompany_lbl.StylePriority.UseBorders = false;
+            this.phoneCompany_lbl.StylePriority.UseFont = false;
+            this.phoneCompany_lbl.StylePriority.UsePadding = false;
+            this.phoneCompany_lbl.StylePriority.UseTextAlignment = false;
+            this.phoneCompany_lbl.Text = ":رقم الجوال";
+            this.phoneCompany_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
+            this.phoneCompany_lbl.Weight = 0.52287856346961814D;
             // 
             // xrTable5
             // 
@@ -781,6 +865,7 @@ namespace ArgusCR1018.POS.PS101
             this.spSignature_lbl,
             this.xrTable9});
             this.ReportFooter.HeightF = 146.0609F;
+            this.ReportFooter.KeepTogether = true;
             this.ReportFooter.Name = "ReportFooter";
             // 
             // clientSignature_lbl
@@ -867,88 +952,6 @@ namespace ArgusCR1018.POS.PS101
             this.total_lbl.Text = "المجموع";
             this.total_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
             this.total_lbl.Weight = 0.28571423585926603D;
-            // 
-            // xrTableRow7
-            // 
-            this.xrTableRow7.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
-            this.phoneCompany_data,
-            this.phoneCompany_lbl});
-            this.xrTableRow7.Name = "xrTableRow7";
-            this.xrTableRow7.Weight = 1D;
-            // 
-            // phoneCompany_data
-            // 
-            this.phoneCompany_data.BackColor = System.Drawing.Color.White;
-            this.phoneCompany_data.Borders = ((DevExpress.XtraPrinting.BorderSide)((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Bottom)));
-            this.phoneCompany_data.Font = new System.Drawing.Font("Arial", 11F, System.Drawing.FontStyle.Bold);
-            this.phoneCompany_data.Multiline = true;
-            this.phoneCompany_data.Name = "phoneCompany_data";
-            this.phoneCompany_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 4, 4, 0, 100F);
-            this.phoneCompany_data.StylePriority.UseBackColor = false;
-            this.phoneCompany_data.StylePriority.UseBorders = false;
-            this.phoneCompany_data.StylePriority.UseFont = false;
-            this.phoneCompany_data.StylePriority.UsePadding = false;
-            this.phoneCompany_data.StylePriority.UseTextAlignment = false;
-            this.phoneCompany_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
-            this.phoneCompany_data.Weight = 1.3801464985718792D;
-            // 
-            // phoneCompany_lbl
-            // 
-            this.phoneCompany_lbl.BackColor = System.Drawing.Color.White;
-            this.phoneCompany_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)((DevExpress.XtraPrinting.BorderSide.Right | DevExpress.XtraPrinting.BorderSide.Bottom)));
-            this.phoneCompany_lbl.Font = new System.Drawing.Font("Arial", 11F, System.Drawing.FontStyle.Bold);
-            this.phoneCompany_lbl.Multiline = true;
-            this.phoneCompany_lbl.Name = "phoneCompany_lbl";
-            this.phoneCompany_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 4, 4, 0, 100F);
-            this.phoneCompany_lbl.StylePriority.UseBackColor = false;
-            this.phoneCompany_lbl.StylePriority.UseBorders = false;
-            this.phoneCompany_lbl.StylePriority.UseFont = false;
-            this.phoneCompany_lbl.StylePriority.UsePadding = false;
-            this.phoneCompany_lbl.StylePriority.UseTextAlignment = false;
-            this.phoneCompany_lbl.Text = ":رقم الجوال";
-            this.phoneCompany_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
-            this.phoneCompany_lbl.Weight = 0.52287856346961814D;
-            // 
-            // xrTableRow8
-            // 
-            this.xrTableRow8.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
-            this.licenseNo_data,
-            this.licenseNo_lbl});
-            this.xrTableRow8.Name = "xrTableRow8";
-            this.xrTableRow8.Weight = 1D;
-            // 
-            // licenseNo_data
-            // 
-            this.licenseNo_data.BackColor = System.Drawing.Color.White;
-            this.licenseNo_data.Borders = DevExpress.XtraPrinting.BorderSide.Left;
-            this.licenseNo_data.Font = new System.Drawing.Font("Arial", 11F, System.Drawing.FontStyle.Bold);
-            this.licenseNo_data.Multiline = true;
-            this.licenseNo_data.Name = "licenseNo_data";
-            this.licenseNo_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 4, 4, 0, 100F);
-            this.licenseNo_data.StylePriority.UseBackColor = false;
-            this.licenseNo_data.StylePriority.UseBorders = false;
-            this.licenseNo_data.StylePriority.UseFont = false;
-            this.licenseNo_data.StylePriority.UsePadding = false;
-            this.licenseNo_data.StylePriority.UseTextAlignment = false;
-            this.licenseNo_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
-            this.licenseNo_data.Weight = 1.3801464985718792D;
-            // 
-            // licenseNo_lbl
-            // 
-            this.licenseNo_lbl.BackColor = System.Drawing.Color.White;
-            this.licenseNo_lbl.Borders = DevExpress.XtraPrinting.BorderSide.Right;
-            this.licenseNo_lbl.Font = new System.Drawing.Font("Arial", 11F, System.Drawing.FontStyle.Bold);
-            this.licenseNo_lbl.Multiline = true;
-            this.licenseNo_lbl.Name = "licenseNo_lbl";
-            this.licenseNo_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 4, 4, 0, 100F);
-            this.licenseNo_lbl.StylePriority.UseBackColor = false;
-            this.licenseNo_lbl.StylePriority.UseBorders = false;
-            this.licenseNo_lbl.StylePriority.UseFont = false;
-            this.licenseNo_lbl.StylePriority.UsePadding = false;
-            this.licenseNo_lbl.StylePriority.UseTextAlignment = false;
-            this.licenseNo_lbl.Text = ":رقم التجاري\r\n";
-            this.licenseNo_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
-            this.licenseNo_lbl.Weight = 0.52287856346961814D;
             // 
             // PS101
             // 

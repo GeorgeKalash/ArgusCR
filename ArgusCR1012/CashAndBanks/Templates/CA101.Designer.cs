@@ -88,6 +88,7 @@ namespace ArgusCR1012.CashAndBanks.Templates
             this.Transfers_lbl,
             this.xrTable1});
             this.ReportHeader.HeightF = 321.0881F;
+            this.ReportHeader.KeepTogether = true;
             this.ReportHeader.Name = "ReportHeader";
             // 
             // Transfers_lbl

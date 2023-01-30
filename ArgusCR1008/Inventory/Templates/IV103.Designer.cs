@@ -101,6 +101,7 @@ namespace ArgusCR1008.Inventory.Templates
             this.Detail.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
             this.xrTable5});
             this.Detail.HeightF = 42.08384F;
+            this.Detail.KeepTogether = true;
             this.Detail.Name = "Detail";
             // 
             // xrTable5
@@ -203,14 +204,16 @@ namespace ArgusCR1008.Inventory.Templates
             this.xrTable6,
             this.xrTable2});
             this.ReportHeader.HeightF = 193.9583F;
+            this.ReportHeader.KeepTogether = true;
             this.ReportHeader.Name = "ReportHeader";
             // 
             // materialsAdjustment_lbl
             // 
-            this.materialsAdjustment_lbl.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.materialsAdjustment_lbl.BackColor = System.Drawing.Color.Gray;
             this.materialsAdjustment_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right)));
             this.materialsAdjustment_lbl.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold);
+            this.materialsAdjustment_lbl.ForeColor = System.Drawing.Color.White;
             this.materialsAdjustment_lbl.LocationFloat = new DevExpress.Utils.PointFloat(9.999998F, 0F);
             this.materialsAdjustment_lbl.Multiline = true;
             this.materialsAdjustment_lbl.Name = "materialsAdjustment_lbl";
@@ -219,6 +222,7 @@ namespace ArgusCR1008.Inventory.Templates
             this.materialsAdjustment_lbl.StylePriority.UseBackColor = false;
             this.materialsAdjustment_lbl.StylePriority.UseBorders = false;
             this.materialsAdjustment_lbl.StylePriority.UseFont = false;
+            this.materialsAdjustment_lbl.StylePriority.UseForeColor = false;
             this.materialsAdjustment_lbl.StylePriority.UsePadding = false;
             this.materialsAdjustment_lbl.StylePriority.UseTextAlignment = false;
             this.materialsAdjustment_lbl.Text = "Materials Adjustment";
@@ -249,7 +253,7 @@ namespace ArgusCR1008.Inventory.Templates
             // 
             // dtName_lbl
             // 
-            this.dtName_lbl.BackColor = System.Drawing.Color.Azure;
+            this.dtName_lbl.BackColor = System.Drawing.Color.WhiteSmoke;
             this.dtName_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
@@ -289,7 +293,7 @@ namespace ArgusCR1008.Inventory.Templates
             // 
             // reference_lbl
             // 
-            this.reference_lbl.BackColor = System.Drawing.Color.Azure;
+            this.reference_lbl.BackColor = System.Drawing.Color.WhiteSmoke;
             this.reference_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
@@ -329,7 +333,7 @@ namespace ArgusCR1008.Inventory.Templates
             // 
             // plant_lbl
             // 
-            this.plant_lbl.BackColor = System.Drawing.Color.Azure;
+            this.plant_lbl.BackColor = System.Drawing.Color.WhiteSmoke;
             this.plant_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
@@ -383,7 +387,7 @@ namespace ArgusCR1008.Inventory.Templates
             // 
             // date_lbl
             // 
-            this.date_lbl.BackColor = System.Drawing.Color.Azure;
+            this.date_lbl.BackColor = System.Drawing.Color.WhiteSmoke;
             this.date_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Top | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.date_lbl.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold);
@@ -423,7 +427,7 @@ namespace ArgusCR1008.Inventory.Templates
             // 
             // xrTableCell11
             // 
-            this.xrTableCell11.BackColor = System.Drawing.Color.Azure;
+            this.xrTableCell11.BackColor = System.Drawing.Color.WhiteSmoke;
             this.xrTableCell11.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Top | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell11.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold);
@@ -496,16 +500,18 @@ namespace ArgusCR1008.Inventory.Templates
             // 
             // sku_lbl
             // 
-            this.sku_lbl.BackColor = System.Drawing.Color.Azure;
+            this.sku_lbl.BackColor = System.Drawing.Color.Gray;
             this.sku_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right)));
             this.sku_lbl.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold);
+            this.sku_lbl.ForeColor = System.Drawing.Color.White;
             this.sku_lbl.Multiline = true;
             this.sku_lbl.Name = "sku_lbl";
             this.sku_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 8, 0, 100F);
             this.sku_lbl.StylePriority.UseBackColor = false;
             this.sku_lbl.StylePriority.UseBorders = false;
             this.sku_lbl.StylePriority.UseFont = false;
+            this.sku_lbl.StylePriority.UseForeColor = false;
             this.sku_lbl.StylePriority.UsePadding = false;
             this.sku_lbl.StylePriority.UseTextAlignment = false;
             this.sku_lbl.Text = "SKU";
@@ -514,16 +520,18 @@ namespace ArgusCR1008.Inventory.Templates
             // 
             // itemName_lbl
             // 
-            this.itemName_lbl.BackColor = System.Drawing.Color.Azure;
+            this.itemName_lbl.BackColor = System.Drawing.Color.Gray;
             this.itemName_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right)));
             this.itemName_lbl.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold);
+            this.itemName_lbl.ForeColor = System.Drawing.Color.White;
             this.itemName_lbl.Multiline = true;
             this.itemName_lbl.Name = "itemName_lbl";
             this.itemName_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 8, 0, 100F);
             this.itemName_lbl.StylePriority.UseBackColor = false;
             this.itemName_lbl.StylePriority.UseBorders = false;
             this.itemName_lbl.StylePriority.UseFont = false;
+            this.itemName_lbl.StylePriority.UseForeColor = false;
             this.itemName_lbl.StylePriority.UsePadding = false;
             this.itemName_lbl.StylePriority.UseTextAlignment = false;
             this.itemName_lbl.Text = "Item Name";
@@ -532,16 +540,18 @@ namespace ArgusCR1008.Inventory.Templates
             // 
             // qty_lbl
             // 
-            this.qty_lbl.BackColor = System.Drawing.Color.Azure;
+            this.qty_lbl.BackColor = System.Drawing.Color.Gray;
             this.qty_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right)));
             this.qty_lbl.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold);
+            this.qty_lbl.ForeColor = System.Drawing.Color.White;
             this.qty_lbl.Multiline = true;
             this.qty_lbl.Name = "qty_lbl";
             this.qty_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 8, 0, 100F);
             this.qty_lbl.StylePriority.UseBackColor = false;
             this.qty_lbl.StylePriority.UseBorders = false;
             this.qty_lbl.StylePriority.UseFont = false;
+            this.qty_lbl.StylePriority.UseForeColor = false;
             this.qty_lbl.StylePriority.UsePadding = false;
             this.qty_lbl.StylePriority.UseTextAlignment = false;
             this.qty_lbl.Text = "Qty";
@@ -550,16 +560,18 @@ namespace ArgusCR1008.Inventory.Templates
             // 
             // notes_lbl
             // 
-            this.notes_lbl.BackColor = System.Drawing.Color.Azure;
+            this.notes_lbl.BackColor = System.Drawing.Color.Gray;
             this.notes_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right)));
             this.notes_lbl.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold);
+            this.notes_lbl.ForeColor = System.Drawing.Color.White;
             this.notes_lbl.Multiline = true;
             this.notes_lbl.Name = "notes_lbl";
             this.notes_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 8, 0, 100F);
             this.notes_lbl.StylePriority.UseBackColor = false;
             this.notes_lbl.StylePriority.UseBorders = false;
             this.notes_lbl.StylePriority.UseFont = false;
+            this.notes_lbl.StylePriority.UseForeColor = false;
             this.notes_lbl.StylePriority.UsePadding = false;
             this.notes_lbl.StylePriority.UseTextAlignment = false;
             this.notes_lbl.Text = "Notes";
@@ -572,6 +584,7 @@ namespace ArgusCR1008.Inventory.Templates
             this.xrTable1,
             this.xrTable3});
             this.ReportFooter.HeightF = 124.541F;
+            this.ReportFooter.KeepTogether = true;
             this.ReportFooter.Name = "ReportFooter";
             // 
             // xrTable1
@@ -593,17 +606,19 @@ namespace ArgusCR1008.Inventory.Templates
             // 
             // description_lbl
             // 
-            this.description_lbl.BackColor = System.Drawing.Color.Azure;
+            this.description_lbl.BackColor = System.Drawing.Color.Gray;
             this.description_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.description_lbl.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold);
+            this.description_lbl.ForeColor = System.Drawing.Color.White;
             this.description_lbl.Multiline = true;
             this.description_lbl.Name = "description_lbl";
             this.description_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(4, 2, 8, 0, 100F);
             this.description_lbl.StylePriority.UseBackColor = false;
             this.description_lbl.StylePriority.UseBorders = false;
             this.description_lbl.StylePriority.UseFont = false;
+            this.description_lbl.StylePriority.UseForeColor = false;
             this.description_lbl.StylePriority.UsePadding = false;
             this.description_lbl.Text = "Description:";
             this.description_lbl.Weight = 1D;
@@ -642,16 +657,18 @@ namespace ArgusCR1008.Inventory.Templates
             // 
             // totQty_lbl
             // 
-            this.totQty_lbl.BackColor = System.Drawing.Color.Azure;
+            this.totQty_lbl.BackColor = System.Drawing.Color.Gray;
             this.totQty_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.totQty_lbl.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold);
+            this.totQty_lbl.ForeColor = System.Drawing.Color.White;
             this.totQty_lbl.Multiline = true;
             this.totQty_lbl.Name = "totQty_lbl";
             this.totQty_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(4, 2, 6, 0, 100F);
             this.totQty_lbl.StylePriority.UseBackColor = false;
             this.totQty_lbl.StylePriority.UseBorders = false;
             this.totQty_lbl.StylePriority.UseFont = false;
+            this.totQty_lbl.StylePriority.UseForeColor = false;
             this.totQty_lbl.StylePriority.UsePadding = false;
             this.totQty_lbl.StylePriority.UseTextAlignment = false;
             this.totQty_lbl.Text = "Total Quantity:";
@@ -696,10 +713,10 @@ namespace ArgusCR1008.Inventory.Templates
             // 
             // pageInfo1
             // 
-            this.pageInfo1.LocationFloat = new DevExpress.Utils.PointFloat(12.5F, 12.5F);
+            this.pageInfo1.LocationFloat = new DevExpress.Utils.PointFloat(9.999998F, 12.5F);
             this.pageInfo1.Name = "pageInfo1";
             this.pageInfo1.PageInfo = DevExpress.XtraPrinting.PageInfo.DateTime;
-            this.pageInfo1.SizeF = new System.Drawing.SizeF(279.6897F, 23F);
+            this.pageInfo1.SizeF = new System.Drawing.SizeF(282.1897F, 23F);
             // 
             // IV103
             // 

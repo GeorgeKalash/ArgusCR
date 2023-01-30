@@ -118,6 +118,7 @@ namespace ArgusCR1019.POS.PS101
             // Detail
             // 
             this.Detail.HeightF = 0F;
+            this.Detail.KeepTogether = true;
             this.Detail.Name = "Detail";
             this.Detail.SubBands.AddRange(new DevExpress.XtraReports.UI.SubBand[] {
             this.InvoiceItemSubBand,
@@ -161,6 +162,7 @@ namespace ArgusCR1019.POS.PS101
             this.xrTable2,
             this.xrTable1});
             this.ReportHeader.HeightF = 299.1188F;
+            this.ReportHeader.KeepTogether = true;
             this.ReportHeader.Name = "ReportHeader";
             // 
             // xrTable6
@@ -773,6 +775,7 @@ namespace ArgusCR1019.POS.PS101
             this.spSignature_lbl,
             this.xrTable9});
             this.ReportFooter.HeightF = 146.0609F;
+            this.ReportFooter.KeepTogether = true;
             this.ReportFooter.Name = "ReportFooter";
             // 
             // clientSignature_lbl

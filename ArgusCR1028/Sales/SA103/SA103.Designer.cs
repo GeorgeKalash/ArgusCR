@@ -159,6 +159,7 @@ namespace ArgusCR1028.Sales.SA103
             // Detail
             // 
             this.Detail.HeightF = 0F;
+            this.Detail.KeepTogether = true;
             this.Detail.KeepTogetherWithDetailReports = true;
             this.Detail.Name = "Detail";
             this.Detail.SubBands.AddRange(new DevExpress.XtraReports.UI.SubBand[] {

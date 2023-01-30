@@ -643,6 +643,7 @@ namespace ArgusCR1008.Inventory.Templates
             this.xrTable6,
             this.materialsTransfer_lbl});
             this.ReportHeader.HeightF = 294F;
+            this.ReportHeader.KeepTogether = true;
             this.ReportHeader.Name = "ReportHeader";
             // 
             // volume_data
@@ -757,6 +758,7 @@ namespace ArgusCR1008.Inventory.Templates
             this.ReportFooter.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
             this.xrTable1});
             this.ReportFooter.HeightF = 26.04167F;
+            this.ReportFooter.KeepTogether = true;
             this.ReportFooter.Name = "ReportFooter";
             // 
             // IV102
