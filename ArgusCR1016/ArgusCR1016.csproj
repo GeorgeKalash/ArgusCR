@@ -111,6 +111,12 @@
     <Compile Include="Inventory\IV01.Designer.cs">
       <DependentUpon>IV01.cs</DependentUpon>
     </Compile>
+    <Compile Include="Inventory\IV02.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Inventory\IV02.Designer.cs">
+      <DependentUpon>IV02.cs</DependentUpon>
+    </Compile>
     <Compile Include="Manufacturing\Templates\MF103.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -181,6 +187,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Inventory\IV01.resx">
       <DependentUpon>IV01.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\IV02.resx">
+      <DependentUpon>IV02.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Manufacturing\Templates\MF103.resx">
       <DependentUpon>MF103.cs</DependentUpon>
