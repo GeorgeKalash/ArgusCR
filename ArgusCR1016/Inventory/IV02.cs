@@ -24,7 +24,7 @@ namespace ArgusCR1016.Inventory
         protected override void OnBeforePrint(PrintEventArgs e)
         {
             printDate.Text = DateTime.Now.ToString("dd/MM/yyyy");
-            SharedClasses.JsonProtocol.QryStructure<ArgusDS.Inventory.Reports.IV403> webObject = deserializeList<ArgusDS.Inventory.Reports.IV403>();
+            SharedClasses.JsonProtocol.QryStructure<Custom.CR1016.IV02> webObject = deserializeList<Custom.CR1016.IV02>();
 
             DataSource = webObject.list;
 
