@@ -35,7 +35,7 @@ namespace ArgusCR1008.POS.PS101
             logo_data.ImageUrl = webObject.record.companyInfo.logoUrl;
             reference_data.Text = webObject.record.invoiceView.reference;
             date_data.Text = webObject.record.invoiceView.date.ToString(sessionInfo.dateFormat);
-            spName_data.Text = webObject.record.invoiceView.spName;
+            spName_data.Text = webObject.record.salesPerson.name;
             plant_data.Text = webObject.record.invoiceView.plantName;
         
           if (webObject.record.address != null)

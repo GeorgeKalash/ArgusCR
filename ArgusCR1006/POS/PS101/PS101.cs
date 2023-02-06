@@ -39,7 +39,7 @@ namespace ArgusCR1006.POS.PS101
 
             reference_data.Text = webObject.record.invoiceView.reference;
             date_data.Text = webObject.record.invoiceView.date.ToString(sessionInfo.dateFormat);
-            spName_data.Text = webObject.record.invoiceView.spName;
+            spName_data.Text = webObject.record.salesPerson.name;
             plant_data.Text = webObject.record.invoiceView.plantName;
         
           if (webObject.record.address != null)
@@ -55,7 +55,7 @@ namespace ArgusCR1006.POS.PS101
 
             reference2_data.Text = webObject.record.invoiceView.reference;
             date2_data.Text = webObject.record.invoiceView.date.ToString(sessionInfo.dateFormat);
-            spName2_data.Text = webObject.record.invoiceView.spName;
+            spName2_data.Text = webObject.record.salesPerson.name;
             plant2_data.Text = webObject.record.invoiceView.plantName;
 
             if (webObject.record.address != null)
