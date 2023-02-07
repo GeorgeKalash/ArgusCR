@@ -131,7 +131,6 @@ namespace ArgusCR1029.Financials
             this.PageFooter = new DevExpress.XtraReports.UI.PageFooterBand();
             this.pagesNumber_lbl = new DevExpress.XtraReports.UI.XRPageInfo();
             this.printSignature = new DevExpress.XtraReports.UI.XRLabel();
-            this.ReportFooter = new DevExpress.XtraReports.UI.ReportFooterBand();
             this.xrLabel1 = new DevExpress.XtraReports.UI.XRLabel();
             ((System.ComponentModel.ISupportInitialize)(this.objectDataSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.crossTab)).BeginInit();
@@ -851,15 +850,16 @@ namespace ArgusCR1029.Financials
             // PageFooter
             // 
             this.PageFooter.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+            this.xrLabel1,
             this.pagesNumber_lbl,
             this.printSignature});
-            this.PageFooter.HeightF = 35.49998F;
+            this.PageFooter.HeightF = 125.5F;
             this.PageFooter.Name = "PageFooter";
             // 
             // pagesNumber_lbl
             // 
             this.pagesNumber_lbl.BackColor = System.Drawing.Color.White;
-            this.pagesNumber_lbl.LocationFloat = new DevExpress.Utils.PointFloat(1058.443F, 9.999974F);
+            this.pagesNumber_lbl.LocationFloat = new DevExpress.Utils.PointFloat(1058.443F, 100F);
             this.pagesNumber_lbl.Name = "pagesNumber_lbl";
             this.pagesNumber_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.pagesNumber_lbl.SizeF = new System.Drawing.SizeF(100.5565F, 25.49998F);
@@ -870,21 +870,14 @@ namespace ArgusCR1029.Financials
             // 
             // printSignature
             // 
-            this.printSignature.LocationFloat = new DevExpress.Utils.PointFloat(12.5F, 9.999974F);
+            this.printSignature.LocationFloat = new DevExpress.Utils.PointFloat(12.5F, 100F);
             this.printSignature.Multiline = true;
             this.printSignature.Name = "printSignature";
             this.printSignature.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.printSignature.SizeF = new System.Drawing.SizeF(790.3643F, 25.50001F);
+            this.printSignature.SizeF = new System.Drawing.SizeF(845.5727F, 25.50002F);
             this.printSignature.StylePriority.UseTextAlignment = false;
             this.printSignature.Text = "printSignature";
             this.printSignature.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
-            // 
-            // ReportFooter
-            // 
-            this.ReportFooter.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
-            this.xrLabel1});
-            this.ReportFooter.HeightF = 74.79163F;
-            this.ReportFooter.Name = "ReportFooter";
             // 
             // xrLabel1
             // 
@@ -893,7 +886,7 @@ namespace ArgusCR1029.Financials
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrLabel1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
-            this.xrLabel1.LocationFloat = new DevExpress.Utils.PointFloat(12.49948F, 24.58334F);
+            this.xrLabel1.LocationFloat = new DevExpress.Utils.PointFloat(12.5F, 25F);
             this.xrLabel1.Multiline = true;
             this.xrLabel1.Name = "xrLabel1";
             this.xrLabel1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 2, 0, 100F);
@@ -914,8 +907,7 @@ namespace ArgusCR1029.Financials
             this.Detail,
             this.TopMargin,
             this.BottomMargin,
-            this.PageFooter,
-            this.ReportFooter});
+            this.PageFooter});
             this.ComponentStorage.AddRange(new System.ComponentModel.IComponent[] {
             this.objectDataSource1});
             this.Font = new System.Drawing.Font("Arial", 9.75F);
@@ -1019,7 +1011,6 @@ namespace ArgusCR1029.Financials
         private DevExpress.XtraReports.UI.XRTableRow xrTableRow5;
         private DevExpress.XtraReports.UI.XRTableCell account_lbl;
         private DevExpress.XtraReports.UI.XRTableCell account_param;
-        private DevExpress.XtraReports.UI.ReportFooterBand ReportFooter;
         private DevExpress.XtraReports.UI.XRLabel xrLabel1;
     }
 }
