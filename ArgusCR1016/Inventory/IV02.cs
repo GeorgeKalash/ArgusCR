@@ -53,14 +53,12 @@ namespace ArgusCR1016.Inventory
             unitPrice_lbl.Text = labelText(4);
             qty_lbl.Text = labelText(5);
             netWeight_lbl.Text = labelText(6);
-            netVolume_lbl.Text = labelText(7);
-            netCost_lbl.Text = labelText(8);
+            diams_lbl.Text = labelText(7);
+            stones_lbl.Text = labelText(8);
         }
-
-
         protected override string dictionaryStore()
         {
-            return "IV403";
+            return "CR1016.IV02";
         }
     }
 }
