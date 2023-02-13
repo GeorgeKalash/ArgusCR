@@ -757,7 +757,7 @@ namespace ArgusCR1019.POS.PS101
             // pagesNumber_lbl
             // 
             this.pagesNumber_lbl.BackColor = System.Drawing.Color.White;
-            this.pagesNumber_lbl.Font = new System.Drawing.Font("Arial", 7F);
+            this.pagesNumber_lbl.Font = new System.Drawing.Font("Arial", 8F);
             this.pagesNumber_lbl.LocationFloat = new DevExpress.Utils.PointFloat(690.7625F, 9.999974F);
             this.pagesNumber_lbl.Name = "pagesNumber_lbl";
             this.pagesNumber_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);

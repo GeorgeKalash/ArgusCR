@@ -149,7 +149,7 @@ namespace ArgusCR1025.Purchase.Templates.PU103GLD
             // 
             // printSignature_lbl
             // 
-            this.printSignature_lbl.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.printSignature_lbl.Font = new System.Drawing.Font("Times New Roman", 9.75F);
             this.printSignature_lbl.LocationFloat = new DevExpress.Utils.PointFloat(44.375F, 9.999974F);
             this.printSignature_lbl.Multiline = true;
             this.printSignature_lbl.Name = "printSignature_lbl";

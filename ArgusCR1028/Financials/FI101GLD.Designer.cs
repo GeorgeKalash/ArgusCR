@@ -710,12 +710,12 @@ namespace ArgusCR1028.Financials
             // 
             // printSignature
             // 
-            this.printSignature.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.printSignature.Font = new System.Drawing.Font("Times New Roman", 9.75F);
             this.printSignature.LocationFloat = new DevExpress.Utils.PointFloat(50F, 9.999974F);
             this.printSignature.Multiline = true;
             this.printSignature.Name = "printSignature";
             this.printSignature.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.printSignature.SizeF = new System.Drawing.SizeF(523.7529F, 23.00002F);
+            this.printSignature.SizeF = new System.Drawing.SizeF(568.5446F, 23.00002F);
             this.printSignature.StylePriority.UseFont = false;
             this.printSignature.StylePriority.UseTextAlignment = false;
             this.printSignature.Text = "printSignature";

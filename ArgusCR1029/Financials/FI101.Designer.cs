@@ -710,7 +710,7 @@ namespace ArgusCR1029.Financials
             // 
             // printSignature
             // 
-            this.printSignature.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.printSignature.Font = new System.Drawing.Font("Times New Roman", 9.75F);
             this.printSignature.LocationFloat = new DevExpress.Utils.PointFloat(50F, 9.999974F);
             this.printSignature.Multiline = true;
             this.printSignature.Name = "printSignature";
