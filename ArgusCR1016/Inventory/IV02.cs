@@ -10,9 +10,9 @@ using DevExpress.XtraReports.UI;
 
 namespace ArgusCR1016.Inventory
 {
-    public partial class IV403 : ArgusRPT.BaseReport
+    public partial class IV02 : ArgusRPT.BaseReport
     {
-        public IV403()
+        public IV02()
         {
             InitializeComponent();
         }

@@ -1,7 +1,7 @@
 ﻿
 namespace ArgusCR1016.Inventory
 {
-    partial class IV403
+    partial class IV02
     {
         /// <summary>
         /// Required designer variable.
