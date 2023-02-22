@@ -31,6 +31,9 @@ namespace ArgusCR1029.Financials.FI104
             ((ItemsSubReports)(ItemsSubReports.ReportSource)).data = webObject.record.items;
             ((MetalSubReports)(MetalSubReports.ReportSource)).data = webObject.record.metalSummaries;
 
+            logo_data.ImageUrl = companyInfo.logoUrl;
+            companyInfoName_data.Text = companyInfo.name;
+
             dtName_data.Text = webObject.record.header.dtName;
             function_data.Text = webObject.record.header.functionName;
             reference_data.Text = webObject.record.header.reference;
@@ -42,7 +45,9 @@ namespace ArgusCR1029.Financials.FI104
             siteName_data.Text = webObject.record.header.siteName;
             accountRef_data.Text = webObject.record.header.accountRef;
             accountName_data.Text = webObject.record.header.accountName;
+            description_data.Text = webObject.record.header.description;
 
+            printSignature.Text = reportSignature();
             base.OnBeforePrint(e);
         }
 
@@ -57,6 +62,7 @@ namespace ArgusCR1029.Financials.FI104
             plant_lbl.Text = labelText(5);
             site_lbl.Text = labelText(6);
             account_lbl.Text = labelText(7);
+            description_lbl.Text = labelText(8);
         }
 
         protected override string dictionaryStore()
