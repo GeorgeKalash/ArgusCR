@@ -451,7 +451,7 @@ namespace ArgusCR1029.Sales.SA104
             // 
             this.ReportFooter.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
             this.xrTable1});
-            this.ReportFooter.HeightF = 59.80001F;
+            this.ReportFooter.HeightF = 34.90001F;
             this.ReportFooter.KeepTogether = true;
             this.ReportFooter.Name = "ReportFooter";
             // 
