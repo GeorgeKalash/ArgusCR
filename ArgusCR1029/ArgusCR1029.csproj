@@ -35,6 +35,10 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\Extensions\ArgusDS.dll</HintPath>
     </Reference>
+    <Reference Include="ArgusDS.1029, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Extensions\ArgusDS.1029.dll</HintPath>
+    </Reference>
     <Reference Include="ArgusRPTCore, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\Extensions\ArgusRPTCore.dll</HintPath>
@@ -126,6 +130,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Financials\FI401_L1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Financials\FI401_L1.Designer.cs">
+      <DependentUpon>FI401_L1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Financials\FI401M2.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -226,6 +236,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Financials\FI401_L1.resx">
+      <DependentUpon>FI401_L1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Financials\FI401M2.resx">
       <DependentUpon>FI401M2.cs</DependentUpon>
     </EmbeddedResource>
@@ -276,6 +289,8 @@
       <DependentUpon>SA103.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
