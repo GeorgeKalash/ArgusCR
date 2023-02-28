@@ -20,7 +20,7 @@ namespace ArgusCR1029.Inventory
         }
         protected override void OnBeforePrint(PrintEventArgs e)
         {
-            //SharedClasses.JsonProtocol.QryStructure<ArgusDS.Inventory.Reports.> obj = deserializeList< ArgusDS.Inventory.Reports.> ();
+            //SharedClasses.JsonProtocol.QryStructure<Custom.CR1029.IV01> obj = deserializeList <Custom.CR1029.IV01>();
             //DataSource = obj.list;
 
             printSignature.Text = reportSignature();

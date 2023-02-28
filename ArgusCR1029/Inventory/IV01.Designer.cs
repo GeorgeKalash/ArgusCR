@@ -190,6 +190,8 @@ namespace ArgusCR1029.Inventory
             this.clientName_data.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.clientName_data.BorderWidth = 1F;
+            this.clientName_data.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[groupRef]")});
             this.clientName_data.Multiline = true;
             this.clientName_data.Name = "clientName_data";
             this.clientName_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(5, 2, 0, 0, 100F);
@@ -207,6 +209,8 @@ namespace ArgusCR1029.Inventory
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.spRef_data.BorderWidth = 1F;
             this.spRef_data.CanGrow = false;
+            this.spRef_data.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[lineRef]")});
             this.spRef_data.Name = "spRef_data";
             this.spRef_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(5, 2, 0, 0, 100F);
             this.spRef_data.StylePriority.UseBorders = false;
@@ -223,6 +227,8 @@ namespace ArgusCR1029.Inventory
             this.qty_data.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.qty_data.BorderWidth = 1F;
+            this.qty_data.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[msRef]")});
             this.qty_data.Multiline = true;
             this.qty_data.Name = "qty_data";
             this.qty_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 5, 0, 0, 100F);
@@ -239,6 +245,8 @@ namespace ArgusCR1029.Inventory
             this.weight_data.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.weight_data.BorderWidth = 1F;
+            this.weight_data.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[stdCost]")});
             this.weight_data.Multiline = true;
             this.weight_data.Name = "weight_data";
             this.weight_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 5, 0, 0, 100F);
@@ -276,6 +284,8 @@ namespace ArgusCR1029.Inventory
             this.mdValue_data.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.mdValue_data.BorderWidth = 1F;
+            this.mdValue_data.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[salePrice]")});
             this.mdValue_data.Multiline = true;
             this.mdValue_data.Name = "mdValue_data";
             this.mdValue_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 5, 0, 0, 100F);
@@ -294,6 +304,8 @@ namespace ArgusCR1029.Inventory
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.mdPct_data.BorderWidth = 1F;
             this.mdPct_data.CanGrow = false;
+            this.mdPct_data.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[vatAmount]")});
             this.mdPct_data.Name = "mdPct_data";
             this.mdPct_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 5, 0, 0, 100F);
             this.mdPct_data.StylePriority.UseBorders = false;
@@ -312,6 +324,8 @@ namespace ArgusCR1029.Inventory
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.subtotal_data.BorderWidth = 1F;
             this.subtotal_data.CanGrow = false;
+            this.subtotal_data.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[priceGroupRef]")});
             this.subtotal_data.Name = "subtotal_data";
             this.subtotal_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 5, 0, 0, 100F);
             this.subtotal_data.StylePriority.UseBorders = false;

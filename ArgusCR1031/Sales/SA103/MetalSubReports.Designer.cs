@@ -71,7 +71,7 @@ namespace ArgusCR1031.Sales.SA103
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTable2.BorderWidth = 0.5F;
-            this.xrTable2.LocationFloat = new DevExpress.Utils.PointFloat(487.5F, 0F);
+            this.xrTable2.LocationFloat = new DevExpress.Utils.PointFloat(0F, 0F);
             this.xrTable2.Name = "xrTable2";
             this.xrTable2.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable2.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
@@ -158,7 +158,7 @@ namespace ArgusCR1031.Sales.SA103
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTable1.BorderWidth = 0.5F;
-            this.xrTable1.LocationFloat = new DevExpress.Utils.PointFloat(487.5F, 0F);
+            this.xrTable1.LocationFloat = new DevExpress.Utils.PointFloat(0F, 0F);
             this.xrTable1.Name = "xrTable1";
             this.xrTable1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable1.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
@@ -191,7 +191,7 @@ namespace ArgusCR1031.Sales.SA103
             this.xrTableCell18.StylePriority.UseBorders = false;
             this.xrTableCell18.StylePriority.UseFont = false;
             this.xrTableCell18.StylePriority.UseTextAlignment = false;
-            this.xrTableCell18.Text = "أجور \r\n";
+            this.xrTableCell18.Text = "Wages \r\n";
             this.xrTableCell18.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             this.xrTableCell18.Weight = 2.9493538100059107D;
             // 
@@ -208,7 +208,7 @@ namespace ArgusCR1031.Sales.SA103
             this.xrTableCell12.StylePriority.UseBorders = false;
             this.xrTableCell12.StylePriority.UseFont = false;
             this.xrTableCell12.StylePriority.UseTextAlignment = false;
-            this.xrTableCell12.Text = "الوزن";
+            this.xrTableCell12.Text = "Weight";
             this.xrTableCell12.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             this.xrTableCell12.Weight = 2.9493538100059107D;
             // 
@@ -225,7 +225,7 @@ namespace ArgusCR1031.Sales.SA103
             this.xrTableCell14.StylePriority.UseBorders = false;
             this.xrTableCell14.StylePriority.UseFont = false;
             this.xrTableCell14.StylePriority.UseTextAlignment = false;
-            this.xrTableCell14.Text = "العيار";
+            this.xrTableCell14.Text = "Caliber";
             this.xrTableCell14.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             this.xrTableCell14.Weight = 3.0513496062012759D;
             // 
