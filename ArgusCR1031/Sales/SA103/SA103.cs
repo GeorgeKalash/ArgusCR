@@ -33,6 +33,9 @@ namespace ArgusCR1031.Sales.SA103
 
             logo_data.ImageUrl = webObject.record.companyInfo.logoUrl;
 
+            companyName_data.Text = webObject.record.companyInfo.name;
+            taxNo_data.Text = webObject.record.companyInfo.taxNo;
+
             reference_data.Text = webObject.record.trxHeader.reference;
             date_data.Text = webObject.record.trxHeader.date.ToString(sessionInfo.dateFormat);
             plant_data.Text = webObject.record.trxHeader.plantName;
@@ -61,7 +64,7 @@ namespace ArgusCR1031.Sales.SA103
 
         protected override string dictionaryStore()
         {
-            return "CR1029.SA103";
+            return "CR1031.SA103";
         }
     }
 }
