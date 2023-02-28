@@ -32,6 +32,9 @@ namespace ArgusCR1029.Financials
             DevExpress.XtraReports.UI.XRSummary xrSummary1 = new DevExpress.XtraReports.UI.XRSummary();
             DevExpress.XtraReports.UI.XRSummary xrSummary2 = new DevExpress.XtraReports.UI.XRSummary();
             DevExpress.XtraReports.UI.XRSummary xrSummary3 = new DevExpress.XtraReports.UI.XRSummary();
+            DevExpress.XtraReports.UI.XRSummary xrSummary4 = new DevExpress.XtraReports.UI.XRSummary();
+            DevExpress.XtraReports.UI.XRSummary xrSummary5 = new DevExpress.XtraReports.UI.XRSummary();
+            DevExpress.XtraReports.UI.XRSummary xrSummary6 = new DevExpress.XtraReports.UI.XRSummary();
             this.xrTable1 = new DevExpress.XtraReports.UI.XRTable();
             this.xrTableRow1 = new DevExpress.XtraReports.UI.XRTableRow();
             this.date_lbl = new DevExpress.XtraReports.UI.XRTableCell();
@@ -154,7 +157,7 @@ namespace ArgusCR1029.Financials
             this.date_lbl.StylePriority.UseBorderWidth = false;
             this.date_lbl.StylePriority.UseFont = false;
             this.date_lbl.Text = "Date";
-            this.date_lbl.Weight = 0.77240791815053278D;
+            this.date_lbl.Weight = 0.69516712630797517D;
             // 
             // docRef_lbl
             // 
@@ -186,7 +189,7 @@ namespace ArgusCR1029.Financials
             this.dgName_lbl.StylePriority.UseBorderWidth = false;
             this.dgName_lbl.StylePriority.UseFont = false;
             this.dgName_lbl.Text = "Function Name";
-            this.dgName_lbl.Weight = 0.849648732307305D;
+            this.dgName_lbl.Weight = 0.92688952414986259D;
             // 
             // plantRef_lbl
             // 
@@ -286,7 +289,7 @@ namespace ArgusCR1029.Financials
             this.xrTableCell7.StylePriority.UseBorders = false;
             this.xrTableCell7.StylePriority.UseBorderWidth = false;
             this.xrTableCell7.StylePriority.UseFont = false;
-            this.xrTableCell7.Weight = 0.772407918150533D;
+            this.xrTableCell7.Weight = 0.69516712630797539D;
             // 
             // xrTableCell8
             // 
@@ -301,7 +304,7 @@ namespace ArgusCR1029.Financials
             this.xrTableCell8.StylePriority.UseBorders = false;
             this.xrTableCell8.StylePriority.UseBorderWidth = false;
             this.xrTableCell8.StylePriority.UseFont = false;
-            this.xrTableCell8.Weight = 0.84964873083512116D;
+            this.xrTableCell8.Weight = 0.84964867190507365D;
             // 
             // xrTableCell9
             // 
@@ -316,7 +319,7 @@ namespace ArgusCR1029.Financials
             this.xrTableCell9.StylePriority.UseBorders = false;
             this.xrTableCell9.StylePriority.UseBorderWidth = false;
             this.xrTableCell9.StylePriority.UseFont = false;
-            this.xrTableCell9.Weight = 0.849648496587115D;
+            this.xrTableCell9.Weight = 0.92688934735972017D;
             // 
             // xrTableCell10
             // 
@@ -610,7 +613,7 @@ namespace ArgusCR1029.Financials
             this.date_data.Text = "date_data";
             this.date_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             this.date_data.TextFormatString = "{0:dd/MM/yyyy}";
-            this.date_data.Weight = 0.64470050165501991D;
+            this.date_data.Weight = 0.58023031493024668D;
             // 
             // docRef_data
             // 
@@ -630,7 +633,7 @@ namespace ArgusCR1029.Financials
             this.docRef_data.StylePriority.UseTextAlignment = false;
             this.docRef_data.Text = "docRef_data";
             this.docRef_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
-            this.docRef_data.Weight = 0.70917042072833425D;
+            this.docRef_data.Weight = 0.70917037154159779D;
             // 
             // dgName_data
             // 
@@ -650,7 +653,7 @@ namespace ArgusCR1029.Financials
             this.dgName_data.StylePriority.UseTextAlignment = false;
             this.dgName_data.Text = "dgName_data";
             this.dgName_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
-            this.dgName_data.Weight = 0.70917000928929175D;
+            this.dgName_data.Weight = 0.77364024520080132D;
             // 
             // xrTableCell6
             // 
@@ -928,6 +931,8 @@ namespace ArgusCR1029.Financials
             this.xrTableCell16.StylePriority.UseFont = false;
             this.xrTableCell16.StylePriority.UsePadding = false;
             this.xrTableCell16.StylePriority.UseTextAlignment = false;
+            xrSummary4.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
+            this.xrTableCell16.Summary = xrSummary4;
             this.xrTableCell16.Text = "xrTableCell16";
             this.xrTableCell16.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
             this.xrTableCell16.TextFormatString = "{0:n2}";
@@ -944,6 +949,8 @@ namespace ArgusCR1029.Financials
             this.xrTableCell17.StylePriority.UseFont = false;
             this.xrTableCell17.StylePriority.UsePadding = false;
             this.xrTableCell17.StylePriority.UseTextAlignment = false;
+            xrSummary5.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
+            this.xrTableCell17.Summary = xrSummary5;
             this.xrTableCell17.Text = "xrTableCell17";
             this.xrTableCell17.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
             this.xrTableCell17.TextFormatString = "{0:n2}";
@@ -960,6 +967,8 @@ namespace ArgusCR1029.Financials
             this.xrTableCell18.StylePriority.UseFont = false;
             this.xrTableCell18.StylePriority.UsePadding = false;
             this.xrTableCell18.StylePriority.UseTextAlignment = false;
+            xrSummary6.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
+            this.xrTableCell18.Summary = xrSummary6;
             this.xrTableCell18.Text = "xrTableCell18";
             this.xrTableCell18.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
             this.xrTableCell18.TextFormatString = "{0:n2}";
