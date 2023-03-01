@@ -130,6 +130,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CashAndBanks\CA101.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CashAndBanks\CA101.Designer.cs">
+      <DependentUpon>CA101.cs</DependentUpon>
+    </Compile>
     <Compile Include="Financials\FI401_L1.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -180,6 +186,24 @@
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Sales\KSAeInvoiceQrCode.cs" />
+    <Compile Include="Sales\SA110\InvoiceItemsSubReports.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Sales\SA110\InvoiceItemsSubReports.Designer.cs">
+      <DependentUpon>InvoiceItemsSubReports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sales\SA110\MetalSubReports.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Sales\SA110\MetalSubReports.Designer.cs">
+      <DependentUpon>MetalSubReports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sales\SA110\SA110.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Sales\SA110\SA110.Designer.cs">
+      <DependentUpon>SA110.cs</DependentUpon>
+    </Compile>
     <Compile Include="Sales\SA108\InvoiceItemsSubReports.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -236,6 +260,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="CashAndBanks\CA101.resx">
+      <DependentUpon>CA101.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Financials\FI401_L1.resx">
       <DependentUpon>FI401_L1.cs</DependentUpon>
     </EmbeddedResource>
@@ -261,6 +288,15 @@
       <DependentUpon>IV102.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Sales\SA110\InvoiceItemsSubReports.resx">
+      <DependentUpon>InvoiceItemsSubReports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales\SA110\MetalSubReports.resx">
+      <DependentUpon>MetalSubReports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales\SA110\SA110.resx">
+      <DependentUpon>SA110.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Sales\SA108\InvoiceItemsSubReports.resx">
       <DependentUpon>InvoiceItemsSubReports.cs</DependentUpon>
     </EmbeddedResource>
@@ -292,5 +328,6 @@
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
