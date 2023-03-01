@@ -225,7 +225,7 @@ namespace ArgusCR1031.Sales.SA103
             this.xrTableCell14.StylePriority.UseBorders = false;
             this.xrTableCell14.StylePriority.UseFont = false;
             this.xrTableCell14.StylePriority.UseTextAlignment = false;
-            this.xrTableCell14.Text = "Caliber";
+            this.xrTableCell14.Text = "Metal Ref";
             this.xrTableCell14.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             this.xrTableCell14.Weight = 3.0513496062012759D;
             // 

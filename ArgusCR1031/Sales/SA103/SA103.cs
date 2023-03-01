@@ -46,11 +46,6 @@ namespace ArgusCR1031.Sales.SA103
             clientName_data.Text = webObject.record.trxHeader.clientName;
             cAddress_data.Text = webObject.record.billAddress?.street1;
 
-            subtotal_data.Text = webObject.record.trxHeader.subtotal.ToString("N2");
-            vatAmount_data.Text = webObject.record.trxHeader.vatAmount.ToString("N2");
-            amount_data.Text = webObject.record.trxHeader.amount.ToString("N2");
-            amountInWords_data.Text = SharedClasses.NumberToWords.multiLingualNumberInText((decimal)webObject.record.trxHeader.amount, 10, 2);
-
             spName2_data.Text = webObject.record.trxHeader.spName;
 
             ((InvoiceItemsSubReports)(InvoiceItemsSubReports.ReportSource)).data = webObject.record.items;

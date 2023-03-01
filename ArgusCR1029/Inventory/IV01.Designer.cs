@@ -86,7 +86,7 @@ namespace ArgusCR1029.Inventory
             // 
             // BottomMargin
             // 
-            this.BottomMargin.HeightF = 15F;
+            this.BottomMargin.HeightF = 16.87499F;
             this.BottomMargin.Name = "BottomMargin";
             // 
             // Detail
@@ -448,7 +448,7 @@ namespace ArgusCR1029.Inventory
             this.categoryRef_lbl.StylePriority.UseBorders = false;
             this.categoryRef_lbl.StylePriority.UseBorderWidth = false;
             this.categoryRef_lbl.StylePriority.UseFont = false;
-            this.categoryRef_lbl.Text = "category ref";
+            this.categoryRef_lbl.Text = "category ";
             this.categoryRef_lbl.Weight = 0.62492848179631855D;
             // 
             // groupRef_lbl
@@ -465,7 +465,7 @@ namespace ArgusCR1029.Inventory
             this.groupRef_lbl.StylePriority.UseBorders = false;
             this.groupRef_lbl.StylePriority.UseBorderWidth = false;
             this.groupRef_lbl.StylePriority.UseFont = false;
-            this.groupRef_lbl.Text = "group ref";
+            this.groupRef_lbl.Text = "group";
             this.groupRef_lbl.Weight = 0.67650743918044243D;
             // 
             // lineRef_lbl
@@ -482,7 +482,7 @@ namespace ArgusCR1029.Inventory
             this.lineRef_lbl.StylePriority.UseBorders = false;
             this.lineRef_lbl.StylePriority.UseBorderWidth = false;
             this.lineRef_lbl.StylePriority.UseFont = false;
-            this.lineRef_lbl.Text = "line ref";
+            this.lineRef_lbl.Text = "line";
             this.lineRef_lbl.Weight = 0.70853970064980754D;
             // 
             // msRef_lbl
@@ -499,7 +499,7 @@ namespace ArgusCR1029.Inventory
             this.msRef_lbl.StylePriority.UseBorders = false;
             this.msRef_lbl.StylePriority.UseBorderWidth = false;
             this.msRef_lbl.StylePriority.UseFont = false;
-            this.msRef_lbl.Text = "ms ref";
+            this.msRef_lbl.Text = "ms ";
             this.msRef_lbl.Weight = 0.72263055601588855D;
             // 
             // stdCost_lbl
@@ -584,7 +584,7 @@ namespace ArgusCR1029.Inventory
             this.priceGroupRef_lbl.StylePriority.UseBorders = false;
             this.priceGroupRef_lbl.StylePriority.UseBorderWidth = false;
             this.priceGroupRef_lbl.StylePriority.UseFont = false;
-            this.priceGroupRef_lbl.Text = "price group ref";
+            this.priceGroupRef_lbl.Text = "price group";
             this.priceGroupRef_lbl.Weight = 0.6626479471484279D;
             // 
             // PageFooter
@@ -621,7 +621,7 @@ namespace ArgusCR1029.Inventory
             this.ReportFooter.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
             this.xrTable2,
             this.xrTable4});
-            this.ReportFooter.HeightF = 25F;
+            this.ReportFooter.HeightF = 26.04167F;
             this.ReportFooter.Name = "ReportFooter";
             // 
             // xrTable2
@@ -655,11 +655,11 @@ namespace ArgusCR1029.Inventory
             this.groupSumWeight.StylePriority.UseFont = false;
             this.groupSumWeight.StylePriority.UsePadding = false;
             this.groupSumWeight.StylePriority.UseTextAlignment = false;
-            xrSummary1.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
+            xrSummary1.Running = DevExpress.XtraReports.UI.SummaryRunning.Report;
             this.groupSumWeight.Summary = xrSummary1;
             this.groupSumWeight.Text = "groupSumWeight";
             this.groupSumWeight.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
-            this.groupSumWeight.TextFormatString = "{0:#,#}";
+            this.groupSumWeight.TextFormatString = "{0:n2}";
             this.groupSumWeight.Weight = 0.56759563867443119D;
             this.groupSumWeight.WordWrap = false;
             // 
@@ -694,7 +694,7 @@ namespace ArgusCR1029.Inventory
             this.groupSumVatAmount.StylePriority.UseFont = false;
             this.groupSumVatAmount.StylePriority.UsePadding = false;
             this.groupSumVatAmount.StylePriority.UseTextAlignment = false;
-            xrSummary2.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
+            xrSummary2.Running = DevExpress.XtraReports.UI.SummaryRunning.Report;
             xrSummary2.TreatStringsAsNumerics = false;
             this.groupSumVatAmount.Summary = xrSummary2;
             this.groupSumVatAmount.Text = "groupSumVatAmount";
@@ -715,7 +715,7 @@ namespace ArgusCR1029.Inventory
             this.ReportFooter});
             this.Font = new System.Drawing.Font("Arial", 9.75F);
             this.Landscape = true;
-            this.Margins = new System.Drawing.Printing.Margins(0, 0, 30, 15);
+            this.Margins = new System.Drawing.Printing.Margins(0, 0, 30, 17);
             this.PageHeight = 827;
             this.PageWidth = 1169;
             this.PaperKind = System.Drawing.Printing.PaperKind.A4;
