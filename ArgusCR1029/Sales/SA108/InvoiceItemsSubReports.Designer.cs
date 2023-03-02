@@ -230,7 +230,7 @@ namespace ArgusCR1029.Sales.SA108
             this.xrTableCell2.StylePriority.UseBorders = false;
             this.xrTableCell2.StylePriority.UseFont = false;
             this.xrTableCell2.StylePriority.UseTextAlignment = false;
-            this.xrTableCell2.Text = "Serial No";
+            this.xrTableCell2.Text = "الرقم التسلسلي";
             this.xrTableCell2.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             this.xrTableCell2.Weight = 1.5022574215621984D;
             // 

@@ -30,18 +30,6 @@ namespace ArgusCR1029.Sales.SA110
         {
         }
 
-        protected override void OnDataSourceRowChanged(DataSourceRowEventArgs e)
-        {
-            ArgusDS.Sales.Reports.SA110b obj = ((List<ArgusDS.Sales.Reports.SA110b>)DataSource)[e.CurrentRow];
-
-            double netUnitPrice = obj.unitPrice - (obj.mdValue ?? 0);
-            double epWithVAT = obj.extendedPrice + obj.vatAmount;
-
-            unitPrice_data.Text = netUnitPrice.ToString("N2");
-            extendedPriceWithVAT_data.Text = epWithVAT.ToString("N2");
-            base.OnDataSourceRowChanged(e);
-        }
-
         protected override void labelsText()
         {
         }
