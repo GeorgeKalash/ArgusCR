@@ -39,6 +39,8 @@ namespace ArgusCR1029.CashAndBanks
             toCAName_data.Text = obj.record.toCAName;
             amount_data.Text = obj.record.amount.ToString("N2");
             notes_data.Text = obj.record.notes;
+
+            printSignature.Text = reportSignature();
             base.OnBeforePrint(e);
 
         }

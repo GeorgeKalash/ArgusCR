@@ -28,8 +28,9 @@ namespace ArgusCR1012.CashAndBanks.Templates
             toCAName_data.Text = obj.record.toCAName;
             amount_data.Text = obj.record.amount.ToString("N2");
             notes_data.Text = obj.record.notes;
-            base.OnBeforePrint(e);
 
+            printSignature.Text = reportSignature();
+            base.OnBeforePrint(e);
         }
 
         protected override void labelsText()
@@ -52,4 +53,3 @@ namespace ArgusCR1012.CashAndBanks.Templates
         }
     }
 }
-
