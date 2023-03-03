@@ -26,8 +26,8 @@ namespace ArgusCR1012.Sales.Templates
             SharedClasses.JsonProtocol.GetStructure<ReturnPrintView> webObject = deserializeGet<ReturnPrintView>();
             DataSource = webObject.record.items;
 
-            companyName_data.Text = webObject.record.companyInfo.name;
-            taxNo_data.Text = webObject.record.companyInfo.taxNo;
+            companyName_data.Text = companyInfo.name;
+            taxNo_data.Text = companyInfo.taxNo;
 
             reference_data.Text = webObject.record.trxHeader.reference;
 
@@ -36,9 +36,9 @@ namespace ArgusCR1012.Sales.Templates
                 date_data.Text = ((DateTime)webObject.record.logTime).ToString(sessionInfo.dateFormat) + " " + ((DateTime)webObject.record.logTime).ToString("HH:mm");
             }
             plant_data.Text = webObject.record.trxHeader.plantName;
-            licenseNo_data.Text = webObject.record.companyInfo.licenseNo;
-            crNo_data.Text = webObject.record.companyInfo.crNo;
-            address_data.Text = webObject.record.companyInfo.address?.street1;
+            licenseNo_data.Text = companyInfo.licenseNo;
+            crNo_data.Text = companyInfo.crNo;
+            address_data.Text = companyInfo.address?.street1;
             spName_data.Text = webObject.record.salesPerson?.name;
             cellPhone_data.Text = webObject.record.salesPerson?.cellPhone;
 
@@ -81,7 +81,7 @@ namespace ArgusCR1012.Sales.Templates
             clientName2_data.Text = webObject.record.trxHeader.clientName;
             spName2_data.Text = webObject.record.trxHeader.spName;
 
-            QRCode.Text = new KSAeInvoiceQrCode(webObject.record.companyInfo.name, webObject.record.companyInfo.taxNo, (DateTime)webObject.record.logTime, webObject.record.trxHeader.amount.ToString(), webObject.record.trxHeader.vatAmount.ToString()).ToBase64();
+            QRCode.Text = new KSAeInvoiceQrCode(companyInfo.name, companyInfo.taxNo, (DateTime)webObject.record.logTime, webObject.record.trxHeader.amount.ToString(), webObject.record.trxHeader.vatAmount.ToString()).ToBase64();
             base.OnBeforePrint(e);
         }
 
