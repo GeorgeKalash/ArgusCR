@@ -30,14 +30,14 @@ namespace ArgusCR1029.Sales.SA108
 
             SharedClasses.JsonProtocol.GetStructure<ArgusDS.Sales.Reports.SA108> webObject = deserializeGet<ArgusDS.Sales.Reports.SA108>();
 
-           logo_data.ImageUrl = webObject.record.companyInfo.logoUrl;
+           logo_data.ImageUrl = companyInfo.logoUrl;
 
 
             reference_data.Text = webObject.record.header.reference;
             date_data.Text = webObject.record.header.date.ToString(sessionInfo.dateFormat);
            plant_data.Text = webObject.record.header.plantName;
-           phoneNo_data.Text = webObject.record.companyInfo.address?.phone;
-           address_data.Text = webObject.record.companyInfo.address?.street1;
+           phoneNo_data.Text = companyInfo.address?.phone;
+           address_data.Text = companyInfo.address?.street1;
 
             clientRef_data.Text = webObject.record.header.clientRef;
             clientName_data.Text = webObject.record.header.clientName;
