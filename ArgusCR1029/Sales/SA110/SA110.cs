@@ -31,18 +31,18 @@ namespace ArgusCR1029.Sales.SA110
 
             SharedClasses.JsonProtocol.GetStructure <ArgusDS.Sales.Reports.SA110> webObject = deserializeGet<ArgusDS.Sales.Reports.SA110>();
 
-           // logo_data.ImageUrl = webObject.record.companyInfo.logoUrl;
+            logo_data.ImageUrl = webObject.record.companyInfo.logoUrl;
 
 
             reference_data.Text = webObject.record.trxHeader.reference;
             date_data.Text = webObject.record.trxHeader.date.ToString(sessionInfo.dateFormat);
             plant_data.Text = webObject.record.trxHeader.plantName;
-          //  phoneNo_data.Text = webObject.record.companyInfo.address?.phone;
-          //  address_data.Text = webObject.record.companyInfo.address?.street1;
+            phoneNo_data.Text = webObject.record.companyInfo.address?.phone;
+            address_data.Text = webObject.record.companyInfo.address?.street1;
 
             clientRef_data.Text = webObject.record.client.reference;
             clientName_data.Text = webObject.record.trxHeader.clientName;
-          //  cAddress_data.Text = webObject.record.billAddress?.street1;
+            cAddress_data.Text = webObject.record.billAddress?.street1;
 
             subtotal_data.Text = webObject.record.trxHeader.subtotal.ToString("N2");
             vatAmount_data.Text = webObject.record.trxHeader.vatAmount.ToString("N2");
