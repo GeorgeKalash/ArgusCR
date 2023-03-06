@@ -164,7 +164,7 @@ namespace ArgusCR1029.Inventory
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.clientRef_data.BorderWidth = 1F;
             this.clientRef_data.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[categoryRef]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[categoryName]")});
             this.clientRef_data.Multiline = true;
             this.clientRef_data.Name = "clientRef_data";
             this.clientRef_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(4, 2, 4, 0, 100F);
@@ -182,7 +182,7 @@ namespace ArgusCR1029.Inventory
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.clientName_data.BorderWidth = 1F;
             this.clientName_data.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[groupRef]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[groupName]")});
             this.clientName_data.Multiline = true;
             this.clientName_data.Name = "clientName_data";
             this.clientName_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(4, 2, 4, 0, 100F);
@@ -201,7 +201,7 @@ namespace ArgusCR1029.Inventory
             this.spRef_data.BorderWidth = 1F;
             this.spRef_data.CanGrow = false;
             this.spRef_data.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[lineRef]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[lineName]")});
             this.spRef_data.Name = "spRef_data";
             this.spRef_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(4, 2, 4, 0, 100F);
             this.spRef_data.StylePriority.UseBorders = false;
