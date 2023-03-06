@@ -33,10 +33,8 @@ namespace ArgusCR1029.Inventory.IV105
         private void InitializeComponent()
         {
             this.InvoiceItemSubBand = new DevExpress.XtraReports.UI.SubBand();
-            this.transferSubReports = new DevExpress.XtraReports.UI.XRSubreport();
             this.Detail = new DevExpress.XtraReports.UI.DetailBand();
             this.InvoiceReceiptSubBand = new DevExpress.XtraReports.UI.SubBand();
-            this.MetalSubReports = new DevExpress.XtraReports.UI.XRSubreport();
             this.TopMargin = new DevExpress.XtraReports.UI.TopMarginBand();
             this.BottomMargin = new DevExpress.XtraReports.UI.BottomMarginBand();
             this.ReportFooter = new DevExpress.XtraReports.UI.ReportFooterBand();
@@ -69,6 +67,8 @@ namespace ArgusCR1029.Inventory.IV105
             this.xrTableCell6 = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTableCell7 = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTableCell3 = new DevExpress.XtraReports.UI.XRTableCell();
+            this.transferSubReports = new DevExpress.XtraReports.UI.XRSubreport();
+            this.MetalSubReports = new DevExpress.XtraReports.UI.XRSubreport();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable3)).BeginInit();
@@ -82,13 +82,6 @@ namespace ArgusCR1029.Inventory.IV105
             this.InvoiceItemSubBand.HeightF = 23F;
             this.InvoiceItemSubBand.KeepTogether = true;
             this.InvoiceItemSubBand.Name = "InvoiceItemSubBand";
-            // 
-            // transferSubReports
-            // 
-            this.transferSubReports.LocationFloat = new DevExpress.Utils.PointFloat(9.999998F, 0F);
-            this.transferSubReports.Name = "transferSubReports";
-            this.transferSubReports.ReportSource = new ArgusCR1029.Inventory.IV105.transferSubReports();
-            this.transferSubReports.SizeF = new System.Drawing.SizeF(810F, 23F);
             // 
             // Detail
             // 
@@ -107,13 +100,6 @@ namespace ArgusCR1029.Inventory.IV105
             this.InvoiceReceiptSubBand.HeightF = 35.5F;
             this.InvoiceReceiptSubBand.KeepTogether = true;
             this.InvoiceReceiptSubBand.Name = "InvoiceReceiptSubBand";
-            // 
-            // MetalSubReports
-            // 
-            this.MetalSubReports.LocationFloat = new DevExpress.Utils.PointFloat(9.999998F, 12.5F);
-            this.MetalSubReports.Name = "MetalSubReports";
-            this.MetalSubReports.ReportSource = new ArgusCR1029.Inventory.IV105.MetalSubReports();
-            this.MetalSubReports.SizeF = new System.Drawing.SizeF(810F, 23F);
             // 
             // TopMargin
             // 
@@ -209,7 +195,7 @@ namespace ArgusCR1029.Inventory.IV105
             this.title_lbl.StylePriority.UseForeColor = false;
             this.title_lbl.StylePriority.UsePadding = false;
             this.title_lbl.StylePriority.UseTextAlignment = false;
-            this.title_lbl.Text = "Draft Serials Transfer ";
+            this.title_lbl.Text = "درافت تحويل بالسريال";
             this.title_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopCenter;
             // 
             // xrTable1
@@ -539,6 +525,20 @@ namespace ArgusCR1029.Inventory.IV105
             this.xrTableCell3.Text = "الوصف";
             this.xrTableCell3.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             this.xrTableCell3.Weight = 2.4405463716618576D;
+            // 
+            // transferSubReports
+            // 
+            this.transferSubReports.LocationFloat = new DevExpress.Utils.PointFloat(9.999998F, 0F);
+            this.transferSubReports.Name = "transferSubReports";
+            this.transferSubReports.ReportSource = new ArgusCR1029.Inventory.IV105.transferSubReports();
+            this.transferSubReports.SizeF = new System.Drawing.SizeF(810F, 23F);
+            // 
+            // MetalSubReports
+            // 
+            this.MetalSubReports.LocationFloat = new DevExpress.Utils.PointFloat(9.999998F, 12.5F);
+            this.MetalSubReports.Name = "MetalSubReports";
+            this.MetalSubReports.ReportSource = new ArgusCR1029.Inventory.IV105.MetalSubReports();
+            this.MetalSubReports.SizeF = new System.Drawing.SizeF(810F, 23F);
             // 
             // IV105
             // 
