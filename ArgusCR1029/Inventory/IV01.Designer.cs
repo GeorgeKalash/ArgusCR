@@ -30,8 +30,6 @@ namespace ArgusCR1029.Inventory
         private void InitializeComponent()
         {
             DevExpress.XtraReports.UI.XRSummary xrSummary1 = new DevExpress.XtraReports.UI.XRSummary();
-            DevExpress.XtraReports.UI.XRSummary xrSummary3 = new DevExpress.XtraReports.UI.XRSummary();
-            DevExpress.XtraReports.UI.XRSummary xrSummary2 = new DevExpress.XtraReports.UI.XRSummary();
             this.TopMargin = new DevExpress.XtraReports.UI.TopMarginBand();
             this.BottomMargin = new DevExpress.XtraReports.UI.BottomMarginBand();
             this.Detail = new DevExpress.XtraReports.UI.DetailBand();
@@ -44,9 +42,7 @@ namespace ArgusCR1029.Inventory
             this.spRef_data = new DevExpress.XtraReports.UI.XRTableCell();
             this.qty_data = new DevExpress.XtraReports.UI.XRTableCell();
             this.weight_data = new DevExpress.XtraReports.UI.XRTableCell();
-            this.listPrice_data = new DevExpress.XtraReports.UI.XRTableCell();
             this.mdValue_data = new DevExpress.XtraReports.UI.XRTableCell();
-            this.mdPct_data = new DevExpress.XtraReports.UI.XRTableCell();
             this.subtotal_data = new DevExpress.XtraReports.UI.XRTableCell();
             this.ReportHeader = new DevExpress.XtraReports.UI.ReportHeaderBand();
             this.title_lbl = new DevExpress.XtraReports.UI.XRLabel();
@@ -60,9 +56,7 @@ namespace ArgusCR1029.Inventory
             this.lineRef_lbl = new DevExpress.XtraReports.UI.XRTableCell();
             this.msRef_lbl = new DevExpress.XtraReports.UI.XRTableCell();
             this.stdCost_lbl = new DevExpress.XtraReports.UI.XRTableCell();
-            this.weight_lbl = new DevExpress.XtraReports.UI.XRTableCell();
             this.salePrice_lbl = new DevExpress.XtraReports.UI.XRTableCell();
-            this.vatAmount_lbl = new DevExpress.XtraReports.UI.XRTableCell();
             this.priceGroupRef_lbl = new DevExpress.XtraReports.UI.XRTableCell();
             this.PageFooter = new DevExpress.XtraReports.UI.PageFooterBand();
             this.printSignature = new DevExpress.XtraReports.UI.XRLabel();
@@ -70,16 +64,11 @@ namespace ArgusCR1029.Inventory
             this.ReportFooter = new DevExpress.XtraReports.UI.ReportFooterBand();
             this.xrTable2 = new DevExpress.XtraReports.UI.XRTable();
             this.xrTableRow2 = new DevExpress.XtraReports.UI.XRTableRow();
-            this.groupSumWeight = new DevExpress.XtraReports.UI.XRTableCell();
-            this.xrTable4 = new DevExpress.XtraReports.UI.XRTable();
-            this.xrTableRow4 = new DevExpress.XtraReports.UI.XRTableRow();
-            this.groupSumVatAmount = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTableCell1 = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTableCell2 = new DevExpress.XtraReports.UI.XRTableCell();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.xrTable4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             // 
             // TopMargin
@@ -107,7 +96,7 @@ namespace ArgusCR1029.Inventory
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTable3.BorderWidth = 0.5F;
             this.xrTable3.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.xrTable3.LocationFloat = new DevExpress.Utils.PointFloat(9.999996F, 0F);
+            this.xrTable3.LocationFloat = new DevExpress.Utils.PointFloat(9.999998F, 0F);
             this.xrTable3.Name = "xrTable3";
             this.xrTable3.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable3.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
@@ -127,9 +116,7 @@ namespace ArgusCR1029.Inventory
             this.spRef_data,
             this.qty_data,
             this.weight_data,
-            this.listPrice_data,
             this.mdValue_data,
-            this.mdPct_data,
             this.subtotal_data});
             this.xrTableRow3.Name = "xrTableRow3";
             this.xrTableRow3.Weight = 1D;
@@ -263,26 +250,6 @@ namespace ArgusCR1029.Inventory
             this.weight_data.TextFormatString = "{0:n2}";
             this.weight_data.Weight = 0.61049904893917972D;
             // 
-            // listPrice_data
-            // 
-            this.listPrice_data.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Right) 
-            | DevExpress.XtraPrinting.BorderSide.Bottom)));
-            this.listPrice_data.BorderWidth = 1F;
-            this.listPrice_data.CanGrow = false;
-            this.listPrice_data.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[weight]")});
-            this.listPrice_data.Name = "listPrice_data";
-            this.listPrice_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 4, 4, 0, 100F);
-            this.listPrice_data.StylePriority.UseBorders = false;
-            this.listPrice_data.StylePriority.UseBorderWidth = false;
-            this.listPrice_data.StylePriority.UsePadding = false;
-            this.listPrice_data.StylePriority.UseTextAlignment = false;
-            this.listPrice_data.Text = "weight";
-            this.listPrice_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
-            this.listPrice_data.TextFormatString = "{0:n2}";
-            this.listPrice_data.Weight = 0.61049863914534164D;
-            this.listPrice_data.WordWrap = false;
-            // 
             // mdValue_data
             // 
             this.mdValue_data.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Right) 
@@ -301,26 +268,6 @@ namespace ArgusCR1029.Inventory
             this.mdValue_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
             this.mdValue_data.TextFormatString = "{0:n2}";
             this.mdValue_data.Weight = 0.61049946106607056D;
-            // 
-            // mdPct_data
-            // 
-            this.mdPct_data.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Right) 
-            | DevExpress.XtraPrinting.BorderSide.Bottom)));
-            this.mdPct_data.BorderWidth = 1F;
-            this.mdPct_data.CanGrow = false;
-            this.mdPct_data.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[vatAmount]")});
-            this.mdPct_data.Name = "mdPct_data";
-            this.mdPct_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 4, 4, 0, 100F);
-            this.mdPct_data.StylePriority.UseBorders = false;
-            this.mdPct_data.StylePriority.UseBorderWidth = false;
-            this.mdPct_data.StylePriority.UsePadding = false;
-            this.mdPct_data.StylePriority.UseTextAlignment = false;
-            this.mdPct_data.Text = "vatAmount";
-            this.mdPct_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
-            this.mdPct_data.TextFormatString = "{0:n2}";
-            this.mdPct_data.Weight = 0.61049905518727676D;
-            this.mdPct_data.WordWrap = false;
             // 
             // subtotal_data
             // 
@@ -398,9 +345,7 @@ namespace ArgusCR1029.Inventory
             this.lineRef_lbl,
             this.msRef_lbl,
             this.stdCost_lbl,
-            this.weight_lbl,
             this.salePrice_lbl,
-            this.vatAmount_lbl,
             this.priceGroupRef_lbl});
             this.xrTableRow1.Name = "xrTableRow1";
             this.xrTableRow1.Weight = 1D;
@@ -524,23 +469,6 @@ namespace ArgusCR1029.Inventory
             this.stdCost_lbl.Text = "Standard Cost";
             this.stdCost_lbl.Weight = 0.59692582234134184D;
             // 
-            // weight_lbl
-            // 
-            this.weight_lbl.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.weight_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
-            | DevExpress.XtraPrinting.BorderSide.Right) 
-            | DevExpress.XtraPrinting.BorderSide.Bottom)));
-            this.weight_lbl.BorderWidth = 1F;
-            this.weight_lbl.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold);
-            this.weight_lbl.Multiline = true;
-            this.weight_lbl.Name = "weight_lbl";
-            this.weight_lbl.StylePriority.UseBackColor = false;
-            this.weight_lbl.StylePriority.UseBorders = false;
-            this.weight_lbl.StylePriority.UseBorderWidth = false;
-            this.weight_lbl.StylePriority.UseFont = false;
-            this.weight_lbl.Text = "Weight";
-            this.weight_lbl.Weight = 0.59692587496571936D;
-            // 
             // salePrice_lbl
             // 
             this.salePrice_lbl.BackColor = System.Drawing.Color.WhiteSmoke;
@@ -557,23 +485,6 @@ namespace ArgusCR1029.Inventory
             this.salePrice_lbl.StylePriority.UseFont = false;
             this.salePrice_lbl.Text = "Sale Price";
             this.salePrice_lbl.Weight = 0.59692583388576292D;
-            // 
-            // vatAmount_lbl
-            // 
-            this.vatAmount_lbl.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.vatAmount_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
-            | DevExpress.XtraPrinting.BorderSide.Right) 
-            | DevExpress.XtraPrinting.BorderSide.Bottom)));
-            this.vatAmount_lbl.BorderWidth = 1F;
-            this.vatAmount_lbl.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold);
-            this.vatAmount_lbl.Multiline = true;
-            this.vatAmount_lbl.Name = "vatAmount_lbl";
-            this.vatAmount_lbl.StylePriority.UseBackColor = false;
-            this.vatAmount_lbl.StylePriority.UseBorders = false;
-            this.vatAmount_lbl.StylePriority.UseBorderWidth = false;
-            this.vatAmount_lbl.StylePriority.UseFont = false;
-            this.vatAmount_lbl.Text = "Vat Amount";
-            this.vatAmount_lbl.Weight = 0.59692582735740918D;
             // 
             // priceGroupRef_lbl
             // 
@@ -624,20 +535,19 @@ namespace ArgusCR1029.Inventory
             // ReportFooter
             // 
             this.ReportFooter.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
-            this.xrTable2,
-            this.xrTable4});
+            this.xrTable2});
             this.ReportFooter.HeightF = 25F;
             this.ReportFooter.Name = "ReportFooter";
             // 
             // xrTable2
             // 
             this.xrTable2.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.xrTable2.LocationFloat = new DevExpress.Utils.PointFloat(709.0001F, 0F);
+            this.xrTable2.LocationFloat = new DevExpress.Utils.PointFloat(743.9846F, 0F);
             this.xrTable2.Name = "xrTable2";
             this.xrTable2.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable2.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow2});
-            this.xrTable2.SizeF = new System.Drawing.SizeF(269.9998F, 25F);
+            this.xrTable2.SizeF = new System.Drawing.SizeF(201.5789F, 25F);
             this.xrTable2.StylePriority.UseFont = false;
             this.xrTable2.StylePriority.UseTextAlignment = false;
             this.xrTable2.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
@@ -646,67 +556,9 @@ namespace ArgusCR1029.Inventory
             // 
             this.xrTableRow2.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
             this.xrTableCell1,
-            this.groupSumWeight,
             this.xrTableCell2});
             this.xrTableRow2.Name = "xrTableRow2";
             this.xrTableRow2.Weight = 1D;
-            // 
-            // groupSumWeight
-            // 
-            this.groupSumWeight.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "sumSum([weight])")});
-            this.groupSumWeight.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold);
-            this.groupSumWeight.Multiline = true;
-            this.groupSumWeight.Name = "groupSumWeight";
-            this.groupSumWeight.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 5, 0, 0, 100F);
-            this.groupSumWeight.StylePriority.UseFont = false;
-            this.groupSumWeight.StylePriority.UsePadding = false;
-            this.groupSumWeight.StylePriority.UseTextAlignment = false;
-            xrSummary1.Running = DevExpress.XtraReports.UI.SummaryRunning.Report;
-            this.groupSumWeight.Summary = xrSummary1;
-            this.groupSumWeight.Text = "groupSumWeight";
-            this.groupSumWeight.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
-            this.groupSumWeight.TextFormatString = "{0:n2}";
-            this.groupSumWeight.Weight = 0.56759563867443119D;
-            // 
-            // xrTable4
-            // 
-            this.xrTable4.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.xrTable4.LocationFloat = new DevExpress.Utils.PointFloat(978.9999F, 0F);
-            this.xrTable4.Name = "xrTable4";
-            this.xrTable4.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
-            this.xrTable4.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
-            this.xrTableRow4});
-            this.xrTable4.SizeF = new System.Drawing.SizeF(90.00006F, 25F);
-            this.xrTable4.StylePriority.UseFont = false;
-            this.xrTable4.StylePriority.UseTextAlignment = false;
-            this.xrTable4.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
-            // 
-            // xrTableRow4
-            // 
-            this.xrTableRow4.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
-            this.groupSumVatAmount});
-            this.xrTableRow4.Name = "xrTableRow4";
-            this.xrTableRow4.Weight = 1D;
-            // 
-            // groupSumVatAmount
-            // 
-            this.groupSumVatAmount.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "sumSum([vatAmount])")});
-            this.groupSumVatAmount.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold);
-            this.groupSumVatAmount.Multiline = true;
-            this.groupSumVatAmount.Name = "groupSumVatAmount";
-            this.groupSumVatAmount.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 5, 0, 0, 100F);
-            this.groupSumVatAmount.StylePriority.UseFont = false;
-            this.groupSumVatAmount.StylePriority.UsePadding = false;
-            this.groupSumVatAmount.StylePriority.UseTextAlignment = false;
-            xrSummary3.Running = DevExpress.XtraReports.UI.SummaryRunning.Report;
-            xrSummary3.TreatStringsAsNumerics = false;
-            this.groupSumVatAmount.Summary = xrSummary3;
-            this.groupSumVatAmount.Text = "groupSumVatAmount";
-            this.groupSumVatAmount.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
-            this.groupSumVatAmount.TextFormatString = "{0:n2}";
-            this.groupSumVatAmount.Weight = 0.58695860379742115D;
             // 
             // xrTableCell1
             // 
@@ -722,7 +574,7 @@ namespace ArgusCR1029.Inventory
             this.xrTableCell1.Text = "xrTableCell1";
             this.xrTableCell1.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
             this.xrTableCell1.TextFormatString = "{0:n2}";
-            this.xrTableCell1.Weight = 0.56759563867443119D;
+            this.xrTableCell1.Weight = 0.56424292124050479D;
             // 
             // xrTableCell2
             // 
@@ -735,12 +587,12 @@ namespace ArgusCR1029.Inventory
             this.xrTableCell2.StylePriority.UseFont = false;
             this.xrTableCell2.StylePriority.UsePadding = false;
             this.xrTableCell2.StylePriority.UseTextAlignment = false;
-            xrSummary2.Running = DevExpress.XtraReports.UI.SummaryRunning.Report;
-            this.xrTableCell2.Summary = xrSummary2;
+            xrSummary1.Running = DevExpress.XtraReports.UI.SummaryRunning.Report;
+            this.xrTableCell2.Summary = xrSummary1;
             this.xrTableCell2.Text = "xrTableCell2";
             this.xrTableCell2.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
             this.xrTableCell2.TextFormatString = "{0:n2}";
-            this.xrTableCell2.Weight = 0.56759563867443119D;
+            this.xrTableCell2.Weight = 0.63477342253731539D;
             // 
             // IV01
             // 
@@ -762,7 +614,6 @@ namespace ArgusCR1029.Inventory
             ((System.ComponentModel.ISupportInitialize)(this.xrTable3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.xrTable4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
 
         }
@@ -784,9 +635,7 @@ namespace ArgusCR1029.Inventory
         private DevExpress.XtraReports.UI.XRTableCell lineRef_lbl;
         private DevExpress.XtraReports.UI.XRTableCell msRef_lbl;
         private DevExpress.XtraReports.UI.XRTableCell stdCost_lbl;
-        private DevExpress.XtraReports.UI.XRTableCell weight_lbl;
         private DevExpress.XtraReports.UI.XRTableCell salePrice_lbl;
-        private DevExpress.XtraReports.UI.XRTableCell vatAmount_lbl;
         private DevExpress.XtraReports.UI.XRTableCell priceGroupRef_lbl;
         private DevExpress.XtraReports.UI.PageFooterBand PageFooter;
         private DevExpress.XtraReports.UI.XRTable xrTable3;
@@ -798,19 +647,13 @@ namespace ArgusCR1029.Inventory
         private DevExpress.XtraReports.UI.XRTableCell spRef_data;
         private DevExpress.XtraReports.UI.XRTableCell qty_data;
         private DevExpress.XtraReports.UI.XRTableCell weight_data;
-        private DevExpress.XtraReports.UI.XRTableCell listPrice_data;
         private DevExpress.XtraReports.UI.XRTableCell mdValue_data;
-        private DevExpress.XtraReports.UI.XRTableCell mdPct_data;
         private DevExpress.XtraReports.UI.XRTableCell subtotal_data;
         private DevExpress.XtraReports.UI.XRLabel printSignature;
         private DevExpress.XtraReports.UI.XRPageInfo xrPageInfo1;
         private DevExpress.XtraReports.UI.ReportFooterBand ReportFooter;
         private DevExpress.XtraReports.UI.XRTable xrTable2;
         private DevExpress.XtraReports.UI.XRTableRow xrTableRow2;
-        private DevExpress.XtraReports.UI.XRTableCell groupSumWeight;
-        private DevExpress.XtraReports.UI.XRTable xrTable4;
-        private DevExpress.XtraReports.UI.XRTableRow xrTableRow4;
-        private DevExpress.XtraReports.UI.XRTableCell groupSumVatAmount;
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell1;
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell2;
     }
