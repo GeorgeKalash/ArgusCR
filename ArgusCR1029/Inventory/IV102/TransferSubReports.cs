@@ -6,11 +6,11 @@ using System.ComponentModel;
 using System.Drawing;
 using System.Drawing.Printing;
 
-namespace ArgusCR1029.Inventory.IV105
+namespace ArgusCR1029.Inventory.IV102
 {
     public partial class TransferSubReports : ArgusRPT.BaseReport
     {
-        public List<ArgusDS.Inventory.DraftTransferSerialItemView> data;
+        public List<ArgusDS.Inventory.TransferItemView> data;
 
         public TransferSubReports()
         {
@@ -36,7 +36,7 @@ namespace ArgusCR1029.Inventory.IV105
 
         protected override string dictionaryStore()
         {
-            return "CR1029.IV105";
+            return "CR1029.IV102";
         }
     }
 }

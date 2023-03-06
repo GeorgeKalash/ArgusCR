@@ -1,11 +1,13 @@
-﻿using DevExpress.XtraReports.UI;
-using System;
+﻿using System;
 using System.Collections;
 using System.ComponentModel;
+using System.Drawing;
 using System.Drawing.Printing;
+using DevExpress.XtraReports.UI;
+using ArgusDS.Sales.Reports;
+using System.Collections.Generic;
 
-
-namespace ArgusCR1029.Inventory
+namespace ArgusCR1029.Inventory.IV102
 {
     public partial class IV102 : ArgusRPT.BaseReport
     {
@@ -14,13 +16,26 @@ namespace ArgusCR1029.Inventory
             InitializeComponent();
         }
 
+        public override void setSessionInfo(Dictionary<string, string> _reportHeaders)
+        {
+            base.setSessionInfo(_reportHeaders);
+            ((ArgusRPT.BaseReport)(TransferSubReports.ReportSource)).setSessionInfo(sessionInfo);
+            ((ArgusRPT.BaseReport)(MetalSubReports.ReportSource)).setSessionInfo(sessionInfo);
+            initSubReports();
+        }
+
         protected override void OnBeforePrint(PrintEventArgs e)
         {
+            RightToLeft = DevExpress.XtraReports.UI.RightToLeft.No;
+            RightToLeftLayout = DevExpress.XtraReports.UI.RightToLeftLayout.No;
 
-            SharedClasses.JsonProtocol.GetStructure<ArgusDS.Inventory.Reports.IV102> webObject = deserializeGet<ArgusDS.Inventory.Reports.IV102>();
-            base.OnBeforePrint(e);
+            SharedClasses.JsonProtocol.GetStructure <ArgusDS.Inventory.Reports.IV102> webObject = deserializeGet<ArgusDS.Inventory.Reports.IV102>();
+
+            logo_data.ImageUrl = companyInfo.logoUrl;
+
+
             DataSource = webObject.record.items;
-            
+
             dtName_data.Text = webObject.record.header.dtName;
             reference_data.Text = webObject.record.header.reference;
             date_data.Text = webObject.record.header.date.ToString("dd/MM/yyyy");
@@ -34,12 +49,14 @@ namespace ArgusCR1029.Inventory
             city_data.Text = webObject.record.toAddress?.city;
 
             printSignature_lbl.Text = reportSignature();
-        }
 
+            ((TransferSubReports)(TransferSubReports.ReportSource)).data = webObject.record.items;
+            ((MetalSubReports)(MetalSubReports.ReportSource)).data = webObject.record.metalSummaries;
+            base.OnBeforePrint(e);
+        }
         protected override void labelsText()
         {
         }
-
         protected override string dictionaryStore()
         {
             return "CR1029.IV102";

@@ -30,6 +30,7 @@ namespace ArgusCR1029.Inventory
         protected override void labelsText()
         {
             title_lbl.Text = labelText(0);
+
             sku_lbl.Text = labelText(1);
             itemName_lbl.Text = labelText(2);
             categoryRef_lbl.Text = labelText(3);
@@ -37,10 +38,8 @@ namespace ArgusCR1029.Inventory
             lineRef_lbl.Text = labelText(5);
             msRef_lbl.Text = labelText(6);
             stdCost_lbl.Text = labelText(7);
-            weight_data.Text = labelText(8);
-            salePrice_lbl.Text = labelText(9);
-            vatAmount_lbl.Text = labelText(10);
-            priceGroupRef_lbl.Text = labelText(11);
+            salePrice_lbl.Text = labelText(8);
+            priceGroupRef_lbl.Text = labelText(9);
         }
 
         protected override string dictionaryStore()

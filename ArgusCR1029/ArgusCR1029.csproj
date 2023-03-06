@@ -184,17 +184,29 @@
     <Compile Include="Inventory\IV01.Designer.cs">
       <DependentUpon>IV01.cs</DependentUpon>
     </Compile>
-    <Compile Include="Inventory\IV102.cs">
+    <Compile Include="Inventory\IV102\IV102.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Inventory\IV102.Designer.cs">
+    <Compile Include="Inventory\IV102\IV102.Designer.cs">
       <DependentUpon>IV102.cs</DependentUpon>
     </Compile>
-    <Compile Include="Inventory\IV105\transferSubReports.cs">
+    <Compile Include="Inventory\IV102\MetalSubReports.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Inventory\IV105\transferSubReports.Designer.cs">
-      <DependentUpon>transferSubReports.cs</DependentUpon>
+    <Compile Include="Inventory\IV102\MetalSubReports.Designer.cs">
+      <DependentUpon>MetalSubReports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\IV102\TransferSubReports.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Inventory\IV102\TransferSubReports.Designer.cs">
+      <DependentUpon>TransferSubReports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\IV105\TransferSubReports.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Inventory\IV105\TransferSubReports.Designer.cs">
+      <DependentUpon>TransferSubReports.cs</DependentUpon>
     </Compile>
     <Compile Include="Inventory\IV105\MetalSubReports.cs">
       <SubType>Component</SubType>
@@ -311,11 +323,17 @@
     <EmbeddedResource Include="Inventory\IV01.resx">
       <DependentUpon>IV01.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Inventory\IV102.resx">
+    <EmbeddedResource Include="Inventory\IV102\IV102.resx">
       <DependentUpon>IV102.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Inventory\IV105\transferSubReports.resx">
-      <DependentUpon>transferSubReports.cs</DependentUpon>
+    <EmbeddedResource Include="Inventory\IV102\MetalSubReports.resx">
+      <DependentUpon>MetalSubReports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\IV102\TransferSubReports.resx">
+      <DependentUpon>TransferSubReports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\IV105\TransferSubReports.resx">
+      <DependentUpon>TransferSubReports.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Inventory\IV105\MetalSubReports.resx">
       <DependentUpon>MetalSubReports.cs</DependentUpon>

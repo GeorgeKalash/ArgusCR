@@ -32,10 +32,10 @@ namespace ArgusCR1029.Inventory.IV105
         /// </summary>
         private void InitializeComponent()
         {
-            this.InvoiceItemSubBand = new DevExpress.XtraReports.UI.SubBand();
-            this.transferSubReports = new DevExpress.XtraReports.UI.XRSubreport();
+            this.TransferSubBand = new DevExpress.XtraReports.UI.SubBand();
+            this.TransferSubReports = new DevExpress.XtraReports.UI.XRSubreport();
             this.Detail = new DevExpress.XtraReports.UI.DetailBand();
-            this.InvoiceReceiptSubBand = new DevExpress.XtraReports.UI.SubBand();
+            this.MetalSubBand = new DevExpress.XtraReports.UI.SubBand();
             this.MetalSubReports = new DevExpress.XtraReports.UI.XRSubreport();
             this.TopMargin = new DevExpress.XtraReports.UI.TopMarginBand();
             this.BottomMargin = new DevExpress.XtraReports.UI.BottomMarginBand();
@@ -74,21 +74,21 @@ namespace ArgusCR1029.Inventory.IV105
             ((System.ComponentModel.ISupportInitialize)(this.xrTable3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             // 
-            // InvoiceItemSubBand
+            // TransferSubBand
             // 
-            this.InvoiceItemSubBand.BorderDashStyle = DevExpress.XtraPrinting.BorderDashStyle.DashDotDot;
-            this.InvoiceItemSubBand.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
-            this.transferSubReports});
-            this.InvoiceItemSubBand.HeightF = 23F;
-            this.InvoiceItemSubBand.KeepTogether = true;
-            this.InvoiceItemSubBand.Name = "InvoiceItemSubBand";
+            this.TransferSubBand.BorderDashStyle = DevExpress.XtraPrinting.BorderDashStyle.DashDotDot;
+            this.TransferSubBand.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+            this.TransferSubReports});
+            this.TransferSubBand.HeightF = 23F;
+            this.TransferSubBand.KeepTogether = true;
+            this.TransferSubBand.Name = "TransferSubBand";
             // 
-            // transferSubReports
+            // TransferSubReports
             // 
-            this.transferSubReports.LocationFloat = new DevExpress.Utils.PointFloat(9.999998F, 0F);
-            this.transferSubReports.Name = "transferSubReports";
-            this.transferSubReports.ReportSource = new ArgusCR1029.Inventory.IV105.transferSubReports();
-            this.transferSubReports.SizeF = new System.Drawing.SizeF(810F, 23F);
+            this.TransferSubReports.LocationFloat = new DevExpress.Utils.PointFloat(9.999998F, 0F);
+            this.TransferSubReports.Name = "TransferSubReports";
+            this.TransferSubReports.ReportSource = new ArgusCR1029.Inventory.IV105.TransferSubReports();
+            this.TransferSubReports.SizeF = new System.Drawing.SizeF(810F, 23F);
             // 
             // Detail
             // 
@@ -97,16 +97,16 @@ namespace ArgusCR1029.Inventory.IV105
             this.Detail.KeepTogetherWithDetailReports = true;
             this.Detail.Name = "Detail";
             this.Detail.SubBands.AddRange(new DevExpress.XtraReports.UI.SubBand[] {
-            this.InvoiceItemSubBand,
-            this.InvoiceReceiptSubBand});
+            this.TransferSubBand,
+            this.MetalSubBand});
             // 
-            // InvoiceReceiptSubBand
+            // MetalSubBand
             // 
-            this.InvoiceReceiptSubBand.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+            this.MetalSubBand.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
             this.MetalSubReports});
-            this.InvoiceReceiptSubBand.HeightF = 35.5F;
-            this.InvoiceReceiptSubBand.KeepTogether = true;
-            this.InvoiceReceiptSubBand.Name = "InvoiceReceiptSubBand";
+            this.MetalSubBand.HeightF = 35.5F;
+            this.MetalSubBand.KeepTogether = true;
+            this.MetalSubBand.Name = "MetalSubBand";
             // 
             // MetalSubReports
             // 
@@ -566,12 +566,12 @@ namespace ArgusCR1029.Inventory.IV105
 
         private DevExpress.XtraReports.UI.TopMarginBand TopMargin;
         private DevExpress.XtraReports.UI.BottomMarginBand BottomMargin;
-        private DevExpress.XtraReports.UI.SubBand InvoiceReceiptSubBand;
+        private DevExpress.XtraReports.UI.SubBand MetalSubBand;
         private DevExpress.XtraReports.UI.ReportFooterBand ReportFooter;
-        private DevExpress.XtraReports.UI.XRSubreport transferSubReports;
+        private DevExpress.XtraReports.UI.XRSubreport TransferSubReports;
         private DevExpress.XtraReports.UI.XRSubreport MetalSubReports;
         private DevExpress.XtraReports.UI.DetailBand Detail;
-        private DevExpress.XtraReports.UI.SubBand InvoiceItemSubBand;
+        private DevExpress.XtraReports.UI.SubBand TransferSubBand;
         private DevExpress.XtraReports.UI.ReportHeaderBand ReportHeader;
         private DevExpress.XtraReports.UI.XRPictureBox logo_data;
         private DevExpress.XtraReports.UI.XRLabel title_lbl;

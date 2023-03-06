@@ -6,18 +6,19 @@ using System.ComponentModel;
 using System.Drawing;
 using System.Drawing.Printing;
 
-namespace ArgusCR1029.Inventory.IV105
+namespace ArgusCR1029.Inventory.IV102
 {
-    public partial class TransferSubReports : ArgusRPT.BaseReport
+    public partial class MetalSubReports : ArgusRPT.BaseReport
     {
-        public List<ArgusDS.Inventory.DraftTransferSerialItemView> data;
+        public List<ArgusDS.Logistics.MetalSummary> data;
 
-        public TransferSubReports()
+        public MetalSubReports()
         {
             InitializeComponent();
         }
 
         protected override void OnBeforePrint(PrintEventArgs e)
+
         {
             RightToLeft = DevExpress.XtraReports.UI.RightToLeft.No;
             RightToLeftLayout = DevExpress.XtraReports.UI.RightToLeftLayout.No;
@@ -26,7 +27,7 @@ namespace ArgusCR1029.Inventory.IV105
             base.OnBeforePrint(e);
         }
 
-        private void InvoiceItemsSubReports_DataSourceRowChanged(object sender, DataSourceRowEventArgs e)
+        private void MetalSubReports_DataSourceRowChanged(object sender, DataSourceRowEventArgs e)
         {
         }
 
@@ -36,7 +37,7 @@ namespace ArgusCR1029.Inventory.IV105
 
         protected override string dictionaryStore()
         {
-            return "CR1029.IV105";
+            return "CR1029.IV102";
         }
     }
 }

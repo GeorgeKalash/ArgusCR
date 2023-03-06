@@ -19,7 +19,7 @@ namespace ArgusCR1029.Inventory.IV105
         public override void setSessionInfo(Dictionary<string, string> _reportHeaders)
         {
             base.setSessionInfo(_reportHeaders);
-            ((ArgusRPT.BaseReport)(transferSubReports.ReportSource)).setSessionInfo(sessionInfo);
+            ((ArgusRPT.BaseReport)(TransferSubReports.ReportSource)).setSessionInfo(sessionInfo);
             ((ArgusRPT.BaseReport)(MetalSubReports.ReportSource)).setSessionInfo(sessionInfo);
             initSubReports();
         }
@@ -44,7 +44,7 @@ namespace ArgusCR1029.Inventory.IV105
 
             description_data.Text = webObject.record.header.notes;
 
-            ((transferSubReports)(transferSubReports.ReportSource)).data = webObject.record.serials;
+            ((TransferSubReports)(TransferSubReports.ReportSource)).data = webObject.record.serials;
             ((MetalSubReports)(MetalSubReports.ReportSource)).data = webObject.record.metalSummaries;
             base.OnBeforePrint(e);
         }

@@ -1,7 +1,7 @@
 ﻿
 namespace ArgusCR1029.Inventory.IV105
 {
-    partial class transferSubReports
+    partial class TransferSubReports
     {
         /// <summary>
         /// Required designer variable.
