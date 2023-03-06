@@ -190,6 +190,24 @@
     <Compile Include="Inventory\IV102.Designer.cs">
       <DependentUpon>IV102.cs</DependentUpon>
     </Compile>
+    <Compile Include="Inventory\IV105\transferSubReports.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Inventory\IV105\transferSubReports.Designer.cs">
+      <DependentUpon>transferSubReports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\IV105\MetalSubReports.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Inventory\IV105\MetalSubReports.Designer.cs">
+      <DependentUpon>MetalSubReports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\IV105\IV105.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Inventory\IV105\IV105.Designer.cs">
+      <DependentUpon>IV105.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Sales\KSAeInvoiceQrCode.cs" />
     <Compile Include="Sales\SA110\InvoiceItemsSubReports.cs">
@@ -295,6 +313,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Inventory\IV102.resx">
       <DependentUpon>IV102.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\IV105\transferSubReports.resx">
+      <DependentUpon>transferSubReports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\IV105\MetalSubReports.resx">
+      <DependentUpon>MetalSubReports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\IV105\IV105.resx">
+      <DependentUpon>IV105.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Sales\SA110\InvoiceItemsSubReports.resx">
