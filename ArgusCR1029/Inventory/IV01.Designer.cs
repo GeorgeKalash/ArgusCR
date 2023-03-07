@@ -137,7 +137,7 @@ namespace ArgusCR1029.Inventory
             this.reference_data.StylePriority.UseTextAlignment = false;
             this.reference_data.Text = "sku";
             this.reference_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
-            this.reference_data.Weight = 0.91037852223779825D;
+            this.reference_data.Weight = 0.80089292068757789D;
             // 
             // date_data
             // 
@@ -155,7 +155,7 @@ namespace ArgusCR1029.Inventory
             this.date_data.StylePriority.UseTextAlignment = false;
             this.date_data.Text = "item name";
             this.date_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
-            this.date_data.Weight = 1.3891677234722377D;
+            this.date_data.Weight = 1.3157520728666543D;
             this.date_data.WordWrap = false;
             // 
             // clientRef_data
@@ -174,7 +174,7 @@ namespace ArgusCR1029.Inventory
             this.clientRef_data.StylePriority.UseTextAlignment = false;
             this.clientRef_data.Text = "categoryRef";
             this.clientRef_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
-            this.clientRef_data.Weight = 0.61049904135287114D;
+            this.clientRef_data.Weight = 0.79340029350867491D;
             // 
             // clientName_data
             // 
@@ -365,7 +365,7 @@ namespace ArgusCR1029.Inventory
             this.sku_lbl.StylePriority.UseBorderWidth = false;
             this.sku_lbl.StylePriority.UseFont = false;
             this.sku_lbl.Text = "Sku";
-            this.sku_lbl.Weight = 0.89013789464036508D;
+            this.sku_lbl.Weight = 0.7830863236128679D;
             // 
             // itemName_lbl
             // 
@@ -382,7 +382,7 @@ namespace ArgusCR1029.Inventory
             this.itemName_lbl.StylePriority.UseBorderWidth = false;
             this.itemName_lbl.StylePriority.UseFont = false;
             this.itemName_lbl.Text = "Item Name";
-            this.itemName_lbl.Weight = 1.3582825728970618D;
+            this.itemName_lbl.Weight = 1.2864990070110693D;
             // 
             // categoryRef_lbl
             // 
@@ -399,7 +399,7 @@ namespace ArgusCR1029.Inventory
             this.categoryRef_lbl.StylePriority.UseBorderWidth = false;
             this.categoryRef_lbl.StylePriority.UseFont = false;
             this.categoryRef_lbl.Text = "Category ";
-            this.categoryRef_lbl.Weight = 0.59692582425161356D;
+            this.categoryRef_lbl.Weight = 0.77576096116510318D;
             // 
             // groupRef_lbl
             // 
