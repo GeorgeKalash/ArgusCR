@@ -15,6 +15,10 @@ namespace ArgusCR1029.Inventory.IV102
         {
             InitializeComponent();
         }
+        protected override string reportName()
+        {
+            return materialsTransfer_lbl.Text;
+        }
 
         public override void setSessionInfo(Dictionary<string, string> _reportHeaders)
         {
