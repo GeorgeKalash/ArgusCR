@@ -10,7 +10,7 @@ namespace ArgusCR1029.Inventory.IV107
 {
     public partial class TransferSubReports : ArgusRPT.BaseReport
     {
-        public List<ArgusDS.Inventory.TransferItemView> data;
+        public List<ArgusDS.Inventory.Reports.IV107b> data;
 
         public TransferSubReports()
         {

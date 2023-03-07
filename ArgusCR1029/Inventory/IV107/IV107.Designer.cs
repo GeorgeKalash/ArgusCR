@@ -33,8 +33,10 @@ namespace ArgusCR1029.Inventory.IV107
         private void InitializeComponent()
         {
             this.TransferSubBand = new DevExpress.XtraReports.UI.SubBand();
+            this.TransferSubReports = new DevExpress.XtraReports.UI.XRSubreport();
             this.Detail = new DevExpress.XtraReports.UI.DetailBand();
             this.MetalSubBand = new DevExpress.XtraReports.UI.SubBand();
+            this.MetalSubReports = new DevExpress.XtraReports.UI.XRSubreport();
             this.TopMargin = new DevExpress.XtraReports.UI.TopMarginBand();
             this.BottomMargin = new DevExpress.XtraReports.UI.BottomMarginBand();
             this.ReportHeader = new DevExpress.XtraReports.UI.ReportHeaderBand();
@@ -86,8 +88,6 @@ namespace ArgusCR1029.Inventory.IV107
             this.xrTableCell2 = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTableRow24 = new DevExpress.XtraReports.UI.XRTableRow();
             this.xrTableCell1 = new DevExpress.XtraReports.UI.XRTableCell();
-            this.TransferSubReports = new DevExpress.XtraReports.UI.XRSubreport();
-            this.MetalSubReports = new DevExpress.XtraReports.UI.XRSubreport();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable1)).BeginInit();
@@ -103,6 +103,13 @@ namespace ArgusCR1029.Inventory.IV107
             this.TransferSubBand.HeightF = 23F;
             this.TransferSubBand.KeepTogether = true;
             this.TransferSubBand.Name = "TransferSubBand";
+            // 
+            // TransferSubReports
+            // 
+            this.TransferSubReports.LocationFloat = new DevExpress.Utils.PointFloat(25F, 0F);
+            this.TransferSubReports.Name = "TransferSubReports";
+            this.TransferSubReports.ReportSource = new ArgusCR1029.Inventory.IV107.TransferSubReports();
+            this.TransferSubReports.SizeF = new System.Drawing.SizeF(774.4814F, 23F);
             // 
             // Detail
             // 
@@ -121,6 +128,13 @@ namespace ArgusCR1029.Inventory.IV107
             this.MetalSubBand.HeightF = 33.00001F;
             this.MetalSubBand.KeepTogether = true;
             this.MetalSubBand.Name = "MetalSubBand";
+            // 
+            // MetalSubReports
+            // 
+            this.MetalSubReports.LocationFloat = new DevExpress.Utils.PointFloat(25F, 10.00001F);
+            this.MetalSubReports.Name = "MetalSubReports";
+            this.MetalSubReports.ReportSource = new ArgusCR1029.Inventory.IV107.MetalSubReports();
+            this.MetalSubReports.SizeF = new System.Drawing.SizeF(774.4814F, 23F);
             // 
             // TopMargin
             // 
@@ -691,21 +705,7 @@ namespace ArgusCR1029.Inventory.IV107
             this.xrTableCell1.StylePriority.UsePadding = false;
             this.xrTableCell1.Weight = 4.9232348205427936D;
             // 
-            // TransferSubReports
-            // 
-            this.TransferSubReports.LocationFloat = new DevExpress.Utils.PointFloat(25F, 0F);
-            this.TransferSubReports.Name = "TransferSubReports";
-            this.TransferSubReports.ReportSource = new ArgusCR1029.Inventory.IV102.TransferSubReports();
-            this.TransferSubReports.SizeF = new System.Drawing.SizeF(774.4814F, 23F);
-            // 
-            // MetalSubReports
-            // 
-            this.MetalSubReports.LocationFloat = new DevExpress.Utils.PointFloat(25F, 10.00001F);
-            this.MetalSubReports.Name = "MetalSubReports";
-            this.MetalSubReports.ReportSource = new ArgusCR1029.Inventory.IV102.MetalSubReports();
-            this.MetalSubReports.SizeF = new System.Drawing.SizeF(774.4814F, 23F);
-            // 
-            // IV102
+            // IV107
             // 
             this.Bands.AddRange(new DevExpress.XtraReports.UI.Band[] {
             this.TopMargin,

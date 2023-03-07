@@ -44,7 +44,7 @@ namespace ArgusCR1029.Inventory.IV106
 
             fromSiteRef_data.Text = webObject.record.header.fromSiteRef;
             fromSiteName_data.Text = webObject.record.header.fromSiteName;
-           toSiteRef_data.Text = webObject.record.header.toSiteRef;
+            toSiteRef_data.Text = webObject.record.header.toSiteRef;
             toSiteName_data.Text = webObject.record.header.toSiteName;
 
             description_data.Text = webObject.record.header.notes;

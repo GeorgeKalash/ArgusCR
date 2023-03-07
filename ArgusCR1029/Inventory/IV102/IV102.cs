@@ -37,9 +37,6 @@ namespace ArgusCR1029.Inventory.IV102
 
             logo_data.ImageUrl = companyInfo.logoUrl;
 
-
-            DataSource = webObject.record.items;
-
             dtName_data.Text = webObject.record.header.dtName;
             reference_data.Text = webObject.record.header.reference;
             date_data.Text = webObject.record.header.date.ToString("dd/MM/yyyy");

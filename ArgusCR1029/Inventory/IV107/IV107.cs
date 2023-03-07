@@ -33,12 +33,9 @@ namespace ArgusCR1029.Inventory.IV107
             RightToLeft = DevExpress.XtraReports.UI.RightToLeft.No;
             RightToLeftLayout = DevExpress.XtraReports.UI.RightToLeftLayout.No;
 
-            SharedClasses.JsonProtocol.GetStructure <ArgusDS.Inventory.Reports.IV102> webObject = deserializeGet<ArgusDS.Inventory.Reports.IV102>();
+            SharedClasses.JsonProtocol.GetStructure <ArgusDS.Inventory.Reports.IV107> webObject = deserializeGet<ArgusDS.Inventory.Reports.IV107>();
 
             logo_data.ImageUrl = companyInfo.logoUrl;
-
-
-            DataSource = webObject.record.items;
 
             dtName_data.Text = webObject.record.header.dtName;
             reference_data.Text = webObject.record.header.reference;
@@ -54,7 +51,7 @@ namespace ArgusCR1029.Inventory.IV107
 
             printSignature_lbl.Text = reportSignature();
 
-            ((TransferSubReports)(TransferSubReports.ReportSource)).data = webObject.record.items;
+            ((TransferSubReports)(TransferSubReports.ReportSource)).data = webObject.record.serials;
             ((MetalSubReports)(MetalSubReports.ReportSource)).data = webObject.record.metalSummaries;
             base.OnBeforePrint(e);
         }
