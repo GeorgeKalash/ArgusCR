@@ -230,7 +230,7 @@ namespace ArgusCR1029.Inventory.IV102
             // 
             this.ReportFooter.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
             this.xrTable7});
-            this.ReportFooter.HeightF = 45.2638F;
+            this.ReportFooter.HeightF = 35.26379F;
             this.ReportFooter.KeepTogether = true;
             this.ReportFooter.Name = "ReportFooter";
             // 
@@ -241,7 +241,7 @@ namespace ArgusCR1029.Inventory.IV102
             this.xrTable7.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable7.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow3});
-            this.xrTable7.SizeF = new System.Drawing.SizeF(774.4815F, 35.26379F);
+            this.xrTable7.SizeF = new System.Drawing.SizeF(774.4815F, 25.26379F);
             // 
             // xrTableRow3
             // 
@@ -260,7 +260,7 @@ namespace ArgusCR1029.Inventory.IV102
             this.totQty_lbl.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold);
             this.totQty_lbl.Multiline = true;
             this.totQty_lbl.Name = "totQty_lbl";
-            this.totQty_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(4, 2, 6, 0, 100F);
+            this.totQty_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(4, 2, 4, 0, 100F);
             this.totQty_lbl.StylePriority.UseBackColor = false;
             this.totQty_lbl.StylePriority.UseBorders = false;
             this.totQty_lbl.StylePriority.UseFont = false;
@@ -280,7 +280,7 @@ namespace ArgusCR1029.Inventory.IV102
             this.xrTableCell6.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "sumSum([qty])")});
             this.xrTableCell6.Name = "xrTableCell6";
-            this.xrTableCell6.Padding = new DevExpress.XtraPrinting.PaddingInfo(4, 2, 6, 0, 100F);
+            this.xrTableCell6.Padding = new DevExpress.XtraPrinting.PaddingInfo(4, 2, 4, 0, 100F);
             this.xrTableCell6.StylePriority.UseBackColor = false;
             this.xrTableCell6.StylePriority.UseBorders = false;
             this.xrTableCell6.StylePriority.UsePadding = false;
