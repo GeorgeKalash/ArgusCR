@@ -25,15 +25,6 @@ namespace ArgusCR1008.Sales.Templates
             SharedClasses.JsonProtocol.QryStructure<ArgusDS.Delivery.Reports.DE103> webObject = deserializeList<ArgusDS.Delivery.Reports.DE103>();
             DataSource = webObject.list;
 
-
-         //   phone2_data.Text = webObject.record.quickView.phone2;
-          //  phone3_data.Text = webObject.record.quickView.phone3;
-          //  phone_data.Text = webObject.record.quickView.phone;
-
-           // spRef_data.Text = webObject.record.trxHeader.spRef;
-          //  szName_data.Text = webObject.record.trxHeader.szName;
-
-
             base.OnBeforePrint(e);
         }
 
