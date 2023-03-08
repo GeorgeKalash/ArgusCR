@@ -125,7 +125,7 @@
             // TopMargin
             // 
             this.TopMargin.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Underline);
-            this.TopMargin.HeightF = 30F;
+            this.TopMargin.HeightF = 24.79167F;
             this.TopMargin.Name = "TopMargin";
             this.TopMargin.StylePriority.UseFont = false;
             // 
@@ -534,7 +534,7 @@
             this.reference,
             this.GroupFooter1});
             this.Font = new System.Drawing.Font("Arial", 9.75F);
-            this.Margins = new System.Drawing.Printing.Margins(9, 11, 30, 36);
+            this.Margins = new System.Drawing.Printing.Margins(9, 11, 25, 36);
             this.PageHeight = 827;
             this.PageWidth = 583;
             this.PaperKind = System.Drawing.Printing.PaperKind.A5;
