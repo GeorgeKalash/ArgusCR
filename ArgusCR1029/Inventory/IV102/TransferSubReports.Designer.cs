@@ -222,7 +222,7 @@ namespace ArgusCR1029.Inventory.IV102
             this.qty_lbl.StylePriority.UseFont = false;
             this.qty_lbl.StylePriority.UsePadding = false;
             this.qty_lbl.StylePriority.UseTextAlignment = false;
-            this.qty_lbl.Text = "الكمیة";
+            this.qty_lbl.Text = "الوزن";
             this.qty_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopCenter;
             this.qty_lbl.Weight = 0.94515451076724477D;
             // 
@@ -266,7 +266,7 @@ namespace ArgusCR1029.Inventory.IV102
             this.totQty_lbl.StylePriority.UseFont = false;
             this.totQty_lbl.StylePriority.UsePadding = false;
             this.totQty_lbl.StylePriority.UseTextAlignment = false;
-            this.totQty_lbl.Text = "الكمية الإجمالية";
+            this.totQty_lbl.Text = "الوزن الإجمالي";
             this.totQty_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
             this.totQty_lbl.Weight = 1.4866160014625762D;
             // 
