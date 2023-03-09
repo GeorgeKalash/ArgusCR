@@ -396,12 +396,12 @@ namespace ArgusCR1029.Inventory.IV105
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTable1.BorderWidth = 0.5F;
-            this.xrTable1.LocationFloat = new DevExpress.Utils.PointFloat(522.5513F, 10.00001F);
+            this.xrTable1.LocationFloat = new DevExpress.Utils.PointFloat(617.2756F, 10.00001F);
             this.xrTable1.Name = "xrTable1";
             this.xrTable1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable1.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow7});
-            this.xrTable1.SizeF = new System.Drawing.SizeF(287.4484F, 24.9F);
+            this.xrTable1.SizeF = new System.Drawing.SizeF(192.7241F, 24.9F);
             this.xrTable1.StylePriority.UseBorders = false;
             this.xrTable1.StylePriority.UseBorderWidth = false;
             this.xrTable1.StylePriority.UseTextAlignment = false;
@@ -436,7 +436,7 @@ namespace ArgusCR1029.Inventory.IV105
             this.xrTableCell22.Summary = xrSummary1;
             this.xrTableCell22.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
             this.xrTableCell22.TextFormatString = "{0:n2}";
-            this.xrTableCell22.Weight = 10.982200799112556D;
+            this.xrTableCell22.Weight = 9.709460730231168D;
             // 
             // xrTableCell28
             // 
@@ -455,7 +455,7 @@ namespace ArgusCR1029.Inventory.IV105
             this.xrTableCell28.StylePriority.UseTextAlignment = false;
             this.xrTableCell28.Text = "إجمالي الوزن";
             this.xrTableCell28.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
-            this.xrTableCell28.Weight = 8.7724998448986327D;
+            this.xrTableCell28.Weight = 10.045239913780023D;
             // 
             // TransferSubReports
             // 
