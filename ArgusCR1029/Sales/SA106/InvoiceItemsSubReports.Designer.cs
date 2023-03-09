@@ -260,7 +260,7 @@ namespace ArgusCR1029.Sales.SA106
             this.xrTableCell10.StylePriority.UsePadding = false;
             this.xrTableCell10.StylePriority.UseTextAlignment = false;
             this.xrTableCell10.Text = "Labor Price";
-            this.xrTableCell10.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
+            this.xrTableCell10.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             this.xrTableCell10.TextFormatString = "{0:n0}";
             this.xrTableCell10.Weight = 0.9561627234323099D;
             // 
@@ -283,7 +283,7 @@ namespace ArgusCR1029.Sales.SA106
             this.xrTableCell11.StylePriority.UsePadding = false;
             this.xrTableCell11.StylePriority.UseTextAlignment = false;
             this.xrTableCell11.Text = "Unit Price";
-            this.xrTableCell11.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
+            this.xrTableCell11.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             this.xrTableCell11.TextFormatString = "{0:n2}";
             this.xrTableCell11.Weight = 0.95616277965856888D;
             // 
@@ -443,7 +443,7 @@ namespace ArgusCR1029.Sales.SA106
             this.laborPrice_lbl.StylePriority.UseBorderColor = false;
             this.laborPrice_lbl.StylePriority.UseBorders = false;
             this.laborPrice_lbl.StylePriority.UseFont = false;
-            this.laborPrice_lbl.Text = "أجور \r\nأجور \r\n";
+            this.laborPrice_lbl.Text = "أجور";
             this.laborPrice_lbl.Weight = 0.9561627234323099D;
             // 
             // unitPrice_lbl
