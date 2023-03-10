@@ -25,7 +25,6 @@ namespace ArgusCR1029.Inventory.IV105
         {
             base.setSessionInfo(_reportHeaders);
             ((ArgusRPT.BaseReport)(TransferSubReports.ReportSource)).setSessionInfo(sessionInfo);
-            ((ArgusRPT.BaseReport)(MetalSubReports.ReportSource)).setSessionInfo(sessionInfo);
             initSubReports();
         }
 
@@ -47,10 +46,11 @@ namespace ArgusCR1029.Inventory.IV105
             toSiteRef_data.Text = webObject.record.header.toSiteRef;
             toSiteName_data.Text = webObject.record.header.toSiteName;
 
-            description_data.Text = webObject.record.header.notes;
+            //   notifyName_data.Text = webObject.record.header.notes;
+
+            printSignature_lbl.Text = reportSignature();
 
             ((TransferSubReports)(TransferSubReports.ReportSource)).data = webObject.record.serials;
-            ((MetalSubReports)(MetalSubReports.ReportSource)).data = webObject.record.metalSummaries;
             base.OnBeforePrint(e);
         }
         protected override void labelsText()

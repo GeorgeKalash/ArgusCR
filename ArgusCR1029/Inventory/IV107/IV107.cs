@@ -17,14 +17,13 @@ namespace ArgusCR1029.Inventory.IV107
         }
         protected override string reportName()
         {
-            return materialsTransfer_lbl.Text;
+            return title_lbl.Text;
         }
 
         public override void setSessionInfo(Dictionary<string, string> _reportHeaders)
         {
             base.setSessionInfo(_reportHeaders);
             ((ArgusRPT.BaseReport)(TransferSubReports.ReportSource)).setSessionInfo(sessionInfo);
-            ((ArgusRPT.BaseReport)(MetalSubReports.ReportSource)).setSessionInfo(sessionInfo);
             initSubReports();
         }
 
@@ -40,19 +39,17 @@ namespace ArgusCR1029.Inventory.IV107
             dtName_data.Text = webObject.record.header.dtName;
             reference_data.Text = webObject.record.header.reference;
             date_data.Text = webObject.record.header.date.ToString("dd/MM/yyyy");
-            plantName_data.Text = webObject.record.header.plantName;
 
             fromSiteRef_data.Text = webObject.record.header.fromSiteRef;
             fromSiteName_data.Text = webObject.record.header.fromSiteName;
             toSiteRef_data.Text = webObject.record.header.toSiteRef;
             toSiteName_data.Text = webObject.record.header.toSiteName;
-            notes_data.Text = webObject.record.header.notes;
-            city_data.Text = webObject.record.toAddress?.city;
+
+            //   notifyName_data.Text = webObject.record.header.notes;
 
             printSignature_lbl.Text = reportSignature();
 
             ((TransferSubReports)(TransferSubReports.ReportSource)).data = webObject.record.serials;
-            ((MetalSubReports)(MetalSubReports.ReportSource)).data = webObject.record.metalSummaries;
             base.OnBeforePrint(e);
         }
         protected override void labelsText()

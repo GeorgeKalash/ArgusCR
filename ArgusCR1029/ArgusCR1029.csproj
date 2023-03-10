@@ -190,12 +190,6 @@
     <Compile Include="Inventory\IV107\IV107.Designer.cs">
       <DependentUpon>IV107.cs</DependentUpon>
     </Compile>
-    <Compile Include="Inventory\IV107\MetalSubReports.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Inventory\IV107\MetalSubReports.Designer.cs">
-      <DependentUpon>MetalSubReports.cs</DependentUpon>
-    </Compile>
     <Compile Include="Inventory\IV107\TransferSubReports.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -207,12 +201,6 @@
     </Compile>
     <Compile Include="Inventory\IV102\IV102.Designer.cs">
       <DependentUpon>IV102.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Inventory\IV102\MetalSubReports.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Inventory\IV102\MetalSubReports.Designer.cs">
-      <DependentUpon>MetalSubReports.cs</DependentUpon>
     </Compile>
     <Compile Include="Inventory\IV102\TransferSubReports.cs">
       <SubType>Component</SubType>
@@ -226,12 +214,6 @@
     <Compile Include="Inventory\IV106\IV106.Designer.cs">
       <DependentUpon>IV106.cs</DependentUpon>
     </Compile>
-    <Compile Include="Inventory\IV106\MetalSubReports.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Inventory\IV106\MetalSubReports.Designer.cs">
-      <DependentUpon>MetalSubReports.cs</DependentUpon>
-    </Compile>
     <Compile Include="Inventory\IV106\transferSubReports.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -243,12 +225,6 @@
     </Compile>
     <Compile Include="Inventory\IV105\TransferSubReports.Designer.cs">
       <DependentUpon>TransferSubReports.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Inventory\IV105\MetalSubReports.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Inventory\IV105\MetalSubReports.Designer.cs">
-      <DependentUpon>MetalSubReports.cs</DependentUpon>
     </Compile>
     <Compile Include="Inventory\IV105\IV105.cs">
       <SubType>Component</SubType>
@@ -398,17 +374,11 @@
     <EmbeddedResource Include="Inventory\IV107\IV107.resx">
       <DependentUpon>IV107.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Inventory\IV107\MetalSubReports.resx">
-      <DependentUpon>MetalSubReports.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Inventory\IV107\TransferSubReports.resx">
       <DependentUpon>TransferSubReports.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Inventory\IV102\IV102.resx">
       <DependentUpon>IV102.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Inventory\IV102\MetalSubReports.resx">
-      <DependentUpon>MetalSubReports.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Inventory\IV102\TransferSubReports.resx">
       <DependentUpon>TransferSubReports.cs</DependentUpon>
@@ -416,17 +386,11 @@
     <EmbeddedResource Include="Inventory\IV106\IV106.resx">
       <DependentUpon>IV106.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Inventory\IV106\MetalSubReports.resx">
-      <DependentUpon>MetalSubReports.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Inventory\IV106\transferSubReports.resx">
       <DependentUpon>transferSubReports.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Inventory\IV105\TransferSubReports.resx">
       <DependentUpon>TransferSubReports.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Inventory\IV105\MetalSubReports.resx">
-      <DependentUpon>MetalSubReports.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Inventory\IV105\IV105.resx">
       <DependentUpon>IV105.cs</DependentUpon>
