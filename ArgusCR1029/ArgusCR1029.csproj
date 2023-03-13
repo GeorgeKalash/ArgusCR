@@ -342,6 +342,12 @@
     <Compile Include="Sales\SA103\SA103.Designer.cs">
       <DependentUpon>SA103.cs</DependentUpon>
     </Compile>
+    <Compile Include="Sales\SA203_L1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Sales\SA203_L1.Designer.cs">
+      <DependentUpon>SA203_L1.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="CashAndBanks\CA101.resx">
@@ -449,6 +455,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Sales\SA103\SA103.resx">
       <DependentUpon>SA103.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales\SA203_L1.resx">
+      <DependentUpon>SA203_L1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
