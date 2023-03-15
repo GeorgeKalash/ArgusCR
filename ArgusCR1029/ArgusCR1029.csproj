@@ -234,6 +234,42 @@
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Sales\KSAeInvoiceQrCode.cs" />
+    <Compile Include="Sales\SA112\InvoiceItemsSubReports.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Sales\SA112\InvoiceItemsSubReports.Designer.cs">
+      <DependentUpon>InvoiceItemsSubReports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sales\SA112\MetalSubReports.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Sales\SA112\MetalSubReports.Designer.cs">
+      <DependentUpon>MetalSubReports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sales\SA112\SA112.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Sales\SA112\SA112.Designer.cs">
+      <DependentUpon>SA112.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sales\SA111\InvoiceItemsSubReports.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Sales\SA111\InvoiceItemsSubReports.Designer.cs">
+      <DependentUpon>InvoiceItemsSubReports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sales\SA111\MetalSubReports.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Sales\SA111\MetalSubReports.Designer.cs">
+      <DependentUpon>MetalSubReports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sales\SA111\SA111.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Sales\SA111\SA111.Designer.cs">
+      <DependentUpon>SA111.cs</DependentUpon>
+    </Compile>
     <Compile Include="Sales\SA107\InvoiceItemsSubReports.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -402,6 +438,24 @@
       <DependentUpon>IV105.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Sales\SA112\InvoiceItemsSubReports.resx">
+      <DependentUpon>InvoiceItemsSubReports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales\SA112\MetalSubReports.resx">
+      <DependentUpon>MetalSubReports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales\SA112\SA112.resx">
+      <DependentUpon>SA112.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales\SA111\InvoiceItemsSubReports.resx">
+      <DependentUpon>InvoiceItemsSubReports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales\SA111\MetalSubReports.resx">
+      <DependentUpon>MetalSubReports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales\SA111\SA111.resx">
+      <DependentUpon>SA111.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Sales\SA107\InvoiceItemsSubReports.resx">
       <DependentUpon>InvoiceItemsSubReports.cs</DependentUpon>
     </EmbeddedResource>
