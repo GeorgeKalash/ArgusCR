@@ -30,15 +30,6 @@ namespace ArgusCR1029.Sales
 
 
             logo_data.ImageUrl = companyInfo.logoUrl;
-            companyInfoName_data.Text = companyInfo.name;
-            taxNo_data.Text = companyInfo.taxNo;
-            if (companyInfo.address != null)
-            {
-                addressName_data.Text = companyInfo.address.name;
-                addressStreet_data.Text = companyInfo.address.street1;
-                addressMobile_data.Text = companyInfo.address.phone;
-                addressEmail_data.Text = companyInfo.address.email1;
-            }
 
             printSignature.Text = reportSignature();
             base.OnBeforePrint(e);
@@ -54,31 +45,31 @@ namespace ArgusCR1029.Sales
             date_lbl.Text = labelText(3);
             clientRef_lbl.Text = labelText(4);
             clientName_lbl.Text = labelText(5);
-            spRef_lbl.Text = labelText(6);
-            pieces_lbl.Text = labelText(7);
 
-            G18Title_lbl.Text = labelText(8);
-            G18_lbl.Text = labelText(9);
-            G18Egp_lbl.Text = labelText(10);
+            pieces_lbl.Text = labelText(6);
 
-            G21Title_lbl.Text = labelText(11);
-            G21_lbl.Text = labelText(12);
-            G21Egp_lbl.Text = labelText(13);
+            G18Title_lbl.Text = labelText(7);
+            G18_lbl.Text = labelText(8);
+            G18Egp_lbl.Text = labelText(9);
 
-            totalQty_lbl.Text = labelText(14);
-            totalQtyG21_lbl.Text = labelText(15);
+            G21Title_lbl.Text = labelText(10);
+            G21_lbl.Text = labelText(11);
+            G21Egp_lbl.Text = labelText(12);
 
-            laborPrice_lbl.Text = labelText(16);
-            discount_lbl.Text = labelText(17);
-            vatAmount_lbl.Text = labelText(18);
-            amount_lbl.Text = labelText(19);
-            description_lbl.Text = labelText(20);
-            status_lbl.Text = labelText(21);
+            totalQty_lbl.Text = labelText(13);
+            totalQtyG21_lbl.Text = labelText(14);
 
-            startDate_lbl.Text = labelText(22);
-            endDate_lbl.Text = labelText(23);
-            client_lbl.Text = labelText(24);
-            salesPerson_lbl.Text = labelText(25);
+            laborPrice_lbl.Text = labelText(15);
+            discount_lbl.Text = labelText(16);
+            vatAmount_lbl.Text = labelText(17);
+            amount_lbl.Text = labelText(18);
+            description_lbl.Text = labelText(19);
+            status_lbl.Text = labelText(20);
+
+            startDate_lbl.Text = labelText(21);
+            endDate_lbl.Text = labelText(22);
+            client_lbl.Text = labelText(23);
+            salesPerson_lbl.Text = labelText(24);
         }
 
         protected override string dictionaryStore()
