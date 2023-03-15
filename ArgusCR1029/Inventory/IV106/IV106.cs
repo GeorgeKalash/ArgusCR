@@ -48,6 +48,10 @@ namespace ArgusCR1029.Inventory.IV106
 
             notifyName_data.Text = webObject.record.header.notifyName;
 
+            totalWeightG21_data.Text = webObject.record.header.totalWeightG21.ToString();
+            notes_data.Text = webObject.record.header.notes;
+
+
             printSignature_lbl.Text = reportSignature();
 
             ((TransferSubReports)(TransferSubReports.ReportSource)).data = webObject.record.items;

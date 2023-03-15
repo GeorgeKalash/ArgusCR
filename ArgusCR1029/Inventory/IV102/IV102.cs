@@ -45,7 +45,10 @@ namespace ArgusCR1029.Inventory.IV102
             toSiteRef_data.Text = webObject.record.header.toSiteRef;
             toSiteName_data.Text = webObject.record.header.toSiteName;
 
-            //   notifyName_data.Text = webObject.record.header.notes;
+            notifyName_data.Text = webObject.record.header.notifyName;
+
+            totalWeight21_data.Text = webObject.record.header.totalWeightG21.ToString();
+            note_data.Text = webObject.record.header.notes;
 
             printSignature_lbl.Text = reportSignature();
 
