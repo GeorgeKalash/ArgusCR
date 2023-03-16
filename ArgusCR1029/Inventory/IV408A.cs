@@ -10,9 +10,9 @@ using DevExpress.XtraReports.UI;
 
 namespace ArgusCR1029.Inventory
 {
-    public partial class IV403 : ArgusRPT.BaseReport
+    public partial class IV408A : ArgusRPT.BaseReport
     {
-        public IV403()
+        public IV408A()
         {
             InitializeComponent();
         }
@@ -24,7 +24,7 @@ namespace ArgusCR1029.Inventory
         protected override void OnBeforePrint(PrintEventArgs e)
         {
             printDate.Text = DateTime.Now.ToString("dd/MM/yyyy");
-            SharedClasses.JsonProtocol.QryStructure<ArgusDS.Inventory.Reports.IV403> webObject = deserializeList<ArgusDS.Inventory.Reports.IV403>();
+            SharedClasses.JsonProtocol.QryStructure<ArgusDS.Inventory.Reports.IV408> webObject = deserializeList<ArgusDS.Inventory.Reports.IV408>();
 
             DataSource = webObject.list;
 
@@ -40,7 +40,7 @@ namespace ArgusCR1029.Inventory
 
         protected override string dictionaryStore()
         {
-            return "CR1029.IV403";
+            return "CR1029.IV408";
         }
     }
 }
