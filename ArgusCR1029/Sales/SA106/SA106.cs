@@ -39,7 +39,7 @@ namespace ArgusCR1029.Sales.SA106
             clientName_data.Text = webObject.record.clientName;
 
             siteRef_data.Text = webObject.record.siteRef;
-            siteName_data.Text = webObject.record.siteRef;
+            siteName_data.Text = webObject.record.siteName;
             currency_data.Text = webObject.record.currencyName;
             salesPerson_data.Text = webObject.record.spName;
 

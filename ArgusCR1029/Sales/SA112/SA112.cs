@@ -29,27 +29,27 @@ namespace ArgusCR1029.Sales.SA112
             RightToLeft = DevExpress.XtraReports.UI.RightToLeft.No;
             RightToLeftLayout = DevExpress.XtraReports.UI.RightToLeftLayout.No;
 
-            SharedClasses.JsonProtocol.GetStructure<ArgusDS.Sales.Reports.SA106> webObject = deserializeGet<ArgusDS.Sales.Reports.SA106>();
+            SharedClasses.JsonProtocol.GetStructure<ArgusDS.Sales.Reports.SA111> webObject = deserializeGet< ArgusDS.Sales.Reports.SA111>();
 
             logo_data.ImageUrl = companyInfo.logoUrl;
-            dtName_data.Text = webObject.record.dtName;
-            reference_data.Text = webObject.record.reference;
-            date_data.Text = webObject.record.date.ToString("dd/MM/yyyy");
-            clientRef_data.Text = webObject.record.clientRef;
-            clientName_data.Text = webObject.record.clientName;
+            dtName_data.Text = webObject.record.header.dtName;
+            reference_data.Text = webObject.record.header.reference;
+            date_data.Text = webObject.record.header.date.ToString("dd/MM/yyyy");
+            clientRef_data.Text = webObject.record.header.clientRef;
+            clientName_data.Text = webObject.record.header.clientName;
 
-            siteRef_data.Text = webObject.record.siteRef;
-            siteName_data.Text = webObject.record.siteRef;
-            currency_data.Text = webObject.record.currencyName;
-            salesPerson_data.Text = webObject.record.spName;
+            siteRef_data.Text = webObject.record.header.siteRef;
+            siteName_data.Text = webObject.record.header.siteName;
+            currency_data.Text = webObject.record.header.currencyName;
+            salesPerson_data.Text = webObject.record.header.spName;
 
-            description_data.Text = webObject.record.description;
+            description_data.Text = webObject.record.header.description;
 
-            subtotal_data.Text = webObject.record.subtotal.ToString("N2");
-            vat_data.Text = webObject.record.vatAmount.ToString("N2");
-            total_data.Text = webObject.record.amount.ToString("N2");
+            subtotal_data.Text = webObject.record.header.subTotal.ToString("N2");
+            vat_data.Text = webObject.record.header.vatAmount.ToString("N2");
+            total_data.Text = webObject.record.header.amount.ToString("N2");
 
-            ((InvoiceItemsSubReports)(InvoiceItemsSubReports.ReportSource)).data = webObject.record.serials;
+            ((InvoiceItemsSubReports)(InvoiceItemsSubReports.ReportSource)).data = webObject.record.items;
             ((MetalSubReports)(MetalSubReports.ReportSource)).data = webObject.record.metalSummaries;
             base.OnBeforePrint(e);
         }

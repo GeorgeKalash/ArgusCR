@@ -102,7 +102,7 @@ namespace ArgusCR1029.Sales.SA112
             // 
             this.InvoiceItemsSubReports.LocationFloat = new DevExpress.Utils.PointFloat(9.999998F, 0F);
             this.InvoiceItemsSubReports.Name = "InvoiceItemsSubReports";
-            this.InvoiceItemsSubReports.ReportSource = new ArgusCR1029.Sales.SA106.InvoiceItemsSubReports();
+            this.InvoiceItemsSubReports.ReportSource = new ArgusCR1029.Sales.SA112.InvoiceItemsSubReports();
             this.InvoiceItemsSubReports.SizeF = new System.Drawing.SizeF(810F, 23F);
             // 
             // Detail
@@ -127,7 +127,7 @@ namespace ArgusCR1029.Sales.SA112
             // 
             this.MetalSubReports.LocationFloat = new DevExpress.Utils.PointFloat(9.999998F, 12.5F);
             this.MetalSubReports.Name = "MetalSubReports";
-            this.MetalSubReports.ReportSource = new ArgusCR1029.Sales.SA106.MetalSubReports();
+            this.MetalSubReports.ReportSource = new ArgusCR1029.Sales.SA112.MetalSubReports();
             this.MetalSubReports.SizeF = new System.Drawing.SizeF(809.9999F, 23F);
             // 
             // TopMargin
@@ -447,7 +447,6 @@ namespace ArgusCR1029.Sales.SA112
             this.siteRef_data.StylePriority.UseBackColor = false;
             this.siteRef_data.StylePriority.UseBorders = false;
             this.siteRef_data.StylePriority.UsePadding = false;
-            this.siteRef_data.Text = "siteRef_data";
             this.siteRef_data.Weight = 0.46647451667385809D;
             // 
             // siteName_data
@@ -461,7 +460,6 @@ namespace ArgusCR1029.Sales.SA112
             this.siteName_data.StylePriority.UseBackColor = false;
             this.siteName_data.StylePriority.UseBorders = false;
             this.siteName_data.StylePriority.UsePadding = false;
-            this.siteName_data.Text = "siteName_data";
             this.siteName_data.Weight = 0.808525649265435D;
             // 
             // xrTableRow6
@@ -501,7 +499,6 @@ namespace ArgusCR1029.Sales.SA112
             this.currency_data.StylePriority.UseBackColor = false;
             this.currency_data.StylePriority.UseBorders = false;
             this.currency_data.StylePriority.UsePadding = false;
-            this.currency_data.Text = "currency_data";
             this.currency_data.Weight = 1.2750001659392931D;
             // 
             // xrTableRow7
@@ -541,7 +538,6 @@ namespace ArgusCR1029.Sales.SA112
             this.salesPerson_data.StylePriority.UseBackColor = false;
             this.salesPerson_data.StylePriority.UseBorders = false;
             this.salesPerson_data.StylePriority.UsePadding = false;
-            this.salesPerson_data.Text = "salesPerson_data";
             this.salesPerson_data.Weight = 1.2750001659392931D;
             // 
             // xrTableRow1
@@ -562,7 +558,6 @@ namespace ArgusCR1029.Sales.SA112
             this.clientName_data.StylePriority.UseBackColor = false;
             this.clientName_data.StylePriority.UseBorders = false;
             this.clientName_data.StylePriority.UsePadding = false;
-            this.clientName_data.Text = "clientName_data";
             this.clientName_data.Weight = 2D;
             // 
             // xrTable1
@@ -614,7 +609,6 @@ namespace ArgusCR1029.Sales.SA112
             this.dtName_data.StylePriority.UseBackColor = false;
             this.dtName_data.StylePriority.UseBorders = false;
             this.dtName_data.StylePriority.UsePadding = false;
-            this.dtName_data.Text = "dtName_data";
             this.dtName_data.Weight = 1.225595937090753D;
             // 
             // xrTableRow3
@@ -654,7 +648,6 @@ namespace ArgusCR1029.Sales.SA112
             this.reference_data.StylePriority.UseBackColor = false;
             this.reference_data.StylePriority.UseBorders = false;
             this.reference_data.StylePriority.UsePadding = false;
-            this.reference_data.Text = "reference_data";
             this.reference_data.Weight = 1.225595937090753D;
             // 
             // xrTableRow4
@@ -694,7 +687,6 @@ namespace ArgusCR1029.Sales.SA112
             this.date_data.StylePriority.UseBackColor = false;
             this.date_data.StylePriority.UseBorders = false;
             this.date_data.StylePriority.UsePadding = false;
-            this.date_data.Text = "date_data";
             this.date_data.Weight = 1.225595937090753D;
             // 
             // xrTableRow11
@@ -733,7 +725,6 @@ namespace ArgusCR1029.Sales.SA112
             this.clientRef_data.StylePriority.UseBackColor = false;
             this.clientRef_data.StylePriority.UseBorders = false;
             this.clientRef_data.StylePriority.UsePadding = false;
-            this.clientRef_data.Text = "clientRef_data";
             this.clientRef_data.Weight = 1.225595937090753D;
             // 
             // title_lbl

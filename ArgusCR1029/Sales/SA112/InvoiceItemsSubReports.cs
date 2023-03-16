@@ -10,7 +10,7 @@ namespace ArgusCR1029.Sales.SA112
 {
     public partial class InvoiceItemsSubReports : ArgusRPT.BaseReport
     {
-        public List<ArgusDS.Sales.Reports.SA106b> data;
+        public List<ArgusDS.Sales.Reports.SA111b> data;
 
         public InvoiceItemsSubReports()
         {
