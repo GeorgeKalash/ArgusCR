@@ -232,6 +232,12 @@
     <Compile Include="Inventory\IV105\IV105.Designer.cs">
       <DependentUpon>IV105.cs</DependentUpon>
     </Compile>
+    <Compile Include="Inventory\IV403.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Inventory\IV403.Designer.cs">
+      <DependentUpon>IV403.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Sales\KSAeInvoiceQrCode.cs" />
     <Compile Include="Sales\SA112\InvoiceItemsSubReports.cs">
@@ -436,6 +442,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Inventory\IV105\IV105.resx">
       <DependentUpon>IV105.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\IV403.resx">
+      <DependentUpon>IV403.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Sales\SA112\InvoiceItemsSubReports.resx">
