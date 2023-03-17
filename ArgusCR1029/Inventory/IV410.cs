@@ -27,6 +27,10 @@ namespace ArgusCR1029.Inventory
             printDate.Text = DateTime.Now.ToString("dd/MM/yyyy");
             SharedClasses.JsonProtocol.QryStructure<ArgusDS.Inventory.Reports.IV410> webObject = deserializeList<ArgusDS.Inventory.Reports.IV410>();
             DataSource = webObject.list;
+  
+            itemCategory_param.Text = Parameters.Count > 0 ? Parameters[0].Value.ToString() : string.Empty;
+            itemGroup_param.Text = Parameters.Count > 1 ? Parameters[1].Value.ToString() : string.Empty;
+            asOfDate_param.Text = Parameters.Count > 2 ? Parameters[2].Value.ToString() : string.Empty;
 
             logo_data.ImageUrl = companyInfo.logoUrl;
 
@@ -36,20 +40,11 @@ namespace ArgusCR1029.Inventory
 
         protected override void labelsText()
         {
-            inventoryStatus_lbl.Text = labelText(0);
-
-            categoryRef_lbl.Text = labelText(1);
-            categoryname_lbl.Text = labelText(2);
-            qty_lbl.Text = labelText(3);
-            netWeight_lbl.Text = labelText(4);
-            netVolume_lbl.Text = labelText(5);
-            netCost_lbl.Text = labelText(6);
-            netPrice_lbl.Text = labelText(7);
         }
 
         protected override string dictionaryStore()
         {
-            return "IV410";
+            return "CR1029.IV410";
         }
     }
 }
