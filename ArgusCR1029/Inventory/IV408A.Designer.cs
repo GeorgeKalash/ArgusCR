@@ -993,7 +993,9 @@ namespace ArgusCR1029.Inventory
             this.GroupFooter1.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
             this.xrTable5});
             this.GroupFooter1.HeightF = 25F;
+            this.GroupFooter1.KeepTogether = true;
             this.GroupFooter1.Name = "GroupFooter1";
+            this.GroupFooter1.RepeatEveryPage = true;
             // 
             // xrTable5
             // 
