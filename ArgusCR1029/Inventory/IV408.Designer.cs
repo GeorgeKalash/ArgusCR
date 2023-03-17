@@ -117,7 +117,7 @@ namespace ArgusCR1029.Inventory
             // 
             // xrTable5
             // 
-            this.xrTable5.LocationFloat = new DevExpress.Utils.PointFloat(913.1667F, 0F);
+            this.xrTable5.LocationFloat = new DevExpress.Utils.PointFloat(900.6667F, 0F);
             this.xrTable5.Name = "xrTable5";
             this.xrTable5.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable5.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
@@ -127,7 +127,7 @@ namespace ArgusCR1029.Inventory
             this.xrTableRow8,
             this.xrTableRow11,
             this.xrTableRow12});
-            this.xrTable5.SizeF = new System.Drawing.SizeF(245.8333F, 124.4583F);
+            this.xrTable5.SizeF = new System.Drawing.SizeF(258.3333F, 124.4583F);
             // 
             // xrTableRow5
             // 
@@ -306,7 +306,7 @@ namespace ArgusCR1029.Inventory
             this.inventoryStatus_lbl.Multiline = true;
             this.inventoryStatus_lbl.Name = "inventoryStatus_lbl";
             this.inventoryStatus_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.inventoryStatus_lbl.SizeF = new System.Drawing.SizeF(795.0835F, 38.625F);
+            this.inventoryStatus_lbl.SizeF = new System.Drawing.SizeF(782.5835F, 38.625F);
             this.inventoryStatus_lbl.StylePriority.UseFont = false;
             this.inventoryStatus_lbl.StylePriority.UseTextAlignment = false;
             this.inventoryStatus_lbl.Text = " ارصدة المخازن";
