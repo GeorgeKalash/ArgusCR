@@ -304,7 +304,7 @@ namespace ArgusCR1029.Inventory
             this.inventoryStatus_lbl.SizeF = new System.Drawing.SizeF(783.6252F, 38.625F);
             this.inventoryStatus_lbl.StylePriority.UseFont = false;
             this.inventoryStatus_lbl.StylePriority.UseTextAlignment = false;
-            this.inventoryStatus_lbl.Text = " ارصدة المخازن";
+            this.inventoryStatus_lbl.Text = " ارصدة المخازن حسب الموقع";
             this.inventoryStatus_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopCenter;
             // 
             // Detail
