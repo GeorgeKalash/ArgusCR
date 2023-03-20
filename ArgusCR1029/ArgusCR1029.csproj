@@ -232,6 +232,12 @@
     <Compile Include="Inventory\IV105\IV105.Designer.cs">
       <DependentUpon>IV105.cs</DependentUpon>
     </Compile>
+    <Compile Include="Inventory\IV424.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Inventory\IV424.Designer.cs">
+      <DependentUpon>IV424.cs</DependentUpon>
+    </Compile>
     <Compile Include="Inventory\IV408A.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -244,11 +250,11 @@
     <Compile Include="Inventory\IV408.Designer.cs">
       <DependentUpon>IV408.cs</DependentUpon>
     </Compile>
-    <Compile Include="Inventory\IV410.cs">
+    <Compile Include="Inventory\IV425.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Inventory\IV410.Designer.cs">
-      <DependentUpon>IV410.cs</DependentUpon>
+    <Compile Include="Inventory\IV425.Designer.cs">
+      <DependentUpon>IV425.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Sales\KSAeInvoiceQrCode.cs" />
@@ -455,14 +461,17 @@
     <EmbeddedResource Include="Inventory\IV105\IV105.resx">
       <DependentUpon>IV105.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\IV424.resx">
+      <DependentUpon>IV424.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Inventory\IV408A.resx">
       <DependentUpon>IV408A.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Inventory\IV408.resx">
       <DependentUpon>IV408.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Inventory\IV410.resx">
-      <DependentUpon>IV410.cs</DependentUpon>
+    <EmbeddedResource Include="Inventory\IV425.resx">
+      <DependentUpon>IV425.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Sales\SA112\InvoiceItemsSubReports.resx">

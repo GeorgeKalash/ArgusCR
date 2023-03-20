@@ -7,9 +7,9 @@ using System.Drawing.Printing;
 
 namespace ArgusCR1029.Inventory
 {
-    public partial class IV410 : ArgusRPT.BaseReport
+    public partial class IV425 : ArgusRPT.BaseReport
     {
-        public IV410()
+        public IV425()
         {
             InitializeComponent();
         }
@@ -24,13 +24,15 @@ namespace ArgusCR1029.Inventory
             RightToLeft = DevExpress.XtraReports.UI.RightToLeft.No;
             RightToLeftLayout = DevExpress.XtraReports.UI.RightToLeftLayout.No;
 
-            printDate.Text = DateTime.Now.ToString("dd/MM/yyyy");
-            SharedClasses.JsonProtocol.QryStructure<ArgusDS.Inventory.Reports.IV410> webObject = deserializeList<ArgusDS.Inventory.Reports.IV410>();
+            SharedClasses.JsonProtocol.QryStructure<Custom.CR1029.IV425> webObject = deserializeList<Custom.CR1029.IV425>();
             DataSource = webObject.list;
-  
-            itemCategory_param.Text = Parameters.Count > 0 ? Parameters[0].Value.ToString() : string.Empty;
-            itemGroup_param.Text = Parameters.Count > 1 ? Parameters[1].Value.ToString() : string.Empty;
-            asOfDate_param.Text = Parameters.Count > 2 ? Parameters[2].Value.ToString() : string.Empty;
+
+            fiscalYear_param.Text = Parameters.Count > 0 ? Parameters[0].Value.ToString() : string.Empty;
+            asOfDate_param.Text = Parameters.Count > 1 ? Parameters[1].Value.ToString() : string.Empty;
+            site_param.Text = Parameters.Count > 2 ? Parameters[2].Value.ToString() : string.Empty;
+            item_param.Text = Parameters.Count > 3 ? Parameters[3].Value.ToString() : string.Empty;
+            itemCategory_param.Text = Parameters.Count > 4 ? Parameters[4].Value.ToString() : string.Empty;
+            itemGroup_param.Text = Parameters.Count > 5 ? Parameters[5].Value.ToString() : string.Empty;
 
             logo_data.ImageUrl = companyInfo.logoUrl;
 
@@ -44,7 +46,7 @@ namespace ArgusCR1029.Inventory
 
         protected override string dictionaryStore()
         {
-            return "CR1029.IV410";
+            return "CR1029.IV425";
         }
     }
 }
