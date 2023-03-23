@@ -72,7 +72,7 @@ namespace ArgusCR1029.Inventory.IV106
             this.totalWeightG21_data = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTableCell4 = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTableRow8 = new DevExpress.XtraReports.UI.XRTableRow();
-            this.xrTableCell8 = new DevExpress.XtraReports.UI.XRTableCell();
+            this.sumSalesPrice_data = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTableCell10 = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTableRow9 = new DevExpress.XtraReports.UI.XRTableRow();
             this.notes_data = new DevExpress.XtraReports.UI.XRTableCell();
@@ -573,26 +573,26 @@ namespace ArgusCR1029.Inventory.IV106
             // xrTableRow8
             // 
             this.xrTableRow8.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
-            this.xrTableCell8,
+            this.sumSalesPrice_data,
             this.xrTableCell10});
             this.xrTableRow8.Name = "xrTableRow8";
             this.xrTableRow8.Weight = 1D;
             // 
-            // xrTableCell8
+            // sumSalesPrice_data
             // 
-            this.xrTableCell8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.xrTableCell8.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+            this.sumSalesPrice_data.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.sumSalesPrice_data.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
-            this.xrTableCell8.Multiline = true;
-            this.xrTableCell8.Name = "xrTableCell8";
-            this.xrTableCell8.Padding = new DevExpress.XtraPrinting.PaddingInfo(4, 2, 4, 0, 100F);
-            this.xrTableCell8.StylePriority.UseBackColor = false;
-            this.xrTableCell8.StylePriority.UseBorders = false;
-            this.xrTableCell8.StylePriority.UsePadding = false;
-            this.xrTableCell8.StylePriority.UseTextAlignment = false;
-            this.xrTableCell8.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
-            this.xrTableCell8.Weight = 1.4861962286723356D;
+            this.sumSalesPrice_data.Multiline = true;
+            this.sumSalesPrice_data.Name = "sumSalesPrice_data";
+            this.sumSalesPrice_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(4, 2, 4, 0, 100F);
+            this.sumSalesPrice_data.StylePriority.UseBackColor = false;
+            this.sumSalesPrice_data.StylePriority.UseBorders = false;
+            this.sumSalesPrice_data.StylePriority.UsePadding = false;
+            this.sumSalesPrice_data.StylePriority.UseTextAlignment = false;
+            this.sumSalesPrice_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
+            this.sumSalesPrice_data.Weight = 1.4861962286723356D;
             // 
             // xrTableCell10
             // 
@@ -720,7 +720,7 @@ namespace ArgusCR1029.Inventory.IV106
         private DevExpress.XtraReports.UI.XRTableCell totalWeightG21_data;
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell4;
         private DevExpress.XtraReports.UI.XRTableRow xrTableRow8;
-        private DevExpress.XtraReports.UI.XRTableCell xrTableCell8;
+        private DevExpress.XtraReports.UI.XRTableCell sumSalesPrice_data;
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell10;
         private DevExpress.XtraReports.UI.XRTableRow xrTableRow9;
         private DevExpress.XtraReports.UI.XRTableCell notes_data;
