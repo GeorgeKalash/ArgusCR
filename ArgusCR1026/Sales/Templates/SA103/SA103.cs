@@ -55,7 +55,7 @@ namespace ArgusCR1026.Sales.Templates.SA103
             amount_data.Text = webObject.record.trxHeader.amount.ToString("N2");
 
             amountInWords_data.Text = SharedClasses.NumberToWords.multiLingualNumberInText((decimal)webObject.record.trxHeader.amount, 2, 2);
-            goldAmountInWords_data.Text = SharedClasses.NumberToWords.multiLingualNumberInText((decimal)webObject.record.pureMetalQty, 4, 2);
+            goldAmountInWords_data.Text = SharedClasses.NumberToWords.multiLingualNumberInText((decimal)webObject.record.sumPureMetalQty, 4, 2);
 
             spName2_data.Text = webObject.record.trxHeader.spName;
 

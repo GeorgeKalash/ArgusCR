@@ -65,7 +65,7 @@ namespace ArgusCR1030.Sales
 
         protected override string dictionaryStore()
         {
-            return "CR1030.SA103.xml";
+            return "CR1030.SA103";
         }
     }
 }
