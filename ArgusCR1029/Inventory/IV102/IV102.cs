@@ -51,6 +51,9 @@ namespace ArgusCR1029.Inventory.IV102
             sumSalesPrice_data.Text = SharedClasses.NumberToWords.multiLingualNumberInText((decimal)webObject.record.header.sumSalesPrice, 4, 2);
             note_data.Text = webObject.record.header.notes;
 
+            fromSiteName2_data.Text = webObject.record.header.fromSiteName;
+            toSiteName2_data.Text = webObject.record.header.toSiteName;
+
             printSignature_lbl.Text = reportSignature();
 
             ((TransferSubReports)(TransferSubReports.ReportSource)).data = webObject.record.items;

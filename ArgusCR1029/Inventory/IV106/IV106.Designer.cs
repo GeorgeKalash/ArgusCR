@@ -38,7 +38,6 @@ namespace ArgusCR1029.Inventory.IV106
             this.TopMargin = new DevExpress.XtraReports.UI.TopMarginBand();
             this.BottomMargin = new DevExpress.XtraReports.UI.BottomMarginBand();
             this.ReportHeader = new DevExpress.XtraReports.UI.ReportHeaderBand();
-            this.xrLabel3 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrTable3 = new DevExpress.XtraReports.UI.XRTable();
             this.xrTableRow5 = new DevExpress.XtraReports.UI.XRTableRow();
             this.fromSiteName_data = new DevExpress.XtraReports.UI.XRTableCell();
@@ -120,31 +119,18 @@ namespace ArgusCR1029.Inventory.IV106
             // ReportHeader
             // 
             this.ReportHeader.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
-            this.xrLabel3,
             this.xrTable3,
             this.xrTable1,
             this.title_lbl,
             this.xrPageInfo1,
             this.logo_data});
-            this.ReportHeader.HeightF = 282.6726F;
+            this.ReportHeader.HeightF = 237.0476F;
             this.ReportHeader.KeepTogether = true;
             this.ReportHeader.Name = "ReportHeader";
             // 
-            // xrLabel3
-            // 
-            this.xrLabel3.Borders = DevExpress.XtraPrinting.BorderSide.Bottom;
-            this.xrLabel3.BorderWidth = 0.5F;
-            this.xrLabel3.LocationFloat = new DevExpress.Utils.PointFloat(344.6447F, 257.3778F);
-            this.xrLabel3.Multiline = true;
-            this.xrLabel3.Name = "xrLabel3";
-            this.xrLabel3.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel3.SizeF = new System.Drawing.SizeF(140F, 3.038879F);
-            this.xrLabel3.StylePriority.UseBorders = false;
-            this.xrLabel3.StylePriority.UseBorderWidth = false;
-            // 
             // xrTable3
             // 
-            this.xrTable3.LocationFloat = new DevExpress.Utils.PointFloat(9.999998F, 171.875F);
+            this.xrTable3.LocationFloat = new DevExpress.Utils.PointFloat(10.00001F, 135.4167F);
             this.xrTable3.Name = "xrTable3";
             this.xrTable3.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable3.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
@@ -312,7 +298,7 @@ namespace ArgusCR1029.Inventory.IV106
             // 
             // xrTable1
             // 
-            this.xrTable1.LocationFloat = new DevExpress.Utils.PointFloat(485.3553F, 171.875F);
+            this.xrTable1.LocationFloat = new DevExpress.Utils.PointFloat(485.3553F, 135.4167F);
             this.xrTable1.Name = "xrTable1";
             this.xrTable1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable1.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
@@ -452,17 +438,15 @@ namespace ArgusCR1029.Inventory.IV106
             // 
             // title_lbl
             // 
-            this.title_lbl.BackColor = System.Drawing.Color.Black;
-            this.title_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
-            | DevExpress.XtraPrinting.BorderSide.Right) 
-            | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.title_lbl.BackColor = System.Drawing.Color.White;
+            this.title_lbl.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.title_lbl.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold);
-            this.title_lbl.ForeColor = System.Drawing.Color.White;
-            this.title_lbl.LocationFloat = new DevExpress.Utils.PointFloat(9.999998F, 134.375F);
+            this.title_lbl.ForeColor = System.Drawing.Color.Black;
+            this.title_lbl.LocationFloat = new DevExpress.Utils.PointFloat(183.3412F, 0F);
             this.title_lbl.Multiline = true;
             this.title_lbl.Name = "title_lbl";
             this.title_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 7, 0, 100F);
-            this.title_lbl.SizeF = new System.Drawing.SizeF(810F, 37.5F);
+            this.title_lbl.SizeF = new System.Drawing.SizeF(492.2917F, 37.5F);
             this.title_lbl.StylePriority.UseBackColor = false;
             this.title_lbl.StylePriority.UseBorders = false;
             this.title_lbl.StylePriority.UseFont = false;
@@ -475,7 +459,7 @@ namespace ArgusCR1029.Inventory.IV106
             // xrPageInfo1
             // 
             this.xrPageInfo1.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Underline);
-            this.xrPageInfo1.LocationFloat = new DevExpress.Utils.PointFloat(366.2511F, 234.6208F);
+            this.xrPageInfo1.LocationFloat = new DevExpress.Utils.PointFloat(366.2511F, 201.2013F);
             this.xrPageInfo1.Name = "xrPageInfo1";
             this.xrPageInfo1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.xrPageInfo1.SizeF = new System.Drawing.SizeF(92.18991F, 22.75705F);
@@ -488,7 +472,7 @@ namespace ArgusCR1029.Inventory.IV106
             // 
             this.logo_data.LocationFloat = new DevExpress.Utils.PointFloat(9.999998F, 0F);
             this.logo_data.Name = "logo_data";
-            this.logo_data.SizeF = new System.Drawing.SizeF(265.4167F, 123.9583F);
+            this.logo_data.SizeF = new System.Drawing.SizeF(171.72F, 123.96F);
             this.logo_data.Sizing = DevExpress.XtraPrinting.ImageSizeMode.ZoomImage;
             // 
             // PageFooter
@@ -713,7 +697,6 @@ namespace ArgusCR1029.Inventory.IV106
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell7;
         private DevExpress.XtraReports.UI.XRLabel title_lbl;
         private DevExpress.XtraReports.UI.XRPageInfo xrPageInfo1;
-        private DevExpress.XtraReports.UI.XRLabel xrLabel3;
         private DevExpress.XtraReports.UI.ReportFooterBand ReportFooter;
         private DevExpress.XtraReports.UI.XRTable xrTable2;
         private DevExpress.XtraReports.UI.XRTableRow xrTableRow7;
