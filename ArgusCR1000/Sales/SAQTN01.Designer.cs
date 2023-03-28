@@ -153,7 +153,7 @@
             this.xrLabel13,
             this.xrLabel19,
             this.xrLabel1});
-            this.TopMargin.HeightF = 364.8333F;
+            this.TopMargin.HeightF = 363.7917F;
             this.TopMargin.Name = "TopMargin";
             // 
             // address_data
@@ -786,7 +786,7 @@
             // 
             this.xrCrossBandBox1.AnchorVertical = ((DevExpress.XtraReports.UI.VerticalAnchorStyles)((DevExpress.XtraReports.UI.VerticalAnchorStyles.Top | DevExpress.XtraReports.UI.VerticalAnchorStyles.Bottom)));
             this.xrCrossBandBox1.EndBand = this.TopMargin;
-            this.xrCrossBandBox1.EndPointFloat = new DevExpress.Utils.PointFloat(0F, 190F);
+            this.xrCrossBandBox1.EndPointFloat = new DevExpress.Utils.PointFloat(0F, 188.9583F);
             this.xrCrossBandBox1.Name = "xrCrossBandBox1";
             this.xrCrossBandBox1.StartBand = this.TopMargin;
             this.xrCrossBandBox1.StartPointFloat = new DevExpress.Utils.PointFloat(0F, 51.04167F);
@@ -796,7 +796,7 @@
             // 
             this.xrCrossBandBox2.AnchorVertical = ((DevExpress.XtraReports.UI.VerticalAnchorStyles)((DevExpress.XtraReports.UI.VerticalAnchorStyles.Top | DevExpress.XtraReports.UI.VerticalAnchorStyles.Bottom)));
             this.xrCrossBandBox2.EndBand = this.TopMargin;
-            this.xrCrossBandBox2.EndPointFloat = new DevExpress.Utils.PointFloat(393.03F, 190F);
+            this.xrCrossBandBox2.EndPointFloat = new DevExpress.Utils.PointFloat(393.03F, 188.9583F);
             this.xrCrossBandBox2.Name = "xrCrossBandBox2";
             this.xrCrossBandBox2.StartBand = this.TopMargin;
             this.xrCrossBandBox2.StartPointFloat = new DevExpress.Utils.PointFloat(393.03F, 51.04167F);
@@ -816,7 +816,7 @@
             // 
             this.xrCrossBandBox3.AnchorVertical = ((DevExpress.XtraReports.UI.VerticalAnchorStyles)((DevExpress.XtraReports.UI.VerticalAnchorStyles.Top | DevExpress.XtraReports.UI.VerticalAnchorStyles.Bottom)));
             this.xrCrossBandBox3.EndBand = this.TopMargin;
-            this.xrCrossBandBox3.EndPointFloat = new DevExpress.Utils.PointFloat(0F, 236F);
+            this.xrCrossBandBox3.EndPointFloat = new DevExpress.Utils.PointFloat(0F, 234.9583F);
             this.xrCrossBandBox3.Name = "xrCrossBandBox3";
             this.xrCrossBandBox3.StartBand = this.TopMargin;
             this.xrCrossBandBox3.StartPointFloat = new DevExpress.Utils.PointFloat(0F, 200F);
@@ -855,7 +855,7 @@
             this.xrCrossBandBox2,
             this.xrCrossBandBox1});
             this.Font = new System.Drawing.Font("Arial", 9.75F);
-            this.Margins = new System.Drawing.Printing.Margins(52, 51, 365, 0);
+            this.Margins = new System.Drawing.Printing.Margins(52, 51, 364, 0);
             this.PageHeight = 1169;
             this.PageWidth = 827;
             this.PaperKind = System.Drawing.Printing.PaperKind.A4;

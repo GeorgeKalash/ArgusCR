@@ -153,7 +153,7 @@
             this.xrLabel13,
             this.xrLabel19,
             this.xrLabel1});
-            this.TopMargin.HeightF = 346.2917F;
+            this.TopMargin.HeightF = 355.6667F;
             this.TopMargin.Name = "TopMargin";
             // 
             // address_data
@@ -187,11 +187,11 @@
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.description_data.Font = new System.Drawing.Font("Times New Roman", 9F);
-            this.description_data.LocationFloat = new DevExpress.Utils.PointFloat(0F, 237.5F);
+            this.description_data.LocationFloat = new DevExpress.Utils.PointFloat(2.000014F, 232F);
             this.description_data.Multiline = true;
             this.description_data.Name = "description_data";
             this.description_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(4, 2, 0, 0, 100F);
-            this.description_data.SizeF = new System.Drawing.SizeF(703F, 98.375F);
+            this.description_data.SizeF = new System.Drawing.SizeF(701F, 113.6667F);
             this.description_data.StylePriority.UseBorders = false;
             this.description_data.StylePriority.UseFont = false;
             this.description_data.StylePriority.UsePadding = false;
@@ -756,17 +756,17 @@
             // 
             this.xrCrossBandBox1.AnchorVertical = ((DevExpress.XtraReports.UI.VerticalAnchorStyles)((DevExpress.XtraReports.UI.VerticalAnchorStyles.Top | DevExpress.XtraReports.UI.VerticalAnchorStyles.Bottom)));
             this.xrCrossBandBox1.EndBand = this.TopMargin;
-            this.xrCrossBandBox1.EndPointFloat = new DevExpress.Utils.PointFloat(0F, 188F);
+            this.xrCrossBandBox1.EndPointFloat = new DevExpress.Utils.PointFloat(2F, 187F);
             this.xrCrossBandBox1.Name = "xrCrossBandBox1";
             this.xrCrossBandBox1.StartBand = this.TopMargin;
-            this.xrCrossBandBox1.StartPointFloat = new DevExpress.Utils.PointFloat(0F, 51.04167F);
-            this.xrCrossBandBox1.WidthF = 321.9583F;
+            this.xrCrossBandBox1.StartPointFloat = new DevExpress.Utils.PointFloat(2F, 51.04167F);
+            this.xrCrossBandBox1.WidthF = 319.9583F;
             // 
             // xrCrossBandBox2
             // 
             this.xrCrossBandBox2.AnchorVertical = ((DevExpress.XtraReports.UI.VerticalAnchorStyles)((DevExpress.XtraReports.UI.VerticalAnchorStyles.Top | DevExpress.XtraReports.UI.VerticalAnchorStyles.Bottom)));
             this.xrCrossBandBox2.EndBand = this.TopMargin;
-            this.xrCrossBandBox2.EndPointFloat = new DevExpress.Utils.PointFloat(375.2917F, 188F);
+            this.xrCrossBandBox2.EndPointFloat = new DevExpress.Utils.PointFloat(375.2917F, 187F);
             this.xrCrossBandBox2.Name = "xrCrossBandBox2";
             this.xrCrossBandBox2.StartBand = this.TopMargin;
             this.xrCrossBandBox2.StartPointFloat = new DevExpress.Utils.PointFloat(375.2917F, 51.04167F);
@@ -786,11 +786,11 @@
             // 
             this.xrCrossBandBox3.AnchorVertical = ((DevExpress.XtraReports.UI.VerticalAnchorStyles)((DevExpress.XtraReports.UI.VerticalAnchorStyles.Top | DevExpress.XtraReports.UI.VerticalAnchorStyles.Bottom)));
             this.xrCrossBandBox3.EndBand = this.TopMargin;
-            this.xrCrossBandBox3.EndPointFloat = new DevExpress.Utils.PointFloat(0F, 229F);
+            this.xrCrossBandBox3.EndPointFloat = new DevExpress.Utils.PointFloat(2F, 228F);
             this.xrCrossBandBox3.Name = "xrCrossBandBox3";
             this.xrCrossBandBox3.StartBand = this.TopMargin;
-            this.xrCrossBandBox3.StartPointFloat = new DevExpress.Utils.PointFloat(0F, 192.7083F);
-            this.xrCrossBandBox3.WidthF = 703F;
+            this.xrCrossBandBox3.StartPointFloat = new DevExpress.Utils.PointFloat(2F, 192F);
+            this.xrCrossBandBox3.WidthF = 701F;
             // 
             // PageFooter
             // 
@@ -825,7 +825,7 @@
             this.xrCrossBandBox2,
             this.xrCrossBandBox1});
             this.Font = new System.Drawing.Font("Arial", 9.75F);
-            this.Margins = new System.Drawing.Printing.Margins(63, 51, 346, 0);
+            this.Margins = new System.Drawing.Printing.Margins(63, 51, 356, 0);
             this.PageHeight = 1169;
             this.PageWidth = 827;
             this.PaperKind = System.Drawing.Printing.PaperKind.A4;
