@@ -133,7 +133,7 @@ namespace ArgusCR1029.Inventory.IV102
             this.xrTableCell5.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell5.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[salesPrice]*[weight]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[salesPrice]*[qty]")});
             this.xrTableCell5.Font = new System.Drawing.Font("Times New Roman", 8F);
             this.xrTableCell5.Multiline = true;
             this.xrTableCell5.Name = "xrTableCell5";
@@ -560,7 +560,7 @@ namespace ArgusCR1029.Inventory.IV102
             this.xrTableCell24.BackColor = System.Drawing.Color.WhiteSmoke;
             this.xrTableCell24.Borders = ((DevExpress.XtraPrinting.BorderSide)((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell24.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "sumSum([salesPrice]*[weight])")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[salesPrice]*[qty]")});
             this.xrTableCell24.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold);
             this.xrTableCell24.Multiline = true;
             this.xrTableCell24.Name = "xrTableCell24";

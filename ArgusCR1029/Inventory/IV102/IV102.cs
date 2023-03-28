@@ -47,8 +47,8 @@ namespace ArgusCR1029.Inventory.IV102
 
             notifyName_data.Text = webObject.record.header.notifyName;
 
-            totalWeight21_data.Text = webObject.record.header.totalWeightG21.ToString("N2");
-            sumSalesPrice_data.Text = SharedClasses.NumberToWords.multiLingualNumberInText((decimal)webObject.record.header.sumSalesPrice, 4, 2);
+            totalWeight21_data.Text = SharedClasses.NumberToWords.multiLingualNumberInText((decimal)webObject.record.header.totalWeightG21, 4, 2);
+            sumSalesPrice_data.Text = SharedClasses.NumberToWords.multiLingualNumberInText((decimal)webObject.record.header.sumSalesPrice, 10, 2);
             note_data.Text = webObject.record.header.notes;
 
             fromSiteName2_data.Text = webObject.record.header.fromSiteName;
