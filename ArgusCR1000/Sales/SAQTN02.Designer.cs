@@ -66,6 +66,7 @@
             this.xrLabel4 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel3 = new DevExpress.XtraReports.UI.XRLabel();
             this.ReportFooter = new DevExpress.XtraReports.UI.ReportFooterBand();
+            this.subtotal_data = new DevExpress.XtraReports.UI.XRLabel();
             this.vat_data = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel28 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel21 = new DevExpress.XtraReports.UI.XRLabel();
@@ -80,7 +81,6 @@
             this.xrCrossBandBox3 = new DevExpress.XtraReports.UI.XRCrossBandBox();
             this.PageFooter = new DevExpress.XtraReports.UI.PageFooterBand();
             this.xrPictureBox1 = new DevExpress.XtraReports.UI.XRPictureBox();
-            this.subtotal_data = new DevExpress.XtraReports.UI.XRLabel();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             // 
             // Title
@@ -153,7 +153,7 @@
             this.xrLabel13,
             this.xrLabel19,
             this.xrLabel1});
-            this.TopMargin.HeightF = 289F;
+            this.TopMargin.HeightF = 335.875F;
             this.TopMargin.Name = "TopMargin";
             // 
             // address_data
@@ -173,7 +173,7 @@
             this.xrLabel31.Multiline = true;
             this.xrLabel31.Name = "xrLabel31";
             this.xrLabel31.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel31.SizeF = new System.Drawing.SizeF(251.0833F, 108.1667F);
+            this.xrLabel31.SizeF = new System.Drawing.SizeF(251.0833F, 106.0833F);
             this.xrLabel31.StylePriority.UseFont = false;
             this.xrLabel31.StylePriority.UseTextAlignment = false;
             this.xrLabel31.Text = "VAT: 183831-601\r\nOffice: +961-9-936110\r\nCell:  +961-76-888468\r\nP.O.Box: 1658, Jou" +
@@ -187,11 +187,11 @@
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.description_data.Font = new System.Drawing.Font("Times New Roman", 9F);
-            this.description_data.LocationFloat = new DevExpress.Utils.PointFloat(2.000014F, 233.1667F);
+            this.description_data.LocationFloat = new DevExpress.Utils.PointFloat(0F, 237.5F);
             this.description_data.Multiline = true;
             this.description_data.Name = "description_data";
             this.description_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(4, 2, 0, 0, 100F);
-            this.description_data.SizeF = new System.Drawing.SizeF(701F, 46.12492F);
+            this.description_data.SizeF = new System.Drawing.SizeF(703F, 88.83328F);
             this.description_data.StylePriority.UseBorders = false;
             this.description_data.StylePriority.UseFont = false;
             this.description_data.StylePriority.UsePadding = false;
@@ -634,6 +634,22 @@
             this.ReportFooter.HeightF = 124.6252F;
             this.ReportFooter.Name = "ReportFooter";
             // 
+            // subtotal_data
+            // 
+            this.subtotal_data.CanGrow = false;
+            this.subtotal_data.Font = new System.Drawing.Font("Times New Roman", 9F);
+            this.subtotal_data.LocationFloat = new DevExpress.Utils.PointFloat(581.2501F, 45.20842F);
+            this.subtotal_data.Name = "subtotal_data";
+            this.subtotal_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 4, 0, 0, 100F);
+            this.subtotal_data.SizeF = new System.Drawing.SizeF(119.6667F, 23F);
+            this.subtotal_data.StylePriority.UseFont = false;
+            this.subtotal_data.StylePriority.UsePadding = false;
+            this.subtotal_data.StylePriority.UseTextAlignment = false;
+            this.subtotal_data.Text = "subtotal_data";
+            this.subtotal_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
+            this.subtotal_data.TextFormatString = "{0:n0}";
+            this.subtotal_data.WordWrap = false;
+            // 
             // vat_data
             // 
             this.vat_data.CanGrow = false;
@@ -740,17 +756,17 @@
             // 
             this.xrCrossBandBox1.AnchorVertical = ((DevExpress.XtraReports.UI.VerticalAnchorStyles)((DevExpress.XtraReports.UI.VerticalAnchorStyles.Top | DevExpress.XtraReports.UI.VerticalAnchorStyles.Bottom)));
             this.xrCrossBandBox1.EndBand = this.TopMargin;
-            this.xrCrossBandBox1.EndPointFloat = new DevExpress.Utils.PointFloat(2.000046F, 187.25F);
+            this.xrCrossBandBox1.EndPointFloat = new DevExpress.Utils.PointFloat(0F, 186.1251F);
             this.xrCrossBandBox1.Name = "xrCrossBandBox1";
             this.xrCrossBandBox1.StartBand = this.TopMargin;
-            this.xrCrossBandBox1.StartPointFloat = new DevExpress.Utils.PointFloat(2.000046F, 51.04167F);
+            this.xrCrossBandBox1.StartPointFloat = new DevExpress.Utils.PointFloat(0F, 51.04167F);
             this.xrCrossBandBox1.WidthF = 321.9583F;
             // 
             // xrCrossBandBox2
             // 
             this.xrCrossBandBox2.AnchorVertical = ((DevExpress.XtraReports.UI.VerticalAnchorStyles)((DevExpress.XtraReports.UI.VerticalAnchorStyles.Top | DevExpress.XtraReports.UI.VerticalAnchorStyles.Bottom)));
             this.xrCrossBandBox2.EndBand = this.TopMargin;
-            this.xrCrossBandBox2.EndPointFloat = new DevExpress.Utils.PointFloat(375.2917F, 185.1667F);
+            this.xrCrossBandBox2.EndPointFloat = new DevExpress.Utils.PointFloat(375.2917F, 186.1251F);
             this.xrCrossBandBox2.Name = "xrCrossBandBox2";
             this.xrCrossBandBox2.StartBand = this.TopMargin;
             this.xrCrossBandBox2.StartPointFloat = new DevExpress.Utils.PointFloat(375.2917F, 51.04167F);
@@ -770,11 +786,11 @@
             // 
             this.xrCrossBandBox3.AnchorVertical = ((DevExpress.XtraReports.UI.VerticalAnchorStyles)((DevExpress.XtraReports.UI.VerticalAnchorStyles.Top | DevExpress.XtraReports.UI.VerticalAnchorStyles.Bottom)));
             this.xrCrossBandBox3.EndBand = this.TopMargin;
-            this.xrCrossBandBox3.EndPointFloat = new DevExpress.Utils.PointFloat(2.000046F, 227.8333F);
+            this.xrCrossBandBox3.EndPointFloat = new DevExpress.Utils.PointFloat(0F, 228F);
             this.xrCrossBandBox3.Name = "xrCrossBandBox3";
             this.xrCrossBandBox3.StartBand = this.TopMargin;
-            this.xrCrossBandBox3.StartPointFloat = new DevExpress.Utils.PointFloat(2.000046F, 192.7083F);
-            this.xrCrossBandBox3.WidthF = 700.9998F;
+            this.xrCrossBandBox3.StartPointFloat = new DevExpress.Utils.PointFloat(0F, 192.7083F);
+            this.xrCrossBandBox3.WidthF = 700.9168F;
             // 
             // PageFooter
             // 
@@ -790,22 +806,6 @@
             this.xrPictureBox1.LocationFloat = new DevExpress.Utils.PointFloat(2.000046F, 0F);
             this.xrPictureBox1.Name = "xrPictureBox1";
             this.xrPictureBox1.SizeF = new System.Drawing.SizeF(700.9998F, 198F);
-            // 
-            // subtotal_data
-            // 
-            this.subtotal_data.CanGrow = false;
-            this.subtotal_data.Font = new System.Drawing.Font("Times New Roman", 9F);
-            this.subtotal_data.LocationFloat = new DevExpress.Utils.PointFloat(581.2501F, 45.20842F);
-            this.subtotal_data.Name = "subtotal_data";
-            this.subtotal_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 4, 0, 0, 100F);
-            this.subtotal_data.SizeF = new System.Drawing.SizeF(119.6667F, 23F);
-            this.subtotal_data.StylePriority.UseFont = false;
-            this.subtotal_data.StylePriority.UsePadding = false;
-            this.subtotal_data.StylePriority.UseTextAlignment = false;
-            this.subtotal_data.Text = "subtotal_data";
-            this.subtotal_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
-            this.subtotal_data.TextFormatString = "{0:n0}";
-            this.subtotal_data.WordWrap = false;
             // 
             // SAQTN02
             // 
@@ -825,7 +825,7 @@
             this.xrCrossBandBox2,
             this.xrCrossBandBox1});
             this.Font = new System.Drawing.Font("Arial", 9.75F);
-            this.Margins = new System.Drawing.Printing.Margins(63, 51, 289, 0);
+            this.Margins = new System.Drawing.Printing.Margins(63, 51, 336, 0);
             this.PageHeight = 1169;
             this.PageWidth = 827;
             this.PaperKind = System.Drawing.Printing.PaperKind.A4;
