@@ -186,9 +186,9 @@
             this.description_data.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.description_data.CanGrow = false;
             this.description_data.Font = new System.Drawing.Font("Times New Roman", 9F);
             this.description_data.LocationFloat = new DevExpress.Utils.PointFloat(0F, 237.5F);
-            this.description_data.Multiline = true;
             this.description_data.Name = "description_data";
             this.description_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(4, 2, 0, 0, 100F);
             this.description_data.SizeF = new System.Drawing.SizeF(703F, 88.83328F);
@@ -198,6 +198,7 @@
             this.description_data.StylePriority.UseTextAlignment = false;
             this.description_data.Text = "description_data";
             this.description_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
+            this.description_data.WordWrap = false;
             // 
             // clientName_data
             // 
