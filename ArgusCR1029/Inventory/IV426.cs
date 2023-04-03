@@ -26,6 +26,7 @@ namespace ArgusCR1029.Inventory
             fiscalYear_param.Text = Parameters.Count > 0 ? Parameters[0].Value.ToString() : string.Empty;
             startDate_param.Text = Parameters.Count > 1 ? Parameters[1].Value.ToString() : string.Empty;
             endDate_param.Text = Parameters.Count > 2 ? Parameters[2].Value.ToString() : string.Empty;
+            site_param.Text = Parameters.Count > 3 ? Parameters[3].Value.ToString() : string.Empty;
 
             printSignature.Text = reportSignature();
             base.OnBeforePrint(e);
