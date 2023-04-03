@@ -71,12 +71,12 @@ namespace ArgusCR1029.Sales.SA103
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTable2.BorderWidth = 0.5F;
-            this.xrTable2.LocationFloat = new DevExpress.Utils.PointFloat(487.5F, 0F);
+            this.xrTable2.LocationFloat = new DevExpress.Utils.PointFloat(502.6734F, 0F);
             this.xrTable2.Name = "xrTable2";
             this.xrTable2.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable2.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow2});
-            this.xrTable2.SizeF = new System.Drawing.SizeF(287.4484F, 24.9F);
+            this.xrTable2.SizeF = new System.Drawing.SizeF(272.275F, 24.9F);
             this.xrTable2.StylePriority.UseBorders = false;
             this.xrTable2.StylePriority.UseBorderWidth = false;
             this.xrTable2.StylePriority.UseTextAlignment = false;
@@ -155,12 +155,12 @@ namespace ArgusCR1029.Sales.SA103
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTable1.BorderWidth = 0.5F;
-            this.xrTable1.LocationFloat = new DevExpress.Utils.PointFloat(487.5F, 0F);
+            this.xrTable1.LocationFloat = new DevExpress.Utils.PointFloat(502.6734F, 0F);
             this.xrTable1.Name = "xrTable1";
             this.xrTable1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable1.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow5});
-            this.xrTable1.SizeF = new System.Drawing.SizeF(287.4484F, 24.9F);
+            this.xrTable1.SizeF = new System.Drawing.SizeF(272.275F, 24.9F);
             this.xrTable1.StylePriority.UseBorders = false;
             this.xrTable1.StylePriority.UseBorderWidth = false;
             this.xrTable1.StylePriority.UseTextAlignment = false;

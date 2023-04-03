@@ -71,12 +71,12 @@ namespace ArgusCR1029.Sales.SA110
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTable2.BorderWidth = 0.5F;
-            this.xrTable2.LocationFloat = new DevExpress.Utils.PointFloat(487.5F, 0F);
+            this.xrTable2.LocationFloat = new DevExpress.Utils.PointFloat(502.6733F, 0F);
             this.xrTable2.Name = "xrTable2";
             this.xrTable2.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable2.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow2});
-            this.xrTable2.SizeF = new System.Drawing.SizeF(287.4484F, 24.9F);
+            this.xrTable2.SizeF = new System.Drawing.SizeF(272.275F, 24.9F);
             this.xrTable2.StylePriority.UseBorders = false;
             this.xrTable2.StylePriority.UseBorderWidth = false;
             this.xrTable2.StylePriority.UseTextAlignment = false;
@@ -158,12 +158,12 @@ namespace ArgusCR1029.Sales.SA110
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTable1.BorderWidth = 0.5F;
-            this.xrTable1.LocationFloat = new DevExpress.Utils.PointFloat(487.5F, 0F);
+            this.xrTable1.LocationFloat = new DevExpress.Utils.PointFloat(502.6733F, 0F);
             this.xrTable1.Name = "xrTable1";
             this.xrTable1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable1.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow5});
-            this.xrTable1.SizeF = new System.Drawing.SizeF(287.4484F, 24.9F);
+            this.xrTable1.SizeF = new System.Drawing.SizeF(266.3267F, 24.9F);
             this.xrTable1.StylePriority.UseBorders = false;
             this.xrTable1.StylePriority.UseBorderWidth = false;
             this.xrTable1.StylePriority.UseTextAlignment = false;
@@ -193,7 +193,7 @@ namespace ArgusCR1029.Sales.SA110
             this.xrTableCell18.StylePriority.UseTextAlignment = false;
             this.xrTableCell18.Text = "أجور \r\n";
             this.xrTableCell18.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
-            this.xrTableCell18.Weight = 2.9493538100059107D;
+            this.xrTableCell18.Weight = 3.01522760429312D;
             // 
             // xrTableCell12
             // 
@@ -210,7 +210,7 @@ namespace ArgusCR1029.Sales.SA110
             this.xrTableCell12.StylePriority.UseTextAlignment = false;
             this.xrTableCell12.Text = "الوزن";
             this.xrTableCell12.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
-            this.xrTableCell12.Weight = 2.9493538100059107D;
+            this.xrTableCell12.Weight = 3.01522760429312D;
             // 
             // xrTableCell14
             // 
@@ -227,7 +227,7 @@ namespace ArgusCR1029.Sales.SA110
             this.xrTableCell14.StylePriority.UseTextAlignment = false;
             this.xrTableCell14.Text = "العيار";
             this.xrTableCell14.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
-            this.xrTableCell14.Weight = 3.0513496062012759D;
+            this.xrTableCell14.Weight = 2.9196020176268576D;
             // 
             // MetalSubReports
             // 
