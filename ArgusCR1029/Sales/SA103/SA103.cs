@@ -36,19 +36,26 @@ namespace ArgusCR1029.Sales.SA103
             reference_data.Text = webObject.record.trxHeader.reference;
             date_data.Text = webObject.record.trxHeader.date.ToString(sessionInfo.dateFormat);
             plant_data.Text = webObject.record.trxHeader.plantName;
-            phoneNo_data.Text = companyInfo.address?.phone;
+            spName_data.Text = webObject.record.salesPerson?.name;
             address_data.Text = companyInfo.address?.street1;
 
             clientRef_data.Text = webObject.record.client.reference;
             clientName_data.Text = webObject.record.trxHeader.clientName;
+            clientVATNo_data.Text = webObject.record.trxHeader.clientVATNo;
+            phoneNumber_data.Text = webObject.record.billAddress?.phone;
             cAddress_data.Text = webObject.record.billAddress?.street1;
+            exhibitionManager_data.Text = webObject.record.trxHeader.contactName;
+
 
             subtotal_data.Text = webObject.record.trxHeader.subtotal.ToString("N2");
+            tdAmount_data.Text = webObject.record.trxHeader.tdAmount.ToString();
             vatAmount_data.Text = webObject.record.trxHeader.vatAmount.ToString("N2");
             amount_data.Text = webObject.record.trxHeader.amount.ToString("N2");
             amountInWords_data.Text = SharedClasses.NumberToWords.multiLingualNumberInText((decimal)webObject.record.trxHeader.amount, 10, 2);
 
-            spName2_data.Text = webObject.record.trxHeader.spName;
+            description_data.Text = webObject.record.trxHeader.description;
+
+            spName_data.Text = webObject.record.salesPerson?.name;
 
             ((InvoiceItemsSubReports)(InvoiceItemsSubReports.ReportSource)).data = webObject.record.items;
             ((MetalSubReports)(MetalSubReports.ReportSource)).data = webObject.record.metalSummaries;
