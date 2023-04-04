@@ -206,7 +206,7 @@ namespace ArgusCR1034.POS.Templates.PS101GLD
             this.wGold_data.StylePriority.UseTextAlignment = false;
             this.wGold_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
             this.wGold_data.TextFormatString = "{0:n2}";
-            this.wGold_data.Weight = 0.83745323127331217D;
+            this.wGold_data.Weight = 0.83834184797459932D;
             // 
             // extendedPrice_data
             // 
@@ -228,7 +228,7 @@ namespace ArgusCR1034.POS.Templates.PS101GLD
             this.extendedPrice_data.StylePriority.UseTextAlignment = false;
             this.extendedPrice_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
             this.extendedPrice_data.TextFormatString = "{0:n2}";
-            this.extendedPrice_data.Weight = 1.085956299013755D;
+            this.extendedPrice_data.Weight = 1.0850676823124679D;
             // 
             // vat_data
             // 
@@ -387,7 +387,7 @@ namespace ArgusCR1034.POS.Templates.PS101GLD
             this.wGold_lbl.StylePriority.UseTextAlignment = false;
             this.wGold_lbl.Text = "وزن الذهب\r\nW.gold";
             this.wGold_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopCenter;
-            this.wGold_lbl.Weight = 0.51724100547230467D;
+            this.wGold_lbl.Weight = 0.51614646018987709D;
             // 
             // extendedPrice_lbl
             // 
@@ -408,7 +408,7 @@ namespace ArgusCR1034.POS.Templates.PS101GLD
             this.extendedPrice_lbl.StylePriority.UseTextAlignment = false;
             this.extendedPrice_lbl.Text = "المبلغ قبل الضريبة\r\nExtended Price";
             this.extendedPrice_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopCenter;
-            this.extendedPrice_lbl.Weight = 0.66582542032667447D;
+            this.extendedPrice_lbl.Weight = 0.666919965609102D;
             // 
             // vat_lbl
             // 

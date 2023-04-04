@@ -508,7 +508,7 @@ namespace ArgusCR1029.Sales.SA103
             this.xrTable1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable1.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow1});
-            this.xrTable1.SizeF = new System.Drawing.SizeF(274.426F, 24.9F);
+            this.xrTable1.SizeF = new System.Drawing.SizeF(274.4261F, 24.9F);
             this.xrTable1.StylePriority.UseBorders = false;
             this.xrTable1.StylePriority.UseBorderWidth = false;
             this.xrTable1.StylePriority.UseTextAlignment = false;
@@ -563,7 +563,7 @@ namespace ArgusCR1029.Sales.SA103
             this.xrTableCell4.StylePriority.UseTextAlignment = false;
             this.xrTableCell4.Text = "عدد القطع";
             this.xrTableCell4.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
-            this.xrTableCell4.Weight = 7.5669159031705941D;
+            this.xrTableCell4.Weight = 7.7229911962408986D;
             // 
             // InvoiceItemsSubReports
             // 

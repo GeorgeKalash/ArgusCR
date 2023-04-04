@@ -163,7 +163,7 @@ namespace ArgusCR1029.Sales.SA110
             this.xrTable1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable1.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow5});
-            this.xrTable1.SizeF = new System.Drawing.SizeF(266.3267F, 24.9F);
+            this.xrTable1.SizeF = new System.Drawing.SizeF(272.275F, 24.9F);
             this.xrTable1.StylePriority.UseBorders = false;
             this.xrTable1.StylePriority.UseBorderWidth = false;
             this.xrTable1.StylePriority.UseTextAlignment = false;
@@ -227,7 +227,7 @@ namespace ArgusCR1029.Sales.SA110
             this.xrTableCell14.StylePriority.UseTextAlignment = false;
             this.xrTableCell14.Text = "العيار";
             this.xrTableCell14.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
-            this.xrTableCell14.Weight = 2.9196020176268576D;
+            this.xrTableCell14.Weight = 3.119498070504418D;
             // 
             // MetalSubReports
             // 
