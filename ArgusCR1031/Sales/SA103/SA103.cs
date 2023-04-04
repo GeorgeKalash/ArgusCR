@@ -20,7 +20,6 @@ namespace ArgusCR1031.Sales.SA103
         {
             base.setSessionInfo(_reportHeaders);
             ((ArgusRPT.BaseReport)(InvoiceItemsSubReports.ReportSource)).setSessionInfo(sessionInfo);
-            ((ArgusRPT.BaseReport)(MetalSubReports.ReportSource)).setSessionInfo(sessionInfo);
             initSubReports();
         }
 
@@ -49,7 +48,6 @@ namespace ArgusCR1031.Sales.SA103
             spName2_data.Text = webObject.record.trxHeader.spName;
 
             ((InvoiceItemsSubReports)(InvoiceItemsSubReports.ReportSource)).data = webObject.record.items;
-            ((MetalSubReports)(MetalSubReports.ReportSource)).data = webObject.record.metalSummaries;
             base.OnBeforePrint(e);
         }
 

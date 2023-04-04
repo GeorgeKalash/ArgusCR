@@ -94,12 +94,6 @@
     <Compile Include="Sales\SA103\InvoiceItemsSubReports.Designer.cs">
       <DependentUpon>InvoiceItemsSubReports.cs</DependentUpon>
     </Compile>
-    <Compile Include="Sales\SA103\MetalSubReports.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Sales\SA103\MetalSubReports.Designer.cs">
-      <DependentUpon>MetalSubReports.cs</DependentUpon>
-    </Compile>
     <Compile Include="Sales\SA103\SA103.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -115,9 +109,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Sales\SA103\InvoiceItemsSubReports.resx">
       <DependentUpon>InvoiceItemsSubReports.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Sales\SA103\MetalSubReports.resx">
-      <DependentUpon>MetalSubReports.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Sales\SA103\SA103.resx">
       <DependentUpon>SA103.cs</DependentUpon>
