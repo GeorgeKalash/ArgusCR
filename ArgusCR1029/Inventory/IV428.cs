@@ -47,7 +47,7 @@ namespace ArgusCR1029.Inventory
 
         protected override string dictionaryStore()
         {
-            return "CR1029.IV427";
+            return "CR1029.IV428";
         }
     }
 }
