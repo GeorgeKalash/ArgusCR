@@ -11,6 +11,7 @@ namespace ArgusCR1031.Purchase.PU103
     public partial class InvoiceItemsSubReports : ArgusRPT.BaseReport
     {
         public List<ArgusDS.Purchase.InvoiceItemView> data;
+        int itemsCounter = 1;
 
         public InvoiceItemsSubReports()
         {
@@ -29,6 +30,13 @@ namespace ArgusCR1031.Purchase.PU103
 
         protected override void labelsText()
         {
+        }
+
+        protected override void OnDataSourceRowChanged(DataSourceRowEventArgs e)
+        {
+            seqNo_data.Text = itemsCounter.ToString();
+            ++itemsCounter;
+            base.OnDataSourceRowChanged(e);
         }
 
         protected override string dictionaryStore()
