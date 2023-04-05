@@ -232,13 +232,9 @@
     <Compile Include="Inventory\IV105\IV105.Designer.cs">
       <DependentUpon>IV105.cs</DependentUpon>
     </Compile>
-<<<<<<< Updated upstream
     <Compile Include="Inventory\IV430.cs">
       <SubType>Component</SubType>
     </Compile>
-=======
-    <Compile Include="Inventory\IV430.cs" />
->>>>>>> Stashed changes
     <Compile Include="Inventory\IV430.Designer.cs">
       <DependentUpon>IV430.cs</DependentUpon>
     </Compile>
