@@ -104,7 +104,7 @@ namespace ArgusCR1029.Inventory
             this.xrTableCell14 = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTableCell16 = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTableCell17 = new DevExpress.XtraReports.UI.XRTableCell();
-            this.categoryRef = new DevExpress.XtraReports.UI.GroupHeaderBand();
+            this.groupRef = new DevExpress.XtraReports.UI.GroupHeaderBand();
             this.xrTable2 = new DevExpress.XtraReports.UI.XRTable();
             this.xrTableRow2 = new DevExpress.XtraReports.UI.XRTableRow();
             this.xrTableCell5 = new DevExpress.XtraReports.UI.XRTableCell();
@@ -392,7 +392,7 @@ namespace ArgusCR1029.Inventory
             // xrTableCell20
             // 
             this.xrTableCell20.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[name]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[itemName]")});
             this.xrTableCell20.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.xrTableCell20.Multiline = true;
             this.xrTableCell20.Name = "xrTableCell20";
@@ -450,7 +450,7 @@ namespace ArgusCR1029.Inventory
             // xrTableCell24
             // 
             this.xrTableCell24.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "([qty]*[metalPurity])/0.875")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[qtyG21]")});
             this.xrTableCell24.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.xrTableCell24.Multiline = true;
             this.xrTableCell24.Name = "xrTableCell24";
@@ -495,7 +495,7 @@ namespace ArgusCR1029.Inventory
             // xrTableCell27
             // 
             this.xrTableCell27.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[standardCost]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[avgCost]")});
             this.xrTableCell27.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.xrTableCell27.Multiline = true;
             this.xrTableCell27.Name = "xrTableCell27";
@@ -656,7 +656,7 @@ namespace ArgusCR1029.Inventory
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell7.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "sumSum(([qty]*[metalPurity])/0.875)")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "sumSum([qtyG21])")});
             this.xrTableCell7.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold);
             this.xrTableCell7.Multiline = true;
             this.xrTableCell7.Name = "xrTableCell7";
@@ -728,7 +728,7 @@ namespace ArgusCR1029.Inventory
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell1.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "sumSum([standardCost])")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "sumSum([avgCost])")});
             this.xrTableCell1.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold);
             this.xrTableCell1.Multiline = true;
             this.xrTableCell1.Name = "xrTableCell1";
@@ -938,16 +938,16 @@ namespace ArgusCR1029.Inventory
             this.xrTableCell17.Text = "إجمالى التكلفة";
             this.xrTableCell17.Weight = 0.89046440314747444D;
             // 
-            // categoryRef
+            // groupRef
             // 
-            this.categoryRef.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+            this.groupRef.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
             this.xrTable2});
-            this.categoryRef.GroupFields.AddRange(new DevExpress.XtraReports.UI.GroupField[] {
-            new DevExpress.XtraReports.UI.GroupField("categoryRef", DevExpress.XtraReports.UI.XRColumnSortOrder.Ascending)});
-            this.categoryRef.HeightF = 35.34718F;
-            this.categoryRef.KeepTogether = true;
-            this.categoryRef.Name = "categoryRef";
-            this.categoryRef.RepeatEveryPage = true;
+            this.groupRef.GroupFields.AddRange(new DevExpress.XtraReports.UI.GroupField[] {
+            new DevExpress.XtraReports.UI.GroupField("groupRef", DevExpress.XtraReports.UI.XRColumnSortOrder.Ascending)});
+            this.groupRef.HeightF = 35.34718F;
+            this.groupRef.KeepTogether = true;
+            this.groupRef.Name = "groupRef";
+            this.groupRef.RepeatEveryPage = true;
             // 
             // xrTable2
             // 
@@ -969,7 +969,7 @@ namespace ArgusCR1029.Inventory
             // xrTableCell5
             // 
             this.xrTableCell5.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[categoryRef]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[groupRef]")});
             this.xrTableCell5.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold);
             this.xrTableCell5.Multiline = true;
             this.xrTableCell5.Name = "xrTableCell5";
@@ -980,7 +980,7 @@ namespace ArgusCR1029.Inventory
             // xrTableCell29
             // 
             this.xrTableCell29.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[categoryName]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[groupName]")});
             this.xrTableCell29.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold);
             this.xrTableCell29.Multiline = true;
             this.xrTableCell29.Name = "xrTableCell29";
@@ -1043,7 +1043,7 @@ namespace ArgusCR1029.Inventory
             this.xrTableCell37.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Top | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell37.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[categoryName]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[groupName]")});
             this.xrTableCell37.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold);
             this.xrTableCell37.Multiline = true;
             this.xrTableCell37.Name = "xrTableCell37";
@@ -1101,7 +1101,7 @@ namespace ArgusCR1029.Inventory
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell32.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "sumSum(([qty]*[metalPurity])/0.875)")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "sumSum([qtyG21])")});
             this.xrTableCell32.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold);
             this.xrTableCell32.Multiline = true;
             this.xrTableCell32.Name = "xrTableCell32";
@@ -1167,7 +1167,7 @@ namespace ArgusCR1029.Inventory
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell35.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "sumSum([standardCost])")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "sumSum([avgCost])")});
             this.xrTableCell35.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold);
             this.xrTableCell35.Multiline = true;
             this.xrTableCell35.Name = "xrTableCell35";
@@ -1205,7 +1205,7 @@ namespace ArgusCR1029.Inventory
             this.xrTableCell36.TextFormatString = "{0:n2}";
             this.xrTableCell36.Weight = 0.424616052597218D;
             // 
-            // IV408A
+            // IV429
             // 
             this.Bands.AddRange(new DevExpress.XtraReports.UI.Band[] {
             this.ReportHeader,
@@ -1213,7 +1213,7 @@ namespace ArgusCR1029.Inventory
             this.PageFooter,
             this.ReportFooter,
             this.PageHeader,
-            this.categoryRef,
+            this.groupRef,
             this.GroupFooter1});
             this.Landscape = true;
             this.Margins = new System.Drawing.Printing.Margins(0, 0, 30, 5);
@@ -1278,7 +1278,7 @@ namespace ArgusCR1029.Inventory
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell15;
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell1;
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell4;
-        private DevExpress.XtraReports.UI.GroupHeaderBand categoryRef;
+        private DevExpress.XtraReports.UI.GroupHeaderBand groupRef;
         private DevExpress.XtraReports.UI.GroupFooterBand GroupFooter1;
         private DevExpress.XtraReports.UI.XRTable xrTable2;
         private DevExpress.XtraReports.UI.XRTableRow xrTableRow2;
