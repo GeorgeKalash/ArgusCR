@@ -99,7 +99,6 @@ namespace ArgusCR1029.Financials
             // 
             // Detail
             // 
-            this.Detail.Expanded = false;
             this.Detail.Name = "Detail";
             // 
             // ReportHeader
