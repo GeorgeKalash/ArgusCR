@@ -29,21 +29,27 @@ namespace ArgusCR1031.Purchase.PU103
         protected override void OnBeforePrint(PrintEventArgs e)
         {   SharedClasses.JsonProtocol.GetStructure<ArgusDS.Purchase.Reports.InvoicePrintLayout> webObject = deserializeGet<ArgusDS.Purchase.Reports.InvoicePrintLayout>();
 
-            dtName_data.Text = webObject.record.header.dtName;
-            reference_data.Text = webObject.record.header.reference;
+            logo_data.ImageUrl = companyInfo.logoUrl;
+            companyName_data.Text = companyInfo.name;
+            taxNo_data.Text = companyInfo.taxNo;
+
+            siteRef_data.Text = webObject.record.header.siteRef;
+            siteName_data.Text = webObject.record.header.siteName;
+
             vendorRef_data.Text = webObject.record.header.vendorRef;
             vendorName_data.Text = webObject.record.header.vendorName;
-            description_data.Text = webObject.record.header.description;
+            //address_data.Text = webObject.record.header.vendorAddress;
+            //phone_data.Text = webObject.record.header.vendorPhone;
 
+            reference_data.Text = webObject.record.header.reference;
             date_data.Text = webObject.record.header.date.ToString(sessionInfo.dateFormat);
-            currencyName_data.Text = webObject.record.header.currencyName;
-            plantName_data.Text = webObject.record.header.plantName;
-            pmName_data.Text = webObject.record.header.pmName;
             dueDate_data.Text = webObject.record.header.dueDate.ToString(sessionInfo.dateFormat);
 
             subtotal_data.Text = webObject.record.header.subtotal.ToString("N2");
             vatAmount_data.Text = webObject.record.header.vatAmount.ToString("N2");
             amount_data.Text = webObject.record.header.amount.ToString("N2");
+
+            amountInWords_data.Text = SharedClasses.NumberToWords.multiLingualNumberInText((decimal)webObject.record.header.amount, 2, 2);
 
             ((InvoiceItemsSubReports)(InvoiceItemsSubReports.ReportSource)).data = webObject.record.items;
             ((MetalSubReports)(MetalSubReports.ReportSource)).data = webObject.record.metals;
