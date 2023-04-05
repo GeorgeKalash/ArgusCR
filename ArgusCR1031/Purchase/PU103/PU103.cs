@@ -54,7 +54,6 @@ namespace ArgusCR1031.Purchase.PU103
             ((InvoiceItemsSubReports)(InvoiceItemsSubReports.ReportSource)).data = webObject.record.items;
             ((MetalSubReports)(MetalSubReports.ReportSource)).data = webObject.record.metals;
 
-            printSignature_lbl.Text = reportSignature();
             base.OnBeforePrint(e);
         }
         protected override void labelsText()
