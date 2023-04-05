@@ -68,7 +68,7 @@ namespace ArgusCR1031.Purchase.PU103
             // 
             // xrTable1
             // 
-            this.xrTable1.LocationFloat = new DevExpress.Utils.PointFloat(0F, 0F);
+            this.xrTable1.LocationFloat = new DevExpress.Utils.PointFloat(477.5375F, 0F);
             this.xrTable1.Name = "xrTable1";
             this.xrTable1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable1.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
@@ -132,7 +132,7 @@ namespace ArgusCR1031.Purchase.PU103
             // 
             // xrTable2
             // 
-            this.xrTable2.LocationFloat = new DevExpress.Utils.PointFloat(0F, 0F);
+            this.xrTable2.LocationFloat = new DevExpress.Utils.PointFloat(477.5374F, 0F);
             this.xrTable2.Name = "xrTable2";
             this.xrTable2.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable2.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
@@ -167,7 +167,7 @@ namespace ArgusCR1031.Purchase.PU103
             // 
             // xrTable8
             // 
-            this.xrTable8.LocationFloat = new DevExpress.Utils.PointFloat(99.29305F, 0F);
+            this.xrTable8.LocationFloat = new DevExpress.Utils.PointFloat(576.8306F, 0F);
             this.xrTable8.Name = "xrTable8";
             this.xrTable8.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable8.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
@@ -196,7 +196,7 @@ namespace ArgusCR1031.Purchase.PU103
             this.metalPurity_lbl.StylePriority.UseFont = false;
             this.metalPurity_lbl.StylePriority.UsePadding = false;
             this.metalPurity_lbl.StylePriority.UseTextAlignment = false;
-            this.metalPurity_lbl.Text = "معدن";
+            this.metalPurity_lbl.Text = "المعدن";
             this.metalPurity_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopCenter;
             this.metalPurity_lbl.Weight = 1.4020849774898125D;
             // 
@@ -208,7 +208,7 @@ namespace ArgusCR1031.Purchase.PU103
             this.Detail,
             this.PageHeader});
             this.Font = new System.Drawing.Font("Arial", 9.75F);
-            this.Margins = new System.Drawing.Printing.Margins(0, 562, 0, 0);
+            this.Margins = new System.Drawing.Printing.Margins(0, 77, 0, 0);
             this.PageHeight = 1169;
             this.PageWidth = 827;
             this.PaperKind = System.Drawing.Printing.PaperKind.A4;
