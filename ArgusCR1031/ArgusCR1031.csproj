@@ -88,6 +88,24 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="Purchase\PU103\InvoiceItemsSubReports.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Purchase\PU103\InvoiceItemsSubReports.Designer.cs">
+      <DependentUpon>InvoiceItemsSubReports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\PU103\MetalSubReports.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Purchase\PU103\MetalSubReports.Designer.cs">
+      <DependentUpon>MetalSubReports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\PU103\PU103.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Purchase\PU103\PU103.Designer.cs">
+      <DependentUpon>PU103.cs</DependentUpon>
+    </Compile>
     <Compile Include="Sales\SA103\InvoiceItemsSubReports.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -106,6 +124,15 @@
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\PU103\InvoiceItemsSubReports.resx">
+      <DependentUpon>InvoiceItemsSubReports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\PU103\MetalSubReports.resx">
+      <DependentUpon>MetalSubReports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\PU103\PU103.resx">
+      <DependentUpon>PU103.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Sales\SA103\InvoiceItemsSubReports.resx">
       <DependentUpon>InvoiceItemsSubReports.cs</DependentUpon>
