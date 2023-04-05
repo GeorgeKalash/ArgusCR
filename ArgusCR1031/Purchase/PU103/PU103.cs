@@ -9,7 +9,7 @@ using System.Drawing.Printing;
 namespace ArgusCR1031.Purchase.PU103
 {
     public partial class PU103 : ArgusRPT.BaseReport
-    {
+    {      
         public PU103()
         {
             InitializeComponent();
@@ -56,6 +56,7 @@ namespace ArgusCR1031.Purchase.PU103
 
             base.OnBeforePrint(e);
         }
+
         protected override void labelsText()
         {
         }
