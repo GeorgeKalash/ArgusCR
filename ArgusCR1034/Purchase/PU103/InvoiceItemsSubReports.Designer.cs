@@ -1,5 +1,5 @@
 ﻿
-namespace ArgusCR1031.Purchase.PU103
+namespace ArgusCR1034.Purchase.PU103
 {
     partial class InvoiceItemsSubReports
     {

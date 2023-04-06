@@ -6,7 +6,7 @@ using System.ComponentModel;
 using System.Drawing;
 using System.Drawing.Printing;
 
-namespace ArgusCR1031.Purchase.PU103
+namespace ArgusCR1034.Purchase.PU103
 {
     public partial class PU103 : ArgusRPT.BaseReport
     {      
@@ -63,7 +63,7 @@ namespace ArgusCR1031.Purchase.PU103
 
         protected override string dictionaryStore()
         {
-            return "CR1031.PU103";
+            return "CR1034.PU103";
         }
     }
 }

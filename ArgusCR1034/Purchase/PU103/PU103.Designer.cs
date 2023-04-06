@@ -2,7 +2,7 @@
 using System;
 using System.Drawing.Printing;
 
-namespace ArgusCR1031.Purchase.PU103
+namespace ArgusCR1034.Purchase.PU103
 {
     partial class PU103
     {
@@ -154,7 +154,7 @@ namespace ArgusCR1031.Purchase.PU103
             // 
             this.InvoiceItemsSubReports.LocationFloat = new DevExpress.Utils.PointFloat(44.37501F, 0F);
             this.InvoiceItemsSubReports.Name = "InvoiceItemsSubReports";
-            this.InvoiceItemsSubReports.ReportSource = new ArgusCR1031.Purchase.PU103.InvoiceItemsSubReports();
+            this.InvoiceItemsSubReports.ReportSource = new ArgusCR1034.Purchase.PU103.InvoiceItemsSubReports();
             this.InvoiceItemsSubReports.SizeF = new System.Drawing.SizeF(737.2083F, 23F);
             // 
             // Detail
@@ -178,7 +178,7 @@ namespace ArgusCR1031.Purchase.PU103
             // 
             this.MetalSubReports.LocationFloat = new DevExpress.Utils.PointFloat(44.37502F, 12.5F);
             this.MetalSubReports.Name = "MetalSubReports";
-            this.MetalSubReports.ReportSource = new ArgusCR1031.Purchase.PU103.MetalSubReports();
+            this.MetalSubReports.ReportSource = new ArgusCR1034.Purchase.PU103.MetalSubReports();
             this.MetalSubReports.SizeF = new System.Drawing.SizeF(737.2084F, 23F);
             // 
             // TopMargin
