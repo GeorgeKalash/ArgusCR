@@ -30,8 +30,12 @@ namespace ArgusCR1034.Purchase.PU103
         {   SharedClasses.JsonProtocol.GetStructure<ArgusDS.Purchase.Reports.InvoicePrintLayout> webObject = deserializeGet<ArgusDS.Purchase.Reports.InvoicePrintLayout>();
 
             logo_data.ImageUrl = companyInfo.logoUrl;
+
             companyName_data.Text = companyInfo.name;
-            taxNo_data.Text = companyInfo.taxNo;
+            companyPhone_data.Text = companyInfo.address?.phone;
+            companyStreet_data.Text = companyInfo.address?.street1;
+            companyCity_data.Text = companyInfo.address?.city;
+            companyVatNo_data.Text = companyInfo.taxNo;
 
             siteRef_data.Text = webObject.record.header.siteRef;
             siteName_data.Text = webObject.record.header.siteName;
@@ -54,6 +58,7 @@ namespace ArgusCR1034.Purchase.PU103
             ((InvoiceItemsSubReports)(InvoiceItemsSubReports.ReportSource)).data = webObject.record.items;
             ((MetalSubReports)(MetalSubReports.ReportSource)).data = webObject.record.metals;
 
+            printSignature_lbl.Text = reportSignature();
             base.OnBeforePrint(e);
         }
 

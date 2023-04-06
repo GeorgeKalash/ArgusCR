@@ -144,12 +144,12 @@ namespace ArgusCR1034.POS.Templates.PS101GLD
             // 
             // TopMargin
             // 
-            this.TopMargin.HeightF = 63F;
+            this.TopMargin.HeightF = 23.41666F;
             this.TopMargin.Name = "TopMargin";
             // 
             // BottomMargin
             // 
-            this.BottomMargin.HeightF = 10F;
+            this.BottomMargin.HeightF = 0F;
             this.BottomMargin.Name = "BottomMargin";
             // 
             // ReportHeader
@@ -795,7 +795,7 @@ namespace ArgusCR1034.POS.Templates.PS101GLD
             this.clientSignature_lbl,
             this.spSignature_lbl,
             this.xrTable9});
-            this.ReportFooter.HeightF = 124.7291F;
+            this.ReportFooter.HeightF = 112.333F;
             this.ReportFooter.KeepTogether = true;
             this.ReportFooter.Name = "ReportFooter";
             // 
@@ -803,7 +803,7 @@ namespace ArgusCR1034.POS.Templates.PS101GLD
             // 
             this.clientSignature_lbl.BackColor = System.Drawing.Color.White;
             this.clientSignature_lbl.CanGrow = false;
-            this.clientSignature_lbl.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold);
+            this.clientSignature_lbl.Font = new System.Drawing.Font("Arial", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
             this.clientSignature_lbl.LocationFloat = new DevExpress.Utils.PointFloat(100F, 50F);
             this.clientSignature_lbl.Name = "clientSignature_lbl";
             this.clientSignature_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 4, 0, 100F);
@@ -820,7 +820,7 @@ namespace ArgusCR1034.POS.Templates.PS101GLD
             // 
             this.spSignature_lbl.BackColor = System.Drawing.Color.White;
             this.spSignature_lbl.CanGrow = false;
-            this.spSignature_lbl.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold);
+            this.spSignature_lbl.Font = new System.Drawing.Font("Arial", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
             this.spSignature_lbl.LocationFloat = new DevExpress.Utils.PointFloat(612.5F, 50F);
             this.spSignature_lbl.Name = "spSignature_lbl";
             this.spSignature_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 4, 0, 100F);
@@ -894,7 +894,7 @@ namespace ArgusCR1034.POS.Templates.PS101GLD
             this.PageFooter,
             this.ReportFooter});
             this.Font = new System.Drawing.Font("Arial", 9.75F);
-            this.Margins = new System.Drawing.Printing.Margins(0, 0, 63, 10);
+            this.Margins = new System.Drawing.Printing.Margins(0, 0, 23, 0);
             this.PageHeight = 1169;
             this.PageWidth = 827;
             this.PaperKind = System.Drawing.Printing.PaperKind.A4;

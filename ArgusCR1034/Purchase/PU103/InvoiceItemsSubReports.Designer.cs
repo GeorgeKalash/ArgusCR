@@ -134,11 +134,10 @@ namespace ArgusCR1034.Purchase.PU103
             // 
             // sku_data
             // 
-            this.sku_data.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
-            | DevExpress.XtraPrinting.BorderSide.Right) 
+            this.sku_data.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.sku_data.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[amount]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[extendedPrice]")});
             this.sku_data.Font = new System.Drawing.Font("Times New Roman", 8F);
             this.sku_data.Multiline = true;
             this.sku_data.Name = "sku_data";
@@ -153,8 +152,7 @@ namespace ArgusCR1034.Purchase.PU103
             // 
             // itemName_data
             // 
-            this.itemName_data.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
-            | DevExpress.XtraPrinting.BorderSide.Right) 
+            this.itemName_data.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.itemName_data.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[vatAmount]")});
@@ -173,11 +171,10 @@ namespace ArgusCR1034.Purchase.PU103
             // 
             // qty_data
             // 
-            this.qty_data.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
-            | DevExpress.XtraPrinting.BorderSide.Right) 
+            this.qty_data.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.qty_data.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[extendedPrice]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[unitPrice]*[qty]")});
             this.qty_data.Font = new System.Drawing.Font("Times New Roman", 8F);
             this.qty_data.Multiline = true;
             this.qty_data.Name = "qty_data";
@@ -193,8 +190,7 @@ namespace ArgusCR1034.Purchase.PU103
             // 
             // xrTableCell2
             // 
-            this.xrTableCell2.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
-            | DevExpress.XtraPrinting.BorderSide.Right) 
+            this.xrTableCell2.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell2.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[unitPrice]")});
@@ -212,8 +208,7 @@ namespace ArgusCR1034.Purchase.PU103
             // 
             // vtAmount_data
             // 
-            this.vtAmount_data.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
-            | DevExpress.XtraPrinting.BorderSide.Right) 
+            this.vtAmount_data.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.vtAmount_data.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[metalPurity]")});
@@ -232,8 +227,7 @@ namespace ArgusCR1034.Purchase.PU103
             // 
             // mdAmount_data
             // 
-            this.mdAmount_data.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
-            | DevExpress.XtraPrinting.BorderSide.Right) 
+            this.mdAmount_data.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.mdAmount_data.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[qty]")});
@@ -252,8 +246,7 @@ namespace ArgusCR1034.Purchase.PU103
             // 
             // extendedPrice_data
             // 
-            this.extendedPrice_data.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
-            | DevExpress.XtraPrinting.BorderSide.Right) 
+            this.extendedPrice_data.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.extendedPrice_data.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[itemName]")});
@@ -271,8 +264,7 @@ namespace ArgusCR1034.Purchase.PU103
             // 
             // notes_data
             // 
-            this.notes_data.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
-            | DevExpress.XtraPrinting.BorderSide.Right) 
+            this.notes_data.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.notes_data.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[sku]")});
@@ -290,8 +282,7 @@ namespace ArgusCR1034.Purchase.PU103
             // 
             // seqNo_data
             // 
-            this.seqNo_data.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
-            | DevExpress.XtraPrinting.BorderSide.Right) 
+            this.seqNo_data.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.seqNo_data.Font = new System.Drawing.Font("Times New Roman", 8F);
             this.seqNo_data.Multiline = true;
@@ -301,7 +292,6 @@ namespace ArgusCR1034.Purchase.PU103
             this.seqNo_data.StylePriority.UseFont = false;
             this.seqNo_data.StylePriority.UsePadding = false;
             this.seqNo_data.StylePriority.UseTextAlignment = false;
-            this.seqNo_data.Text = "seqNo";
             this.seqNo_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
             this.seqNo_data.Weight = 0.58501450473839556D;
             // 
@@ -705,9 +695,7 @@ namespace ArgusCR1034.Purchase.PU103
             // xrTableCell1
             // 
             this.xrTableCell1.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.xrTableCell1.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
-            | DevExpress.XtraPrinting.BorderSide.Right) 
-            | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.xrTableCell1.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.xrTableCell1.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold);
             this.xrTableCell1.Multiline = true;
             this.xrTableCell1.Name = "xrTableCell1";
@@ -744,15 +732,15 @@ namespace ArgusCR1034.Purchase.PU103
             // 
             // xrTableCell9
             // 
-            this.xrTableCell9.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
-            | DevExpress.XtraPrinting.BorderSide.Right) 
-            | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.xrTableCell9.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.xrTableCell9.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.xrTableCell9.CanGrow = false;
             this.xrTableCell9.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "sumSum([amount])")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "sumSum([extendedPrice])")});
             this.xrTableCell9.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold);
             this.xrTableCell9.Name = "xrTableCell9";
             this.xrTableCell9.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 6, 0, 100F);
+            this.xrTableCell9.StylePriority.UseBackColor = false;
             this.xrTableCell9.StylePriority.UseBorders = false;
             this.xrTableCell9.StylePriority.UseFont = false;
             this.xrTableCell9.StylePriority.UsePadding = false;
@@ -767,15 +755,15 @@ namespace ArgusCR1034.Purchase.PU103
             // 
             // xrTableCell8
             // 
-            this.xrTableCell8.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
-            | DevExpress.XtraPrinting.BorderSide.Right) 
-            | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.xrTableCell8.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.xrTableCell8.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.xrTableCell8.CanGrow = false;
             this.xrTableCell8.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "sumSum([vatAmount])")});
             this.xrTableCell8.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold);
             this.xrTableCell8.Name = "xrTableCell8";
             this.xrTableCell8.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 6, 0, 100F);
+            this.xrTableCell8.StylePriority.UseBackColor = false;
             this.xrTableCell8.StylePriority.UseBorders = false;
             this.xrTableCell8.StylePriority.UseFont = false;
             this.xrTableCell8.StylePriority.UsePadding = false;
@@ -790,15 +778,15 @@ namespace ArgusCR1034.Purchase.PU103
             // 
             // xrTableCell7
             // 
-            this.xrTableCell7.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
-            | DevExpress.XtraPrinting.BorderSide.Right) 
-            | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.xrTableCell7.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.xrTableCell7.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.xrTableCell7.CanGrow = false;
             this.xrTableCell7.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "sumSum([extendedPrice])")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "sumSum([unitPrice]*[qty])")});
             this.xrTableCell7.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold);
             this.xrTableCell7.Name = "xrTableCell7";
             this.xrTableCell7.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 6, 0, 100F);
+            this.xrTableCell7.StylePriority.UseBackColor = false;
             this.xrTableCell7.StylePriority.UseBorders = false;
             this.xrTableCell7.StylePriority.UseFont = false;
             this.xrTableCell7.StylePriority.UsePadding = false;
@@ -813,15 +801,15 @@ namespace ArgusCR1034.Purchase.PU103
             // 
             // xrTableCell5
             // 
-            this.xrTableCell5.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
-            | DevExpress.XtraPrinting.BorderSide.Right) 
-            | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.xrTableCell5.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.xrTableCell5.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.xrTableCell5.CanGrow = false;
             this.xrTableCell5.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "sumSum([unitPrice])")});
             this.xrTableCell5.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold);
             this.xrTableCell5.Name = "xrTableCell5";
             this.xrTableCell5.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 6, 0, 100F);
+            this.xrTableCell5.StylePriority.UseBackColor = false;
             this.xrTableCell5.StylePriority.UseBorders = false;
             this.xrTableCell5.StylePriority.UseFont = false;
             this.xrTableCell5.StylePriority.UsePadding = false;
@@ -836,15 +824,15 @@ namespace ArgusCR1034.Purchase.PU103
             // 
             // xrTableCell3
             // 
-            this.xrTableCell3.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
-            | DevExpress.XtraPrinting.BorderSide.Right) 
-            | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.xrTableCell3.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.xrTableCell3.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.xrTableCell3.CanGrow = false;
             this.xrTableCell3.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "sumSum([metalPurity])")});
             this.xrTableCell3.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold);
             this.xrTableCell3.Name = "xrTableCell3";
             this.xrTableCell3.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 6, 0, 100F);
+            this.xrTableCell3.StylePriority.UseBackColor = false;
             this.xrTableCell3.StylePriority.UseBorders = false;
             this.xrTableCell3.StylePriority.UseFont = false;
             this.xrTableCell3.StylePriority.UsePadding = false;
@@ -859,14 +847,15 @@ namespace ArgusCR1034.Purchase.PU103
             // 
             // xrTableCell6
             // 
-            this.xrTableCell6.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
-            | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.xrTableCell6.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.xrTableCell6.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.xrTableCell6.CanGrow = false;
             this.xrTableCell6.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "sumSum([qty])")});
             this.xrTableCell6.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold);
             this.xrTableCell6.Name = "xrTableCell6";
             this.xrTableCell6.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 6, 0, 100F);
+            this.xrTableCell6.StylePriority.UseBackColor = false;
             this.xrTableCell6.StylePriority.UseBorders = false;
             this.xrTableCell6.StylePriority.UseFont = false;
             this.xrTableCell6.StylePriority.UsePadding = false;
