@@ -131,13 +131,13 @@ namespace ArgusCR1034.POS.Templates.PS101GLD
             // 
             this.InvoiceReceiptSubBand.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
             this.InvoiceReceiptSubReports});
-            this.InvoiceReceiptSubBand.HeightF = 23F;
+            this.InvoiceReceiptSubBand.HeightF = 33.00001F;
             this.InvoiceReceiptSubBand.KeepTogether = true;
             this.InvoiceReceiptSubBand.Name = "InvoiceReceiptSubBand";
             // 
             // InvoiceReceiptSubReports
             // 
-            this.InvoiceReceiptSubReports.LocationFloat = new DevExpress.Utils.PointFloat(55.20833F, 0F);
+            this.InvoiceReceiptSubReports.LocationFloat = new DevExpress.Utils.PointFloat(55.20797F, 10.00001F);
             this.InvoiceReceiptSubReports.Name = "InvoiceReceiptSubReports";
             this.InvoiceReceiptSubReports.ReportSource = new ArgusCR1034.POS.Templates.PS101GLD.InvoiceReceiptSubReports();
             this.InvoiceReceiptSubReports.SizeF = new System.Drawing.SizeF(714.5416F, 23F);
