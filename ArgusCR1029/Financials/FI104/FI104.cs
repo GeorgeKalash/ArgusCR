@@ -35,12 +35,14 @@ namespace ArgusCR1029.Financials.FI104
 
             reference_data.Text = webObject.record.header.reference;
             date_data.Text = webObject.record.header.date.ToString("dd/MM/yyyy");
+            plantName_data.Text = webObject.record.header.plantName;
             siteName_data.Text = webObject.record.header.siteName;
-            pName_data.Text = webObject.record.header.plantName;
 
 
             accountRef_data.Text = webObject.record.header.accountRef;
             accountName_data.Text = webObject.record.header.accountName;
+
+            description_data.Text = webObject.record.header.description;
             base.OnBeforePrint(e);
         }
 

@@ -19,15 +19,6 @@ namespace ArgusCR1029.CashAndBanks
             SharedClasses.JsonProtocol.GetStructure<ArgusDS.Cash.Reports.CA101> obj = deserializeGet<ArgusDS.Cash.Reports.CA101>();
 
             logo_data.ImageUrl = companyInfo.logoUrl;
-            companyInfoName_data.Text = companyInfo.name;
-            taxNo_data.Text = companyInfo.taxNo;
-            if (companyInfo.address != null)
-            {
-                addressName_data.Text = companyInfo.address.name;
-                addressStreet_data.Text = companyInfo.address.street1;
-                addressMobile_data.Text = companyInfo.address.phone;
-                addressEmail_data.Text = companyInfo.address.email1;
-            }
 
             dtName_data.Text = obj.record.dtName;
             reference_data.Text = obj.record.reference;
@@ -44,7 +35,6 @@ namespace ArgusCR1029.CashAndBanks
             base.OnBeforePrint(e);
 
         }
-
         protected override void labelsText()
         {
             Transfers_lbl.Text = labelText(0);
