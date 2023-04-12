@@ -32,37 +32,20 @@ namespace ArgusCR1029.Financials.FI104
             ((MetalSubReports)(MetalSubReports.ReportSource)).data = webObject.record.metalSummaries;
 
             logo_data.ImageUrl = companyInfo.logoUrl;
-            companyInfoName_data.Text = companyInfo.name;
 
-            dtName_data.Text = webObject.record.header.dtName;
-            function_data.Text = webObject.record.header.functionName;
             reference_data.Text = webObject.record.header.reference;
             date_data.Text = webObject.record.header.date.ToString("dd/MM/yyyy");
-
-            plantRef_data.Text = webObject.record.header.plantRef;
-            plantName_data.Text = webObject.record.header.plantName;
-            siteRef_data.Text = webObject.record.header.siteRef;
             siteName_data.Text = webObject.record.header.siteName;
+            pName_data.Text = webObject.record.header.plantName;
+
+
             accountRef_data.Text = webObject.record.header.accountRef;
             accountName_data.Text = webObject.record.header.accountName;
-            description_data.Text = webObject.record.header.description;
-
-            printSignature.Text = reportSignature();
             base.OnBeforePrint(e);
         }
 
         protected override void labelsText()
         {
-            metalTransactions_lbl.Text = labelText(0);
-
-            dtName_lbl.Text = labelText(1);
-            function_lbl.Text = labelText(2);
-            reference_lbl.Text = labelText(3);
-            date_lbl.Text = labelText(4);
-            plant_lbl.Text = labelText(5);
-            site_lbl.Text = labelText(6);
-            account_lbl.Text = labelText(7);
-            description_lbl.Text = labelText(8);
         }
 
         protected override string dictionaryStore()

@@ -54,14 +54,14 @@ namespace ArgusCR1029.Sales.SA108
             // 
             // BottomMargin
             // 
-            this.BottomMargin.HeightF = 0F;
+            this.BottomMargin.HeightF = 1.041667F;
             this.BottomMargin.Name = "BottomMargin";
             // 
             // Detail
             // 
             this.Detail.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
             this.xrTable2});
-            this.Detail.HeightF = 24.9F;
+            this.Detail.HeightF = 23.01668F;
             this.Detail.KeepTogether = true;
             this.Detail.Name = "Detail";
             // 
@@ -76,7 +76,7 @@ namespace ArgusCR1029.Sales.SA108
             this.xrTable2.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable2.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow2});
-            this.xrTable2.SizeF = new System.Drawing.SizeF(272.275F, 24.9F);
+            this.xrTable2.SizeF = new System.Drawing.SizeF(272.275F, 23.01668F);
             this.xrTable2.StylePriority.UseBorders = false;
             this.xrTable2.StylePriority.UseBorderWidth = false;
             this.xrTable2.StylePriority.UseTextAlignment = false;
@@ -146,7 +146,7 @@ namespace ArgusCR1029.Sales.SA108
             // 
             this.PageHeader.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
             this.xrTable1});
-            this.PageHeader.HeightF = 24.9F;
+            this.PageHeader.HeightF = 21.77499F;
             this.PageHeader.Name = "PageHeader";
             // 
             // xrTable1
@@ -160,7 +160,7 @@ namespace ArgusCR1029.Sales.SA108
             this.xrTable1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable1.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow5});
-            this.xrTable1.SizeF = new System.Drawing.SizeF(272.275F, 24.9F);
+            this.xrTable1.SizeF = new System.Drawing.SizeF(272.275F, 21.77499F);
             this.xrTable1.StylePriority.UseBorders = false;
             this.xrTable1.StylePriority.UseBorderWidth = false;
             this.xrTable1.StylePriority.UseTextAlignment = false;
@@ -234,7 +234,7 @@ namespace ArgusCR1029.Sales.SA108
             this.Detail,
             this.PageHeader});
             this.Font = new System.Drawing.Font("Arial", 9.75F);
-            this.Margins = new System.Drawing.Printing.Margins(0, 48, 0, 0);
+            this.Margins = new System.Drawing.Printing.Margins(0, 48, 0, 1);
             this.PageHeight = 1169;
             this.PageWidth = 827;
             this.PaperKind = System.Drawing.Printing.PaperKind.A4;

@@ -66,8 +66,6 @@ namespace ArgusCR1029.Sales.SA106
             this.xrTableRow7 = new DevExpress.XtraReports.UI.XRTableRow();
             this.salesPerson_lbl = new DevExpress.XtraReports.UI.XRTableCell();
             this.salesPerson_data = new DevExpress.XtraReports.UI.XRTableCell();
-            this.xrTableRow1 = new DevExpress.XtraReports.UI.XRTableRow();
-            this.clientName_data = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTable1 = new DevExpress.XtraReports.UI.XRTable();
             this.xrTableRow2 = new DevExpress.XtraReports.UI.XRTableRow();
             this.dtName_lbl = new DevExpress.XtraReports.UI.XRTableCell();
@@ -78,15 +76,21 @@ namespace ArgusCR1029.Sales.SA106
             this.xrTableRow4 = new DevExpress.XtraReports.UI.XRTableRow();
             this.date_lbl = new DevExpress.XtraReports.UI.XRTableCell();
             this.date_data = new DevExpress.XtraReports.UI.XRTableCell();
+            this.logo_data = new DevExpress.XtraReports.UI.XRPictureBox();
+            this.taxInvoice_lbl = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrTable2 = new DevExpress.XtraReports.UI.XRTable();
+            this.xrTableRow15 = new DevExpress.XtraReports.UI.XRTableRow();
+            this.clientName_data = new DevExpress.XtraReports.UI.XRTableCell();
+            this.xrTable4 = new DevExpress.XtraReports.UI.XRTable();
             this.xrTableRow11 = new DevExpress.XtraReports.UI.XRTableRow();
             this.client_lbl = new DevExpress.XtraReports.UI.XRTableCell();
             this.clientRef_data = new DevExpress.XtraReports.UI.XRTableCell();
-            this.title_lbl = new DevExpress.XtraReports.UI.XRLabel();
-            this.logo_data = new DevExpress.XtraReports.UI.XRPictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.xrTable2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.xrTable4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             // 
             // InvoiceItemSubBand
@@ -132,12 +136,12 @@ namespace ArgusCR1029.Sales.SA106
             // 
             // TopMargin
             // 
-            this.TopMargin.HeightF = 30F;
+            this.TopMargin.HeightF = 0F;
             this.TopMargin.Name = "TopMargin";
             // 
             // BottomMargin
             // 
-            this.BottomMargin.HeightF = 10F;
+            this.BottomMargin.HeightF = 0F;
             this.BottomMargin.Name = "BottomMargin";
             // 
             // ReportFooter
@@ -145,7 +149,7 @@ namespace ArgusCR1029.Sales.SA106
             this.ReportFooter.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
             this.xrTable5,
             this.xrTable6});
-            this.ReportFooter.HeightF = 87.5F;
+            this.ReportFooter.HeightF = 77.49996F;
             this.ReportFooter.KeepTogether = true;
             this.ReportFooter.Name = "ReportFooter";
             // 
@@ -154,14 +158,14 @@ namespace ArgusCR1029.Sales.SA106
             this.xrTable5.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right)));
             this.xrTable5.Font = new System.Drawing.Font("Times New Roman", 9F);
-            this.xrTable5.LocationFloat = new DevExpress.Utils.PointFloat(532.5516F, 12.5F);
+            this.xrTable5.LocationFloat = new DevExpress.Utils.PointFloat(500.2599F, 12.5F);
             this.xrTable5.Name = "xrTable5";
             this.xrTable5.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable5.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow8,
             this.xrTableRow12,
             this.xrTableRow13});
-            this.xrTable5.SizeF = new System.Drawing.SizeF(287.4483F, 75F);
+            this.xrTable5.SizeF = new System.Drawing.SizeF(319.74F, 64.99996F);
             this.xrTable5.StylePriority.UseBorders = false;
             this.xrTable5.StylePriority.UseFont = false;
             this.xrTable5.StylePriority.UseTextAlignment = false;
@@ -196,7 +200,7 @@ namespace ArgusCR1029.Sales.SA106
             this.subtotal_data.StylePriority.UseTextAlignment = false;
             this.subtotal_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             this.subtotal_data.TextFormatString = "{0:n2}";
-            this.subtotal_data.Weight = 6.0702497799630333D;
+            this.subtotal_data.Weight = 5.7755913129841616D;
             // 
             // xrTableCell1
             // 
@@ -214,9 +218,9 @@ namespace ArgusCR1029.Sales.SA106
             this.xrTableCell1.StylePriority.UseFont = false;
             this.xrTableCell1.StylePriority.UsePadding = false;
             this.xrTableCell1.StylePriority.UseTextAlignment = false;
-            this.xrTableCell1.Text = "مبلغ الإجمالي";
+            this.xrTableCell1.Text = "اجمالى اجور بدون الضريبة";
             this.xrTableCell1.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
-            this.xrTableCell1.Weight = 3.351144480333947D;
+            this.xrTableCell1.Weight = 3.6458029473128186D;
             // 
             // xrTableRow12
             // 
@@ -247,7 +251,7 @@ namespace ArgusCR1029.Sales.SA106
             this.vat_data.StylePriority.UseTextAlignment = false;
             this.vat_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             this.vat_data.TextFormatString = "{0:n2}";
-            this.vat_data.Weight = 6.0702497799630333D;
+            this.vat_data.Weight = 5.7755895145343485D;
             // 
             // xrTableCell2
             // 
@@ -265,9 +269,9 @@ namespace ArgusCR1029.Sales.SA106
             this.xrTableCell2.StylePriority.UseFont = false;
             this.xrTableCell2.StylePriority.UsePadding = false;
             this.xrTableCell2.StylePriority.UseTextAlignment = false;
-            this.xrTableCell2.Text = "الضريبة";
+            this.xrTableCell2.Text = "مبلغ الضريبه";
             this.xrTableCell2.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
-            this.xrTableCell2.Weight = 3.351144480333947D;
+            this.xrTableCell2.Weight = 3.6458047457626312D;
             // 
             // xrTableRow13
             // 
@@ -299,7 +303,7 @@ namespace ArgusCR1029.Sales.SA106
             this.total_data.StylePriority.UseTextAlignment = false;
             this.total_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             this.total_data.TextFormatString = "{0:n2}";
-            this.total_data.Weight = 6.0702497799630333D;
+            this.total_data.Weight = 5.7755877160845355D;
             // 
             // xrTableCell3
             // 
@@ -318,9 +322,9 @@ namespace ArgusCR1029.Sales.SA106
             this.xrTableCell3.StylePriority.UseFont = false;
             this.xrTableCell3.StylePriority.UsePadding = false;
             this.xrTableCell3.StylePriority.UseTextAlignment = false;
-            this.xrTableCell3.Text = "المجموع";
+            this.xrTableCell3.Text = "اجمالى الاجور مع الضريبه";
             this.xrTableCell3.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
-            this.xrTableCell3.Weight = 3.351144480333947D;
+            this.xrTableCell3.Weight = 3.6458065442124443D;
             // 
             // xrTable6
             // 
@@ -383,32 +387,33 @@ namespace ArgusCR1029.Sales.SA106
             this.description_lbl.StylePriority.UseFont = false;
             this.description_lbl.StylePriority.UsePadding = false;
             this.description_lbl.StylePriority.UseTextAlignment = false;
-            this.description_lbl.Text = "الوصف";
+            this.description_lbl.Text = "الملاحظات";
             this.description_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             this.description_lbl.Weight = 0.86269385607648275D;
             // 
             // ReportHeader
             // 
             this.ReportHeader.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+            this.xrTable4,
+            this.xrTable2,
+            this.taxInvoice_lbl,
+            this.logo_data,
             this.xrTable3,
-            this.xrTable1,
-            this.title_lbl,
-            this.logo_data});
-            this.ReportHeader.HeightF = 311.4225F;
+            this.xrTable1});
+            this.ReportHeader.HeightF = 246.8391F;
             this.ReportHeader.KeepTogether = true;
             this.ReportHeader.Name = "ReportHeader";
             // 
             // xrTable3
             // 
-            this.xrTable3.LocationFloat = new DevExpress.Utils.PointFloat(399.4815F, 175F);
+            this.xrTable3.LocationFloat = new DevExpress.Utils.PointFloat(426.5239F, 147.0833F);
             this.xrTable3.Name = "xrTable3";
             this.xrTable3.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable3.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow5,
             this.xrTableRow6,
-            this.xrTableRow7,
-            this.xrTableRow1});
-            this.xrTable3.SizeF = new System.Drawing.SizeF(420.5184F, 118.0556F);
+            this.xrTableRow7});
+            this.xrTable3.SizeF = new System.Drawing.SizeF(393.4761F, 66.40628F);
             // 
             // xrTableRow5
             // 
@@ -434,7 +439,7 @@ namespace ArgusCR1029.Sales.SA106
             this.site_lbl.StylePriority.UseFont = false;
             this.site_lbl.StylePriority.UsePadding = false;
             this.site_lbl.Text = "الموقع";
-            this.site_lbl.Weight = 0.72499983406070689D;
+            this.site_lbl.Weight = 0.50842533086277208D;
             // 
             // siteRef_data
             // 
@@ -447,7 +452,7 @@ namespace ArgusCR1029.Sales.SA106
             this.siteRef_data.StylePriority.UseBackColor = false;
             this.siteRef_data.StylePriority.UseBorders = false;
             this.siteRef_data.StylePriority.UsePadding = false;
-            this.siteRef_data.Weight = 0.46647451667385809D;
+            this.siteRef_data.Weight = 0.6830490198717929D;
             // 
             // siteName_data
             // 
@@ -460,7 +465,7 @@ namespace ArgusCR1029.Sales.SA106
             this.siteName_data.StylePriority.UseBackColor = false;
             this.siteName_data.StylePriority.UseBorders = false;
             this.siteName_data.StylePriority.UsePadding = false;
-            this.siteName_data.Weight = 0.808525649265435D;
+            this.siteName_data.Weight = 0.9486792744764887D;
             // 
             // xrTableRow6
             // 
@@ -485,7 +490,7 @@ namespace ArgusCR1029.Sales.SA106
             this.currency_lbl.StylePriority.UseFont = false;
             this.currency_lbl.StylePriority.UsePadding = false;
             this.currency_lbl.Text = "العملة";
-            this.currency_lbl.Weight = 0.72499983406070689D;
+            this.currency_lbl.Weight = 0.50842563878793889D;
             // 
             // currency_data
             // 
@@ -499,7 +504,7 @@ namespace ArgusCR1029.Sales.SA106
             this.currency_data.StylePriority.UseBackColor = false;
             this.currency_data.StylePriority.UseBorders = false;
             this.currency_data.StylePriority.UsePadding = false;
-            this.currency_data.Weight = 1.2750001659392931D;
+            this.currency_data.Weight = 1.6317279864231149D;
             // 
             // xrTableRow7
             // 
@@ -524,7 +529,7 @@ namespace ArgusCR1029.Sales.SA106
             this.salesPerson_lbl.StylePriority.UseFont = false;
             this.salesPerson_lbl.StylePriority.UsePadding = false;
             this.salesPerson_lbl.Text = "مندوب المبيعات";
-            this.salesPerson_lbl.Weight = 0.72499983406070689D;
+            this.salesPerson_lbl.Weight = 0.50842528687346256D;
             // 
             // salesPerson_data
             // 
@@ -538,39 +543,18 @@ namespace ArgusCR1029.Sales.SA106
             this.salesPerson_data.StylePriority.UseBackColor = false;
             this.salesPerson_data.StylePriority.UseBorders = false;
             this.salesPerson_data.StylePriority.UsePadding = false;
-            this.salesPerson_data.Weight = 1.2750001659392931D;
-            // 
-            // xrTableRow1
-            // 
-            this.xrTableRow1.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
-            this.clientName_data});
-            this.xrTableRow1.Name = "xrTableRow1";
-            this.xrTableRow1.Weight = 1D;
-            // 
-            // clientName_data
-            // 
-            this.clientName_data.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.clientName_data.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Top | DevExpress.XtraPrinting.BorderSide.Right) 
-            | DevExpress.XtraPrinting.BorderSide.Bottom)));
-            this.clientName_data.Multiline = true;
-            this.clientName_data.Name = "clientName_data";
-            this.clientName_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(4, 2, 4, 0, 100F);
-            this.clientName_data.StylePriority.UseBackColor = false;
-            this.clientName_data.StylePriority.UseBorders = false;
-            this.clientName_data.StylePriority.UsePadding = false;
-            this.clientName_data.Weight = 2D;
+            this.salesPerson_data.Weight = 1.6317283383375913D;
             // 
             // xrTable1
             // 
-            this.xrTable1.LocationFloat = new DevExpress.Utils.PointFloat(9.999998F, 175F);
+            this.xrTable1.LocationFloat = new DevExpress.Utils.PointFloat(12.5F, 147.0833F);
             this.xrTable1.Name = "xrTable1";
             this.xrTable1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable1.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow2,
             this.xrTableRow3,
-            this.xrTableRow4,
-            this.xrTableRow11});
-            this.xrTable1.SizeF = new System.Drawing.SizeF(389.4815F, 118.0556F);
+            this.xrTableRow4});
+            this.xrTable1.SizeF = new System.Drawing.SizeF(380.2962F, 66.40628F);
             // 
             // xrTableRow2
             // 
@@ -595,7 +579,7 @@ namespace ArgusCR1029.Sales.SA106
             this.dtName_lbl.StylePriority.UseFont = false;
             this.dtName_lbl.StylePriority.UsePadding = false;
             this.dtName_lbl.Text = "نوع الوثيقة";
-            this.dtName_lbl.Weight = 0.77440406290924713D;
+            this.dtName_lbl.Weight = 0.45573236651609256D;
             // 
             // dtName_data
             // 
@@ -609,7 +593,7 @@ namespace ArgusCR1029.Sales.SA106
             this.dtName_data.StylePriority.UseBackColor = false;
             this.dtName_data.StylePriority.UseBorders = false;
             this.dtName_data.StylePriority.UsePadding = false;
-            this.dtName_data.Weight = 1.225595937090753D;
+            this.dtName_data.Weight = 1.7026925434302858D;
             // 
             // xrTableRow3
             // 
@@ -634,7 +618,7 @@ namespace ArgusCR1029.Sales.SA106
             this.reference_lbl.StylePriority.UseFont = false;
             this.reference_lbl.StylePriority.UsePadding = false;
             this.reference_lbl.Text = "المرجع";
-            this.reference_lbl.Weight = 0.774404062909247D;
+            this.reference_lbl.Weight = 0.45573236651609245D;
             // 
             // reference_data
             // 
@@ -648,7 +632,7 @@ namespace ArgusCR1029.Sales.SA106
             this.reference_data.StylePriority.UseBackColor = false;
             this.reference_data.StylePriority.UseBorders = false;
             this.reference_data.StylePriority.UsePadding = false;
-            this.reference_data.Weight = 1.225595937090753D;
+            this.reference_data.Weight = 1.7026925434302858D;
             // 
             // xrTableRow4
             // 
@@ -673,7 +657,7 @@ namespace ArgusCR1029.Sales.SA106
             this.date_lbl.StylePriority.UseFont = false;
             this.date_lbl.StylePriority.UsePadding = false;
             this.date_lbl.Text = "تاريخ النشر";
-            this.date_lbl.Weight = 0.774404062909247D;
+            this.date_lbl.Weight = 0.45573236651609245D;
             // 
             // date_data
             // 
@@ -687,7 +671,74 @@ namespace ArgusCR1029.Sales.SA106
             this.date_data.StylePriority.UseBackColor = false;
             this.date_data.StylePriority.UseBorders = false;
             this.date_data.StylePriority.UsePadding = false;
-            this.date_data.Weight = 1.225595937090753D;
+            this.date_data.Weight = 1.7026925434302858D;
+            // 
+            // logo_data
+            // 
+            this.logo_data.LocationFloat = new DevExpress.Utils.PointFloat(10.00001F, 0F);
+            this.logo_data.Name = "logo_data";
+            this.logo_data.SizeF = new System.Drawing.SizeF(136.46F, 114.58F);
+            this.logo_data.Sizing = DevExpress.XtraPrinting.ImageSizeMode.ZoomImage;
+            // 
+            // taxInvoice_lbl
+            // 
+            this.taxInvoice_lbl.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.taxInvoice_lbl.BorderDashStyle = DevExpress.XtraPrinting.BorderDashStyle.Double;
+            this.taxInvoice_lbl.Borders = DevExpress.XtraPrinting.BorderSide.None;
+            this.taxInvoice_lbl.BorderWidth = 1F;
+            this.taxInvoice_lbl.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Bold);
+            this.taxInvoice_lbl.LocationFloat = new DevExpress.Utils.PointFloat(12.5F, 125F);
+            this.taxInvoice_lbl.Multiline = true;
+            this.taxInvoice_lbl.Name = "taxInvoice_lbl";
+            this.taxInvoice_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 2, 0, 100F);
+            this.taxInvoice_lbl.SizeF = new System.Drawing.SizeF(807.5F, 22.08336F);
+            this.taxInvoice_lbl.StylePriority.UseBackColor = false;
+            this.taxInvoice_lbl.StylePriority.UseBorderDashStyle = false;
+            this.taxInvoice_lbl.StylePriority.UseBorders = false;
+            this.taxInvoice_lbl.StylePriority.UseBorderWidth = false;
+            this.taxInvoice_lbl.StylePriority.UseFont = false;
+            this.taxInvoice_lbl.StylePriority.UsePadding = false;
+            this.taxInvoice_lbl.StylePriority.UseTextAlignment = false;
+            this.taxInvoice_lbl.Text = "درافت فاتورة بالسريال";
+            this.taxInvoice_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopCenter;
+            // 
+            // xrTable2
+            // 
+            this.xrTable2.LocationFloat = new DevExpress.Utils.PointFloat(185.9398F, 213.4896F);
+            this.xrTable2.Name = "xrTable2";
+            this.xrTable2.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
+            this.xrTable2.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
+            this.xrTableRow15});
+            this.xrTable2.SizeF = new System.Drawing.SizeF(206.8563F, 22.13542F);
+            // 
+            // xrTableRow15
+            // 
+            this.xrTableRow15.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
+            this.clientName_data});
+            this.xrTableRow15.Name = "xrTableRow15";
+            this.xrTableRow15.Weight = 1D;
+            // 
+            // clientName_data
+            // 
+            this.clientName_data.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.clientName_data.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Top | DevExpress.XtraPrinting.BorderSide.Right) 
+            | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.clientName_data.Multiline = true;
+            this.clientName_data.Name = "clientName_data";
+            this.clientName_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(4, 2, 4, 0, 100F);
+            this.clientName_data.StylePriority.UseBackColor = false;
+            this.clientName_data.StylePriority.UseBorders = false;
+            this.clientName_data.StylePriority.UsePadding = false;
+            this.clientName_data.Weight = 2D;
+            // 
+            // xrTable4
+            // 
+            this.xrTable4.LocationFloat = new DevExpress.Utils.PointFloat(12.5F, 213.4896F);
+            this.xrTable4.Name = "xrTable4";
+            this.xrTable4.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
+            this.xrTable4.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
+            this.xrTableRow11});
+            this.xrTable4.SizeF = new System.Drawing.SizeF(173.4398F, 22.13543F);
             // 
             // xrTableRow11
             // 
@@ -712,7 +763,7 @@ namespace ArgusCR1029.Sales.SA106
             this.client_lbl.StylePriority.UseFont = false;
             this.client_lbl.StylePriority.UsePadding = false;
             this.client_lbl.Text = "العميل";
-            this.client_lbl.Weight = 0.774404062909247D;
+            this.client_lbl.Weight = 0.41498720359412627D;
             // 
             // clientRef_data
             // 
@@ -725,36 +776,7 @@ namespace ArgusCR1029.Sales.SA106
             this.clientRef_data.StylePriority.UseBackColor = false;
             this.clientRef_data.StylePriority.UseBorders = false;
             this.clientRef_data.StylePriority.UsePadding = false;
-            this.clientRef_data.Weight = 1.225595937090753D;
-            // 
-            // title_lbl
-            // 
-            this.title_lbl.BackColor = System.Drawing.Color.Black;
-            this.title_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
-            | DevExpress.XtraPrinting.BorderSide.Right) 
-            | DevExpress.XtraPrinting.BorderSide.Bottom)));
-            this.title_lbl.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold);
-            this.title_lbl.ForeColor = System.Drawing.Color.White;
-            this.title_lbl.LocationFloat = new DevExpress.Utils.PointFloat(9.999998F, 137.5F);
-            this.title_lbl.Multiline = true;
-            this.title_lbl.Name = "title_lbl";
-            this.title_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 7, 0, 100F);
-            this.title_lbl.SizeF = new System.Drawing.SizeF(810F, 37.5F);
-            this.title_lbl.StylePriority.UseBackColor = false;
-            this.title_lbl.StylePriority.UseBorders = false;
-            this.title_lbl.StylePriority.UseFont = false;
-            this.title_lbl.StylePriority.UseForeColor = false;
-            this.title_lbl.StylePriority.UsePadding = false;
-            this.title_lbl.StylePriority.UseTextAlignment = false;
-            this.title_lbl.Text = "درافت فاتورة بالسريال";
-            this.title_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopCenter;
-            // 
-            // logo_data
-            // 
-            this.logo_data.LocationFloat = new DevExpress.Utils.PointFloat(9.999998F, 0F);
-            this.logo_data.Name = "logo_data";
-            this.logo_data.SizeF = new System.Drawing.SizeF(297.7083F, 123.9583F);
-            this.logo_data.Sizing = DevExpress.XtraPrinting.ImageSizeMode.ZoomImage;
+            this.clientRef_data.Weight = 0.48138556150058676D;
             // 
             // SA106
             // 
@@ -765,7 +787,7 @@ namespace ArgusCR1029.Sales.SA106
             this.ReportFooter,
             this.ReportHeader});
             this.Font = new System.Drawing.Font("Arial", 9.75F);
-            this.Margins = new System.Drawing.Printing.Margins(0, 0, 30, 10);
+            this.Margins = new System.Drawing.Printing.Margins(0, 0, 0, 0);
             this.PageHeight = 1169;
             this.PageWidth = 827;
             this.PaperKind = System.Drawing.Printing.PaperKind.A4;
@@ -774,6 +796,8 @@ namespace ArgusCR1029.Sales.SA106
             ((System.ComponentModel.ISupportInitialize)(this.xrTable6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.xrTable2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.xrTable4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
 
         }
@@ -789,7 +813,6 @@ namespace ArgusCR1029.Sales.SA106
         private DevExpress.XtraReports.UI.DetailBand Detail;
         private DevExpress.XtraReports.UI.SubBand InvoiceItemSubBand;
         private DevExpress.XtraReports.UI.ReportHeaderBand ReportHeader;
-        private DevExpress.XtraReports.UI.XRPictureBox logo_data;
         private DevExpress.XtraReports.UI.XRTable xrTable3;
         private DevExpress.XtraReports.UI.XRTableRow xrTableRow5;
         private DevExpress.XtraReports.UI.XRTableCell site_lbl;
@@ -801,8 +824,6 @@ namespace ArgusCR1029.Sales.SA106
         private DevExpress.XtraReports.UI.XRTableRow xrTableRow7;
         private DevExpress.XtraReports.UI.XRTableCell salesPerson_lbl;
         private DevExpress.XtraReports.UI.XRTableCell salesPerson_data;
-        private DevExpress.XtraReports.UI.XRTableRow xrTableRow1;
-        private DevExpress.XtraReports.UI.XRTableCell clientName_data;
         private DevExpress.XtraReports.UI.XRTable xrTable1;
         private DevExpress.XtraReports.UI.XRTableRow xrTableRow2;
         private DevExpress.XtraReports.UI.XRTableCell dtName_lbl;
@@ -813,10 +834,6 @@ namespace ArgusCR1029.Sales.SA106
         private DevExpress.XtraReports.UI.XRTableRow xrTableRow4;
         private DevExpress.XtraReports.UI.XRTableCell date_lbl;
         private DevExpress.XtraReports.UI.XRTableCell date_data;
-        private DevExpress.XtraReports.UI.XRTableRow xrTableRow11;
-        private DevExpress.XtraReports.UI.XRTableCell client_lbl;
-        private DevExpress.XtraReports.UI.XRTableCell clientRef_data;
-        private DevExpress.XtraReports.UI.XRLabel title_lbl;
         private DevExpress.XtraReports.UI.XRTable xrTable5;
         private DevExpress.XtraReports.UI.XRTableRow xrTableRow8;
         private DevExpress.XtraReports.UI.XRTableCell subtotal_data;
@@ -831,5 +848,14 @@ namespace ArgusCR1029.Sales.SA106
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell2;
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell3;
         private DevExpress.XtraReports.UI.XRTableCell description_lbl;
+        private DevExpress.XtraReports.UI.XRPictureBox logo_data;
+        private DevExpress.XtraReports.UI.XRLabel taxInvoice_lbl;
+        private DevExpress.XtraReports.UI.XRTable xrTable2;
+        private DevExpress.XtraReports.UI.XRTableRow xrTableRow15;
+        private DevExpress.XtraReports.UI.XRTableCell clientName_data;
+        private DevExpress.XtraReports.UI.XRTable xrTable4;
+        private DevExpress.XtraReports.UI.XRTableRow xrTableRow11;
+        private DevExpress.XtraReports.UI.XRTableCell client_lbl;
+        private DevExpress.XtraReports.UI.XRTableCell clientRef_data;
     }
 }

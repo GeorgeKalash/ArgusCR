@@ -28,17 +28,10 @@ namespace ArgusCR1029.Financials.FI104
         }
         protected override void labelsText()
         {
-            metal_lbl.Text = labelText(0);
-            sku_lbl.Text = labelText(1);
-            itemName_lbl.Text = labelText(2);
-            purity_lbl.Text = labelText(3);
-            qty_lbl.Text = labelText(4);
-            labor_lbl.Text = labelText(5);
-            totalLabor_lbl.Text = labelText(6);
         }
         protected override string dictionaryStore()
         {
-            return "CR1029.FI104.IT";
+            return "CR1029.FI104";
         }
     }
 }

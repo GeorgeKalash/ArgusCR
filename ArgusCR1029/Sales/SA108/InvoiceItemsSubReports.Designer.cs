@@ -208,7 +208,7 @@ namespace ArgusCR1029.Sales.SA108
             // 
             this.PageHeader.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
             this.xrTable6});
-            this.PageHeader.HeightF = 28.74962F;
+            this.PageHeader.HeightF = 24.58296F;
             this.PageHeader.Name = "PageHeader";
             // 
             // xrTable6
@@ -222,7 +222,7 @@ namespace ArgusCR1029.Sales.SA108
             this.xrTable6.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable6.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow4});
-            this.xrTable6.SizeF = new System.Drawing.SizeF(777.0995F, 28.74962F);
+            this.xrTable6.SizeF = new System.Drawing.SizeF(777.0995F, 24.58296F);
             this.xrTable6.StylePriority.UseBorders = false;
             this.xrTable6.StylePriority.UseBorderWidth = false;
             this.xrTable6.StylePriority.UseFont = false;
@@ -255,7 +255,7 @@ namespace ArgusCR1029.Sales.SA108
             this.xrTableCell2.StylePriority.UseBorders = false;
             this.xrTableCell2.StylePriority.UseFont = false;
             this.xrTableCell2.StylePriority.UseTextAlignment = false;
-            this.xrTableCell2.Text = "الرقم التسلسلي";
+            this.xrTableCell2.Text = "رقم السيريال";
             this.xrTableCell2.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             this.xrTableCell2.Weight = 1.5022574215621984D;
             // 
