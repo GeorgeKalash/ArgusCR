@@ -146,7 +146,7 @@ namespace ArgusCR1029.Sales.SA112
             this.xrTableCell5.StylePriority.UsePadding = false;
             this.xrTableCell5.StylePriority.UseTextAlignment = false;
             this.xrTableCell5.Text = "Weight";
-            this.xrTableCell5.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            this.xrTableCell5.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
             this.xrTableCell5.TextFormatString = "{0:n2}";
             this.xrTableCell5.Weight = 0.787428158215864D;
             // 
@@ -213,7 +213,7 @@ namespace ArgusCR1029.Sales.SA112
             this.xrTableCell9.StylePriority.UsePadding = false;
             this.xrTableCell9.StylePriority.UseTextAlignment = false;
             this.xrTableCell9.Text = "Metal";
-            this.xrTableCell9.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            this.xrTableCell9.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
             this.xrTableCell9.Weight = 0.78742813732741335D;
             // 
             // xrTableCell10
@@ -235,7 +235,7 @@ namespace ArgusCR1029.Sales.SA112
             this.xrTableCell10.StylePriority.UsePadding = false;
             this.xrTableCell10.StylePriority.UseTextAlignment = false;
             this.xrTableCell10.Text = "Labor Price";
-            this.xrTableCell10.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            this.xrTableCell10.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
             this.xrTableCell10.TextFormatString = "{0:n0}";
             this.xrTableCell10.Weight = 0.9561627234323099D;
             // 
@@ -258,7 +258,7 @@ namespace ArgusCR1029.Sales.SA112
             this.xrTableCell11.StylePriority.UsePadding = false;
             this.xrTableCell11.StylePriority.UseTextAlignment = false;
             this.xrTableCell11.Text = "Unit Price";
-            this.xrTableCell11.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            this.xrTableCell11.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
             this.xrTableCell11.TextFormatString = "{0:n2}";
             this.xrTableCell11.Weight = 0.95616277965856888D;
             // 

@@ -33,7 +33,6 @@ namespace ArgusCR1029.Sales.SA104
 
             logo_data.ImageUrl = companyInfo.logoUrl;
 
-
             reference_data.Text = webObject.record.trxHeader.reference;
             date_data.Text = webObject.record.trxHeader.date.ToString(sessionInfo.dateFormat);
             plant_data.Text = webObject.record.trxHeader.plantName;

@@ -45,7 +45,6 @@ namespace ArgusCR1029.Sales.SA104
         protected override void labelsText()
         {
         }
-
         protected override string dictionaryStore()
         {
             return "CR1029.SA104";

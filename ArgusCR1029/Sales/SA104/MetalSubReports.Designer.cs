@@ -61,7 +61,7 @@ namespace ArgusCR1029.Sales.SA104
             // 
             this.Detail.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
             this.xrTable2});
-            this.Detail.HeightF = 24.9F;
+            this.Detail.HeightF = 23.01668F;
             this.Detail.KeepTogether = true;
             this.Detail.Name = "Detail";
             // 
@@ -76,7 +76,7 @@ namespace ArgusCR1029.Sales.SA104
             this.xrTable2.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable2.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow2});
-            this.xrTable2.SizeF = new System.Drawing.SizeF(272.275F, 24.9F);
+            this.xrTable2.SizeF = new System.Drawing.SizeF(272.275F, 23.01668F);
             this.xrTable2.StylePriority.UseBorders = false;
             this.xrTable2.StylePriority.UseBorderWidth = false;
             this.xrTable2.StylePriority.UseTextAlignment = false;

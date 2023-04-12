@@ -946,7 +946,7 @@ namespace ArgusCR1029.Sales.SA110
             this.clientRef_data.StylePriority.UsePadding = false;
             this.clientRef_data.StylePriority.UseTextAlignment = false;
             this.clientRef_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
-            this.clientRef_data.Weight = 6.7651365629989986D;
+            this.clientRef_data.Weight = 7.26722079846843D;
             // 
             // xrTableCell2
             // 
@@ -964,7 +964,7 @@ namespace ArgusCR1029.Sales.SA110
             this.xrTableCell2.StylePriority.UseTextAlignment = false;
             this.xrTableCell2.Text = "بيانات العميل";
             this.xrTableCell2.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
-            this.xrTableCell2.Weight = 6.0478684162552927D;
+            this.xrTableCell2.Weight = 5.5457841807858612D;
             // 
             // xrTableRow16
             // 

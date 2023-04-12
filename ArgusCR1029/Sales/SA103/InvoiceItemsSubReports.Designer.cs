@@ -171,7 +171,7 @@ namespace ArgusCR1029.Sales.SA103
             this.xrTableCell11.StylePriority.UsePadding = false;
             this.xrTableCell11.StylePriority.UseTextAlignment = false;
             this.xrTableCell11.Text = "xrTableCell11";
-            this.xrTableCell11.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            this.xrTableCell11.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
             this.xrTableCell11.Weight = 0.45414234636712114D;
             // 
             // xrTableCell5

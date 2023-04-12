@@ -56,7 +56,7 @@ namespace ArgusCR1029.Sales.SA111
             // 
             // BottomMargin
             // 
-            this.BottomMargin.HeightF = 0F;
+            this.BottomMargin.HeightF = 1.041667F;
             this.BottomMargin.Name = "BottomMargin";
             // 
             // Detail
@@ -158,7 +158,7 @@ namespace ArgusCR1029.Sales.SA111
             this.xrTableCell9.StylePriority.UseFont = false;
             this.xrTableCell9.StylePriority.UsePadding = false;
             this.xrTableCell9.StylePriority.UseTextAlignment = false;
-            this.xrTableCell9.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            this.xrTableCell9.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
             this.xrTableCell9.TextFormatString = "{0:n0}";
             this.xrTableCell9.Weight = 0.85291058599455516D;
             // 
@@ -181,7 +181,7 @@ namespace ArgusCR1029.Sales.SA111
             this.xrTableCell10.StylePriority.UsePadding = false;
             this.xrTableCell10.StylePriority.UseTextAlignment = false;
             this.xrTableCell10.Text = "Labor Price";
-            this.xrTableCell10.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            this.xrTableCell10.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
             this.xrTableCell10.TextFormatString = "{0:n2}";
             this.xrTableCell10.Weight = 1.0356787684120536D;
             // 
@@ -297,7 +297,7 @@ namespace ArgusCR1029.Sales.SA111
             this.Detail,
             this.PageHeader});
             this.Font = new System.Drawing.Font("Arial", 9.75F);
-            this.Margins = new System.Drawing.Printing.Margins(0, 0, 0, 0);
+            this.Margins = new System.Drawing.Printing.Margins(0, 0, 0, 1);
             this.PageHeight = 1169;
             this.PageWidth = 827;
             this.PaperKind = System.Drawing.Printing.PaperKind.A4;

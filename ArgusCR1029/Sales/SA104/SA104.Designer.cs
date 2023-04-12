@@ -412,11 +412,11 @@ namespace ArgusCR1029.Sales.SA104
             this.amountInWords_data.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.amountInWords_data.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold);
-            this.amountInWords_data.LocationFloat = new DevExpress.Utils.PointFloat(25.00013F, 77.61256F);
+            this.amountInWords_data.LocationFloat = new DevExpress.Utils.PointFloat(25.00339F, 77.61256F);
             this.amountInWords_data.Multiline = true;
             this.amountInWords_data.Name = "amountInWords_data";
             this.amountInWords_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 4, 0, 100F);
-            this.amountInWords_data.SizeF = new System.Drawing.SizeF(416.4965F, 22.53755F);
+            this.amountInWords_data.SizeF = new System.Drawing.SizeF(416.4932F, 22.53755F);
             this.amountInWords_data.StylePriority.UseBorders = false;
             this.amountInWords_data.StylePriority.UseFont = false;
             this.amountInWords_data.StylePriority.UsePadding = false;
