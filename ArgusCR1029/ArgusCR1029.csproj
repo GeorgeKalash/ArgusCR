@@ -142,6 +142,24 @@
     <Compile Include="CashAndBanks\CA102.Designer.cs">
       <DependentUpon>CA102.cs</DependentUpon>
     </Compile>
+    <Compile Include="Financials\FI104B\FI104.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Financials\FI104B\FI104.Designer.cs">
+      <DependentUpon>FI104.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Financials\FI104B\ItemsSubReports.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Financials\FI104B\ItemsSubReports.Designer.cs">
+      <DependentUpon>ItemsSubReports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Financials\FI104B\MetalSubReports.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Financials\FI104B\MetalSubReports.Designer.cs">
+      <DependentUpon>MetalSubReports.cs</DependentUpon>
+    </Compile>
     <Compile Include="Financials\FI401_L1.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -451,6 +469,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CashAndBanks\CA102.resx">
       <DependentUpon>CA102.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Financials\FI104B\FI104.resx">
+      <DependentUpon>FI104.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Financials\FI104B\ItemsSubReports.resx">
+      <DependentUpon>ItemsSubReports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Financials\FI104B\MetalSubReports.resx">
+      <DependentUpon>MetalSubReports.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Financials\FI401_L1.resx">
       <DependentUpon>FI401_L1.cs</DependentUpon>

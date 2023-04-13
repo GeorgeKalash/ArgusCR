@@ -1,5 +1,5 @@
 ﻿
-namespace ArgusCR1029.Financials.FI104
+namespace ArgusCR1029.Financials.FI104B
 {
     partial class MetalSubReports
     {
