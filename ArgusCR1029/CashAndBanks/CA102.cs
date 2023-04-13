@@ -29,7 +29,7 @@ namespace ArgusCR1029.CashAndBanks
             plant_data.Text = obj.record.plantName;
             date_data.Text = obj.record.date.ToString("dd/MM/yyyy");
             currency_data.Text = obj.record.currencyName;
-        //    CARef_data.Text = obj.record.accountRef;
+            CARef_data.Text = obj.record.accountRef;
             CAName_data.Text = obj.record.accountName;
             amount_data.Text = obj.record.amount.ToString("N2");
             notes_data.Text = obj.record.notes;
