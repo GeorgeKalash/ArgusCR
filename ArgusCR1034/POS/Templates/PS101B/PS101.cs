@@ -62,7 +62,6 @@ namespace ArgusCR1034.POS.Templates.PS101B
             printSignature_lbl.Text = reportSignature();
             base.OnBeforePrint(e);
         }
-
         protected override void labelsText()
         {
         }

@@ -26,7 +26,6 @@ namespace ArgusCR1034.POS.Templates.PS101GLD
             ((ArgusRPT.BaseReport)(InvoiceReceiptSubReports.ReportSource)).setSessionInfo(sessionInfo);
             initSubReports();
         }
-
         protected override void OnBeforePrint(PrintEventArgs e)
         {
             RightToLeft = DevExpress.XtraReports.UI.RightToLeft.No;
@@ -62,11 +61,9 @@ namespace ArgusCR1034.POS.Templates.PS101GLD
             printSignature_lbl.Text = reportSignature();
             base.OnBeforePrint(e);
         }
-
         protected override void labelsText()
         {
         }
-
         protected override string dictionaryStore()
         {
             return "CR1034.PS101";
