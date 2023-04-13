@@ -174,7 +174,7 @@ namespace ArgusCR1029.Sales.SA104
             this.xrTableCell8.StylePriority.UsePadding = false;
             this.xrTableCell8.StylePriority.UseTextAlignment = false;
             this.xrTableCell8.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
-            this.xrTableCell8.Weight = 0.65573119808812486D;
+            this.xrTableCell8.Weight = 0.83371496018332247D;
             // 
             // xrTableCell10
             // 
@@ -193,7 +193,7 @@ namespace ArgusCR1029.Sales.SA104
             this.xrTableCell10.StylePriority.UsePadding = false;
             this.xrTableCell10.StylePriority.UseTextAlignment = false;
             this.xrTableCell10.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
-            this.xrTableCell10.Weight = 0.3950951453620889D;
+            this.xrTableCell10.Weight = 0.37470370009557585D;
             // 
             // xrTableCell4
             // 
@@ -214,7 +214,7 @@ namespace ArgusCR1029.Sales.SA104
             this.xrTableCell4.Text = "xrTableCell4";
             this.xrTableCell4.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
             this.xrTableCell4.TextFormatString = "{0:n0}";
-            this.xrTableCell4.Weight = 0.47636397247989593D;
+            this.xrTableCell4.Weight = 0.37470370009557596D;
             // 
             // xrTableCell5
             // 
@@ -235,7 +235,7 @@ namespace ArgusCR1029.Sales.SA104
             this.xrTableCell5.Text = "xrTableCell5";
             this.xrTableCell5.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
             this.xrTableCell5.TextFormatString = "{0:n2}";
-            this.xrTableCell5.Weight = 0.47636397247989593D;
+            this.xrTableCell5.Weight = 0.51521787732336521D;
             // 
             // unitPrice_data
             // 
@@ -253,7 +253,7 @@ namespace ArgusCR1029.Sales.SA104
             this.unitPrice_data.StylePriority.UseTextAlignment = false;
             this.unitPrice_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
             this.unitPrice_data.TextFormatString = "{0:n2}";
-            this.unitPrice_data.Weight = 0.54835041517557748D;
+            this.unitPrice_data.Weight = 0.56205557244496229D;
             // 
             // lineUnitPrice
             // 
@@ -273,7 +273,7 @@ namespace ArgusCR1029.Sales.SA104
             this.lineUnitPrice.StylePriority.UseTextAlignment = false;
             this.lineUnitPrice.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
             this.lineUnitPrice.TextFormatString = "{0:n2}";
-            this.lineUnitPrice.Weight = 0.73113425669973153D;
+            this.lineUnitPrice.Weight = 0.702569430950384D;
             // 
             // xrTableCell3
             // 
@@ -294,7 +294,7 @@ namespace ArgusCR1029.Sales.SA104
             this.xrTableCell3.Text = "vatAmount";
             this.xrTableCell3.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
             this.xrTableCell3.TextFormatString = "{0:n2}";
-            this.xrTableCell3.Weight = 0.73113352437786716D;
+            this.xrTableCell3.Weight = 0.70256948478819015D;
             // 
             // extendedPriceWithVAT_data
             // 
@@ -313,7 +313,7 @@ namespace ArgusCR1029.Sales.SA104
             this.extendedPriceWithVAT_data.Text = "\r\n";
             this.extendedPriceWithVAT_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
             this.extendedPriceWithVAT_data.TextFormatString = "{0:n2}";
-            this.extendedPriceWithVAT_data.Weight = 0.75393237179349781D;
+            this.extendedPriceWithVAT_data.Weight = 0.70257013057530371D;
             // 
             // PageHeader
             // 
@@ -328,7 +328,7 @@ namespace ArgusCR1029.Sales.SA104
             | DevExpress.XtraPrinting.BorderSide.Right)));
             this.xrTable6.BorderWidth = 0.5F;
             this.xrTable6.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.xrTable6.LocationFloat = new DevExpress.Utils.PointFloat(0F, 0F);
+            this.xrTable6.LocationFloat = new DevExpress.Utils.PointFloat(1.144409E-05F, 0F);
             this.xrTable6.Name = "xrTable6";
             this.xrTable6.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable6.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
@@ -373,7 +373,7 @@ namespace ArgusCR1029.Sales.SA104
             this.sku_lbl.StylePriority.UseTextAlignment = false;
             this.sku_lbl.Text = "رقم الصنف";
             this.sku_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
-            this.sku_lbl.Weight = 1.4083636486829136D;
+            this.sku_lbl.Weight = 1.4083634442665618D;
             // 
             // itemName_lbl
             // 
@@ -407,7 +407,7 @@ namespace ArgusCR1029.Sales.SA104
             this.xrTableCell6.StylePriority.UseTextAlignment = false;
             this.xrTableCell6.Text = "رقم عمليه التسليم";
             this.xrTableCell6.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
-            this.xrTableCell6.Weight = 0.9858545461066679D;
+            this.xrTableCell6.Weight = 1.2534434072596614D;
             // 
             // xrTableCell9
             // 
@@ -424,7 +424,7 @@ namespace ArgusCR1029.Sales.SA104
             this.xrTableCell9.StylePriority.UseTextAlignment = false;
             this.xrTableCell9.Text = "العيار";
             this.xrTableCell9.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
-            this.xrTableCell9.Weight = 0.59400172987412736D;
+            this.xrTableCell9.Weight = 0.56334544096594119D;
             // 
             // xrTableCell1
             // 
@@ -441,7 +441,7 @@ namespace ArgusCR1029.Sales.SA104
             this.xrTableCell1.StylePriority.UseTextAlignment = false;
             this.xrTableCell1.Text = "عدد\r\nالقطع";
             this.xrTableCell1.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
-            this.xrTableCell1.Weight = 0.71618558993192094D;
+            this.xrTableCell1.Weight = 0.56334544096594108D;
             // 
             // xrTableCell2
             // 
@@ -458,7 +458,7 @@ namespace ArgusCR1029.Sales.SA104
             this.xrTableCell2.StylePriority.UseTextAlignment = false;
             this.xrTableCell2.Text = "الوزن";
             this.xrTableCell2.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
-            this.xrTableCell2.Weight = 0.71618558993192094D;
+            this.xrTableCell2.Weight = 0.77459998296734189D;
             // 
             // unitPrice_lbl
             // 
@@ -475,7 +475,7 @@ namespace ArgusCR1029.Sales.SA104
             this.unitPrice_lbl.StylePriority.UseTextAlignment = false;
             this.unitPrice_lbl.Text = "أجرة الجرام";
             this.unitPrice_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
-            this.unitPrice_lbl.Weight = 0.824413726226777D;
+            this.unitPrice_lbl.Weight = 0.84501821096133389D;
             // 
             // subtotal_lbl
             // 
@@ -492,7 +492,7 @@ namespace ArgusCR1029.Sales.SA104
             this.subtotal_lbl.StylePriority.UseTextAlignment = false;
             this.subtotal_lbl.Text = "إجمالي الأجور قبل الضريبة";
             this.subtotal_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
-            this.subtotal_lbl.Weight = 1.0992183154659441D;
+            this.subtotal_lbl.Weight = 1.0562727452950143D;
             // 
             // vatAmount_lbl
             // 
@@ -509,7 +509,7 @@ namespace ArgusCR1029.Sales.SA104
             this.vatAmount_lbl.StylePriority.UseTextAlignment = false;
             this.vatAmount_lbl.Text = "مبلغ الضریبة";
             this.vatAmount_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
-            this.vatAmount_lbl.Weight = 1.0992183418578909D;
+            this.vatAmount_lbl.Weight = 1.0562726642373446D;
             // 
             // extendedPrice_lbl
             // 
@@ -526,7 +526,7 @@ namespace ArgusCR1029.Sales.SA104
             this.extendedPrice_lbl.StylePriority.UseTextAlignment = false;
             this.extendedPrice_lbl.Text = "إجمالي الأجوربعد الضريبة";
             this.extendedPrice_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
-            this.extendedPrice_lbl.Weight = 1.1334929773485625D;
+            this.extendedPrice_lbl.Weight = 1.0562726987091191D;
             // 
             // ReportFooter
             // 

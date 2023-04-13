@@ -315,7 +315,7 @@ namespace ArgusCR1029.Sales.SA112
             this.serialNo_lbl.StylePriority.UseBorderColor = false;
             this.serialNo_lbl.StylePriority.UseBorders = false;
             this.serialNo_lbl.StylePriority.UseFont = false;
-            this.serialNo_lbl.Text = "الرقم التسلسلي";
+            this.serialNo_lbl.Text = "رقم السيريال";
             this.serialNo_lbl.Weight = 1.3498767864616639D;
             // 
             // weight_lbl
