@@ -51,6 +51,8 @@ namespace ArgusCR1034.POS.Templates.PS101B
             this.typeName_lbl = new DevExpress.XtraReports.UI.XRTableCell();
             this.currencyRef_lbl = new DevExpress.XtraReports.UI.XRTableCell();
             this.cashAccountRef_lbl = new DevExpress.XtraReports.UI.XRTableCell();
+            this.xrTableCell1 = new DevExpress.XtraReports.UI.XRTableCell();
+            this.xrTableCell2 = new DevExpress.XtraReports.UI.XRTableCell();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
@@ -62,7 +64,7 @@ namespace ArgusCR1034.POS.Templates.PS101B
             // 
             // BottomMargin
             // 
-            this.BottomMargin.HeightF = 0F;
+            this.BottomMargin.HeightF = 0.2744463F;
             this.BottomMargin.Name = "BottomMargin";
             // 
             // Detail
@@ -79,12 +81,13 @@ namespace ArgusCR1034.POS.Templates.PS101B
             this.xrTable1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable1.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow2});
-            this.xrTable1.SizeF = new System.Drawing.SizeF(714.7081F, 19.17F);
+            this.xrTable1.SizeF = new System.Drawing.SizeF(716F, 19.17F);
             // 
             // xrTableRow2
             // 
             this.xrTableRow2.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
             this.xrTableCell8,
+            this.xrTableCell2,
             this.xrTableCell9,
             this.xrTableCell10,
             this.xrTableCell11,
@@ -109,7 +112,7 @@ namespace ArgusCR1034.POS.Templates.PS101B
             this.xrTableCell8.StylePriority.UsePadding = false;
             this.xrTableCell8.StylePriority.UseTextAlignment = false;
             this.xrTableCell8.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopCenter;
-            this.xrTableCell8.Weight = 1.5273971264299158D;
+            this.xrTableCell8.Weight = 1.6912688178977646D;
             // 
             // xrTableCell9
             // 
@@ -129,7 +132,7 @@ namespace ArgusCR1034.POS.Templates.PS101B
             this.xrTableCell9.StylePriority.UseTextAlignment = false;
             this.xrTableCell9.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopCenter;
             this.xrTableCell9.TextFormatString = "{0:n2}";
-            this.xrTableCell9.Weight = 0.76369856511013035D;
+            this.xrTableCell9.Weight = 0.77655435876334866D;
             // 
             // xrTableCell10
             // 
@@ -148,7 +151,7 @@ namespace ArgusCR1034.POS.Templates.PS101B
             this.xrTableCell10.StylePriority.UsePadding = false;
             this.xrTableCell10.StylePriority.UseTextAlignment = false;
             this.xrTableCell10.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopCenter;
-            this.xrTableCell10.Weight = 1.0182647231827651D;
+            this.xrTableCell10.Weight = 1.0236219749735303D;
             // 
             // xrTableCell11
             // 
@@ -167,7 +170,7 @@ namespace ArgusCR1034.POS.Templates.PS101B
             this.xrTableCell11.StylePriority.UsePadding = false;
             this.xrTableCell11.StylePriority.UseTextAlignment = false;
             this.xrTableCell11.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopCenter;
-            this.xrTableCell11.Weight = 1.0182647615905947D;
+            this.xrTableCell11.Weight = 0.9876763901725D;
             // 
             // xrTableCell12
             // 
@@ -187,7 +190,7 @@ namespace ArgusCR1034.POS.Templates.PS101B
             this.xrTableCell12.StylePriority.UseTextAlignment = false;
             this.xrTableCell12.Text = "typeName";
             this.xrTableCell12.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopCenter;
-            this.xrTableCell12.Weight = 1.0182647937416682D;
+            this.xrTableCell12.Weight = 0.84711381457230639D;
             // 
             // xrTableCell13
             // 
@@ -206,7 +209,7 @@ namespace ArgusCR1034.POS.Templates.PS101B
             this.xrTableCell13.StylePriority.UsePadding = false;
             this.xrTableCell13.StylePriority.UseTextAlignment = false;
             this.xrTableCell13.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopCenter;
-            this.xrTableCell13.Weight = 0.700057001500004D;
+            this.xrTableCell13.Weight = 0.81958120405735246D;
             // 
             // xrTableCell14
             // 
@@ -226,7 +229,7 @@ namespace ArgusCR1034.POS.Templates.PS101B
             this.xrTableCell14.StylePriority.UseTextAlignment = false;
             this.xrTableCell14.Text = "cashAccountRef";
             this.xrTableCell14.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopCenter;
-            this.xrTableCell14.Weight = 0.94189572159752888D;
+            this.xrTableCell14.Weight = 0.76009086516199942D;
             // 
             // PageHeader
             // 
@@ -242,12 +245,13 @@ namespace ArgusCR1034.POS.Templates.PS101B
             this.xrTable8.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable8.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow8});
-            this.xrTable8.SizeF = new System.Drawing.SizeF(714.7081F, 25F);
+            this.xrTable8.SizeF = new System.Drawing.SizeF(716F, 25F);
             // 
             // xrTableRow8
             // 
             this.xrTableRow8.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
             this.explanation_lbl,
+            this.xrTableCell1,
             this.Amount_lbl,
             this.cardType_lbl,
             this.ccRef_lbl,
@@ -274,7 +278,7 @@ namespace ArgusCR1034.POS.Templates.PS101B
             this.explanation_lbl.StylePriority.UseTextAlignment = false;
             this.explanation_lbl.Text = "الشرح";
             this.explanation_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopCenter;
-            this.explanation_lbl.Weight = 1.5273972651202354D;
+            this.explanation_lbl.Weight = 1.6727827242899584D;
             // 
             // Amount_lbl
             // 
@@ -293,7 +297,7 @@ namespace ArgusCR1034.POS.Templates.PS101B
             this.Amount_lbl.StylePriority.UseTextAlignment = false;
             this.Amount_lbl.Text = "المبلغ";
             this.Amount_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopCenter;
-            this.Amount_lbl.Weight = 0.763698658957944D;
+            this.Amount_lbl.Weight = 0.76806627636014424D;
             // 
             // cardType_lbl
             // 
@@ -312,7 +316,7 @@ namespace ArgusCR1034.POS.Templates.PS101B
             this.cardType_lbl.StylePriority.UseTextAlignment = false;
             this.cardType_lbl.Text = "نوع البطاقة";
             this.cardType_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopCenter;
-            this.cardType_lbl.Weight = 1.0182648773846252D;
+            this.cardType_lbl.Weight = 1.0124333487013408D;
             // 
             // ccRef_lbl
             // 
@@ -331,7 +335,7 @@ namespace ArgusCR1034.POS.Templates.PS101B
             this.ccRef_lbl.StylePriority.UseTextAlignment = false;
             this.ccRef_lbl.Text = "رقم الشيك \\ البطاقة";
             this.ccRef_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopCenter;
-            this.ccRef_lbl.Weight = 1.0182652785877047D;
+            this.ccRef_lbl.Weight = 0.97688084245379248D;
             // 
             // typeName_lbl
             // 
@@ -350,7 +354,7 @@ namespace ArgusCR1034.POS.Templates.PS101B
             this.typeName_lbl.StylePriority.UseTextAlignment = false;
             this.typeName_lbl.Text = "طريقة الدفع";
             this.typeName_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopCenter;
-            this.typeName_lbl.Weight = 1.0182644832233507D;
+            this.typeName_lbl.Weight = 0.83785462631712782D;
             // 
             // currencyRef_lbl
             // 
@@ -369,7 +373,7 @@ namespace ArgusCR1034.POS.Templates.PS101B
             this.currencyRef_lbl.StylePriority.UseTextAlignment = false;
             this.currencyRef_lbl.Text = "رمز العملة";
             this.currencyRef_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopCenter;
-            this.currencyRef_lbl.Weight = 0.70005709314564779D;
+            this.currencyRef_lbl.Weight = 0.81062325860276818D;
             // 
             // cashAccountRef_lbl
             // 
@@ -388,7 +392,43 @@ namespace ArgusCR1034.POS.Templates.PS101B
             this.cashAccountRef_lbl.StylePriority.UseTextAlignment = false;
             this.cashAccountRef_lbl.Text = "رمز الصندوق";
             this.cashAccountRef_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopCenter;
-            this.cashAccountRef_lbl.Weight = 0.94189503538385633D;
+            this.cashAccountRef_lbl.Weight = 0.7517827250506175D;
+            // 
+            // xrTableCell1
+            // 
+            this.xrTableCell1.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.xrTableCell1.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+            | DevExpress.XtraPrinting.BorderSide.Right) 
+            | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.xrTableCell1.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold);
+            this.xrTableCell1.Multiline = true;
+            this.xrTableCell1.Name = "xrTableCell1";
+            this.xrTableCell1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 5, 0, 100F);
+            this.xrTableCell1.StylePriority.UseBackColor = false;
+            this.xrTableCell1.StylePriority.UseBorders = false;
+            this.xrTableCell1.StylePriority.UseFont = false;
+            this.xrTableCell1.StylePriority.UsePadding = false;
+            this.xrTableCell1.StylePriority.UseTextAlignment = false;
+            this.xrTableCell1.Text = "عمولة";
+            this.xrTableCell1.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopCenter;
+            this.xrTableCell1.Weight = 0.8363911846138723D;
+            // 
+            // xrTableCell2
+            // 
+            this.xrTableCell2.BackColor = System.Drawing.Color.White;
+            this.xrTableCell2.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Right) 
+            | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.xrTableCell2.Font = new System.Drawing.Font("Arial", 8.25F);
+            this.xrTableCell2.Multiline = true;
+            this.xrTableCell2.Name = "xrTableCell2";
+            this.xrTableCell2.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 2, 0, 100F);
+            this.xrTableCell2.StylePriority.UseBackColor = false;
+            this.xrTableCell2.StylePriority.UseBorders = false;
+            this.xrTableCell2.StylePriority.UseFont = false;
+            this.xrTableCell2.StylePriority.UsePadding = false;
+            this.xrTableCell2.StylePriority.UseTextAlignment = false;
+            this.xrTableCell2.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopCenter;
+            this.xrTableCell2.Weight = 0.84563383266393555D;
             // 
             // InvoiceReceiptSubReports
             // 
@@ -433,5 +473,7 @@ namespace ArgusCR1034.POS.Templates.PS101B
         private DevExpress.XtraReports.UI.XRTableCell typeName_lbl;
         private DevExpress.XtraReports.UI.XRTableCell currencyRef_lbl;
         private DevExpress.XtraReports.UI.XRTableCell cashAccountRef_lbl;
+        private DevExpress.XtraReports.UI.XRTableCell xrTableCell2;
+        private DevExpress.XtraReports.UI.XRTableCell xrTableCell1;
     }
 }
