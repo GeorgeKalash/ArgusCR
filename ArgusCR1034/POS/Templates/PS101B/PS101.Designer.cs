@@ -483,7 +483,7 @@ namespace ArgusCR1034.POS.Templates.PS101B
             this.title_lbl.StylePriority.UseFont = false;
             this.title_lbl.StylePriority.UsePadding = false;
             this.title_lbl.StylePriority.UseTextAlignment = false;
-            this.title_lbl.Text = "فاتورة ضريبية مبسطة";
+            this.title_lbl.Text = "فاتورة شراء ذهب خام";
             this.title_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopCenter;
             this.title_lbl.WordWrap = false;
             // 

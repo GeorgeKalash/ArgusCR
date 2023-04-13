@@ -95,7 +95,7 @@ namespace ArgusCR1029.Financials.FI104B
             this.xrTable3.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable3.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow6});
-            this.xrTable3.SizeF = new System.Drawing.SizeF(808F, 24.99933F);
+            this.xrTable3.SizeF = new System.Drawing.SizeF(774.9483F, 24.99933F);
             // 
             // xrTableRow6
             // 
@@ -291,7 +291,7 @@ namespace ArgusCR1029.Financials.FI104B
             this.xrTable6.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable6.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow4});
-            this.xrTable6.SizeF = new System.Drawing.SizeF(808F, 24.58296F);
+            this.xrTable6.SizeF = new System.Drawing.SizeF(774.9484F, 24.58296F);
             this.xrTable6.StylePriority.UseBorders = false;
             this.xrTable6.StylePriority.UseBorderWidth = false;
             this.xrTable6.StylePriority.UseFont = false;
@@ -464,7 +464,7 @@ namespace ArgusCR1029.Financials.FI104B
             this.xrTable1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable1.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow1});
-            this.xrTable1.SizeF = new System.Drawing.SizeF(808F, 22.29271F);
+            this.xrTable1.SizeF = new System.Drawing.SizeF(774.9483F, 22.29271F);
             // 
             // xrTableRow1
             // 
@@ -607,7 +607,7 @@ namespace ArgusCR1029.Financials.FI104B
             this.PageHeader,
             this.ReportFooter});
             this.Font = new System.Drawing.Font("Arial", 9.75F);
-            this.Margins = new System.Drawing.Printing.Margins(0, 19, 0, 0);
+            this.Margins = new System.Drawing.Printing.Margins(0, 46, 0, 0);
             this.PageHeight = 1169;
             this.PageWidth = 827;
             this.PaperKind = System.Drawing.Printing.PaperKind.A4;

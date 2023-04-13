@@ -18,9 +18,6 @@ namespace ArgusCR1034.POS.Templates.PS101GLD
 
         protected override void OnBeforePrint(PrintEventArgs e)
         {
-            RightToLeft = DevExpress.XtraReports.UI.RightToLeft.No;
-            RightToLeftLayout = DevExpress.XtraReports.UI.RightToLeftLayout.No;
-
             DataSource = data;
             base.OnBeforePrint(e);
         }

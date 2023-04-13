@@ -95,7 +95,7 @@ namespace ArgusCR1029.Financials.FI104
             this.xrTable3.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable3.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow6});
-            this.xrTable3.SizeF = new System.Drawing.SizeF(808F, 24.99933F);
+            this.xrTable3.SizeF = new System.Drawing.SizeF(774.9484F, 24.99933F);
             // 
             // xrTableRow6
             // 
@@ -129,7 +129,7 @@ namespace ArgusCR1029.Financials.FI104
             this.xrTableCell1.StylePriority.UseTextAlignment = false;
             this.xrTableCell1.Text = "Metal";
             this.xrTableCell1.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
-            this.xrTableCell1.Weight = 0.78183149950048658D;
+            this.xrTableCell1.Weight = 0.6756887067319024D;
             // 
             // xrTableCell2
             // 
@@ -149,7 +149,7 @@ namespace ArgusCR1029.Financials.FI104
             this.xrTableCell2.StylePriority.UseTextAlignment = false;
             this.xrTableCell2.Text = "SKU";
             this.xrTableCell2.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
-            this.xrTableCell2.Weight = 1.0750186922138523D;
+            this.xrTableCell2.Weight = 1.1811614849824363D;
             // 
             // xrTableCell3
             // 
@@ -291,7 +291,7 @@ namespace ArgusCR1029.Financials.FI104
             this.xrTable6.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable6.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow4});
-            this.xrTable6.SizeF = new System.Drawing.SizeF(808F, 24.58296F);
+            this.xrTable6.SizeF = new System.Drawing.SizeF(774.9484F, 24.58296F);
             this.xrTable6.StylePriority.UseBorders = false;
             this.xrTable6.StylePriority.UseBorderWidth = false;
             this.xrTable6.StylePriority.UseFont = false;
@@ -464,7 +464,7 @@ namespace ArgusCR1029.Financials.FI104
             this.xrTable1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable1.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow1});
-            this.xrTable1.SizeF = new System.Drawing.SizeF(808F, 22.29271F);
+            this.xrTable1.SizeF = new System.Drawing.SizeF(774.9484F, 22.29271F);
             // 
             // xrTableRow1
             // 
@@ -607,7 +607,7 @@ namespace ArgusCR1029.Financials.FI104
             this.PageHeader,
             this.ReportFooter});
             this.Font = new System.Drawing.Font("Arial", 9.75F);
-            this.Margins = new System.Drawing.Printing.Margins(0, 19, 0, 0);
+            this.Margins = new System.Drawing.Printing.Margins(0, 49, 0, 0);
             this.PageHeight = 1169;
             this.PageWidth = 827;
             this.PaperKind = System.Drawing.Printing.PaperKind.A4;
