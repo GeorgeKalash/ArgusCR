@@ -20,6 +20,9 @@ namespace ArgusCR1034.Purchase.PU103
 
         protected override void OnBeforePrint(PrintEventArgs e)
         {
+            RightToLeft = DevExpress.XtraReports.UI.RightToLeft.No;
+            RightToLeftLayout = DevExpress.XtraReports.UI.RightToLeftLayout.No;
+
             DataSource = data;
             base.OnBeforePrint(e);
         }

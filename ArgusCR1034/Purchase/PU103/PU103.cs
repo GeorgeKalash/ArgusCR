@@ -27,7 +27,11 @@ namespace ArgusCR1034.Purchase.PU103
             initSubReports();
         }
         protected override void OnBeforePrint(PrintEventArgs e)
-        {   SharedClasses.JsonProtocol.GetStructure<ArgusDS.Purchase.Reports.InvoicePrintLayout> webObject = deserializeGet<ArgusDS.Purchase.Reports.InvoicePrintLayout>();
+        {
+            RightToLeft = DevExpress.XtraReports.UI.RightToLeft.No;
+            RightToLeftLayout = DevExpress.XtraReports.UI.RightToLeftLayout.No;
+
+            SharedClasses.JsonProtocol.GetStructure<ArgusDS.Purchase.Reports.InvoicePrintLayout> webObject = deserializeGet<ArgusDS.Purchase.Reports.InvoicePrintLayout>();
 
             logo_data.ImageUrl = companyInfo.logoUrl;
 

@@ -6,13 +6,12 @@ using System.ComponentModel;
 using System.Drawing;
 using System.Drawing.Printing;
 
-namespace ArgusCR1034.POS.Templates.PS101GLD
+namespace ArgusCR1034.POS.Templates.PS101B
 {
-    public partial class InvoiceReceiptSubReports : ArgusRPT.BaseReport
+    public partial class InvoiceItemsSubReports : ArgusRPT.BaseReport
     {
-        public List<ArgusDS.PointOfSale.InvoiceReceiptView> data;
-
-        public InvoiceReceiptSubReports()
+        public List<ArgusDS.PointOfSale.Reports.PS101_item> data;
+        public InvoiceItemsSubReports()
         {
             InitializeComponent();
         }
@@ -26,7 +25,7 @@ namespace ArgusCR1034.POS.Templates.PS101GLD
             base.OnBeforePrint(e);
         }
 
-        private void InvoiceReceiptSubReports_DataSourceRowChanged(object sender, DataSourceRowEventArgs e)
+        private void InvoiceItemsSubReports_DataSourceRowChanged(object sender, DataSourceRowEventArgs e)
         {
 
         }

@@ -298,7 +298,7 @@ namespace ArgusCR1034.Purchase.PU103
             this.xrTable7,
             this.xrTable2,
             this.xrTable10});
-            this.ReportFooter.HeightF = 226.2686F;
+            this.ReportFooter.HeightF = 223.3704F;
             this.ReportFooter.KeepTogether = true;
             this.ReportFooter.Name = "ReportFooter";
             // 
