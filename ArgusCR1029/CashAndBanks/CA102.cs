@@ -13,10 +13,7 @@ namespace ArgusCR1029.CashAndBanks
         {
             InitializeComponent();
         }
-        protected override string reportName()
-        {
-            return title_lbl.Text;
-        }
+
 
         protected override void OnBeforePrint(PrintEventArgs e)
         {
@@ -40,16 +37,14 @@ namespace ArgusCR1029.CashAndBanks
 
         protected override void labelsText()
         {
-            title_lbl.Text = labelText(0);
-
-            dtName_lbl.Text = labelText(1);
-            reference_lbl.Text = labelText(2);
-            plant_lbl.Text = labelText(3);
-            date_lbl.Text = labelText(4);
-            currency_lbl.Text = labelText(5);
-            CAName_lbl.Text = labelText(6);
-            amount_lbl.Text = labelText(7);
-            note_lbl.Text = labelText(8);
+            dtName_lbl.Text = labelText(0);
+            reference_lbl.Text = labelText(1);
+            plant_lbl.Text = labelText(2);
+            date_lbl.Text = labelText(3);
+            currency_lbl.Text = labelText(4);
+            CAName_lbl.Text = labelText(5);
+            amount_lbl.Text = labelText(6);
+            note_lbl.Text = labelText(7);
         }
         protected override string dictionaryStore()
         {
