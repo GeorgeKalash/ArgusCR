@@ -129,7 +129,7 @@ namespace ArgusCR1029.Financials.FI104
             this.xrTableCell1.StylePriority.UseTextAlignment = false;
             this.xrTableCell1.Text = "Metal";
             this.xrTableCell1.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
-            this.xrTableCell1.Weight = 0.6756887067319024D;
+            this.xrTableCell1.Weight = 0.78183156888196648D;
             // 
             // xrTableCell2
             // 
@@ -149,7 +149,7 @@ namespace ArgusCR1029.Financials.FI104
             this.xrTableCell2.StylePriority.UseTextAlignment = false;
             this.xrTableCell2.Text = "SKU";
             this.xrTableCell2.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
-            this.xrTableCell2.Weight = 1.1811614849824363D;
+            this.xrTableCell2.Weight = 1.0750186228323724D;
             // 
             // xrTableCell3
             // 

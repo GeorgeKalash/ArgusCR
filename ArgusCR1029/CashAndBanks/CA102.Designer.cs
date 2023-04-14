@@ -89,12 +89,13 @@ namespace ArgusCR1029.CashAndBanks
             this.logo_data,
             this.title_lbl,
             this.xrTable4});
-            this.ReportHeader.HeightF = 469.2825F;
+            this.ReportHeader.HeightF = 447.1297F;
+            this.ReportHeader.KeepTogether = true;
             this.ReportHeader.Name = "ReportHeader";
             // 
             // logo_data
             // 
-            this.logo_data.LocationFloat = new DevExpress.Utils.PointFloat(42.63871F, 9.999996F);
+            this.logo_data.LocationFloat = new DevExpress.Utils.PointFloat(37.5F, 0F);
             this.logo_data.Name = "logo_data";
             this.logo_data.SizeF = new System.Drawing.SizeF(105.5832F, 113F);
             this.logo_data.Sizing = DevExpress.XtraPrinting.ImageSizeMode.ZoomImage;
@@ -107,11 +108,11 @@ namespace ArgusCR1029.CashAndBanks
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.title_lbl.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold);
             this.title_lbl.ForeColor = System.Drawing.Color.White;
-            this.title_lbl.LocationFloat = new DevExpress.Utils.PointFloat(42.63871F, 139.5833F);
+            this.title_lbl.LocationFloat = new DevExpress.Utils.PointFloat(37.5F, 125F);
             this.title_lbl.Multiline = true;
             this.title_lbl.Name = "title_lbl";
             this.title_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 7, 0, 100F);
-            this.title_lbl.SizeF = new System.Drawing.SizeF(753.5151F, 36.45833F);
+            this.title_lbl.SizeF = new System.Drawing.SizeF(753.5151F, 37.5F);
             this.title_lbl.StylePriority.UseBackColor = false;
             this.title_lbl.StylePriority.UseBorders = false;
             this.title_lbl.StylePriority.UseFont = false;
@@ -123,7 +124,7 @@ namespace ArgusCR1029.CashAndBanks
             // 
             // xrTable4
             // 
-            this.xrTable4.LocationFloat = new DevExpress.Utils.PointFloat(42.63874F, 176.0417F);
+            this.xrTable4.LocationFloat = new DevExpress.Utils.PointFloat(37.5F, 162.5F);
             this.xrTable4.Name = "xrTable4";
             this.xrTable4.Padding = new DevExpress.XtraPrinting.PaddingInfo(5, 2, 7, 0, 100F);
             this.xrTable4.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
@@ -443,26 +444,26 @@ namespace ArgusCR1029.CashAndBanks
             this.PageFooter.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
             this.xrPageInfo1,
             this.printSignature});
-            this.PageFooter.HeightF = 36.76749F;
+            this.PageFooter.HeightF = 33.00004F;
             this.PageFooter.Name = "PageFooter";
             // 
             // xrPageInfo1
             // 
-            this.xrPageInfo1.LocationFloat = new DevExpress.Utils.PointFloat(708.7574F, 10.00002F);
+            this.xrPageInfo1.LocationFloat = new DevExpress.Utils.PointFloat(708.7574F, 10.00004F);
             this.xrPageInfo1.Name = "xrPageInfo1";
             this.xrPageInfo1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrPageInfo1.SizeF = new System.Drawing.SizeF(108.2427F, 23F);
+            this.xrPageInfo1.SizeF = new System.Drawing.SizeF(82.25775F, 23F);
             this.xrPageInfo1.StylePriority.UseTextAlignment = false;
             this.xrPageInfo1.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
             this.xrPageInfo1.TextFormatString = "Page {0} of {1}";
             // 
             // printSignature
             // 
-            this.printSignature.LocationFloat = new DevExpress.Utils.PointFloat(10F, 10.00002F);
+            this.printSignature.LocationFloat = new DevExpress.Utils.PointFloat(37.5F, 9.999974F);
             this.printSignature.Multiline = true;
             this.printSignature.Name = "printSignature";
             this.printSignature.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.printSignature.SizeF = new System.Drawing.SizeF(586.4384F, 23F);
+            this.printSignature.SizeF = new System.Drawing.SizeF(601.6467F, 23F);
             this.printSignature.StylePriority.UseTextAlignment = false;
             this.printSignature.Text = "printSignature";
             this.printSignature.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;

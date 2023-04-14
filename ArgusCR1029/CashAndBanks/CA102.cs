@@ -51,7 +51,6 @@ namespace ArgusCR1029.CashAndBanks
             amount_lbl.Text = labelText(7);
             note_lbl.Text = labelText(8);
         }
-
         protected override string dictionaryStore()
         {
             return "CR1029.CA102";
