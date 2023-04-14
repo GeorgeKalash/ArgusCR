@@ -122,7 +122,7 @@ namespace ArgusCR1029.Financials.FI104B
             // 
             this.ItemsSubReports.LocationFloat = new DevExpress.Utils.PointFloat(25.00003F, 0F);
             this.ItemsSubReports.Name = "ItemsSubReports";
-            this.ItemsSubReports.ReportSource = new ArgusCR1029.Financials.FI104.ItemsSubReports();
+            this.ItemsSubReports.ReportSource = new ArgusCR1029.Financials.FI104B.ItemsSubReports();
             this.ItemsSubReports.SizeF = new System.Drawing.SizeF(777.0994F, 23F);
             // 
             // Detail
@@ -145,9 +145,9 @@ namespace ArgusCR1029.Financials.FI104B
             // 
             // MetalSubReports
             // 
-            this.MetalSubReports.LocationFloat = new DevExpress.Utils.PointFloat(25.00003F, 12.5F);
+            this.MetalSubReports.LocationFloat = new DevExpress.Utils.PointFloat(25.0003F, 12.49997F);
             this.MetalSubReports.Name = "MetalSubReports";
-            this.MetalSubReports.ReportSource = new ArgusCR1029.Financials.FI104.MetalSubReports();
+            this.MetalSubReports.ReportSource = new ArgusCR1029.Financials.FI104B.MetalSubReports();
             this.MetalSubReports.SizeF = new System.Drawing.SizeF(777.0992F, 23F);
             // 
             // TopMargin
