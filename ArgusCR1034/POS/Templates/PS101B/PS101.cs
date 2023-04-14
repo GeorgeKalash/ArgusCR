@@ -46,7 +46,7 @@ namespace ArgusCR1034.POS.Templates.PS101B
             date_data.Text = webObject.record.invoiceView.date.ToString(sessionInfo.dateFormat);
 
             amountInWords_data.Text = SharedClasses.NumberToWords.multiLingualNumberInText((decimal)webObject.record.invoiceView.amount, 2, 2);
-            //desciption_data.Text= ??
+            //desciption_data.Text= webObject.record.
 
             ((InvoiceItemsSubReports)(InvoiceItemsSubReports.ReportSource)).data = webObject.record.invoiceItems;
             ((InvoiceReceiptSubReports)(InvoiceReceiptSubReports.ReportSource)).data = webObject.record.receipts;
