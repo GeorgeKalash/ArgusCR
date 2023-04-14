@@ -21,6 +21,7 @@ namespace ArgusCR1029.CashAndBanks
 
             logo_data.ImageUrl = companyInfo.logoUrl;
 
+            title_data.Text = obj.record.functionName;
             dtName_data.Text = obj.record.dtName;
             reference_data.Text = obj.record.reference;
             plant_data.Text = obj.record.plantName;
