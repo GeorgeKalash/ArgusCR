@@ -71,7 +71,6 @@ namespace ArgusCR1034.POS.Templates.PS101GLD
             this.phoneNumber_lbl = new DevExpress.XtraReports.UI.XRTableCell();
             this.clientName_data = new DevExpress.XtraReports.UI.XRTableCell();
             this.clientName_lbl = new DevExpress.XtraReports.UI.XRTableCell();
-            this.QRCode = new DevExpress.XtraReports.UI.XRBarCode();
             this.logo_data = new DevExpress.XtraReports.UI.XRPictureBox();
             this.xrTable5 = new DevExpress.XtraReports.UI.XRTable();
             this.xrTableRow5 = new DevExpress.XtraReports.UI.XRTableRow();
@@ -92,6 +91,7 @@ namespace ArgusCR1034.POS.Templates.PS101GLD
             this.xrTableRow9 = new DevExpress.XtraReports.UI.XRTableRow();
             this.total_data = new DevExpress.XtraReports.UI.XRTableCell();
             this.total_lbl = new DevExpress.XtraReports.UI.XRTableCell();
+            this.QRCode = new DevExpress.XtraReports.UI.XRBarCode();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable2)).BeginInit();
@@ -617,19 +617,6 @@ namespace ArgusCR1034.POS.Templates.PS101GLD
             this.clientName_lbl.Weight = 1D;
             this.clientName_lbl.WordWrap = false;
             // 
-            // QRCode
-            // 
-            this.QRCode.Alignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
-            this.QRCode.LocationFloat = new DevExpress.Utils.PointFloat(55.20833F, 0F);
-            this.QRCode.Name = "QRCode";
-            this.QRCode.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F);
-            this.QRCode.ShowText = false;
-            this.QRCode.SizeF = new System.Drawing.SizeF(157.191F, 132.2115F);
-            this.QRCode.StylePriority.UsePadding = false;
-            this.QRCode.StylePriority.UseTextAlignment = false;
-            qrCodeGenerator1.CompactionMode = DevExpress.XtraPrinting.BarCode.QRCodeCompactionMode.Byte;
-            this.QRCode.Symbology = qrCodeGenerator1;
-            // 
             // logo_data
             // 
             this.logo_data.LocationFloat = new DevExpress.Utils.PointFloat(323.1612F, 0F);
@@ -884,6 +871,19 @@ namespace ArgusCR1034.POS.Templates.PS101GLD
             this.total_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
             this.total_lbl.Weight = 0.28571423585926603D;
             // 
+            // QRCode
+            // 
+            this.QRCode.Alignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
+            this.QRCode.LocationFloat = new DevExpress.Utils.PointFloat(55.20833F, 0F);
+            this.QRCode.Name = "QRCode";
+            this.QRCode.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F);
+            this.QRCode.ShowText = false;
+            this.QRCode.SizeF = new System.Drawing.SizeF(157.191F, 132.2115F);
+            this.QRCode.StylePriority.UsePadding = false;
+            this.QRCode.StylePriority.UseTextAlignment = false;
+            qrCodeGenerator1.CompactionMode = DevExpress.XtraPrinting.BarCode.QRCodeCompactionMode.Byte;
+            this.QRCode.Symbology = qrCodeGenerator1;
+            // 
             // PS101
             // 
             this.Bands.AddRange(new DevExpress.XtraReports.UI.Band[] {
@@ -957,7 +957,6 @@ namespace ArgusCR1034.POS.Templates.PS101GLD
         private DevExpress.XtraReports.UI.XRTableCell phoneNumber_lbl;
         private DevExpress.XtraReports.UI.XRTableCell clientName_data;
         private DevExpress.XtraReports.UI.XRTableCell clientName_lbl;
-        private DevExpress.XtraReports.UI.XRBarCode QRCode;
         private DevExpress.XtraReports.UI.XRPictureBox logo_data;
         private DevExpress.XtraReports.UI.XRTable xrTable5;
         private DevExpress.XtraReports.UI.XRTableRow xrTableRow5;
@@ -972,5 +971,6 @@ namespace ArgusCR1034.POS.Templates.PS101GLD
         private DevExpress.XtraReports.UI.XRTableRow xrTableRow7;
         private DevExpress.XtraReports.UI.XRTableCell companyPhone_data;
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell2;
+        private DevExpress.XtraReports.UI.XRBarCode QRCode;
     }
 }

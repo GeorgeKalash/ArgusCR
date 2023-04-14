@@ -62,7 +62,7 @@ namespace ArgusCR1034.POS.Templates.PS101B
             // 
             // BottomMargin
             // 
-            this.BottomMargin.HeightF = 0.2744463F;
+            this.BottomMargin.HeightF = 0F;
             this.BottomMargin.Name = "BottomMargin";
             // 
             // Detail
@@ -79,7 +79,7 @@ namespace ArgusCR1034.POS.Templates.PS101B
             this.xrTable1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable1.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow2});
-            this.xrTable1.SizeF = new System.Drawing.SizeF(637.8899F, 19.17F);
+            this.xrTable1.SizeF = new System.Drawing.SizeF(716F, 19.17F);
             // 
             // xrTableRow2
             // 
@@ -242,7 +242,7 @@ namespace ArgusCR1034.POS.Templates.PS101B
             this.xrTable8.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable8.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow8});
-            this.xrTable8.SizeF = new System.Drawing.SizeF(637.8898F, 25F);
+            this.xrTable8.SizeF = new System.Drawing.SizeF(716F, 25F);
             // 
             // xrTableRow8
             // 
