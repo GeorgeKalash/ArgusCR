@@ -34,19 +34,24 @@ namespace ArgusCR1034.POS.Templates.PS101B
 
             SharedClasses.JsonProtocol.GetStructure<ArgusDS.PointOfSale.Reports.PS101> webObject = deserializeGet<ArgusDS.PointOfSale.Reports.PS101>();
 
+            logo_data.ImageUrl = webObject.record.companyInfo.logoUrl;
             companyName_data.Text = webObject.record.companyInfo.name;
             companyVatNo_data.Text = webObject.record.companyInfo.taxNo;
+
             reference_data.Text = webObject.record.invoiceView.reference;
+            date_data.Text = webObject.record.invoiceView.date.ToString(sessionInfo.dateFormat);
+            spName_data.Text = webObject.record.salesPerson?.name;
+            plant_data.Text = webObject.record.invoiceView.plantName;
 
             if (webObject.record.address != null)
             {
-                //clientId_data.Text= webObject.record.address.??
                 clientName_data.Text = webObject.record.address.name;
+                phoneNumber_data.Text = webObject.record.address.phone;
+                address_data.Text = webObject.record.address.street1;
             }
-            date_data.Text = webObject.record.invoiceView.date.ToString(sessionInfo.dateFormat);
 
             amountInWords_data.Text = SharedClasses.NumberToWords.multiLingualNumberInText((decimal)webObject.record.invoiceView.amount, 2, 2);
-            //desciption_data.Text= webObject.record.
+            
 
             ((InvoiceItemsSubReports)(InvoiceItemsSubReports.ReportSource)).data = webObject.record.invoiceItems;
             ((InvoiceReceiptSubReports)(InvoiceReceiptSubReports.ReportSource)).data = webObject.record.receipts;
