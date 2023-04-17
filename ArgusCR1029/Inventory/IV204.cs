@@ -52,7 +52,7 @@ namespace ArgusCR1029.Inventory
             baseQty_lbl.Text = labelText(12);
             weight2_lbl.Text = labelText(13);
             description_lbl.Text = labelText(14);
-            status_data.Text = labelText(15);
+            status_lbl.Text = labelText(15);
             transferRef_lbl.Text = labelText(16);
 
         }
