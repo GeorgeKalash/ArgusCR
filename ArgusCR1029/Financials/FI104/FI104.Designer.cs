@@ -738,7 +738,6 @@ namespace ArgusCR1029.Financials.FI104
             this.amountBaseMetalQty_data.StylePriority.UseFont = false;
             this.amountBaseMetalQty_data.StylePriority.UsePadding = false;
             this.amountBaseMetalQty_data.StylePriority.UseTextAlignment = false;
-            this.amountBaseMetalQty_data.Text = "amountBaseMetalQty_data";
             this.amountBaseMetalQty_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
             this.amountBaseMetalQty_data.Weight = 2.2144525114803315D;
             // 
@@ -754,7 +753,6 @@ namespace ArgusCR1029.Financials.FI104
             this.baseMetalQty_data.StylePriority.UseFont = false;
             this.baseMetalQty_data.StylePriority.UsePadding = false;
             this.baseMetalQty_data.StylePriority.UseTextAlignment = false;
-            this.baseMetalQty_data.Text = "baseMetalQty_data";
             this.baseMetalQty_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
             this.baseMetalQty_data.Weight = 0.35310882789520864D;
             // 
@@ -790,7 +788,6 @@ namespace ArgusCR1029.Financials.FI104
             this.amountTotalLabor_data.StylePriority.UseFont = false;
             this.amountTotalLabor_data.StylePriority.UsePadding = false;
             this.amountTotalLabor_data.StylePriority.UseTextAlignment = false;
-            this.amountTotalLabor_data.Text = "amountTotalLabor_data";
             this.amountTotalLabor_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
             this.amountTotalLabor_data.Weight = 2.2144522758534348D;
             // 
@@ -807,7 +804,6 @@ namespace ArgusCR1029.Financials.FI104
             this.totalLabor_data.StylePriority.UseFont = false;
             this.totalLabor_data.StylePriority.UsePadding = false;
             this.totalLabor_data.StylePriority.UseTextAlignment = false;
-            this.totalLabor_data.Text = "totalLabor_data";
             this.totalLabor_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
             this.totalLabor_data.Weight = 0.35310906352210525D;
             // 
