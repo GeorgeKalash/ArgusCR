@@ -717,7 +717,7 @@ namespace ArgusCR1029.Inventory
             this.grossQty_lbl.StylePriority.UseBorders = false;
             this.grossQty_lbl.StylePriority.UseBorderWidth = false;
             this.grossQty_lbl.StylePriority.UseFont = false;
-            this.grossQty_lbl.Text = "Document Type";
+            this.grossQty_lbl.Text = "Gross QTY";
             this.grossQty_lbl.Weight = 0.33223268742270873D;
             // 
             // baseQty_lbl
