@@ -45,8 +45,8 @@ namespace ArgusCR1029.Financials.FI104B
             cAddress_data.Text = webObject.record.bpAddress?.street1;
             description_data.Text = webObject.record.header.description;
 
-            baseMetalQty_data.Text = webObject.record.baseMetalQty.ToString();
-            totalLabor_data.Text = webObject.record.totalLabor.ToString();
+            baseMetalQty_data.Text = webObject.record.baseMetalQty.ToString("N2");
+            totalLabor_data.Text = webObject.record.totalLabor.ToString("N2");
 
             amountBaseMetalQty_data.Text = SharedClasses.NumberToWords.multiLingualNumberInText((decimal)webObject.record.baseMetalQty, 4, 2);
             amountTotalLabor_data.Text = SharedClasses.NumberToWords.multiLingualNumberInText((decimal)webObject.record.totalLabor, 10, 2);
