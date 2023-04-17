@@ -197,7 +197,7 @@ namespace ArgusCR1029.Financials.FI104
             this.xrTableCell8.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell8.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[purity]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[purity]*1000")});
             this.xrTableCell8.Font = new System.Drawing.Font("Arial", 9F);
             this.xrTableCell8.Multiline = true;
             this.xrTableCell8.Name = "xrTableCell8";

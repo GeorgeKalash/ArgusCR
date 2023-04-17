@@ -44,6 +44,13 @@ namespace ArgusCR1029.Financials.FI104
             exhibitionManager_data.Text = webObject.record.contactMasterData?.name;
             cAddress_data.Text = webObject.record.bpAddress?.street1;
             description_data.Text = webObject.record.header.description;
+
+            baseMetalQty_data.Text = webObject.record.baseMetalQty.ToString();
+            totalLabor_data.Text = webObject.record.totalLabor.ToString();
+
+            amountBaseMetalQty_data.Text = SharedClasses.NumberToWords.multiLingualNumberInText((decimal)webObject.record.baseMetalQty, 4, 2);
+            amountTotalLabor_data.Text = SharedClasses.NumberToWords.multiLingualNumberInText((decimal)webObject.record.totalLabor, 10, 2);
+
             base.OnBeforePrint(e);
         }
 
