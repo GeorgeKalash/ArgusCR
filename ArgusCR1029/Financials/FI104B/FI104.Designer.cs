@@ -155,7 +155,7 @@ namespace ArgusCR1029.Financials.FI104B
             // 
             // MetalSubReports
             // 
-            this.MetalSubReports.LocationFloat = new DevExpress.Utils.PointFloat(25.0003F, 12.49997F);
+            this.MetalSubReports.LocationFloat = new DevExpress.Utils.PointFloat(25.00033F, 12.49997F);
             this.MetalSubReports.Name = "MetalSubReports";
             this.MetalSubReports.ReportSource = new ArgusCR1029.Financials.FI104B.MetalSubReports();
             this.MetalSubReports.SizeF = new System.Drawing.SizeF(777.0992F, 23F);
