@@ -149,7 +149,7 @@ namespace ArgusCR1029.Financials.FI104
             this.xrTableCell2.StylePriority.UseTextAlignment = false;
             this.xrTableCell2.Text = "SKU";
             this.xrTableCell2.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
-            this.xrTableCell2.Weight = 1.0750186228323724D;
+            this.xrTableCell2.Weight = 1.0189711764336418D;
             // 
             // xrTableCell3
             // 
@@ -169,7 +169,7 @@ namespace ArgusCR1029.Financials.FI104
             this.xrTableCell3.StylePriority.UseTextAlignment = false;
             this.xrTableCell3.Text = "Item Name";
             this.xrTableCell3.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
-            this.xrTableCell3.Weight = 2.0419211931824726D;
+            this.xrTableCell3.Weight = 2.0979686395812029D;
             // 
             // xrTableCell11
             // 
@@ -346,7 +346,7 @@ namespace ArgusCR1029.Financials.FI104
             this.xrTableCell6.StylePriority.UseTextAlignment = false;
             this.xrTableCell6.Text = "رقم الصنف";
             this.xrTableCell6.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
-            this.xrTableCell6.Weight = 1.3318790963512559D;
+            this.xrTableCell6.Weight = 1.2624398017656164D;
             // 
             // xrTableCell7
             // 
@@ -363,7 +363,7 @@ namespace ArgusCR1029.Financials.FI104
             this.xrTableCell7.StylePriority.UseTextAlignment = false;
             this.xrTableCell7.Text = "اسم الصنف";
             this.xrTableCell7.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
-            this.xrTableCell7.Weight = 2.52981044883574D;
+            this.xrTableCell7.Weight = 2.5992497434213795D;
             // 
             // xrTableCell12
             // 
