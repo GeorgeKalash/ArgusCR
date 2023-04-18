@@ -7,9 +7,9 @@ using System.Drawing.Printing;
 
 namespace ArgusCR1029.Inventory
 {
-    public partial class IV205 : ArgusRPT.BaseReport
+    public partial class IV206 : ArgusRPT.BaseReport
     {
-        public IV205()
+        public IV206()
         {
             InitializeComponent();
         }
@@ -20,7 +20,7 @@ namespace ArgusCR1029.Inventory
         }
         protected override void OnBeforePrint(PrintEventArgs e)
         {
-            SharedClasses.JsonProtocol.QryStructure<ArgusDS.Inventory.Reports.IV205> obj = deserializeList<ArgusDS.Inventory.Reports.IV205>();
+            SharedClasses.JsonProtocol.QryStructure<ArgusDS.Inventory.Reports.IV206> obj = deserializeList<ArgusDS.Inventory.Reports.IV206>();
             DataSource = obj.list;
 
             fromSite_param.Text = Parameters.Count > 0 ? Parameters[0].Value.ToString() : string.Empty;
@@ -35,21 +35,21 @@ namespace ArgusCR1029.Inventory
         protected override void labelsText()
         {
             title_lbl.Text = labelText(0);
-           
+
             docType_lbl.Text = labelText(1);
             draftRef_data.Text = labelText(2);
             date_lbl.Text = labelText(3);
-            fromSite_lbl.Text = labelText(4);
-            toSite_lbl.Text = labelText(5);
-            notify_lbl.Text = labelText(6);
-            grossQty_lbl.Text = labelText(7);
-            pcs_lbl.Text = labelText(8);
-            weight_lbl.Text = labelText(9);
-            baseQty_lbl.Text = labelText(10);
-            weight2_lbl.Text = labelText(11);
-            description_lbl.Text = labelText(12);
-            xrTableCell15.Text = labelText(13);
-            transferRef_lbl.Text = labelText(14);
+            customer_lbl.Text = labelText(4);
+            site_lbl.Text = labelText(5);
+            pcs_lbl.Text = labelText(6);
+            weight_lbl.Text = labelText(7);
+            subTotal_lbl.Text = labelText(8);
+            vat_lbl.Text = labelText(9);
+            totalAmnt_lbl.Text = labelText(10);
+            description_lbl.Text = labelText(11);
+            workProcess_lbl.Text = labelText(12);
+            status_lbl.Text = labelText(13);
+            salesRef_lbl.Text = labelText(14);
 
             startDate_lbl.Text = labelText(15);
             endDate_lbl.Text = labelText(16);
@@ -60,7 +60,7 @@ namespace ArgusCR1029.Inventory
 
         protected override string dictionaryStore()
         {
-            return "CR1029.IV205";
+            return "CR1029.IV206";
         }
     }
 }

@@ -24,7 +24,7 @@ namespace ArgusCR1029.Inventory
             DataSource = obj.list;
 
             fromSite_param.Text = Parameters.Count > 0 ? Parameters[0].Value.ToString() : string.Empty;
-            toSiteParam_lbl.Text = Parameters.Count > 1 ? Parameters[1].Value.ToString() : string.Empty;
+            toSite_param.Text = Parameters.Count > 1 ? Parameters[1].Value.ToString() : string.Empty;
             startDate_param.Text = Parameters.Count > 2 ? Parameters[2].Value.ToString() : string.Empty;
             endDate_param.Text = Parameters.Count > 3 ? Parameters[3].Value.ToString() : string.Empty;
 
