@@ -23,10 +23,9 @@ namespace ArgusCR1029.Inventory
             SharedClasses.JsonProtocol.QryStructure<ArgusDS.Inventory.Reports.IV207> obj = deserializeList<ArgusDS.Inventory.Reports.IV207>();
             DataSource = obj.list;
 
-            fromSite_param.Text = Parameters.Count > 0 ? Parameters[0].Value.ToString() : string.Empty;
-            toSite_param.Text = Parameters.Count > 1 ? Parameters[1].Value.ToString() : string.Empty;
-            startDate_param.Text = Parameters.Count > 2 ? Parameters[2].Value.ToString() : string.Empty;
-            endDate_param.Text = Parameters.Count > 3 ? Parameters[3].Value.ToString() : string.Empty;
+            siteParam_lbl.Text = Parameters.Count > 0 ? Parameters[0].Value.ToString() : string.Empty;
+            startDate_param.Text = Parameters.Count > 1 ? Parameters[1].Value.ToString() : string.Empty;
+            endDate_param.Text = Parameters.Count > 2 ? Parameters[2].Value.ToString() : string.Empty;
 
             printSignature.Text = reportSignature();
             base.OnBeforePrint(e);
@@ -53,9 +52,7 @@ namespace ArgusCR1029.Inventory
 
             startDate_lbl.Text = labelText(15);
             endDate_lbl.Text = labelText(16);
-            fromSiteParam_lbl.Text = labelText(17);
-            toSiteParam_lbl.Text = labelText(18);
-
+            siteParam_lbl.Text = labelText(17);
         }
 
         protected override string dictionaryStore()
