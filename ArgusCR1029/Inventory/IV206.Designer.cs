@@ -248,7 +248,7 @@ namespace ArgusCR1029.Inventory
             this.xrTableCell5.StylePriority.UsePadding = false;
             this.xrTableCell5.StylePriority.UseTextAlignment = false;
             this.xrTableCell5.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
-            this.xrTableCell5.Weight = 0.82972918621362057D;
+            this.xrTableCell5.Weight = 0.85486419337791086D;
             // 
             // toSite_data
             // 
@@ -266,7 +266,7 @@ namespace ArgusCR1029.Inventory
             this.toSite_data.StylePriority.UsePadding = false;
             this.toSite_data.StylePriority.UseTextAlignment = false;
             this.toSite_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
-            this.toSite_data.Weight = 0.47492469076411192D;
+            this.toSite_data.Weight = 0.44978968359982169D;
             this.toSite_data.WordWrap = false;
             // 
             // xrTableCell6
