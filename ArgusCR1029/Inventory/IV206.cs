@@ -47,17 +47,14 @@ namespace ArgusCR1029.Inventory
             vat_lbl.Text = labelText(9);
             totalAmnt_lbl.Text = labelText(10);
             description_lbl.Text = labelText(11);
-            workProcess_lbl.Text = labelText(12);
-            status_lbl.Text = labelText(13);
-            salesRef_lbl.Text = labelText(14);
+            status_lbl.Text = labelText(12);
+            salesRef_lbl.Text = labelText(13);
 
-            startDate_lbl.Text = labelText(15);
-            endDate_lbl.Text = labelText(16);
-            fromSiteParam_lbl.Text = labelText(17);
-            toSiteParam_lbl.Text = labelText(18);
-
+            startDate_lbl.Text = labelText(14);
+            endDate_lbl.Text = labelText(15);
+            fromSiteParam_lbl.Text = labelText(16);
+            toSiteParam_lbl.Text = labelText(17);
         }
-
         protected override string dictionaryStore()
         {
             return "CR1029.IV206";
