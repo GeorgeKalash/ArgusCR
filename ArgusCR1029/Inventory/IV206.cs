@@ -47,11 +47,10 @@ namespace ArgusCR1029.Inventory
             totalAmnt_lbl.Text = labelText(10);
             description_lbl.Text = labelText(11);
             status_lbl.Text = labelText(12);
-            salesRef_lbl.Text = labelText(13);
 
-            startDate_lbl.Text = labelText(14);
-            endDate_lbl.Text = labelText(15);
-            siteParam_lbl.Text = labelText(16);
+            startDate_lbl.Text = labelText(13);
+            endDate_lbl.Text = labelText(14);
+            siteParam_lbl.Text = labelText(15);
         }
         protected override string dictionaryStore()
         {

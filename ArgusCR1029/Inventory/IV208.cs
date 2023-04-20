@@ -13,7 +13,6 @@ namespace ArgusCR1029.Inventory
         {
             InitializeComponent();
         }
-
         protected override string reportName()
         {
             return title_lbl.Text;
@@ -30,7 +29,6 @@ namespace ArgusCR1029.Inventory
             printSignature.Text = reportSignature();
             base.OnBeforePrint(e);
         }
-
         protected override void labelsText()
         {
             title_lbl.Text = labelText(0);
