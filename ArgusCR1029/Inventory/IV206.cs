@@ -36,7 +36,7 @@ namespace ArgusCR1029.Inventory
             title_lbl.Text = labelText(0);
 
             docType_lbl.Text = labelText(1);
-            draftRef_data.Text = labelText(2);
+            DraftRef_lbl.Text = labelText(2);
             date_lbl.Text = labelText(3);
             customer_lbl.Text = labelText(4);
             site_lbl.Text = labelText(5);
