@@ -46,36 +46,28 @@ namespace ArgusCR1029.Sales
             date_lbl.Text = labelText(3);
             clientRef_lbl.Text = labelText(4);
             clientName_lbl.Text = labelText(5);
-
-            pieces_lbl.Text = labelText(6);
-
-            G18Title_lbl.Text = labelText(7);
+            sp_lbl.Text = labelText(6);
+            pieces_lbl.Text = labelText(7);
             G18_lbl.Text = labelText(8);
-            G18Egp_lbl.Text = labelText(9);
+            G21_lbl.Text = labelText(9);
+            totalQtyG21_lbl.Text = labelText(10);
+            laborPrice_lbl.Text = labelText(11);
+            discPct_lbl.Text = labelText(12);
+            discount_lbl.Text = labelText(13);
+            vatAmount_lbl.Text = labelText(14);
+            amount_lbl.Text = labelText(15);
+            description_lbl.Text = labelText(16);
+            status_lbl.Text = labelText(17);
 
-            G21Title_lbl.Text = labelText(10);
-            G21_lbl.Text = labelText(11);
-            G21Egp_lbl.Text = labelText(12);
+            startDate_lbl.Text = labelText(18);
+            endDate_lbl.Text = labelText(19);
+            client_lbl.Text = labelText(20);
+            salesPerson_lbl.Text = labelText(21);
+            plantGroup_lbl.Text = labelText(22);
+            plant_lbl.Text = labelText(23);
 
-            totalQty_lbl.Text = labelText(13);
-            totalQtyG21_lbl.Text = labelText(14);
-
-            laborPrice_lbl.Text = labelText(15);
-            discount_lbl.Text = labelText(16);
-            vatAmount_lbl.Text = labelText(17);
-            amount_lbl.Text = labelText(18);
-            description_lbl.Text = labelText(19);
-            status_lbl.Text = labelText(20);
-
-            startDate_lbl.Text = labelText(21);
-            endDate_lbl.Text = labelText(22);
-            client_lbl.Text = labelText(23);
-            salesPerson_lbl.Text = labelText(24);
-
-            plantGroup_lbl.Text = labelText(25);
-            plant_lbl.Text = labelText(26);
-            totalSales_lbl.Text = labelText(27);
-            total_lbl.Text = labelText(28);
+            totalSales_lbl.Text = labelText(24);
+            total_lbl.Text = labelText(25);
         }
 
         protected override string dictionaryStore()
