@@ -27,6 +27,7 @@ namespace ArgusCR1029.Sales
             startDate_param.Text = Parameters.Count > 1 ? Parameters[1].Value.ToString() : string.Empty;
             endDate_param.Text = Parameters.Count > 2 ? Parameters[2].Value.ToString() : string.Empty;
 
+            logo_data.ImageUrl = companyInfo.logoUrl;
             printSignature.Text = reportSignature();
             base.OnBeforePrint(e);
         }
