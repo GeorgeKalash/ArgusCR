@@ -268,23 +268,23 @@
     <Compile Include="Inventory\IV205.Designer.cs">
       <DependentUpon>IV205.cs</DependentUpon>
     </Compile>
-    <Compile Include="Inventory\IV206.cs">
+    <Compile Include="Sales\SA206.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Inventory\IV206.Designer.cs">
-      <DependentUpon>IV206.cs</DependentUpon>
+    <Compile Include="Sales\SA206.Designer.cs">
+      <DependentUpon>SA206.cs</DependentUpon>
     </Compile>
-    <Compile Include="Inventory\IV207.cs">
+    <Compile Include="Sales\SA207.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Inventory\IV207.Designer.cs">
-      <DependentUpon>IV207.cs</DependentUpon>
+    <Compile Include="Sales\SA207.Designer.cs">
+      <DependentUpon>SA207.cs</DependentUpon>
     </Compile>
-    <Compile Include="Inventory\IV208.cs">
+    <Compile Include="Sales\SA208.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Inventory\IV208.Designer.cs">
-      <DependentUpon>IV208.cs</DependentUpon>
+    <Compile Include="Sales\SA208.Designer.cs">
+      <DependentUpon>SA208.cs</DependentUpon>
     </Compile>
     <Compile Include="Inventory\IV430.cs">
       <SubType>Component</SubType>
@@ -492,6 +492,12 @@
     <Compile Include="Sales\SA203_L1.Designer.cs">
       <DependentUpon>SA203_L1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Sales\SA500.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Sales\SA500.Designer.cs">
+      <DependentUpon>SA500.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="CashAndBanks\CA101.resx">
@@ -563,14 +569,14 @@
     <EmbeddedResource Include="Inventory\IV205.resx">
       <DependentUpon>IV205.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Inventory\IV206.resx">
-      <DependentUpon>IV206.cs</DependentUpon>
+    <EmbeddedResource Include="Sales\SA206.resx">
+      <DependentUpon>SA206.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Inventory\IV207.resx">
-      <DependentUpon>IV207.cs</DependentUpon>
+    <EmbeddedResource Include="Sales\SA207.resx">
+      <DependentUpon>SA207.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Inventory\IV208.resx">
-      <DependentUpon>IV208.cs</DependentUpon>
+    <EmbeddedResource Include="Sales\SA208.resx">
+      <DependentUpon>SA208.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Inventory\IV430.resx">
       <DependentUpon>IV430.cs</DependentUpon>
@@ -674,6 +680,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Sales\SA203_L1.resx">
       <DependentUpon>SA203_L1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales\SA500.resx">
+      <DependentUpon>SA500.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

@@ -5,22 +5,21 @@ using System.ComponentModel;
 using System.Drawing;
 using System.Drawing.Printing;
 
-namespace ArgusCR1029.Inventory
+namespace ArgusCR1029.Sales
 {
-    public partial class IV206 : ArgusRPT.BaseReport
+    public partial class SA208 : ArgusRPT.BaseReport
     {
-        public IV206()
+        public SA208()
         {
             InitializeComponent();
         }
-
         protected override string reportName()
         {
             return title_lbl.Text;
         }
         protected override void OnBeforePrint(PrintEventArgs e)
         {
-            SharedClasses.JsonProtocol.QryStructure<ArgusDS.Inventory.Reports.IV206> obj = deserializeList<ArgusDS.Inventory.Reports.IV206>();
+            SharedClasses.JsonProtocol.QryStructure<ArgusDS.Sales.Reports.SA208> obj = deserializeList<ArgusDS.Sales.Reports.SA208>();
             DataSource = obj.list;
 
             siteParam_param.Text = Parameters.Count > 0 ? Parameters[0].Value.ToString() : string.Empty;
@@ -30,13 +29,12 @@ namespace ArgusCR1029.Inventory
             printSignature.Text = reportSignature();
             base.OnBeforePrint(e);
         }
-
         protected override void labelsText()
         {
             title_lbl.Text = labelText(0);
 
             docType_lbl.Text = labelText(1);
-            DraftRef_lbl.Text = labelText(2);
+            draftRef_data.Text = labelText(2);
             date_lbl.Text = labelText(3);
             customer_lbl.Text = labelText(4);
             site_lbl.Text = labelText(5);
@@ -46,15 +44,17 @@ namespace ArgusCR1029.Inventory
             vat_lbl.Text = labelText(9);
             totalAmnt_lbl.Text = labelText(10);
             description_lbl.Text = labelText(11);
-            status_lbl.Text = labelText(12);
+            workProcess_lbl.Text = labelText(12);
+            status_lbl.Text = labelText(13);
+            salesRef_lbl.Text = labelText(14);
 
-            startDate_lbl.Text = labelText(13);
-            endDate_lbl.Text = labelText(14);
-            siteParam_lbl.Text = labelText(15);
+            startDate_lbl.Text = labelText(15);
+            endDate_lbl.Text = labelText(16);
+            siteParam_lbl.Text = labelText(17);
         }
         protected override string dictionaryStore()
         {
-            return "CR1029.IV206";
+            return "CR1029.SA208";
         }
     }
 }

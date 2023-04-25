@@ -5,30 +5,32 @@ using System.ComponentModel;
 using System.Drawing;
 using System.Drawing.Printing;
 
-namespace ArgusCR1029.Inventory
+namespace ArgusCR1029.Sales
 {
-    public partial class IV208 : ArgusRPT.BaseReport
+    public partial class SA207 : ArgusRPT.BaseReport
     {
-        public IV208()
+        public SA207()
         {
             InitializeComponent();
         }
+
         protected override string reportName()
         {
             return title_lbl.Text;
         }
         protected override void OnBeforePrint(PrintEventArgs e)
         {
-            SharedClasses.JsonProtocol.QryStructure<ArgusDS.Inventory.Reports.IV208> obj = deserializeList<ArgusDS.Inventory.Reports.IV208>();
+            SharedClasses.JsonProtocol.QryStructure<ArgusDS.Sales.Reports.SA207> obj = deserializeList<ArgusDS.Sales.Reports.SA207>();
             DataSource = obj.list;
 
-            siteParam_param.Text = Parameters.Count > 0 ? Parameters[0].Value.ToString() : string.Empty;
+            siteParam_lbl.Text = Parameters.Count > 0 ? Parameters[0].Value.ToString() : string.Empty;
             startDate_param.Text = Parameters.Count > 1 ? Parameters[1].Value.ToString() : string.Empty;
             endDate_param.Text = Parameters.Count > 2 ? Parameters[2].Value.ToString() : string.Empty;
 
             printSignature.Text = reportSignature();
             base.OnBeforePrint(e);
         }
+
         protected override void labelsText()
         {
             title_lbl.Text = labelText(0);
@@ -46,15 +48,16 @@ namespace ArgusCR1029.Inventory
             description_lbl.Text = labelText(11);
             workProcess_lbl.Text = labelText(12);
             status_lbl.Text = labelText(13);
-            salesRef_lbl.Text = labelText(14);
+            returnRef_lbl.Text = labelText(14);
 
             startDate_lbl.Text = labelText(15);
             endDate_lbl.Text = labelText(16);
             siteParam_lbl.Text = labelText(17);
         }
+
         protected override string dictionaryStore()
         {
-            return "CR1029.IV208";
+            return "CR1029.SA207";
         }
     }
 }
