@@ -50,24 +50,23 @@ namespace ArgusCR1029.Sales
             pieces_lbl.Text = labelText(7);
             G18_lbl.Text = labelText(8);
             G21_lbl.Text = labelText(9);
-            totalQtyG21_lbl.Text = labelText(10);
-            laborPrice_lbl.Text = labelText(11);
-            discPct_lbl.Text = labelText(12);
-            discount_lbl.Text = labelText(13);
-            vatAmount_lbl.Text = labelText(14);
-            amount_lbl.Text = labelText(15);
-            description_lbl.Text = labelText(16);
-            status_lbl.Text = labelText(17);
+            laborPrice_lbl.Text = labelText(10);
+            discPct_lbl.Text = labelText(11);
+            discount_lbl.Text = labelText(12);
+            vatAmount_lbl.Text = labelText(13);
+            amount_lbl.Text = labelText(14);
+            description_lbl.Text = labelText(15);
+            status_lbl.Text = labelText(16);
 
-            startDate_lbl.Text = labelText(18);
-            endDate_lbl.Text = labelText(19);
-            client_lbl.Text = labelText(20);
-            salesPerson_lbl.Text = labelText(21);
-            plantGroup_lbl.Text = labelText(22);
-            plant_lbl.Text = labelText(23);
+            startDate_lbl.Text = labelText(17);
+            endDate_lbl.Text = labelText(18);
+            client_lbl.Text = labelText(19);
+            salesPerson_lbl.Text = labelText(20);
+            plantGroup_lbl.Text = labelText(21);
+            plant_lbl.Text = labelText(22);
 
-            totalSales_lbl.Text = labelText(24);
-            total_lbl.Text = labelText(25);
+            totalSales_lbl.Text = labelText(23);
+            total_lbl.Text = labelText(24);
         }
 
         protected override string dictionaryStore()
