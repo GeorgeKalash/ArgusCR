@@ -1027,7 +1027,6 @@ namespace ArgusCR1029.Sales
             this.GroupFooter1.HeightF = 25F;
             this.GroupFooter1.KeepTogether = true;
             this.GroupFooter1.Name = "GroupFooter1";
-            this.GroupFooter1.RepeatEveryPage = true;
             // 
             // xrTable4
             // 

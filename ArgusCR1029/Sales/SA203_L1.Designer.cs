@@ -151,7 +151,7 @@ namespace ArgusCR1029.Sales
             // 
             // BottomMargin
             // 
-            this.BottomMargin.HeightF = 0F;
+            this.BottomMargin.HeightF = 1.999919F;
             this.BottomMargin.Name = "BottomMargin";
             // 
             // Detail
@@ -1027,7 +1027,6 @@ namespace ArgusCR1029.Sales
             this.GroupFooter1.HeightF = 25F;
             this.GroupFooter1.KeepTogether = true;
             this.GroupFooter1.Name = "GroupFooter1";
-            this.GroupFooter1.RepeatEveryPage = true;
             // 
             // xrTable4
             // 
@@ -1534,7 +1533,7 @@ namespace ArgusCR1029.Sales
             this.PageHeader});
             this.Font = new System.Drawing.Font("Arial", 9.75F);
             this.Landscape = true;
-            this.Margins = new System.Drawing.Printing.Margins(0, 0, 5, 0);
+            this.Margins = new System.Drawing.Printing.Margins(0, 0, 5, 2);
             this.PageHeight = 827;
             this.PageWidth = 1299;
             this.PaperKind = System.Drawing.Printing.PaperKind.A4Plus;
