@@ -20,8 +20,12 @@ namespace ArgusCR1029.Sales
 
         protected override void OnBeforePrint(PrintEventArgs e)
         {
-            SharedClasses.JsonProtocol.QryStructure<ArgusDS.Sales.Reports.SA500> obj = deserializeList<ArgusDS.Sales.Reports.SA500>();
+            SharedClasses.JsonProtocol.QryStructure<Custom.CR1029.SA500> obj = deserializeList<Custom.CR1029.SA500>();
             DataSource = obj.list;
+
+            startDate_param.Text = Parameters.Count > 0 ? Parameters[0].Value.ToString() : string.Empty;
+            endDate_param.Text = Parameters.Count > 1 ? Parameters[1].Value.ToString() : string.Empty;
+            level_param.Text = Parameters.Count > 2 ? Parameters[2].Value.ToString() : string.Empty;
 
             logo_data.ImageUrl = companyInfo.logoUrl;
             companyInfoName_data.Text = companyInfo.name;
@@ -56,6 +60,10 @@ namespace ArgusCR1029.Sales
             vatAmount_lbl.Text = labelText(12);
             netAmount_lbl.Text = labelText(13);
             avg_lbl.Text = labelText(14);
+
+            startDate_lbl.Text = labelText(15);
+            endDate_lbl.Text = labelText(16);
+            level_lbl.Text = labelText(17);
         }
 
         protected override string dictionaryStore()
