@@ -91,6 +91,7 @@ namespace ArgusCR1029.Sales
             this.xrTableCell18 = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTableCell1 = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTableCell2 = new DevExpress.XtraReports.UI.XRTableCell();
+            this.logo_data = new DevExpress.XtraReports.UI.XRPictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable5)).BeginInit();
@@ -675,15 +676,16 @@ namespace ArgusCR1029.Sales
             // ReportHeader
             // 
             this.ReportHeader.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+            this.logo_data,
             this.xrTable5,
             this.title_lbl});
-            this.ReportHeader.HeightF = 122.5694F;
+            this.ReportHeader.HeightF = 212.1527F;
             this.ReportHeader.KeepTogether = true;
             this.ReportHeader.Name = "ReportHeader";
             // 
             // xrTable5
             // 
-            this.xrTable5.LocationFloat = new DevExpress.Utils.PointFloat(9.999998F, 39.66667F);
+            this.xrTable5.LocationFloat = new DevExpress.Utils.PointFloat(12.5F, 125F);
             this.xrTable5.Name = "xrTable5";
             this.xrTable5.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable5.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
@@ -776,11 +778,11 @@ namespace ArgusCR1029.Sales
             // title_lbl
             // 
             this.title_lbl.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.title_lbl.LocationFloat = new DevExpress.Utils.PointFloat(0F, 0F);
+            this.title_lbl.LocationFloat = new DevExpress.Utils.PointFloat(115.5832F, 0F);
             this.title_lbl.Multiline = true;
             this.title_lbl.Name = "title_lbl";
             this.title_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.title_lbl.SizeF = new System.Drawing.SizeF(1169F, 39.66667F);
+            this.title_lbl.SizeF = new System.Drawing.SizeF(1053.417F, 39.66667F);
             this.title_lbl.StylePriority.UseFont = false;
             this.title_lbl.StylePriority.UseTextAlignment = false;
             this.title_lbl.Text = "Sales Invoices";
@@ -938,7 +940,14 @@ namespace ArgusCR1029.Sales
             this.xrTableCell2.TextFormatString = "{0:n2}";
             this.xrTableCell2.Weight = 0.55204419684494366D;
             // 
-            // IV206
+            // logo_data
+            // 
+            this.logo_data.LocationFloat = new DevExpress.Utils.PointFloat(10.00004F, 0F);
+            this.logo_data.Name = "logo_data";
+            this.logo_data.SizeF = new System.Drawing.SizeF(105.5832F, 113F);
+            this.logo_data.Sizing = DevExpress.XtraPrinting.ImageSizeMode.ZoomImage;
+            // 
+            // SA206
             // 
             this.Bands.AddRange(new DevExpress.XtraReports.UI.Band[] {
             this.TopMargin,
@@ -1022,5 +1031,6 @@ namespace ArgusCR1029.Sales
         private DevExpress.XtraReports.UI.XRLabel printSignature;
         private DevExpress.XtraReports.UI.XRTableCell fromSite_data;
         private DevExpress.XtraReports.UI.XRTableCell toSite_data;
+        private DevExpress.XtraReports.UI.XRPictureBox logo_data;
     }
 }

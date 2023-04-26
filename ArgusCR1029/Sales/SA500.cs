@@ -28,16 +28,6 @@ namespace ArgusCR1029.Sales
             level_param.Text = Parameters.Count > 2 ? Parameters[2].Value.ToString() : string.Empty;
 
             logo_data.ImageUrl = companyInfo.logoUrl;
-            companyInfoName_data.Text = companyInfo.name;
-            taxNo_data.Text = companyInfo.taxNo;
-            if (companyInfo.address != null)
-            {
-                addressName_data.Text = companyInfo.address.name;
-                addressStreet_data.Text = companyInfo.address.street1;
-                addressMobile_data.Text = companyInfo.address.phone;
-                addressEmail_data.Text = companyInfo.address.email1;
-            }
-
             printSignature.Text = reportSignature();
             base.OnBeforePrint(e);
         }
