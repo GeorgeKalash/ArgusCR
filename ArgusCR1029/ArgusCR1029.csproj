@@ -268,11 +268,17 @@
     <Compile Include="Inventory\IV205.Designer.cs">
       <DependentUpon>IV205.cs</DependentUpon>
     </Compile>
-    <Compile Include="Purchase\PU201.cs">
+    <Compile Include="Purchase\PU203.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Purchase\PU201.Designer.cs">
-      <DependentUpon>PU201.cs</DependentUpon>
+    <Compile Include="Purchase\PU203.Designer.cs">
+      <DependentUpon>PU203.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\PU401.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Purchase\PU401.Designer.cs">
+      <DependentUpon>PU401.cs</DependentUpon>
     </Compile>
     <Compile Include="Sales\SA204_L1.cs">
       <SubType>Component</SubType>
@@ -587,8 +593,11 @@
     <EmbeddedResource Include="Inventory\IV205.resx">
       <DependentUpon>IV205.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Purchase\PU201.resx">
-      <DependentUpon>PU201.cs</DependentUpon>
+    <EmbeddedResource Include="Purchase\PU203.resx">
+      <DependentUpon>PU203.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\PU401.resx">
+      <DependentUpon>PU401.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Sales\SA204_L1.resx">
       <DependentUpon>SA204_L1.cs</DependentUpon>
