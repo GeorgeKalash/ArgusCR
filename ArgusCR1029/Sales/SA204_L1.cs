@@ -23,12 +23,12 @@ namespace ArgusCR1029.Sales
             SharedClasses.JsonProtocol.QryStructure<Custom.CR1029.SA204_Layout1> obj = deserializeList<Custom.CR1029.SA204_Layout1>();
             DataSource = obj.list;
 
-            clientRef_param.Text = Parameters.Count > 8 ? Parameters[8].Value.ToString() : string.Empty;
             startDate_param.Text = Parameters.Count > 0 ? Parameters[0].Value.ToString() : string.Empty;
             endDate_param.Text = Parameters.Count > 1 ? Parameters[1].Value.ToString() : string.Empty;
-            salesPerson_param.Text = Parameters.Count > 6 ? Parameters[6].Value.ToString() : string.Empty;
             plantGroup_param.Text = Parameters.Count > 2 ? Parameters[2].Value.ToString() : string.Empty;
             plant_param.Text = Parameters.Count > 3 ? Parameters[3].Value.ToString() : string.Empty;
+            salesPerson_param.Text = Parameters.Count > 5 ? Parameters[5].Value.ToString() : string.Empty;
+            clientRef_param.Text = Parameters.Count > 7 ? Parameters[7].Value.ToString() : string.Empty;
 
             logo_data.ImageUrl = companyInfo.logoUrl;
 
