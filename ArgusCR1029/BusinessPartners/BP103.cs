@@ -25,6 +25,8 @@ namespace ArgusCR1029.BusinessPartners
             DataSource = obj.list;
             logo_data.ImageUrl = companyInfo.logoUrl;
 
+            bpGrp_param.Text = Parameters.Count > 0 ? Parameters[0].Value.ToString() : string.Empty;
+
             printSignature.Text = reportSignature();
             base.OnBeforePrint(e);
         }
@@ -32,6 +34,17 @@ namespace ArgusCR1029.BusinessPartners
         protected override void labelsText()
         {
             title_lbl.Text = labelText(0);
+
+            reference_lbl.Text = labelText(1);
+            name_lbl.Text = labelText(2);
+            clientGroup_lbl.Text = labelText(3);
+            state_lbl.Text = labelText(4);
+            city_lbl.Text = labelText(5);
+            szRef_lbl.Text = labelText(6);
+            szName_lbl.Text = labelText(7);
+
+             bpGrp_lbl.Text = labelText(8);
+
         }
         protected override string dictionaryStore()
         {
