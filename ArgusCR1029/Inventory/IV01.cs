@@ -23,6 +23,7 @@ namespace ArgusCR1029.Inventory
             SharedClasses.JsonProtocol.QryStructure<Custom.CR1029.IV01> obj = deserializeList<Custom.CR1029.IV01>();
             DataSource = obj.list;
 
+            logo_data.ImageUrl = companyInfo.logoUrl;
             printSignature.Text = reportSignature();
             base.OnBeforePrint(e);
         }

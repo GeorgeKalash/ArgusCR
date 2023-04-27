@@ -62,6 +62,7 @@ namespace ArgusCR1029.Financials
             this.crossTabHeaderStyle = new DevExpress.XtraReports.UI.XRControlStyle();
             this.crossTabTotalStyle = new DevExpress.XtraReports.UI.XRControlStyle();
             this.ReportHeader = new DevExpress.XtraReports.UI.ReportHeaderBand();
+            this.logo_data = new DevExpress.XtraReports.UI.XRPictureBox();
             this.crossTab = new DevExpress.XtraReports.UI.XRCrossTab();
             this.accountRef_lbl = new DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell();
             this.date_lbl = new DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell();
@@ -179,12 +180,20 @@ namespace ArgusCR1029.Financials
             // ReportHeader
             // 
             this.ReportHeader.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+            this.logo_data,
             this.crossTab,
             this.title_lbl,
             this.xrTable1});
-            this.ReportHeader.HeightF = 448.9583F;
+            this.ReportHeader.HeightF = 512.7083F;
             this.ReportHeader.KeepTogether = true;
             this.ReportHeader.Name = "ReportHeader";
+            // 
+            // logo_data
+            // 
+            this.logo_data.LocationFloat = new DevExpress.Utils.PointFloat(13.2918F, 0F);
+            this.logo_data.Name = "logo_data";
+            this.logo_data.SizeF = new System.Drawing.SizeF(105.5832F, 113F);
+            this.logo_data.Sizing = DevExpress.XtraPrinting.ImageSizeMode.ZoomImage;
             // 
             // crossTab
             // 
@@ -279,7 +288,7 @@ namespace ArgusCR1029.Financials
             this.crossTab.DataSource = this.objectDataSource1;
             this.crossTab.GeneralStyleName = "crossTabGeneralStyle";
             this.crossTab.HeaderAreaStyleName = "crossTabHeaderStyle";
-            this.crossTab.LocationFloat = new DevExpress.Utils.PointFloat(12.5F, 173.9583F);
+            this.crossTab.LocationFloat = new DevExpress.Utils.PointFloat(13.2918F, 237.7083F);
             this.crossTab.Name = "crossTab";
             crossTabRowDefinition1.Visible = false;
             crossTabRowDefinition2.Visible = false;
@@ -784,9 +793,9 @@ namespace ArgusCR1029.Financials
             // 
             // title_lbl
             // 
-            this.title_lbl.LocationFloat = new DevExpress.Utils.PointFloat(0F, 0F);
+            this.title_lbl.LocationFloat = new DevExpress.Utils.PointFloat(118.875F, 0F);
             this.title_lbl.Name = "title_lbl";
-            this.title_lbl.SizeF = new System.Drawing.SizeF(1169F, 30.01302F);
+            this.title_lbl.SizeF = new System.Drawing.SizeF(1149.125F, 30.01302F);
             this.title_lbl.StyleName = "TitleStyle";
             this.title_lbl.StylePriority.UseTextAlignment = false;
             this.title_lbl.Text = "Statement Of Account";
@@ -794,7 +803,7 @@ namespace ArgusCR1029.Financials
             // 
             // xrTable1
             // 
-            this.xrTable1.LocationFloat = new DevExpress.Utils.PointFloat(12.5F, 50F);
+            this.xrTable1.LocationFloat = new DevExpress.Utils.PointFloat(13.2918F, 123.75F);
             this.xrTable1.Name = "xrTable1";
             this.xrTable1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable1.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
@@ -819,13 +828,13 @@ namespace ArgusCR1029.Financials
             this.fiscalYear_lbl.Name = "fiscalYear_lbl";
             this.fiscalYear_lbl.StylePriority.UseFont = false;
             this.fiscalYear_lbl.Text = "Fiscal Year:";
-            this.fiscalYear_lbl.Weight = 0.83488176794270641D;
+            this.fiscalYear_lbl.Weight = 0.71073301539278577D;
             // 
             // fiscalYear_param
             // 
             this.fiscalYear_param.Multiline = true;
             this.fiscalYear_param.Name = "fiscalYear_param";
-            this.fiscalYear_param.Weight = 2.3964920604176192D;
+            this.fiscalYear_param.Weight = 2.5206408129675397D;
             // 
             // xrTableRow2
             // 
@@ -842,13 +851,13 @@ namespace ArgusCR1029.Financials
             this.startDate_lbl.Name = "startDate_lbl";
             this.startDate_lbl.StylePriority.UseFont = false;
             this.startDate_lbl.Text = "Start Date:";
-            this.startDate_lbl.Weight = 0.834881856815311D;
+            this.startDate_lbl.Weight = 0.71073300155089358D;
             // 
             // startDate_param
             // 
             this.startDate_param.Multiline = true;
             this.startDate_param.Name = "startDate_param";
-            this.startDate_param.Weight = 2.3964919715450139D;
+            this.startDate_param.Weight = 2.5206408268094314D;
             // 
             // xrTableRow3
             // 
@@ -865,13 +874,13 @@ namespace ArgusCR1029.Financials
             this.endDate_lbl.Name = "endDate_lbl";
             this.endDate_lbl.StylePriority.UseFont = false;
             this.endDate_lbl.Text = "End Date:";
-            this.endDate_lbl.Weight = 0.834881856815311D;
+            this.endDate_lbl.Weight = 0.71073300155089358D;
             // 
             // endDate_param
             // 
             this.endDate_param.Multiline = true;
             this.endDate_param.Name = "endDate_param";
-            this.endDate_param.Weight = 2.3964919715450139D;
+            this.endDate_param.Weight = 2.5206408268094314D;
             // 
             // xrTableRow5
             // 
@@ -888,13 +897,13 @@ namespace ArgusCR1029.Financials
             this.account_lbl.Name = "account_lbl";
             this.account_lbl.StylePriority.UseFont = false;
             this.account_lbl.Text = "Account:";
-            this.account_lbl.Weight = 0.83488187065719666D;
+            this.account_lbl.Weight = 0.71073301539277922D;
             // 
             // account_param
             // 
             this.account_param.Multiline = true;
             this.account_param.Name = "account_param";
-            this.account_param.Weight = 2.396491957703129D;
+            this.account_param.Weight = 2.5206408129675464D;
             // 
             // Detail
             // 
@@ -904,12 +913,12 @@ namespace ArgusCR1029.Financials
             // 
             // TopMargin
             // 
-            this.TopMargin.HeightF = 30F;
+            this.TopMargin.HeightF = 25F;
             this.TopMargin.Name = "TopMargin";
             // 
             // BottomMargin
             // 
-            this.BottomMargin.HeightF = 10F;
+            this.BottomMargin.HeightF = 0F;
             this.BottomMargin.Name = "BottomMargin";
             // 
             // TitleStyle
@@ -966,7 +975,7 @@ namespace ArgusCR1029.Financials
             this.printSignature.Multiline = true;
             this.printSignature.Name = "printSignature";
             this.printSignature.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.printSignature.SizeF = new System.Drawing.SizeF(978.9061F, 25.50001F);
+            this.printSignature.SizeF = new System.Drawing.SizeF(1066.406F, 25.50001F);
             this.printSignature.StylePriority.UseTextAlignment = false;
             this.printSignature.Text = "printSignature";
             this.printSignature.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
@@ -984,7 +993,7 @@ namespace ArgusCR1029.Financials
             this.Font = new System.Drawing.Font("Arial", 9.75F);
             this.HorizontalContentSplitting = DevExpress.XtraPrinting.HorizontalContentSplitting.Smart;
             this.Landscape = true;
-            this.Margins = new System.Drawing.Printing.Margins(0, 0, 30, 10);
+            this.Margins = new System.Drawing.Printing.Margins(0, 0, 25, 0);
             this.PageHeight = 929;
             this.PageWidth = 1268;
             this.PaperKind = System.Drawing.Printing.PaperKind.A4Extra;
@@ -1089,5 +1098,6 @@ namespace ArgusCR1029.Financials
         private DevExpress.XtraReports.UI.XRTableCell account_lbl;
         private DevExpress.XtraReports.UI.XRTableCell account_param;
         private DevExpress.XtraReports.UI.XRLabel xrLabel1;
+        private DevExpress.XtraReports.UI.XRPictureBox logo_data;
     }
 }

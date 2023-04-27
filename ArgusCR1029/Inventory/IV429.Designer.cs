@@ -1216,8 +1216,7 @@ namespace ArgusCR1029.Inventory
             this.groupRef,
             this.GroupFooter1});
             this.Landscape = true;
-            this.Margins = new System.Drawing.Printing.Margins(0, 0, 30, 5);
-            this.Padding = new DevExpress.XtraPrinting.PaddingInfo(10, 0, 0, 30, 100F);
+            this.Margins = new System.Drawing.Printing.Margins(0, 0, 25, 0);
             this.PageHeight = 827;
             this.PageWidth = 1169;
             this.PaperKind = System.Drawing.Printing.PaperKind.A4;

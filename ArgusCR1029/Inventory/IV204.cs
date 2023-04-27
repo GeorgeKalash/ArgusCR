@@ -28,6 +28,8 @@ namespace ArgusCR1029.Inventory
             startDate_param.Text = Parameters.Count > 2 ? Parameters[2].Value.ToString() : string.Empty;
             endDate_param.Text = Parameters.Count > 3 ? Parameters[3].Value.ToString() : string.Empty;
 
+            logo_data.ImageUrl = companyInfo.logoUrl;
+
             printSignature.Text = reportSignature();
             base.OnBeforePrint(e);
         }

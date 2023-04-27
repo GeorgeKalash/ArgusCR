@@ -36,6 +36,8 @@ namespace ArgusCR1029.Financials
             balanceNonMetal_data.Text = obj.record.baseCurrencyRef;
             balanceBaseMetal_data.Text = obj.record.baseMetalCurrencyRef;
 
+            logo_data.ImageUrl = companyInfo.logoUrl;
+
             printSignature.Text = reportSignature();
             base.OnBeforePrint(e);
         }
