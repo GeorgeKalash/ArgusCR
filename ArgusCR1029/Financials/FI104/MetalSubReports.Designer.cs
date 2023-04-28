@@ -109,6 +109,7 @@ namespace ArgusCR1029.Financials.FI104
             this.xrTableCell1.StylePriority.UseFont = false;
             this.xrTableCell1.StylePriority.UseTextAlignment = false;
             this.xrTableCell1.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            this.xrTableCell1.TextFormatString = "{0:n2}";
             this.xrTableCell1.Weight = 2.9493536224910475D;
             // 
             // xrTableCell5
