@@ -39,21 +39,17 @@ namespace ArgusCR1029.Sales
             zoneRef_lbl.Text = labelText(1);
             zoneName_lbl.Text = labelText(2);
             clientCount_lbl.Text = labelText(3);
-            g18_lbl.Text = labelText(4);
-            qty18_lbl.Text = labelText(5);
-            egp18_lbl.Text = labelText(6);
-            g21_lbl.Text = labelText(7);
-            qty21_lbl.Text = labelText(8);
-            egp21_lbl.Text = labelText(9);
-            laborPrice_lbl.Text = labelText(10);
-            amount_lbl.Text = labelText(11);
-            vatAmount_lbl.Text = labelText(12);
-            netAmount_lbl.Text = labelText(13);
-            avg_lbl.Text = labelText(14);
+            qty18_lbl.Text = labelText(4);
+            qty21_lbl.Text = labelText(5);
+            laborPrice_lbl.Text = labelText(6);
+            amount_lbl.Text = labelText(7);
+            vatAmount_lbl.Text = labelText(8);
+            netAmount_lbl.Text = labelText(9);
+            avg_lbl.Text = labelText(10);
 
-            startDate_lbl.Text = labelText(15);
-            endDate_lbl.Text = labelText(16);
-            level_lbl.Text = labelText(17);
+            startDate_lbl.Text = labelText(11);
+            endDate_lbl.Text = labelText(12);
+            level_lbl.Text = labelText(13);
         }
 
         protected override string dictionaryStore()
