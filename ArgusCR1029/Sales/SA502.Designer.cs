@@ -186,7 +186,7 @@ namespace ArgusCR1029.Sales
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[G18] ")});
             this.xrTableCell16.Font = new System.Drawing.Font("Arial", 8F);
             this.xrTableCell16.Name = "xrTableCell16";
-            this.xrTableCell16.Padding = new DevExpress.XtraPrinting.PaddingInfo(4, 2, 4, 0, 100F);
+            this.xrTableCell16.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 4, 4, 0, 100F);
             this.xrTableCell16.StylePriority.UseBorders = false;
             this.xrTableCell16.StylePriority.UseBorderWidth = false;
             this.xrTableCell16.StylePriority.UseFont = false;
@@ -207,7 +207,7 @@ namespace ArgusCR1029.Sales
             this.xrTableCell17.Font = new System.Drawing.Font("Arial", 8F);
             this.xrTableCell17.Multiline = true;
             this.xrTableCell17.Name = "xrTableCell17";
-            this.xrTableCell17.Padding = new DevExpress.XtraPrinting.PaddingInfo(4, 2, 4, 0, 100F);
+            this.xrTableCell17.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 4, 4, 0, 100F);
             this.xrTableCell17.StylePriority.UseBorders = false;
             this.xrTableCell17.StylePriority.UseBorderWidth = false;
             this.xrTableCell17.StylePriority.UseFont = false;
@@ -725,7 +725,7 @@ namespace ArgusCR1029.Sales
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "sumSum([G18] )")});
             this.xrTableCell18.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Bold);
             this.xrTableCell18.Name = "xrTableCell18";
-            this.xrTableCell18.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 5, 4, 0, 100F);
+            this.xrTableCell18.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 4, 4, 0, 100F);
             this.xrTableCell18.StylePriority.UseFont = false;
             this.xrTableCell18.StylePriority.UsePadding = false;
             this.xrTableCell18.StylePriority.UseTextAlignment = false;
@@ -744,7 +744,7 @@ namespace ArgusCR1029.Sales
             this.xrTableCell4.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Bold);
             this.xrTableCell4.Multiline = true;
             this.xrTableCell4.Name = "xrTableCell4";
-            this.xrTableCell4.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 5, 4, 0, 100F);
+            this.xrTableCell4.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 4, 4, 0, 100F);
             this.xrTableCell4.StylePriority.UseFont = false;
             this.xrTableCell4.StylePriority.UsePadding = false;
             this.xrTableCell4.StylePriority.UseTextAlignment = false;
@@ -762,7 +762,7 @@ namespace ArgusCR1029.Sales
             this.xrTableCell7.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Bold);
             this.xrTableCell7.Multiline = true;
             this.xrTableCell7.Name = "xrTableCell7";
-            this.xrTableCell7.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 5, 4, 0, 100F);
+            this.xrTableCell7.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 4, 4, 0, 100F);
             this.xrTableCell7.StylePriority.UseFont = false;
             this.xrTableCell7.StylePriority.UsePadding = false;
             this.xrTableCell7.StylePriority.UseTextAlignment = false;
@@ -780,7 +780,7 @@ namespace ArgusCR1029.Sales
             this.xrTableCell5.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Bold);
             this.xrTableCell5.Multiline = true;
             this.xrTableCell5.Name = "xrTableCell5";
-            this.xrTableCell5.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 5, 4, 0, 100F);
+            this.xrTableCell5.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 4, 4, 0, 100F);
             this.xrTableCell5.StylePriority.UseFont = false;
             this.xrTableCell5.StylePriority.UsePadding = false;
             this.xrTableCell5.StylePriority.UseTextAlignment = false;
@@ -798,7 +798,7 @@ namespace ArgusCR1029.Sales
             this.xrTableCell1.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Bold);
             this.xrTableCell1.Multiline = true;
             this.xrTableCell1.Name = "xrTableCell1";
-            this.xrTableCell1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 5, 4, 0, 100F);
+            this.xrTableCell1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 4, 4, 0, 100F);
             this.xrTableCell1.StylePriority.UseFont = false;
             this.xrTableCell1.StylePriority.UsePadding = false;
             this.xrTableCell1.StylePriority.UseTextAlignment = false;
@@ -845,7 +845,7 @@ namespace ArgusCR1029.Sales
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "sumSum([G18] )")});
             this.xrTableCell9.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Bold);
             this.xrTableCell9.Name = "xrTableCell9";
-            this.xrTableCell9.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 5, 4, 0, 100F);
+            this.xrTableCell9.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 4, 4, 0, 100F);
             this.xrTableCell9.StylePriority.UseFont = false;
             this.xrTableCell9.StylePriority.UsePadding = false;
             this.xrTableCell9.StylePriority.UseTextAlignment = false;
@@ -864,7 +864,7 @@ namespace ArgusCR1029.Sales
             this.xrTableCell10.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Bold);
             this.xrTableCell10.Multiline = true;
             this.xrTableCell10.Name = "xrTableCell10";
-            this.xrTableCell10.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 5, 4, 0, 100F);
+            this.xrTableCell10.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 4, 4, 0, 100F);
             this.xrTableCell10.StylePriority.UseFont = false;
             this.xrTableCell10.StylePriority.UsePadding = false;
             this.xrTableCell10.StylePriority.UseTextAlignment = false;
@@ -882,7 +882,7 @@ namespace ArgusCR1029.Sales
             this.xrTableCell11.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Bold);
             this.xrTableCell11.Multiline = true;
             this.xrTableCell11.Name = "xrTableCell11";
-            this.xrTableCell11.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 5, 4, 0, 100F);
+            this.xrTableCell11.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 4, 4, 0, 100F);
             this.xrTableCell11.StylePriority.UseFont = false;
             this.xrTableCell11.StylePriority.UsePadding = false;
             this.xrTableCell11.StylePriority.UseTextAlignment = false;
@@ -900,7 +900,7 @@ namespace ArgusCR1029.Sales
             this.xrTableCell12.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Bold);
             this.xrTableCell12.Multiline = true;
             this.xrTableCell12.Name = "xrTableCell12";
-            this.xrTableCell12.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 5, 4, 0, 100F);
+            this.xrTableCell12.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 4, 4, 0, 100F);
             this.xrTableCell12.StylePriority.UseFont = false;
             this.xrTableCell12.StylePriority.UsePadding = false;
             this.xrTableCell12.StylePriority.UseTextAlignment = false;
@@ -918,7 +918,7 @@ namespace ArgusCR1029.Sales
             this.xrTableCell2.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Bold);
             this.xrTableCell2.Multiline = true;
             this.xrTableCell2.Name = "xrTableCell2";
-            this.xrTableCell2.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 5, 4, 0, 100F);
+            this.xrTableCell2.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 4, 4, 0, 100F);
             this.xrTableCell2.StylePriority.UseFont = false;
             this.xrTableCell2.StylePriority.UsePadding = false;
             this.xrTableCell2.StylePriority.UseTextAlignment = false;
