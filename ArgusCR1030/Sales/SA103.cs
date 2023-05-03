@@ -52,6 +52,7 @@ namespace ArgusCR1030.Sales
 
             subtotal_data.Text = webObject.record.trxHeader.subtotal.ToString("N2");
             discount_data.Text = webObject.record.trxHeader.tdAmount.ToString();
+            misc_data.Text = webObject.record.trxHeader.miscAmount.ToString();
             vat_data.Text = webObject.record.trxHeader.vatAmount.ToString("N2");
             netPrice_data.Text = webObject.record.trxHeader.amount.ToString("N2");
 
