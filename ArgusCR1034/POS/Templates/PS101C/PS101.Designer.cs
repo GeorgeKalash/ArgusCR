@@ -35,11 +35,16 @@ namespace ArgusCR1034.POS.Templates.PS101C
             DevExpress.XtraPrinting.BarCode.QRCodeGenerator qrCodeGenerator1 = new DevExpress.XtraPrinting.BarCode.QRCodeGenerator();
             DevExpress.XtraPrinting.BarCode.QRCodeGenerator qrCodeGenerator2 = new DevExpress.XtraPrinting.BarCode.QRCodeGenerator();
             this.InvoiceItemSubBand = new DevExpress.XtraReports.UI.SubBand();
+            this.InvoiceItemsSubReports2 = new DevExpress.XtraReports.UI.XRSubreport();
+            this.InvoiceItemsSubReports = new DevExpress.XtraReports.UI.XRSubreport();
             this.Detail = new DevExpress.XtraReports.UI.DetailBand();
             this.InvoiceReceiptSubBand = new DevExpress.XtraReports.UI.SubBand();
+            this.InvoiceReceiptSubReports2 = new DevExpress.XtraReports.UI.XRSubreport();
+            this.InvoiceReceiptSubReports = new DevExpress.XtraReports.UI.XRSubreport();
             this.TopMargin = new DevExpress.XtraReports.UI.TopMarginBand();
             this.BottomMargin = new DevExpress.XtraReports.UI.BottomMarginBand();
             this.ReportHeader = new DevExpress.XtraReports.UI.ReportHeaderBand();
+            this.logo2_data = new DevExpress.XtraReports.UI.XRPictureBox();
             this.xrTable8 = new DevExpress.XtraReports.UI.XRTable();
             this.xrTableRow8 = new DevExpress.XtraReports.UI.XRTableRow();
             this.companyVatNo2_data = new DevExpress.XtraReports.UI.XRTableCell();
@@ -120,6 +125,7 @@ namespace ArgusCR1034.POS.Templates.PS101C
             this.xrTableRow6 = new DevExpress.XtraReports.UI.XRTableRow();
             this.companyVatNo_data = new DevExpress.XtraReports.UI.XRTableCell();
             this.companyVatNo_lbl = new DevExpress.XtraReports.UI.XRTableCell();
+            this.logo_data = new DevExpress.XtraReports.UI.XRPictureBox();
             this.PageFooter = new DevExpress.XtraReports.UI.PageFooterBand();
             this.xrPageInfo1 = new DevExpress.XtraReports.UI.XRPageInfo();
             this.printSignature2_lbl = new DevExpress.XtraReports.UI.XRLabel();
@@ -138,12 +144,6 @@ namespace ArgusCR1034.POS.Templates.PS101C
             this.xrTableRow9 = new DevExpress.XtraReports.UI.XRTableRow();
             this.total_data = new DevExpress.XtraReports.UI.XRTableCell();
             this.total_lbl = new DevExpress.XtraReports.UI.XRTableCell();
-            this.InvoiceItemsSubReports2 = new DevExpress.XtraReports.UI.XRSubreport();
-            this.InvoiceItemsSubReports = new DevExpress.XtraReports.UI.XRSubreport();
-            this.InvoiceReceiptSubReports2 = new DevExpress.XtraReports.UI.XRSubreport();
-            this.InvoiceReceiptSubReports = new DevExpress.XtraReports.UI.XRSubreport();
-            this.logo2_data = new DevExpress.XtraReports.UI.XRPictureBox();
-            this.logo_data = new DevExpress.XtraReports.UI.XRPictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable11)).BeginInit();
@@ -172,6 +172,20 @@ namespace ArgusCR1034.POS.Templates.PS101C
             this.InvoiceItemSubBand.KeepTogether = true;
             this.InvoiceItemSubBand.Name = "InvoiceItemSubBand";
             // 
+            // InvoiceItemsSubReports2
+            // 
+            this.InvoiceItemsSubReports2.LocationFloat = new DevExpress.Utils.PointFloat(24.79175F, 0F);
+            this.InvoiceItemsSubReports2.Name = "InvoiceItemsSubReports2";
+            this.InvoiceItemsSubReports2.ReportSource = new ArgusCR1034.POS.Templates.PS101C.InvoiceItemsSubReports();
+            this.InvoiceItemsSubReports2.SizeF = new System.Drawing.SizeF(534.321F, 23F);
+            // 
+            // InvoiceItemsSubReports
+            // 
+            this.InvoiceItemsSubReports.LocationFloat = new DevExpress.Utils.PointFloat(605.4168F, 0F);
+            this.InvoiceItemsSubReports.Name = "InvoiceItemsSubReports";
+            this.InvoiceItemsSubReports.ReportSource = new ArgusCR1034.POS.Templates.PS101C.InvoiceItemsSubReports();
+            this.InvoiceItemsSubReports.SizeF = new System.Drawing.SizeF(534.321F, 23F);
+            // 
             // Detail
             // 
             this.Detail.HeightF = 0F;
@@ -189,6 +203,20 @@ namespace ArgusCR1034.POS.Templates.PS101C
             this.InvoiceReceiptSubBand.HeightF = 33.00001F;
             this.InvoiceReceiptSubBand.KeepTogether = true;
             this.InvoiceReceiptSubBand.Name = "InvoiceReceiptSubBand";
+            // 
+            // InvoiceReceiptSubReports2
+            // 
+            this.InvoiceReceiptSubReports2.LocationFloat = new DevExpress.Utils.PointFloat(24.79178F, 10.00001F);
+            this.InvoiceReceiptSubReports2.Name = "InvoiceReceiptSubReports2";
+            this.InvoiceReceiptSubReports2.ReportSource = new ArgusCR1034.POS.Templates.PS101C.InvoiceReceiptSubReports();
+            this.InvoiceReceiptSubReports2.SizeF = new System.Drawing.SizeF(534.321F, 23F);
+            // 
+            // InvoiceReceiptSubReports
+            // 
+            this.InvoiceReceiptSubReports.LocationFloat = new DevExpress.Utils.PointFloat(605.4169F, 10.00001F);
+            this.InvoiceReceiptSubReports.Name = "InvoiceReceiptSubReports";
+            this.InvoiceReceiptSubReports.ReportSource = new ArgusCR1034.POS.Templates.PS101C.InvoiceReceiptSubReports();
+            this.InvoiceReceiptSubReports.SizeF = new System.Drawing.SizeF(534.321F, 23F);
             // 
             // TopMargin
             // 
@@ -223,9 +251,16 @@ namespace ArgusCR1034.POS.Templates.PS101C
             this.xrTable5,
             this.xrTable6,
             this.logo_data});
-            this.ReportHeader.HeightF = 236.7711F;
+            this.ReportHeader.HeightF = 231.6044F;
             this.ReportHeader.KeepTogether = true;
             this.ReportHeader.Name = "ReportHeader";
+            // 
+            // logo2_data
+            // 
+            this.logo2_data.LocationFloat = new DevExpress.Utils.PointFloat(181.7618F, 0F);
+            this.logo2_data.Name = "logo2_data";
+            this.logo2_data.SizeF = new System.Drawing.SizeF(121.6305F, 120.7532F);
+            this.logo2_data.Sizing = DevExpress.XtraPrinting.ImageSizeMode.ZoomImage;
             // 
             // xrTable8
             // 
@@ -309,7 +344,7 @@ namespace ArgusCR1034.POS.Templates.PS101C
             this.companyCity2_data.StylePriority.UsePadding = false;
             this.companyCity2_data.StylePriority.UseTextAlignment = false;
             this.companyCity2_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
-            this.companyCity2_data.Weight = 0.57494542292769713D;
+            this.companyCity2_data.Weight = 0.62429771514391919D;
             // 
             // companyStreet2_data
             // 
@@ -323,7 +358,7 @@ namespace ArgusCR1034.POS.Templates.PS101C
             this.companyStreet2_data.StylePriority.UsePadding = false;
             this.companyStreet2_data.StylePriority.UseTextAlignment = false;
             this.companyStreet2_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
-            this.companyStreet2_data.Weight = 0.69333203043764435D;
+            this.companyStreet2_data.Weight = 0.64397973822142229D;
             // 
             // xrTableCell6
             // 
@@ -535,7 +570,7 @@ namespace ArgusCR1034.POS.Templates.PS101C
             this.spName2_data.CanGrow = false;
             this.spName2_data.Font = new System.Drawing.Font("Arial", 9F);
             this.spName2_data.Name = "spName2_data";
-            this.spName2_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 5, 5, 0, 100F);
+            this.spName2_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 4, 0, 100F);
             this.spName2_data.StylePriority.UseBackColor = false;
             this.spName2_data.StylePriority.UseBorders = false;
             this.spName2_data.StylePriority.UseFont = false;
@@ -581,7 +616,7 @@ namespace ArgusCR1034.POS.Templates.PS101C
             this.plant2_data.CanGrow = false;
             this.plant2_data.Font = new System.Drawing.Font("Arial", 9F);
             this.plant2_data.Name = "plant2_data";
-            this.plant2_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 5, 5, 0, 100F);
+            this.plant2_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 4, 0, 100F);
             this.plant2_data.StylePriority.UseBackColor = false;
             this.plant2_data.StylePriority.UseBorders = false;
             this.plant2_data.StylePriority.UseFont = false;
@@ -639,7 +674,7 @@ namespace ArgusCR1034.POS.Templates.PS101C
             this.reference2_data.CanGrow = false;
             this.reference2_data.Font = new System.Drawing.Font("Arial", 9F);
             this.reference2_data.Name = "reference2_data";
-            this.reference2_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 2, 0, 100F);
+            this.reference2_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 4, 0, 100F);
             this.reference2_data.StylePriority.UseBackColor = false;
             this.reference2_data.StylePriority.UseBorderDashStyle = false;
             this.reference2_data.StylePriority.UseBorders = false;
@@ -688,7 +723,7 @@ namespace ArgusCR1034.POS.Templates.PS101C
             this.date2_data.CanGrow = false;
             this.date2_data.Font = new System.Drawing.Font("Arial", 9F);
             this.date2_data.Name = "date2_data";
-            this.date2_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.date2_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 4, 0, 100F);
             this.date2_data.StylePriority.UseBackColor = false;
             this.date2_data.StylePriority.UseBorderDashStyle = false;
             this.date2_data.StylePriority.UseBorders = false;
@@ -915,7 +950,7 @@ namespace ArgusCR1034.POS.Templates.PS101C
             this.reference_data.CanGrow = false;
             this.reference_data.Font = new System.Drawing.Font("Arial", 9F);
             this.reference_data.Name = "reference_data";
-            this.reference_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 2, 0, 100F);
+            this.reference_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 4, 0, 100F);
             this.reference_data.StylePriority.UseBackColor = false;
             this.reference_data.StylePriority.UseBorderDashStyle = false;
             this.reference_data.StylePriority.UseBorders = false;
@@ -964,7 +999,7 @@ namespace ArgusCR1034.POS.Templates.PS101C
             this.date_data.CanGrow = false;
             this.date_data.Font = new System.Drawing.Font("Arial", 9F);
             this.date_data.Name = "date_data";
-            this.date_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.date_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 4, 0, 100F);
             this.date_data.StylePriority.UseBackColor = false;
             this.date_data.StylePriority.UseBorderDashStyle = false;
             this.date_data.StylePriority.UseBorders = false;
@@ -1023,7 +1058,7 @@ namespace ArgusCR1034.POS.Templates.PS101C
             this.spName_data.CanGrow = false;
             this.spName_data.Font = new System.Drawing.Font("Arial", 9F);
             this.spName_data.Name = "spName_data";
-            this.spName_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 5, 5, 0, 100F);
+            this.spName_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 4, 0, 100F);
             this.spName_data.StylePriority.UseBackColor = false;
             this.spName_data.StylePriority.UseBorders = false;
             this.spName_data.StylePriority.UseFont = false;
@@ -1069,7 +1104,7 @@ namespace ArgusCR1034.POS.Templates.PS101C
             this.plant_data.CanGrow = false;
             this.plant_data.Font = new System.Drawing.Font("Arial", 9F);
             this.plant_data.Name = "plant_data";
-            this.plant_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 5, 5, 0, 100F);
+            this.plant_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 4, 0, 100F);
             this.plant_data.StylePriority.UseBackColor = false;
             this.plant_data.StylePriority.UseBorders = false;
             this.plant_data.StylePriority.UseFont = false;
@@ -1296,7 +1331,7 @@ namespace ArgusCR1034.POS.Templates.PS101C
             this.companyCity_data.StylePriority.UsePadding = false;
             this.companyCity_data.StylePriority.UseTextAlignment = false;
             this.companyCity_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
-            this.companyCity_data.Weight = 0.57491352753255476D;
+            this.companyCity_data.Weight = 0.62428714258019447D;
             // 
             // companyStreet_data
             // 
@@ -1310,7 +1345,7 @@ namespace ArgusCR1034.POS.Templates.PS101C
             this.companyStreet_data.StylePriority.UsePadding = false;
             this.companyStreet_data.StylePriority.UseTextAlignment = false;
             this.companyStreet_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
-            this.companyStreet_data.Weight = 0.69336392583278683D;
+            this.companyStreet_data.Weight = 0.64399031078514712D;
             // 
             // companyAddress_lbl
             // 
@@ -1378,6 +1413,13 @@ namespace ArgusCR1034.POS.Templates.PS101C
             this.companyVatNo_lbl.Text = ":الرقم الضريبي";
             this.companyVatNo_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
             this.companyVatNo_lbl.Weight = 0.71590415439213639D;
+            // 
+            // logo_data
+            // 
+            this.logo_data.LocationFloat = new DevExpress.Utils.PointFloat(762.3868F, 0F);
+            this.logo_data.Name = "logo_data";
+            this.logo_data.SizeF = new System.Drawing.SizeF(121.6305F, 120.7532F);
+            this.logo_data.Sizing = DevExpress.XtraPrinting.ImageSizeMode.ZoomImage;
             // 
             // PageFooter
             // 
@@ -1456,7 +1498,7 @@ namespace ArgusCR1034.POS.Templates.PS101C
             this.clientSignature_lbl,
             this.spSignature_lbl,
             this.xrTable9});
-            this.ReportFooter.HeightF = 112.333F;
+            this.ReportFooter.HeightF = 98.18694F;
             this.ReportFooter.KeepTogether = true;
             this.ReportFooter.Name = "ReportFooter";
             // 
@@ -1465,7 +1507,7 @@ namespace ArgusCR1034.POS.Templates.PS101C
             this.xrLabel2.BackColor = System.Drawing.Color.White;
             this.xrLabel2.CanGrow = false;
             this.xrLabel2.Font = new System.Drawing.Font("Arial", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
-            this.xrLabel2.LocationFloat = new DevExpress.Utils.PointFloat(459.1129F, 48.95833F);
+            this.xrLabel2.LocationFloat = new DevExpress.Utils.PointFloat(459.11F, 40F);
             this.xrLabel2.Name = "xrLabel2";
             this.xrLabel2.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 4, 0, 100F);
             this.xrLabel2.SizeF = new System.Drawing.SizeF(100F, 23F);
@@ -1479,7 +1521,7 @@ namespace ArgusCR1034.POS.Templates.PS101C
             // 
             // xrTable16
             // 
-            this.xrTable16.LocationFloat = new DevExpress.Utils.PointFloat(24.79199F, 10.00001F);
+            this.xrTable16.LocationFloat = new DevExpress.Utils.PointFloat(24.79F, 7F);
             this.xrTable16.Name = "xrTable16";
             this.xrTable16.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable16.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
@@ -1533,7 +1575,7 @@ namespace ArgusCR1034.POS.Templates.PS101C
             this.xrLabel3.BackColor = System.Drawing.Color.White;
             this.xrLabel3.CanGrow = false;
             this.xrLabel3.Font = new System.Drawing.Font("Arial", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
-            this.xrLabel3.LocationFloat = new DevExpress.Utils.PointFloat(24.79199F, 48.95833F);
+            this.xrLabel3.LocationFloat = new DevExpress.Utils.PointFloat(24.79F, 40F);
             this.xrLabel3.Name = "xrLabel3";
             this.xrLabel3.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 4, 0, 100F);
             this.xrLabel3.SizeF = new System.Drawing.SizeF(100F, 23F);
@@ -1550,7 +1592,7 @@ namespace ArgusCR1034.POS.Templates.PS101C
             this.clientSignature_lbl.BackColor = System.Drawing.Color.White;
             this.clientSignature_lbl.CanGrow = false;
             this.clientSignature_lbl.Font = new System.Drawing.Font("Arial", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
-            this.clientSignature_lbl.LocationFloat = new DevExpress.Utils.PointFloat(605.4167F, 48.95833F);
+            this.clientSignature_lbl.LocationFloat = new DevExpress.Utils.PointFloat(605.42F, 40F);
             this.clientSignature_lbl.Name = "clientSignature_lbl";
             this.clientSignature_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 4, 0, 100F);
             this.clientSignature_lbl.SizeF = new System.Drawing.SizeF(100F, 23F);
@@ -1567,7 +1609,7 @@ namespace ArgusCR1034.POS.Templates.PS101C
             this.spSignature_lbl.BackColor = System.Drawing.Color.White;
             this.spSignature_lbl.CanGrow = false;
             this.spSignature_lbl.Font = new System.Drawing.Font("Arial", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
-            this.spSignature_lbl.LocationFloat = new DevExpress.Utils.PointFloat(1039.738F, 48.95833F);
+            this.spSignature_lbl.LocationFloat = new DevExpress.Utils.PointFloat(1039.74F, 40F);
             this.spSignature_lbl.Name = "spSignature_lbl";
             this.spSignature_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 4, 0, 100F);
             this.spSignature_lbl.SizeF = new System.Drawing.SizeF(100F, 23F);
@@ -1581,7 +1623,7 @@ namespace ArgusCR1034.POS.Templates.PS101C
             // 
             // xrTable9
             // 
-            this.xrTable9.LocationFloat = new DevExpress.Utils.PointFloat(605.4167F, 9.999974F);
+            this.xrTable9.LocationFloat = new DevExpress.Utils.PointFloat(605.42F, 7F);
             this.xrTable9.Name = "xrTable9";
             this.xrTable9.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable9.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
@@ -1629,48 +1671,6 @@ namespace ArgusCR1034.POS.Templates.PS101C
             this.total_lbl.Text = "المجموع";
             this.total_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
             this.total_lbl.Weight = 0.28571423585926603D;
-            // 
-            // InvoiceItemsSubReports2
-            // 
-            this.InvoiceItemsSubReports2.LocationFloat = new DevExpress.Utils.PointFloat(24.79175F, 0F);
-            this.InvoiceItemsSubReports2.Name = "InvoiceItemsSubReports2";
-            this.InvoiceItemsSubReports2.ReportSource = new ArgusCR1034.POS.Templates.PS101C.InvoiceItemsSubReports();
-            this.InvoiceItemsSubReports2.SizeF = new System.Drawing.SizeF(534.321F, 23F);
-            // 
-            // InvoiceItemsSubReports
-            // 
-            this.InvoiceItemsSubReports.LocationFloat = new DevExpress.Utils.PointFloat(605.4168F, 0F);
-            this.InvoiceItemsSubReports.Name = "InvoiceItemsSubReports";
-            this.InvoiceItemsSubReports.ReportSource = new ArgusCR1034.POS.Templates.PS101C.InvoiceItemsSubReports();
-            this.InvoiceItemsSubReports.SizeF = new System.Drawing.SizeF(534.321F, 23F);
-            // 
-            // InvoiceReceiptSubReports2
-            // 
-            this.InvoiceReceiptSubReports2.LocationFloat = new DevExpress.Utils.PointFloat(24.79178F, 10.00001F);
-            this.InvoiceReceiptSubReports2.Name = "InvoiceReceiptSubReports2";
-            this.InvoiceReceiptSubReports2.ReportSource = new ArgusCR1034.POS.Templates.PS101C.InvoiceReceiptSubReports();
-            this.InvoiceReceiptSubReports2.SizeF = new System.Drawing.SizeF(534.321F, 23F);
-            // 
-            // InvoiceReceiptSubReports
-            // 
-            this.InvoiceReceiptSubReports.LocationFloat = new DevExpress.Utils.PointFloat(605.4169F, 10.00001F);
-            this.InvoiceReceiptSubReports.Name = "InvoiceReceiptSubReports";
-            this.InvoiceReceiptSubReports.ReportSource = new ArgusCR1034.POS.Templates.PS101C.InvoiceReceiptSubReports();
-            this.InvoiceReceiptSubReports.SizeF = new System.Drawing.SizeF(534.321F, 23F);
-            // 
-            // logo2_data
-            // 
-            this.logo2_data.LocationFloat = new DevExpress.Utils.PointFloat(181.7618F, 0F);
-            this.logo2_data.Name = "logo2_data";
-            this.logo2_data.SizeF = new System.Drawing.SizeF(121.6305F, 120.7532F);
-            this.logo2_data.Sizing = DevExpress.XtraPrinting.ImageSizeMode.ZoomImage;
-            // 
-            // logo_data
-            // 
-            this.logo_data.LocationFloat = new DevExpress.Utils.PointFloat(762.3868F, 0F);
-            this.logo_data.Name = "logo_data";
-            this.logo_data.SizeF = new System.Drawing.SizeF(121.6305F, 120.7532F);
-            this.logo_data.Sizing = DevExpress.XtraPrinting.ImageSizeMode.ZoomImage;
             // 
             // PS101
             // 
