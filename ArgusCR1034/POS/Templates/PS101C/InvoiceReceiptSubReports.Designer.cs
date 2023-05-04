@@ -79,7 +79,7 @@ namespace ArgusCR1034.POS.Templates.PS101C
             this.xrTable1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable1.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow2});
-            this.xrTable1.SizeF = new System.Drawing.SizeF(714.7081F, 19.17F);
+            this.xrTable1.SizeF = new System.Drawing.SizeF(534.2377F, 19.17F);
             // 
             // xrTableRow2
             // 
@@ -242,7 +242,7 @@ namespace ArgusCR1034.POS.Templates.PS101C
             this.xrTable8.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable8.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow8});
-            this.xrTable8.SizeF = new System.Drawing.SizeF(714.7081F, 25F);
+            this.xrTable8.SizeF = new System.Drawing.SizeF(534.2377F, 25F);
             // 
             // xrTableRow8
             // 
@@ -398,7 +398,7 @@ namespace ArgusCR1034.POS.Templates.PS101C
             this.Detail,
             this.PageHeader});
             this.Font = new System.Drawing.Font("Arial", 9.75F);
-            this.Margins = new System.Drawing.Printing.Margins(0, 111, 0, 0);
+            this.Margins = new System.Drawing.Printing.Margins(0, 292, 0, 0);
             this.PageHeight = 1169;
             this.PageWidth = 827;
             this.PaperKind = System.Drawing.Printing.PaperKind.A4;
