@@ -71,6 +71,7 @@ namespace ArgusCR1034.POS.Templates.PS101GLD
             this.phoneNumber_lbl = new DevExpress.XtraReports.UI.XRTableCell();
             this.clientName_data = new DevExpress.XtraReports.UI.XRTableCell();
             this.clientName_lbl = new DevExpress.XtraReports.UI.XRTableCell();
+            this.QRCode = new DevExpress.XtraReports.UI.XRBarCode();
             this.logo_data = new DevExpress.XtraReports.UI.XRPictureBox();
             this.xrTable5 = new DevExpress.XtraReports.UI.XRTable();
             this.xrTableRow5 = new DevExpress.XtraReports.UI.XRTableRow();
@@ -91,7 +92,6 @@ namespace ArgusCR1034.POS.Templates.PS101GLD
             this.xrTableRow9 = new DevExpress.XtraReports.UI.XRTableRow();
             this.total_data = new DevExpress.XtraReports.UI.XRTableCell();
             this.total_lbl = new DevExpress.XtraReports.UI.XRTableCell();
-            this.QRCode = new DevExpress.XtraReports.UI.XRBarCode();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable2)).BeginInit();
@@ -281,7 +281,7 @@ namespace ArgusCR1034.POS.Templates.PS101GLD
             this.reference_data.CanGrow = false;
             this.reference_data.Font = new System.Drawing.Font("Arial", 10F);
             this.reference_data.Name = "reference_data";
-            this.reference_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 2, 0, 100F);
+            this.reference_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 4, 0, 100F);
             this.reference_data.StylePriority.UseBackColor = false;
             this.reference_data.StylePriority.UseBorderDashStyle = false;
             this.reference_data.StylePriority.UseBorders = false;
@@ -330,7 +330,7 @@ namespace ArgusCR1034.POS.Templates.PS101GLD
             this.date_data.CanGrow = false;
             this.date_data.Font = new System.Drawing.Font("Arial", 10F);
             this.date_data.Name = "date_data";
-            this.date_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.date_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 4, 0, 100F);
             this.date_data.StylePriority.UseBackColor = false;
             this.date_data.StylePriority.UseBorderDashStyle = false;
             this.date_data.StylePriority.UseBorders = false;
@@ -389,7 +389,7 @@ namespace ArgusCR1034.POS.Templates.PS101GLD
             this.spName_data.CanGrow = false;
             this.spName_data.Font = new System.Drawing.Font("Arial", 10F);
             this.spName_data.Name = "spName_data";
-            this.spName_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 5, 5, 0, 100F);
+            this.spName_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 4, 0, 100F);
             this.spName_data.StylePriority.UseBackColor = false;
             this.spName_data.StylePriority.UseBorders = false;
             this.spName_data.StylePriority.UseFont = false;
@@ -435,7 +435,7 @@ namespace ArgusCR1034.POS.Templates.PS101GLD
             this.plant_data.CanGrow = false;
             this.plant_data.Font = new System.Drawing.Font("Arial", 10F);
             this.plant_data.Name = "plant_data";
-            this.plant_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 5, 5, 0, 100F);
+            this.plant_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 4, 0, 100F);
             this.plant_data.StylePriority.UseBackColor = false;
             this.plant_data.StylePriority.UseBorders = false;
             this.plant_data.StylePriority.UseFont = false;
@@ -617,6 +617,19 @@ namespace ArgusCR1034.POS.Templates.PS101GLD
             this.clientName_lbl.Weight = 1D;
             this.clientName_lbl.WordWrap = false;
             // 
+            // QRCode
+            // 
+            this.QRCode.Alignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
+            this.QRCode.LocationFloat = new DevExpress.Utils.PointFloat(55.20833F, 0F);
+            this.QRCode.Name = "QRCode";
+            this.QRCode.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F);
+            this.QRCode.ShowText = false;
+            this.QRCode.SizeF = new System.Drawing.SizeF(157.191F, 132.2115F);
+            this.QRCode.StylePriority.UsePadding = false;
+            this.QRCode.StylePriority.UseTextAlignment = false;
+            qrCodeGenerator1.CompactionMode = DevExpress.XtraPrinting.BarCode.QRCodeCompactionMode.Byte;
+            this.QRCode.Symbology = qrCodeGenerator1;
+            // 
             // logo_data
             // 
             this.logo_data.LocationFloat = new DevExpress.Utils.PointFloat(323.1612F, 0F);
@@ -656,7 +669,7 @@ namespace ArgusCR1034.POS.Templates.PS101GLD
             this.companyCity_data.StylePriority.UsePadding = false;
             this.companyCity_data.StylePriority.UseTextAlignment = false;
             this.companyCity_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
-            this.companyCity_data.Weight = 0.5064614497549953D;
+            this.companyCity_data.Weight = 0.52370251167301163D;
             // 
             // companyStreet_data
             // 
@@ -670,7 +683,7 @@ namespace ArgusCR1034.POS.Templates.PS101GLD
             this.companyStreet_data.StylePriority.UsePadding = false;
             this.companyStreet_data.StylePriority.UseTextAlignment = false;
             this.companyStreet_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
-            this.companyStreet_data.Weight = 0.76181600361034618D;
+            this.companyStreet_data.Weight = 0.74457494169232985D;
             // 
             // companyAddress_lbl
             // 
@@ -870,19 +883,6 @@ namespace ArgusCR1034.POS.Templates.PS101GLD
             this.total_lbl.Text = "المجموع";
             this.total_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
             this.total_lbl.Weight = 0.28571423585926603D;
-            // 
-            // QRCode
-            // 
-            this.QRCode.Alignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
-            this.QRCode.LocationFloat = new DevExpress.Utils.PointFloat(55.20833F, 0F);
-            this.QRCode.Name = "QRCode";
-            this.QRCode.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F);
-            this.QRCode.ShowText = false;
-            this.QRCode.SizeF = new System.Drawing.SizeF(157.191F, 132.2115F);
-            this.QRCode.StylePriority.UsePadding = false;
-            this.QRCode.StylePriority.UseTextAlignment = false;
-            qrCodeGenerator1.CompactionMode = DevExpress.XtraPrinting.BarCode.QRCodeCompactionMode.Byte;
-            this.QRCode.Symbology = qrCodeGenerator1;
             // 
             // PS101
             // 

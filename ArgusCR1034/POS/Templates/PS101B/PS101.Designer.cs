@@ -317,7 +317,7 @@ namespace ArgusCR1034.POS.Templates.PS101B
             this.spName_data.CanGrow = false;
             this.spName_data.Font = new System.Drawing.Font("Arial", 10F);
             this.spName_data.Name = "spName_data";
-            this.spName_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 5, 5, 0, 100F);
+            this.spName_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 4, 0, 100F);
             this.spName_data.StylePriority.UseBackColor = false;
             this.spName_data.StylePriority.UseBorders = false;
             this.spName_data.StylePriority.UseFont = false;
@@ -363,7 +363,7 @@ namespace ArgusCR1034.POS.Templates.PS101B
             this.plant_data.CanGrow = false;
             this.plant_data.Font = new System.Drawing.Font("Arial", 10F);
             this.plant_data.Name = "plant_data";
-            this.plant_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 5, 5, 0, 100F);
+            this.plant_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 4, 0, 100F);
             this.plant_data.StylePriority.UseBackColor = false;
             this.plant_data.StylePriority.UseBorders = false;
             this.plant_data.StylePriority.UseFont = false;
@@ -421,7 +421,7 @@ namespace ArgusCR1034.POS.Templates.PS101B
             this.reference_data.CanGrow = false;
             this.reference_data.Font = new System.Drawing.Font("Arial", 10F);
             this.reference_data.Name = "reference_data";
-            this.reference_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 2, 0, 100F);
+            this.reference_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 4, 0, 100F);
             this.reference_data.StylePriority.UseBackColor = false;
             this.reference_data.StylePriority.UseBorderDashStyle = false;
             this.reference_data.StylePriority.UseBorders = false;
@@ -470,7 +470,7 @@ namespace ArgusCR1034.POS.Templates.PS101B
             this.date_data.CanGrow = false;
             this.date_data.Font = new System.Drawing.Font("Arial", 10F);
             this.date_data.Name = "date_data";
-            this.date_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.date_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 4, 0, 100F);
             this.date_data.StylePriority.UseBackColor = false;
             this.date_data.StylePriority.UseBorderDashStyle = false;
             this.date_data.StylePriority.UseBorders = false;
