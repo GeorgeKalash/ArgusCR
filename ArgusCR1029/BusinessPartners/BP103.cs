@@ -36,14 +36,15 @@ namespace ArgusCR1029.BusinessPartners
             title_lbl.Text = labelText(0);
 
             reference_lbl.Text = labelText(1);
-            name_lbl.Text = labelText(2);
-            clientGroup_lbl.Text = labelText(3);
-            state_lbl.Text = labelText(4);
-            city_lbl.Text = labelText(5);
-            szRef_lbl.Text = labelText(6);
-            szName_lbl.Text = labelText(7);
+            accName_lbl.Text = labelText(2);
+            commercialName_lbl.Text = labelText(3);
+            clientGroup_lbl.Text = labelText(4);
+            state_lbl.Text = labelText(5);
+            city_lbl.Text = labelText(6);
+            szRef_lbl.Text = labelText(7);
+            szName_lbl.Text = labelText(8);
 
-             bpGrp_lbl.Text = labelText(8);
+            bpGrp_lbl.Text = labelText(9);
 
         }
         protected override string dictionaryStore()
