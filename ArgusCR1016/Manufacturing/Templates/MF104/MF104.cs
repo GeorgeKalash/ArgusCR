@@ -41,6 +41,8 @@ namespace ArgusCR1016.Manufacturing.Templates.MF104
             ((IssueOfMaterialsSubReports)(IssueOfMaterialsSubReports.ReportSource)).data = webObject.record.rawMaterials;
             ((OverheadsSubReport)(OverheadsSubReport.ReportSource)).data = webObject.record.overheadViews;
 
+            QRCode.Text = webObject.record.jobOrder.recordId.ToString();
+
             printSignature_lbl.Text = reportSignature();
             base.OnBeforePrint(e);
         }

@@ -29,13 +29,12 @@ namespace ArgusCR1016.Manufacturing.Templates.MF104
         /// </summary>
         private void InitializeComponent()
         {
+            DevExpress.XtraPrinting.BarCode.QRCodeGenerator qrCodeGenerator1 = new DevExpress.XtraPrinting.BarCode.QRCodeGenerator();
             this.TopMargin = new DevExpress.XtraReports.UI.TopMarginBand();
             this.BottomMargin = new DevExpress.XtraReports.UI.BottomMarginBand();
             this.Detail = new DevExpress.XtraReports.UI.DetailBand();
             this.IssueOfMaterialsSubBand = new DevExpress.XtraReports.UI.SubBand();
-            this.IssueOfMaterialsSubReports = new DevExpress.XtraReports.UI.XRSubreport();
             this.OverheadsSubBand = new DevExpress.XtraReports.UI.SubBand();
-            this.OverheadsSubReport = new DevExpress.XtraReports.UI.XRSubreport();
             this.xrTable1 = new DevExpress.XtraReports.UI.XRTable();
             this.xrTableRow1 = new DevExpress.XtraReports.UI.XRTableRow();
             this.documentType_lbl = new DevExpress.XtraReports.UI.XRTableCell();
@@ -53,6 +52,9 @@ namespace ArgusCR1016.Manufacturing.Templates.MF104
             this.xrTableRow3 = new DevExpress.XtraReports.UI.XRTableRow();
             this.grandTotal_lbl = new DevExpress.XtraReports.UI.XRTableCell();
             this.grandTotal_data = new DevExpress.XtraReports.UI.XRTableCell();
+            this.QRCode = new DevExpress.XtraReports.UI.XRBarCode();
+            this.IssueOfMaterialsSubReports = new DevExpress.XtraReports.UI.XRSubreport();
+            this.OverheadsSubReport = new DevExpress.XtraReports.UI.XRSubreport();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
@@ -84,13 +86,6 @@ namespace ArgusCR1016.Manufacturing.Templates.MF104
             this.IssueOfMaterialsSubBand.KeepTogether = true;
             this.IssueOfMaterialsSubBand.Name = "IssueOfMaterialsSubBand";
             // 
-            // IssueOfMaterialsSubReports
-            // 
-            this.IssueOfMaterialsSubReports.LocationFloat = new DevExpress.Utils.PointFloat(9.999998F, 0F);
-            this.IssueOfMaterialsSubReports.Name = "IssueOfMaterialsSubReports";
-            this.IssueOfMaterialsSubReports.ReportSource = new ArgusCR1016.Manufacturing.Templates.MF104.IssueOfMaterialsSubReports();
-            this.IssueOfMaterialsSubReports.SizeF = new System.Drawing.SizeF(802.9166F, 23F);
-            // 
             // OverheadsSubBand
             // 
             this.OverheadsSubBand.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
@@ -99,22 +94,15 @@ namespace ArgusCR1016.Manufacturing.Templates.MF104
             this.OverheadsSubBand.KeepTogether = true;
             this.OverheadsSubBand.Name = "OverheadsSubBand";
             // 
-            // OverheadsSubReport
-            // 
-            this.OverheadsSubReport.LocationFloat = new DevExpress.Utils.PointFloat(9.999998F, 0F);
-            this.OverheadsSubReport.Name = "OverheadsSubReport";
-            this.OverheadsSubReport.ReportSource = new ArgusCR1016.Manufacturing.Templates.MF104.OverheadsSubReport();
-            this.OverheadsSubReport.SizeF = new System.Drawing.SizeF(802.9166F, 23F);
-            // 
             // xrTable1
             // 
-            this.xrTable1.LocationFloat = new DevExpress.Utils.PointFloat(37.5F, 37.5F);
+            this.xrTable1.LocationFloat = new DevExpress.Utils.PointFloat(37.5F, 49.16666F);
             this.xrTable1.Name = "xrTable1";
             this.xrTable1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable1.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow1,
             this.xrTableRow2});
-            this.xrTable1.SizeF = new System.Drawing.SizeF(382.2916F, 53.12498F);
+            this.xrTable1.SizeF = new System.Drawing.SizeF(338.125F, 53.12498F);
             // 
             // xrTableRow1
             // 
@@ -175,11 +163,11 @@ namespace ArgusCR1016.Manufacturing.Templates.MF104
             // jobOrderPricing_lbl
             // 
             this.jobOrderPricing_lbl.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
-            this.jobOrderPricing_lbl.LocationFloat = new DevExpress.Utils.PointFloat(513.9584F, 0F);
+            this.jobOrderPricing_lbl.LocationFloat = new DevExpress.Utils.PointFloat(546.25F, 0F);
             this.jobOrderPricing_lbl.Multiline = true;
             this.jobOrderPricing_lbl.Name = "jobOrderPricing_lbl";
             this.jobOrderPricing_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.jobOrderPricing_lbl.SizeF = new System.Drawing.SizeF(298.9583F, 29.16667F);
+            this.jobOrderPricing_lbl.SizeF = new System.Drawing.SizeF(266.6667F, 29.16667F);
             this.jobOrderPricing_lbl.StylePriority.UseFont = false;
             this.jobOrderPricing_lbl.StylePriority.UseTextAlignment = false;
             this.jobOrderPricing_lbl.Text = "Job Order for Pricing";
@@ -221,9 +209,10 @@ namespace ArgusCR1016.Manufacturing.Templates.MF104
             // ReportHeader
             // 
             this.ReportHeader.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+            this.QRCode,
             this.jobOrderPricing_lbl,
             this.xrTable1});
-            this.ReportHeader.HeightF = 90.62498F;
+            this.ReportHeader.HeightF = 137.2916F;
             this.ReportHeader.KeepTogether = true;
             this.ReportHeader.Name = "ReportHeader";
             // 
@@ -281,6 +270,35 @@ namespace ArgusCR1016.Manufacturing.Templates.MF104
             this.grandTotal_data.Weight = 0.28781682034246081D;
             this.grandTotal_data.WordWrap = false;
             // 
+            // QRCode
+            // 
+            this.QRCode.Alignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
+            this.QRCode.AutoModule = true;
+            this.QRCode.LocationFloat = new DevExpress.Utils.PointFloat(388.125F, 0F);
+            this.QRCode.Name = "QRCode";
+            this.QRCode.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F);
+            this.QRCode.ShowText = false;
+            this.QRCode.SizeF = new System.Drawing.SizeF(128.6493F, 126.0416F);
+            this.QRCode.StylePriority.UsePadding = false;
+            this.QRCode.StylePriority.UseTextAlignment = false;
+            qrCodeGenerator1.CompactionMode = DevExpress.XtraPrinting.BarCode.QRCodeCompactionMode.Byte;
+            this.QRCode.Symbology = qrCodeGenerator1;
+            this.QRCode.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            // 
+            // IssueOfMaterialsSubReports
+            // 
+            this.IssueOfMaterialsSubReports.LocationFloat = new DevExpress.Utils.PointFloat(9.999998F, 0F);
+            this.IssueOfMaterialsSubReports.Name = "IssueOfMaterialsSubReports";
+            this.IssueOfMaterialsSubReports.ReportSource = new ArgusCR1016.Manufacturing.Templates.MF104.IssueOfMaterialsSubReports();
+            this.IssueOfMaterialsSubReports.SizeF = new System.Drawing.SizeF(802.9166F, 23F);
+            // 
+            // OverheadsSubReport
+            // 
+            this.OverheadsSubReport.LocationFloat = new DevExpress.Utils.PointFloat(9.999998F, 0F);
+            this.OverheadsSubReport.Name = "OverheadsSubReport";
+            this.OverheadsSubReport.ReportSource = new ArgusCR1016.Manufacturing.Templates.MF104.OverheadsSubReport();
+            this.OverheadsSubReport.SizeF = new System.Drawing.SizeF(802.9166F, 23F);
+            // 
             // MF104
             // 
             this.Bands.AddRange(new DevExpress.XtraReports.UI.Band[] {
@@ -328,5 +346,6 @@ namespace ArgusCR1016.Manufacturing.Templates.MF104
         private DevExpress.XtraReports.UI.XRTableRow xrTableRow3;
         private DevExpress.XtraReports.UI.XRTableCell grandTotal_lbl;
         private DevExpress.XtraReports.UI.XRTableCell grandTotal_data;
+        private DevExpress.XtraReports.UI.XRBarCode QRCode;
     }
 }
