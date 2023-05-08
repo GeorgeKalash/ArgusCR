@@ -34,7 +34,9 @@ namespace ArgusCR1016.Manufacturing.Templates.MF104
             this.BottomMargin = new DevExpress.XtraReports.UI.BottomMarginBand();
             this.Detail = new DevExpress.XtraReports.UI.DetailBand();
             this.IssueOfMaterialsSubBand = new DevExpress.XtraReports.UI.SubBand();
+            this.IssueOfMaterialsSubReports = new DevExpress.XtraReports.UI.XRSubreport();
             this.OverheadsSubBand = new DevExpress.XtraReports.UI.SubBand();
+            this.OverheadsSubReport = new DevExpress.XtraReports.UI.XRSubreport();
             this.xrTable1 = new DevExpress.XtraReports.UI.XRTable();
             this.xrTableRow1 = new DevExpress.XtraReports.UI.XRTableRow();
             this.documentType_lbl = new DevExpress.XtraReports.UI.XRTableCell();
@@ -47,14 +49,12 @@ namespace ArgusCR1016.Manufacturing.Templates.MF104
             this.printSignature_lbl = new DevExpress.XtraReports.UI.XRLabel();
             this.pagesNumber_lbl = new DevExpress.XtraReports.UI.XRPageInfo();
             this.ReportHeader = new DevExpress.XtraReports.UI.ReportHeaderBand();
+            this.QRCode = new DevExpress.XtraReports.UI.XRBarCode();
             this.ReportFooter = new DevExpress.XtraReports.UI.ReportFooterBand();
             this.xrTable2 = new DevExpress.XtraReports.UI.XRTable();
             this.xrTableRow3 = new DevExpress.XtraReports.UI.XRTableRow();
             this.grandTotal_lbl = new DevExpress.XtraReports.UI.XRTableCell();
             this.grandTotal_data = new DevExpress.XtraReports.UI.XRTableCell();
-            this.QRCode = new DevExpress.XtraReports.UI.XRBarCode();
-            this.IssueOfMaterialsSubReports = new DevExpress.XtraReports.UI.XRSubreport();
-            this.OverheadsSubReport = new DevExpress.XtraReports.UI.XRSubreport();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
@@ -86,6 +86,13 @@ namespace ArgusCR1016.Manufacturing.Templates.MF104
             this.IssueOfMaterialsSubBand.KeepTogether = true;
             this.IssueOfMaterialsSubBand.Name = "IssueOfMaterialsSubBand";
             // 
+            // IssueOfMaterialsSubReports
+            // 
+            this.IssueOfMaterialsSubReports.LocationFloat = new DevExpress.Utils.PointFloat(9.999998F, 0F);
+            this.IssueOfMaterialsSubReports.Name = "IssueOfMaterialsSubReports";
+            this.IssueOfMaterialsSubReports.ReportSource = new ArgusCR1016.Manufacturing.Templates.MF104.IssueOfMaterialsSubReports();
+            this.IssueOfMaterialsSubReports.SizeF = new System.Drawing.SizeF(802.9166F, 23F);
+            // 
             // OverheadsSubBand
             // 
             this.OverheadsSubBand.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
@@ -93,6 +100,13 @@ namespace ArgusCR1016.Manufacturing.Templates.MF104
             this.OverheadsSubBand.HeightF = 23F;
             this.OverheadsSubBand.KeepTogether = true;
             this.OverheadsSubBand.Name = "OverheadsSubBand";
+            // 
+            // OverheadsSubReport
+            // 
+            this.OverheadsSubReport.LocationFloat = new DevExpress.Utils.PointFloat(9.999998F, 0F);
+            this.OverheadsSubReport.Name = "OverheadsSubReport";
+            this.OverheadsSubReport.ReportSource = new ArgusCR1016.Manufacturing.Templates.MF104.OverheadsSubReport();
+            this.OverheadsSubReport.SizeF = new System.Drawing.SizeF(802.9166F, 23F);
             // 
             // xrTable1
             // 
@@ -121,7 +135,7 @@ namespace ArgusCR1016.Manufacturing.Templates.MF104
             this.documentType_lbl.StylePriority.UseFont = false;
             this.documentType_lbl.StylePriority.UsePadding = false;
             this.documentType_lbl.Text = "Document Type:";
-            this.documentType_lbl.Weight = 0.58583094684356007D;
+            this.documentType_lbl.Weight = 0.66592951467223382D;
             // 
             // dtName_data
             // 
@@ -130,7 +144,7 @@ namespace ArgusCR1016.Manufacturing.Templates.MF104
             this.dtName_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 4, 0, 100F);
             this.dtName_data.StylePriority.UsePadding = false;
             this.dtName_data.Text = "dtName_data";
-            this.dtName_data.Weight = 1.41416905315644D;
+            this.dtName_data.Weight = 1.3340704853277661D;
             // 
             // xrTableRow2
             // 
@@ -149,7 +163,7 @@ namespace ArgusCR1016.Manufacturing.Templates.MF104
             this.documentRef_lbl.StylePriority.UseFont = false;
             this.documentRef_lbl.StylePriority.UsePadding = false;
             this.documentRef_lbl.Text = "Document Ref:";
-            this.documentRef_lbl.Weight = 0.58583094684356007D;
+            this.documentRef_lbl.Weight = 0.66592951467223382D;
             // 
             // reference_data
             // 
@@ -158,7 +172,7 @@ namespace ArgusCR1016.Manufacturing.Templates.MF104
             this.reference_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 4, 0, 100F);
             this.reference_data.StylePriority.UsePadding = false;
             this.reference_data.Text = "reference_data\r\n";
-            this.reference_data.Weight = 1.41416905315644D;
+            this.reference_data.Weight = 1.3340704853277661D;
             // 
             // jobOrderPricing_lbl
             // 
@@ -216,6 +230,21 @@ namespace ArgusCR1016.Manufacturing.Templates.MF104
             this.ReportHeader.KeepTogether = true;
             this.ReportHeader.Name = "ReportHeader";
             // 
+            // QRCode
+            // 
+            this.QRCode.Alignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
+            this.QRCode.AutoModule = true;
+            this.QRCode.LocationFloat = new DevExpress.Utils.PointFloat(375.625F, 0F);
+            this.QRCode.Name = "QRCode";
+            this.QRCode.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F);
+            this.QRCode.ShowText = false;
+            this.QRCode.SizeF = new System.Drawing.SizeF(128.6493F, 126.0416F);
+            this.QRCode.StylePriority.UsePadding = false;
+            this.QRCode.StylePriority.UseTextAlignment = false;
+            qrCodeGenerator1.CompactionMode = DevExpress.XtraPrinting.BarCode.QRCodeCompactionMode.Byte;
+            this.QRCode.Symbology = qrCodeGenerator1;
+            this.QRCode.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            // 
             // ReportFooter
             // 
             this.ReportFooter.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
@@ -269,35 +298,6 @@ namespace ArgusCR1016.Manufacturing.Templates.MF104
             this.grandTotal_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopCenter;
             this.grandTotal_data.Weight = 0.28781682034246081D;
             this.grandTotal_data.WordWrap = false;
-            // 
-            // QRCode
-            // 
-            this.QRCode.Alignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
-            this.QRCode.AutoModule = true;
-            this.QRCode.LocationFloat = new DevExpress.Utils.PointFloat(388.125F, 0F);
-            this.QRCode.Name = "QRCode";
-            this.QRCode.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F);
-            this.QRCode.ShowText = false;
-            this.QRCode.SizeF = new System.Drawing.SizeF(128.6493F, 126.0416F);
-            this.QRCode.StylePriority.UsePadding = false;
-            this.QRCode.StylePriority.UseTextAlignment = false;
-            qrCodeGenerator1.CompactionMode = DevExpress.XtraPrinting.BarCode.QRCodeCompactionMode.Byte;
-            this.QRCode.Symbology = qrCodeGenerator1;
-            this.QRCode.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
-            // 
-            // IssueOfMaterialsSubReports
-            // 
-            this.IssueOfMaterialsSubReports.LocationFloat = new DevExpress.Utils.PointFloat(9.999998F, 0F);
-            this.IssueOfMaterialsSubReports.Name = "IssueOfMaterialsSubReports";
-            this.IssueOfMaterialsSubReports.ReportSource = new ArgusCR1016.Manufacturing.Templates.MF104.IssueOfMaterialsSubReports();
-            this.IssueOfMaterialsSubReports.SizeF = new System.Drawing.SizeF(802.9166F, 23F);
-            // 
-            // OverheadsSubReport
-            // 
-            this.OverheadsSubReport.LocationFloat = new DevExpress.Utils.PointFloat(9.999998F, 0F);
-            this.OverheadsSubReport.Name = "OverheadsSubReport";
-            this.OverheadsSubReport.ReportSource = new ArgusCR1016.Manufacturing.Templates.MF104.OverheadsSubReport();
-            this.OverheadsSubReport.SizeF = new System.Drawing.SizeF(802.9166F, 23F);
             // 
             // MF104
             // 
