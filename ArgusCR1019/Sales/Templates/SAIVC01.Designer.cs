@@ -468,7 +468,7 @@ namespace ArgusCR1019.Sales.Templates
             this.vatP_data.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.vatP_data.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[vatPct]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[taxId_amount]")});
             this.vatP_data.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.vatP_data.Multiline = true;
             this.vatP_data.Name = "vatP_data";
