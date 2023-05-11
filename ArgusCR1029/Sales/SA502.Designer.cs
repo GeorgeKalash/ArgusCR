@@ -280,7 +280,7 @@ namespace ArgusCR1029.Sales
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell8.BorderWidth = 1F;
             this.xrTableCell8.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[avgDiscount] ")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "([netAmount]/[discountAmount])*100")});
             this.xrTableCell8.Font = new System.Drawing.Font("Arial", 8F);
             this.xrTableCell8.Multiline = true;
             this.xrTableCell8.Name = "xrTableCell8";
