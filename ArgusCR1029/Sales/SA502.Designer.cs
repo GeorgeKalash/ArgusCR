@@ -704,7 +704,7 @@ namespace ArgusCR1029.Sales
             this.xrTable7.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable7.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow12});
-            this.xrTable7.SizeF = new System.Drawing.SizeF(843.0294F, 25F);
+            this.xrTable7.SizeF = new System.Drawing.SizeF(852.0574F, 25F);
             this.xrTable7.StylePriority.UseFont = false;
             // 
             // xrTableRow12
@@ -807,7 +807,7 @@ namespace ArgusCR1029.Sales
             this.xrTableCell1.Text = "xrTableCell1";
             this.xrTableCell1.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
             this.xrTableCell1.TextFormatString = "{0:n2}";
-            this.xrTableCell1.Weight = 0.37132918691444783D;
+            this.xrTableCell1.Weight = 0.39048865243049596D;
             // 
             // ReportFooter
             // 
@@ -824,7 +824,7 @@ namespace ArgusCR1029.Sales
             this.xrTable3.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable3.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow2});
-            this.xrTable3.SizeF = new System.Drawing.SizeF(843.0284F, 25F);
+            this.xrTable3.SizeF = new System.Drawing.SizeF(852.0574F, 25F);
             this.xrTable3.StylePriority.UseFont = false;
             // 
             // xrTableRow2
@@ -927,7 +927,7 @@ namespace ArgusCR1029.Sales
             this.xrTableCell2.Text = "xrTableCell2";
             this.xrTableCell2.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
             this.xrTableCell2.TextFormatString = "{0:n2}";
-            this.xrTableCell2.Weight = 0.37132798282579654D;
+            this.xrTableCell2.Weight = 0.39048979142920121D;
             // 
             // SA502
             // 
