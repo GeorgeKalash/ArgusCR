@@ -35,6 +35,7 @@
             this.DetailData3_Odd = new DevExpress.XtraReports.UI.XRControlStyle();
             this.PageInfo = new DevExpress.XtraReports.UI.XRControlStyle();
             this.TopMargin = new DevExpress.XtraReports.UI.TopMarginBand();
+            this.bpName_data = new DevExpress.XtraReports.UI.XRLabel();
             this.address_data = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel31 = new DevExpress.XtraReports.UI.XRLabel();
             this.description_data = new DevExpress.XtraReports.UI.XRLabel();
@@ -82,7 +83,6 @@
             this.xrCrossBandBox3 = new DevExpress.XtraReports.UI.XRCrossBandBox();
             this.PageFooter = new DevExpress.XtraReports.UI.PageFooterBand();
             this.xrPictureBox1 = new DevExpress.XtraReports.UI.XRPictureBox();
-            this.bpName_data = new DevExpress.XtraReports.UI.XRLabel();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             // 
             // Title
@@ -158,6 +158,18 @@
             this.TopMargin.HeightF = 363.7917F;
             this.TopMargin.Name = "TopMargin";
             // 
+            // bpName_data
+            // 
+            this.bpName_data.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold);
+            this.bpName_data.LocationFloat = new DevExpress.Utils.PointFloat(395.1133F, 73.70836F);
+            this.bpName_data.Multiline = true;
+            this.bpName_data.Name = "bpName_data";
+            this.bpName_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.bpName_data.SizeF = new System.Drawing.SizeF(310.7227F, 17.70834F);
+            this.bpName_data.StylePriority.UseFont = false;
+            this.bpName_data.StylePriority.UseTextAlignment = false;
+            this.bpName_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            // 
             // address_data
             // 
             this.address_data.Font = new System.Drawing.Font("Times New Roman", 9F);
@@ -203,7 +215,7 @@
             // 
             // clientName_data
             // 
-            this.clientName_data.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.clientName_data.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold);
             this.clientName_data.LocationFloat = new DevExpress.Utils.PointFloat(395.1133F, 56.00001F);
             this.clientName_data.Multiline = true;
             this.clientName_data.Name = "clientName_data";
@@ -837,18 +849,6 @@
             this.xrPictureBox1.LocationFloat = new DevExpress.Utils.PointFloat(0F, 0F);
             this.xrPictureBox1.Name = "xrPictureBox1";
             this.xrPictureBox1.SizeF = new System.Drawing.SizeF(707.919F, 198F);
-            // 
-            // bpName_data
-            // 
-            this.bpName_data.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bpName_data.LocationFloat = new DevExpress.Utils.PointFloat(395.1133F, 73.70836F);
-            this.bpName_data.Multiline = true;
-            this.bpName_data.Name = "bpName_data";
-            this.bpName_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.bpName_data.SizeF = new System.Drawing.SizeF(310.7227F, 17.70834F);
-            this.bpName_data.StylePriority.UseFont = false;
-            this.bpName_data.StylePriority.UseTextAlignment = false;
-            this.bpName_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             // 
             // SAQTN01
             // 
