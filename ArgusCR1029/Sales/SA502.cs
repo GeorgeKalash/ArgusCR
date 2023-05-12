@@ -52,7 +52,6 @@ namespace ArgusCR1029.Sales
             level_lbl.Text = labelText(11);
             saleZone_lbl.Text = labelText(12);
         }
-
         protected override string dictionaryStore()
         {
             return "CR1029.SA502";
