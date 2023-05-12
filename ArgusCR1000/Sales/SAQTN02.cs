@@ -31,6 +31,7 @@ namespace ArgusCR1000.Sales.Templates
             clientRef_data.Text = webObject.record.header.clientRef;
             currencyRef_data.Text = webObject.record.header.currencyName;
             clientName_data.Text = webObject.record.header.clientName;
+            bpName_data.Text = webObject.record.header.bpName;
             date_data.Text = webObject.record.header.date.ToString("dd/MM/yy");
             description_data.Text = webObject.record.header.description;
             reference_data.Text = webObject.record.header.reference;
