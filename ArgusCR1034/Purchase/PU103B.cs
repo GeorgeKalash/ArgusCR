@@ -20,22 +20,17 @@ namespace ArgusCR1034.Purchase
         protected override void OnBeforePrint(PrintEventArgs e)
         {
 
-            //SharedClasses.JsonProtocol.GetStructure<ArgusDS.Purchase.> webObject = deserializeGet<ArgusDS.PointOfSale.Reports.>();
+            SharedClasses.JsonProtocol.GetStructure<ArgusDS.Purchase.Reports.InvoicePrintLayout> webObject = deserializeGet<ArgusDS.Purchase.Reports.InvoicePrintLayout>();
+            DataSource = webObject.record.items;
+            logo_data.ImageUrl = companyInfo.logoUrl;
+            companyName_data.Text = companyInfo.name;
+            companyVatNo_data.Text = companyInfo.taxNo;
 
-            //logo_data.ImageUrl = webObject.record.companyInfo.logoUrl;
-            //companyName_data.Text = webObject.record.companyInfo.name;
-            //companyVatNo_data.Text = webObject.record.companyInfo.taxNo;
-
-            //if (webObject.record.address != null)
-            //{
-            //    clientName_data.Text = webObject.record.address.name;
-            //    clientReference_data.Text = webObject.record.?
-            //    date_data.Text = webObject.record.address.street1;
-            //}
-
-            //amountInWords_data.Text = SharedClasses.NumberToWords.multiLingualNumberInText((decimal)webObject.record.invoiceView.amount, 2, 2);
-            //desc_data.Text = 
-
+            vendorRef_data.Text = webObject.record.header.vendorRef;
+            vendorName_data.Text = webObject.record.header.vendorName;
+            date_data.Text = webObject.record.header.date.ToString(sessionInfo.dateFormat);
+            amountInWords_data.Text = SharedClasses.NumberToWords.multiLingualNumberInText((decimal)webObject.record.header.amount, 2, 2);
+                 
             printSignature_lbl.Text = reportSignature();
             base.OnBeforePrint(e);
         }
