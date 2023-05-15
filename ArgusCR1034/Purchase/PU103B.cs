@@ -20,7 +20,7 @@ namespace ArgusCR1034.Purchase
         protected override void OnBeforePrint(PrintEventArgs e)
         {
 
-            //SharedClasses.JsonProtocol.GetStructure<ArgusDS.Purchase.> webObject = deserializeGet<ArgusDS.PointOfSale.>();
+            //SharedClasses.JsonProtocol.GetStructure<ArgusDS.Purchase.> webObject = deserializeGet<ArgusDS.PointOfSale.Reports.>();
 
             //logo_data.ImageUrl = webObject.record.companyInfo.logoUrl;
             //companyName_data.Text = webObject.record.companyInfo.name;
@@ -29,11 +29,12 @@ namespace ArgusCR1034.Purchase
             //if (webObject.record.address != null)
             //{
             //    clientName_data.Text = webObject.record.address.name;
-            //   // reference_data.Text = webObject.record.?
+            //    clientReference_data.Text = webObject.record.?
             //    date_data.Text = webObject.record.address.street1;
             //}
 
             //amountInWords_data.Text = SharedClasses.NumberToWords.multiLingualNumberInText((decimal)webObject.record.invoiceView.amount, 2, 2);
+            //desc_data.Text = 
 
             printSignature_lbl.Text = reportSignature();
             base.OnBeforePrint(e);
