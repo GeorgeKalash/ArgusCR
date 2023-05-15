@@ -153,6 +153,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="Purchase\PU103B.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Purchase\PU103B.Designer.cs">
+      <DependentUpon>PU103B.cs</DependentUpon>
+    </Compile>
     <Compile Include="Purchase\PU103\InvoiceItemsSubReports.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -204,6 +210,9 @@
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\PU103B.resx">
+      <DependentUpon>PU103B.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Purchase\PU103\InvoiceItemsSubReports.resx">
       <DependentUpon>InvoiceItemsSubReports.cs</DependentUpon>
