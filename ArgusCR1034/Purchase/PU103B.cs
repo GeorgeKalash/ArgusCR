@@ -26,9 +26,15 @@ namespace ArgusCR1034.Purchase
             companyName_data.Text = companyInfo.name;
             companyVatNo_data.Text = companyInfo.taxNo;
 
+            reference_data.Text = webObject.record.header.reference;
             vendorRef_data.Text = webObject.record.header.vendorRef;
             vendorName_data.Text = webObject.record.header.vendorName;
             date_data.Text = webObject.record.header.date.ToString(sessionInfo.dateFormat);
+
+            subtotal_data.Text = webObject.record.header.subtotal.ToString("N2");
+            vatAmount_data.Text = webObject.record.header.vatAmount.ToString("N2");
+            amount_data.Text = webObject.record.header.amount.ToString("N2");
+
             amountInWords_data.Text = SharedClasses.NumberToWords.multiLingualNumberInText((decimal)webObject.record.header.amount, 2, 2);
                  
             printSignature_lbl.Text = reportSignature();
