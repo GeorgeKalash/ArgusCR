@@ -55,8 +55,9 @@ namespace ArgusCR1026.Inventory
             itemName_lbl.Text = labelText(10);
             weight_lbl.Text = labelText(11);
             qty_lbl.Text = labelText(12);
+            totalWeight_lbl.Text = labelText(13);
 
-            total_lbl.Text = labelText(13);
+            total_lbl.Text = labelText(14);
         }
 
         protected override string dictionaryStore()
