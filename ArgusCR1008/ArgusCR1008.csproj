@@ -124,6 +124,12 @@
     <Compile Include="Sales\Templates\SA109A.Designer.cs">
       <DependentUpon>SA109A.cs</DependentUpon>
     </Compile>
+    <Compile Include="Sales\Templates\SA102A.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Sales\Templates\SA102A.Designer.cs">
+      <DependentUpon>SA102A.cs</DependentUpon>
+    </Compile>
     <Compile Include="Sales\Templates\SATRX01.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -136,6 +142,12 @@
     <Compile Include="Sales\Templates\SA109B.Designer.cs">
       <DependentUpon>SA109B.cs</DependentUpon>
     </Compile>
+    <Compile Include="Sales\Templates\SA102B.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Sales\Templates\SA102B.Designer.cs">
+      <DependentUpon>SA102B.cs</DependentUpon>
+    </Compile>
     <Compile Include="Sales\Templates\SATRX02.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -147,6 +159,12 @@
     </Compile>
     <Compile Include="Sales\Templates\SA109C.Designer.cs">
       <DependentUpon>SA109C.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sales\Templates\SA102C.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Sales\Templates\SA102C.Designer.cs">
+      <DependentUpon>SA102C.cs</DependentUpon>
     </Compile>
     <Compile Include="Sales\Templates\SATRX03.cs">
       <SubType>Component</SubType>
@@ -176,17 +194,26 @@
     <EmbeddedResource Include="Sales\Templates\SA109A.resx">
       <DependentUpon>SA109A.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Sales\Templates\SA102A.resx">
+      <DependentUpon>SA102A.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Sales\Templates\SATRX01.resx">
       <DependentUpon>SATRX01.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Sales\Templates\SA109B.resx">
       <DependentUpon>SA109B.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Sales\Templates\SA102B.resx">
+      <DependentUpon>SA102B.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Sales\Templates\SATRX02.resx">
       <DependentUpon>SATRX02.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Sales\Templates\SA109C.resx">
       <DependentUpon>SA109C.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales\Templates\SA102C.resx">
+      <DependentUpon>SA102C.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Sales\Templates\SATRX03.resx">
       <DependentUpon>SATRX03.cs</DependentUpon>
