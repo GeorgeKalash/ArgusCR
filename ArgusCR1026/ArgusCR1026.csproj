@@ -132,6 +132,12 @@
     <Compile Include="Inventory\IV102.Designer.cs">
       <DependentUpon>IV102.cs</DependentUpon>
     </Compile>
+    <Compile Include="Inventory\IV202.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Inventory\IV202.Designer.cs">
+      <DependentUpon>IV202.cs</DependentUpon>
+    </Compile>
     <Compile Include="Inventory\IV403.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -174,6 +180,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Inventory\IV102.resx">
       <DependentUpon>IV102.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\IV202.resx">
+      <DependentUpon>IV202.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Inventory\IV403.resx">
       <DependentUpon>IV403.cs</DependentUpon>
