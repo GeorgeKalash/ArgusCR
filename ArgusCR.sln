@@ -39,6 +39,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArgusCR1030", "ArgusCR1030\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArgusCR1034", "ArgusCR1034\ArgusCR1034.csproj", "{CD69C670-87CD-4CBE-A986-900E8C8CEA26}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArgusCR1035", "ArgusCR1035\ArgusCR1035.csproj", "{A09767C4-6F01-41A5-837C-9150229DD8A9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -117,6 +119,10 @@ Global
 		{CD69C670-87CD-4CBE-A986-900E8C8CEA26}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CD69C670-87CD-4CBE-A986-900E8C8CEA26}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CD69C670-87CD-4CBE-A986-900E8C8CEA26}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A09767C4-6F01-41A5-837C-9150229DD8A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A09767C4-6F01-41A5-837C-9150229DD8A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A09767C4-6F01-41A5-837C-9150229DD8A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A09767C4-6F01-41A5-837C-9150229DD8A9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
