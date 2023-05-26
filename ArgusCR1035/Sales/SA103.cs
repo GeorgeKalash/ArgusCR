@@ -16,13 +16,27 @@ namespace ArgusCR1035.Sales
         {
             InitializeComponent();
         }
+        protected override string reportName()
+        {
+            return title_lbl.Text;
+        }
         protected override void OnBeforePrint(PrintEventArgs e)
         {
+            RightToLeft = DevExpress.XtraReports.UI.RightToLeft.No;
+            RightToLeftLayout = DevExpress.XtraReports.UI.RightToLeftLayout.No;
+
             SharedClasses.JsonProtocol.GetStructure<TrxPrintView> webObject = deserializeGet<TrxPrintView>();
             DataSource = webObject.record.items;
 
             logo_data.ImageUrl = companyInfo.logoUrl;
 
+            if (companyInfo.address != null)
+            {
+                addressName_data.Text = companyInfo.address.name;
+                addressStreet_data.Text = companyInfo.address.street1;
+                addressMobile_data.Text = companyInfo.address.phone;
+                addressEmail_data.Text = companyInfo.address.email1;
+            }
             companyName_data.Text = webObject.record.companyInfo.name;
             taxNo_data.Text = webObject.record.companyInfo.taxNo;
 
@@ -43,7 +57,6 @@ namespace ArgusCR1035.Sales
             base.OnBeforePrint(e);
         }
 
-
         protected override void OnDataSourceRowChanged(DataSourceRowEventArgs e)
         {
             ArgusDS.Sales.ItemView obj = ((List<ArgusDS.Sales.ItemView>)DataSource)[e.CurrentRow];
@@ -61,4 +74,3 @@ namespace ArgusCR1035.Sales
         }
     }
 }
-
