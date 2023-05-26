@@ -45,16 +45,17 @@ namespace ArgusCR1029.Purchase
             itemGrp_lbl.Text = labelText(5);
             date_lbl.Text = labelText(6);
             vendor_lbl.Text = labelText(7);
-            pcs_lbl.Text = labelText(8);
-            qty_lbl.Text = labelText(9);
-            unitCost_lbl.Text = labelText(10);
-            amount_lbl.Text = labelText(11);
+            site_lbl.Text = labelText(8);
+            pcs_lbl.Text = labelText(9);
+            qty_lbl.Text = labelText(10);
+            unitCost_lbl.Text = labelText(11);
+            amount_lbl.Text = labelText(12);
 
-            startDate_lbl.Text = labelText(12);
-            endDate_lbl.Text = labelText(13);
-            vendorRef_lbl.Text = labelText(14);
-            item_lbl.Text = labelText(15);
-            itemCtgry_lbl.Text = labelText(16);
+            startDate_lbl.Text = labelText(13);
+            endDate_lbl.Text = labelText(14);
+            vendorRef_lbl.Text = labelText(15);
+            item_lbl.Text = labelText(16);
+            itemCtgry_lbl.Text = labelText(17);
         }
         protected override void OnDataSourceRowChanged(DataSourceRowEventArgs e)
         {
