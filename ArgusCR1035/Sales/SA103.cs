@@ -46,7 +46,7 @@ namespace ArgusCR1035.Sales
 
             seqNo_data.Text = webObject.record.trxHeader.reference;
             datee_data.Text = webObject.record.trxHeader.date.ToString(sessionInfo.dateFormat);
-            phoneNumber_data.Text = webObject.record.companyInfo.address?.phone;
+            phoneNumber_data.Text = webObject.record.billAddress?.phone;
             cellphone_data.Text = webObject.record.salesPerson?.cellPhone;
 
             amountInWords_data.Text = SharedClasses.NumberToWords.multiLingualNumberInText((decimal)webObject.record.trxHeader.amount, 2, 2);
