@@ -867,7 +867,7 @@ namespace ArgusCR1035.Sales
             this.title_lbl.StylePriority.UseBorders = false;
             this.title_lbl.StylePriority.UseFont = false;
             this.title_lbl.StylePriority.UseTextAlignment = false;
-            this.title_lbl.Text = "فاتورة آجلة";
+            this.title_lbl.Text = "فاتورة ضريبية";
             this.title_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             // 
             // xrTable15
