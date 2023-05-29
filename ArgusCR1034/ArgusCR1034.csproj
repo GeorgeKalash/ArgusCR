@@ -177,6 +177,12 @@
     <Compile Include="Purchase\PU103\PU103.Designer.cs">
       <DependentUpon>PU103.cs</DependentUpon>
     </Compile>
+    <Compile Include="Purchase\PU403.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Purchase\PU403.Designer.cs">
+      <DependentUpon>PU403.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="POS\Templates\PS101B\InvoiceItemsSubReports.resx">
@@ -222,6 +228,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Purchase\PU103\PU103.resx">
       <DependentUpon>PU103.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\PU403.resx">
+      <DependentUpon>PU403.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
