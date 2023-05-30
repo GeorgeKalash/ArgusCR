@@ -7,7 +7,6 @@ using DevExpress.XtraReports.UI;
 using ArgusDS.Sales.Reports;
 using System.Collections.Generic;
 
-
 namespace ArgusCR1035.Sales
 {
     public partial class SA103 : ArgusRPT.BaseReport
@@ -42,6 +41,7 @@ namespace ArgusCR1035.Sales
 
             clientRef_data.Text = webObject.record.client.reference;
             clientName_data.Text = webObject.record.trxHeader.clientName;
+            clientAddress_data.Text = webObject.record.billAddress?.street1;
             clientVATNo_data.Text = webObject.record.client.vatNumber;
 
             seqNo_data.Text = webObject.record.trxHeader.reference;
@@ -49,14 +49,15 @@ namespace ArgusCR1035.Sales
             phoneNumber_data.Text = webObject.record.billAddress?.phone;
             cellphone_data.Text = webObject.record.salesPerson?.cellPhone;
 
+            contact_data.Text = webObject.record.trxHeader.contactName;
+
             amountInWords_data.Text = SharedClasses.NumberToWords.multiLingualNumberInText((decimal)webObject.record.trxHeader.amount, 2, 2);
-            goldAmountInWords_data.Text = SharedClasses.NumberToWords.multiLingualNumberInText((decimal)webObject.record.sumPureMetalQty, 4, 2);
+           // goldAmountInWords_data.Text = SharedClasses.NumberToWords.multiLingualNumberInText((decimal)webObject.record.sumPureMetalQty, 4, 2);
             QRCode.Text = new KSAeInvoiceQrCode(webObject.record.companyInfo.name, webObject.record.companyInfo.taxNo, (DateTime)webObject.record.trxHeader.date, webObject.record.trxHeader.amount.ToString(), webObject.record.trxHeader.vatAmount.ToString()).ToBase64();
 
             printSignature.Text = reportSignature();
             base.OnBeforePrint(e);
         }
-
         protected override void OnDataSourceRowChanged(DataSourceRowEventArgs e)
         {
             ArgusDS.Sales.ItemView obj = ((List<ArgusDS.Sales.ItemView>)DataSource)[e.CurrentRow];
@@ -64,7 +65,6 @@ namespace ArgusCR1035.Sales
             unitPrice_data.Text = netUnitPrice.ToString("N2");
             base.OnDataSourceRowChanged(e);
         }
-
         protected override void labelsText()
         {
         }
