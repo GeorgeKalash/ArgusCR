@@ -7,10 +7,9 @@ using System.Drawing.Printing;
 
 namespace ArgusCR1029.Purchase
 {
-    public partial class PU401 : ArgusRPT.BaseReport
+    public partial class PU405 : ArgusRPT.BaseReport
     {
-        int itemsCounter = 1;
-        public PU401()
+        public PU405()
         {
             InitializeComponent();
         }
@@ -21,15 +20,14 @@ namespace ArgusCR1029.Purchase
 
         protected override void OnBeforePrint(PrintEventArgs e)
         {
-            SharedClasses.JsonProtocol.QryStructure<ArgusDS.Purchase.Reports.PU401> obj = deserializeList<ArgusDS.Purchase.Reports.PU401>();
+            SharedClasses.JsonProtocol.QryStructure<ArgusDS.Purchase.Reports.PU405> obj = deserializeList<ArgusDS.Purchase.Reports.PU405>();
             DataSource = obj.list;
 
-            vendorRef_param.Text = Parameters.Count > 0 ? Parameters[0].Value.ToString() : string.Empty;
             startDate_param.Text = Parameters.Count > 1 ? Parameters[1].Value.ToString() : string.Empty;
             endDate_param.Text = Parameters.Count > 2 ? Parameters[2].Value.ToString() : string.Empty;
+            siteParam_param.Text = Parameters.Count > 4 ? Parameters[4].Value.ToString() : string.Empty;
             item_param.Text = Parameters.Count > 3 ? Parameters[3].Value.ToString() : string.Empty;
-            itemCategory_param.Text = Parameters.Count > 4 ? Parameters[4].Value.ToString() : string.Empty;
-
+            
             printSignature.Text = reportSignature();
             base.OnBeforePrint(e);
         }
@@ -38,14 +36,14 @@ namespace ArgusCR1029.Purchase
         {
             title_lbl.Text = labelText(0);
 
-            rec_lbl.Text = labelText(1);
-            itemRef_lbl.Text = labelText(2);
-            itemName_lbl.Text = labelText(3);
-            itemCat_lbl.Text = labelText(4);
-            itemGrp_lbl.Text = labelText(5);
-            date_lbl.Text = labelText(6);
-            vendor_lbl.Text = labelText(7);
-            site_lbl.Text = labelText(8);
+            ref_lbl.Text = labelText(1);
+            date_lbl.Text = labelText(2);
+            vendorRef_lbl.Text = labelText(3);
+            site_lbl.Text = labelText(4);
+            itemRef_lbl.Text = labelText(5);
+            itemName_lbl.Text = labelText(6);
+            itemCategory_lbl.Text = labelText(7);
+            srlNo_lbl.Text = labelText(8);
             pcs_lbl.Text = labelText(9);
             qty_lbl.Text = labelText(10);
             unitCost_lbl.Text = labelText(11);
@@ -53,21 +51,13 @@ namespace ArgusCR1029.Purchase
 
             startDate_lbl.Text = labelText(13);
             endDate_lbl.Text = labelText(14);
-            vendorRef_lbl.Text = labelText(15);
-            item_lbl.Text = labelText(16);
-            itemCtgry_lbl.Text = labelText(17);
+            item_lbl.Text = labelText(15);
+            siteParam_lbl.Text = labelText(16);
         }
-        protected override void OnDataSourceRowChanged(DataSourceRowEventArgs e)
-        {
-            lineNo_data.Text = itemsCounter.ToString();
-            ++itemsCounter;
-            base.OnDataSourceRowChanged(e);
-        }
-
 
         protected override string dictionaryStore()
         {
-            return "CR1029.PU401";
+            return "CR1029.PU405";
         }
     }
 }
