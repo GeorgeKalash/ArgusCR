@@ -111,6 +111,7 @@ namespace ArgusCR1029.Purchase
             this.Detail.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
             this.xrTable4});
             this.Detail.HeightF = 25F;
+            this.Detail.KeepTogether = true;
             this.Detail.Name = "Detail";
             // 
             // xrTable4
@@ -396,6 +397,7 @@ namespace ArgusCR1029.Purchase
             this.title_lbl,
             this.xrTable2});
             this.ReportHeader.HeightF = 156.5278F;
+            this.ReportHeader.KeepTogether = true;
             this.ReportHeader.Name = "ReportHeader";
             // 
             // title_lbl
@@ -438,7 +440,7 @@ namespace ArgusCR1029.Purchase
             this.startDate_lbl.Name = "startDate_lbl";
             this.startDate_lbl.StylePriority.UseFont = false;
             this.startDate_lbl.Text = "Start Date:";
-            this.startDate_lbl.Weight = 0.53679929051395225D;
+            this.startDate_lbl.Weight = 0.37028747837569043D;
             // 
             // startDate_param
             // 
@@ -448,7 +450,7 @@ namespace ArgusCR1029.Purchase
             this.startDate_param.StylePriority.UseFont = false;
             this.startDate_param.StylePriority.UseTextAlignment = false;
             this.startDate_param.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
-            this.startDate_param.Weight = 1.4632007094860478D;
+            this.startDate_param.Weight = 1.6297125216243096D;
             // 
             // xrTableRow2
             // 
@@ -465,7 +467,7 @@ namespace ArgusCR1029.Purchase
             this.endDate_lbl.Name = "endDate_lbl";
             this.endDate_lbl.StylePriority.UseFont = false;
             this.endDate_lbl.Text = "End Date:";
-            this.endDate_lbl.Weight = 0.5367991412685631D;
+            this.endDate_lbl.Weight = 0.37028747837569048D;
             // 
             // endDate_param
             // 
@@ -475,7 +477,7 @@ namespace ArgusCR1029.Purchase
             this.endDate_param.StylePriority.UseFont = false;
             this.endDate_param.StylePriority.UseTextAlignment = false;
             this.endDate_param.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
-            this.endDate_param.Weight = 1.4632008587314367D;
+            this.endDate_param.Weight = 1.6297125216243094D;
             // 
             // xrTableRow8
             // 
@@ -492,7 +494,7 @@ namespace ArgusCR1029.Purchase
             this.item_lbl.Name = "item_lbl";
             this.item_lbl.StylePriority.UseFont = false;
             this.item_lbl.Text = "Item:";
-            this.item_lbl.Weight = 0.53679884277778467D;
+            this.item_lbl.Weight = 0.370287179884912D;
             // 
             // item_param
             // 
@@ -502,7 +504,7 @@ namespace ArgusCR1029.Purchase
             this.item_param.StylePriority.UseFont = false;
             this.item_param.StylePriority.UseTextAlignment = false;
             this.item_param.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
-            this.item_param.Weight = 1.4632011572222152D;
+            this.item_param.Weight = 1.6297128201150879D;
             // 
             // xrTableRow9
             // 
@@ -519,7 +521,7 @@ namespace ArgusCR1029.Purchase
             this.siteParam_lbl.Name = "siteParam_lbl";
             this.siteParam_lbl.StylePriority.UseFont = false;
             this.siteParam_lbl.Text = "Site:";
-            this.siteParam_lbl.Weight = 0.53679884277778467D;
+            this.siteParam_lbl.Weight = 0.37028747837569043D;
             // 
             // siteParam_param
             // 
@@ -529,7 +531,7 @@ namespace ArgusCR1029.Purchase
             this.siteParam_param.StylePriority.UseFont = false;
             this.siteParam_param.StylePriority.UseTextAlignment = false;
             this.siteParam_param.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
-            this.siteParam_param.Weight = 1.4632011572222152D;
+            this.siteParam_param.Weight = 1.6297125216243096D;
             // 
             // PageHeader
             // 
@@ -778,6 +780,7 @@ namespace ArgusCR1029.Purchase
             this.ReportFooter.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
             this.xrTable7});
             this.ReportFooter.HeightF = 25F;
+            this.ReportFooter.KeepTogether = true;
             this.ReportFooter.Name = "ReportFooter";
             // 
             // xrTable7
