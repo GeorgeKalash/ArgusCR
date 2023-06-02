@@ -830,13 +830,13 @@ namespace ArgusCR1029.Purchase
             this.ReportHeader.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
             this.xrTable1,
             this.title_lbl});
-            this.ReportHeader.HeightF = 150.5F;
+            this.ReportHeader.HeightF = 138F;
             this.ReportHeader.KeepTogether = true;
             this.ReportHeader.Name = "ReportHeader";
             // 
             // xrTable1
             // 
-            this.xrTable1.LocationFloat = new DevExpress.Utils.PointFloat(10.00004F, 55.27778F);
+            this.xrTable1.LocationFloat = new DevExpress.Utils.PointFloat(12.5F, 50F);
             this.xrTable1.Name = "xrTable1";
             this.xrTable1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable1.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
@@ -957,7 +957,7 @@ namespace ArgusCR1029.Purchase
             // title_lbl
             // 
             this.title_lbl.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.title_lbl.LocationFloat = new DevExpress.Utils.PointFloat(0F, 0.8332825F);
+            this.title_lbl.LocationFloat = new DevExpress.Utils.PointFloat(0F, 0F);
             this.title_lbl.Multiline = true;
             this.title_lbl.Name = "title_lbl";
             this.title_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
