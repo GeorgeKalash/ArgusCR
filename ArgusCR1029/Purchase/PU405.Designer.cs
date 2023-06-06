@@ -32,6 +32,7 @@ namespace ArgusCR1029.Purchase
             DevExpress.XtraReports.UI.XRSummary xrSummary1 = new DevExpress.XtraReports.UI.XRSummary();
             DevExpress.XtraReports.UI.XRSummary xrSummary2 = new DevExpress.XtraReports.UI.XRSummary();
             DevExpress.XtraReports.UI.XRSummary xrSummary3 = new DevExpress.XtraReports.UI.XRSummary();
+            DevExpress.XtraReports.UI.XRSummary xrSummary4 = new DevExpress.XtraReports.UI.XRSummary();
             this.TopMargin = new DevExpress.XtraReports.UI.TopMarginBand();
             this.BottomMargin = new DevExpress.XtraReports.UI.BottomMarginBand();
             this.Detail = new DevExpress.XtraReports.UI.DetailBand();
@@ -870,6 +871,8 @@ namespace ArgusCR1029.Purchase
             this.xrTableCell5.StylePriority.UseFont = false;
             this.xrTableCell5.StylePriority.UsePadding = false;
             this.xrTableCell5.StylePriority.UseTextAlignment = false;
+            xrSummary4.Running = DevExpress.XtraReports.UI.SummaryRunning.Report;
+            this.xrTableCell5.Summary = xrSummary4;
             this.xrTableCell5.Text = "xrTableCell5";
             this.xrTableCell5.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
             this.xrTableCell5.TextFormatString = "{0:n2}";
