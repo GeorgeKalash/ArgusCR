@@ -7,9 +7,9 @@ using System.Drawing.Printing;
 
 namespace ArgusCR1029.Sales
 {
-    public partial class SA418 : ArgusRPT.BaseReport
+    public partial class SA422 : ArgusRPT.BaseReport
     {
-        public SA418()
+        public SA422()
         {
             InitializeComponent();
         }
@@ -21,7 +21,7 @@ namespace ArgusCR1029.Sales
 
         protected override void OnBeforePrint(PrintEventArgs e)
         {
-            SharedClasses.JsonProtocol.QryStructure<Custom.CR1029.SA418> obj = deserializeList<Custom.CR1029.SA418>();
+            SharedClasses.JsonProtocol.QryStructure<Custom.CR1029.SA422> obj = deserializeList<Custom.CR1029.SA422>();
             DataSource = obj.list;
 
             logo_data.ImageUrl = companyInfo.logoUrl;

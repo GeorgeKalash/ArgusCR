@@ -21,7 +21,7 @@ namespace ArgusCR1029.Sales
 
         protected override void OnBeforePrint(PrintEventArgs e)
         {
-            SharedClasses.JsonProtocol.QryStructure<Custom.CR1029.SA418> obj = deserializeList<Custom.CR1029.SA418>();
+            SharedClasses.JsonProtocol.QryStructure<Custom.CR1029.SA422> obj = deserializeList<Custom.CR1029.SA422>();
             DataSource = obj.list;
 
             logo_data.ImageUrl = companyInfo.logoUrl;

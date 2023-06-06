@@ -1,7 +1,7 @@
 ﻿
 namespace ArgusCR1029.Sales
 {
-    partial class SA418
+    partial class SA422
     {
         /// <summary>
         /// Required designer variable.
