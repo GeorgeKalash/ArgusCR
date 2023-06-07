@@ -48,9 +48,7 @@ namespace ArgusCR1029.Sales
             qty21_lbl.Text = labelText(4);
             laborPrice_lbl.Text = labelText(5);
             vatAmount_lbl.Text = labelText(6);
-            discountAmount_lbl.Text = labelText(7);
-            netAmount_lbl.Text = labelText(8);
-            avgDiscount_lbl.Text = labelText(9);
+            netAmount_lbl.Text = labelText(7);
         }
         protected override string dictionaryStore()
         {
