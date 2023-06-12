@@ -65,6 +65,9 @@ namespace ArgusCR1029.Sales
             saleZone_lbl.Text = labelText(16);
             productionLine2_lbl.Text = labelText(17);
             systemFunction_lbl.Text = labelText(18);
+
+            discountAmount_lbl.Text = labelText(19);
+            avgDiscount_lbl.Text = labelText(20);
         }
         protected override string dictionaryStore()
         {
