@@ -368,7 +368,7 @@ namespace ArgusCR1029.Sales
             this.xrTableCell17.StylePriority.UseTextAlignment = false;
             this.xrTableCell17.Text = "xrTableCell17";
             this.xrTableCell17.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
-            this.xrTableCell17.TextFormatString = "{0:0.00%}";
+            this.xrTableCell17.TextFormatString = "{0:0.00}%";
             this.xrTableCell17.Weight = 0.45099450546590725D;
             // 
             // ReportHeader
