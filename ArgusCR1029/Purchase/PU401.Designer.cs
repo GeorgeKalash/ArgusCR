@@ -100,7 +100,7 @@ namespace ArgusCR1029.Purchase
             // 
             // TopMargin
             // 
-            this.TopMargin.HeightF = 0F;
+            this.TopMargin.HeightF = 25F;
             this.TopMargin.Name = "TopMargin";
             // 
             // BottomMargin
@@ -653,10 +653,10 @@ namespace ArgusCR1029.Purchase
             // 
             // xrPageInfo1
             // 
-            this.xrPageInfo1.LocationFloat = new DevExpress.Utils.PointFloat(1033.019F, 10.00002F);
+            this.xrPageInfo1.LocationFloat = new DevExpress.Utils.PointFloat(1033.019F, 10.00001F);
             this.xrPageInfo1.Name = "xrPageInfo1";
             this.xrPageInfo1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrPageInfo1.SizeF = new System.Drawing.SizeF(125.9814F, 23F);
+            this.xrPageInfo1.SizeF = new System.Drawing.SizeF(125.9808F, 23F);
             this.xrPageInfo1.StylePriority.UseTextAlignment = false;
             this.xrPageInfo1.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             this.xrPageInfo1.TextFormatString = "Page {0} of {1}";
@@ -936,7 +936,7 @@ namespace ArgusCR1029.Purchase
             this.documentRef});
             this.Font = new System.Drawing.Font("Arial", 9.75F);
             this.Landscape = true;
-            this.Margins = new System.Drawing.Printing.Margins(0, 0, 0, 0);
+            this.Margins = new System.Drawing.Printing.Margins(0, 0, 25, 0);
             this.PageHeight = 827;
             this.PageWidth = 1169;
             this.PaperKind = System.Drawing.Printing.PaperKind.A4;
