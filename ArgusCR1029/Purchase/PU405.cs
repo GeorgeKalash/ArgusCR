@@ -44,15 +44,14 @@ namespace ArgusCR1029.Purchase
             itemName_lbl.Text = labelText(6);
             itemCategory_lbl.Text = labelText(7);
             srlNo_lbl.Text = labelText(8);
-            pcs_lbl.Text = labelText(9);
-            qty_lbl.Text = labelText(10);
-            unitCost_lbl.Text = labelText(11);
-            amount_lbl.Text = labelText(12);
+            qty_lbl.Text = labelText(9);
+            unitCost_lbl.Text = labelText(10);
+            amount_lbl.Text = labelText(11);
 
-            startDate_lbl.Text = labelText(13);
-            endDate_lbl.Text = labelText(14);
-            item_lbl.Text = labelText(15);
-            siteParam_lbl.Text = labelText(16);
+            startDate_lbl.Text = labelText(12);
+            endDate_lbl.Text = labelText(13);
+            item_lbl.Text = labelText(14);
+            siteParam_lbl.Text = labelText(15);
         }
 
         protected override string dictionaryStore()

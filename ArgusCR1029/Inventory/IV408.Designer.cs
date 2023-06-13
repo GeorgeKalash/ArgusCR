@@ -111,7 +111,7 @@ namespace ArgusCR1029.Inventory
             this.logo_data,
             this.printDate,
             this.inventoryStatus_lbl});
-            this.ReportHeader.HeightF = 124.4583F;
+            this.ReportHeader.HeightF = 135.9166F;
             this.ReportHeader.KeepTogether = true;
             this.ReportHeader.Name = "ReportHeader";
             // 

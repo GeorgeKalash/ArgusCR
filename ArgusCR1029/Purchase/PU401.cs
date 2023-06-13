@@ -24,7 +24,7 @@ namespace ArgusCR1029.Purchase
             SharedClasses.JsonProtocol.QryStructure<ArgusDS.Purchase.Reports.PU401> obj = deserializeList<ArgusDS.Purchase.Reports.PU401>();
             DataSource = obj.list;
 
-            vendorRef_param.Text = Parameters.Count > 0 ? Parameters[0].Value.ToString() : string.Empty;
+            vendor_param.Text = Parameters.Count > 0 ? Parameters[0].Value.ToString() : string.Empty;
             startDate_param.Text = Parameters.Count > 1 ? Parameters[1].Value.ToString() : string.Empty;
             endDate_param.Text = Parameters.Count > 2 ? Parameters[2].Value.ToString() : string.Empty;
             item_param.Text = Parameters.Count > 3 ? Parameters[3].Value.ToString() : string.Empty;
@@ -63,8 +63,6 @@ namespace ArgusCR1029.Purchase
             ++itemsCounter;
             base.OnDataSourceRowChanged(e);
         }
-
-
         protected override string dictionaryStore()
         {
             return "CR1029.PU401";
