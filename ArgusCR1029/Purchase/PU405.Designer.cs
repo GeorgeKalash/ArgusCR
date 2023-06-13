@@ -32,6 +32,7 @@ namespace ArgusCR1029.Purchase
             DevExpress.XtraReports.UI.XRSummary xrSummary1 = new DevExpress.XtraReports.UI.XRSummary();
             DevExpress.XtraReports.UI.XRSummary xrSummary2 = new DevExpress.XtraReports.UI.XRSummary();
             DevExpress.XtraReports.UI.XRSummary xrSummary3 = new DevExpress.XtraReports.UI.XRSummary();
+            DevExpress.XtraReports.UI.XRSummary xrSummary4 = new DevExpress.XtraReports.UI.XRSummary();
             this.TopMargin = new DevExpress.XtraReports.UI.TopMarginBand();
             this.BottomMargin = new DevExpress.XtraReports.UI.BottomMarginBand();
             this.Detail = new DevExpress.XtraReports.UI.DetailBand();
@@ -121,12 +122,12 @@ namespace ArgusCR1029.Purchase
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTable4.BorderWidth = 0.5F;
             this.xrTable4.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.xrTable4.LocationFloat = new DevExpress.Utils.PointFloat(10.00001F, 0F);
+            this.xrTable4.LocationFloat = new DevExpress.Utils.PointFloat(12.5F, 0F);
             this.xrTable4.Name = "xrTable4";
             this.xrTable4.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable4.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow5});
-            this.xrTable4.SizeF = new System.Drawing.SizeF(1149F, 25F);
+            this.xrTable4.SizeF = new System.Drawing.SizeF(1146.5F, 25F);
             this.xrTable4.StylePriority.UseBorders = false;
             this.xrTable4.StylePriority.UseBorderWidth = false;
             this.xrTable4.StylePriority.UseFont = false;
@@ -166,7 +167,7 @@ namespace ArgusCR1029.Purchase
             this.ref_data.StylePriority.UsePadding = false;
             this.ref_data.StylePriority.UseTextAlignment = false;
             this.ref_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopCenter;
-            this.ref_data.Weight = 0.5664498612918818D;
+            this.ref_data.Weight = 0.56645043218991731D;
             // 
             // date_data
             // 
@@ -185,7 +186,7 @@ namespace ArgusCR1029.Purchase
             this.date_data.StylePriority.UseTextAlignment = false;
             this.date_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
             this.date_data.TextFormatString = "{0:dd/MM/yyyy}";
-            this.date_data.Weight = 0.62760141712476525D;
+            this.date_data.Weight = 0.62759776417388013D;
             // 
             // vendorRef_data
             // 
@@ -203,7 +204,7 @@ namespace ArgusCR1029.Purchase
             this.vendorRef_data.StylePriority.UsePadding = false;
             this.vendorRef_data.StylePriority.UseTextAlignment = false;
             this.vendorRef_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
-            this.vendorRef_data.Weight = 0.69064926129609816D;
+            this.vendorRef_data.Weight = 0.67194929201842846D;
             // 
             // xrTableCell6
             // 
@@ -396,7 +397,7 @@ namespace ArgusCR1029.Purchase
             this.ReportHeader.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
             this.title_lbl,
             this.xrTable2});
-            this.ReportHeader.HeightF = 156.5278F;
+            this.ReportHeader.HeightF = 137.7778F;
             this.ReportHeader.KeepTogether = true;
             this.ReportHeader.Name = "ReportHeader";
             // 
@@ -415,7 +416,7 @@ namespace ArgusCR1029.Purchase
             // 
             // xrTable2
             // 
-            this.xrTable2.LocationFloat = new DevExpress.Utils.PointFloat(10F, 56.38898F);
+            this.xrTable2.LocationFloat = new DevExpress.Utils.PointFloat(12.5F, 50F);
             this.xrTable2.Name = "xrTable2";
             this.xrTable2.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable2.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
@@ -537,7 +538,7 @@ namespace ArgusCR1029.Purchase
             // 
             this.PageHeader.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
             this.xrTable1});
-            this.PageHeader.HeightF = 37.01362F;
+            this.PageHeader.HeightF = 25.76387F;
             this.PageHeader.Name = "PageHeader";
             // 
             // xrTable1
@@ -547,7 +548,7 @@ namespace ArgusCR1029.Purchase
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTable1.BorderWidth = 0.5F;
             this.xrTable1.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.xrTable1.LocationFloat = new DevExpress.Utils.PointFloat(10.00054F, 11.24975F);
+            this.xrTable1.LocationFloat = new DevExpress.Utils.PointFloat(12.5F, 0F);
             this.xrTable1.Name = "xrTable1";
             this.xrTable1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable1.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
@@ -870,6 +871,8 @@ namespace ArgusCR1029.Purchase
             this.xrTableCell5.StylePriority.UseFont = false;
             this.xrTableCell5.StylePriority.UsePadding = false;
             this.xrTableCell5.StylePriority.UseTextAlignment = false;
+            xrSummary4.Running = DevExpress.XtraReports.UI.SummaryRunning.Report;
+            this.xrTableCell5.Summary = xrSummary4;
             this.xrTableCell5.Text = "xrTableCell5";
             this.xrTableCell5.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
             this.xrTableCell5.TextFormatString = "{0:n2}";
@@ -885,11 +888,11 @@ namespace ArgusCR1029.Purchase
             // 
             // printSignature
             // 
-            this.printSignature.LocationFloat = new DevExpress.Utils.PointFloat(10F, 10.00002F);
+            this.printSignature.LocationFloat = new DevExpress.Utils.PointFloat(12.5F, 10.00001F);
             this.printSignature.Multiline = true;
             this.printSignature.Name = "printSignature";
             this.printSignature.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.printSignature.SizeF = new System.Drawing.SizeF(761.3696F, 23F);
+            this.printSignature.SizeF = new System.Drawing.SizeF(834.9113F, 23F);
             this.printSignature.StylePriority.UseTextAlignment = false;
             this.printSignature.Text = "printSignature";
             this.printSignature.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
