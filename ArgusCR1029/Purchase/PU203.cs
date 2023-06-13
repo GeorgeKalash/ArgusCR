@@ -24,7 +24,11 @@ namespace ArgusCR1029.Purchase
             SharedClasses.JsonProtocol.QryStructure<ArgusDS.Purchase.InvoiceView> obj = deserializeList<ArgusDS.Purchase.InvoiceView>();
             DataSource = obj.list;
 
+<<<<<<< HEAD
             vendorRef_param.Text = Parameters.Count > 0 ? Parameters[0].Value.ToString() : string.Empty;
+=======
+            vendor_param.Text = Parameters.Count > 0 ? Parameters[0].Value.ToString() : string.Empty;
+>>>>>>> AlineCRBranch
             startDate_param.Text = Parameters.Count > 1 ? Parameters[1].Value.ToString() : string.Empty;
             endDate_param.Text = Parameters.Count > 2 ? Parameters[2].Value.ToString() : string.Empty;
             currency_param.Text = Parameters.Count >  3 ? Parameters[3].Value.ToString() : string.Empty;      
@@ -53,7 +57,7 @@ namespace ArgusCR1029.Purchase
             startDate_lbl.Text = labelText(13);
             endDate_lbl.Text = labelText(14);
             currency_lbl.Text = labelText(15);
-            vendorRef_lbl.Text = labelText(16);
+            vendor_lbl.Text = labelText(16);
         }
         protected override void OnDataSourceRowChanged(DataSourceRowEventArgs e)
         {
@@ -61,8 +65,6 @@ namespace ArgusCR1029.Purchase
             ++itemsCounter;
             base.OnDataSourceRowChanged(e);
         }
-
-
         protected override string dictionaryStore()
         {
             return "CR1029.PU203";
