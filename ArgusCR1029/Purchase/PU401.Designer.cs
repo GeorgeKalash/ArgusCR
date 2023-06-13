@@ -346,7 +346,7 @@ namespace ArgusCR1029.Purchase
             this.xrTableCell23.StylePriority.UsePadding = false;
             this.xrTableCell23.StylePriority.UseTextAlignment = false;
             this.xrTableCell23.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
-            this.xrTableCell23.TextFormatString = "{0:n2}";
+            this.xrTableCell23.TextFormatString = "{0:n0}";
             this.xrTableCell23.Weight = 0.4771990265530705D;
             this.xrTableCell23.WordWrap = false;
             // 
@@ -614,10 +614,10 @@ namespace ArgusCR1029.Purchase
             // 
             // xrTableCell18
             // 
-            this.xrTableCell18.CanGrow = false;
             this.xrTableCell18.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "sumSum([pcs])")});
             this.xrTableCell18.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Bold);
+            this.xrTableCell18.Multiline = true;
             this.xrTableCell18.Name = "xrTableCell18";
             this.xrTableCell18.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 5, 4, 0, 100F);
             this.xrTableCell18.StylePriority.UseFont = false;
@@ -627,7 +627,7 @@ namespace ArgusCR1029.Purchase
             this.xrTableCell18.Summary = xrSummary1;
             this.xrTableCell18.Text = "xrTableCell13";
             this.xrTableCell18.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
-            this.xrTableCell18.TextFormatString = "{0:n2}";
+            this.xrTableCell18.TextFormatString = "{0:n0}";
             this.xrTableCell18.Weight = 0.31494439592153395D;
             this.xrTableCell18.WordWrap = false;
             // 
@@ -705,7 +705,7 @@ namespace ArgusCR1029.Purchase
             // 
             // printSignature
             // 
-            this.printSignature.LocationFloat = new DevExpress.Utils.PointFloat(22.5F, 9.999974F);
+            this.printSignature.LocationFloat = new DevExpress.Utils.PointFloat(32.91664F, 9.999974F);
             this.printSignature.Multiline = true;
             this.printSignature.Name = "printSignature";
             this.printSignature.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -1045,7 +1045,7 @@ namespace ArgusCR1029.Purchase
             this.xrTableCell1.Summary = xrSummary5;
             this.xrTableCell1.Text = "xrTableCell13";
             this.xrTableCell1.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
-            this.xrTableCell1.TextFormatString = "{0:n2}";
+            this.xrTableCell1.TextFormatString = "{0:n0}";
             this.xrTableCell1.Weight = 0.31754188095044455D;
             // 
             // xrTableCell6

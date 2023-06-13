@@ -21,7 +21,7 @@ namespace ArgusCR1029.Purchase
 
         protected override void OnBeforePrint(PrintEventArgs e)
         {
-            SharedClasses.JsonProtocol.QryStructure<ArgusDS.Purchase.InvoiceView> obj = deserializeList<ArgusDS.Purchase.InvoiceView>();
+            SharedClasses.JsonProtocol.QryStructure<ArgusDS.Purchase.Reports.PU203> obj = deserializeList<ArgusDS.Purchase.Reports.PU203>();
             DataSource = obj.list;
 
 
