@@ -24,11 +24,8 @@ namespace ArgusCR1029.Purchase
             SharedClasses.JsonProtocol.QryStructure<ArgusDS.Purchase.InvoiceView> obj = deserializeList<ArgusDS.Purchase.InvoiceView>();
             DataSource = obj.list;
 
-<<<<<<< HEAD
-            vendorRef_param.Text = Parameters.Count > 0 ? Parameters[0].Value.ToString() : string.Empty;
-=======
+
             vendor_param.Text = Parameters.Count > 0 ? Parameters[0].Value.ToString() : string.Empty;
->>>>>>> AlineCRBranch
             startDate_param.Text = Parameters.Count > 1 ? Parameters[1].Value.ToString() : string.Empty;
             endDate_param.Text = Parameters.Count > 2 ? Parameters[2].Value.ToString() : string.Empty;
             currency_param.Text = Parameters.Count >  3 ? Parameters[3].Value.ToString() : string.Empty;      
