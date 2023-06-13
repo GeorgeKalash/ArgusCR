@@ -47,6 +47,7 @@ namespace ArgusCR1029.Purchase
             qty_lbl.Text = labelText(9);
             unitCost_lbl.Text = labelText(10);
             amount_lbl.Text = labelText(11);
+
             startDate_lbl.Text = labelText(12);
             endDate_lbl.Text = labelText(13);
             item_lbl.Text = labelText(14);
