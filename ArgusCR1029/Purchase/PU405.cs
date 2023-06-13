@@ -53,7 +53,6 @@ namespace ArgusCR1029.Purchase
             item_lbl.Text = labelText(14);
             siteParam_lbl.Text = labelText(15);
         }
-
         protected override string dictionaryStore()
         {
             return "CR1029.PU405";
