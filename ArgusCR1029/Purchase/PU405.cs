@@ -23,9 +23,9 @@ namespace ArgusCR1029.Purchase
             SharedClasses.JsonProtocol.QryStructure<ArgusDS.Purchase.Reports.PU405> obj = deserializeList<ArgusDS.Purchase.Reports.PU405>();
             DataSource = obj.list;
 
-            startDate_param.Text = Parameters.Count > 1 ? Parameters[1].Value.ToString() : string.Empty;
-            endDate_param.Text = Parameters.Count > 2 ? Parameters[2].Value.ToString() : string.Empty;
-            siteParam_param.Text = Parameters.Count > 4 ? Parameters[4].Value.ToString() : string.Empty;
+            startDate_param.Text = Parameters.Count > 0 ? Parameters[0].Value.ToString() : string.Empty;
+            endDate_param.Text = Parameters.Count > 1 ? Parameters[1].Value.ToString() : string.Empty;
+            siteParam_param.Text = Parameters.Count > 2 ? Parameters[2].Value.ToString() : string.Empty;
             item_param.Text = Parameters.Count > 3 ? Parameters[3].Value.ToString() : string.Empty;
             
             printSignature.Text = reportSignature();
@@ -44,15 +44,13 @@ namespace ArgusCR1029.Purchase
             itemName_lbl.Text = labelText(6);
             itemCategory_lbl.Text = labelText(7);
             srlNo_lbl.Text = labelText(8);
-            pcs_lbl.Text = labelText(9);
-            qty_lbl.Text = labelText(10);
-            unitCost_lbl.Text = labelText(11);
-            amount_lbl.Text = labelText(12);
-
-            startDate_lbl.Text = labelText(13);
-            endDate_lbl.Text = labelText(14);
-            item_lbl.Text = labelText(15);
-            siteParam_lbl.Text = labelText(16);
+            qty_lbl.Text = labelText(9);
+            unitCost_lbl.Text = labelText(10);
+            amount_lbl.Text = labelText(11);
+            startDate_lbl.Text = labelText(12);
+            endDate_lbl.Text = labelText(13);
+            item_lbl.Text = labelText(14);
+            siteParam_lbl.Text = labelText(15);
         }
 
         protected override string dictionaryStore()
