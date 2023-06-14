@@ -21,13 +21,13 @@ namespace ArgusCR1029.Financials
 
         protected override void OnBeforePrint(PrintEventArgs e)
         {
-            //SharedClasses.JsonProtocol.QryStructure<ArgusDS.> obj = deserializeList<ArgusDS.>();
-            //DataSource = obj.list;
+            SharedClasses.JsonProtocol.QryStructure <ArgusDS._1029.FI206_L1> obj = deserializeList <ArgusDS._1029.FI206_L1> ();
+            DataSource = obj.list;
 
-            startDate_param.Text = Parameters.Count > 1 ? Parameters[1].Value.ToString() : string.Empty;
-            endDate_param.Text = Parameters.Count > 2 ? Parameters[2].Value.ToString() : string.Empty;
+            startDate_param.Text = Parameters.Count > 0 ? Parameters[0].Value.ToString() : string.Empty;
+            endDate_param.Text = Parameters.Count > 1 ? Parameters[1].Value.ToString() : string.Empty;
             plant_param.Text = Parameters.Count > 3 ? Parameters[3].Value.ToString() : string.Empty;
-            siteParam_param.Text = Parameters.Count > 4 ? Parameters[4].Value.ToString() : string.Empty;
+            siteParam_param.Text = Parameters.Count > 5 ? Parameters[5].Value.ToString() : string.Empty;
 
             printSignature.Text = reportSignature();
             base.OnBeforePrint(e);
