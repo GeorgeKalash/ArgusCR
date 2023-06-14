@@ -166,6 +166,12 @@
     <Compile Include="Financials\FI104B\MetalSubReports.Designer.cs">
       <DependentUpon>MetalSubReports.cs</DependentUpon>
     </Compile>
+    <Compile Include="Financials\FI206_L1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Financials\FI206_L1.Designer.cs">
+      <DependentUpon>FI206_L1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Financials\FI401_L1.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -589,6 +595,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Financials\FI104B\MetalSubReports.resx">
       <DependentUpon>MetalSubReports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Financials\FI206_L1.resx">
+      <DependentUpon>FI206_L1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Financials\FI401_L1.resx">
       <DependentUpon>FI401_L1.cs</DependentUpon>
