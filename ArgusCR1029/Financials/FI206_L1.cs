@@ -18,7 +18,6 @@ namespace ArgusCR1029.Financials
         {
             return title_lbl.Text;
         }
-
         protected override void OnBeforePrint(PrintEventArgs e)
         {
             SharedClasses.JsonProtocol.QryStructure <ArgusDS._1029.FI206_L1> obj = deserializeList <ArgusDS._1029.FI206_L1> ();
@@ -34,7 +33,6 @@ namespace ArgusCR1029.Financials
             printSignature.Text = reportSignature();
             base.OnBeforePrint(e);
         }
-
         protected override void labelsText()
         {
             title_lbl.Text = labelText(0);
