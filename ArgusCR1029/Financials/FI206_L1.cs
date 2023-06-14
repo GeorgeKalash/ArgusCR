@@ -29,6 +29,8 @@ namespace ArgusCR1029.Financials
             plant_param.Text = Parameters.Count > 3 ? Parameters[3].Value.ToString() : string.Empty;
             siteParam_param.Text = Parameters.Count > 5 ? Parameters[5].Value.ToString() : string.Empty;
 
+            logo_data.ImageUrl = companyInfo.logoUrl;
+
             printSignature.Text = reportSignature();
             base.OnBeforePrint(e);
         }
