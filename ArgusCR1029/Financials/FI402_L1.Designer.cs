@@ -261,7 +261,8 @@ namespace ArgusCR1029.Financials
             this.xrTableCell26.StylePriority.UseFont = false;
             this.xrTableCell26.StylePriority.UsePadding = false;
             this.xrTableCell26.StylePriority.UseTextAlignment = false;
-            this.xrTableCell26.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
+            this.xrTableCell26.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
+            this.xrTableCell26.TextFormatString = "{0:n2}";
             this.xrTableCell26.Weight = 0.42344998013609647D;
             // 
             // xrTableCell27
@@ -279,7 +280,7 @@ namespace ArgusCR1029.Financials
             this.xrTableCell27.StylePriority.UseFont = false;
             this.xrTableCell27.StylePriority.UsePadding = false;
             this.xrTableCell27.StylePriority.UseTextAlignment = false;
-            this.xrTableCell27.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
+            this.xrTableCell27.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
             this.xrTableCell27.TextFormatString = "{0:n2}";
             this.xrTableCell27.Weight = 0.42345009010036638D;
             this.xrTableCell27.WordWrap = false;
@@ -300,7 +301,8 @@ namespace ArgusCR1029.Financials
             this.xrTableCell28.StylePriority.UsePadding = false;
             this.xrTableCell28.StylePriority.UseTextAlignment = false;
             this.xrTableCell28.Text = "xrTableCell3";
-            this.xrTableCell28.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
+            this.xrTableCell28.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
+            this.xrTableCell28.TextFormatString = "{0:n2}";
             this.xrTableCell28.Weight = 0.42345054787611641D;
             // 
             // xrTableCell29
@@ -320,7 +322,7 @@ namespace ArgusCR1029.Financials
             this.xrTableCell29.StylePriority.UsePadding = false;
             this.xrTableCell29.StylePriority.UseTextAlignment = false;
             this.xrTableCell29.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
-            this.xrTableCell29.TextFormatString = "{0:n0}";
+            this.xrTableCell29.TextFormatString = "{0:n2}";
             this.xrTableCell29.Weight = 0.4234507553286217D;
             // 
             // xrTableCell30
@@ -442,7 +444,8 @@ namespace ArgusCR1029.Financials
             this.xrTableCell35.StylePriority.UseFont = false;
             this.xrTableCell35.StylePriority.UsePadding = false;
             this.xrTableCell35.StylePriority.UseTextAlignment = false;
-            this.xrTableCell35.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
+            this.xrTableCell35.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
+            this.xrTableCell35.TextFormatString = "{0:n2}";
             this.xrTableCell35.Weight = 0.42345151086141297D;
             // 
             // xrTableCell36
@@ -462,7 +465,8 @@ namespace ArgusCR1029.Financials
             this.xrTableCell36.StylePriority.UsePadding = false;
             this.xrTableCell36.StylePriority.UseTextAlignment = false;
             this.xrTableCell36.Text = "xrTableCell36";
-            this.xrTableCell36.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
+            this.xrTableCell36.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
+            this.xrTableCell36.TextFormatString = "{0:n2}";
             this.xrTableCell36.Weight = 0.42345151086141297D;
             // 
             // xrTableCell37
@@ -482,7 +486,8 @@ namespace ArgusCR1029.Financials
             this.xrTableCell37.StylePriority.UsePadding = false;
             this.xrTableCell37.StylePriority.UseTextAlignment = false;
             this.xrTableCell37.Text = "xrTableCell37";
-            this.xrTableCell37.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
+            this.xrTableCell37.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
+            this.xrTableCell37.TextFormatString = "{0:n2}";
             this.xrTableCell37.Weight = 0.42345151086141297D;
             // 
             // xrTableCell38
@@ -502,7 +507,8 @@ namespace ArgusCR1029.Financials
             this.xrTableCell38.StylePriority.UsePadding = false;
             this.xrTableCell38.StylePriority.UseTextAlignment = false;
             this.xrTableCell38.Text = "xrTableCell38";
-            this.xrTableCell38.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
+            this.xrTableCell38.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
+            this.xrTableCell38.TextFormatString = "{0:n2}";
             this.xrTableCell38.Weight = 0.42345151086141297D;
             // 
             // xrTableCell39
@@ -522,7 +528,8 @@ namespace ArgusCR1029.Financials
             this.xrTableCell39.StylePriority.UsePadding = false;
             this.xrTableCell39.StylePriority.UseTextAlignment = false;
             this.xrTableCell39.Text = "xrTableCell39";
-            this.xrTableCell39.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
+            this.xrTableCell39.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
+            this.xrTableCell39.TextFormatString = "{0:n2}";
             this.xrTableCell39.Weight = 0.42345151086141297D;
             // 
             // xrTableCell40
@@ -542,7 +549,8 @@ namespace ArgusCR1029.Financials
             this.xrTableCell40.StylePriority.UsePadding = false;
             this.xrTableCell40.StylePriority.UseTextAlignment = false;
             this.xrTableCell40.Text = "xrTableCell40";
-            this.xrTableCell40.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
+            this.xrTableCell40.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
+            this.xrTableCell40.TextFormatString = "{0:n2}";
             this.xrTableCell40.Weight = 0.42345151086141297D;
             // 
             // xrTableCell41
@@ -562,7 +570,8 @@ namespace ArgusCR1029.Financials
             this.xrTableCell41.StylePriority.UsePadding = false;
             this.xrTableCell41.StylePriority.UseTextAlignment = false;
             this.xrTableCell41.Text = "xrTableCell41";
-            this.xrTableCell41.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
+            this.xrTableCell41.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
+            this.xrTableCell41.TextFormatString = "{0:n2}";
             this.xrTableCell41.Weight = 0.42345151086141297D;
             // 
             // xrTableCell42
@@ -582,7 +591,8 @@ namespace ArgusCR1029.Financials
             this.xrTableCell42.StylePriority.UsePadding = false;
             this.xrTableCell42.StylePriority.UseTextAlignment = false;
             this.xrTableCell42.Text = "xrTableCell42";
-            this.xrTableCell42.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
+            this.xrTableCell42.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
+            this.xrTableCell42.TextFormatString = "{0:n2}";
             this.xrTableCell42.Weight = 0.42345151086141297D;
             // 
             // xrTableCell43
@@ -602,7 +612,8 @@ namespace ArgusCR1029.Financials
             this.xrTableCell43.StylePriority.UsePadding = false;
             this.xrTableCell43.StylePriority.UseTextAlignment = false;
             this.xrTableCell43.Text = "xrTableCell43";
-            this.xrTableCell43.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
+            this.xrTableCell43.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
+            this.xrTableCell43.TextFormatString = "{0:n2}";
             this.xrTableCell43.Weight = 0.42345151086141297D;
             // 
             // ReportHeader

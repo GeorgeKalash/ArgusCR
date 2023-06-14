@@ -73,8 +73,6 @@ namespace ArgusCR1029.Financials
             startDate_lbl.Text = labelText(32);
             endDate_lbl.Text = labelText(33);
             accountGroup_lbl.Text = labelText(34);
-
-
         }
 
         protected override string dictionaryStore()
