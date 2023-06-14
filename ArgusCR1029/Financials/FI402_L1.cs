@@ -26,6 +26,7 @@ namespace ArgusCR1029.Financials
             fiscalYear_param.Text = Parameters.Count > 0 ? Parameters[0].Value.ToString() : string.Empty;
             startDate_param.Text = Parameters.Count > 1 ? Parameters[1].Value.ToString() : string.Empty;
             endDate_param.Text = Parameters.Count > 2 ? Parameters[2].Value.ToString() : string.Empty;
+            account_param.Text = Parameters.Count > 3 ? Parameters[3].Value.ToString() : string.Empty;
             accountGroup_param.Text = Parameters.Count > 4 ? Parameters[4].Value.ToString() : string.Empty;
 
             logo_data.ImageUrl = companyInfo.logoUrl;
@@ -72,7 +73,8 @@ namespace ArgusCR1029.Financials
             fiscalYear_lbl.Text = labelText(31);
             startDate_lbl.Text = labelText(32);
             endDate_lbl.Text = labelText(33);
-            accountGroup_lbl.Text = labelText(34);
+            account_lbl.Text = labelText(34);
+            accountGroup_lbl.Text = labelText(35);
         }
 
         protected override string dictionaryStore()
