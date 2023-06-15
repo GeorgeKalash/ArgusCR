@@ -1,7 +1,7 @@
 ﻿
 namespace ArgusCR1029.Financials
 {
-    partial class FI402_L1
+    partial class FI402_L2
     {
         /// <summary>
         /// Required designer variable.
@@ -88,7 +88,7 @@ namespace ArgusCR1029.Financials
             this.PageHeader = new DevExpress.XtraReports.UI.PageHeaderBand();
             this.xrTable1 = new DevExpress.XtraReports.UI.XRTable();
             this.xrTableRow1 = new DevExpress.XtraReports.UI.XRTableRow();
-            this.clientName_lbl = new DevExpress.XtraReports.UI.XRTableCell();
+            this.Plant_lbl = new DevExpress.XtraReports.UI.XRTableCell();
             this.previousBalance_lbl = new DevExpress.XtraReports.UI.XRTableCell();
             this.sales_lbl = new DevExpress.XtraReports.UI.XRTableCell();
             this.salesReturn_lbl = new DevExpress.XtraReports.UI.XRTableCell();
@@ -810,7 +810,7 @@ namespace ArgusCR1029.Financials
             // xrTableRow1
             // 
             this.xrTableRow1.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
-            this.clientName_lbl,
+            this.Plant_lbl,
             this.previousBalance_lbl,
             this.sales_lbl,
             this.salesReturn_lbl,
@@ -823,21 +823,21 @@ namespace ArgusCR1029.Financials
             this.xrTableRow1.Name = "xrTableRow1";
             this.xrTableRow1.Weight = 1D;
             // 
-            // clientName_lbl
+            // Plant_lbl
             // 
-            this.clientName_lbl.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.clientName_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+            this.Plant_lbl.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.Plant_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right)));
-            this.clientName_lbl.BorderWidth = 1F;
-            this.clientName_lbl.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold);
-            this.clientName_lbl.Multiline = true;
-            this.clientName_lbl.Name = "clientName_lbl";
-            this.clientName_lbl.StylePriority.UseBackColor = false;
-            this.clientName_lbl.StylePriority.UseBorders = false;
-            this.clientName_lbl.StylePriority.UseBorderWidth = false;
-            this.clientName_lbl.StylePriority.UseFont = false;
-            this.clientName_lbl.Text = "Client ";
-            this.clientName_lbl.Weight = 4.1825768051528769D;
+            this.Plant_lbl.BorderWidth = 1F;
+            this.Plant_lbl.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold);
+            this.Plant_lbl.Multiline = true;
+            this.Plant_lbl.Name = "Plant_lbl";
+            this.Plant_lbl.StylePriority.UseBackColor = false;
+            this.Plant_lbl.StylePriority.UseBorders = false;
+            this.Plant_lbl.StylePriority.UseBorderWidth = false;
+            this.Plant_lbl.StylePriority.UseFont = false;
+            this.Plant_lbl.Text = "Plant";
+            this.Plant_lbl.Weight = 4.1825768051528769D;
             // 
             // previousBalance_lbl
             // 
@@ -1826,7 +1826,7 @@ namespace ArgusCR1029.Financials
             this.xrTableCell20.TextFormatString = "{0:n2}";
             this.xrTableCell20.Weight = 0.25404474355405782D;
             // 
-            // FI402_L1
+            // FI402_L2
             // 
             this.Bands.AddRange(new DevExpress.XtraReports.UI.Band[] {
             this.TopMargin,
@@ -1859,7 +1859,7 @@ namespace ArgusCR1029.Financials
         private DevExpress.XtraReports.UI.PageHeaderBand PageHeader;
         private DevExpress.XtraReports.UI.XRTable xrTable1;
         private DevExpress.XtraReports.UI.XRTableRow xrTableRow1;
-        private DevExpress.XtraReports.UI.XRTableCell clientName_lbl;
+        private DevExpress.XtraReports.UI.XRTableCell Plant_lbl;
         private DevExpress.XtraReports.UI.XRTableCell previousBalance_lbl;
         private DevExpress.XtraReports.UI.XRTableCell sales_lbl;
         private DevExpress.XtraReports.UI.XRTableCell salesReturn_lbl;
