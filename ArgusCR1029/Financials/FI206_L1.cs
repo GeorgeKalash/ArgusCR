@@ -52,11 +52,13 @@ namespace ArgusCR1029.Financials
             amount_lbl.Text = labelText(13);
             description_lbl.Text = labelText(14);
             status_lbl.Text = labelText(15);
+            total1_lbl.Text = labelText(16);
+            total2_lbl.Text = labelText(17);
 
-            startDate_lbl.Text = labelText(16);
-            endDate_lbl.Text = labelText(17);
-            plant_lbl.Text = labelText(18);
-            siteParam_lbl.Text = labelText(19);
+            startDate_lbl.Text = labelText(18);
+            endDate_lbl.Text = labelText(19);
+            plant_lbl.Text = labelText(20);
+            siteParam_lbl.Text = labelText(21);
         }
         protected override void OnDataSourceRowChanged(DataSourceRowEventArgs e)
         {
