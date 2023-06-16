@@ -46,7 +46,7 @@ namespace ArgusCR1029.Sales.SA103
             cAddress_data.Text = webObject.record.billAddress?.street1;
             exhibitionManager_data.Text = webObject.record.trxHeader.contactName;
 
-
+            tdPct_data.Text = webObject.record.trxHeader.tdPct.ToString();
             subtotal_data.Text = webObject.record.trxHeader.subtotal.ToString("N2");
             tdAmount_data.Text = webObject.record.trxHeader.tdAmount.ToString();
             vatAmount_data.Text = webObject.record.trxHeader.vatAmount.ToString("N2");
