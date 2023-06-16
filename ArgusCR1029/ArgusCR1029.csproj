@@ -298,11 +298,29 @@
     <Compile Include="Inventory\IV205.Designer.cs">
       <DependentUpon>IV205.cs</DependentUpon>
     </Compile>
-    <Compile Include="Inventory\Layout1.cs">
+    <Compile Include="Inventory\IV432.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Inventory\Layout1.Designer.cs">
-      <DependentUpon>Layout1.cs</DependentUpon>
+    <Compile Include="Inventory\IV432.Designer.cs">
+      <DependentUpon>IV432.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\IV433.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Inventory\IV433.Designer.cs">
+      <DependentUpon>IV433.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\IV434.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Inventory\IV434.Designer.cs">
+      <DependentUpon>IV434.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\IV435.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Inventory\IV435.Designer.cs">
+      <DependentUpon>IV435.cs</DependentUpon>
     </Compile>
     <Compile Include="Purchase\PU203.cs">
       <SubType>Component</SubType>
@@ -686,8 +704,17 @@
     <EmbeddedResource Include="Inventory\IV205.resx">
       <DependentUpon>IV205.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Inventory\Layout1.resx">
-      <DependentUpon>Layout1.cs</DependentUpon>
+    <EmbeddedResource Include="Inventory\IV432.resx">
+      <DependentUpon>IV432.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\IV433.resx">
+      <DependentUpon>IV433.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\IV434.resx">
+      <DependentUpon>IV434.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\IV435.resx">
+      <DependentUpon>IV435.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Purchase\PU203.resx">
       <DependentUpon>PU203.cs</DependentUpon>
