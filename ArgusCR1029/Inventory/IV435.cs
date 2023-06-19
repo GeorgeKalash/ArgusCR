@@ -60,11 +60,10 @@ namespace ArgusCR1029.Inventory
             endDate_lbl.Text = labelText(19);
             site_lbl.Text = labelText(20);
             item_lbl.Text = labelText(21);
-
         }
         protected override string dictionaryStore()
         {
-            return "";
+            return "CR1029.IV435";
         }
     }
 }
