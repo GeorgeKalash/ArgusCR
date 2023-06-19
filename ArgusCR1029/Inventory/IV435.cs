@@ -38,26 +38,28 @@ namespace ArgusCR1029.Inventory
         {
             title_lbl.Text = labelText(0);
 
-            siteRef_lbl.Text = labelText(1);
-            siteName_lbl.Text = labelText(2);
+            itemGRPRef_lbl.Text = labelText(1);
+            itemGRPName_lbl.Text = labelText(2);
             previousBalance_lbl.Text = labelText(3);
-            purchase_lbl.Text = labelText(4);
-            purchaseReturn_lbl.Text = labelText(5);
-            sales_lbl.Text = labelText(6);
-            salesReturn_lbl.Text = labelText(7);
-            metalReceipt_lbl.Text = labelText(8);
-            metalPayment_lbl.Text = labelText(9);
-            transferIn_lbl.Text = labelText(10);
-            transferOut_lbl.Text = labelText(11);
-            adj_lbl.Text = labelText(12);
-            grossBalance_lbl.Text = labelText(13);
-            baseBalance_lbl.Text = labelText(14);
+            worksheet_lbl.Text = labelText(4);
+            purchase_lbl.Text = labelText(5);
+            purchaseReturn_lbl.Text = labelText(6);
+            sales_lbl.Text = labelText(7);
+            salesReturn_lbl.Text = labelText(8);
+            metalReceipt_lbl.Text = labelText(9);
+            metalPayment_lbl.Text = labelText(10);
+            transferIn_lbl.Text = labelText(11);
+            transferOut_lbl.Text = labelText(12);
+            adj_lbl.Text = labelText(13);
+            grossBalance_lbl.Text = labelText(14);
+            baseBalance_lbl.Text = labelText(15);
+            price_lbl.Text = labelText(16);
 
-            fiscal_lbl.Text = labelText(15);
-            startDate_lbl.Text = labelText(16);
-            endDate_lbl.Text = labelText(17);
-            site_lbl.Text = labelText(18);
-            item_lbl.Text = labelText(19);
+            fiscal_lbl.Text = labelText(17);
+            startDate_lbl.Text = labelText(18);
+            endDate_lbl.Text = labelText(19);
+            site_lbl.Text = labelText(20);
+            item_lbl.Text = labelText(21);
 
         }
         protected override string dictionaryStore()

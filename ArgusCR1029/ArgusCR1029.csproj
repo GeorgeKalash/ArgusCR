@@ -304,6 +304,12 @@
     <Compile Include="Inventory\IV432.Designer.cs">
       <DependentUpon>IV432.cs</DependentUpon>
     </Compile>
+    <Compile Include="Inventory\IV432.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Inventory\IV432.Designer.cs">
+      <DependentUpon>IV432.cs</DependentUpon>
+    </Compile>
     <Compile Include="Inventory\IV433.cs">
       <SubType>Component</SubType>
     </Compile>
