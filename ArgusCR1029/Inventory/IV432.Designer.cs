@@ -602,7 +602,7 @@ namespace ArgusCR1029.Inventory
             this.fiscal_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 3, 0, 100F);
             this.fiscal_lbl.StylePriority.UseFont = false;
             this.fiscal_lbl.StylePriority.UsePadding = false;
-            this.fiscal_lbl.Text = "السنة المالية:";
+            this.fiscal_lbl.Text = "السنة المالية";
             this.fiscal_lbl.Weight = 0.44949907506439157D;
             // 
             // fiscal_param
@@ -629,7 +629,7 @@ namespace ArgusCR1029.Inventory
             this.startDate_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 3, 0, 100F);
             this.startDate_lbl.StylePriority.UseFont = false;
             this.startDate_lbl.StylePriority.UsePadding = false;
-            this.startDate_lbl.Text = "تاريخ البدء:";
+            this.startDate_lbl.Text = "تاريخ البدء";
             this.startDate_lbl.Weight = 0.44949907506439152D;
             // 
             // startDate_param
@@ -656,7 +656,7 @@ namespace ArgusCR1029.Inventory
             this.endDate_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 3, 0, 100F);
             this.endDate_lbl.StylePriority.UseFont = false;
             this.endDate_lbl.StylePriority.UsePadding = false;
-            this.endDate_lbl.Text = "تاريخ الانتهاء:";
+            this.endDate_lbl.Text = "تاريخ الانتهاء";
             this.endDate_lbl.Weight = 0.44949907506439152D;
             // 
             // endDate_param
@@ -683,7 +683,7 @@ namespace ArgusCR1029.Inventory
             this.site_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 3, 0, 100F);
             this.site_lbl.StylePriority.UseFont = false;
             this.site_lbl.StylePriority.UsePadding = false;
-            this.site_lbl.Text = "موقع:";
+            this.site_lbl.Text = "موقع";
             this.site_lbl.Weight = 0.44949907506439152D;
             // 
             // site_param
@@ -710,7 +710,7 @@ namespace ArgusCR1029.Inventory
             this.item_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 3, 0, 100F);
             this.item_lbl.StylePriority.UseFont = false;
             this.item_lbl.StylePriority.UsePadding = false;
-            this.item_lbl.Text = "عنصر:";
+            this.item_lbl.Text = "عنصر";
             this.item_lbl.Weight = 0.44949907506439152D;
             // 
             // item_param
