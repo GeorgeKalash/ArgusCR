@@ -18,12 +18,10 @@ namespace ArgusCR1029.Inventory
         {
             return inventoryStatus_lbl.Text;
         }
-
         protected override void OnBeforePrint(PrintEventArgs e)
         {
             RightToLeft = DevExpress.XtraReports.UI.RightToLeft.No;
             RightToLeftLayout = DevExpress.XtraReports.UI.RightToLeftLayout.No;
-            printDate.Text = DateTime.Now.ToString("dd/MM/yyyy");
 
             SharedClasses.JsonProtocol.QryStructure<ArgusDS.Inventory.Reports.IV428> webObject = deserializeList<ArgusDS.Inventory.Reports.IV428>();
             DataSource = webObject.list;
@@ -44,7 +42,6 @@ namespace ArgusCR1029.Inventory
         protected override void labelsText()
         {
         }
-
         protected override string dictionaryStore()
         {
             return "CR1029.IV428";

@@ -23,7 +23,6 @@ namespace ArgusCR1029.Inventory
         {
             RightToLeft = DevExpress.XtraReports.UI.RightToLeft.No;
             RightToLeftLayout = DevExpress.XtraReports.UI.RightToLeftLayout.No;
-            printDate.Text = DateTime.Now.ToString("dd/MM/yyyy");
 
             SharedClasses.JsonProtocol.QryStructure<ArgusDS.Inventory.Reports.IV427> webObject = deserializeList<ArgusDS.Inventory.Reports.IV427>();
             DataSource = webObject.list;

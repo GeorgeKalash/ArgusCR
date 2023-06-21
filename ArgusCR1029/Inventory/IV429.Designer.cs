@@ -62,7 +62,6 @@ namespace ArgusCR1029.Inventory
             this.itemGroup_lbl = new DevExpress.XtraReports.UI.XRTableCell();
             this.itemGroup_param = new DevExpress.XtraReports.UI.XRTableCell();
             this.logo_data = new DevExpress.XtraReports.UI.XRPictureBox();
-            this.printDate = new DevExpress.XtraReports.UI.XRLabel();
             this.inventoryStatus_lbl = new DevExpress.XtraReports.UI.XRLabel();
             this.Detail = new DevExpress.XtraReports.UI.DetailBand();
             this.xrTable4 = new DevExpress.XtraReports.UI.XRTable();
@@ -134,7 +133,6 @@ namespace ArgusCR1029.Inventory
             this.ReportHeader.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
             this.xrTable6,
             this.logo_data,
-            this.printDate,
             this.inventoryStatus_lbl});
             this.ReportHeader.HeightF = 124.4583F;
             this.ReportHeader.KeepTogether = true;
@@ -310,19 +308,6 @@ namespace ArgusCR1029.Inventory
             this.logo_data.Name = "logo_data";
             this.logo_data.SizeF = new System.Drawing.SizeF(108.0832F, 113F);
             this.logo_data.Sizing = DevExpress.XtraPrinting.ImageSizeMode.ZoomImage;
-            // 
-            // printDate
-            // 
-            this.printDate.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.printDate.LocationFloat = new DevExpress.Utils.PointFloat(445.9028F, 39.22916F);
-            this.printDate.Multiline = true;
-            this.printDate.Name = "printDate";
-            this.printDate.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.printDate.SizeF = new System.Drawing.SizeF(150F, 23F);
-            this.printDate.StylePriority.UseFont = false;
-            this.printDate.StylePriority.UseTextAlignment = false;
-            this.printDate.Text = "printDate";
-            this.printDate.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             // 
             // inventoryStatus_lbl
             // 
@@ -1237,7 +1222,6 @@ namespace ArgusCR1029.Inventory
         private DevExpress.XtraReports.UI.ReportHeaderBand ReportHeader;
         private DevExpress.XtraReports.UI.DetailBand Detail;
         private DevExpress.XtraReports.UI.XRLabel inventoryStatus_lbl;
-        private DevExpress.XtraReports.UI.XRLabel printDate;
         private DevExpress.XtraReports.UI.PageFooterBand PageFooter;
         private DevExpress.XtraReports.UI.XRLabel printSignature;
         private DevExpress.XtraReports.UI.XRPageInfo pagesNumber_lbl;
