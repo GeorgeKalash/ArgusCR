@@ -28,9 +28,9 @@ namespace ArgusCR1029.Purchase
             vendor_param.Text = Parameters.Count > 0 ? Parameters[0].Value.ToString() : string.Empty;
             startDate_param.Text = Parameters.Count > 1 ? Parameters[1].Value.ToString() : string.Empty;
             endDate_param.Text = Parameters.Count > 2 ? Parameters[2].Value.ToString() : string.Empty;
-            currency_param.Text = Parameters.Count >  5 ? Parameters[5].Value.ToString() : string.Empty;
-            siteParam_param.Text = Parameters.Count > 6 ? Parameters[6].Value.ToString() : string.Empty;
-            systemFunction_param.Text = Parameters.Count > 7 ? Parameters[7].Value.ToString() : string.Empty;
+            currency_param.Text = Parameters.Count >  3 ? Parameters[3].Value.ToString() : string.Empty;
+            siteParam_param.Text = Parameters.Count > 7 ? Parameters[7].Value.ToString() : string.Empty;
+            systemFunction_param.Text = Parameters.Count > 5 ? Parameters[5].Value.ToString() : string.Empty;
 
             printSignature.Text = reportSignature();
             base.OnBeforePrint(e);
