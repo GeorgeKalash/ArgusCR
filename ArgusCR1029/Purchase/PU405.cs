@@ -27,7 +27,8 @@ namespace ArgusCR1029.Purchase
             endDate_param.Text = Parameters.Count > 1 ? Parameters[1].Value.ToString() : string.Empty;
             siteParam_param.Text = Parameters.Count > 2 ? Parameters[2].Value.ToString() : string.Empty;
             item_param.Text = Parameters.Count > 3 ? Parameters[3].Value.ToString() : string.Empty;
-            
+            systemFunction_param.Text = Parameters.Count > 4 ? Parameters[4].Value.ToString() : string.Empty;
+
             printSignature.Text = reportSignature();
             base.OnBeforePrint(e);
         }
@@ -52,6 +53,7 @@ namespace ArgusCR1029.Purchase
             endDate_lbl.Text = labelText(13);
             item_lbl.Text = labelText(14);
             siteParam_lbl.Text = labelText(15);
+            systemFunction_lbl.Text = labelText(16);
         }
         protected override string dictionaryStore()
         {

@@ -29,6 +29,8 @@ namespace ArgusCR1029.Purchase
             endDate_param.Text = Parameters.Count > 2 ? Parameters[2].Value.ToString() : string.Empty;
             item_param.Text = Parameters.Count > 3 ? Parameters[3].Value.ToString() : string.Empty;
             itemCategory_param.Text = Parameters.Count > 4 ? Parameters[4].Value.ToString() : string.Empty;
+            siteParam_param.Text = Parameters.Count > 6 ? Parameters[6].Value.ToString() : string.Empty;
+            systemFunction_param.Text = Parameters.Count > 7 ? Parameters[7].Value.ToString() : string.Empty;
 
             printSignature.Text = reportSignature();
             base.OnBeforePrint(e);
@@ -56,6 +58,8 @@ namespace ArgusCR1029.Purchase
             vendorRef_lbl.Text = labelText(15);
             item_lbl.Text = labelText(16);
             itemCtgry_lbl.Text = labelText(17);
+            siteParam_lbl.Text = labelText(18);
+            systemFunction_lbl.Text = labelText(19);
         }
         protected override void OnDataSourceRowChanged(DataSourceRowEventArgs e)
         {
