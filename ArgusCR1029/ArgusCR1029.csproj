@@ -334,6 +334,12 @@
     <Compile Include="Purchase\PU203.Designer.cs">
       <DependentUpon>PU203.cs</DependentUpon>
     </Compile>
+    <Compile Include="Purchase\PU401B.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Purchase\PU401B.Designer.cs">
+      <DependentUpon>PU401B.cs</DependentUpon>
+    </Compile>
     <Compile Include="Purchase\PU401.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -727,6 +733,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Purchase\PU203.resx">
       <DependentUpon>PU203.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\PU401B.resx">
+      <DependentUpon>PU401B.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Purchase\PU401.resx">
       <DependentUpon>PU401.cs</DependentUpon>
