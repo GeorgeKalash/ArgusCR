@@ -115,6 +115,7 @@ namespace ArgusCR1029.Inventory
             this.Detail.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
             this.xrTable3});
             this.Detail.HeightF = 25F;
+            this.Detail.KeepTogether = true;
             this.Detail.Name = "Detail";
             // 
             // xrTable3
@@ -202,7 +203,7 @@ namespace ArgusCR1029.Inventory
             this.sku_data.StylePriority.UsePadding = false;
             this.sku_data.StylePriority.UseTextAlignment = false;
             this.sku_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
-            this.sku_data.Weight = 0.79340137099063379D;
+            this.sku_data.Weight = 0.86305824508179063D;
             // 
             // name_data
             // 
@@ -219,7 +220,7 @@ namespace ArgusCR1029.Inventory
             this.name_data.StylePriority.UsePadding = false;
             this.name_data.StylePriority.UseTextAlignment = false;
             this.name_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
-            this.name_data.Weight = 0.92106912210625935D;
+            this.name_data.Weight = 1.4122774039073729D;
             // 
             // ms_data
             // 
@@ -236,7 +237,7 @@ namespace ArgusCR1029.Inventory
             this.ms_data.StylePriority.UsePadding = false;
             this.ms_data.StylePriority.UseTextAlignment = false;
             this.ms_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
-            this.ms_data.Weight = 1.1305656096873777D;
+            this.ms_data.Weight = 0.56970045379510748D;
             this.ms_data.WordWrap = false;
             // 
             // site_data
@@ -386,6 +387,7 @@ namespace ArgusCR1029.Inventory
             this.title_lbl,
             this.logo_data});
             this.ReportHeader.HeightF = 268.6944F;
+            this.ReportHeader.KeepTogether = true;
             this.ReportHeader.Name = "ReportHeader";
             // 
             // xrTable4
@@ -630,7 +632,7 @@ namespace ArgusCR1029.Inventory
             this.sku_lbl.StylePriority.UseBorderWidth = false;
             this.sku_lbl.StylePriority.UseFont = false;
             this.sku_lbl.Text = "SKU";
-            this.sku_lbl.Weight = 0.77576148792822841D;
+            this.sku_lbl.Weight = 0.84386985298643336D;
             // 
             // name_lbl
             // 
@@ -647,7 +649,7 @@ namespace ArgusCR1029.Inventory
             this.name_lbl.StylePriority.UseBorderWidth = false;
             this.name_lbl.StylePriority.UseFont = false;
             this.name_lbl.Text = "Name";
-            this.name_lbl.Weight = 0.90059101595125224D;
+            this.name_lbl.Weight = 1.3808779478309063D;
             // 
             // ms_lbl
             // 
@@ -663,8 +665,8 @@ namespace ArgusCR1029.Inventory
             this.ms_lbl.StylePriority.UseBorders = false;
             this.ms_lbl.StylePriority.UseBorderWidth = false;
             this.ms_lbl.StylePriority.UseFont = false;
-            this.ms_lbl.Text = "Measurement Schedule";
-            this.ms_lbl.Weight = 1.1054299485928363D;
+            this.ms_lbl.Text = "MS";
+            this.ms_lbl.Weight = 0.55703465165497723D;
             // 
             // site_lbl
             // 
@@ -807,6 +809,7 @@ namespace ArgusCR1029.Inventory
             this.ReportFooter.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
             this.xrTable2});
             this.ReportFooter.HeightF = 25F;
+            this.ReportFooter.KeepTogether = true;
             this.ReportFooter.Name = "ReportFooter";
             // 
             // xrTable2
