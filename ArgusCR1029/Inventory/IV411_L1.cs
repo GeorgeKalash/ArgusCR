@@ -7,10 +7,10 @@ using System.Drawing.Printing;
 
 namespace ArgusCR1029.Inventory
 {
-    public partial class IV411 : ArgusRPT.BaseReport
+    public partial class IV411_L1 : ArgusRPT.BaseReport
     {
         int itemsCounter = 1;
-        public IV411()
+        public IV411_L1()
         {
             InitializeComponent();
         }
@@ -25,9 +25,9 @@ namespace ArgusCR1029.Inventory
             SharedClasses.JsonProtocol.QryStructure<ArgusDS.Inventory.Reports.IV403> webObject = deserializeList<ArgusDS.Inventory.Reports.IV403>();
             DataSource = webObject.list;
 
-            //startDate_param.Text = Parameters.Count >  ? Parameters[].Value.ToString() : string.Empty;
-            //endDate_param.Text = Parameters.Count >  ? Parameters[].Value.ToString() : string.Empty;
-            //siteParam_param.Text = Parameters.Count >  ? Parameters[].Value.ToString() : string.Empty;
+            fiscalYear_param.Text = Parameters.Count > 0 ? Parameters[0].Value.ToString() : string.Empty;
+            date_param.Text = Parameters.Count > 1 ? Parameters[1].Value.ToString() : string.Empty;
+            siteParam_param.Text = Parameters.Count > 2 ? Parameters[2].Value.ToString() : string.Empty;
 
             logo_data.ImageUrl = companyInfo.logoUrl;
 
@@ -50,8 +50,8 @@ namespace ArgusCR1029.Inventory
             cost_lbl.Text = labelText(9);
             total_lbl.Text = labelText(10);
 
-            startDate_lbl.Text = labelText(11);
-            endDate_lbl.Text = labelText(12);
+            fiscalYear_lbl.Text = labelText(11);
+            date_lbl.Text = labelText(12);
             siteParam_lbl.Text = labelText(13);
 
         }
@@ -63,7 +63,7 @@ namespace ArgusCR1029.Inventory
         }
         protected override string dictionaryStore()
         {
-            return "CR1029.IV411";
+            return "CR1029.IV411_L1";
         }
     }
 }
