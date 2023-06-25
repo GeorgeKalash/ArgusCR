@@ -20,7 +20,6 @@ namespace ArgusCR1029.Inventory
 
         protected override void OnBeforePrint(PrintEventArgs e)
         {
-
             SharedClasses.JsonProtocol.QryStructure<ArgusDS.Inventory.Reports.IV206> webObject = deserializeList<ArgusDS.Inventory.Reports.IV206>();
             DataSource = webObject.list;
 
@@ -51,7 +50,6 @@ namespace ArgusCR1029.Inventory
             startDate_lbl.Text = labelText(10);
             endDate_lbl.Text = labelText(11);
             siteParam_lbl.Text = labelText(12);
-
         }
         protected override string dictionaryStore()
         {
