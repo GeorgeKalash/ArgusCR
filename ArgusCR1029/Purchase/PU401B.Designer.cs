@@ -307,7 +307,7 @@ namespace ArgusCR1029.Purchase
             this.itemCategory_data.StylePriority.UsePadding = false;
             this.itemCategory_data.StylePriority.UseTextAlignment = false;
             this.itemCategory_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
-            this.itemCategory_data.Weight = 0.82313649759989382D;
+            this.itemCategory_data.Weight = 0.87350287590071207D;
             // 
             // xrTableCell4
             // 
@@ -326,7 +326,7 @@ namespace ArgusCR1029.Purchase
             this.xrTableCell4.StylePriority.UsePadding = false;
             this.xrTableCell4.StylePriority.UseTextAlignment = false;
             this.xrTableCell4.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
-            this.xrTableCell4.Weight = 0.52303208004007729D;
+            this.xrTableCell4.Weight = 0.47266570173925909D;
             // 
             // docRef_data
             // 
@@ -858,7 +858,7 @@ namespace ArgusCR1029.Purchase
             this.itemCategoryy_lbl.StylePriority.UseBorderWidth = false;
             this.itemCategoryy_lbl.StylePriority.UseFont = false;
             this.itemCategoryy_lbl.Text = "Item Category";
-            this.itemCategoryy_lbl.Weight = 0.8048356633824495D;
+            this.itemCategoryy_lbl.Weight = 0.85408224554710532D;
             // 
             // vendor_lbl
             // 
@@ -875,7 +875,7 @@ namespace ArgusCR1029.Purchase
             this.vendor_lbl.StylePriority.UseBorderWidth = false;
             this.vendor_lbl.StylePriority.UseFont = false;
             this.vendor_lbl.Text = "Vendor";
-            this.vendor_lbl.Weight = 0.51140292127726461D;
+            this.vendor_lbl.Weight = 0.46215633911260878D;
             // 
             // docRef_lbl
             // 
