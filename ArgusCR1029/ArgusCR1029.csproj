@@ -304,6 +304,12 @@
     <Compile Include="Inventory\IV206.Designer.cs">
       <DependentUpon>IV206.cs</DependentUpon>
     </Compile>
+    <Compile Include="Inventory\IV206B.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Inventory\IV206B.Designer.cs">
+      <DependentUpon>IV206B.cs</DependentUpon>
+    </Compile>
     <Compile Include="Inventory\IV411_L1.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -375,6 +381,12 @@
     </Compile>
     <Compile Include="Purchase\PU405.Designer.cs">
       <DependentUpon>PU405.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Replenishment\IR40X.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Replenishment\IR40X.Designer.cs">
+      <DependentUpon>IR40X.cs</DependentUpon>
     </Compile>
     <Compile Include="Sales\SA204_L1.cs">
       <SubType>Component</SubType>
@@ -743,6 +755,9 @@
     <EmbeddedResource Include="Inventory\IV206.resx">
       <DependentUpon>IV206.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\IV206B.resx">
+      <DependentUpon>IV206B.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Inventory\IV411_L1.resx">
       <DependentUpon>IV411_L1.cs</DependentUpon>
     </EmbeddedResource>
@@ -778,6 +793,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Purchase\PU405.resx">
       <DependentUpon>PU405.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Replenishment\IR40X.resx">
+      <DependentUpon>IR40X.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Sales\SA204_L1.resx">
       <DependentUpon>SA204_L1.cs</DependentUpon>
