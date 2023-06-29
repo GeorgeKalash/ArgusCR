@@ -32,7 +32,7 @@ namespace ArgusCR1012.Purchase.Templates
             date_data.Text = webObject.record.header.date.ToString(sessionInfo.dateFormat);
             plantName_data.Text = webObject.record.header.plantName;
             siteName_data.Text = webObject.record.header.siteName;
-            poRef_data.Text = webObject.record.header.poRef;
+            //poRef_data.Text = webObject.record.header.poRef;
 
 
             printSignature_lbl.Text = reportSignature();
