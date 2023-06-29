@@ -7,10 +7,10 @@ using System.Drawing.Printing;
 
 namespace ArgusCR1029.Replenishment
 {
-    public partial class IR40X : ArgusRPT.BaseReport
+    public partial class IR401 : ArgusRPT.BaseReport
     {
         int itemsCounter = 1;
-        public IR40X()
+        public IR401()
         {
             InitializeComponent();
         }
@@ -21,11 +21,12 @@ namespace ArgusCR1029.Replenishment
 
         protected override void OnBeforePrint(PrintEventArgs e)
         {
-            //SharedClasses.JsonProtocol.QryStructure<ArgusDS.Inventory.Reports.IV206> webObject = deserializeList<ArgusDS.Inventory.Reports.IV206>();
-            //DataSource = webObject.list;
+            SharedClasses.JsonProtocol.QryStructure<ArgusDS.Replenishment.Report.IR401> webObject = deserializeList<ArgusDS.Replenishment.Report.IR401>();
+            DataSource = webObject.list;
 
+            date_param.Text = Parameters.Count > 0 ? Parameters[0].Value.ToString() : string.Empty;
             site_param.Text = Parameters.Count > 1 ? Parameters[1].Value.ToString() : string.Empty;
-            mrpItems_param.Text = Parameters.Count > 2 ? Parameters[2].Value.ToString() : string.Empty;
+            replenishmentGrp_param.Text = Parameters.Count > 2 ? Parameters[2].Value.ToString() : string.Empty;
 
             logo_data.ImageUrl = companyInfo.logoUrl;
 
@@ -63,8 +64,9 @@ namespace ArgusCR1029.Replenishment
             requiredCoverage_lbl.Text = labelText(24);
             totalCoverage_lbl.Text = labelText(25);
 
-            site_lbl.Text = labelText(26);
-            mrpItems_lbl.Text = labelText(27);
+            date_lbl.Text = labelText(26);
+            site_lbl.Text = labelText(27);
+            replenishmentGrp_lbl.Text = labelText(28);
         }
         protected override void OnDataSourceRowChanged(DataSourceRowEventArgs e)
         {
@@ -74,7 +76,7 @@ namespace ArgusCR1029.Replenishment
         }
         protected override string dictionaryStore()
         {
-            return "CR1029.IR40X";
+            return "CR1029.IR401";
         }
     }
 }

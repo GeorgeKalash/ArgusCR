@@ -1,7 +1,7 @@
 ﻿
 namespace ArgusCR1029.Replenishment
 {
-    partial class IR40X
+    partial class IR401
     {
         /// <summary>
         /// Required designer variable.
@@ -70,8 +70,8 @@ namespace ArgusCR1029.Replenishment
             this.site_lbl = new DevExpress.XtraReports.UI.XRTableCell();
             this.site_param = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTableRow4 = new DevExpress.XtraReports.UI.XRTableRow();
-            this.mrpItems_lbl = new DevExpress.XtraReports.UI.XRTableCell();
-            this.mrpItems_param = new DevExpress.XtraReports.UI.XRTableCell();
+            this.replenishmentGrp_lbl = new DevExpress.XtraReports.UI.XRTableCell();
+            this.replenishmentGrp_param = new DevExpress.XtraReports.UI.XRTableCell();
             this.PageHeader = new DevExpress.XtraReports.UI.PageHeaderBand();
             this.xrTable1 = new DevExpress.XtraReports.UI.XRTable();
             this.xrTableRow2 = new DevExpress.XtraReports.UI.XRTableRow();
@@ -111,6 +111,9 @@ namespace ArgusCR1029.Replenishment
             this.PageFooter = new DevExpress.XtraReports.UI.PageFooterBand();
             this.printSignature = new DevExpress.XtraReports.UI.XRLabel();
             this.xrPageInfo1 = new DevExpress.XtraReports.UI.XRPageInfo();
+            this.xrTableRow7 = new DevExpress.XtraReports.UI.XRTableRow();
+            this.date_lbl = new DevExpress.XtraReports.UI.XRTableCell();
+            this.date_param = new DevExpress.XtraReports.UI.XRTableCell();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable1)).BeginInit();
@@ -206,6 +209,8 @@ namespace ArgusCR1029.Replenishment
             this.itemId_data.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.itemId_data.BorderWidth = 1F;
+            this.itemId_data.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[itemId]")});
             this.itemId_data.Font = new System.Drawing.Font("Arial", 6F);
             this.itemId_data.Multiline = true;
             this.itemId_data.Name = "itemId_data";
@@ -224,6 +229,8 @@ namespace ArgusCR1029.Replenishment
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.sku_data.BorderWidth = 1F;
             this.sku_data.CanGrow = false;
+            this.sku_data.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[sku]")});
             this.sku_data.Font = new System.Drawing.Font("Arial", 6F);
             this.sku_data.Name = "sku_data";
             this.sku_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(4, 2, 4, 0, 100F);
@@ -241,6 +248,8 @@ namespace ArgusCR1029.Replenishment
             this.ms_data.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.ms_data.BorderWidth = 1F;
+            this.ms_data.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[msRef]")});
             this.ms_data.Font = new System.Drawing.Font("Arial", 6F);
             this.ms_data.Multiline = true;
             this.ms_data.Name = "ms_data";
@@ -259,6 +268,8 @@ namespace ArgusCR1029.Replenishment
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.category_data.BorderWidth = 1F;
             this.category_data.CanGrow = false;
+            this.category_data.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[categoryName]")});
             this.category_data.Font = new System.Drawing.Font("Arial", 6F);
             this.category_data.Name = "category_data";
             this.category_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 4, 4, 0, 100F);
@@ -276,6 +287,8 @@ namespace ArgusCR1029.Replenishment
             this.xrTableCell18.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell18.BorderWidth = 1F;
+            this.xrTableCell18.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[avgConsuptionYearBefore]")});
             this.xrTableCell18.Font = new System.Drawing.Font("Arial", 6F);
             this.xrTableCell18.Multiline = true;
             this.xrTableCell18.Name = "xrTableCell18";
@@ -294,6 +307,8 @@ namespace ArgusCR1029.Replenishment
             this.xrTableCell19.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell19.BorderWidth = 1F;
+            this.xrTableCell19.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[avgConsuptionCurrentYear]")});
             this.xrTableCell19.Font = new System.Drawing.Font("Arial", 6F);
             this.xrTableCell19.Multiline = true;
             this.xrTableCell19.Name = "xrTableCell19";
@@ -312,6 +327,8 @@ namespace ArgusCR1029.Replenishment
             this.xrTableCell20.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell20.BorderWidth = 1F;
+            this.xrTableCell20.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[amountByMonth].[1]")});
             this.xrTableCell20.Font = new System.Drawing.Font("Arial", 6F);
             this.xrTableCell20.Multiline = true;
             this.xrTableCell20.Name = "xrTableCell20";
@@ -330,6 +347,8 @@ namespace ArgusCR1029.Replenishment
             this.xrTableCell21.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell21.BorderWidth = 1F;
+            this.xrTableCell21.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[amountByMonth].[2]")});
             this.xrTableCell21.Font = new System.Drawing.Font("Arial", 6F);
             this.xrTableCell21.Multiline = true;
             this.xrTableCell21.Name = "xrTableCell21";
@@ -348,6 +367,8 @@ namespace ArgusCR1029.Replenishment
             this.xrTableCell22.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell22.BorderWidth = 1F;
+            this.xrTableCell22.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[amountByMonth].[3]")});
             this.xrTableCell22.Font = new System.Drawing.Font("Arial", 6F);
             this.xrTableCell22.Multiline = true;
             this.xrTableCell22.Name = "xrTableCell22";
@@ -366,6 +387,8 @@ namespace ArgusCR1029.Replenishment
             this.xrTableCell23.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell23.BorderWidth = 1F;
+            this.xrTableCell23.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[amountByMonth].[4]")});
             this.xrTableCell23.Font = new System.Drawing.Font("Arial", 6F);
             this.xrTableCell23.Multiline = true;
             this.xrTableCell23.Name = "xrTableCell23";
@@ -384,6 +407,8 @@ namespace ArgusCR1029.Replenishment
             this.xrTableCell24.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell24.BorderWidth = 1F;
+            this.xrTableCell24.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[amountByMonth].[5]")});
             this.xrTableCell24.Font = new System.Drawing.Font("Arial", 6F);
             this.xrTableCell24.Multiline = true;
             this.xrTableCell24.Name = "xrTableCell24";
@@ -402,6 +427,8 @@ namespace ArgusCR1029.Replenishment
             this.xrTableCell25.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell25.BorderWidth = 1F;
+            this.xrTableCell25.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[amountByMonth].[6]")});
             this.xrTableCell25.Font = new System.Drawing.Font("Arial", 6F);
             this.xrTableCell25.Multiline = true;
             this.xrTableCell25.Name = "xrTableCell25";
@@ -420,6 +447,8 @@ namespace ArgusCR1029.Replenishment
             this.xrTableCell26.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell26.BorderWidth = 1F;
+            this.xrTableCell26.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[amountByMonth].[7]")});
             this.xrTableCell26.Font = new System.Drawing.Font("Arial", 6F);
             this.xrTableCell26.Multiline = true;
             this.xrTableCell26.Name = "xrTableCell26";
@@ -438,6 +467,8 @@ namespace ArgusCR1029.Replenishment
             this.xrTableCell27.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell27.BorderWidth = 1F;
+            this.xrTableCell27.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[amountByMonth].[8]")});
             this.xrTableCell27.Font = new System.Drawing.Font("Arial", 6F);
             this.xrTableCell27.Multiline = true;
             this.xrTableCell27.Name = "xrTableCell27";
@@ -456,6 +487,8 @@ namespace ArgusCR1029.Replenishment
             this.xrTableCell28.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell28.BorderWidth = 1F;
+            this.xrTableCell28.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[amountByMonth].[9]")});
             this.xrTableCell28.Font = new System.Drawing.Font("Arial", 6F);
             this.xrTableCell28.Multiline = true;
             this.xrTableCell28.Name = "xrTableCell28";
@@ -474,6 +507,8 @@ namespace ArgusCR1029.Replenishment
             this.xrTableCell29.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell29.BorderWidth = 1F;
+            this.xrTableCell29.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[amountByMonth].[10]")});
             this.xrTableCell29.Font = new System.Drawing.Font("Arial", 6F);
             this.xrTableCell29.Multiline = true;
             this.xrTableCell29.Name = "xrTableCell29";
@@ -492,6 +527,8 @@ namespace ArgusCR1029.Replenishment
             this.xrTableCell30.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell30.BorderWidth = 1F;
+            this.xrTableCell30.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[amountByMonth].[11]")});
             this.xrTableCell30.Font = new System.Drawing.Font("Arial", 6F);
             this.xrTableCell30.Multiline = true;
             this.xrTableCell30.Name = "xrTableCell30";
@@ -510,6 +547,8 @@ namespace ArgusCR1029.Replenishment
             this.xrTableCell31.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell31.BorderWidth = 1F;
+            this.xrTableCell31.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[amountByMonth].[12]")});
             this.xrTableCell31.Font = new System.Drawing.Font("Arial", 6F);
             this.xrTableCell31.Multiline = true;
             this.xrTableCell31.Name = "xrTableCell31";
@@ -528,6 +567,8 @@ namespace ArgusCR1029.Replenishment
             this.xrTableCell32.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell32.BorderWidth = 1F;
+            this.xrTableCell32.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[onHand]")});
             this.xrTableCell32.Font = new System.Drawing.Font("Arial", 6F);
             this.xrTableCell32.Multiline = true;
             this.xrTableCell32.Name = "xrTableCell32";
@@ -546,6 +587,8 @@ namespace ArgusCR1029.Replenishment
             this.xrTableCell33.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell33.BorderWidth = 1F;
+            this.xrTableCell33.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[onHand]/[avgConsuptionCurrentYear]")});
             this.xrTableCell33.Font = new System.Drawing.Font("Arial", 6F);
             this.xrTableCell33.Multiline = true;
             this.xrTableCell33.Name = "xrTableCell33";
@@ -564,6 +607,8 @@ namespace ArgusCR1029.Replenishment
             this.xrTableCell34.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell34.BorderWidth = 1F;
+            this.xrTableCell34.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[prQty]")});
             this.xrTableCell34.Font = new System.Drawing.Font("Arial", 6F);
             this.xrTableCell34.Multiline = true;
             this.xrTableCell34.Name = "xrTableCell34";
@@ -582,6 +627,8 @@ namespace ArgusCR1029.Replenishment
             this.xrTableCell35.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell35.BorderWidth = 1F;
+            this.xrTableCell35.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[poQty]")});
             this.xrTableCell35.Font = new System.Drawing.Font("Arial", 6F);
             this.xrTableCell35.Multiline = true;
             this.xrTableCell35.Name = "xrTableCell35";
@@ -600,6 +647,8 @@ namespace ArgusCR1029.Replenishment
             this.xrTableCell36.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell36.BorderWidth = 1F;
+            this.xrTableCell36.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "([prQty]+[poQty])/[avgConsuptionCurrentYear]")});
             this.xrTableCell36.Font = new System.Drawing.Font("Arial", 6F);
             this.xrTableCell36.Multiline = true;
             this.xrTableCell36.Name = "xrTableCell36";
@@ -618,6 +667,9 @@ namespace ArgusCR1029.Replenishment
             this.xrTableCell37.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell37.BorderWidth = 1F;
+            this.xrTableCell37.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "([onHand]/[avgConsuptionCurrentYear])+(([prQty]+[poQty])/[avgConsuptionCurrentYea" +
+                    "r])")});
             this.xrTableCell37.Font = new System.Drawing.Font("Arial", 6F);
             this.xrTableCell37.Multiline = true;
             this.xrTableCell37.Name = "xrTableCell37";
@@ -637,7 +689,7 @@ namespace ArgusCR1029.Replenishment
             this.title_lbl,
             this.logo_data,
             this.xrTable4});
-            this.ReportHeader.HeightF = 193.9526F;
+            this.ReportHeader.HeightF = 219.2304F;
             this.ReportHeader.KeepTogether = true;
             this.ReportHeader.Name = "ReportHeader";
             // 
@@ -663,13 +715,14 @@ namespace ArgusCR1029.Replenishment
             // 
             // xrTable4
             // 
-            this.xrTable4.LocationFloat = new DevExpress.Utils.PointFloat(9.999999F, 133.6202F);
+            this.xrTable4.LocationFloat = new DevExpress.Utils.PointFloat(10F, 135.0831F);
             this.xrTable4.Name = "xrTable4";
             this.xrTable4.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable4.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
+            this.xrTableRow7,
             this.xrTableRow1,
             this.xrTableRow4});
-            this.xrTable4.SizeF = new System.Drawing.SizeF(549.6806F, 44.29636F);
+            this.xrTable4.SizeF = new System.Drawing.SizeF(549.6806F, 66.44454F);
             // 
             // xrTableRow1
             // 
@@ -686,7 +739,7 @@ namespace ArgusCR1029.Replenishment
             this.site_lbl.Name = "site_lbl";
             this.site_lbl.StylePriority.UseFont = false;
             this.site_lbl.Text = "Site:";
-            this.site_lbl.Weight = 0.27576315564444481D;
+            this.site_lbl.Weight = 0.39080511376874749D;
             // 
             // site_param
             // 
@@ -696,34 +749,34 @@ namespace ArgusCR1029.Replenishment
             this.site_param.StylePriority.UseFont = false;
             this.site_param.StylePriority.UseTextAlignment = false;
             this.site_param.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
-            this.site_param.Weight = 1.4423552868396281D;
+            this.site_param.Weight = 1.3273133287153254D;
             // 
             // xrTableRow4
             // 
             this.xrTableRow4.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
-            this.mrpItems_lbl,
-            this.mrpItems_param});
+            this.replenishmentGrp_lbl,
+            this.replenishmentGrp_param});
             this.xrTableRow4.Name = "xrTableRow4";
             this.xrTableRow4.Weight = 1D;
             // 
-            // mrpItems_lbl
+            // replenishmentGrp_lbl
             // 
-            this.mrpItems_lbl.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Bold);
-            this.mrpItems_lbl.Multiline = true;
-            this.mrpItems_lbl.Name = "mrpItems_lbl";
-            this.mrpItems_lbl.StylePriority.UseFont = false;
-            this.mrpItems_lbl.Text = "MRP Items:";
-            this.mrpItems_lbl.Weight = 0.27576315564444481D;
+            this.replenishmentGrp_lbl.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Bold);
+            this.replenishmentGrp_lbl.Multiline = true;
+            this.replenishmentGrp_lbl.Name = "replenishmentGrp_lbl";
+            this.replenishmentGrp_lbl.StylePriority.UseFont = false;
+            this.replenishmentGrp_lbl.Text = "Replenishment Group:";
+            this.replenishmentGrp_lbl.Weight = 0.39080511376874749D;
             // 
-            // mrpItems_param
+            // replenishmentGrp_param
             // 
-            this.mrpItems_param.Font = new System.Drawing.Font("Arial", 9.75F);
-            this.mrpItems_param.Multiline = true;
-            this.mrpItems_param.Name = "mrpItems_param";
-            this.mrpItems_param.StylePriority.UseFont = false;
-            this.mrpItems_param.StylePriority.UseTextAlignment = false;
-            this.mrpItems_param.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
-            this.mrpItems_param.Weight = 1.4423552868396281D;
+            this.replenishmentGrp_param.Font = new System.Drawing.Font("Arial", 9.75F);
+            this.replenishmentGrp_param.Multiline = true;
+            this.replenishmentGrp_param.Name = "replenishmentGrp_param";
+            this.replenishmentGrp_param.StylePriority.UseFont = false;
+            this.replenishmentGrp_param.StylePriority.UseTextAlignment = false;
+            this.replenishmentGrp_param.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
+            this.replenishmentGrp_param.Weight = 1.3273133287153254D;
             // 
             // PageHeader
             // 
@@ -898,7 +951,7 @@ namespace ArgusCR1029.Replenishment
             this.avgYearAfter_lbl.StylePriority.UseBorders = false;
             this.avgYearAfter_lbl.StylePriority.UseBorderWidth = false;
             this.avgYearAfter_lbl.StylePriority.UseFont = false;
-            this.avgYearAfter_lbl.Text = "AVG Consumption Year After";
+            this.avgYearAfter_lbl.Text = "AVG Consumption Current Year ";
             this.avgYearAfter_lbl.Weight = 1.3612902363991024D;
             // 
             // jan_lbl
@@ -1340,7 +1393,34 @@ namespace ArgusCR1029.Replenishment
             this.xrPageInfo1.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
             this.xrPageInfo1.TextFormatString = "Page {0} of {1}";
             // 
-            // IR40X
+            // xrTableRow7
+            // 
+            this.xrTableRow7.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
+            this.date_lbl,
+            this.date_param});
+            this.xrTableRow7.Name = "xrTableRow7";
+            this.xrTableRow7.Weight = 1D;
+            // 
+            // date_lbl
+            // 
+            this.date_lbl.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Bold);
+            this.date_lbl.Multiline = true;
+            this.date_lbl.Name = "date_lbl";
+            this.date_lbl.StylePriority.UseFont = false;
+            this.date_lbl.Text = "As Of Date:";
+            this.date_lbl.Weight = 0.39080511376874749D;
+            // 
+            // date_param
+            // 
+            this.date_param.Font = new System.Drawing.Font("Arial", 9.75F);
+            this.date_param.Multiline = true;
+            this.date_param.Name = "date_param";
+            this.date_param.StylePriority.UseFont = false;
+            this.date_param.StylePriority.UseTextAlignment = false;
+            this.date_param.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
+            this.date_param.Weight = 1.3273133287153254D;
+            // 
+            // IR401
             // 
             this.Bands.AddRange(new DevExpress.XtraReports.UI.Band[] {
             this.TopMargin,
@@ -1382,8 +1462,8 @@ namespace ArgusCR1029.Replenishment
         private DevExpress.XtraReports.UI.XRTableCell site_lbl;
         private DevExpress.XtraReports.UI.XRTableCell site_param;
         private DevExpress.XtraReports.UI.XRTableRow xrTableRow4;
-        private DevExpress.XtraReports.UI.XRTableCell mrpItems_lbl;
-        private DevExpress.XtraReports.UI.XRTableCell mrpItems_param;
+        private DevExpress.XtraReports.UI.XRTableCell replenishmentGrp_lbl;
+        private DevExpress.XtraReports.UI.XRTableCell replenishmentGrp_param;
         private DevExpress.XtraReports.UI.XRTable xrTable1;
         private DevExpress.XtraReports.UI.XRTableRow xrTableRow2;
         private DevExpress.XtraReports.UI.XRTableCell rec_lbl;
@@ -1447,5 +1527,8 @@ namespace ArgusCR1029.Replenishment
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell38;
         private DevExpress.XtraReports.UI.XRLabel printSignature;
         private DevExpress.XtraReports.UI.XRPageInfo xrPageInfo1;
+        private DevExpress.XtraReports.UI.XRTableRow xrTableRow7;
+        private DevExpress.XtraReports.UI.XRTableCell date_lbl;
+        private DevExpress.XtraReports.UI.XRTableCell date_param;
     }
 }
