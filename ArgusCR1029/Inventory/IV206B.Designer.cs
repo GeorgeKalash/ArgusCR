@@ -458,6 +458,7 @@ namespace ArgusCR1029.Inventory
             this.itemGroup.HeightF = 60F;
             this.itemGroup.KeepTogether = true;
             this.itemGroup.Name = "itemGroup";
+            this.itemGroup.RepeatEveryPage = true;
             // 
             // xrTable7
             // 
