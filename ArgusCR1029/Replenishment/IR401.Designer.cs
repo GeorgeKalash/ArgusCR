@@ -1414,12 +1414,12 @@ namespace ArgusCR1029.Replenishment
             // 
             // xrPageInfo1
             // 
-            this.xrPageInfo1.LocationFloat = new DevExpress.Utils.PointFloat(1193.685F, 9.999968F);
+            this.xrPageInfo1.LocationFloat = new DevExpress.Utils.PointFloat(1141.909F, 9.999974F);
             this.xrPageInfo1.Name = "xrPageInfo1";
             this.xrPageInfo1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrPageInfo1.SizeF = new System.Drawing.SizeF(95.31494F, 23F);
+            this.xrPageInfo1.SizeF = new System.Drawing.SizeF(147.0914F, 23F);
             this.xrPageInfo1.StylePriority.UseTextAlignment = false;
-            this.xrPageInfo1.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
+            this.xrPageInfo1.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             this.xrPageInfo1.TextFormatString = "Page {0} of {1}";
             // 
             // IR401
