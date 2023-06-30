@@ -128,7 +128,7 @@ namespace ArgusCR1029.Replenishment
             // 
             // BottomMargin
             // 
-            this.BottomMargin.HeightF = 15F;
+            this.BottomMargin.HeightF = 0F;
             this.BottomMargin.Name = "BottomMargin";
             // 
             // Detail
@@ -137,6 +137,7 @@ namespace ArgusCR1029.Replenishment
             this.xrTable3});
             this.Detail.HeightF = 25F;
             this.Detail.KeepTogether = true;
+            this.Detail.MultiColumn.Layout = DevExpress.XtraPrinting.ColumnLayout.AcrossThenDown;
             this.Detail.Name = "Detail";
             // 
             // xrTable3
@@ -689,18 +690,18 @@ namespace ArgusCR1029.Replenishment
             this.title_lbl,
             this.logo_data,
             this.xrTable4});
-            this.ReportHeader.HeightF = 219.2304F;
+            this.ReportHeader.HeightF = 198.8137F;
             this.ReportHeader.KeepTogether = true;
             this.ReportHeader.Name = "ReportHeader";
             // 
             // title_lbl
             // 
             this.title_lbl.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
-            this.title_lbl.LocationFloat = new DevExpress.Utils.PointFloat(120.861F, 10F);
+            this.title_lbl.LocationFloat = new DevExpress.Utils.PointFloat(123.6844F, 0F);
             this.title_lbl.Multiline = true;
             this.title_lbl.Name = "title_lbl";
             this.title_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.title_lbl.SizeF = new System.Drawing.SizeF(1178.139F, 39.66667F);
+            this.title_lbl.SizeF = new System.Drawing.SizeF(1175.315F, 39.66667F);
             this.title_lbl.StylePriority.UseFont = false;
             this.title_lbl.StylePriority.UseTextAlignment = false;
             this.title_lbl.Text = "Monthly Consumption";
@@ -708,14 +709,14 @@ namespace ArgusCR1029.Replenishment
             // 
             // logo_data
             // 
-            this.logo_data.LocationFloat = new DevExpress.Utils.PointFloat(10.00001F, 10F);
+            this.logo_data.LocationFloat = new DevExpress.Utils.PointFloat(12.82345F, 0F);
             this.logo_data.Name = "logo_data";
             this.logo_data.SizeF = new System.Drawing.SizeF(110.861F, 113F);
             this.logo_data.Sizing = DevExpress.XtraPrinting.ImageSizeMode.ZoomImage;
             // 
             // xrTable4
             // 
-            this.xrTable4.LocationFloat = new DevExpress.Utils.PointFloat(10F, 135.0831F);
+            this.xrTable4.LocationFloat = new DevExpress.Utils.PointFloat(12.82345F, 125.0831F);
             this.xrTable4.Name = "xrTable4";
             this.xrTable4.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable4.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
@@ -1397,16 +1398,16 @@ namespace ArgusCR1029.Replenishment
             this.PageFooter.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
             this.printSignature,
             this.xrPageInfo1});
-            this.PageFooter.HeightF = 32.99997F;
+            this.PageFooter.HeightF = 32.99998F;
             this.PageFooter.Name = "PageFooter";
             // 
             // printSignature
             // 
-            this.printSignature.LocationFloat = new DevExpress.Utils.PointFloat(10F, 9.999968F);
+            this.printSignature.LocationFloat = new DevExpress.Utils.PointFloat(9.999998F, 9.999974F);
             this.printSignature.Multiline = true;
             this.printSignature.Name = "printSignature";
             this.printSignature.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.printSignature.SizeF = new System.Drawing.SizeF(678.4674F, 23F);
+            this.printSignature.SizeF = new System.Drawing.SizeF(993.0507F, 23F);
             this.printSignature.StylePriority.UseTextAlignment = false;
             this.printSignature.Text = "printSignature";
             this.printSignature.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
@@ -1433,7 +1434,7 @@ namespace ArgusCR1029.Replenishment
             this.PageFooter});
             this.Font = new System.Drawing.Font("Arial", 9.75F);
             this.Landscape = true;
-            this.Margins = new System.Drawing.Printing.Margins(0, 0, 30, 15);
+            this.Margins = new System.Drawing.Printing.Margins(0, 0, 30, 0);
             this.PageHeight = 827;
             this.PageWidth = 1299;
             this.PaperKind = System.Drawing.Printing.PaperKind.A4Plus;
