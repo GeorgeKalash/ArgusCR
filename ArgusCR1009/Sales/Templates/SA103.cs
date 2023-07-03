@@ -30,11 +30,11 @@ namespace ArgusCR1009.Sales.Templates
             date_data.Text = webObject.record.trxHeader.date.ToString(sessionInfo.dateFormat);
             site_data.Text = webObject.record.trxHeader.siteRef;
 
-            amountInWords_data.Text = SharedClasses.NumberToWords.multiLingualNumberInText((decimal)webObject.record.trxHeader.amount, 7, 3);
-
             subtotal_data.Text = webObject.record.trxHeader.subtotal.ToString("N2");
             tdAmount_data.Text = webObject.record.trxHeader.tdAmount.ToString();
             amount_data.Text = webObject.record.trxHeader.amount.ToString("N2");
+
+            amountInWords_data.Text = SharedClasses.NumberToWords.multiLingualNumberInText((decimal)webObject.record.trxHeader.amount, 7, 3);
 
             base.OnBeforePrint(e);
         }
