@@ -358,6 +358,12 @@
     <Compile Include="Inventory\IV435.Designer.cs">
       <DependentUpon>IV435.cs</DependentUpon>
     </Compile>
+    <Compile Include="Inventory\IV436.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Inventory\IV436.Designer.cs">
+      <DependentUpon>IV436.cs</DependentUpon>
+    </Compile>
     <Compile Include="Purchase\PU203.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -781,6 +787,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Inventory\IV435.resx">
       <DependentUpon>IV435.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\IV436.resx">
+      <DependentUpon>IV436.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Purchase\PU203.resx">
       <DependentUpon>PU203.cs</DependentUpon>
