@@ -729,7 +729,7 @@ namespace ArgusCR1029.Inventory
             this.title_lbl.SizeF = new System.Drawing.SizeF(1180.668F, 30.01302F);
             this.title_lbl.StylePriority.UseFont = false;
             this.title_lbl.StylePriority.UseTextAlignment = false;
-            this.title_lbl.Text = "المخزون حسب العنصر";
+            this.title_lbl.Text = "المخزون حسب الصنف";
             this.title_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopCenter;
             // 
             // PageFooter
