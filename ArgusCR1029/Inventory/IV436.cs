@@ -47,6 +47,7 @@ namespace ArgusCR1029.Inventory
             itemGroup_lbl.Text = labelText(5);
 
             total_lbl.Text = labelText(6);
+            total2_lbl.Text = labelText(7);
         }
         protected override string dictionaryStore()
         {

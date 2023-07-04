@@ -62,7 +62,7 @@ namespace ArgusCR1029.Inventory
             this.itemGroup_lbl = new DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell();
             this.xrCrossTabCell3 = new DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell();
             this.xrCrossTabCell4 = new DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell();
-            this.xrCrossTabCell5 = new DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell();
+            this.total2_lbl = new DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell();
             this.xrCrossTabCell6 = new DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell();
             this.xrCrossTabCell7 = new DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell();
             this.xrCrossTabCell8 = new DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell();
@@ -240,7 +240,7 @@ namespace ArgusCR1029.Inventory
             this.itemGroup_lbl,
             this.xrCrossTabCell3,
             this.xrCrossTabCell4,
-            this.xrCrossTabCell5,
+            this.total2_lbl,
             this.xrCrossTabCell6,
             this.xrCrossTabCell7,
             this.xrCrossTabCell8,
@@ -251,9 +251,10 @@ namespace ArgusCR1029.Inventory
             this.xrCrossTabCell13,
             this.xrCrossTabCell14});
             crossTabColumnDefinition1.AutoWidthMode = DevExpress.XtraReports.UI.AutoSizeMode.ShrinkAndGrow;
+            crossTabColumnDefinition1.Visible = false;
             crossTabColumnDefinition2.AutoWidthMode = DevExpress.XtraReports.UI.AutoSizeMode.ShrinkAndGrow;
             crossTabColumnDefinition3.AutoWidthMode = DevExpress.XtraReports.UI.AutoSizeMode.ShrinkAndGrow;
-            crossTabColumnDefinition4.Visible = false;
+            crossTabColumnDefinition4.AutoWidthMode = DevExpress.XtraReports.UI.AutoSizeMode.ShrinkAndGrow;
             this.crossTab.ColumnDefinitions.AddRange(new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition[] {
             crossTabColumnDefinition1,
             crossTabColumnDefinition2,
@@ -330,18 +331,26 @@ namespace ArgusCR1029.Inventory
             this.xrCrossTabCell4.RowIndex = 0;
             this.xrCrossTabCell4.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             // 
-            // xrCrossTabCell5
+            // total2_lbl
             // 
-            this.xrCrossTabCell5.ColumnIndex = 3;
-            this.xrCrossTabCell5.Name = "xrCrossTabCell5";
-            this.xrCrossTabCell5.RowIndex = 0;
-            this.xrCrossTabCell5.Text = "Grand Total";
+            this.total2_lbl.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.total2_lbl.BorderColor = System.Drawing.Color.Black;
+            this.total2_lbl.ColumnIndex = 3;
+            this.total2_lbl.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Bold);
+            this.total2_lbl.Name = "total2_lbl";
+            this.total2_lbl.RowIndex = 0;
+            this.total2_lbl.Text = "Total";
+            this.total2_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             // 
             // xrCrossTabCell6
             // 
+            this.xrCrossTabCell6.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.xrCrossTabCell6.BorderColor = System.Drawing.Color.Black;
             this.xrCrossTabCell6.ColumnIndex = 3;
+            this.xrCrossTabCell6.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Bold);
             this.xrCrossTabCell6.Name = "xrCrossTabCell6";
             this.xrCrossTabCell6.RowIndex = 1;
+            this.xrCrossTabCell6.TextFormatString = "{0:n2}";
             // 
             // xrCrossTabCell7
             // 
@@ -404,9 +413,13 @@ namespace ArgusCR1029.Inventory
             // 
             // xrCrossTabCell14
             // 
+            this.xrCrossTabCell14.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.xrCrossTabCell14.BorderColor = System.Drawing.Color.Black;
             this.xrCrossTabCell14.ColumnIndex = 3;
+            this.xrCrossTabCell14.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Bold);
             this.xrCrossTabCell14.Name = "xrCrossTabCell14";
             this.xrCrossTabCell14.RowIndex = 3;
+            this.xrCrossTabCell14.TextFormatString = "{0:n2}";
             // 
             // Detail
             // 
@@ -507,7 +520,7 @@ namespace ArgusCR1029.Inventory
         private DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell itemGroup_lbl;
         private DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell xrCrossTabCell3;
         private DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell xrCrossTabCell4;
-        private DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell xrCrossTabCell5;
+        private DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell total2_lbl;
         private DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell xrCrossTabCell6;
         private DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell xrCrossTabCell7;
         private DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell xrCrossTabCell8;
