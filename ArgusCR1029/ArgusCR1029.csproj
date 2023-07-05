@@ -364,6 +364,11 @@
     <Compile Include="Inventory\IV436.Designer.cs">
       <DependentUpon>IV436.cs</DependentUpon>
     </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Purchase\PU203.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -387,6 +392,12 @@
     </Compile>
     <Compile Include="Purchase\PU405.Designer.cs">
       <DependentUpon>PU405.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\Templates\PU101.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Purchase\Templates\PU101.Designer.cs">
+      <DependentUpon>PU101.cs</DependentUpon>
     </Compile>
     <Compile Include="Replenishment\IR401.cs">
       <SubType>Component</SubType>
@@ -791,6 +802,10 @@
     <EmbeddedResource Include="Inventory\IV436.resx">
       <DependentUpon>IV436.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Purchase\PU203.resx">
       <DependentUpon>PU203.cs</DependentUpon>
     </EmbeddedResource>
@@ -802,6 +817,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Purchase\PU405.resx">
       <DependentUpon>PU405.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\Templates\PU101.resx">
+      <DependentUpon>PU101.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Replenishment\IR401.resx">
       <DependentUpon>IR401.cs</DependentUpon>
@@ -949,6 +967,9 @@
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Resource\Footer.png" />
+    <Content Include="Resource\Header.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

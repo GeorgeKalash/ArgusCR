@@ -75,7 +75,7 @@ namespace ArgusCR1012.Sales.Templates
 
             amountInWords_data.Text = SharedClasses.NumberToWords.multiLingualNumberInText((decimal)webObject.record.trxHeader.amount, 2, 2);
 
-            description_data.Text = webObject.record.trxHeader.notes;
+            description_data.Text = webObject.record.trxHeader.description;
             invoiceRef_data.Text = webObject.record.trxHeader.invoiceRef;
 
             clientName2_data.Text = webObject.record.trxHeader.clientName;
