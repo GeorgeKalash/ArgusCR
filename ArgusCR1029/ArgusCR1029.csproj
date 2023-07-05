@@ -388,6 +388,12 @@
     <Compile Include="Purchase\PU405.Designer.cs">
       <DependentUpon>PU405.cs</DependentUpon>
     </Compile>
+    <Compile Include="Purchase\Templates\PU101.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Purchase\Templates\PU101.Designer.cs">
+      <DependentUpon>PU101.cs</DependentUpon>
+    </Compile>
     <Compile Include="Replenishment\IR401.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -803,6 +809,9 @@
     <EmbeddedResource Include="Purchase\PU405.resx">
       <DependentUpon>PU405.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\Templates\PU101.resx">
+      <DependentUpon>PU101.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Replenishment\IR401.resx">
       <DependentUpon>IR401.cs</DependentUpon>
     </EmbeddedResource>
@@ -949,6 +958,9 @@
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Resource\Footer.png" />
+    <Content Include="Resource\Header.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
