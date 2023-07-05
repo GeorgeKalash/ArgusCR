@@ -29,9 +29,10 @@ namespace ArgusCR1029.Purchase.Templates
         /// </summary>
         private void InitializeComponent()
         {
-            DevExpress.XtraReports.UI.XRSummary xrSummary1 = new DevExpress.XtraReports.UI.XRSummary();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PU101));
+            DevExpress.XtraReports.UI.XRSummary xrSummary1 = new DevExpress.XtraReports.UI.XRSummary();
             this.TopMargin = new DevExpress.XtraReports.UI.TopMarginBand();
+            this.xrPictureBox2 = new DevExpress.XtraReports.UI.XRPictureBox();
             this.BottomMargin = new DevExpress.XtraReports.UI.BottomMarginBand();
             this.Detail = new DevExpress.XtraReports.UI.DetailBand();
             this.xrTable2 = new DevExpress.XtraReports.UI.XRTable();
@@ -116,7 +117,6 @@ namespace ArgusCR1029.Purchase.Templates
             this.xrTableCell3 = new DevExpress.XtraReports.UI.XRTableCell();
             this.PageFooter = new DevExpress.XtraReports.UI.PageFooterBand();
             this.xrPictureBox1 = new DevExpress.XtraReports.UI.XRPictureBox();
-            this.xrPictureBox2 = new DevExpress.XtraReports.UI.XRPictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable11)).BeginInit();
@@ -136,6 +136,14 @@ namespace ArgusCR1029.Purchase.Templates
             this.xrPictureBox2});
             this.TopMargin.HeightF = 139.0417F;
             this.TopMargin.Name = "TopMargin";
+            // 
+            // xrPictureBox2
+            // 
+            this.xrPictureBox2.ImageAlignment = DevExpress.XtraPrinting.ImageAlignment.MiddleCenter;
+            this.xrPictureBox2.ImageSource = new DevExpress.XtraPrinting.Drawing.ImageSource("img", resources.GetString("xrPictureBox2.ImageSource"));
+            this.xrPictureBox2.LocationFloat = new DevExpress.Utils.PointFloat(1.986822E-05F, 0F);
+            this.xrPictureBox2.Name = "xrPictureBox2";
+            this.xrPictureBox2.SizeF = new System.Drawing.SizeF(827F, 139.0417F);
             // 
             // BottomMargin
             // 
@@ -330,13 +338,13 @@ namespace ArgusCR1029.Purchase.Templates
             this.xrTable4,
             this.title_lbl,
             this.exWorks_lbl});
-            this.ReportHeader.HeightF = 209.7223F;
+            this.ReportHeader.HeightF = 204.3751F;
             this.ReportHeader.KeepTogether = true;
             this.ReportHeader.Name = "ReportHeader";
             // 
             // xrTable5
             // 
-            this.xrTable5.LocationFloat = new DevExpress.Utils.PointFloat(325.0001F, 151.25F);
+            this.xrTable5.LocationFloat = new DevExpress.Utils.PointFloat(325F, 166.875F);
             this.xrTable5.Name = "xrTable5";
             this.xrTable5.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable5.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
@@ -383,7 +391,7 @@ namespace ArgusCR1029.Purchase.Templates
             // 
             // xrTable11
             // 
-            this.xrTable11.LocationFloat = new DevExpress.Utils.PointFloat(325.0001F, 113.75F);
+            this.xrTable11.LocationFloat = new DevExpress.Utils.PointFloat(325F, 129.375F);
             this.xrTable11.Name = "xrTable11";
             this.xrTable11.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable11.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
@@ -432,7 +440,7 @@ namespace ArgusCR1029.Purchase.Templates
             // 
             // vatCheckBox
             // 
-            this.vatCheckBox.LocationFloat = new DevExpress.Utils.PointFloat(688.8516F, 151.25F);
+            this.vatCheckBox.LocationFloat = new DevExpress.Utils.PointFloat(688.8515F, 166.875F);
             this.vatCheckBox.Name = "vatCheckBox";
             this.vatCheckBox.Padding = new DevExpress.XtraPrinting.PaddingInfo(15, 2, 0, 0, 100F);
             this.vatCheckBox.SizeF = new System.Drawing.SizeF(127.0924F, 37.50006F);
@@ -445,7 +453,7 @@ namespace ArgusCR1029.Purchase.Templates
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.vat_lbl.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold);
-            this.vat_lbl.LocationFloat = new DevExpress.Utils.PointFloat(568.8514F, 151.25F);
+            this.vat_lbl.LocationFloat = new DevExpress.Utils.PointFloat(568.8513F, 166.875F);
             this.vat_lbl.Multiline = true;
             this.vat_lbl.Name = "vat_lbl";
             this.vat_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(7, 2, 8, 0, 100F);
@@ -458,7 +466,7 @@ namespace ArgusCR1029.Purchase.Templates
             // 
             // xrTable7
             // 
-            this.xrTable7.LocationFloat = new DevExpress.Utils.PointFloat(325F, 41.0416F);
+            this.xrTable7.LocationFloat = new DevExpress.Utils.PointFloat(324.9999F, 56.6666F);
             this.xrTable7.Name = "xrTable7";
             this.xrTable7.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable7.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
@@ -613,7 +621,7 @@ namespace ArgusCR1029.Purchase.Templates
             // 
             // exWorksCheckBox
             // 
-            this.exWorksCheckBox.LocationFloat = new DevExpress.Utils.PointFloat(688.8516F, 113.7499F);
+            this.exWorksCheckBox.LocationFloat = new DevExpress.Utils.PointFloat(688.8515F, 129.3749F);
             this.exWorksCheckBox.Name = "exWorksCheckBox";
             this.exWorksCheckBox.Padding = new DevExpress.XtraPrinting.PaddingInfo(15, 2, 0, 0, 100F);
             this.exWorksCheckBox.SizeF = new System.Drawing.SizeF(127.0927F, 37.49996F);
@@ -621,7 +629,7 @@ namespace ArgusCR1029.Purchase.Templates
             // 
             // xrTable3
             // 
-            this.xrTable3.LocationFloat = new DevExpress.Utils.PointFloat(10.00004F, 41.04165F);
+            this.xrTable3.LocationFloat = new DevExpress.Utils.PointFloat(9.999935F, 56.66663F);
             this.xrTable3.Name = "xrTable3";
             this.xrTable3.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable3.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
@@ -749,7 +757,7 @@ namespace ArgusCR1029.Purchase.Templates
             // 
             // xrTable4
             // 
-            this.xrTable4.LocationFloat = new DevExpress.Utils.PointFloat(10.0001F, 150.1041F);
+            this.xrTable4.LocationFloat = new DevExpress.Utils.PointFloat(9.999998F, 165.7291F);
             this.xrTable4.Name = "xrTable4";
             this.xrTable4.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable4.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
@@ -815,7 +823,7 @@ namespace ArgusCR1029.Purchase.Templates
             this.title_lbl.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.title_lbl.Font = new System.Drawing.Font("Times New Roman", 16F, System.Drawing.FontStyle.Bold);
             this.title_lbl.ForeColor = System.Drawing.Color.Black;
-            this.title_lbl.LocationFloat = new DevExpress.Utils.PointFloat(10.00004F, 0F);
+            this.title_lbl.LocationFloat = new DevExpress.Utils.PointFloat(9.999935F, 15.625F);
             this.title_lbl.Multiline = true;
             this.title_lbl.Name = "title_lbl";
             this.title_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 5, 0, 100F);
@@ -837,7 +845,7 @@ namespace ArgusCR1029.Purchase.Templates
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.exWorks_lbl.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold);
-            this.exWorks_lbl.LocationFloat = new DevExpress.Utils.PointFloat(568.8516F, 113.7499F);
+            this.exWorks_lbl.LocationFloat = new DevExpress.Utils.PointFloat(568.8514F, 129.3749F);
             this.exWorks_lbl.Multiline = true;
             this.exWorks_lbl.Name = "exWorks_lbl";
             this.exWorks_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(7, 2, 8, 0, 100F);
@@ -1304,14 +1312,6 @@ namespace ArgusCR1029.Purchase.Templates
             this.xrPictureBox1.LocationFloat = new DevExpress.Utils.PointFloat(0F, 0F);
             this.xrPictureBox1.Name = "xrPictureBox1";
             this.xrPictureBox1.SizeF = new System.Drawing.SizeF(827F, 119.875F);
-            // 
-            // xrPictureBox2
-            // 
-            this.xrPictureBox2.ImageAlignment = DevExpress.XtraPrinting.ImageAlignment.MiddleCenter;
-            this.xrPictureBox2.ImageSource = new DevExpress.XtraPrinting.Drawing.ImageSource("img", resources.GetString("xrPictureBox2.ImageSource"));
-            this.xrPictureBox2.LocationFloat = new DevExpress.Utils.PointFloat(1.986822E-05F, 0F);
-            this.xrPictureBox2.Name = "xrPictureBox2";
-            this.xrPictureBox2.SizeF = new System.Drawing.SizeF(827F, 139.0417F);
             // 
             // PU101
             // 
