@@ -810,18 +810,16 @@ namespace ArgusCR1029.Purchase.Templates
             // 
             // title_lbl
             // 
-            this.title_lbl.BackColor = System.Drawing.Color.Black;
+            this.title_lbl.BackColor = System.Drawing.Color.White;
             this.title_lbl.BorderColor = System.Drawing.Color.Black;
-            this.title_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
-            | DevExpress.XtraPrinting.BorderSide.Right) 
-            | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.title_lbl.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.title_lbl.Font = new System.Drawing.Font("Times New Roman", 16F, System.Drawing.FontStyle.Bold);
-            this.title_lbl.ForeColor = System.Drawing.Color.White;
-            this.title_lbl.LocationFloat = new DevExpress.Utils.PointFloat(10.00004F, 1.041667F);
+            this.title_lbl.ForeColor = System.Drawing.Color.Black;
+            this.title_lbl.LocationFloat = new DevExpress.Utils.PointFloat(10.00004F, 0F);
             this.title_lbl.Multiline = true;
             this.title_lbl.Name = "title_lbl";
             this.title_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 5, 0, 100F);
-            this.title_lbl.SizeF = new System.Drawing.SizeF(807F, 39.99999F);
+            this.title_lbl.SizeF = new System.Drawing.SizeF(805.9439F, 41.04166F);
             this.title_lbl.StylePriority.UseBackColor = false;
             this.title_lbl.StylePriority.UseBorderColor = false;
             this.title_lbl.StylePriority.UseBorders = false;
