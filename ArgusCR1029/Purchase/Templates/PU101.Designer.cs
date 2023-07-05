@@ -338,7 +338,7 @@ namespace ArgusCR1029.Purchase.Templates
             this.xrTable4,
             this.title_lbl,
             this.exWorks_lbl});
-            this.ReportHeader.HeightF = 204.3751F;
+            this.ReportHeader.HeightF = 224.75F;
             this.ReportHeader.KeepTogether = true;
             this.ReportHeader.Name = "ReportHeader";
             // 
@@ -821,13 +821,13 @@ namespace ArgusCR1029.Purchase.Templates
             this.title_lbl.BackColor = System.Drawing.Color.White;
             this.title_lbl.BorderColor = System.Drawing.Color.Black;
             this.title_lbl.Borders = DevExpress.XtraPrinting.BorderSide.None;
-            this.title_lbl.Font = new System.Drawing.Font("Times New Roman", 16F, System.Drawing.FontStyle.Bold);
+            this.title_lbl.Font = new System.Drawing.Font("Times New Roman", 16F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
             this.title_lbl.ForeColor = System.Drawing.Color.Black;
-            this.title_lbl.LocationFloat = new DevExpress.Utils.PointFloat(9.999935F, 15.625F);
+            this.title_lbl.LocationFloat = new DevExpress.Utils.PointFloat(1.986822E-05F, 15.625F);
             this.title_lbl.Multiline = true;
             this.title_lbl.Name = "title_lbl";
             this.title_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 5, 0, 100F);
-            this.title_lbl.SizeF = new System.Drawing.SizeF(805.9439F, 41.04166F);
+            this.title_lbl.SizeF = new System.Drawing.SizeF(827F, 41.04166F);
             this.title_lbl.StylePriority.UseBackColor = false;
             this.title_lbl.StylePriority.UseBorderColor = false;
             this.title_lbl.StylePriority.UseBorders = false;
