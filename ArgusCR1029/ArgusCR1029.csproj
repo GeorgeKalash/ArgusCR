@@ -364,6 +364,11 @@
     <Compile Include="Inventory\IV436.Designer.cs">
       <DependentUpon>IV436.cs</DependentUpon>
     </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Purchase\PU203.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -796,6 +801,10 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Inventory\IV436.resx">
       <DependentUpon>IV436.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Purchase\PU203.resx">
       <DependentUpon>PU203.cs</DependentUpon>

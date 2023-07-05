@@ -45,7 +45,6 @@ namespace ArgusCR1029.Purchase.Templates
 
             description_data.Text = webObject.record.header.description;
 
-            printSignature_lbl.Text = reportSignature();
             base.OnBeforePrint(e);
         }
         protected override void labelsText()
