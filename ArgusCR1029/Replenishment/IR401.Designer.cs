@@ -38,7 +38,6 @@ namespace ArgusCR1029.Replenishment
             this.xrTable3 = new DevExpress.XtraReports.UI.XRTable();
             this.xrTableRow3 = new DevExpress.XtraReports.UI.XRTableRow();
             this.lineNo_data = new DevExpress.XtraReports.UI.XRTableCell();
-            this.itemId_data = new DevExpress.XtraReports.UI.XRTableCell();
             this.sku_data = new DevExpress.XtraReports.UI.XRTableCell();
             this.ms_data = new DevExpress.XtraReports.UI.XRTableCell();
             this.category_data = new DevExpress.XtraReports.UI.XRTableCell();
@@ -79,7 +78,6 @@ namespace ArgusCR1029.Replenishment
             this.xrTable1 = new DevExpress.XtraReports.UI.XRTable();
             this.xrTableRow2 = new DevExpress.XtraReports.UI.XRTableRow();
             this.rec_lbl = new DevExpress.XtraReports.UI.XRTableCell();
-            this.itemId_lbl = new DevExpress.XtraReports.UI.XRTableCell();
             this.sku_lbl = new DevExpress.XtraReports.UI.XRTableCell();
             this.ms_lbl = new DevExpress.XtraReports.UI.XRTableCell();
             this.category_lbl = new DevExpress.XtraReports.UI.XRTableCell();
@@ -114,6 +112,8 @@ namespace ArgusCR1029.Replenishment
             this.PageFooter = new DevExpress.XtraReports.UI.PageFooterBand();
             this.printSignature = new DevExpress.XtraReports.UI.XRLabel();
             this.xrPageInfo1 = new DevExpress.XtraReports.UI.XRPageInfo();
+            this.itemName_lbl = new DevExpress.XtraReports.UI.XRTableCell();
+            this.xrTableCell2 = new DevExpress.XtraReports.UI.XRTableCell();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable1)).BeginInit();
@@ -152,7 +152,7 @@ namespace ArgusCR1029.Replenishment
             this.xrTable3.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable3.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow3});
-            this.xrTable3.SizeF = new System.Drawing.SizeF(1732F, 25F);
+            this.xrTable3.SizeF = new System.Drawing.SizeF(1690.186F, 25F);
             this.xrTable3.StylePriority.UseBorders = false;
             this.xrTable3.StylePriority.UseBorderWidth = false;
             this.xrTable3.StylePriority.UseFont = false;
@@ -161,8 +161,8 @@ namespace ArgusCR1029.Replenishment
             // 
             this.xrTableRow3.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
             this.lineNo_data,
-            this.itemId_data,
             this.sku_data,
+            this.xrTableCell2,
             this.ms_data,
             this.category_data,
             this.xrTableCell18,
@@ -204,25 +204,6 @@ namespace ArgusCR1029.Replenishment
             this.lineNo_data.StylePriority.UseTextAlignment = false;
             this.lineNo_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopCenter;
             this.lineNo_data.Weight = 0.562823367001512D;
-            // 
-            // itemId_data
-            // 
-            this.itemId_data.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Right) 
-            | DevExpress.XtraPrinting.BorderSide.Bottom)));
-            this.itemId_data.BorderWidth = 1F;
-            this.itemId_data.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[itemId]")});
-            this.itemId_data.Font = new System.Drawing.Font("Arial", 8F);
-            this.itemId_data.Multiline = true;
-            this.itemId_data.Name = "itemId_data";
-            this.itemId_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(4, 2, 4, 0, 100F);
-            this.itemId_data.StylePriority.UseBorders = false;
-            this.itemId_data.StylePriority.UseBorderWidth = false;
-            this.itemId_data.StylePriority.UseFont = false;
-            this.itemId_data.StylePriority.UsePadding = false;
-            this.itemId_data.StylePriority.UseTextAlignment = false;
-            this.itemId_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
-            this.itemId_data.Weight = 0.62535947217937726D;
             // 
             // sku_data
             // 
@@ -499,7 +480,7 @@ namespace ArgusCR1029.Replenishment
             this.xrTableCell28.StylePriority.UseTextAlignment = false;
             this.xrTableCell28.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
             this.xrTableCell28.TextFormatString = "{0:n2}";
-            this.xrTableCell28.Weight = 0.75043084331134569D;
+            this.xrTableCell28.Weight = 0.76036162451562206D;
             // 
             // xrTableCell29
             // 
@@ -519,7 +500,7 @@ namespace ArgusCR1029.Replenishment
             this.xrTableCell29.StylePriority.UseTextAlignment = false;
             this.xrTableCell29.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
             this.xrTableCell29.TextFormatString = "{0:n2}";
-            this.xrTableCell29.Weight = 0.75043088323849017D;
+            this.xrTableCell29.Weight = 0.74050010203421379D;
             // 
             // xrTableCell30
             // 
@@ -825,7 +806,7 @@ namespace ArgusCR1029.Replenishment
             this.xrTable1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable1.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow2});
-            this.xrTable1.SizeF = new System.Drawing.SizeF(1732F, 54.86111F);
+            this.xrTable1.SizeF = new System.Drawing.SizeF(1690.186F, 54.86111F);
             this.xrTable1.StylePriority.UseBorders = false;
             this.xrTable1.StylePriority.UseBorderWidth = false;
             this.xrTable1.StylePriority.UseFont = false;
@@ -836,8 +817,8 @@ namespace ArgusCR1029.Replenishment
             // 
             this.xrTableRow2.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
             this.rec_lbl,
-            this.itemId_lbl,
             this.sku_lbl,
+            this.itemName_lbl,
             this.ms_lbl,
             this.category_lbl,
             this.avgYearBefore_lbl,
@@ -879,23 +860,6 @@ namespace ArgusCR1029.Replenishment
             this.rec_lbl.StylePriority.UseFont = false;
             this.rec_lbl.Text = "Record";
             this.rec_lbl.Weight = 0.64430216228058346D;
-            // 
-            // itemId_lbl
-            // 
-            this.itemId_lbl.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.itemId_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
-            | DevExpress.XtraPrinting.BorderSide.Right) 
-            | DevExpress.XtraPrinting.BorderSide.Bottom)));
-            this.itemId_lbl.BorderWidth = 1F;
-            this.itemId_lbl.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Bold);
-            this.itemId_lbl.Multiline = true;
-            this.itemId_lbl.Name = "itemId_lbl";
-            this.itemId_lbl.StylePriority.UseBackColor = false;
-            this.itemId_lbl.StylePriority.UseBorders = false;
-            this.itemId_lbl.StylePriority.UseBorderWidth = false;
-            this.itemId_lbl.StylePriority.UseFont = false;
-            this.itemId_lbl.Text = "Item Id";
-            this.itemId_lbl.Weight = 0.71589125894920513D;
             // 
             // sku_lbl
             // 
@@ -1133,7 +1097,7 @@ namespace ArgusCR1029.Replenishment
             this.sep_lbl.StylePriority.UseBorderWidth = false;
             this.sep_lbl.StylePriority.UseFont = false;
             this.sep_lbl.Text = "September";
-            this.sep_lbl.Weight = 0.85906962789951158D;
+            this.sep_lbl.Weight = 0.87043674945351868D;
             // 
             // october_lbl
             // 
@@ -1150,7 +1114,7 @@ namespace ArgusCR1029.Replenishment
             this.october_lbl.StylePriority.UseBorderWidth = false;
             this.october_lbl.StylePriority.UseFont = false;
             this.october_lbl.Text = "October";
-            this.october_lbl.Weight = 0.85906947522014532D;
+            this.october_lbl.Weight = 0.84770235366613822D;
             // 
             // nov_lbl
             // 
@@ -1422,6 +1386,43 @@ namespace ArgusCR1029.Replenishment
             this.xrPageInfo1.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             this.xrPageInfo1.TextFormatString = "Page {0} of {1}";
             // 
+            // itemName_lbl
+            // 
+            this.itemName_lbl.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.itemName_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+            | DevExpress.XtraPrinting.BorderSide.Right) 
+            | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.itemName_lbl.BorderWidth = 1F;
+            this.itemName_lbl.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Bold);
+            this.itemName_lbl.Multiline = true;
+            this.itemName_lbl.Name = "itemName_lbl";
+            this.itemName_lbl.StylePriority.UseBackColor = false;
+            this.itemName_lbl.StylePriority.UseBorders = false;
+            this.itemName_lbl.StylePriority.UseBorderWidth = false;
+            this.itemName_lbl.StylePriority.UseFont = false;
+            this.itemName_lbl.Text = "Item Name";
+            this.itemName_lbl.Weight = 1.2886043395564455D;
+            // 
+            // xrTableCell2
+            // 
+            this.xrTableCell2.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Right) 
+            | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.xrTableCell2.BorderWidth = 1F;
+            this.xrTableCell2.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[itemName]")});
+            this.xrTableCell2.Font = new System.Drawing.Font("Arial", 8F);
+            this.xrTableCell2.Multiline = true;
+            this.xrTableCell2.Name = "xrTableCell2";
+            this.xrTableCell2.Padding = new DevExpress.XtraPrinting.PaddingInfo(4, 2, 4, 0, 100F);
+            this.xrTableCell2.StylePriority.UseBorders = false;
+            this.xrTableCell2.StylePriority.UseBorderWidth = false;
+            this.xrTableCell2.StylePriority.UseFont = false;
+            this.xrTableCell2.StylePriority.UsePadding = false;
+            this.xrTableCell2.StylePriority.UseTextAlignment = false;
+            this.xrTableCell2.Text = "xrTableCell2";
+            this.xrTableCell2.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
+            this.xrTableCell2.Weight = 1.125646542134517D;
+            // 
             // IR401
             // 
             this.Bands.AddRange(new DevExpress.XtraReports.UI.Band[] {
@@ -1469,7 +1470,6 @@ namespace ArgusCR1029.Replenishment
         private DevExpress.XtraReports.UI.XRTable xrTable1;
         private DevExpress.XtraReports.UI.XRTableRow xrTableRow2;
         private DevExpress.XtraReports.UI.XRTableCell rec_lbl;
-        private DevExpress.XtraReports.UI.XRTableCell itemId_lbl;
         private DevExpress.XtraReports.UI.XRTableCell sku_lbl;
         private DevExpress.XtraReports.UI.XRTableCell ms_lbl;
         private DevExpress.XtraReports.UI.XRTableCell category_lbl;
@@ -1496,7 +1496,6 @@ namespace ArgusCR1029.Replenishment
         private DevExpress.XtraReports.UI.XRTable xrTable3;
         private DevExpress.XtraReports.UI.XRTableRow xrTableRow3;
         private DevExpress.XtraReports.UI.XRTableCell lineNo_data;
-        private DevExpress.XtraReports.UI.XRTableCell itemId_data;
         private DevExpress.XtraReports.UI.XRTableCell sku_data;
         private DevExpress.XtraReports.UI.XRTableCell ms_data;
         private DevExpress.XtraReports.UI.XRTableCell category_data;
@@ -1532,5 +1531,7 @@ namespace ArgusCR1029.Replenishment
         private DevExpress.XtraReports.UI.XRTableRow xrTableRow7;
         private DevExpress.XtraReports.UI.XRTableCell date_lbl;
         private DevExpress.XtraReports.UI.XRTableCell date_param;
+        private DevExpress.XtraReports.UI.XRTableCell xrTableCell2;
+        private DevExpress.XtraReports.UI.XRTableCell itemName_lbl;
     }
 }

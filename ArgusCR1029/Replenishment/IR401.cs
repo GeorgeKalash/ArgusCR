@@ -39,7 +39,7 @@ namespace ArgusCR1029.Replenishment
             title_lbl.Text = labelText(0);
 
             rec_lbl.Text = labelText(1);
-            itemId_lbl.Text = labelText(2);
+            itemName_lbl.Text = labelText(2);
             sku_lbl.Text = labelText(3);
             ms_lbl.Text = labelText(4);
             category_lbl.Text = labelText(5);
