@@ -60,6 +60,8 @@ namespace ArgusCR1029.Financials
             fiscalYear_lbl.Text = labelText(16);
             startDate_lbl.Text = labelText(17);
             endDate_lbl.Text = labelText(18);
+
+            description_lbl.Text = labelText(19);
         }
         protected override string dictionaryStore()
         {
