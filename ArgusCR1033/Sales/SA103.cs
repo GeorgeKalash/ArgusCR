@@ -21,8 +21,15 @@ namespace ArgusCR1033.Sales
             DataSource = webObject.record.items;
 
             companyName_data.Text = webObject.record.companyInfo.name;
+            taxNo_data.Text = webObject.record.companyInfo.taxNo;
+
             clientName_data.Text = webObject.record.trxHeader.clientName;
             docRef_data.Text = webObject.record.trxHeader.reference;
+            if (webObject.record.logTime != null)
+            {
+                date_data.Text = ((DateTime)webObject.record.logTime).ToString(sessionInfo.dateFormat) + " " + ((DateTime)webObject.record.logTime).ToString("HH:mm");
+            }
+
             subtotal_data.Text = webObject.record.trxHeader.subtotal.ToString("N2");
             netPrice_data.Text = webObject.record.trxHeader.amount.ToString("N2");
 
