@@ -322,6 +322,12 @@
     <Compile Include="Inventory\IV418.Designer.cs">
       <DependentUpon>IV418.cs</DependentUpon>
     </Compile>
+    <Compile Include="Inventory\IV426B.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Inventory\IV426B.Designer.cs">
+      <DependentUpon>IV426B.cs</DependentUpon>
+    </Compile>
     <Compile Include="Inventory\IV430B.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -780,6 +786,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Inventory\IV418.resx">
       <DependentUpon>IV418.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\IV426B.resx">
+      <DependentUpon>IV426B.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Inventory\IV430B.resx">
       <DependentUpon>IV430B.cs</DependentUpon>
