@@ -1,7 +1,7 @@
 ﻿
-namespace ArgusCR1033.Sales
+namespace ArgusCR1033.POS
 {
-    partial class SA103
+    partial class PS101
     {
         /// <summary>
         /// Required designer variable.

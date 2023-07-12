@@ -98,11 +98,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="Sales\SA103.cs">
+    <Compile Include="POS\PS101.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Sales\SA103.Designer.cs">
-      <DependentUpon>SA103.cs</DependentUpon>
+    <Compile Include="POS\PS101.Designer.cs">
+      <DependentUpon>PS101.cs</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -111,8 +111,8 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Sales\SA103.resx">
-      <DependentUpon>SA103.cs</DependentUpon>
+    <EmbeddedResource Include="POS\PS101.resx">
+      <DependentUpon>PS101.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
