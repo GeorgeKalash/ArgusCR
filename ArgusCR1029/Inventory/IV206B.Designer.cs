@@ -175,7 +175,7 @@ namespace ArgusCR1029.Inventory
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.transferId_data.BorderWidth = 1F;
             this.transferId_data.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[transferId]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[reference]")});
             this.transferId_data.Font = new System.Drawing.Font("Arial", 8F);
             this.transferId_data.Multiline = true;
             this.transferId_data.Name = "transferId_data";
@@ -193,10 +193,10 @@ namespace ArgusCR1029.Inventory
             this.itemId_data.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.itemId_data.BorderWidth = 1F;
-            this.itemId_data.CanGrow = false;
             this.itemId_data.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[itemId]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[sku]")});
             this.itemId_data.Font = new System.Drawing.Font("Arial", 8F);
+            this.itemId_data.Multiline = true;
             this.itemId_data.Name = "itemId_data";
             this.itemId_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(4, 2, 4, 0, 100F);
             this.itemId_data.StylePriority.UseBorders = false;
@@ -252,10 +252,10 @@ namespace ArgusCR1029.Inventory
             this.costprice_data.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.costprice_data.BorderWidth = 1F;
-            this.costprice_data.CanGrow = false;
             this.costprice_data.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[costPrice]")});
             this.costprice_data.Font = new System.Drawing.Font("Arial", 8F);
+            this.costprice_data.Multiline = true;
             this.costprice_data.Name = "costprice_data";
             this.costprice_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 4, 4, 0, 100F);
             this.costprice_data.StylePriority.UseBorders = false;
@@ -555,7 +555,7 @@ namespace ArgusCR1029.Inventory
             this.transferId_lbl.StylePriority.UseBorders = false;
             this.transferId_lbl.StylePriority.UseBorderWidth = false;
             this.transferId_lbl.StylePriority.UseFont = false;
-            this.transferId_lbl.Text = "Transfer Id";
+            this.transferId_lbl.Text = "Reference";
             this.transferId_lbl.Weight = 0.51736279828766507D;
             // 
             // itemId_lbl
@@ -572,7 +572,7 @@ namespace ArgusCR1029.Inventory
             this.itemId_lbl.StylePriority.UseBorders = false;
             this.itemId_lbl.StylePriority.UseBorderWidth = false;
             this.itemId_lbl.StylePriority.UseFont = false;
-            this.itemId_lbl.Text = "Item Id";
+            this.itemId_lbl.Text = "Sku";
             this.itemId_lbl.Weight = 0.56680739157974358D;
             // 
             // itemName_lbl
