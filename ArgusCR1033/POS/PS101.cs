@@ -29,12 +29,7 @@ namespace ArgusCR1033.POS
             }
 
             docRef_data.Text = webObject.record.invoiceView.reference;
-
-
-            if (webObject.record.logTime != null)
-            {
-                date_data.Text = ((DateTime)webObject.record.logTime).ToString(sessionInfo.dateFormat) + " " + ((DateTime)webObject.record.logTime).ToString("HH:mm");
-            }
+            date_data.Text = webObject.record.invoiceView.date.ToString(sessionInfo.dateFormat);
 
             subtotal_data.Text = webObject.record.invoiceView.subtotal.ToString("N2");
             netPrice_data.Text = webObject.record.invoiceView.amount.ToString("N2");
