@@ -131,7 +131,7 @@ namespace ArgusCR1033.POS
             this.item_data.StylePriority.UsePadding = false;
             this.item_data.StylePriority.UseTextAlignment = false;
             this.item_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
-            this.item_data.Weight = 2.3189116480101464D;
+            this.item_data.Weight = 2.37185343444561D;
             // 
             // qty_data
             // 
@@ -148,7 +148,7 @@ namespace ArgusCR1033.POS
             this.qty_data.StylePriority.UseTextAlignment = false;
             this.qty_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             this.qty_data.TextFormatString = "{0:n0}";
-            this.qty_data.Weight = 0.53003653551743224D;
+            this.qty_data.Weight = 0.47709474908196858D;
             // 
             // price_data
             // 
@@ -164,7 +164,7 @@ namespace ArgusCR1033.POS
             this.price_data.StylePriority.UsePadding = false;
             this.price_data.StylePriority.UseTextAlignment = false;
             this.price_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
-            this.price_data.TextFormatString = "{0:n0}";
+            this.price_data.TextFormatString = "{0:n2}";
             this.price_data.Weight = 0.82818297310361366D;
             // 
             // xrTableCell3
@@ -182,7 +182,7 @@ namespace ArgusCR1033.POS
             this.xrTableCell3.StylePriority.UseTextAlignment = false;
             this.xrTableCell3.Text = "xrTableCell3";
             this.xrTableCell3.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
-            this.xrTableCell3.TextFormatString = "{0:n0}";
+            this.xrTableCell3.TextFormatString = "{0:n2}";
             this.xrTableCell3.Weight = 1.0148819763049433D;
             // 
             // ReportHeader
@@ -394,7 +394,7 @@ namespace ArgusCR1033.POS
             this.item_lbl.StylePriority.UseTextAlignment = false;
             this.item_lbl.Text = "الصنف";
             this.item_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
-            this.item_lbl.Weight = 2.2781555450314284D;
+            this.item_lbl.Weight = 2.3301667086004354D;
             // 
             // qty_lbl
             // 
@@ -409,7 +409,7 @@ namespace ArgusCR1033.POS
             this.qty_lbl.StylePriority.UseBorders = false;
             this.qty_lbl.StylePriority.UseFont = false;
             this.qty_lbl.Text = "كمية";
-            this.qty_lbl.Weight = 0.52072122362783946D;
+            this.qty_lbl.Weight = 0.46871006005883264D;
             // 
             // price_lbl
             // 
