@@ -49,7 +49,7 @@ namespace ArgusCR1035.Sales
             phoneNumber_data.Text = webObject.record.billAddress?.phone;
             cellphone_data.Text = webObject.record.salesPerson?.cellPhone;
 
-          //  contact_data.Text = webObject.record.trxHeader.contactName;
+            invoiceRef_data.Text = webObject.record.trxHeader.invoiceRef;
 
             amountInWords_data.Text = SharedClasses.NumberToWords.multiLingualNumberInText((decimal)webObject.record.trxHeader.amount, 2, 2);
             QRCode.Text = new KSAeInvoiceQrCode(companyInfo.name, companyInfo.taxNo, (DateTime)webObject.record.trxHeader.date, webObject.record.trxHeader.amount.ToString(), webObject.record.trxHeader.vatAmount.ToString()).ToBase64();
