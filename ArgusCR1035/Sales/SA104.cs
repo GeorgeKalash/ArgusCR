@@ -56,9 +56,11 @@ namespace ArgusCR1035.Sales
             printSignature.Text = reportSignature();
             base.OnBeforePrint(e);
         }
+
         protected override void OnDataSourceRowChanged(DataSourceRowEventArgs e)
         {
-            ArgusDS.Sales.ItemView obj = ((List<ArgusDS.Sales.ItemView>)DataSource)[e.CurrentRow];
+            ArgusDS.Sales.ReturnItemView obj = ((List<ArgusDS.Sales.ReturnItemView>)DataSource)[e.CurrentRow];
+
             double netUnitPrice = obj.unitPrice - (obj.mdValue ?? 0);
             unitPrice_data.Text = netUnitPrice.ToString("N2");
             base.OnDataSourceRowChanged(e);
