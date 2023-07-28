@@ -26,9 +26,13 @@ namespace ArgusCR1029.Inventory
             crossTabCost.DataSource = webObject.list;
             crossTabQty.DataSource = webObject.list;
 
+            xrChartQty.DataSource = webObject.list;
+            xrChartCost.DataSource = webObject.list;
+
             fiscalYear_param.Text = Parameters.Count > 0 ? Parameters[0].Value.ToString() : string.Empty;
             asOfDate_param.Text = Parameters.Count > 1 ? Parameters[1].Value.ToString() : string.Empty;
             site_param.Text = Parameters.Count > 2 ? Parameters[2].Value.ToString() : string.Empty;
+            plant_param.Text = Parameters.Count > 4 ? Parameters[4].Value.ToString() : string.Empty;
 
             logo_data.ImageUrl = companyInfo.logoUrl;
 
@@ -51,6 +55,8 @@ namespace ArgusCR1029.Inventory
             categoryName2_lbl.Text = labelText(7);
             total2_lbl.Text = labelText(8);
             total3_lbl.Text = labelText(9);
+
+            plant_lbl.Text = labelText(10);
         }
         protected override string dictionaryStore()
         {
