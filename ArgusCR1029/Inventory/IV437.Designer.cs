@@ -50,14 +50,12 @@ namespace ArgusCR1029.Inventory
             DevExpress.XtraReports.UI.CrossTab.CrossTabColumnField crossTabColumnField2 = new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnField();
             DevExpress.XtraReports.UI.CrossTab.CrossTabDataField crossTabDataField2 = new DevExpress.XtraReports.UI.CrossTab.CrossTabDataField();
             DevExpress.XtraReports.UI.CrossTab.CrossTabRowField crossTabRowField2 = new DevExpress.XtraReports.UI.CrossTab.CrossTabRowField();
-            this.objectDataSource1 = new DevExpress.DataAccess.ObjectBinding.ObjectDataSource(this.components);
             this.crossTabGeneralStyle = new DevExpress.XtraReports.UI.XRControlStyle();
             this.crossTabDataStyle = new DevExpress.XtraReports.UI.XRControlStyle();
             this.crossTabHeaderStyle = new DevExpress.XtraReports.UI.XRControlStyle();
             this.crossTabTotalStyle = new DevExpress.XtraReports.UI.XRControlStyle();
             this.ReportHeader = new DevExpress.XtraReports.UI.ReportHeaderBand();
             this.xrChartCost = new DevExpress.XtraReports.UI.XRChart();
-            this.objectDataSource3 = new DevExpress.DataAccess.ObjectBinding.ObjectDataSource(this.components);
             this.xrChartQty = new DevExpress.XtraReports.UI.XRChart();
             this.crossTabQty = new DevExpress.XtraReports.UI.XRCrossTab();
             this.categoryName2_lbl = new DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell();
@@ -101,14 +99,14 @@ namespace ArgusCR1029.Inventory
             this.PageFooter = new DevExpress.XtraReports.UI.PageFooterBand();
             this.pagesNumber_lbl = new DevExpress.XtraReports.UI.XRPageInfo();
             this.printSignature = new DevExpress.XtraReports.UI.XRLabel();
+            this.objectDataSource3 = new DevExpress.DataAccess.ObjectBinding.ObjectDataSource(this.components);
+            this.objectDataSource1 = new DevExpress.DataAccess.ObjectBinding.ObjectDataSource(this.components);
             this.objectDataSource2 = new DevExpress.DataAccess.ObjectBinding.ObjectDataSource(this.components);
-            ((System.ComponentModel.ISupportInitialize)(this.objectDataSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrChartCost)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(xyDiagram1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(series1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(stackedBarSeriesLabel1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(stackedBarSeriesView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.objectDataSource3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrChartQty)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(xyDiagram2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(series2)).BeginInit();
@@ -117,13 +115,10 @@ namespace ArgusCR1029.Inventory
             ((System.ComponentModel.ISupportInitialize)(this.crossTabQty)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.crossTabCost)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.objectDataSource3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.objectDataSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.objectDataSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
-            // 
-            // objectDataSource1
-            // 
-            this.objectDataSource1.DataSource = typeof(ArgusDS.Inventory.Reports.IV437);
-            this.objectDataSource1.Name = "objectDataSource1";
             // 
             // crossTabGeneralStyle
             // 
@@ -193,17 +188,12 @@ namespace ArgusCR1029.Inventory
             series1.Label = stackedBarSeriesLabel1;
             series1.LabelsVisibility = DevExpress.Utils.DefaultBoolean.True;
             series1.Name = "Series 1";
-            series1.ValueDataMembersSerializable = "cost";
+            series1.ValueDataMembersSerializable = "totalCost";
             stackedBarSeriesView1.BarWidth = 0.5D;
             series1.View = stackedBarSeriesView1;
             this.xrChartCost.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
         series1};
             this.xrChartCost.SizeF = new System.Drawing.SizeF(625.2084F, 221.875F);
-            // 
-            // objectDataSource3
-            // 
-            this.objectDataSource3.DataSource = typeof(ArgusDS.Inventory.Reports.IV437);
-            this.objectDataSource3.Name = "objectDataSource3";
             // 
             // xrChartQty
             // 
@@ -229,7 +219,7 @@ namespace ArgusCR1029.Inventory
             sideBySideBarSeriesLabel1.Font = new System.Drawing.Font("Tahoma", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             series2.Label = sideBySideBarSeriesLabel1;
             series2.Name = "Series 1";
-            series2.ValueDataMembersSerializable = "qty";
+            series2.ValueDataMembersSerializable = "totalQty";
             sideBySideBarSeriesView1.BarWidth = 0.5D;
             series2.View = sideBySideBarSeriesView1;
             this.xrChartQty.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
@@ -692,6 +682,16 @@ namespace ArgusCR1029.Inventory
             this.printSignature.Text = "printSignature";
             this.printSignature.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
             // 
+            // objectDataSource3
+            // 
+            this.objectDataSource3.DataSource = typeof(ArgusDS.Inventory.Reports.IV437);
+            this.objectDataSource3.Name = "objectDataSource3";
+            // 
+            // objectDataSource1
+            // 
+            this.objectDataSource1.DataSource = typeof(ArgusDS.Inventory.Reports.IV437);
+            this.objectDataSource1.Name = "objectDataSource1";
+            // 
             // objectDataSource2
             // 
             this.objectDataSource2.DataSource = typeof(ArgusDS.Inventory.Reports.IV437);
@@ -706,8 +706,8 @@ namespace ArgusCR1029.Inventory
             this.BottomMargin,
             this.PageFooter});
             this.ComponentStorage.AddRange(new System.ComponentModel.IComponent[] {
-            this.objectDataSource1,
             this.objectDataSource2,
+            this.objectDataSource1,
             this.objectDataSource3});
             this.Font = new System.Drawing.Font("Arial", 9.75F);
             this.HorizontalContentSplitting = DevExpress.XtraPrinting.HorizontalContentSplitting.Smart;
@@ -724,13 +724,11 @@ namespace ArgusCR1029.Inventory
             this.crossTabTotalStyle});
             this.Version = "20.1";
             this.VerticalContentSplitting = DevExpress.XtraPrinting.VerticalContentSplitting.Smart;
-            ((System.ComponentModel.ISupportInitialize)(this.objectDataSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(xyDiagram1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(stackedBarSeriesLabel1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(stackedBarSeriesView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(series1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrChartCost)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.objectDataSource3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(xyDiagram2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(sideBySideBarSeriesLabel1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(sideBySideBarSeriesView1)).EndInit();
@@ -739,6 +737,8 @@ namespace ArgusCR1029.Inventory
             ((System.ComponentModel.ISupportInitialize)(this.crossTabQty)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.crossTabCost)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.objectDataSource3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.objectDataSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.objectDataSource2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
 
