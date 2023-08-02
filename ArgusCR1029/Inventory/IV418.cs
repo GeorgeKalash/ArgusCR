@@ -60,6 +60,8 @@ namespace ArgusCR1029.Inventory
             endDate_lbl.Text = labelText(16);
             item_lbl.Text = labelText(17);
             itemCategory_lbl.Text = labelText(18);
+
+            plant_lbl.Text = labelText(19);
         }
         protected override void OnDataSourceRowChanged(DataSourceRowEventArgs e)
         {
