@@ -37,7 +37,7 @@ namespace ArgusCR1012.Delivery.Templates
 
             deliveryNo_data.Text = webObject.record.header.reference; 
             deliveryDate_data.Text = ((DateTime)webObject.record.header.date).ToString(sessionInfo.dateFormat);
-            soRef_data.Text = webObject.record.header.soRef;
+           // soRef_data.Text = webObject.record.header.soRef;
             spName_data.Text = webObject.record.header.spName;
             spCellPhone_data.Text = webObject.record.header.spCellPhone;
 
