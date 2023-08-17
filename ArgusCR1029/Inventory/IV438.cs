@@ -47,8 +47,8 @@ namespace ArgusCR1029.Inventory
             toSite_lbl.Text = labelText(4);
             startDate_lbl.Text = labelText(5);
             endDate_lbl.Text = labelText(6);
-            minimumQty_lbl.Text = labelText(7);
-            fromGroup_lbl.Text = labelText(8);
+            fromGroup_lbl.Text = labelText(7);
+            toGroup_lbl.Text = labelText(8);
         }
         protected override string dictionaryStore()
         {
