@@ -435,12 +435,6 @@
     <Compile Include="Purchase\Templates\PU101.Designer.cs">
       <DependentUpon>PU101.cs</DependentUpon>
     </Compile>
-    <Compile Include="Replenishment\IR401.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Replenishment\IR401.Designer.cs">
-      <DependentUpon>IR401.cs</DependentUpon>
-    </Compile>
     <Compile Include="Sales\SA204_L1.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -874,9 +868,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Purchase\Templates\PU101.resx">
       <DependentUpon>PU101.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Replenishment\IR401.resx">
-      <DependentUpon>IR401.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Sales\SA204_L1.resx">
       <DependentUpon>SA204_L1.cs</DependentUpon>
