@@ -3,7 +3,6 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Drawing;
 using System.Drawing.Printing;
 
 namespace ArgusCR1029.BusinessPartners
@@ -30,7 +29,6 @@ namespace ArgusCR1029.BusinessPartners
             printSignature.Text = reportSignature();
             base.OnBeforePrint(e);
         }
-
         protected override void labelsText()
         {
             title_lbl.Text = labelText(0);
@@ -48,7 +46,6 @@ namespace ArgusCR1029.BusinessPartners
             isInactive_lbl.Text = labelText(11);
 
             bpGrp_lbl.Text = labelText(12);
-
         }
         protected override string dictionaryStore()
         {

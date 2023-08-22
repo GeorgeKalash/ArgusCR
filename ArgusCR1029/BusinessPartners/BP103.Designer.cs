@@ -44,7 +44,6 @@ namespace ArgusCR1029.BusinessPartners
             this.weight2_data = new DevExpress.XtraReports.UI.XRTableCell();
             this.description_data = new DevExpress.XtraReports.UI.XRTableCell();
             this.status_data = new DevExpress.XtraReports.UI.XRTableCell();
-            this.transferRef_data = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTableCell1 = new DevExpress.XtraReports.UI.XRTableCell();
             this.ReportHeader = new DevExpress.XtraReports.UI.ReportHeaderBand();
             this.xrTable5 = new DevExpress.XtraReports.UI.XRTable();
@@ -123,7 +122,6 @@ namespace ArgusCR1029.BusinessPartners
             this.weight2_data,
             this.description_data,
             this.status_data,
-            this.transferRef_data,
             this.xrTableCell1});
             this.xrTableRow7.Name = "xrTableRow7";
             this.xrTableRow7.Weight = 1D;
@@ -305,7 +303,8 @@ namespace ArgusCR1029.BusinessPartners
             // 
             // status_data
             // 
-            this.status_data.Borders = ((DevExpress.XtraPrinting.BorderSide)((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.status_data.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Right) 
+            | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.status_data.BorderWidth = 1F;
             this.status_data.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[szRef]")});
@@ -319,25 +318,7 @@ namespace ArgusCR1029.BusinessPartners
             this.status_data.StylePriority.UsePadding = false;
             this.status_data.StylePriority.UseTextAlignment = false;
             this.status_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
-            this.status_data.Weight = 0.38915113015431213D;
-            // 
-            // transferRef_data
-            // 
-            this.transferRef_data.Borders = ((DevExpress.XtraPrinting.BorderSide)((DevExpress.XtraPrinting.BorderSide.Right | DevExpress.XtraPrinting.BorderSide.Bottom)));
-            this.transferRef_data.BorderWidth = 1F;
-            this.transferRef_data.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[szName]")});
-            this.transferRef_data.Font = new System.Drawing.Font("Arial", 8F);
-            this.transferRef_data.Multiline = true;
-            this.transferRef_data.Name = "transferRef_data";
-            this.transferRef_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 4, 4, 0, 100F);
-            this.transferRef_data.StylePriority.UseBorders = false;
-            this.transferRef_data.StylePriority.UseBorderWidth = false;
-            this.transferRef_data.StylePriority.UseFont = false;
-            this.transferRef_data.StylePriority.UsePadding = false;
-            this.transferRef_data.StylePriority.UseTextAlignment = false;
-            this.transferRef_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
-            this.transferRef_data.Weight = 0.7429247552634155D;
+            this.status_data.Weight = 1.1320784810698772D;
             // 
             // xrTableCell1
             // 
@@ -357,7 +338,7 @@ namespace ArgusCR1029.BusinessPartners
             this.xrTableCell1.StylePriority.UseTextAlignment = false;
             this.xrTableCell1.Text = "xrTableCell1";
             this.xrTableCell1.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
-            this.xrTableCell1.Weight = 0.59181414309186209D;
+            this.xrTableCell1.Weight = 0.591812376007232D;
             // 
             // ReportHeader
             // 
@@ -727,7 +708,6 @@ namespace ArgusCR1029.BusinessPartners
         private DevExpress.XtraReports.UI.XRTableCell weight2_data;
         private DevExpress.XtraReports.UI.XRTableCell description_data;
         private DevExpress.XtraReports.UI.XRTableCell status_data;
-        private DevExpress.XtraReports.UI.XRTableCell transferRef_data;
         private DevExpress.XtraReports.UI.XRTable xrTable5;
         private DevExpress.XtraReports.UI.XRTableRow xrTableRow9;
         private DevExpress.XtraReports.UI.XRTableCell bpGrp_lbl;
