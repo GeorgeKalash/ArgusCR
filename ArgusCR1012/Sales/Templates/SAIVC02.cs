@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections;
 using System.ComponentModel;
-using System.Drawing;
 using System.Drawing.Printing;
 using DevExpress.XtraReports.UI;
 using ArgusDS.Sales.Reports;
@@ -63,7 +62,6 @@ namespace ArgusCR1012.Sales.Templates
 
             base.OnBeforePrint(e);
         }
-
         protected override void OnDataSourceRowChanged(DataSourceRowEventArgs e)
         {
             ArgusDS.Sales.ItemView obj = ((List<ArgusDS.Sales.ItemView>)DataSource)[e.CurrentRow];
@@ -126,7 +124,5 @@ namespace ArgusCR1012.Sales.Templates
         {
             return "CR1012.SA103B";
         }
-
     }
 }
-

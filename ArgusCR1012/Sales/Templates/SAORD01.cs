@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections;
 using System.ComponentModel;
-using System.Drawing;
 using System.Drawing.Printing;
 using DevExpress.XtraReports.UI;
 using ArgusDS.Sales.Reports;
@@ -66,7 +65,6 @@ namespace ArgusCR1012.Sales.Templates
 
             base.OnDataSourceRowChanged(e);
         }
-
         protected override void labelsText()
         {
             tamdeedVatNo_lbl.Text = labelText(0);
@@ -103,7 +101,6 @@ namespace ArgusCR1012.Sales.Templates
             saPeName_lbl.Text = labelText(25);
             sPeSig_lbl.Text = labelText(26);
         }
-
         protected override string dictionaryStore()
         {
             return "CR1012.SA102";

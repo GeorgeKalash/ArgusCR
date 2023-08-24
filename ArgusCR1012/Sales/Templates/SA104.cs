@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections;
 using System.ComponentModel;
-using System.Drawing;
 using System.Drawing.Printing;
 using DevExpress.XtraReports.UI;
 using ArgusDS.Sales.Reports;
@@ -13,7 +12,6 @@ namespace ArgusCR1012.Sales.Templates
 {
     public partial class SA104 : ArgusRPT.BaseReport
     {
-  
       public SA104()
         {
             InitializeComponent();
@@ -52,7 +50,6 @@ namespace ArgusCR1012.Sales.Templates
                     clientVATNo_data.Text = vatID.idNum;
             }
 
-
             if (webObject.record.bpDefaultIDCategoryId != null)
             {
                 ArgusDS.BusinessPartners.MasterIDNumberView otherID = webObject.record.masterIDs.FirstOrDefault(x => x.incId == webObject.record.bpDefaultIDCategoryId);
@@ -84,7 +81,6 @@ namespace ArgusCR1012.Sales.Templates
             QRCode.Text = new KSAeInvoiceQrCode(companyInfo.name, companyInfo.taxNo, (DateTime)webObject.record.logTime, webObject.record.trxHeader.amount.ToString(), webObject.record.trxHeader.vatAmount.ToString()).ToBase64();
             base.OnBeforePrint(e);
         }
-
         protected override void OnDataSourceRowChanged(DataSourceRowEventArgs e)
         {
             ArgusDS.Sales.ReturnItemView obj = ((List<ArgusDS.Sales.ReturnItemView>)DataSource)[e.CurrentRow];
@@ -98,15 +94,12 @@ namespace ArgusCR1012.Sales.Templates
 
             base.OnDataSourceRowChanged(e);
         }
-
         protected override void labelsText()
         {
         }
-
         protected override string dictionaryStore()
         {
             return "CR1012.SA104";
         }
     }
 }
-

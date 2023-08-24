@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections;
 using System.ComponentModel;
-using System.Drawing;
 using System.Drawing.Printing;
 using DevExpress.XtraReports.UI;
 using ArgusDS.Sales.Reports;
@@ -13,12 +12,10 @@ namespace ArgusCR1012.Sales.Templates
 {
     public partial class SAIVC01 : ArgusRPT.BaseReport
     {
-  
       public SAIVC01()
         {
             InitializeComponent();
         }
-
         protected override void OnBeforePrint(PrintEventArgs e)
         {
             RightToLeft = DevExpress.XtraReports.UI.RightToLeft.No;
@@ -56,8 +53,6 @@ namespace ArgusCR1012.Sales.Templates
                     clientVATNo_data.Text = vatID.idNum;
             }
 
-
-
             if (webObject.record.bpDefaultIDCategoryId != null)
             {
                 ArgusDS.BusinessPartners.MasterIDNumberView otherID = webObject.record.masterIDs.FirstOrDefault(x => x.incId == webObject.record.bpDefaultIDCategoryId);
@@ -92,7 +87,6 @@ namespace ArgusCR1012.Sales.Templates
 
             base.OnBeforePrint(e);
         }
-
         protected override void OnDataSourceRowChanged(DataSourceRowEventArgs e)
         {
             ArgusDS.Sales.ItemView obj = ((List<ArgusDS.Sales.ItemView>)DataSource)[e.CurrentRow];
@@ -106,7 +100,6 @@ namespace ArgusCR1012.Sales.Templates
 
             base.OnDataSourceRowChanged(e);
         }
-
         protected override void labelsText()
         {
             tamdeedVatNo_lbl.Text = labelText(0);
@@ -166,4 +159,3 @@ namespace ArgusCR1012.Sales.Templates
         }
     }
 }
-

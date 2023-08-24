@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections;
 using System.ComponentModel;
-using System.Drawing;
 using System.Drawing.Printing;
 using DevExpress.XtraReports.UI;
 using ArgusDS.Sales.Reports;
@@ -18,9 +17,6 @@ namespace ArgusCR1012.Sales.Templates
         protected override void OnBeforePrint(PrintEventArgs e)
         {
             SharedClasses.JsonProtocol.GetStructure<QuotationPrintLayout> webObject = deserializeGet<QuotationPrintLayout>();
-
-            //if (webObject)
-
             DataSource = webObject.record.items;
 
             clientName_data.Text = webObject.record.header.clientName;
@@ -95,7 +91,6 @@ namespace ArgusCR1012.Sales.Templates
             appBy_lbl.Text = labelText(30);
             recBy_lbl.Text = labelText(31);
         }
-
         protected override string dictionaryStore()
         {
             return "CR1012.SA101";

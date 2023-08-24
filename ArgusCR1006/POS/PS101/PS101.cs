@@ -3,7 +3,6 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Drawing;
 using System.Drawing.Printing;
 
 namespace ArgusCR1006.POS.PS101
@@ -78,7 +77,6 @@ namespace ArgusCR1006.POS.PS101
             printSignature2_lbl.Text = reportSignature();
             base.OnBeforePrint(e);
         }
-
         protected override void labelsText()
         {
             vatNo_lbl.Text = labelText(0);

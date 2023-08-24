@@ -14,12 +14,10 @@ namespace ArgusCR1000.Sales.Templates
         {
             return "CR1000.SAQTN01";
         }
-
         protected override void labelsText()
         {
             base.labelsText();
         }
-
         protected override void OnBeforePrint(PrintEventArgs e)
         {
             SharedClasses.JsonProtocol.GetStructure<QuotationPrintLayout> webObject = deserializeGet<QuotationPrintLayout>();

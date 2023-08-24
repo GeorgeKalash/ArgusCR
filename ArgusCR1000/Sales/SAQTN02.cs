@@ -9,12 +9,10 @@ namespace ArgusCR1000.Sales.Templates
         {
             InitializeComponent();           
         }
-
         protected override string dictionaryStore()
         {
             return "CR1000.SAQTN02";
         }
-
         protected override void labelsText()
         {
             base.labelsText();

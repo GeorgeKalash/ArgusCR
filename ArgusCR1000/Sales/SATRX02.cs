@@ -18,7 +18,6 @@ namespace ArgusCR1000.Sales.Templates
             DataSource = CreateDataSourceFromText();
             base.OnBeforePrint(e);
         }
-
         private void Detail_BeforePrint(object sender, PrintEventArgs e)
         {
         }
