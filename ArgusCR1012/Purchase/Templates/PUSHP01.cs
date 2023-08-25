@@ -32,8 +32,9 @@ namespace ArgusCR1012.Purchase.Templates
             date_data.Text = webObject.record.header.date.ToString(sessionInfo.dateFormat);
             plantName_data.Text = webObject.record.header.plantName;
             siteName_data.Text = webObject.record.header.siteName;
-            //poRef_data.Text = webObject.record.header.poRef;
 
+            ArgusDS.Purchase.ShipmentItem firstRow = webObject.record.items[0];
+            poRef_data.Text = firstRow.poRef;
 
             printSignature_lbl.Text = reportSignature();
             base.OnBeforePrint(e);

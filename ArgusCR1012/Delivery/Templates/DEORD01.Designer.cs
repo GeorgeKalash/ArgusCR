@@ -283,7 +283,6 @@ namespace ArgusCR1012.Delivery.Templates
             this.deliveryNo_data.StylePriority.UseFont = false;
             this.deliveryNo_data.StylePriority.UsePadding = false;
             this.deliveryNo_data.StylePriority.UseTextAlignment = false;
-            this.deliveryNo_data.Text = "deliveryNo_data";
             this.deliveryNo_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             this.deliveryNo_data.Weight = 6.1445704261418648D;
             // 
@@ -311,7 +310,6 @@ namespace ArgusCR1012.Delivery.Templates
             this.deliveryDate_data.StylePriority.UseFont = false;
             this.deliveryDate_data.StylePriority.UsePadding = false;
             this.deliveryDate_data.StylePriority.UseTextAlignment = false;
-            this.deliveryDate_data.Text = "deliveryDate_data";
             this.deliveryDate_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             this.deliveryDate_data.TextFormatString = "{0:dd/MM/yyyy}";
             this.deliveryDate_data.Weight = 5.4726571548084912D;
@@ -354,7 +352,6 @@ namespace ArgusCR1012.Delivery.Templates
             this.soRef_data.StylePriority.UseBorders = false;
             this.soRef_data.StylePriority.UsePadding = false;
             this.soRef_data.StylePriority.UseTextAlignment = false;
-            this.soRef_data.Text = "soRef_data";
             this.soRef_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             this.soRef_data.Weight = 10.763403963346132D;
             // 
@@ -394,7 +391,6 @@ namespace ArgusCR1012.Delivery.Templates
             this.spName_data.StylePriority.UseBackColor = false;
             this.spName_data.StylePriority.UsePadding = false;
             this.spName_data.StylePriority.UseTextAlignment = false;
-            this.spName_data.Text = "spName_data";
             this.spName_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             this.spName_data.Weight = 13.884289375693315D;
             // 
@@ -436,7 +432,6 @@ namespace ArgusCR1012.Delivery.Templates
             this.spCellPhone_data.StylePriority.UseBorders = false;
             this.spCellPhone_data.StylePriority.UsePadding = false;
             this.spCellPhone_data.StylePriority.UseTextAlignment = false;
-            this.spCellPhone_data.Text = "spCellPhone_data";
             this.spCellPhone_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             this.spCellPhone_data.Weight = 13.884289382508026D;
             // 
@@ -499,7 +494,6 @@ namespace ArgusCR1012.Delivery.Templates
             this.clientRef_data.StylePriority.UseFont = false;
             this.clientRef_data.StylePriority.UsePadding = false;
             this.clientRef_data.StylePriority.UseTextAlignment = false;
-            this.clientRef_data.Text = "clientRef_data";
             this.clientRef_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             this.clientRef_data.Weight = 2.4218373793299781D;
             // 
@@ -535,7 +529,6 @@ namespace ArgusCR1012.Delivery.Templates
             this.clientName_data.StylePriority.UseBackColor = false;
             this.clientName_data.StylePriority.UsePadding = false;
             this.clientName_data.StylePriority.UseTextAlignment = false;
-            this.clientName_data.Text = "clientName_data";
             this.clientName_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             this.clientName_data.Weight = 2.4218374536538665D;
             // 
@@ -575,7 +568,6 @@ namespace ArgusCR1012.Delivery.Templates
             this.contactName_data.StylePriority.UseBorders = false;
             this.contactName_data.StylePriority.UsePadding = false;
             this.contactName_data.StylePriority.UseTextAlignment = false;
-            this.contactName_data.Text = "contactName_data.";
             this.contactName_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             this.contactName_data.Weight = 2.4218374536538665D;
             // 
@@ -618,7 +610,6 @@ namespace ArgusCR1012.Delivery.Templates
             this.clientCellPhone_data.StylePriority.UseBorders = false;
             this.clientCellPhone_data.StylePriority.UsePadding = false;
             this.clientCellPhone_data.StylePriority.UseTextAlignment = false;
-            this.clientCellPhone_data.Text = "clientCellPhone_data";
             this.clientCellPhone_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             this.clientCellPhone_data.Weight = 2.421837310373784D;
             // 
@@ -1179,7 +1170,6 @@ namespace ArgusCR1012.Delivery.Templates
             this.deliveryLocation_data.StylePriority.UseBorders = false;
             this.deliveryLocation_data.StylePriority.UsePadding = false;
             this.deliveryLocation_data.StylePriority.UseTextAlignment = false;
-            this.deliveryLocation_data.Text = "deliveryLocation_data";
             this.deliveryLocation_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             // 
             // deliveryLocation_lbl
@@ -1251,7 +1241,6 @@ namespace ArgusCR1012.Delivery.Templates
             this.driverCellPhone_data.StylePriority.UseBorders = false;
             this.driverCellPhone_data.StylePriority.UsePadding = false;
             this.driverCellPhone_data.StylePriority.UseTextAlignment = false;
-            this.driverCellPhone_data.Text = "driverCellPhone_data";
             this.driverCellPhone_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             // 
             // driverName_data
@@ -1267,7 +1256,6 @@ namespace ArgusCR1012.Delivery.Templates
             this.driverName_data.StylePriority.UseBorders = false;
             this.driverName_data.StylePriority.UsePadding = false;
             this.driverName_data.StylePriority.UseTextAlignment = false;
-            this.driverName_data.Text = "driverName_data";
             this.driverName_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             // 
             // driverCellPhone_lbl

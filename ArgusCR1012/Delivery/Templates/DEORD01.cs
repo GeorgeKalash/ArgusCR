@@ -27,24 +27,27 @@ namespace ArgusCR1012.Delivery.Templates
             SharedClasses.JsonProtocol.GetStructure<ArgusDS.Delivery.Reports.OrderPrintLayout> webObject = deserializeGet<ArgusDS.Delivery.Reports.OrderPrintLayout>();
             DataSource = webObject.record.items;
 
+            ArgusDS.Delivery.OrderItemView firstRow = webObject.record.items[0];
+            soRef_data.Text = firstRow.soRef;
+
             companyName_data.Text = webObject.record.companyInfo.name;
             taxNo_data.Text = webObject.record.companyInfo.taxNo;
 
-            clientRef_data.Text = webObject.record.header.clientRef; 
-            clientName_data.Text = webObject.record.header.clientName;
+            clientRef_data.Text = webObject.record.orderView.clientRef; 
+            clientName_data.Text = webObject.record.orderView.clientName;
             contactName_data.Text = webObject.record.shipAddress?.name;  
             clientCellPhone_data.Text = webObject.record.shipAddress?.phone; 
 
-            deliveryNo_data.Text = webObject.record.header.reference; 
-            deliveryDate_data.Text = ((DateTime)webObject.record.header.date).ToString(sessionInfo.dateFormat);
-           // soRef_data.Text = webObject.record.header.soRef;
-            spName_data.Text = webObject.record.header.spName;
-            spCellPhone_data.Text = webObject.record.header.spCellPhone;
+            deliveryNo_data.Text = webObject.record.orderView.reference; 
+            deliveryDate_data.Text = ((DateTime)webObject.record.orderView.date).ToString(sessionInfo.dateFormat);
+    
+            spName_data.Text = webObject.record.orderView.spName;
+            spCellPhone_data.Text = webObject.record.orderView.spCellPhone;
 
             deliveryLocation_data.Text = string.Format("{0}, {1}", webObject.record.shipAddress?.city,webObject.record.shipAddress?.countryName);
            
-            driverName_data.Text = webObject.record.header.driverName;
-            driverCellPhone_data.Text = webObject.record.header.driverCellPhone;
+            driverName_data.Text = webObject.record.orderView.driverName;
+            driverCellPhone_data.Text = webObject.record.orderView.driverCellPhone;
 
             base.OnBeforePrint(e);
         }
