@@ -1109,11 +1109,11 @@ namespace ArgusCR1029.Purchase.Templates
             this.description_data.BackColor = System.Drawing.Color.Transparent;
             this.description_data.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.description_data.Font = new System.Drawing.Font("Times New Roman", 9.75F);
-            this.description_data.LocationFloat = new DevExpress.Utils.PointFloat(101.8577F, 12.5F);
+            this.description_data.LocationFloat = new DevExpress.Utils.PointFloat(159.5659F, 12.5F);
             this.description_data.Multiline = true;
             this.description_data.Name = "description_data";
             this.description_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(7, 2, 8, 0, 100F);
-            this.description_data.SizeF = new System.Drawing.SizeF(367.761F, 116.6667F);
+            this.description_data.SizeF = new System.Drawing.SizeF(334.0111F, 116.6667F);
             this.description_data.StylePriority.UseBackColor = false;
             this.description_data.StylePriority.UseBorders = false;
             this.description_data.StylePriority.UseFont = false;
@@ -1124,16 +1124,16 @@ namespace ArgusCR1029.Purchase.Templates
             this.description_lbl.BackColor = System.Drawing.Color.Transparent;
             this.description_lbl.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.description_lbl.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold);
-            this.description_lbl.LocationFloat = new DevExpress.Utils.PointFloat(10.0001F, 12.5F);
+            this.description_lbl.LocationFloat = new DevExpress.Utils.PointFloat(10.00001F, 12.5F);
             this.description_lbl.Multiline = true;
             this.description_lbl.Name = "description_lbl";
             this.description_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(7, 2, 8, 0, 100F);
-            this.description_lbl.SizeF = new System.Drawing.SizeF(91.85764F, 28.9581F);
+            this.description_lbl.SizeF = new System.Drawing.SizeF(149.5659F, 28.9581F);
             this.description_lbl.StylePriority.UseBackColor = false;
             this.description_lbl.StylePriority.UseBorders = false;
             this.description_lbl.StylePriority.UseFont = false;
             this.description_lbl.StylePriority.UsePadding = false;
-            this.description_lbl.Text = "Description:";
+            this.description_lbl.Text = "Terms and Conditions:";
             // 
             // xrTable8
             // 

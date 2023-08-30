@@ -2,7 +2,6 @@
 using System;
 using System.Collections;
 using System.ComponentModel;
-using System.Drawing;
 using System.Drawing.Printing;
 
 namespace ArgusCR1029.Purchase.Templates
@@ -79,7 +78,6 @@ namespace ArgusCR1029.Purchase.Templates
             deliveryDate2_lbl.Text = labelText(24);
 
             description_lbl.Text = labelText(25);
-
         }
         protected override string dictionaryStore()
         {
