@@ -56,7 +56,6 @@ namespace ArgusCR1029.Inventory
             description_lbl.Text = labelText(14);
             status_lbl.Text = labelText(15);
             transferRef_lbl.Text = labelText(16);
-
         }
 
         protected override string dictionaryStore()
