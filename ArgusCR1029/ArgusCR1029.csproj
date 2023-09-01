@@ -436,12 +436,6 @@
     <Compile Include="Inventory\IV102B\IV102B.Designer.cs">
       <DependentUpon>IV102B.cs</DependentUpon>
     </Compile>
-    <Compile Include="Inventory\Templates\IV102AR.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Inventory\Templates\IV102AR.Designer.cs">
-      <DependentUpon>IV102AR.cs</DependentUpon>
-    </Compile>
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -927,9 +921,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Inventory\IV102B\IV102B.resx">
       <DependentUpon>IV102B.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Inventory\Templates\IV102AR.resx">
-      <DependentUpon>IV102AR.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
