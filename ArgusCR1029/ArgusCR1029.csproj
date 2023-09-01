@@ -406,6 +406,12 @@
     <Compile Include="Inventory\IV439.Designer.cs">
       <DependentUpon>IV439.cs</DependentUpon>
     </Compile>
+    <Compile Include="Inventory\Templates\IV102AR.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Inventory\Templates\IV102AR.Designer.cs">
+      <DependentUpon>IV102AR.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -440,6 +446,12 @@
     </Compile>
     <Compile Include="Purchase\Templates\PU101.Designer.cs">
       <DependentUpon>PU101.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\Templates\PU103.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Purchase\Templates\PU103.Designer.cs">
+      <DependentUpon>PU103.cs</DependentUpon>
     </Compile>
     <Compile Include="Sales\SA204_L1.cs">
       <SubType>Component</SubType>
@@ -859,6 +871,9 @@
     <EmbeddedResource Include="Inventory\IV439.resx">
       <DependentUpon>IV439.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\Templates\IV102AR.resx">
+      <DependentUpon>IV102AR.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -877,6 +892,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Purchase\Templates\PU101.resx">
       <DependentUpon>PU101.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\Templates\PU103.resx">
+      <DependentUpon>PU103.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Sales\SA204_L1.resx">
       <DependentUpon>SA204_L1.cs</DependentUpon>
