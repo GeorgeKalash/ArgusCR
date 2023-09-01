@@ -49,7 +49,7 @@ namespace ArgusCR1029.Inventory
             baseQty_lbl.Text = labelText(10);
             weight2_lbl.Text = labelText(11);
             description_lbl.Text = labelText(12);
-            xrTableCell15.Text = labelText(13);
+            status_lbl.Text = labelText(13);
             transferRef_lbl.Text = labelText(14);
 
             startDate_lbl.Text = labelText(15);
