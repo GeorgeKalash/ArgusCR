@@ -39,7 +39,6 @@ namespace ArgusCR1029.Inventory.IV102B
             this.MetalSubReports = new DevExpress.XtraReports.UI.XRSubreport();
             this.TopMargin = new DevExpress.XtraReports.UI.TopMarginBand();
             this.BottomMargin = new DevExpress.XtraReports.UI.BottomMarginBand();
-            this.ReportFooter = new DevExpress.XtraReports.UI.ReportFooterBand();
             this.ReportHeader = new DevExpress.XtraReports.UI.ReportHeaderBand();
             this.xrTable15 = new DevExpress.XtraReports.UI.XRTable();
             this.xrTableRow29 = new DevExpress.XtraReports.UI.XRTableRow();
@@ -116,11 +115,6 @@ namespace ArgusCR1029.Inventory.IV102B
             // 
             this.BottomMargin.HeightF = 0F;
             this.BottomMargin.Name = "BottomMargin";
-            // 
-            // ReportFooter
-            // 
-            this.ReportFooter.HeightF = 108.2986F;
-            this.ReportFooter.Name = "ReportFooter";
             // 
             // ReportHeader
             // 
@@ -423,7 +417,6 @@ namespace ArgusCR1029.Inventory.IV102B
             this.TopMargin,
             this.BottomMargin,
             this.Detail,
-            this.ReportFooter,
             this.ReportHeader});
             this.Font = new System.Drawing.Font("Arial", 9.75F);
             this.Margins = new System.Drawing.Printing.Margins(0, 0, 36, 0);
@@ -443,7 +436,6 @@ namespace ArgusCR1029.Inventory.IV102B
         private DevExpress.XtraReports.UI.TopMarginBand TopMargin;
         private DevExpress.XtraReports.UI.BottomMarginBand BottomMargin;
         private DevExpress.XtraReports.UI.SubBand InvoiceReceiptSubBand;
-        private DevExpress.XtraReports.UI.ReportFooterBand ReportFooter;
         private DevExpress.XtraReports.UI.XRSubreport TransferSubReports;
         private DevExpress.XtraReports.UI.XRSubreport MetalSubReports;
         private DevExpress.XtraReports.UI.DetailBand Detail;
