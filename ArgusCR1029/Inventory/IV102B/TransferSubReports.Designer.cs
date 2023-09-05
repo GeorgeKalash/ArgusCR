@@ -215,7 +215,7 @@ namespace ArgusCR1029.Inventory.IV102B
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell14.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[metalPurity]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[metalRef]")});
             this.xrTableCell14.Font = new System.Drawing.Font("Times New Roman", 8F);
             this.xrTableCell14.Multiline = true;
             this.xrTableCell14.Name = "xrTableCell14";
@@ -468,7 +468,7 @@ namespace ArgusCR1029.Inventory.IV102B
             this.xrTable6.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable6.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow12});
-            this.xrTable6.SizeF = new System.Drawing.SizeF(227.2083F, 25.00038F);
+            this.xrTable6.SizeF = new System.Drawing.SizeF(201.1666F, 25.00038F);
             // 
             // ReportFooter
             // 
@@ -476,17 +476,17 @@ namespace ArgusCR1029.Inventory.IV102B
             this.xrTable4,
             this.xrTable3,
             this.xrTable6});
-            this.ReportFooter.HeightF = 35.0004F;
+            this.ReportFooter.HeightF = 35.00038F;
             this.ReportFooter.Name = "ReportFooter";
             // 
             // xrTable4
             // 
-            this.xrTable4.LocationFloat = new DevExpress.Utils.PointFloat(543.7916F, 10.00001F);
+            this.xrTable4.LocationFloat = new DevExpress.Utils.PointFloat(546.875F, 9.99999F);
             this.xrTable4.Name = "xrTable4";
             this.xrTable4.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable4.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow4});
-            this.xrTable4.SizeF = new System.Drawing.SizeF(227.2083F, 25.00039F);
+            this.xrTable4.SizeF = new System.Drawing.SizeF(201.1666F, 25.00039F);
             // 
             // xrTableRow4
             // 
@@ -539,12 +539,12 @@ namespace ArgusCR1029.Inventory.IV102B
             // 
             // xrTable3
             // 
-            this.xrTable3.LocationFloat = new DevExpress.Utils.PointFloat(285.4585F, 10.00001F);
+            this.xrTable3.LocationFloat = new DevExpress.Utils.PointFloat(284.375F, 10.00001F);
             this.xrTable3.Name = "xrTable3";
             this.xrTable3.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable3.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow3});
-            this.xrTable3.SizeF = new System.Drawing.SizeF(227.2083F, 25.00037F);
+            this.xrTable3.SizeF = new System.Drawing.SizeF(201.1666F, 25.00037F);
             // 
             // xrTableRow3
             // 
