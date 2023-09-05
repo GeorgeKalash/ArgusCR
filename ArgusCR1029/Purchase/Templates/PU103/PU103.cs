@@ -27,10 +27,6 @@ namespace ArgusCR1029.Purchase.Templates.PU103
 
             SharedClasses.JsonProtocol.GetStructure<ArgusDS.Purchase.Reports.InvoicePrintLayout> webObject = deserializeGet<ArgusDS.Purchase.Reports.InvoicePrintLayout>();
 
-            logo_data.ImageUrl = companyInfo.logoUrl;
-            companyName_data.Text = companyInfo.name;
-            taxNo_data.Text = companyInfo.taxNo;
-
             siteName_data.Text = webObject.record.header.siteName;
             vendorName_data.Text = webObject.record.header.vendorName;
 
@@ -49,7 +45,6 @@ namespace ArgusCR1029.Purchase.Templates.PU103
         protected override void labelsText()
         {
         }
-
         protected override string dictionaryStore()
         {
             return "CR1029.PU103";
