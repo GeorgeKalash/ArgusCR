@@ -27,10 +27,6 @@ namespace ArgusCR1029.Inventory.IV102B
 
             SharedClasses.JsonProtocol.GetStructure<ArgusDS.Inventory.Reports.IV102> webObject = deserializeGet<ArgusDS.Inventory.Reports.IV102>();
 
-            logo_data.ImageUrl = companyInfo.logoUrl;
-            companyName_data.Text = companyInfo.name;
-            taxNo_data.Text = companyInfo.taxNo;
-
             reference_data.Text = webObject.record.header.reference;
             date_data.Text = webObject.record.header.date.ToString("dd/MM/yyyy");
 
@@ -47,7 +43,6 @@ namespace ArgusCR1029.Inventory.IV102B
         protected override void labelsText()
         {
         }
-
         protected override string dictionaryStore()
         {
             return "CR1029.IV102";
