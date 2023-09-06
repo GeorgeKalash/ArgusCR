@@ -232,6 +232,12 @@
     <Compile Include="Financials\FI402_L1.Designer.cs">
       <DependentUpon>FI402_L1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Financials\FI409M2.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Financials\FI409M2.Designer.cs">
+      <DependentUpon>FI409M2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Inventory\IV01.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -819,6 +825,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Financials\FI402_L1.resx">
       <DependentUpon>FI402_L1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Financials\FI409M2.resx">
+      <DependentUpon>FI409M2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Inventory\IV01.resx">
       <DependentUpon>IV01.cs</DependentUpon>
