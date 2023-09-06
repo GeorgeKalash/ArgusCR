@@ -2,7 +2,6 @@
 using System;
 using System.Collections;
 using System.ComponentModel;
-using System.Drawing;
 using System.Drawing.Printing;
 
 namespace ArgusCR1029.Financials
@@ -62,7 +61,6 @@ namespace ArgusCR1029.Financials
             accRef_lbl.Text = labelText(18);
             salesZone_lbl.Text = labelText(19);
             szRef_lbl.Text = labelText(20);
-
         }
         protected override string dictionaryStore()
         {
