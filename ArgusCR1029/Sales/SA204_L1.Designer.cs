@@ -362,7 +362,7 @@ namespace ArgusCR1029.Sales
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell24.BorderWidth = 1F;
             this.xrTableCell24.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[subtotal]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[laborPrice]")});
             this.xrTableCell24.Multiline = true;
             this.xrTableCell24.Name = "xrTableCell24";
             this.xrTableCell24.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 5, 0, 0, 100F);
@@ -506,11 +506,11 @@ namespace ArgusCR1029.Sales
             // title_lbl
             // 
             this.title_lbl.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.title_lbl.LocationFloat = new DevExpress.Utils.PointFloat(219.3123F, 29.08331F);
+            this.title_lbl.LocationFloat = new DevExpress.Utils.PointFloat(173.479F, 25F);
             this.title_lbl.Multiline = true;
             this.title_lbl.Name = "title_lbl";
             this.title_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.title_lbl.SizeF = new System.Drawing.SizeF(733.2294F, 39.66666F);
+            this.title_lbl.SizeF = new System.Drawing.SizeF(779.0626F, 39.66666F);
             this.title_lbl.StylePriority.UseFont = false;
             this.title_lbl.StylePriority.UseTextAlignment = false;
             this.title_lbl.Text = "Return On Invoice List";
@@ -672,7 +672,7 @@ namespace ArgusCR1029.Sales
             // 
             this.logo_data.LocationFloat = new DevExpress.Utils.PointFloat(12.50002F, 0F);
             this.logo_data.Name = "logo_data";
-            this.logo_data.SizeF = new System.Drawing.SizeF(206.8123F, 113F);
+            this.logo_data.SizeF = new System.Drawing.SizeF(160.979F, 113F);
             this.logo_data.Sizing = DevExpress.XtraPrinting.ImageSizeMode.ZoomImage;
             // 
             // GroupHeader1
