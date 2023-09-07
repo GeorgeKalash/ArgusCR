@@ -27,7 +27,6 @@ namespace ArgusCR1029.Financials
             accountGrp_param.Text = Parameters.Count > 3 ? Parameters[3].Value.ToString() : string.Empty;
             plantGrp_param.Text = Parameters.Count > 9 ? Parameters[9].Value.ToString() : string.Empty;
             plantRef_param.Text = Parameters.Count > 7 ? Parameters[7].Value.ToString() : string.Empty;
-            accRef_param.Text = Parameters.Count > 4 ? Parameters[4].Value.ToString() : string.Empty;
             salesZone_param.Text = Parameters.Count > 8 ? Parameters[8].Value.ToString() : string.Empty;
             szRef_param.Text = Parameters.Count > 10 ? Parameters[10].Value.ToString() : string.Empty;
 
@@ -58,9 +57,8 @@ namespace ArgusCR1029.Financials
             accountGrp_lbl.Text = labelText(15);
             plantGrp_lbl.Text = labelText(16);
             plantRef_lbl.Text = labelText(17);
-            accRef_lbl.Text = labelText(18);
-            salesZone_lbl.Text = labelText(19);
-            szRef_lbl.Text = labelText(20);
+            salesZone_lbl.Text = labelText(18);
+            szRef_lbl.Text = labelText(19);
         }
         protected override string dictionaryStore()
         {
