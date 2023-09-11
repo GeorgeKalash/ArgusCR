@@ -25,9 +25,15 @@ namespace ArgusCR1029.Financials
 
             startDate_param.Text = Parameters.Count > 0 ? Parameters[0].Value.ToString() : string.Empty;
             endDate_param.Text = Parameters.Count > 1 ? Parameters[1].Value.ToString() : string.Empty;
+            systemFunction_param.Text = Parameters.Count > 2 ? Parameters[2].Value.ToString() : string.Empty;
             plant_param.Text = Parameters.Count > 3 ? Parameters[3].Value.ToString() : string.Empty;
-            account_param.Text = Parameters.Count > 5 ? Parameters[5].Value.ToString() : string.Empty;
-            siteParam_param.Text = Parameters.Count > 6 ? Parameters[6].Value.ToString() : string.Empty;
+            plantGroup_param.Text = Parameters.Count > 4 ? Parameters[4].Value.ToString() : string.Empty;
+            siteParam_param.Text = Parameters.Count > 5 ? Parameters[5].Value.ToString() : string.Empty;
+            account_param.Text = Parameters.Count > 6 ? Parameters[6].Value.ToString() : string.Empty;
+            statusParam_param.Text = Parameters.Count > 7 ? Parameters[7].Value.ToString() : string.Empty;
+            accountGroup_param.Text = Parameters.Count > 8 ? Parameters[8].Value.ToString() : string.Empty;
+            referenceParam_param.Text = Parameters.Count > 9 ? Parameters[9].Value.ToString() : string.Empty;
+            descriptionParam_param.Text = Parameters.Count > 10 ? Parameters[10].Value.ToString() : string.Empty;
 
             logo_data.ImageUrl = companyInfo.logoUrl;
 
@@ -58,9 +64,15 @@ namespace ArgusCR1029.Financials
 
             startDate_lbl.Text = labelText(18);
             endDate_lbl.Text = labelText(19);
-            plant_lbl.Text = labelText(20);
-            siteParam_lbl.Text = labelText(21);
-            account_lbl.Text = labelText(22);
+            systemFunction_lbl.Text = labelText(20);
+            plant_lbl.Text = labelText(21);
+            plantGroup_lbl.Text = labelText(22);
+            siteParam_lbl.Text = labelText(23);
+            account_lbl.Text = labelText(24);
+            statusParam_lbl.Text = labelText(25);
+            accountGroup_lbl.Text = labelText(26);
+            referenceParam_lbl.Text = labelText(27);
+            descriptionParam_lbl.Text = labelText(28);
         }
         protected override void OnDataSourceRowChanged(DataSourceRowEventArgs e)
         {
