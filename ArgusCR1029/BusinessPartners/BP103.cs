@@ -25,6 +25,12 @@ namespace ArgusCR1029.BusinessPartners
             logo_data.ImageUrl = companyInfo.logoUrl;
 
             bpGrp_param.Text = Parameters.Count > 0 ? Parameters[0].Value.ToString() : string.Empty;
+            saleZone_param.Text = Parameters.Count > 1 ? Parameters[1].Value.ToString() : string.Empty;
+            city2_param.Text = Parameters.Count > 2 ? Parameters[2].Value.ToString() : string.Empty;
+            state2_param.Text = Parameters.Count > 3 ? Parameters[3].Value.ToString() : string.Empty;
+            country_param.Text = Parameters.Count > 4 ? Parameters[4].Value.ToString() : string.Empty;
+            clientGroup2_param.Text = Parameters.Count > 5 ? Parameters[5].Value.ToString() : string.Empty;
+            activeStatus_param.Text = Parameters.Count > 6 ? Parameters[6].Value.ToString() : string.Empty;
 
             printSignature.Text = reportSignature();
             base.OnBeforePrint(e);
@@ -46,6 +52,12 @@ namespace ArgusCR1029.BusinessPartners
             isInactive_lbl.Text = labelText(11);
 
             bpGrp_lbl.Text = labelText(12);
+            saleZone_lbl.Text = labelText(13);
+            city2_lbl.Text = labelText(14);
+            state2_lbl.Text = labelText(15);
+            country_lbl.Text = labelText(16);
+            clientGroup2_lbl.Text = labelText(17);
+            activeStatus_lbl.Text = labelText(18);
         }
         protected override string dictionaryStore()
         {

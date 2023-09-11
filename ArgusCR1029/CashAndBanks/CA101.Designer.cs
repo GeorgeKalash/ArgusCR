@@ -161,7 +161,7 @@ namespace ArgusCR1029.CashAndBanks
             this.dtName_lbl.StylePriority.UseBorders = false;
             this.dtName_lbl.StylePriority.UseFont = false;
             this.dtName_lbl.Text = "Document Type:";
-            this.dtName_lbl.Weight = 0.70286305895612622D;
+            this.dtName_lbl.Weight = 0.55738764186187773D;
             // 
             // dtName_data
             // 
@@ -173,8 +173,7 @@ namespace ArgusCR1029.CashAndBanks
             this.dtName_data.Name = "dtName_data";
             this.dtName_data.StylePriority.UseBackColor = false;
             this.dtName_data.StylePriority.UseBorders = false;
-            this.dtName_data.Text = "dtName_data";
-            this.dtName_data.Weight = 2.2971369410438736D;
+            this.dtName_data.Weight = 2.4426123581381218D;
             // 
             // xrTableRow2
             // 
@@ -197,7 +196,7 @@ namespace ArgusCR1029.CashAndBanks
             this.reference_lbl.StylePriority.UseBorders = false;
             this.reference_lbl.StylePriority.UseFont = false;
             this.reference_lbl.Text = "Reference:";
-            this.reference_lbl.Weight = 0.70286318045699248D;
+            this.reference_lbl.Weight = 0.55738758111144471D;
             // 
             // reference_data
             // 
@@ -209,8 +208,7 @@ namespace ArgusCR1029.CashAndBanks
             this.reference_data.Name = "reference_data";
             this.reference_data.StylePriority.UseBackColor = false;
             this.reference_data.StylePriority.UseBorders = false;
-            this.reference_data.Text = "reference_data";
-            this.reference_data.Weight = 2.2971368195430073D;
+            this.reference_data.Weight = 2.442612418888555D;
             // 
             // xrTableRow4
             // 
@@ -233,7 +231,7 @@ namespace ArgusCR1029.CashAndBanks
             this.date_lbl.StylePriority.UseBorders = false;
             this.date_lbl.StylePriority.UseFont = false;
             this.date_lbl.Text = "Date:";
-            this.date_lbl.Weight = 0.70286305895612622D;
+            this.date_lbl.Weight = 0.5573875811114446D;
             // 
             // date_data
             // 
@@ -245,8 +243,7 @@ namespace ArgusCR1029.CashAndBanks
             this.date_data.Name = "date_data";
             this.date_data.StylePriority.UseBackColor = false;
             this.date_data.StylePriority.UseBorders = false;
-            this.date_data.Text = "date_data";
-            this.date_data.Weight = 2.2971369410438736D;
+            this.date_data.Weight = 2.442612418888555D;
             // 
             // xrTableRow6
             // 
@@ -269,7 +266,7 @@ namespace ArgusCR1029.CashAndBanks
             this.currencyRef_lbl.StylePriority.UseBorders = false;
             this.currencyRef_lbl.StylePriority.UseFont = false;
             this.currencyRef_lbl.Text = "Currency:";
-            this.currencyRef_lbl.Weight = 0.70286319221169724D;
+            this.currencyRef_lbl.Weight = 0.55738759286614947D;
             // 
             // currencyRef_data
             // 
@@ -281,8 +278,7 @@ namespace ArgusCR1029.CashAndBanks
             this.currencyRef_data.Name = "currencyRef_data";
             this.currencyRef_data.StylePriority.UseBackColor = false;
             this.currencyRef_data.StylePriority.UseBorders = false;
-            this.currencyRef_data.Text = "currencyRef_data";
-            this.currencyRef_data.Weight = 2.2971368077883025D;
+            this.currencyRef_data.Weight = 2.44261240713385D;
             // 
             // xrTableRow7
             // 
@@ -306,7 +302,7 @@ namespace ArgusCR1029.CashAndBanks
             this.fromCAName_lbl.StylePriority.UseBorders = false;
             this.fromCAName_lbl.StylePriority.UseFont = false;
             this.fromCAName_lbl.Text = "From:";
-            this.fromCAName_lbl.Weight = 0.70286319221169724D;
+            this.fromCAName_lbl.Weight = 0.55738759286614947D;
             // 
             // fromCARef_data
             // 
@@ -317,8 +313,7 @@ namespace ArgusCR1029.CashAndBanks
             this.fromCARef_data.Name = "fromCARef_data";
             this.fromCARef_data.StylePriority.UseBackColor = false;
             this.fromCARef_data.StylePriority.UseBorders = false;
-            this.fromCARef_data.Text = "fromCARef_data";
-            this.fromCARef_data.Weight = 0.47257002520170954D;
+            this.fromCARef_data.Weight = 0.61804562454725731D;
             // 
             // fromCAName_data
             // 
@@ -329,7 +324,6 @@ namespace ArgusCR1029.CashAndBanks
             this.fromCAName_data.Name = "fromCAName_data";
             this.fromCAName_data.StylePriority.UseBackColor = false;
             this.fromCAName_data.StylePriority.UseBorders = false;
-            this.fromCAName_data.Text = "fromCAName_data";
             this.fromCAName_data.Weight = 1.824566782586593D;
             // 
             // xrTableRow8
@@ -354,7 +348,7 @@ namespace ArgusCR1029.CashAndBanks
             this.toCAName_lbl.StylePriority.UseBorders = false;
             this.toCAName_lbl.StylePriority.UseFont = false;
             this.toCAName_lbl.Text = "To:";
-            this.toCAName_lbl.Weight = 0.70286307071083109D;
+            this.toCAName_lbl.Weight = 0.55738771436701573D;
             // 
             // toCARef_data
             // 
@@ -365,8 +359,7 @@ namespace ArgusCR1029.CashAndBanks
             this.toCARef_data.Name = "toCARef_data";
             this.toCARef_data.StylePriority.UseBackColor = false;
             this.toCARef_data.StylePriority.UseBorders = false;
-            this.toCARef_data.Text = "toCARef_data";
-            this.toCARef_data.Weight = 0.47257008595214267D;
+            this.toCARef_data.Weight = 0.618045442295958D;
             // 
             // toCAName_data
             // 
@@ -377,7 +370,6 @@ namespace ArgusCR1029.CashAndBanks
             this.toCAName_data.Name = "toCAName_data";
             this.toCAName_data.StylePriority.UseBackColor = false;
             this.toCAName_data.StylePriority.UseBorders = false;
-            this.toCAName_data.Text = "toCAName_data";
             this.toCAName_data.Weight = 1.8245668433370261D;
             // 
             // xrTableRow9
@@ -401,7 +393,7 @@ namespace ArgusCR1029.CashAndBanks
             this.amount_lbl.StylePriority.UseBorders = false;
             this.amount_lbl.StylePriority.UseFont = false;
             this.amount_lbl.Text = "Amount:";
-            this.amount_lbl.Weight = 0.70286319221169724D;
+            this.amount_lbl.Weight = 0.55738771436701562D;
             // 
             // amount_data
             // 
@@ -413,8 +405,7 @@ namespace ArgusCR1029.CashAndBanks
             this.amount_data.Name = "amount_data";
             this.amount_data.StylePriority.UseBackColor = false;
             this.amount_data.StylePriority.UseBorders = false;
-            this.amount_data.Text = "amount_data";
-            this.amount_data.Weight = 2.2971368077883025D;
+            this.amount_data.Weight = 2.4426122856329839D;
             // 
             // xrTableRow3
             // 
@@ -437,7 +428,7 @@ namespace ArgusCR1029.CashAndBanks
             this.notes_lbl.StylePriority.UseBorders = false;
             this.notes_lbl.StylePriority.UseFont = false;
             this.notes_lbl.Text = "Note:";
-            this.notes_lbl.Weight = 0.70286319221169724D;
+            this.notes_lbl.Weight = 0.55738759286614947D;
             // 
             // notes_data
             // 
@@ -449,8 +440,7 @@ namespace ArgusCR1029.CashAndBanks
             this.notes_data.Name = "notes_data";
             this.notes_data.StylePriority.UseBackColor = false;
             this.notes_data.StylePriority.UseBorders = false;
-            this.notes_data.Text = "notes_data";
-            this.notes_data.Weight = 2.2971368077883025D;
+            this.notes_data.Weight = 2.44261240713385D;
             // 
             // PageFooter
             // 
