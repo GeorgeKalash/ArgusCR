@@ -25,10 +25,13 @@ namespace ArgusCR1029.Financials
             startDate_param.Text = Parameters.Count > 1 ? Parameters[1].Value.ToString() : string.Empty;
             endDate_param.Text = Parameters.Count > 2 ? Parameters[2].Value.ToString() : string.Empty;
             accountGrp_param.Text = Parameters.Count > 3 ? Parameters[3].Value.ToString() : string.Empty;
-            plantGrp_param.Text = Parameters.Count > 9 ? Parameters[9].Value.ToString() : string.Empty;
-            plantRef_param.Text = Parameters.Count > 7 ? Parameters[7].Value.ToString() : string.Empty;
-            salesZone_param.Text = Parameters.Count > 8 ? Parameters[8].Value.ToString() : string.Empty;
-            szRef_param.Text = Parameters.Count > 10 ? Parameters[10].Value.ToString() : string.Empty;
+            account_param.Text = Parameters.Count > 4 ? Parameters[4].Value.ToString() : string.Empty;
+            segment_param.Text = Parameters.Count > 5 ? Parameters[5].Value.ToString() : string.Empty;
+            accountType_param.Text = Parameters.Count > 6 ? Parameters[6].Value.ToString() : string.Empty;
+            plant_param.Text = Parameters.Count > 7 ? Parameters[7].Value.ToString() : string.Empty;
+            level_param.Text = Parameters.Count > 8 ? Parameters[8].Value.ToString() : string.Empty;
+            plantGroup_param.Text = Parameters.Count > 9 ? Parameters[9].Value.ToString() : string.Empty;
+            saleZone_param.Text = Parameters.Count > 10 ? Parameters[10].Value.ToString() : string.Empty;
 
             logo_data.ImageUrl = companyInfo.logoUrl;
 
@@ -55,10 +58,13 @@ namespace ArgusCR1029.Financials
             startDate_lbl.Text = labelText(13);
             endDate_lbl.Text = labelText(14);
             accountGrp_lbl.Text = labelText(15);
-            plantGrp_lbl.Text = labelText(16);
-            plantRef_lbl.Text = labelText(17);
-            salesZone_lbl.Text = labelText(18);
-            szRef_lbl.Text = labelText(19);
+            account_lbl.Text = labelText(16);
+            segment_lbl.Text = labelText(17);
+            accountType_lbl.Text = labelText(18);
+            plant_lbl.Text = labelText(19);
+            level_lbl.Text = labelText(20);
+            plantGroup_lbl.Text = labelText(21);
+            saleZone_lbl.Text = labelText(22);
         }
         protected override string dictionaryStore()
         {

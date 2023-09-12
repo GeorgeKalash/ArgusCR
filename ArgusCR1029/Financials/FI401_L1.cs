@@ -26,7 +26,16 @@ namespace ArgusCR1029.Financials
             year_param.Text = Parameters.Count > 0 ? Parameters[0].Value.ToString() : string.Empty;
             startDate_param.Text = Parameters.Count > 1 ? Parameters[1].Value.ToString() : string.Empty;
             endDate_param.Text = Parameters.Count > 2 ? Parameters[2].Value.ToString() : string.Empty;
-            accountName_param.Text = Parameters.Count > 4 ? Parameters[4].Value.ToString() : string.Empty;
+            account_param.Text = Parameters.Count > 3 ? Parameters[3].Value.ToString() : string.Empty;
+            accountGroup_param.Text = Parameters.Count > 4 ? Parameters[4].Value.ToString() : string.Empty;
+            segment_param.Text = Parameters.Count > 5 ? Parameters[5].Value.ToString() : string.Empty;
+
+            currency_param.Text = Parameters.Count > 6 ? Parameters[6].Value.ToString() : string.Empty;
+            accountBalance_param.Text = Parameters.Count > 7 ? Parameters[7].Value.ToString() : string.Empty;
+            accountType_param.Text = Parameters.Count > 8 ? Parameters[8].Value.ToString() : string.Empty;
+            plant_param.Text = Parameters.Count > 9 ? Parameters[9].Value.ToString() : string.Empty;
+            plantGroup_param.Text = Parameters.Count > 10 ? Parameters[10].Value.ToString() : string.Empty;
+            saleZone_param.Text = Parameters.Count > 11 ? Parameters[11].Value.ToString() : string.Empty;
 
             logo_data.ImageUrl = companyInfo.logoUrl;
 
@@ -60,8 +69,17 @@ namespace ArgusCR1029.Financials
             fiscalYear_lbl.Text = labelText(16);
             startDate_lbl.Text = labelText(17);
             endDate_lbl.Text = labelText(18);
+            account_lbl.Text = labelText(19);
+            accountGroup_lbl.Text = labelText(20);
+            segment_lbl.Text = labelText(21);
+            currency_lbl.Text = labelText(22);
+            accountBalance_lbl.Text = labelText(23);
+            accountType_lbl.Text = labelText(24);
+            plant_lbl.Text = labelText(25);
+            plantGroup_lbl.Text = labelText(26);
+            saleZone_lbl.Text = labelText(27);
 
-            description_lbl.Text = labelText(19);
+            description_lbl.Text = labelText(28);
         }
         protected override string dictionaryStore()
         {
