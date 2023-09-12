@@ -29,6 +29,11 @@ namespace ArgusCR1029.Sales
             plant_param.Text = Parameters.Count > 3 ? Parameters[3].Value.ToString() : string.Empty;
             salesPerson_param.Text = Parameters.Count > 5 ? Parameters[5].Value.ToString() : string.Empty;
             clientRef_param.Text = Parameters.Count > 7 ? Parameters[7].Value.ToString() : string.Empty;
+            site_param.Text = Parameters.Count > 4 ? Parameters[4].Value.ToString() : string.Empty;
+            clientGrp_param.Text = Parameters.Count > 6 ? Parameters[6].Value.ToString() : string.Empty;
+            salesZone_param.Text = Parameters.Count > 8 ? Parameters[8].Value.ToString() : string.Empty;
+            desc_param.Text = Parameters.Count > 9 ? Parameters[9].Value.ToString() : string.Empty;
+            stt_param.Text = Parameters.Count > 10 ? Parameters[10].Value.ToString() : string.Empty;
 
             logo_data.ImageUrl = companyInfo.logoUrl;
 
@@ -67,6 +72,12 @@ namespace ArgusCR1029.Sales
 
             totalSales_lbl.Text = labelText(23);
             total_lbl.Text = labelText(24);
+
+            site_lbl.Text = labelText(25);
+            clientGrp_lbl.Text = labelText(26);
+            salesZone_lbl.Text = labelText(27);
+            description_lbl.Text = labelText(28);
+            stt_lbl.Text = labelText(29);
         }
 
         protected override string dictionaryStore()
