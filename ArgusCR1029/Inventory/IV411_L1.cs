@@ -28,6 +28,11 @@ namespace ArgusCR1029.Inventory
             fiscalYear_param.Text = Parameters.Count > 0 ? Parameters[0].Value.ToString() : string.Empty;
             date_param.Text = Parameters.Count > 1 ? Parameters[1].Value.ToString() : string.Empty;
             siteParam_param.Text = Parameters.Count > 2 ? Parameters[2].Value.ToString() : string.Empty;
+            item_param.Text = Parameters.Count > 3 ? Parameters[3].Value.ToString() : string.Empty;
+            itemCategory_param.Text = Parameters.Count > 4 ? Parameters[4].Value.ToString() : string.Empty;
+            itemGroup_param.Text = Parameters.Count > 5 ? Parameters[5].Value.ToString() : string.Empty;
+            siteGroup_param.Text = Parameters.Count > 6 ? Parameters[6].Value.ToString() : string.Empty;
+            production_param.Text = Parameters.Count > 7 ? Parameters[7].Value.ToString() : string.Empty;
 
             logo_data.ImageUrl = companyInfo.logoUrl;
 
@@ -52,7 +57,11 @@ namespace ArgusCR1029.Inventory
 
             fiscalYear_lbl.Text = labelText(11);
             date_lbl.Text = labelText(12);
-            siteParam_lbl.Text = labelText(13);
+            item_param.Text = labelText(14);
+            itemCategory_lbl.Text = labelText(15);
+            itemGroup_lbl.Text = labelText(16);
+            siteGroup_lbl.Text = labelText(17);
+            production_lbl.Text = labelText(18);
 
         }
         protected override void OnDataSourceRowChanged(DataSourceRowEventArgs e)
