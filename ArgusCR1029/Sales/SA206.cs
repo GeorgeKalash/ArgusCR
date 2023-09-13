@@ -26,6 +26,8 @@ namespace ArgusCR1029.Sales
             siteParam_param.Text = Parameters.Count > 0 ? Parameters[0].Value.ToString() : string.Empty;
             startDate_param.Text = Parameters.Count > 1 ? Parameters[1].Value.ToString() : string.Empty;
             endDate_param.Text = Parameters.Count > 2 ? Parameters[2].Value.ToString() : string.Empty;
+            salesPerson_param.Text = Parameters.Count > 3 ? Parameters[3].Value.ToString() : string.Empty;
+            clientGrp_param.Text = Parameters.Count > 4 ? Parameters[4].Value.ToString() : string.Empty;
 
             logo_data.ImageUrl = companyInfo.logoUrl;
             printSignature.Text = reportSignature();
@@ -52,6 +54,9 @@ namespace ArgusCR1029.Sales
             startDate_lbl.Text = labelText(13);
             endDate_lbl.Text = labelText(14);
             siteParam_lbl.Text = labelText(15);
+            salesPerson_lbl.Text = labelText(16);
+            clientGrp_lbl.Text = labelText(17);
+
         }
         protected override string dictionaryStore()
         {

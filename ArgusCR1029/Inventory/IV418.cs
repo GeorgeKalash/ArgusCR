@@ -30,6 +30,8 @@ namespace ArgusCR1029.Inventory
             endDate_param.Text = Parameters.Count > 2 ? Parameters[2].Value.ToString() : string.Empty;
             item_param.Text = Parameters.Count > 3 ? Parameters[3].Value.ToString() : string.Empty;
             itemCategory_param.Text = Parameters.Count > 4 ? Parameters[4].Value.ToString() : string.Empty;
+            siteGrp_param.Text = Parameters.Count > 5 ? Parameters[5].Value.ToString() : string.Empty;
+            plt_param.Text = Parameters.Count > 6 ? Parameters[6].Value.ToString() : string.Empty;
 
             logo_data.ImageUrl = companyInfo.logoUrl;
            
@@ -60,6 +62,8 @@ namespace ArgusCR1029.Inventory
             endDate_lbl.Text = labelText(16);
             item_lbl.Text = labelText(17);
             itemCategory_lbl.Text = labelText(18);
+            siteGrp_lbl.Text = labelText(20);
+            plt_lbl.Text = labelText(21);
 
             plant_lbl.Text = labelText(19);
         }

@@ -25,7 +25,17 @@ namespace ArgusCR1029.Sales
 
             startDate_param.Text = Parameters.Count > 0 ? Parameters[0].Value.ToString() : string.Empty;
             endDate_param.Text = Parameters.Count > 1 ? Parameters[1].Value.ToString() : string.Empty;
-            level_param.Text = Parameters.Count > 2 ? Parameters[2].Value.ToString() : string.Empty;
+            plant_param.Text = Parameters.Count > 2 ? Parameters[2].Value.ToString() : string.Empty;
+            sz_param.Text = Parameters.Count > 3 ? Parameters[3].Value.ToString() : string.Empty;
+            level_param.Text = Parameters.Count > 4 ? Parameters[4].Value.ToString() : string.Empty;
+            client_param.Text = Parameters.Count > 5 ? Parameters[5].Value.ToString() : string.Empty;
+            clientGrp_param.Text = Parameters.Count > 6 ? Parameters[6].Value.ToString() : string.Empty;
+            plantGrp_param.Text = Parameters.Count > 7 ? Parameters[7].Value.ToString() : string.Empty;
+            itemCategory_param.Text = Parameters.Count > 8 ? Parameters[8].Value.ToString() : string.Empty;
+            item_param.Text = Parameters.Count > 9 ? Parameters[9].Value.ToString() : string.Empty;
+            itemGrp_param.Text = Parameters.Count > 10 ? Parameters[10].Value.ToString() : string.Empty;
+            syFunction_param.Text = Parameters.Count > 11 ? Parameters[11].Value.ToString() : string.Empty;
+            production_param.Text = Parameters.Count > 12 ? Parameters[12].Value.ToString() : string.Empty;
 
             logo_data.ImageUrl = companyInfo.logoUrl;
             printSignature.Text = reportSignature();
@@ -50,6 +60,17 @@ namespace ArgusCR1029.Sales
             startDate_lbl.Text = labelText(11);
             endDate_lbl.Text = labelText(12);
             level_lbl.Text = labelText(13);
+            plant_lbl.Text = labelText(14);
+            sz_lbl.Text = labelText(15);
+            client_lbl.Text = labelText(16);
+            clientGrp_lbl.Text = labelText(17);
+            plantGrp_lbl.Text = labelText(18);
+            itemCategory_lbl.Text = labelText(19);
+            item_lbl.Text = labelText(20);
+            itemGrp_lbl.Text = labelText(21);
+            syFunction_lbl.Text = labelText(22);
+            production_lbl.Text = labelText(23);
+
         }
 
         protected override string dictionaryStore()

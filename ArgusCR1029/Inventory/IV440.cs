@@ -27,6 +27,8 @@ namespace ArgusCR1029.Inventory
             startDate_param.Text = Parameters.Count > 1 ? Parameters[1].Value.ToString() : string.Empty;
             endDate_param.Text = Parameters.Count > 2 ? Parameters[2].Value.ToString() : string.Empty;
             site_param.Text = Parameters.Count > 3 ? Parameters[3].Value.ToString() : string.Empty;
+            itemCat_param.Text = Parameters.Count > 4 ? Parameters[4].Value.ToString() : string.Empty;
+            itemGroup_param.Text = Parameters.Count > 5 ? Parameters[5].Value.ToString() : string.Empty;
 
             logo_data.ImageUrl = companyInfo.logoUrl;
 
@@ -51,6 +53,9 @@ namespace ArgusCR1029.Inventory
             startDate_lbl.Text = labelText(10);
             endDate_lbl.Text = labelText(11);
             site_lbl.Text = labelText(12);
+            itemCat_lbl.Text = labelText(13);
+            itemGroup_lbl.Text = labelText(14);
+
         }
         protected override string dictionaryStore()
         {

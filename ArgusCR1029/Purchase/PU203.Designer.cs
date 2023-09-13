@@ -94,13 +94,19 @@ namespace ArgusCR1029.Purchase
             this.xrTableRow10 = new DevExpress.XtraReports.UI.XRTableRow();
             this.currency_lbl = new DevExpress.XtraReports.UI.XRTableCell();
             this.currency_param = new DevExpress.XtraReports.UI.XRTableCell();
-            this.title_lbl = new DevExpress.XtraReports.UI.XRLabel();
             this.xrTableRow4 = new DevExpress.XtraReports.UI.XRTableRow();
             this.siteParam_lbl = new DevExpress.XtraReports.UI.XRTableCell();
             this.siteParam_param = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTableRow5 = new DevExpress.XtraReports.UI.XRTableRow();
             this.systemFunction_lbl = new DevExpress.XtraReports.UI.XRTableCell();
             this.systemFunction_param = new DevExpress.XtraReports.UI.XRTableCell();
+            this.title_lbl = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrTableRow7 = new DevExpress.XtraReports.UI.XRTableRow();
+            this.status_lbl = new DevExpress.XtraReports.UI.XRTableCell();
+            this.status_param = new DevExpress.XtraReports.UI.XRTableCell();
+            this.xrTableRow8 = new DevExpress.XtraReports.UI.XRTableRow();
+            this.verified_lbl = new DevExpress.XtraReports.UI.XRTableCell();
+            this.verified_param = new DevExpress.XtraReports.UI.XRTableCell();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable7)).BeginInit();
@@ -839,7 +845,7 @@ namespace ArgusCR1029.Purchase
             this.ReportHeader.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
             this.xrTable1,
             this.title_lbl});
-            this.ReportHeader.HeightF = 182.5417F;
+            this.ReportHeader.HeightF = 223.375F;
             this.ReportHeader.KeepTogether = true;
             this.ReportHeader.Name = "ReportHeader";
             // 
@@ -854,8 +860,10 @@ namespace ArgusCR1029.Purchase
             this.xrTableRow9,
             this.xrTableRow10,
             this.xrTableRow4,
-            this.xrTableRow5});
-            this.xrTable1.SizeF = new System.Drawing.SizeF(408.9584F, 119F);
+            this.xrTableRow5,
+            this.xrTableRow7,
+            this.xrTableRow8});
+            this.xrTable1.SizeF = new System.Drawing.SizeF(408.9584F, 158.6667F);
             // 
             // xrTableRow3
             // 
@@ -965,19 +973,6 @@ namespace ArgusCR1029.Purchase
             this.currency_param.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
             this.currency_param.Weight = 1.4559912244042808D;
             // 
-            // title_lbl
-            // 
-            this.title_lbl.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.title_lbl.LocationFloat = new DevExpress.Utils.PointFloat(0F, 0F);
-            this.title_lbl.Multiline = true;
-            this.title_lbl.Name = "title_lbl";
-            this.title_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.title_lbl.SizeF = new System.Drawing.SizeF(1169F, 39.66666F);
-            this.title_lbl.StylePriority.UseFont = false;
-            this.title_lbl.StylePriority.UseTextAlignment = false;
-            this.title_lbl.Text = "Purchase By Invoice";
-            this.title_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
-            // 
             // xrTableRow4
             // 
             this.xrTableRow4.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
@@ -1031,6 +1026,73 @@ namespace ArgusCR1029.Purchase
             this.systemFunction_param.StylePriority.UseTextAlignment = false;
             this.systemFunction_param.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
             this.systemFunction_param.Weight = 1.4559912244042808D;
+            // 
+            // title_lbl
+            // 
+            this.title_lbl.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.title_lbl.LocationFloat = new DevExpress.Utils.PointFloat(0F, 0F);
+            this.title_lbl.Multiline = true;
+            this.title_lbl.Name = "title_lbl";
+            this.title_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.title_lbl.SizeF = new System.Drawing.SizeF(1169F, 39.66666F);
+            this.title_lbl.StylePriority.UseFont = false;
+            this.title_lbl.StylePriority.UseTextAlignment = false;
+            this.title_lbl.Text = "Purchase By Invoice";
+            this.title_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            // 
+            // xrTableRow7
+            // 
+            this.xrTableRow7.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
+            this.status_lbl,
+            this.status_param});
+            this.xrTableRow7.Name = "xrTableRow7";
+            this.xrTableRow7.Weight = 1D;
+            // 
+            // status_lbl
+            // 
+            this.status_lbl.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold);
+            this.status_lbl.Multiline = true;
+            this.status_lbl.Name = "status_lbl";
+            this.status_lbl.StylePriority.UseFont = false;
+            this.status_lbl.Text = "Status:";
+            this.status_lbl.Weight = 0.544008775595719D;
+            // 
+            // status_param
+            // 
+            this.status_param.Font = new System.Drawing.Font("Arial", 9.75F);
+            this.status_param.Multiline = true;
+            this.status_param.Name = "status_param";
+            this.status_param.StylePriority.UseFont = false;
+            this.status_param.StylePriority.UseTextAlignment = false;
+            this.status_param.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
+            this.status_param.Weight = 1.4559912244042808D;
+            // 
+            // xrTableRow8
+            // 
+            this.xrTableRow8.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
+            this.verified_lbl,
+            this.verified_param});
+            this.xrTableRow8.Name = "xrTableRow8";
+            this.xrTableRow8.Weight = 1D;
+            // 
+            // verified_lbl
+            // 
+            this.verified_lbl.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold);
+            this.verified_lbl.Multiline = true;
+            this.verified_lbl.Name = "verified_lbl";
+            this.verified_lbl.StylePriority.UseFont = false;
+            this.verified_lbl.Text = "Is Verified:";
+            this.verified_lbl.Weight = 0.544008775595719D;
+            // 
+            // verified_param
+            // 
+            this.verified_param.Font = new System.Drawing.Font("Arial", 9.75F);
+            this.verified_param.Multiline = true;
+            this.verified_param.Name = "verified_param";
+            this.verified_param.StylePriority.UseFont = false;
+            this.verified_param.StylePriority.UseTextAlignment = false;
+            this.verified_param.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
+            this.verified_param.Weight = 1.4559912244042808D;
             // 
             // PU203
             // 
@@ -1125,5 +1187,11 @@ namespace ArgusCR1029.Purchase
         private DevExpress.XtraReports.UI.XRTableRow xrTableRow5;
         private DevExpress.XtraReports.UI.XRTableCell systemFunction_lbl;
         private DevExpress.XtraReports.UI.XRTableCell systemFunction_param;
+        private DevExpress.XtraReports.UI.XRTableRow xrTableRow7;
+        private DevExpress.XtraReports.UI.XRTableCell status_lbl;
+        private DevExpress.XtraReports.UI.XRTableCell status_param;
+        private DevExpress.XtraReports.UI.XRTableRow xrTableRow8;
+        private DevExpress.XtraReports.UI.XRTableCell verified_lbl;
+        private DevExpress.XtraReports.UI.XRTableCell verified_param;
     }
 }

@@ -31,6 +31,8 @@ namespace ArgusCR1029.Purchase
             currency_param.Text = Parameters.Count >  3 ? Parameters[3].Value.ToString() : string.Empty;
             siteParam_param.Text = Parameters.Count > 7 ? Parameters[7].Value.ToString() : string.Empty;
             systemFunction_param.Text = Parameters.Count > 5 ? Parameters[5].Value.ToString() : string.Empty;
+            status_param.Text = Parameters.Count > 4 ? Parameters[4].Value.ToString() : string.Empty;
+            verified_param.Text = Parameters.Count > 6 ? Parameters[6].Value.ToString() : string.Empty;
 
             printSignature.Text = reportSignature();
             base.OnBeforePrint(e);
@@ -60,6 +62,9 @@ namespace ArgusCR1029.Purchase
 
             siteParam_lbl.Text = labelText(17);
             systemFunction_lbl.Text = labelText(18);
+            status_lbl.Text = labelText(19);
+            verified_lbl.Text = labelText(20);
+
         }
         protected override void OnDataSourceRowChanged(DataSourceRowEventArgs e)
         {
