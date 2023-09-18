@@ -2,7 +2,6 @@
 using System;
 using System.Collections;
 using System.ComponentModel;
-using System.Drawing;
 using System.Drawing.Printing;
 
 namespace ArgusCR1029.Financials
@@ -35,6 +34,7 @@ namespace ArgusCR1029.Financials
             referenceParam_param.Text = Parameters.Count > 9 ? Parameters[9].Value.ToString() : string.Empty;
             descriptionParam_param.Text = Parameters.Count > 10 ? Parameters[10].Value.ToString() : string.Empty;
             item_param.Text = Parameters.Count > 11 ? Parameters[11].Value.ToString() : string.Empty;
+            itemCategory_param.Text = Parameters.Count > 12 ? Parameters[12].Value.ToString() : string.Empty;
 
             logo_data.ImageUrl = companyInfo.logoUrl;
 
@@ -73,6 +73,7 @@ namespace ArgusCR1029.Financials
             referenceParam_lbl.Text = labelText(25);
             descriptionParam_lbl.Text = labelText(26);
             item_lbl.Text = labelText(27);
+            itemCategory_lbl.Text = labelText(28);
         }
         protected override void OnDataSourceRowChanged(DataSourceRowEventArgs e)
         {
