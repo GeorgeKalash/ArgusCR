@@ -58,6 +58,7 @@ namespace ArgusCR1029.BusinessPartners
             country_lbl.Text = labelText(16);
             clientGroup2_lbl.Text = labelText(17);
             activeStatus_lbl.Text = labelText(18);
+            level_lbl.Text = labelText(19);
         }
         protected override string dictionaryStore()
         {
