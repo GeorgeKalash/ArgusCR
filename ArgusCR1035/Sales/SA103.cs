@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections;
 using System.ComponentModel;
-using System.Drawing;
 using System.Drawing.Printing;
 using DevExpress.XtraReports.UI;
 using ArgusDS.Sales.Reports;
@@ -52,7 +51,8 @@ namespace ArgusCR1035.Sales
             contact_data.Text = webObject.record.trxHeader.contactName;
 
             amountInWords_data.Text = SharedClasses.NumberToWords.multiLingualNumberInText((decimal)webObject.record.trxHeader.amount, 2, 2);
-           // goldAmountInWords_data.Text = SharedClasses.NumberToWords.multiLingualNumberInText((decimal)webObject.record.sumPureMetalQty, 4, 2);
+            // goldAmountInWords_data.Text = SharedClasses.NumberToWords.multiLingualNumberInText((decimal)webObject.record.sumPureMetalQty, 4, 2);
+            tdPct_data.Text = webObject.record.trxHeader.tdPct.ToString();
             QRCode.Text = new KSAeInvoiceQrCode(webObject.record.companyInfo.name, webObject.record.companyInfo.taxNo, (DateTime)webObject.record.trxHeader.date, webObject.record.trxHeader.amount.ToString(), webObject.record.trxHeader.vatAmount.ToString()).ToBase64();
 
             printSignature.Text = reportSignature();
