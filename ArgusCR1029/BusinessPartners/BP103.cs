@@ -31,6 +31,7 @@ namespace ArgusCR1029.BusinessPartners
             country_param.Text = Parameters.Count > 4 ? Parameters[4].Value.ToString() : string.Empty;
             clientGroup2_param.Text = Parameters.Count > 5 ? Parameters[5].Value.ToString() : string.Empty;
             activeStatus_param.Text = Parameters.Count > 6 ? Parameters[6].Value.ToString() : string.Empty;
+            level_param.Text = Parameters.Count > 7 ? Parameters[7].Value.ToString() : string.Empty;
 
             printSignature.Text = reportSignature();
             base.OnBeforePrint(e);
