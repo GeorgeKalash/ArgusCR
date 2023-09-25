@@ -49,6 +49,7 @@ namespace ArgusCR1035.Sales
             cellphone_data.Text = webObject.record.salesPerson?.cellPhone;
 
             contact_data.Text = webObject.record.trxHeader.contactName;
+            amount_data.Text = webObject.record.trxHeader.amount.ToString("N2");
 
             amountInWords_data.Text = SharedClasses.NumberToWords.multiLingualNumberInText((decimal)webObject.record.trxHeader.amount, 2, 2);
             // goldAmountInWords_data.Text = SharedClasses.NumberToWords.multiLingualNumberInText((decimal)webObject.record.sumPureMetalQty, 4, 2);
