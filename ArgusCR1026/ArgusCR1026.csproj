@@ -126,12 +126,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Inventory\IV102.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Inventory\IV102.Designer.cs">
-      <DependentUpon>IV102.cs</DependentUpon>
-    </Compile>
     <Compile Include="Inventory\IV202.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -145,42 +139,14 @@
       <DependentUpon>IV403.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Sales\KSAeInvoiceQrCode.cs" />
     <Compile Include="Sales\SA416.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Sales\SA416.Designer.cs">
       <DependentUpon>SA416.cs</DependentUpon>
     </Compile>
-    <Compile Include="Sales\Templates\SA103B.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Sales\Templates\SA103B.Designer.cs">
-      <DependentUpon>SA103B.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Sales\Templates\SA103\InvoiceItemsSubReports.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Sales\Templates\SA103\InvoiceItemsSubReports.Designer.cs">
-      <DependentUpon>InvoiceItemsSubReports.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Sales\Templates\SA103\MetalSubReports.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Sales\Templates\SA103\MetalSubReports.Designer.cs">
-      <DependentUpon>MetalSubReports.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Sales\Templates\SA103\SA103.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Sales\Templates\SA103\SA103.Designer.cs">
-      <DependentUpon>SA103.cs</DependentUpon>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Inventory\IV102.resx">
-      <DependentUpon>IV102.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Inventory\IV202.resx">
       <DependentUpon>IV202.cs</DependentUpon>
     </EmbeddedResource>
@@ -190,18 +156,6 @@
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Sales\SA416.resx">
       <DependentUpon>SA416.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Sales\Templates\SA103B.resx">
-      <DependentUpon>SA103B.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Sales\Templates\SA103\InvoiceItemsSubReports.resx">
-      <DependentUpon>InvoiceItemsSubReports.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Sales\Templates\SA103\MetalSubReports.resx">
-      <DependentUpon>MetalSubReports.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Sales\Templates\SA103\SA103.resx">
-      <DependentUpon>SA103.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup />

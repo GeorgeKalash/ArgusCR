@@ -171,18 +171,6 @@
     <Compile Include="Sales\Templates\SA101b.Designer.cs">
       <DependentUpon>SA101b.cs</DependentUpon>
     </Compile>
-    <Compile Include="Sales\Templates\SA103B.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Sales\Templates\SA103B.Designer.cs">
-      <DependentUpon>SA103B.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Sales\Templates\SA103.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Sales\Templates\SA103.Designer.cs">
-      <DependentUpon>SA103.cs</DependentUpon>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Inventory\IV01.resx">
@@ -220,15 +208,6 @@
     <EmbeddedResource Include="Sales\Templates\SA101b.resx">
       <DependentUpon>SA101b.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Sales\Templates\SA103B.resx">
-      <DependentUpon>SA103B.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Sales\Templates\SA103.resx">
-      <DependentUpon>SA103.cs</DependentUpon>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Resources\logo.jpg" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
