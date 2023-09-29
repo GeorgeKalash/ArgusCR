@@ -2,7 +2,6 @@
 using System;
 using System.Collections;
 using System.ComponentModel;
-using System.Drawing;
 using System.Drawing.Printing;
 
 namespace ArgusCR1029.Inventory
@@ -43,29 +42,28 @@ namespace ArgusCR1029.Inventory
         {
             title_lbl.Text = labelText(0);
 
-            rec_lbl.Text = labelText(1);
+            record_lbl.Text = labelText(1);
             date_lbl.Text = labelText(2);
             sku_lbl.Text = labelText(3);
             name_lbl.Text = labelText(4);
             ms_lbl.Text = labelText(5);
             site_lbl.Text = labelText(6);
-            itemGrp_lbl.Text = labelText(7);
-            itemCategoryy_lbl.Text = labelText(8);
-            ref_lbl.Text = labelText(9);
-            functionName_lbl.Text = labelText(10);
-            qty_lbl.Text = labelText(11);
-            avgCost_lbl.Text = labelText(12);
-            totalCost_lbl.Text = labelText(13);
+            plant_lbl.Text = labelText(7);
+            itemGroup_lbl.Text = labelText(8);
+            itemCategory_lbl.Text = labelText(9);
+            reference_lbl.Text = labelText(10);
+            functionName_lbl.Text = labelText(11);
+            qty_lbl.Text = labelText(12);
+            avgCost_lbl.Text = labelText(13);
+            totalCost_lbl.Text = labelText(14);
 
-            fromSite_lbl.Text = labelText(14);
-            startDate_lbl.Text = labelText(15);
-            endDate_lbl.Text = labelText(16);
-            item_lbl.Text = labelText(17);
-            itemCategory_lbl.Text = labelText(18);
-            siteGrp_lbl.Text = labelText(20);
-            plt_lbl.Text = labelText(21);
-
-            plant_lbl.Text = labelText(19);
+            fromSite_lbl.Text = labelText(15);
+            startDate_lbl.Text = labelText(16);
+            endDate_lbl.Text = labelText(17);
+            item_lbl.Text = labelText(18);
+            itemCategoryParam_lbl.Text = labelText(19);
+            siteGroupParam_lbl.Text = labelText(20);
+            plantParam_lbl.Text = labelText(21);
         }
         protected override void OnDataSourceRowChanged(DataSourceRowEventArgs e)
         {
