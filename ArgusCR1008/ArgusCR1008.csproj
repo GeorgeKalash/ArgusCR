@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6F6997C9-3BBC-40CB-AD77-7FE3E321218F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ArgusCR1008</RootNamespace>
+    <AssemblyName>ArgusCR1008</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\Extensions\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\..\Extensions\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ArgusDS, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Extensions\ArgusDS.dll</HintPath>
+    </Reference>
+    <Reference Include="ArgusRPTCore, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Extensions\ArgusRPTCore.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Charts.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.Desktop.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Extensions\DevExpress.Data.v20.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Office.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Pdf.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Extensions\DevExpress.Pdf.v20.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Pdf.v20.1.Drawing, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Extensions\DevExpress.Pdf.v20.1.Drawing.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.PivotGrid.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Extensions\DevExpress.Printing.v20.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.RichEdit.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v20.1.Export, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Sparkline.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGauges.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Extensions\DevExpress.XtraReports.v20.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Extensions\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="SharedClasses">
+      <HintPath>..\..\..\Extensions\SharedClasses.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Inventory\Templates\IV102.cs" />
+    <Compile Include="Inventory\Templates\IV102.Designer.cs">
+      <DependentUpon>IV102.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\Templates\IV103.cs" />
+    <Compile Include="Inventory\Templates\IV103.Designer.cs">
+      <DependentUpon>IV103.cs</DependentUpon>
+    </Compile>
+    <Compile Include="POS\PS101\InvoiceItemsSubReports.cs" />
+    <Compile Include="POS\PS101\InvoiceItemsSubReports.Designer.cs">
+      <DependentUpon>InvoiceItemsSubReports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="POS\PS101\InvoiceReceiptSubReports.cs" />
+    <Compile Include="POS\PS101\InvoiceReceiptSubReports.Designer.cs">
+      <DependentUpon>InvoiceReceiptSubReports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="POS\PS101\PS101.cs" />
+    <Compile Include="POS\PS101\PS101.Designer.cs">
+      <DependentUpon>PS101.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sales\Templates\SA102A.cs" />
+    <Compile Include="Sales\Templates\SA102A.Designer.cs">
+      <DependentUpon>SA102A.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sales\Templates\SATRX01.cs" />
+    <Compile Include="Sales\Templates\SATRX01.Designer.cs">
+      <DependentUpon>SATRX01.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sales\Templates\SA102B.cs" />
+    <Compile Include="Sales\Templates\SA102B.Designer.cs">
+      <DependentUpon>SA102B.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sales\Templates\SATRX02.cs" />
+    <Compile Include="Sales\Templates\SATRX02.Designer.cs">
+      <DependentUpon>SATRX02.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sales\Templates\SA102C.cs" />
+    <Compile Include="Sales\Templates\SA102C.Designer.cs">
+      <DependentUpon>SA102C.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sales\Templates\SATRX03.cs" />
+    <Compile Include="Sales\Templates\SATRX03.Designer.cs">
+      <DependentUpon>SATRX03.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <EmbeddedResource Include="Inventory\Templates\IV102.resx">
+      <DependentUpon>IV102.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\Templates\IV103.resx">
+      <DependentUpon>IV103.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="POS\PS101\InvoiceItemsSubReports.resx">
+      <DependentUpon>InvoiceItemsSubReports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="POS\PS101\InvoiceReceiptSubReports.resx">
+      <DependentUpon>InvoiceReceiptSubReports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="POS\PS101\PS101.resx">
+      <DependentUpon>PS101.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Sales\Templates\SA102A.resx">
+      <DependentUpon>SA102A.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales\Templates\SATRX01.resx">
+      <DependentUpon>SATRX01.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales\Templates\SA102B.resx">
+      <DependentUpon>SA102B.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales\Templates\SATRX02.resx">
+      <DependentUpon>SATRX02.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales\Templates\SA102C.resx">
+      <DependentUpon>SA102C.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales\Templates\SATRX03.resx">
+      <DependentUpon>SATRX03.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
