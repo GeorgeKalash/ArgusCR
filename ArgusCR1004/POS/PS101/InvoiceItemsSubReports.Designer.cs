@@ -203,7 +203,7 @@ namespace ArgusCR1006.POS.PS101
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.wGold_data.BorderWidth = 1F;
             this.wGold_data.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[trxLine].[weight]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[trxLine].[weight]*[trxLine].[qty]")});
             this.wGold_data.Font = new System.Drawing.Font("Arial", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.wGold_data.Multiline = true;
             this.wGold_data.Name = "wGold_data";
