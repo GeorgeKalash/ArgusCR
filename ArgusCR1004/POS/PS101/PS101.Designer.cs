@@ -1583,7 +1583,7 @@ namespace ArgusCR1006.POS.PS101
             this.xrTableCell2.StylePriority.UseFont = false;
             this.xrTableCell2.StylePriority.UsePadding = false;
             this.xrTableCell2.StylePriority.UseTextAlignment = false;
-            this.xrTableCell2.Text = "جدة - مركز الذهب العالمي";
+            this.xrTableCell2.Text = "مكة - سوق العزيزية";
             this.xrTableCell2.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
             this.xrTableCell2.Weight = 2.978711348848972D;
             // 
@@ -1613,7 +1613,6 @@ namespace ArgusCR1006.POS.PS101
             this.xrTableCell5.StylePriority.UseFont = false;
             this.xrTableCell5.StylePriority.UsePadding = false;
             this.xrTableCell5.StylePriority.UseTextAlignment = false;
-            this.xrTableCell5.Text = "40301736/11";
             this.xrTableCell5.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
             this.xrTableCell5.Weight = 2.9225810267233827D;
             // 
@@ -1643,7 +1642,7 @@ namespace ArgusCR1006.POS.PS101
             this.xrTableCell7.StylePriority.UseFont = false;
             this.xrTableCell7.StylePriority.UsePadding = false;
             this.xrTableCell7.StylePriority.UseTextAlignment = false;
-            this.xrTableCell7.Text = "4030152372";
+            this.xrTableCell7.Text = "4031245396";
             this.xrTableCell7.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
             this.xrTableCell7.Weight = 1.9183369842065043D;
             // 
@@ -1803,7 +1802,6 @@ namespace ArgusCR1006.POS.PS101
             this.xrTableCell16.StylePriority.UseFont = false;
             this.xrTableCell16.StylePriority.UsePadding = false;
             this.xrTableCell16.StylePriority.UseTextAlignment = false;
-            this.xrTableCell16.Text = "012-6425814";
             this.xrTableCell16.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
             this.xrTableCell16.Weight = 1.1901772123508692D;
             // 
@@ -1976,7 +1974,7 @@ namespace ArgusCR1006.POS.PS101
             this.xrTableCell84.StylePriority.UseFont = false;
             this.xrTableCell84.StylePriority.UsePadding = false;
             this.xrTableCell84.StylePriority.UseTextAlignment = false;
-            this.xrTableCell84.Text = "جدة - مركز الذهب العالمي";
+            this.xrTableCell84.Text = "مكة - سوق العزيزية";
             this.xrTableCell84.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
             this.xrTableCell84.Weight = 2.978711348848972D;
             // 
@@ -2006,7 +2004,6 @@ namespace ArgusCR1006.POS.PS101
             this.xrTableCell82.StylePriority.UseFont = false;
             this.xrTableCell82.StylePriority.UsePadding = false;
             this.xrTableCell82.StylePriority.UseTextAlignment = false;
-            this.xrTableCell82.Text = "40301736/11";
             this.xrTableCell82.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
             this.xrTableCell82.Weight = 2.9225810267233827D;
             // 
@@ -2036,7 +2033,7 @@ namespace ArgusCR1006.POS.PS101
             this.xrTableCell80.StylePriority.UseFont = false;
             this.xrTableCell80.StylePriority.UsePadding = false;
             this.xrTableCell80.StylePriority.UseTextAlignment = false;
-            this.xrTableCell80.Text = "4030152372";
+            this.xrTableCell80.Text = "4031245396";
             this.xrTableCell80.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
             this.xrTableCell80.Weight = 1.9183369842065043D;
             // 
@@ -2196,7 +2193,6 @@ namespace ArgusCR1006.POS.PS101
             this.xrTableCell97.StylePriority.UseFont = false;
             this.xrTableCell97.StylePriority.UsePadding = false;
             this.xrTableCell97.StylePriority.UseTextAlignment = false;
-            this.xrTableCell97.Text = "012-6425814";
             this.xrTableCell97.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
             this.xrTableCell97.Weight = 1.1901772123508692D;
             // 
