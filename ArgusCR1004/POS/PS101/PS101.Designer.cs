@@ -2,7 +2,7 @@
 using System;
 using System.Drawing.Printing;
 
-namespace ArgusCR1006.POS.PS101
+namespace ArgusCR1004.POS.PS101
 {
     partial class PS101
     {
@@ -216,14 +216,14 @@ namespace ArgusCR1006.POS.PS101
             // 
             this.InvoiceItemsSubReports2.LocationFloat = new DevExpress.Utils.PointFloat(12.50003F, 0F);
             this.InvoiceItemsSubReports2.Name = "InvoiceItemsSubReports2";
-            this.InvoiceItemsSubReports2.ReportSource = new ArgusCR1006.POS.PS101.InvoiceItemsSubReports();
+            this.InvoiceItemsSubReports2.ReportSource = new ArgusCR1004.POS.PS101.InvoiceItemsSubReports();
             this.InvoiceItemsSubReports2.SizeF = new System.Drawing.SizeF(549.9583F, 23F);
             // 
             // InvoiceItemsSubReports
             // 
             this.InvoiceItemsSubReports.LocationFloat = new DevExpress.Utils.PointFloat(600F, 0F);
             this.InvoiceItemsSubReports.Name = "InvoiceItemsSubReports";
-            this.InvoiceItemsSubReports.ReportSource = new ArgusCR1006.POS.PS101.InvoiceItemsSubReports();
+            this.InvoiceItemsSubReports.ReportSource = new ArgusCR1004.POS.PS101.InvoiceItemsSubReports();
             this.InvoiceItemsSubReports.SizeF = new System.Drawing.SizeF(549.9583F, 23F);
             // 
             // Detail
@@ -248,14 +248,14 @@ namespace ArgusCR1006.POS.PS101
             // 
             this.InvoiceReceiptSubReports2.LocationFloat = new DevExpress.Utils.PointFloat(12.50003F, 0F);
             this.InvoiceReceiptSubReports2.Name = "InvoiceReceiptSubReports2";
-            this.InvoiceReceiptSubReports2.ReportSource = new ArgusCR1006.POS.PS101.InvoiceReceiptSubReports();
+            this.InvoiceReceiptSubReports2.ReportSource = new ArgusCR1004.POS.PS101.InvoiceReceiptSubReports();
             this.InvoiceReceiptSubReports2.SizeF = new System.Drawing.SizeF(549.9583F, 23F);
             // 
             // InvoiceReceiptSubReports
             // 
             this.InvoiceReceiptSubReports.LocationFloat = new DevExpress.Utils.PointFloat(600F, 0F);
             this.InvoiceReceiptSubReports.Name = "InvoiceReceiptSubReports";
-            this.InvoiceReceiptSubReports.ReportSource = new ArgusCR1006.POS.PS101.InvoiceReceiptSubReports();
+            this.InvoiceReceiptSubReports.ReportSource = new ArgusCR1004.POS.PS101.InvoiceReceiptSubReports();
             this.InvoiceReceiptSubReports.SizeF = new System.Drawing.SizeF(549.9581F, 23F);
             // 
             // TopMargin
