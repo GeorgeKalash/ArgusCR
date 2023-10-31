@@ -118,7 +118,7 @@ namespace ArgusCR1029.Inventory
             // 
             // BottomMargin
             // 
-            this.BottomMargin.HeightF = 15F;
+            this.BottomMargin.HeightF = 10F;
             this.BottomMargin.Name = "BottomMargin";
             // 
             // Detail
@@ -126,6 +126,7 @@ namespace ArgusCR1029.Inventory
             this.Detail.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
             this.xrTable3});
             this.Detail.HeightF = 25F;
+            this.Detail.KeepTogether = true;
             this.Detail.Name = "Detail";
             // 
             // xrTable3
@@ -262,7 +263,7 @@ namespace ArgusCR1029.Inventory
             this.title_lbl,
             this.xrTable4,
             this.xrTable2});
-            this.ReportHeader.HeightF = 225F;
+            this.ReportHeader.HeightF = 225.2083F;
             this.ReportHeader.KeepTogether = true;
             this.ReportHeader.Name = "ReportHeader";
             // 
@@ -914,7 +915,7 @@ namespace ArgusCR1029.Inventory
             this.sku,
             this.GroupFooter1});
             this.Font = new System.Drawing.Font("Arial", 9.75F);
-            this.Margins = new System.Drawing.Printing.Margins(0, 0, 30, 15);
+            this.Margins = new System.Drawing.Printing.Margins(0, 0, 30, 10);
             this.PageHeight = 1169;
             this.PageWidth = 827;
             this.PaperKind = System.Drawing.Printing.PaperKind.A4;
