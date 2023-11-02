@@ -327,7 +327,7 @@ namespace ArgusCR1029.Financials.FI104
             this.xrTableCell10.StylePriority.UseBorders = false;
             this.xrTableCell10.StylePriority.UseFont = false;
             this.xrTableCell10.StylePriority.UseTextAlignment = false;
-            this.xrTableCell10.Text = "الصنف";
+            this.xrTableCell10.Text = "المعدن";
             this.xrTableCell10.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             this.xrTableCell10.Weight = 0.96863933578189476D;
             // 
@@ -459,12 +459,12 @@ namespace ArgusCR1029.Financials.FI104
             // 
             // xrTable1
             // 
-            this.xrTable1.LocationFloat = new DevExpress.Utils.PointFloat(0F, 0F);
+            this.xrTable1.LocationFloat = new DevExpress.Utils.PointFloat(176.7276F, 0F);
             this.xrTable1.Name = "xrTable1";
             this.xrTable1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable1.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow1});
-            this.xrTable1.SizeF = new System.Drawing.SizeF(774.9484F, 22.29271F);
+            this.xrTable1.SizeF = new System.Drawing.SizeF(598.2208F, 22.29271F);
             // 
             // xrTableRow1
             // 
@@ -494,7 +494,7 @@ namespace ArgusCR1029.Financials.FI104
             this.xrTableCell15.StylePriority.UseTextAlignment = false;
             this.xrTableCell15.Text = "الاجمالى";
             this.xrTableCell15.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
-            this.xrTableCell15.Weight = 3.8987717336497809D;
+            this.xrTableCell15.Weight = 2.09796885255074D;
             // 
             // xrTableCell16
             // 

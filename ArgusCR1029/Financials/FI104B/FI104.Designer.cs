@@ -828,7 +828,7 @@ namespace ArgusCR1029.Financials.FI104B
             this.sPSig_lbl.StylePriority.UseFont = false;
             this.sPSig_lbl.StylePriority.UsePadding = false;
             this.sPSig_lbl.StylePriority.UseTextAlignment = false;
-            this.sPSig_lbl.Text = "المندوب";
+            this.sPSig_lbl.Text = "المستلم";
             this.sPSig_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopCenter;
             this.sPSig_lbl.Weight = 2.9352735807014358D;
             // 
@@ -860,7 +860,7 @@ namespace ArgusCR1029.Financials.FI104B
             this.saPeName_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(5, 2, 8, 0, 100F);
             this.saPeName_lbl.StylePriority.UseFont = false;
             this.saPeName_lbl.StylePriority.UsePadding = false;
-            this.saPeName_lbl.Text = "/ اسم المندوب";
+            this.saPeName_lbl.Text = "/ اسم المستلم";
             this.saPeName_lbl.Weight = 0.86559619831093071D;
             // 
             // xrTableRow24
@@ -889,7 +889,7 @@ namespace ArgusCR1029.Financials.FI104B
             this.sPeSig_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 4, 0, 100F);
             this.sPeSig_lbl.StylePriority.UseFont = false;
             this.sPeSig_lbl.StylePriority.UsePadding = false;
-            this.sPeSig_lbl.Text = "/  توقيع المندوب";
+            this.sPeSig_lbl.Text = "/  توقيع المستلم";
             this.sPeSig_lbl.Weight = 0.86559619831093071D;
             // 
             // xrTable6

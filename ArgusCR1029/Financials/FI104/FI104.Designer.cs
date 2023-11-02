@@ -33,10 +33,8 @@ namespace ArgusCR1029.Financials.FI104
         private void InitializeComponent()
         {
             this.ItemSubBand = new DevExpress.XtraReports.UI.SubBand();
-            this.ItemsSubReports = new DevExpress.XtraReports.UI.XRSubreport();
             this.Detail = new DevExpress.XtraReports.UI.DetailBand();
             this.InvoiceReceiptSubBand = new DevExpress.XtraReports.UI.SubBand();
-            this.MetalSubReports = new DevExpress.XtraReports.UI.XRSubreport();
             this.TopMargin = new DevExpress.XtraReports.UI.TopMarginBand();
             this.BottomMargin = new DevExpress.XtraReports.UI.BottomMarginBand();
             this.ReportHeader = new DevExpress.XtraReports.UI.ReportHeaderBand();
@@ -112,6 +110,8 @@ namespace ArgusCR1029.Financials.FI104
             this.xrTableRow28 = new DevExpress.XtraReports.UI.XRTableRow();
             this.xrTableCell13 = new DevExpress.XtraReports.UI.XRTableCell();
             this.cSig_lbl = new DevExpress.XtraReports.UI.XRTableCell();
+            this.ItemsSubReports = new DevExpress.XtraReports.UI.XRSubreport();
+            this.MetalSubReports = new DevExpress.XtraReports.UI.XRSubreport();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable1)).BeginInit();
@@ -128,13 +128,6 @@ namespace ArgusCR1029.Financials.FI104
             this.ItemSubBand.HeightF = 23F;
             this.ItemSubBand.KeepTogether = true;
             this.ItemSubBand.Name = "ItemSubBand";
-            // 
-            // ItemsSubReports
-            // 
-            this.ItemsSubReports.LocationFloat = new DevExpress.Utils.PointFloat(25.00003F, 0F);
-            this.ItemsSubReports.Name = "ItemsSubReports";
-            this.ItemsSubReports.ReportSource = new ArgusCR1029.Financials.FI104.ItemsSubReports();
-            this.ItemsSubReports.SizeF = new System.Drawing.SizeF(777.0994F, 23F);
             // 
             // Detail
             // 
@@ -153,13 +146,6 @@ namespace ArgusCR1029.Financials.FI104
             this.InvoiceReceiptSubBand.HeightF = 35.5F;
             this.InvoiceReceiptSubBand.KeepTogether = true;
             this.InvoiceReceiptSubBand.Name = "InvoiceReceiptSubBand";
-            // 
-            // MetalSubReports
-            // 
-            this.MetalSubReports.LocationFloat = new DevExpress.Utils.PointFloat(25.00003F, 12.5F);
-            this.MetalSubReports.Name = "MetalSubReports";
-            this.MetalSubReports.ReportSource = new ArgusCR1029.Financials.FI104.MetalSubReports();
-            this.MetalSubReports.SizeF = new System.Drawing.SizeF(777.0992F, 23F);
             // 
             // TopMargin
             // 
@@ -900,8 +886,8 @@ namespace ArgusCR1029.Financials.FI104
             this.text_lbl.StylePriority.UseFont = false;
             this.text_lbl.StylePriority.UsePadding = false;
             this.text_lbl.StylePriority.UseTextAlignment = false;
-            this.text_lbl.Text = "تم استلام الذهب تحت الفحص والمعايرة  ويتحمل العميل اى فروق تحدث نتيجة الفحص والمع" +
-    "ايرة";
+            this.text_lbl.Text = "تم استلام الذهب من العمبل المذكور اعلاه  وتحت الفحص والمعايرة  ويتحمل العميل اى ف" +
+    "روق تحدث نتيجة الفحص والمعايرة";
             this.text_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
             // 
             // xrTable13
@@ -933,7 +919,7 @@ namespace ArgusCR1029.Financials.FI104
             this.sPSig_lbl.StylePriority.UseFont = false;
             this.sPSig_lbl.StylePriority.UsePadding = false;
             this.sPSig_lbl.StylePriority.UseTextAlignment = false;
-            this.sPSig_lbl.Text = "المندوب";
+            this.sPSig_lbl.Text = "المستلم";
             this.sPSig_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopCenter;
             this.sPSig_lbl.Weight = 2.9352735807014358D;
             // 
@@ -965,7 +951,7 @@ namespace ArgusCR1029.Financials.FI104
             this.saPeName_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(5, 2, 8, 0, 100F);
             this.saPeName_lbl.StylePriority.UseFont = false;
             this.saPeName_lbl.StylePriority.UsePadding = false;
-            this.saPeName_lbl.Text = "/ اسم المندوب";
+            this.saPeName_lbl.Text = "/ اسم المستلم";
             this.saPeName_lbl.Weight = 0.86559619831093071D;
             // 
             // xrTableRow24
@@ -994,7 +980,7 @@ namespace ArgusCR1029.Financials.FI104
             this.sPeSig_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 4, 0, 100F);
             this.sPeSig_lbl.StylePriority.UseFont = false;
             this.sPeSig_lbl.StylePriority.UsePadding = false;
-            this.sPeSig_lbl.Text = "/  توقيع المندوب";
+            this.sPeSig_lbl.Text = "/  توقيع المستلم";
             this.sPeSig_lbl.Weight = 0.86559619831093071D;
             // 
             // xrTable14
@@ -1087,6 +1073,20 @@ namespace ArgusCR1029.Financials.FI104
             this.cSig_lbl.StylePriority.UsePadding = false;
             this.cSig_lbl.Text = "/  التوقيع";
             this.cSig_lbl.Weight = 1.0984472679738584D;
+            // 
+            // ItemsSubReports
+            // 
+            this.ItemsSubReports.LocationFloat = new DevExpress.Utils.PointFloat(25.00003F, 0F);
+            this.ItemsSubReports.Name = "ItemsSubReports";
+            this.ItemsSubReports.ReportSource = new ArgusCR1029.Financials.FI104.ItemsSubReports();
+            this.ItemsSubReports.SizeF = new System.Drawing.SizeF(777.0994F, 23F);
+            // 
+            // MetalSubReports
+            // 
+            this.MetalSubReports.LocationFloat = new DevExpress.Utils.PointFloat(25.00003F, 12.5F);
+            this.MetalSubReports.Name = "MetalSubReports";
+            this.MetalSubReports.ReportSource = new ArgusCR1029.Financials.FI104.MetalSubReports();
+            this.MetalSubReports.SizeF = new System.Drawing.SizeF(777.0992F, 23F);
             // 
             // FI104
             // 
