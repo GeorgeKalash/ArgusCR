@@ -247,7 +247,7 @@ namespace ArgusCR1004.POS.PS101
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.unitPrice_data.BorderWidth = 1F;
             this.unitPrice_data.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[trxLine].[unitPrice]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[trxLine].[basePrice]")});
             this.unitPrice_data.Font = new System.Drawing.Font("Arial", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.unitPrice_data.Multiline = true;
             this.unitPrice_data.Name = "unitPrice_data";
