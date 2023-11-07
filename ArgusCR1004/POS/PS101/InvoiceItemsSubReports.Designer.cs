@@ -260,7 +260,7 @@ namespace ArgusCR1004.POS.PS101
             this.unitPrice_data.StylePriority.UseTextAlignment = false;
             this.unitPrice_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
             this.unitPrice_data.TextFormatString = "{0:n2}";
-            this.unitPrice_data.Weight = 0.89604786960719007D;
+            this.unitPrice_data.Weight = 0.89649445091477242D;
             // 
             // extendedPrice_data
             // 
@@ -282,7 +282,7 @@ namespace ArgusCR1004.POS.PS101
             this.extendedPrice_data.StylePriority.UseTextAlignment = false;
             this.extendedPrice_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
             this.extendedPrice_data.TextFormatString = "{0:n2}";
-            this.extendedPrice_data.Weight = 1.2371287737877699D;
+            this.extendedPrice_data.Weight = 1.2366821924801874D;
             // 
             // vat_data
             // 
