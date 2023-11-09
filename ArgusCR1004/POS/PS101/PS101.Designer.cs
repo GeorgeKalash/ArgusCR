@@ -35,12 +35,8 @@ namespace ArgusCR1004.POS.PS101
             DevExpress.XtraPrinting.BarCode.QRCodeGenerator qrCodeGenerator1 = new DevExpress.XtraPrinting.BarCode.QRCodeGenerator();
             DevExpress.XtraPrinting.BarCode.QRCodeGenerator qrCodeGenerator2 = new DevExpress.XtraPrinting.BarCode.QRCodeGenerator();
             this.InvoiceItemSubBand = new DevExpress.XtraReports.UI.SubBand();
-            this.InvoiceItemsSubReports2 = new DevExpress.XtraReports.UI.XRSubreport();
-            this.InvoiceItemsSubReports = new DevExpress.XtraReports.UI.XRSubreport();
             this.Detail = new DevExpress.XtraReports.UI.DetailBand();
             this.InvoiceReceiptSubBand = new DevExpress.XtraReports.UI.SubBand();
-            this.InvoiceReceiptSubReports2 = new DevExpress.XtraReports.UI.XRSubreport();
-            this.InvoiceReceiptSubReports = new DevExpress.XtraReports.UI.XRSubreport();
             this.TopMargin = new DevExpress.XtraReports.UI.TopMarginBand();
             this.BottomMargin = new DevExpress.XtraReports.UI.BottomMarginBand();
             this.ReportHeader = new DevExpress.XtraReports.UI.ReportHeaderBand();
@@ -162,6 +158,10 @@ namespace ArgusCR1004.POS.PS101
             this.xrTableCell3 = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTableCell7 = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTableCell8 = new DevExpress.XtraReports.UI.XRTableCell();
+            this.InvoiceItemsSubReports2 = new DevExpress.XtraReports.UI.XRSubreport();
+            this.InvoiceItemsSubReports = new DevExpress.XtraReports.UI.XRSubreport();
+            this.InvoiceReceiptSubReports2 = new DevExpress.XtraReports.UI.XRSubreport();
+            this.InvoiceReceiptSubReports = new DevExpress.XtraReports.UI.XRSubreport();
             this.xrTable6 = new DevExpress.XtraReports.UI.XRTable();
             this.xrTableRow5 = new DevExpress.XtraReports.UI.XRTableRow();
             this.xrTableCell5 = new DevExpress.XtraReports.UI.XRTableCell();
@@ -206,20 +206,6 @@ namespace ArgusCR1004.POS.PS101
             this.InvoiceItemSubBand.KeepTogether = true;
             this.InvoiceItemSubBand.Name = "InvoiceItemSubBand";
             // 
-            // InvoiceItemsSubReports2
-            // 
-            this.InvoiceItemsSubReports2.LocationFloat = new DevExpress.Utils.PointFloat(12.50003F, 0F);
-            this.InvoiceItemsSubReports2.Name = "InvoiceItemsSubReports2";
-            this.InvoiceItemsSubReports2.ReportSource = new ArgusCR1004.POS.PS101.InvoiceItemsSubReports();
-            this.InvoiceItemsSubReports2.SizeF = new System.Drawing.SizeF(549.9583F, 23F);
-            // 
-            // InvoiceItemsSubReports
-            // 
-            this.InvoiceItemsSubReports.LocationFloat = new DevExpress.Utils.PointFloat(600F, 0F);
-            this.InvoiceItemsSubReports.Name = "InvoiceItemsSubReports";
-            this.InvoiceItemsSubReports.ReportSource = new ArgusCR1004.POS.PS101.InvoiceItemsSubReports();
-            this.InvoiceItemsSubReports.SizeF = new System.Drawing.SizeF(549.9583F, 23F);
-            // 
             // Detail
             // 
             this.Detail.HeightF = 0F;
@@ -237,20 +223,6 @@ namespace ArgusCR1004.POS.PS101
             this.InvoiceReceiptSubBand.HeightF = 23F;
             this.InvoiceReceiptSubBand.KeepTogether = true;
             this.InvoiceReceiptSubBand.Name = "InvoiceReceiptSubBand";
-            // 
-            // InvoiceReceiptSubReports2
-            // 
-            this.InvoiceReceiptSubReports2.LocationFloat = new DevExpress.Utils.PointFloat(12.50003F, 0F);
-            this.InvoiceReceiptSubReports2.Name = "InvoiceReceiptSubReports2";
-            this.InvoiceReceiptSubReports2.ReportSource = new ArgusCR1004.POS.PS101.InvoiceReceiptSubReports();
-            this.InvoiceReceiptSubReports2.SizeF = new System.Drawing.SizeF(549.9583F, 23F);
-            // 
-            // InvoiceReceiptSubReports
-            // 
-            this.InvoiceReceiptSubReports.LocationFloat = new DevExpress.Utils.PointFloat(600F, 0F);
-            this.InvoiceReceiptSubReports.Name = "InvoiceReceiptSubReports";
-            this.InvoiceReceiptSubReports.ReportSource = new ArgusCR1004.POS.PS101.InvoiceReceiptSubReports();
-            this.InvoiceReceiptSubReports.SizeF = new System.Drawing.SizeF(549.9581F, 23F);
             // 
             // TopMargin
             // 
@@ -1579,7 +1551,7 @@ namespace ArgusCR1004.POS.PS101
             this.xrTableCell9.StylePriority.UseTextAlignment = false;
             this.xrTableCell9.Text = "4031245396";
             this.xrTableCell9.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
-            this.xrTableCell9.Weight = 1.1425699841200558D;
+            this.xrTableCell9.Weight = 0.98387957249892322D;
             // 
             // xrTableCell10
             // 
@@ -1594,7 +1566,7 @@ namespace ArgusCR1004.POS.PS101
             this.xrTableCell10.StylePriority.UseTextAlignment = false;
             this.xrTableCell10.Text = ": البريد الألكتروني";
             this.xrTableCell10.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
-            this.xrTableCell10.Weight = 1.0743767985367643D;
+            this.xrTableCell10.Weight = 1.0391149665418216D;
             // 
             // xrTableCell11
             // 
@@ -2031,7 +2003,7 @@ namespace ArgusCR1004.POS.PS101
             this.xrTableCell2.StylePriority.UseTextAlignment = false;
             this.xrTableCell2.Text = "info@mansour.com.sa";
             this.xrTableCell2.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
-            this.xrTableCell2.Weight = 1.5206523507928205D;
+            this.xrTableCell2.Weight = 1.7138551644021018D;
             // 
             // xrTableCell3
             // 
@@ -2046,7 +2018,7 @@ namespace ArgusCR1004.POS.PS101
             this.xrTableCell3.StylePriority.UseTextAlignment = false;
             this.xrTableCell3.Text = ":س.ت";
             this.xrTableCell3.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
-            this.xrTableCell3.Weight = 0.4277143677091243D;
+            this.xrTableCell3.Weight = 0.42846379771591814D;
             // 
             // xrTableCell7
             // 
@@ -2077,6 +2049,34 @@ namespace ArgusCR1004.POS.PS101
             this.xrTableCell8.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
             this.xrTableCell8.Weight = 0.77297154616677022D;
             // 
+            // InvoiceItemsSubReports2
+            // 
+            this.InvoiceItemsSubReports2.LocationFloat = new DevExpress.Utils.PointFloat(12.50003F, 0F);
+            this.InvoiceItemsSubReports2.Name = "InvoiceItemsSubReports2";
+            this.InvoiceItemsSubReports2.ReportSource = new ArgusCR1004.POS.PS101.InvoiceItemsSubReports();
+            this.InvoiceItemsSubReports2.SizeF = new System.Drawing.SizeF(549.9583F, 23F);
+            // 
+            // InvoiceItemsSubReports
+            // 
+            this.InvoiceItemsSubReports.LocationFloat = new DevExpress.Utils.PointFloat(600F, 0F);
+            this.InvoiceItemsSubReports.Name = "InvoiceItemsSubReports";
+            this.InvoiceItemsSubReports.ReportSource = new ArgusCR1004.POS.PS101.InvoiceItemsSubReports();
+            this.InvoiceItemsSubReports.SizeF = new System.Drawing.SizeF(549.9583F, 23F);
+            // 
+            // InvoiceReceiptSubReports2
+            // 
+            this.InvoiceReceiptSubReports2.LocationFloat = new DevExpress.Utils.PointFloat(12.50003F, 0F);
+            this.InvoiceReceiptSubReports2.Name = "InvoiceReceiptSubReports2";
+            this.InvoiceReceiptSubReports2.ReportSource = new ArgusCR1004.POS.PS101.InvoiceReceiptSubReports();
+            this.InvoiceReceiptSubReports2.SizeF = new System.Drawing.SizeF(549.9583F, 23F);
+            // 
+            // InvoiceReceiptSubReports
+            // 
+            this.InvoiceReceiptSubReports.LocationFloat = new DevExpress.Utils.PointFloat(600F, 0F);
+            this.InvoiceReceiptSubReports.Name = "InvoiceReceiptSubReports";
+            this.InvoiceReceiptSubReports.ReportSource = new ArgusCR1004.POS.PS101.InvoiceReceiptSubReports();
+            this.InvoiceReceiptSubReports.SizeF = new System.Drawing.SizeF(549.9581F, 23F);
+            // 
             // xrTable6
             // 
             this.xrTable6.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold);
@@ -2086,7 +2086,7 @@ namespace ArgusCR1004.POS.PS101
             this.xrTable6.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow5,
             this.xrTableRow19});
-            this.xrTable6.SizeF = new System.Drawing.SizeF(549.9185F, 36.66666F);
+            this.xrTable6.SizeF = new System.Drawing.SizeF(549.9183F, 36.66666F);
             this.xrTable6.StylePriority.UseFont = false;
             // 
             // xrTableRow5
@@ -2115,7 +2115,7 @@ namespace ArgusCR1004.POS.PS101
             this.xrTableCell5.StylePriority.UseTextAlignment = false;
             this.xrTableCell5.Text = "4031245396";
             this.xrTableCell5.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
-            this.xrTableCell5.Weight = 1.1425699841200558D;
+            this.xrTableCell5.Weight = 0.98387957249892322D;
             // 
             // xrTableCell6
             // 
@@ -2130,7 +2130,7 @@ namespace ArgusCR1004.POS.PS101
             this.xrTableCell6.StylePriority.UseTextAlignment = false;
             this.xrTableCell6.Text = ":س.ت";
             this.xrTableCell6.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
-            this.xrTableCell6.Weight = 0.4277143677091243D;
+            this.xrTableCell6.Weight = 0.42846379771591814D;
             // 
             // xrTableCell22
             // 
@@ -2145,7 +2145,7 @@ namespace ArgusCR1004.POS.PS101
             this.xrTableCell22.StylePriority.UseTextAlignment = false;
             this.xrTableCell22.Text = "info@mansour.com.sa";
             this.xrTableCell22.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
-            this.xrTableCell22.Weight = 1.5206523507928205D;
+            this.xrTableCell22.Weight = 1.7138551644021018D;
             // 
             // xrTableCell23
             // 
@@ -2160,7 +2160,7 @@ namespace ArgusCR1004.POS.PS101
             this.xrTableCell23.StylePriority.UseTextAlignment = false;
             this.xrTableCell23.Text = ": البريد الألكتروني";
             this.xrTableCell23.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
-            this.xrTableCell23.Weight = 1.0743767985367643D;
+            this.xrTableCell23.Weight = 1.0391149665418216D;
             // 
             // xrTableCell24
             // 
@@ -2529,6 +2529,10 @@ namespace ArgusCR1004.POS.PS101
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell21;
         private DevExpress.XtraReports.UI.XRBarCode QRCode2;
         private DevExpress.XtraReports.UI.XRBarCode QRCode;
+        private DevExpress.XtraReports.UI.XRTableCell xrTableCell3;
+        private DevExpress.XtraReports.UI.XRTableCell xrTableCell2;
+        private DevExpress.XtraReports.UI.XRTableCell xrTableCell7;
+        private DevExpress.XtraReports.UI.XRTableCell xrTableCell8;
         private DevExpress.XtraReports.UI.XRTable xrTable6;
         private DevExpress.XtraReports.UI.XRTableRow xrTableRow5;
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell5;
@@ -2549,9 +2553,5 @@ namespace ArgusCR1004.POS.PS101
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell36;
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell37;
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell38;
-        private DevExpress.XtraReports.UI.XRTableCell xrTableCell3;
-        private DevExpress.XtraReports.UI.XRTableCell xrTableCell2;
-        private DevExpress.XtraReports.UI.XRTableCell xrTableCell7;
-        private DevExpress.XtraReports.UI.XRTableCell xrTableCell8;
     }
 }

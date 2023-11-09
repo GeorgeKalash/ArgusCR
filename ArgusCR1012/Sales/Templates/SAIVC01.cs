@@ -35,7 +35,6 @@ namespace ArgusCR1012.Sales.Templates
            {
               date_data.Text = ((DateTime)webObject.record.trxHeader.date).ToString(sessionInfo.dateFormat) + " " + ((DateTime)webObject.record.logTime).ToString("HH:mm");
            }
-         //   date_data.Text = webObject.record.trxHeader.date.ToString("dd/MM/yy");
 
             plant_data.Text = webObject.record.trxHeader.plantName;
             licenseNo_data.Text = webObject.record.companyInfo.licenseNo;
