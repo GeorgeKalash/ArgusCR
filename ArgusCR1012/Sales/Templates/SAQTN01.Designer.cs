@@ -201,7 +201,7 @@ namespace ArgusCR1012.Sales.Templates
             this.xrLabel8.StylePriority.UseFont = false;
             this.xrLabel8.StylePriority.UseForeColor = false;
             this.xrLabel8.StylePriority.UseTextAlignment = false;
-            this.xrLabel8.Text = "(Tamdeed)";
+            this.xrLabel8.Text = "(Tamkeen)";
             this.xrLabel8.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             // 
             // xrLabel1
