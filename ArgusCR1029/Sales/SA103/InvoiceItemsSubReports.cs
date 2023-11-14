@@ -3,7 +3,6 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Drawing;
 using System.Drawing.Printing;
 
 namespace ArgusCR1029.Sales.SA103
@@ -29,7 +28,6 @@ namespace ArgusCR1029.Sales.SA103
         private void InvoiceItemsSubReports_DataSourceRowChanged(object sender, DataSourceRowEventArgs e)
         {
         }
-
 
         protected override void OnDataSourceRowChanged(DataSourceRowEventArgs e)
         {

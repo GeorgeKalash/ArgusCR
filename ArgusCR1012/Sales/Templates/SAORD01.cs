@@ -58,7 +58,7 @@ namespace ArgusCR1012.Sales.Templates
         }
         protected override void OnDataSourceRowChanged(DataSourceRowEventArgs e)
         {
-            ArgusDS.Sales.OrderItem obj = ((List<ArgusDS.Sales.OrderItem>)DataSource)[e.CurrentRow];
+            ArgusDS.Sales.OrderItemView obj = ((List<ArgusDS.Sales.OrderItemView>)DataSource)[e.CurrentRow];
 
             double netUnitPrice = obj.unitPrice - (obj.mdValue ?? 0);
             netPrice_data.Text = netUnitPrice.ToString("N2");
