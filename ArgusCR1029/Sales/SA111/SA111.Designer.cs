@@ -775,7 +775,7 @@ namespace ArgusCR1029.Sales.SA111
             this.taxInvoice_lbl.StylePriority.UseFont = false;
             this.taxInvoice_lbl.StylePriority.UsePadding = false;
             this.taxInvoice_lbl.StylePriority.UseTextAlignment = false;
-            this.taxInvoice_lbl.Text = "درافت إستلام  بالسريال";
+            this.taxInvoice_lbl.Text = "درافت إستلام  بالاصناف";
             this.taxInvoice_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopCenter;
             // 
             // SA111
