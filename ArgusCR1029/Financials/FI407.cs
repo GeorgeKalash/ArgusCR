@@ -7,6 +7,7 @@ namespace ArgusCR1029.Financials
 {
     public partial class FI407 : ArgusRPT.BaseReport
     {
+        int itemsCounter = 0;
         public FI407()
         {
             InitializeComponent();
@@ -31,6 +32,27 @@ namespace ArgusCR1029.Financials
             logo_data.ImageUrl = companyInfo.logoUrl;
             printSignature.Text = reportSignature();
             base.OnBeforePrint(e);
+        }
+        protected override void OnDataSourceRowChanged(DataSourceRowEventArgs e)
+        {
+            SharedClasses.JsonProtocol.QryStructure<ArgusDS._1029.FI407> obj = deserializeList<ArgusDS._1029.FI407>();
+
+            IG18_data.Text = (obj.list[itemsCounter].amountG18 == 0.0) ? "-" : obj.list[itemsCounter].amountG18.ToString("N2");
+            IG21_data.Text = (obj.list[itemsCounter].amountG21 == 0.0) ? "-" : obj.list[itemsCounter].amountG21.ToString("N2");
+            IEGP_data.Text = (obj.list[itemsCounter].amountEGP == 0.0) ? "-" : obj.list[itemsCounter].amountEGP.ToString("N2");
+           
+            PG18_data.Text = (obj.list[itemsCounter].paidAmountG18 == 0.0) ? "-" : obj.list[itemsCounter].paidAmountG18.ToString("N2");
+            PG21_data.Text = (obj.list[itemsCounter].paidAmountG21 == 0.0) ? "-" : obj.list[itemsCounter].paidAmountG21.ToString("N2");
+            PEGP_data.Text = (obj.list[itemsCounter].paidAmountEGP == 0.0) ? "-" : obj.list[itemsCounter].paidAmountEGP.ToString("N2");
+            
+            OG18_data.Text = (obj.list[itemsCounter].balanceG18 == 0.0) ? "-" : obj.list[itemsCounter].balanceG18.ToString("N2");
+            OG21_data.Text = (obj.list[itemsCounter].balanceG21 == 0.0) ? "-" : obj.list[itemsCounter].balanceG21.ToString("N2");
+            OEGP_data.Text = (obj.list[itemsCounter].balanceEGP == 0.0) ? "-" : obj.list[itemsCounter].balanceEGP.ToString("N2");
+
+            ++itemsCounter;
+
+            base.OnDataSourceRowChanged(e);
+
         }
 
         protected override void labelsText()
