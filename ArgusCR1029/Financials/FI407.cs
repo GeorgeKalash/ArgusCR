@@ -52,7 +52,6 @@ namespace ArgusCR1029.Financials
             ++itemsCounter;
 
             base.OnDataSourceRowChanged(e);
-
         }
 
         protected override void labelsText()
@@ -79,11 +78,11 @@ namespace ArgusCR1029.Financials
             OG21_lbl.Text = labelText(15);
             OEGP_lbl.Text = labelText(16);
 
-            currencyA_lbl.Text = labelText(17);
-            agingPaid_lbl.Text = labelText(18);
+            metalAging_lbl.Text = labelText(17);
+            paid_lbl.Text = labelText(18);
 
-            metalAging_lbl.Text = labelText(19);
-            paid_lbl.Text = labelText(20);
+            currencyA_lbl.Text = labelText(19);
+            agingPaid_lbl.Text = labelText(20);
 
             startDate_lbl.Text = labelText(21);
             endDate_lbl.Text = labelText(22);
