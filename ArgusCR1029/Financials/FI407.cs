@@ -78,18 +78,14 @@ namespace ArgusCR1029.Financials
             OG21_lbl.Text = labelText(15);
             OEGP_lbl.Text = labelText(16);
 
-            metalAging_lbl.Text = labelText(17);
-            paid_lbl.Text = labelText(18);
+            invoiceDate_lbl.Text = labelText(17);
 
-            currencyA_lbl.Text = labelText(19);
-            agingPaid_lbl.Text = labelText(20);
-
-            startDate_lbl.Text = labelText(21);
-            endDate_lbl.Text = labelText(22);
-            account_lbl.Text = labelText(23);
-            currency_lbl.Text = labelText(24);
-            accountGroup_lbl.Text = labelText(25);
-            showZeroBalances_lbl.Text = labelText(26);
+            startDate_lbl.Text = labelText(18);
+            endDate_lbl.Text = labelText(19);
+            account_lbl.Text = labelText(20);
+            currency_lbl.Text = labelText(21);
+            accountGroup_lbl.Text = labelText(22);
+            showZeroBalances_lbl.Text = labelText(23);
         }
 
         protected override string dictionaryStore()
