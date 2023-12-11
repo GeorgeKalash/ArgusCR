@@ -1241,7 +1241,7 @@ namespace ArgusCR1029.Sales.SA113
             this.taxInvoice_lbl.StylePriority.UseFont = false;
             this.taxInvoice_lbl.StylePriority.UsePadding = false;
             this.taxInvoice_lbl.StylePriority.UseTextAlignment = false;
-            this.taxInvoice_lbl.Text = "سند استلام مشغولات ذهبيه بالأصناف - مرتجع";
+            this.taxInvoice_lbl.Text = "سند تسليم مشغولات ذهبيه بفئة الاصناف - مرتجع";
             this.taxInvoice_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopCenter;
             // 
             // SA113
