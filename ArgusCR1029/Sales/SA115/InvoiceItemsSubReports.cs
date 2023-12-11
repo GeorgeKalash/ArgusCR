@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Drawing.Printing;
 
-namespace ArgusCR1029.Sales.SA114
+namespace ArgusCR1029.Sales.SA115
 {
     public partial class InvoiceItemsSubReports : ArgusRPT.BaseReport
     {
@@ -47,7 +47,7 @@ namespace ArgusCR1029.Sales.SA114
 
         protected override string dictionaryStore()
         {
-            return "CR1029.SA114";
+            return "CR1029.SA115";
         }
     }
 }

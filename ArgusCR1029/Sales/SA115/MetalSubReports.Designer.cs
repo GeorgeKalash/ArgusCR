@@ -1,5 +1,5 @@
 ﻿
-namespace ArgusCR1029.Sales.SA114
+namespace ArgusCR1029.Sales.SA115
 {
     partial class MetalSubReports
     {

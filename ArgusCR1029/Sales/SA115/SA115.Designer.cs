@@ -2,9 +2,9 @@
 using System;
 using System.Drawing.Printing;
 
-namespace ArgusCR1029.Sales.SA114
+namespace ArgusCR1029.Sales.SA115
 {
-    partial class SA114
+    partial class SA115
     {
         /// <summary>
         /// Required designer variable.
@@ -32,7 +32,7 @@ namespace ArgusCR1029.Sales.SA114
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SA114));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SA115));
             this.InvoiceItemSubBand = new DevExpress.XtraReports.UI.SubBand();
             this.InvoiceItemsSubReports = new DevExpress.XtraReports.UI.XRSubreport();
             this.Detail = new DevExpress.XtraReports.UI.DetailBand();
@@ -149,7 +149,7 @@ namespace ArgusCR1029.Sales.SA114
             // 
             this.InvoiceItemsSubReports.LocationFloat = new DevExpress.Utils.PointFloat(24.99994F, 0F);
             this.InvoiceItemsSubReports.Name = "InvoiceItemsSubReports";
-            this.InvoiceItemsSubReports.ReportSource = new ArgusCR1029.Sales.SA114.InvoiceItemsSubReports();
+            this.InvoiceItemsSubReports.ReportSource = new ArgusCR1029.Sales.SA115.InvoiceItemsSubReports();
             this.InvoiceItemsSubReports.SizeF = new System.Drawing.SizeF(777.0995F, 23F);
             // 
             // Detail
@@ -174,7 +174,7 @@ namespace ArgusCR1029.Sales.SA114
             // 
             this.MetalSubReports.LocationFloat = new DevExpress.Utils.PointFloat(24.99994F, 12.5F);
             this.MetalSubReports.Name = "MetalSubReports";
-            this.MetalSubReports.ReportSource = new ArgusCR1029.Sales.SA114.MetalSubReports();
+            this.MetalSubReports.ReportSource = new ArgusCR1029.Sales.SA115.MetalSubReports();
             this.MetalSubReports.SizeF = new System.Drawing.SizeF(777.0995F, 23F);
             // 
             // TopMargin

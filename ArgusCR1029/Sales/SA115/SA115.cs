@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using System.Drawing.Printing;
 
-namespace ArgusCR1029.Sales.SA114
+namespace ArgusCR1029.Sales.SA115
 {
-    public partial class SA114 : ArgusRPT.BaseReport
+    public partial class SA115 : ArgusRPT.BaseReport
     {
-        public SA114()
+        public SA115()
         {
             InitializeComponent();
         }
@@ -63,7 +63,7 @@ namespace ArgusCR1029.Sales.SA114
 
         protected override string dictionaryStore()
         {
-            return "CR1029.SA114";
+            return "CR1029.SA115";
         }
     }
 }
