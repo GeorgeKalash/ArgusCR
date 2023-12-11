@@ -473,7 +473,7 @@ namespace ArgusCR1029.Sales.SA104
             // 
             // xrTableCell3
             // 
-            this.xrTableCell3.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.xrTableCell3.BackColor = System.Drawing.Color.White;
             this.xrTableCell3.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold);
             this.xrTableCell3.Multiline = true;
             this.xrTableCell3.Name = "xrTableCell3";
@@ -542,7 +542,7 @@ namespace ArgusCR1029.Sales.SA104
             // 
             // xrTableCell5
             // 
-            this.xrTableCell5.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.xrTableCell5.BackColor = System.Drawing.Color.White;
             this.xrTableCell5.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Top | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell5.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold);
@@ -595,7 +595,7 @@ namespace ArgusCR1029.Sales.SA104
             // 
             // xrTableCell6
             // 
-            this.xrTableCell6.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.xrTableCell6.BackColor = System.Drawing.Color.White;
             this.xrTableCell6.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold);
             this.xrTableCell6.Multiline = true;
             this.xrTableCell6.Name = "xrTableCell6";
@@ -645,7 +645,7 @@ namespace ArgusCR1029.Sales.SA104
             // 
             // xrTableCell8
             // 
-            this.xrTableCell8.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.xrTableCell8.BackColor = System.Drawing.Color.White;
             this.xrTableCell8.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold);
             this.xrTableCell8.Multiline = true;
             this.xrTableCell8.Name = "xrTableCell8";
@@ -1168,7 +1168,7 @@ namespace ArgusCR1029.Sales.SA104
             this.license_lbl.StylePriority.UseFont = false;
             this.license_lbl.StylePriority.UsePadding = false;
             this.license_lbl.StylePriority.UseTextAlignment = false;
-            this.license_lbl.Text = "المندوب";
+            this.license_lbl.Text = "البائع";
             this.license_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             this.license_lbl.Weight = 0.83678082310346569D;
             // 
