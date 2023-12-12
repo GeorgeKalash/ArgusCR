@@ -689,7 +689,6 @@ namespace ArgusCR1029.Sales.SA115
             this.amountInWords_data.StylePriority.UseFont = false;
             this.amountInWords_data.StylePriority.UsePadding = false;
             this.amountInWords_data.StylePriority.UseTextAlignment = false;
-            this.amountInWords_data.Text = "amountInWords_data";
             this.amountInWords_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
             // 
             // text_lbl
@@ -1279,7 +1278,7 @@ namespace ArgusCR1029.Sales.SA115
             this.logo_data.SizeF = new System.Drawing.SizeF(136.4583F, 114.585F);
             this.logo_data.Sizing = DevExpress.XtraPrinting.ImageSizeMode.ZoomImage;
             // 
-            // SA114
+            // SA115
             // 
             this.Bands.AddRange(new DevExpress.XtraReports.UI.Band[] {
             this.TopMargin,

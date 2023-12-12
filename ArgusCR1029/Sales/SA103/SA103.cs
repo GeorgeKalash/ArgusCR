@@ -54,7 +54,7 @@ namespace ArgusCR1029.Sales.SA103
 
             description_data.Text = webObject.record.trxHeader.description;
 
-            spName_data.Text = webObject.record.salesPerson?.name;
+            spName2_data.Text = webObject.record.salesPerson?.name;
 
             ((InvoiceItemsSubReports)(InvoiceItemsSubReports.ReportSource)).data = webObject.record.items;
             ((MetalSubReports)(MetalSubReports.ReportSource)).data = webObject.record.metalSummaries;
