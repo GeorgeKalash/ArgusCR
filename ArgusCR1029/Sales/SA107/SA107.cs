@@ -3,7 +3,6 @@ using System.Collections;
 using System.ComponentModel;
 using System.Drawing.Printing;
 using DevExpress.XtraReports.UI;
-using ArgusDS.Sales.Reports;
 using System.Collections.Generic;
 
 namespace ArgusCR1029.Sales.SA107
@@ -32,22 +31,26 @@ namespace ArgusCR1029.Sales.SA107
 
             logo_data.ImageUrl = companyInfo.logoUrl;
 
-            dtName_data.Text = webObject.record.dtName;
             reference_data.Text = webObject.record.reference;
             date_data.Text = webObject.record.date.ToString("dd/MM/yyyy");
+            plant_data.Text = webObject.record.plantName;
+            salesPerson_data.Text = webObject.record.spName;
+            address_data.Text = companyInfo.address?.street1;
+
             clientRef_data.Text = webObject.record.clientRef;
             clientName_data.Text = webObject.record.clientName;
+           // clientVATNo_data.Text = webObject.record.clientVATNo;
+            phoneNumber_data.Text = webObject.record.billAddress?.phone;
+            cAddress_data.Text = webObject.record.billAddress?.street1;
+          //  exhibitionManager_data.Text = webObject.record.contactName;
 
-            siteRef_data.Text = webObject.record.siteRef;
-            siteName_data.Text = webObject.record.siteName;
-            currency_data.Text = webObject.record.currencyName;
-            salesPerson_data.Text = webObject.record.spName;
+            amountInWords_data.Text = SharedClasses.NumberToWords.multiLingualNumberInText((decimal)webObject.record.amount, 10, 2);
 
             description_data.Text = webObject.record.description;
 
             subtotal_data.Text = webObject.record.subtotal.ToString("N2");
-            vat_data.Text = webObject.record.vatAmount.ToString("N2");
-            total_data.Text = webObject.record.amount.ToString("N2");
+            vatAmount_data.Text = webObject.record.vatAmount.ToString("N2");
+            amount_data.Text = webObject.record.amount.ToString("N2");
 
             ((InvoiceItemsSubReports)(InvoiceItemsSubReports.ReportSource)).data = webObject.record.items;
             ((MetalSubReports)(MetalSubReports.ReportSource)).data = webObject.record.metalSummaries;

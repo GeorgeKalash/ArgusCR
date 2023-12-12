@@ -15,7 +15,6 @@ namespace ArgusCR1029.Sales.SA107
         {
             InitializeComponent();
         }
-
         protected override void OnBeforePrint(PrintEventArgs e)
         {
             RightToLeft = DevExpress.XtraReports.UI.RightToLeft.No;
@@ -32,7 +31,6 @@ namespace ArgusCR1029.Sales.SA107
         protected override void labelsText()
         {
         }
-
         protected override string dictionaryStore()
         {
             return "CR1029.SA107";
