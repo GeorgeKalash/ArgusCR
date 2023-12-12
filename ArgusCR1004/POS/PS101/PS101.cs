@@ -40,10 +40,10 @@ namespace ArgusCR1004.POS.PS101
             date_data.Text = webObject.record.invoiceView.date.ToString(sessionInfo.dateFormat);
             spName_data.Text = webObject.record.salesPerson.name;
             plant_data.Text = webObject.record.invoiceView.plantName;
-        
-          if (webObject.record.address != null)
+            clientName_data.Text = webObject.record.invoiceView?.clientName;
+
+            if (webObject.record.address != null)
            {
-                clientName_data.Text = webObject.record.address.name;
                 phoneNumber_data.Text = webObject.record.address.phone;
                 address_data.Text = webObject.record.address.street1;
             }
@@ -56,10 +56,9 @@ namespace ArgusCR1004.POS.PS101
             date2_data.Text = webObject.record.invoiceView.date.ToString(sessionInfo.dateFormat);
             spName2_data.Text = webObject.record.salesPerson.name;
             plant2_data.Text = webObject.record.invoiceView.plantName;
-
+            clientName2_data.Text = webObject.record.invoiceView?.clientName;
             if (webObject.record.address != null)
             {
-                clientName2_data.Text = webObject.record.address.name;
                 phoneNumber2_data.Text = webObject.record.address.phone;
                 address2_data.Text = webObject.record.address.street1;
             }
