@@ -87,12 +87,12 @@ namespace ArgusCR1029.CashAndBanks
             this.xrTableRow4 = new DevExpress.XtraReports.UI.XRTableRow();
             this.currencyRef_lbl = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTableCell4 = new DevExpress.XtraReports.UI.XRTableCell();
-            this.xrLabel1 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel6 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel2 = new DevExpress.XtraReports.UI.XRLabel();
             this.startDate2_param = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel4 = new DevExpress.XtraReports.UI.XRLabel();
             this.endDate2_param = new DevExpress.XtraReports.UI.XRLabel();
-            this.xrLabel6 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel1 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel7 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel8 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel9 = new DevExpress.XtraReports.UI.XRLabel();
@@ -101,9 +101,9 @@ namespace ArgusCR1029.CashAndBanks
             this.xrLabel3 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel5 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel10 = new DevExpress.XtraReports.UI.XRLabel();
-            this.xrLabel11 = new DevExpress.XtraReports.UI.XRLabel();
-            this.xrLabel14 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel15 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel14 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel11 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel16 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel17 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel18 = new DevExpress.XtraReports.UI.XRLabel();
@@ -551,8 +551,28 @@ namespace ArgusCR1029.CashAndBanks
             // ReportFooter
             // 
             this.ReportFooter.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+            this.xrLabel6,
+            this.xrLabel2,
+            this.startDate2_param,
+            this.xrLabel4,
+            this.endDate2_param,
+            this.xrLabel1,
+            this.xrLabel7,
+            this.xrLabel8,
+            this.xrLabel9,
+            this.xrLabel12,
+            this.xrLabel13,
+            this.xrLabel3,
+            this.xrLabel5,
+            this.xrLabel10,
+            this.xrLabel15,
+            this.xrLabel14,
+            this.xrLabel11,
+            this.xrLabel16,
+            this.xrLabel17,
+            this.xrLabel18,
             this.xrTable3});
-            this.ReportFooter.HeightF = 26.66715F;
+            this.ReportFooter.HeightF = 385.4028F;
             this.ReportFooter.KeepTogether = true;
             this.ReportFooter.Name = "ReportFooter";
             // 
@@ -614,35 +634,15 @@ namespace ArgusCR1029.CashAndBanks
             // PageFooter
             // 
             this.PageFooter.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
-            this.xrLabel18,
-            this.xrLabel17,
-            this.xrLabel16,
-            this.xrLabel11,
-            this.xrLabel14,
-            this.xrLabel15,
-            this.xrLabel10,
-            this.xrLabel5,
-            this.xrLabel3,
-            this.xrLabel13,
-            this.xrLabel12,
-            this.xrLabel9,
-            this.xrLabel8,
-            this.xrLabel7,
-            this.xrLabel6,
-            this.endDate2_param,
-            this.xrLabel4,
-            this.startDate2_param,
-            this.xrLabel2,
-            this.xrLabel1,
             this.pagesNumber_lbl,
             this.printSignature});
-            this.PageFooter.HeightF = 351.1232F;
+            this.PageFooter.HeightF = 33.00001F;
             this.PageFooter.Name = "PageFooter";
             // 
             // pagesNumber_lbl
             // 
             this.pagesNumber_lbl.BackColor = System.Drawing.Color.White;
-            this.pagesNumber_lbl.LocationFloat = new DevExpress.Utils.PointFloat(1042.743F, 328.1232F);
+            this.pagesNumber_lbl.LocationFloat = new DevExpress.Utils.PointFloat(1044.686F, 10.00001F);
             this.pagesNumber_lbl.Name = "pagesNumber_lbl";
             this.pagesNumber_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.pagesNumber_lbl.SizeF = new System.Drawing.SizeF(103.6481F, 23F);
@@ -653,7 +653,7 @@ namespace ArgusCR1029.CashAndBanks
             // 
             // printSignature
             // 
-            this.printSignature.LocationFloat = new DevExpress.Utils.PointFloat(25F, 328.1232F);
+            this.printSignature.LocationFloat = new DevExpress.Utils.PointFloat(9.999998F, 10.00001F);
             this.printSignature.Multiline = true;
             this.printSignature.Name = "printSignature";
             this.printSignature.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -859,69 +859,10 @@ namespace ArgusCR1029.CashAndBanks
             this.xrTableCell4.StylePriority.UseFont = false;
             this.xrTableCell4.Weight = 1.3185110029301443D;
             // 
-            // xrLabel1
-            // 
-            this.xrLabel1.Font = new System.Drawing.Font("Times New Roman", 10F);
-            this.xrLabel1.LocationFloat = new DevExpress.Utils.PointFloat(849.0225F, 10.00001F);
-            this.xrLabel1.Multiline = true;
-            this.xrLabel1.Name = "xrLabel1";
-            this.xrLabel1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel1.SizeF = new System.Drawing.SizeF(300.3528F, 16.75002F);
-            this.xrLabel1.StylePriority.UseFont = false;
-            this.xrLabel1.StylePriority.UseTextAlignment = false;
-            this.xrLabel1.Text = "اقر انا /                               بصحة سندات تحصيل النقدية اعلاه ";
-            this.xrLabel1.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
-            // 
-            // xrLabel2
-            // 
-            this.xrLabel2.Font = new System.Drawing.Font("Times New Roman", 10F);
-            this.xrLabel2.LocationFloat = new DevExpress.Utils.PointFloat(804.3913F, 10.00001F);
-            this.xrLabel2.Multiline = true;
-            this.xrLabel2.Name = "xrLabel2";
-            this.xrLabel2.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel2.SizeF = new System.Drawing.SizeF(44.63025F, 16.75002F);
-            this.xrLabel2.StylePriority.UseFont = false;
-            this.xrLabel2.Text = "من تاريخ";
-            // 
-            // startDate2_param
-            // 
-            this.startDate2_param.Font = new System.Drawing.Font("Times New Roman", 10F);
-            this.startDate2_param.LocationFloat = new DevExpress.Utils.PointFloat(688.9276F, 10.00001F);
-            this.startDate2_param.Multiline = true;
-            this.startDate2_param.Name = "startDate2_param";
-            this.startDate2_param.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.startDate2_param.SizeF = new System.Drawing.SizeF(115.4637F, 16.75002F);
-            this.startDate2_param.StylePriority.UseFont = false;
-            this.startDate2_param.StylePriority.UseTextAlignment = false;
-            this.startDate2_param.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
-            // 
-            // xrLabel4
-            // 
-            this.xrLabel4.Font = new System.Drawing.Font("Times New Roman", 10F);
-            this.xrLabel4.LocationFloat = new DevExpress.Utils.PointFloat(626.5891F, 10.00001F);
-            this.xrLabel4.Multiline = true;
-            this.xrLabel4.Name = "xrLabel4";
-            this.xrLabel4.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel4.SizeF = new System.Drawing.SizeF(62.3385F, 16.75002F);
-            this.xrLabel4.StylePriority.UseFont = false;
-            this.xrLabel4.Text = "الى تاريخ";
-            // 
-            // endDate2_param
-            // 
-            this.endDate2_param.Font = new System.Drawing.Font("Times New Roman", 10F);
-            this.endDate2_param.LocationFloat = new DevExpress.Utils.PointFloat(26.04173F, 10.00001F);
-            this.endDate2_param.Multiline = true;
-            this.endDate2_param.Name = "endDate2_param";
-            this.endDate2_param.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.endDate2_param.SizeF = new System.Drawing.SizeF(600.5473F, 16.75002F);
-            this.endDate2_param.StylePriority.UseFont = false;
-            this.endDate2_param.StylePriority.UseTextAlignment = false;
-            this.endDate2_param.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
-            // 
             // xrLabel6
             // 
             this.xrLabel6.Font = new System.Drawing.Font("Times New Roman", 10F);
-            this.xrLabel6.LocationFloat = new DevExpress.Utils.PointFloat(26.0417F, 26.75002F);
+            this.xrLabel6.LocationFloat = new DevExpress.Utils.PointFloat(25.00006F, 67.36116F);
             this.xrLabel6.Multiline = true;
             this.xrLabel6.Name = "xrLabel6";
             this.xrLabel6.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -931,28 +872,87 @@ namespace ArgusCR1029.CashAndBanks
             this.xrLabel6.Text = resources.GetString("xrLabel6.Text");
             this.xrLabel6.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
             // 
+            // xrLabel2
+            // 
+            this.xrLabel2.Font = new System.Drawing.Font("Times New Roman", 10F);
+            this.xrLabel2.LocationFloat = new DevExpress.Utils.PointFloat(753.3953F, 50.61115F);
+            this.xrLabel2.Multiline = true;
+            this.xrLabel2.Name = "xrLabel2";
+            this.xrLabel2.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel2.SizeF = new System.Drawing.SizeF(63.38025F, 16.75002F);
+            this.xrLabel2.StylePriority.UseFont = false;
+            this.xrLabel2.Text = ": من تاريخ";
+            // 
+            // startDate2_param
+            // 
+            this.startDate2_param.Font = new System.Drawing.Font("Times New Roman", 10F);
+            this.startDate2_param.LocationFloat = new DevExpress.Utils.PointFloat(659.8067F, 50.61115F);
+            this.startDate2_param.Multiline = true;
+            this.startDate2_param.Name = "startDate2_param";
+            this.startDate2_param.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.startDate2_param.SizeF = new System.Drawing.SizeF(93.58868F, 16.75002F);
+            this.startDate2_param.StylePriority.UseFont = false;
+            this.startDate2_param.StylePriority.UseTextAlignment = false;
+            this.startDate2_param.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
+            // 
+            // xrLabel4
+            // 
+            this.xrLabel4.Font = new System.Drawing.Font("Times New Roman", 10F);
+            this.xrLabel4.LocationFloat = new DevExpress.Utils.PointFloat(597.4682F, 50.61115F);
+            this.xrLabel4.Multiline = true;
+            this.xrLabel4.Name = "xrLabel4";
+            this.xrLabel4.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel4.SizeF = new System.Drawing.SizeF(62.3385F, 16.75002F);
+            this.xrLabel4.StylePriority.UseFont = false;
+            this.xrLabel4.Text = ": الى تاريخ";
+            // 
+            // endDate2_param
+            // 
+            this.endDate2_param.Font = new System.Drawing.Font("Times New Roman", 10F);
+            this.endDate2_param.LocationFloat = new DevExpress.Utils.PointFloat(25F, 50.61115F);
+            this.endDate2_param.Multiline = true;
+            this.endDate2_param.Name = "endDate2_param";
+            this.endDate2_param.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.endDate2_param.SizeF = new System.Drawing.SizeF(572.4682F, 16.75002F);
+            this.endDate2_param.StylePriority.UseFont = false;
+            this.endDate2_param.StylePriority.UseTextAlignment = false;
+            this.endDate2_param.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
+            // 
+            // xrLabel1
+            // 
+            this.xrLabel1.Font = new System.Drawing.Font("Times New Roman", 10F);
+            this.xrLabel1.LocationFloat = new DevExpress.Utils.PointFloat(816.7756F, 50.61115F);
+            this.xrLabel1.Multiline = true;
+            this.xrLabel1.Name = "xrLabel1";
+            this.xrLabel1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel1.SizeF = new System.Drawing.SizeF(331.5582F, 16.75002F);
+            this.xrLabel1.StylePriority.UseFont = false;
+            this.xrLabel1.StylePriority.UseTextAlignment = false;
+            this.xrLabel1.Text = "اقر انا /                                        بصحة سندات تحصيل النقدية اعلاه ";
+            this.xrLabel1.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
+            // 
             // xrLabel7
             // 
             this.xrLabel7.Font = new System.Drawing.Font("Times New Roman", 10F);
-            this.xrLabel7.LocationFloat = new DevExpress.Utils.PointFloat(612.0996F, 61.4584F);
+            this.xrLabel7.LocationFloat = new DevExpress.Utils.PointFloat(644.3913F, 102.0695F);
             this.xrLabel7.Multiline = true;
             this.xrLabel7.Name = "xrLabel7";
             this.xrLabel7.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel7.SizeF = new System.Drawing.SizeF(537.2758F, 17.95829F);
+            this.xrLabel7.SizeF = new System.Drawing.SizeF(503.9424F, 17.95829F);
             this.xrLabel7.StylePriority.UseFont = false;
             this.xrLabel7.StylePriority.UseTextAlignment = false;
-            this.xrLabel7.Text = "واقر بان السندات الظاهرة فى التقرير تمت بمعرفتى وتحت مسئوليتى ، وكذلك صحة رصيد او" +
-    "ل المدة كما فى تاريخ ";
+            this.xrLabel7.Text = ": واقر بان السندات الظاهرة فى التقرير تمت بمعرفتى وتحت مسئوليتى، وكذلك صحة رصيد ا" +
+    "ول المدة كما فى تاريخ ";
             this.xrLabel7.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
             // 
             // xrLabel8
             // 
             this.xrLabel8.Font = new System.Drawing.Font("Times New Roman", 10F);
-            this.xrLabel8.LocationFloat = new DevExpress.Utils.PointFloat(26.04171F, 61.4584F);
+            this.xrLabel8.LocationFloat = new DevExpress.Utils.PointFloat(25.00006F, 102.0695F);
             this.xrLabel8.Multiline = true;
             this.xrLabel8.Name = "xrLabel8";
             this.xrLabel8.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel8.SizeF = new System.Drawing.SizeF(391.011F, 17.95829F);
+            this.xrLabel8.SizeF = new System.Drawing.SizeF(300.2501F, 17.95829F);
             this.xrLabel8.StylePriority.UseFont = false;
             this.xrLabel8.StylePriority.UseTextAlignment = false;
             this.xrLabel8.Text = "جنيه مصرى وأتعهد برد تلك العهدة كاملة الى الشركة فى حال طلبها .";
@@ -961,24 +961,24 @@ namespace ArgusCR1029.CashAndBanks
             // xrLabel9
             // 
             this.xrLabel9.Font = new System.Drawing.Font("Times New Roman", 10F);
-            this.xrLabel9.LocationFloat = new DevExpress.Utils.PointFloat(26.04171F, 43.50004F);
+            this.xrLabel9.LocationFloat = new DevExpress.Utils.PointFloat(25.00006F, 84.11118F);
             this.xrLabel9.Multiline = true;
             this.xrLabel9.Name = "xrLabel9";
             this.xrLabel9.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.xrLabel9.SizeF = new System.Drawing.SizeF(1123.334F, 17.95832F);
             this.xrLabel9.StylePriority.UseFont = false;
             this.xrLabel9.StylePriority.UseTextAlignment = false;
-            this.xrLabel9.Text = " واتحمل المسئولية القانونية امام الشركة بخلاف ذلك حتى تاريخ";
+            this.xrLabel9.Text = "  : القانونية امام الشركة بخلاف ذلك حتى تاريخ";
             this.xrLabel9.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
             // 
             // xrLabel12
             // 
             this.xrLabel12.Font = new System.Drawing.Font("Times New Roman", 10F);
-            this.xrLabel12.LocationFloat = new DevExpress.Utils.PointFloat(417.0526F, 61.4584F);
+            this.xrLabel12.LocationFloat = new DevExpress.Utils.PointFloat(425.3374F, 102.0695F);
             this.xrLabel12.Multiline = true;
             this.xrLabel12.Name = "xrLabel12";
             this.xrLabel12.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel12.SizeF = new System.Drawing.SizeF(195.047F, 17.95829F);
+            this.xrLabel12.SizeF = new System.Drawing.SizeF(150.2553F, 17.95829F);
             this.xrLabel12.StylePriority.UseFont = false;
             this.xrLabel12.StylePriority.UseTextAlignment = false;
             this.xrLabel12.Text = "واقر بصحة رصيد العهدة والبالغة";
@@ -987,11 +987,11 @@ namespace ArgusCR1029.CashAndBanks
             // xrLabel13
             // 
             this.xrLabel13.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Underline);
-            this.xrLabel13.LocationFloat = new DevExpress.Utils.PointFloat(1042.743F, 110.6667F);
+            this.xrLabel13.LocationFloat = new DevExpress.Utils.PointFloat(1041.701F, 151.2778F);
             this.xrLabel13.Multiline = true;
             this.xrLabel13.Name = "xrLabel13";
             this.xrLabel13.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel13.SizeF = new System.Drawing.SizeF(106.6326F, 17.9583F);
+            this.xrLabel13.SizeF = new System.Drawing.SizeF(106.6317F, 17.9583F);
             this.xrLabel13.StylePriority.UseFont = false;
             this.xrLabel13.StylePriority.UseTextAlignment = false;
             this.xrLabel13.Text = "مستلم العهدة  ";
@@ -1000,7 +1000,7 @@ namespace ArgusCR1029.CashAndBanks
             // xrLabel3
             // 
             this.xrLabel3.Font = new System.Drawing.Font("Times New Roman", 10F);
-            this.xrLabel3.LocationFloat = new DevExpress.Utils.PointFloat(26.04173F, 79.41672F);
+            this.xrLabel3.LocationFloat = new DevExpress.Utils.PointFloat(25.00006F, 120.0278F);
             this.xrLabel3.Multiline = true;
             this.xrLabel3.Name = "xrLabel3";
             this.xrLabel3.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -1013,11 +1013,11 @@ namespace ArgusCR1029.CashAndBanks
             // xrLabel5
             // 
             this.xrLabel5.Font = new System.Drawing.Font("Times New Roman", 10F);
-            this.xrLabel5.LocationFloat = new DevExpress.Utils.PointFloat(928.0269F, 137.5F);
+            this.xrLabel5.LocationFloat = new DevExpress.Utils.PointFloat(926.9852F, 178.1112F);
             this.xrLabel5.Multiline = true;
             this.xrLabel5.Name = "xrLabel5";
             this.xrLabel5.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel5.SizeF = new System.Drawing.SizeF(221.3486F, 17.9583F);
+            this.xrLabel5.SizeF = new System.Drawing.SizeF(221.3478F, 17.9583F);
             this.xrLabel5.StylePriority.UseFont = false;
             this.xrLabel5.StylePriority.UseTextAlignment = false;
             this.xrLabel5.Text = "/ اسم مستلم العهدة";
@@ -1026,7 +1026,7 @@ namespace ArgusCR1029.CashAndBanks
             // xrLabel10
             // 
             this.xrLabel10.Font = new System.Drawing.Font("Times New Roman", 10F);
-            this.xrLabel10.LocationFloat = new DevExpress.Utils.PointFloat(265.5947F, 137.5F);
+            this.xrLabel10.LocationFloat = new DevExpress.Utils.PointFloat(264.553F, 178.1112F);
             this.xrLabel10.Multiline = true;
             this.xrLabel10.Name = "xrLabel10";
             this.xrLabel10.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -1036,36 +1036,10 @@ namespace ArgusCR1029.CashAndBanks
             this.xrLabel10.Text = "/ توقيع مستلم العهدة";
             this.xrLabel10.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
             // 
-            // xrLabel11
-            // 
-            this.xrLabel11.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Underline);
-            this.xrLabel11.LocationFloat = new DevExpress.Utils.PointFloat(1042.743F, 176.9167F);
-            this.xrLabel11.Multiline = true;
-            this.xrLabel11.Name = "xrLabel11";
-            this.xrLabel11.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel11.SizeF = new System.Drawing.SizeF(106.6326F, 17.9583F);
-            this.xrLabel11.StylePriority.UseFont = false;
-            this.xrLabel11.StylePriority.UseTextAlignment = false;
-            this.xrLabel11.Text = "المحاسب المختص";
-            this.xrLabel11.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
-            // 
-            // xrLabel14
-            // 
-            this.xrLabel14.Font = new System.Drawing.Font("Times New Roman", 10F);
-            this.xrLabel14.LocationFloat = new DevExpress.Utils.PointFloat(926.0848F, 203.75F);
-            this.xrLabel14.Multiline = true;
-            this.xrLabel14.Name = "xrLabel14";
-            this.xrLabel14.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel14.SizeF = new System.Drawing.SizeF(223.2906F, 17.95828F);
-            this.xrLabel14.StylePriority.UseFont = false;
-            this.xrLabel14.StylePriority.UseTextAlignment = false;
-            this.xrLabel14.Text = "/ اقر انا السيد";
-            this.xrLabel14.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
-            // 
             // xrLabel15
             // 
             this.xrLabel15.Font = new System.Drawing.Font("Times New Roman", 10F);
-            this.xrLabel15.LocationFloat = new DevExpress.Utils.PointFloat(735.9439F, 203.75F);
+            this.xrLabel15.LocationFloat = new DevExpress.Utils.PointFloat(734.9023F, 244.3611F);
             this.xrLabel15.Multiline = true;
             this.xrLabel15.Name = "xrLabel15";
             this.xrLabel15.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -1075,10 +1049,36 @@ namespace ArgusCR1029.CashAndBanks
             this.xrLabel15.Text = "/ بوظيفة ";
             this.xrLabel15.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
             // 
+            // xrLabel14
+            // 
+            this.xrLabel14.Font = new System.Drawing.Font("Times New Roman", 10F);
+            this.xrLabel14.LocationFloat = new DevExpress.Utils.PointFloat(925.0432F, 244.3611F);
+            this.xrLabel14.Multiline = true;
+            this.xrLabel14.Name = "xrLabel14";
+            this.xrLabel14.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel14.SizeF = new System.Drawing.SizeF(223.2899F, 17.95828F);
+            this.xrLabel14.StylePriority.UseFont = false;
+            this.xrLabel14.StylePriority.UseTextAlignment = false;
+            this.xrLabel14.Text = "/ اقر انا السيد";
+            this.xrLabel14.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
+            // 
+            // xrLabel11
+            // 
+            this.xrLabel11.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Underline);
+            this.xrLabel11.LocationFloat = new DevExpress.Utils.PointFloat(1041.701F, 217.5278F);
+            this.xrLabel11.Multiline = true;
+            this.xrLabel11.Name = "xrLabel11";
+            this.xrLabel11.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel11.SizeF = new System.Drawing.SizeF(106.6318F, 17.9583F);
+            this.xrLabel11.StylePriority.UseFont = false;
+            this.xrLabel11.StylePriority.UseTextAlignment = false;
+            this.xrLabel11.Text = "المحاسب المختص";
+            this.xrLabel11.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
+            // 
             // xrLabel16
             // 
             this.xrLabel16.Font = new System.Drawing.Font("Times New Roman", 10F);
-            this.xrLabel16.LocationFloat = new DevExpress.Utils.PointFloat(265.5947F, 203.75F);
+            this.xrLabel16.LocationFloat = new DevExpress.Utils.PointFloat(264.553F, 244.3611F);
             this.xrLabel16.Multiline = true;
             this.xrLabel16.Name = "xrLabel16";
             this.xrLabel16.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -1091,11 +1091,11 @@ namespace ArgusCR1029.CashAndBanks
             // xrLabel17
             // 
             this.xrLabel17.Font = new System.Drawing.Font("Times New Roman", 10F);
-            this.xrLabel17.LocationFloat = new DevExpress.Utils.PointFloat(940.4847F, 221.7084F);
+            this.xrLabel17.LocationFloat = new DevExpress.Utils.PointFloat(940.4847F, 273.9584F);
             this.xrLabel17.Multiline = true;
             this.xrLabel17.Name = "xrLabel17";
             this.xrLabel17.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel17.SizeF = new System.Drawing.SizeF(208.8908F, 17.9583F);
+            this.xrLabel17.SizeF = new System.Drawing.SizeF(207.8483F, 17.95831F);
             this.xrLabel17.StylePriority.UseFont = false;
             this.xrLabel17.StylePriority.UseTextAlignment = false;
             this.xrLabel17.Text = " / التوقيع ";
@@ -1104,11 +1104,11 @@ namespace ArgusCR1029.CashAndBanks
             // xrLabel18
             // 
             this.xrLabel18.Font = new System.Drawing.Font("Times New Roman", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
-            this.xrLabel18.LocationFloat = new DevExpress.Utils.PointFloat(937.5F, 250F);
+            this.xrLabel18.LocationFloat = new DevExpress.Utils.PointFloat(940.4847F, 309.3612F);
             this.xrLabel18.Multiline = true;
             this.xrLabel18.Name = "xrLabel18";
             this.xrLabel18.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel18.SizeF = new System.Drawing.SizeF(211.8755F, 17.95831F);
+            this.xrLabel18.SizeF = new System.Drawing.SizeF(207.8483F, 17.95831F);
             this.xrLabel18.StylePriority.UseFont = false;
             this.xrLabel18.StylePriority.UseTextAlignment = false;
             this.xrLabel18.Text = "اعتماد مدير الحسابات ";
@@ -1195,25 +1195,25 @@ namespace ArgusCR1029.CashAndBanks
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell7;
         private DevExpress.XtraReports.UI.XRTableCell functionName_lbl;
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell9;
-        private DevExpress.XtraReports.UI.XRLabel xrLabel1;
-        private DevExpress.XtraReports.UI.XRLabel xrLabel13;
-        private DevExpress.XtraReports.UI.XRLabel xrLabel12;
-        private DevExpress.XtraReports.UI.XRLabel xrLabel9;
-        private DevExpress.XtraReports.UI.XRLabel xrLabel8;
-        private DevExpress.XtraReports.UI.XRLabel xrLabel7;
         private DevExpress.XtraReports.UI.XRLabel xrLabel6;
-        private DevExpress.XtraReports.UI.XRLabel endDate2_param;
-        private DevExpress.XtraReports.UI.XRLabel xrLabel4;
-        private DevExpress.XtraReports.UI.XRLabel startDate2_param;
         private DevExpress.XtraReports.UI.XRLabel xrLabel2;
-        private DevExpress.XtraReports.UI.XRLabel xrLabel10;
-        private DevExpress.XtraReports.UI.XRLabel xrLabel5;
+        private DevExpress.XtraReports.UI.XRLabel startDate2_param;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel4;
+        private DevExpress.XtraReports.UI.XRLabel endDate2_param;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel1;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel7;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel8;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel9;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel12;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel13;
         private DevExpress.XtraReports.UI.XRLabel xrLabel3;
-        private DevExpress.XtraReports.UI.XRLabel xrLabel18;
-        private DevExpress.XtraReports.UI.XRLabel xrLabel17;
-        private DevExpress.XtraReports.UI.XRLabel xrLabel16;
-        private DevExpress.XtraReports.UI.XRLabel xrLabel11;
-        private DevExpress.XtraReports.UI.XRLabel xrLabel14;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel5;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel10;
         private DevExpress.XtraReports.UI.XRLabel xrLabel15;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel14;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel11;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel16;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel17;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel18;
     }
 }
