@@ -35,16 +35,12 @@ namespace ArgusCR1029.CashAndBanks
                 endDate2_param.Text = Parameters[2].Value.ToString();
             if (Parameters.Count > 3)
 
+
+                startDate3_param.Text = Parameters[1].Value.ToString();
+            if (Parameters.Count > 2)
+                endDate3_param.Text = Parameters[2].Value.ToString();
+            if (Parameters.Count > 3)
                 logo_data.ImageUrl = companyInfo.logoUrl;
-            companyInfoName_data.Text = companyInfo.name;
-            taxNo_data.Text = companyInfo.taxNo;
-            if (companyInfo.address != null)
-            {
-                addressName_data.Text = companyInfo.address.name;
-                addressStreet_data.Text = companyInfo.address.street1;
-                addressMobile_data.Text = companyInfo.address.phone;
-                addressEmail_data.Text = companyInfo.address.email1;
-            }
 
             printSignature.Text = reportSignature();
             date_data.TextFormatString = dateFormat();
