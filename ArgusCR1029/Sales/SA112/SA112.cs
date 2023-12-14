@@ -31,22 +31,26 @@ namespace ArgusCR1029.Sales.SA112
             SharedClasses.JsonProtocol.GetStructure<ArgusDS.Sales.Reports.SA111> webObject = deserializeGet< ArgusDS.Sales.Reports.SA111>();
 
             logo_data.ImageUrl = companyInfo.logoUrl;
-            dtName_data.Text = webObject.record.header.dtName;
+
             reference_data.Text = webObject.record.header.reference;
-            date_data.Text = webObject.record.header.date.ToString("dd/MM/yyyy");
+            date_data.Text = webObject.record.header.date.ToString(sessionInfo.dateFormat);
+            plant_data.Text = webObject.record.header.plantName;
+            salesPerson_data.Text = webObject.record.header.spName;
+            address_data.Text = companyInfo.address?.street1;
+
             clientRef_data.Text = webObject.record.header.clientRef;
             clientName_data.Text = webObject.record.header.clientName;
-
-            siteRef_data.Text = webObject.record.header.siteRef;
-            siteName_data.Text = webObject.record.header.siteName;
-            currency_data.Text = webObject.record.header.currencyName;
-            salesPerson_data.Text = webObject.record.header.spName;
-
-            description_data.Text = webObject.record.header.description;
+            // clientVATNo_data.Text = webObject.record.header.vatNumber;
+            // phoneNumber_data.Text = webObject.record.billAddress?.phone;
+            // cAddress_data.Text = webObject.record.billAddress?.street1;
 
             subtotal_data.Text = webObject.record.header.subTotal.ToString("N2");
-            vat_data.Text = webObject.record.header.vatAmount.ToString("N2");
-            total_data.Text = webObject.record.header.amount.ToString("N2");
+            vatAmount_data.Text = webObject.record.header.vatAmount.ToString("N2");
+            amount_data.Text = webObject.record.header.amount.ToString("N2");
+            amountInWords_data.Text = SharedClasses.NumberToWords.multiLingualNumberInText((decimal)webObject.record.header.amount, 10, 2);
+
+            description_data.Text = webObject.record.header.description;
+            spName2_data.Text = webObject.record.header.spName;
 
             ((InvoiceItemsSubReports)(InvoiceItemsSubReports.ReportSource)).data = webObject.record.items;
             ((MetalSubReports)(MetalSubReports.ReportSource)).data = webObject.record.metalSummaries;
