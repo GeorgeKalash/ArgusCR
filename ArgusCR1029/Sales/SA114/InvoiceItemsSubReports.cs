@@ -10,7 +10,6 @@ namespace ArgusCR1029.Sales.SA114
     public partial class InvoiceItemsSubReports : ArgusRPT.BaseReport
     {
         public List<ArgusDS.Sales.Reports.SA111b> data;
-
         public InvoiceItemsSubReports()
         {
             InitializeComponent();
@@ -35,7 +34,7 @@ namespace ArgusCR1029.Sales.SA114
 
         protected override string dictionaryStore()
         {
-            return "CR1029.SA111";
+            return "CR1029.SA114";
         }
     }
 }

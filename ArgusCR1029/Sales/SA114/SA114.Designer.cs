@@ -139,7 +139,7 @@ namespace ArgusCR1029.Sales.SA114
             // 
             // InvoiceItemsSubReports
             // 
-            this.InvoiceItemsSubReports.LocationFloat = new DevExpress.Utils.PointFloat(24.99997F, 0F);
+            this.InvoiceItemsSubReports.LocationFloat = new DevExpress.Utils.PointFloat(25.0002F, 0F);
             this.InvoiceItemsSubReports.Name = "InvoiceItemsSubReports";
             this.InvoiceItemsSubReports.ReportSource = new ArgusCR1029.Sales.SA114.InvoiceItemsSubReports();
             this.InvoiceItemsSubReports.SizeF = new System.Drawing.SizeF(777.0993F, 23F);

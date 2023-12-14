@@ -10,7 +10,6 @@ namespace ArgusCR1029.Sales.SA114
     public partial class MetalSubReports : ArgusRPT.BaseReport
     {
         public List<ArgusDS.Logistics.MetalSummary> data;
-
         public MetalSubReports()
         {
             InitializeComponent();
@@ -36,7 +35,7 @@ namespace ArgusCR1029.Sales.SA114
 
         protected override string dictionaryStore()
         {
-            return "CR1029.SA111";
+            return "CR1029.SA114";
         }
     }
 }
