@@ -525,6 +525,24 @@
     <Compile Include="Purchase\Templates\PU103\PU103.Designer.cs">
       <DependentUpon>PU103.cs</DependentUpon>
     </Compile>
+    <Compile Include="Sales\SA114\InvoiceItemsSubReports.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Sales\SA114\InvoiceItemsSubReports.Designer.cs">
+      <DependentUpon>InvoiceItemsSubReports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sales\SA114\MetalSubReports.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Sales\SA114\MetalSubReports.Designer.cs">
+      <DependentUpon>MetalSubReports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sales\SA114\SA114.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Sales\SA114\SA114.Designer.cs">
+      <DependentUpon>SA114.cs</DependentUpon>
+    </Compile>
     <Compile Include="Sales\SA116\InvoiceItemsSubReports.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -1057,6 +1075,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Purchase\Templates\PU103\PU103.resx">
       <DependentUpon>PU103.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales\SA114\InvoiceItemsSubReports.resx">
+      <DependentUpon>InvoiceItemsSubReports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales\SA114\MetalSubReports.resx">
+      <DependentUpon>MetalSubReports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales\SA114\SA114.resx">
+      <DependentUpon>SA114.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Sales\SA116\InvoiceItemsSubReports.resx">
       <DependentUpon>InvoiceItemsSubReports.cs</DependentUpon>
