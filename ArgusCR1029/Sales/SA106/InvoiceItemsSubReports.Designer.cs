@@ -535,7 +535,7 @@ namespace ArgusCR1029.Sales.SA106
             this.Detail,
             this.PageHeader});
             this.Font = new System.Drawing.Font("Arial", 9.75F);
-            this.Margins = new System.Drawing.Printing.Margins(0, 46, 0, 0);
+            this.Margins = new System.Drawing.Printing.Margins(0, 47, 0, 0);
             this.PageHeight = 1169;
             this.PageWidth = 827;
             this.PaperKind = System.Drawing.Printing.PaperKind.A4;

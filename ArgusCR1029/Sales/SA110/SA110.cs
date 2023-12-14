@@ -56,6 +56,8 @@ namespace ArgusCR1029.Sales.SA110
             description_data.Text = webObject.record.trxHeader.description;
             spName2_data.Text = webObject.record.trxHeader.spName;
 
+            pcs_data.Text = webObject.record.trxHeader.pcs.ToString();
+
             ((InvoiceItemsSubReports)(InvoiceItemsSubReports.ReportSource)).data = webObject.record.serials;
             ((MetalSubReports)(MetalSubReports.ReportSource)).data = webObject.record.metalSummaries;
             base.OnBeforePrint(e);

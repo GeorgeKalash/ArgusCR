@@ -50,6 +50,8 @@ namespace ArgusCR1029.Sales.SA106
             vatAmount_data.Text = webObject.record.vatAmount.ToString("N2");
             amount_data.Text = webObject.record.amount.ToString("N2");
 
+            pcs_data.Text = webObject.record.pcs.ToString();
+
             ((InvoiceItemsSubReports)(InvoiceItemsSubReports.ReportSource)).data = webObject.record.serials;
             ((MetalSubReports)(MetalSubReports.ReportSource)).data = webObject.record.metalSummaries;
             base.OnBeforePrint(e);
