@@ -39,10 +39,10 @@ namespace ArgusCR1029.Sales.SA107
 
             clientRef_data.Text = webObject.record.clientRef;
             clientName_data.Text = webObject.record.clientName;
-           // clientVATNo_data.Text = webObject.record.clientVATNo;
+            clientVATNo_data.Text = webObject.record.clientVATNo;
             phoneNumber_data.Text = webObject.record.billAddress?.phone;
             cAddress_data.Text = webObject.record.billAddress?.street1;
-          //  exhibitionManager_data.Text = webObject.record.contactName;
+            exhibitionManager_data.Text = webObject.record.contactName;
 
             amountInWords_data.Text = SharedClasses.NumberToWords.multiLingualNumberInText((decimal)webObject.record.amount, 10, 2);
 

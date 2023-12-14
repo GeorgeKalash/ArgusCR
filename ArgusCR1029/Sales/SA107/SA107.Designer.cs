@@ -271,7 +271,6 @@ namespace ArgusCR1029.Sales.SA107
             this.amountInWords_data.StylePriority.UseFont = false;
             this.amountInWords_data.StylePriority.UsePadding = false;
             this.amountInWords_data.StylePriority.UseTextAlignment = false;
-            this.amountInWords_data.Text = "amountInWords_data";
             this.amountInWords_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
             // 
             // xrTable12

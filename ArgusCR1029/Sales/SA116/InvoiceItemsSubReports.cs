@@ -35,7 +35,7 @@ namespace ArgusCR1029.Sales.SA116
 
         protected override string dictionaryStore()
         {
-            return "CR1029.SA106";
+            return "CR1029.SA116";
         }
     }
 }

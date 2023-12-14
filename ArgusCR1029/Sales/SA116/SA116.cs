@@ -13,7 +13,6 @@ namespace ArgusCR1029.Sales.SA116
         {
             InitializeComponent();
         }
-
         public override void setSessionInfo(Dictionary<string, string> _reportHeaders)
         {
             base.setSessionInfo(_reportHeaders);
@@ -38,10 +37,10 @@ namespace ArgusCR1029.Sales.SA116
 
             clientRef_data.Text = webObject.record.clientRef;
             clientName_data.Text = webObject.record.clientName;
-            // clientVATNo_data.Text = webObject.record.clientVATNo;
+            clientVATNo_data.Text = webObject.record.clientVATNo;
             phoneNumber_data.Text = webObject.record.billAddress?.phone;
             cAddress_data.Text = webObject.record.billAddress?.street1;
-            //  exhibitionManager_data.Text = webObject.record.contactName;
+            exhibitionManager_data.Text = webObject.record.contactName;
 
             amountInWords_data.Text = SharedClasses.NumberToWords.multiLingualNumberInText((decimal)webObject.record.amount, 10, 2);
 
@@ -62,7 +61,7 @@ namespace ArgusCR1029.Sales.SA116
 
         protected override string dictionaryStore()
         {
-            return "CR1029.SA106";
+            return "CR1029.SA116";
         }
     }
 }
