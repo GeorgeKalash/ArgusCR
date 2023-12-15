@@ -27,7 +27,7 @@ namespace ArgusCR1029.Financials
             account_param.Text = Parameters.Count > 2 ? Parameters[2].Value.ToString() : string.Empty;
             currency_param.Text = Parameters.Count > 3 ? Parameters[3].Value.ToString() : string.Empty;
             accountGroup_param.Text = Parameters.Count > 4 ? Parameters[4].Value.ToString() : string.Empty;
-            showZeroBalances_param.Text = Parameters.Count > 9 ? Parameters[9].Value.ToString() : string.Empty;
+            showZeroBalances_param.Text = Parameters.Count > 8 ? Parameters[8].Value.ToString() : string.Empty;
 
             logo_data.ImageUrl = companyInfo.logoUrl;
             printSignature.Text = reportSignature();
