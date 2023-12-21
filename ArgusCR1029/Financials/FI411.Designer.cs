@@ -155,7 +155,7 @@ namespace ArgusCR1029.Financials
             // 
             // TopMargin
             // 
-            this.TopMargin.HeightF = 0F;
+            this.TopMargin.HeightF = 25F;
             this.TopMargin.Name = "TopMargin";
             // 
             // BottomMargin
@@ -455,6 +455,11 @@ namespace ArgusCR1029.Financials
             // ReportHeader
             // 
             this.ReportHeader.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+            this.xrTable6,
+            this.xrTable1,
+            this.xrTable5,
+            this.xrTable8,
+            this.xrTable7,
             this.showZeroBalances_param,
             this.showZeroBalances_lbl,
             this.currency_param,
@@ -469,7 +474,7 @@ namespace ArgusCR1029.Financials
             this.reportTitle_lbl,
             this.accountGroup_lbl,
             this.accountGroup_param});
-            this.ReportHeader.HeightF = 191.9305F;
+            this.ReportHeader.HeightF = 329.0139F;
             this.ReportHeader.KeepTogether = true;
             this.ReportHeader.Name = "ReportHeader";
             // 
@@ -910,7 +915,7 @@ namespace ArgusCR1029.Financials
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTable1.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.xrTable1.LocationFloat = new DevExpress.Utils.PointFloat(12.50003F, 75.62488F);
+            this.xrTable1.LocationFloat = new DevExpress.Utils.PointFloat(12.50006F, 281.097F);
             this.xrTable1.Name = "xrTable1";
             this.xrTable1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable1.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
@@ -1292,23 +1297,18 @@ namespace ArgusCR1029.Financials
             // 
             // spName
             // 
-            this.spName.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
-            this.xrTable6,
-            this.xrTable7,
-            this.xrTable5,
-            this.xrTable8,
-            this.xrTable1});
             this.spName.GroupFields.AddRange(new DevExpress.XtraReports.UI.GroupField[] {
-            new DevExpress.XtraReports.UI.GroupField("spName", DevExpress.XtraReports.UI.XRColumnSortOrder.Ascending),
-            new DevExpress.XtraReports.UI.GroupField("accountRef", DevExpress.XtraReports.UI.XRColumnSortOrder.Ascending)});
-            this.spName.HeightF = 123.5417F;
+            new DevExpress.XtraReports.UI.GroupField("spName", DevExpress.XtraReports.UI.XRColumnSortOrder.None),
+            new DevExpress.XtraReports.UI.GroupField("accountRef", DevExpress.XtraReports.UI.XRColumnSortOrder.None),
+            new DevExpress.XtraReports.UI.GroupField("reference", DevExpress.XtraReports.UI.XRColumnSortOrder.None)});
+            this.spName.HeightF = 23.22216F;
             this.spName.KeepTogether = true;
             this.spName.Name = "spName";
             this.spName.RepeatEveryPage = true;
             // 
             // xrTable6
             // 
-            this.xrTable6.LocationFloat = new DevExpress.Utils.PointFloat(129.1666F, 49.99994F);
+            this.xrTable6.LocationFloat = new DevExpress.Utils.PointFloat(129.1666F, 255.4721F);
             this.xrTable6.Name = "xrTable6";
             this.xrTable6.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable6.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
@@ -1334,7 +1334,7 @@ namespace ArgusCR1029.Financials
             // 
             // xrTable7
             // 
-            this.xrTable7.LocationFloat = new DevExpress.Utils.PointFloat(12.5F, 49.99994F);
+            this.xrTable7.LocationFloat = new DevExpress.Utils.PointFloat(12.50003F, 255.4721F);
             this.xrTable7.Name = "xrTable7";
             this.xrTable7.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable7.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
@@ -1360,7 +1360,7 @@ namespace ArgusCR1029.Financials
             // 
             // xrTable5
             // 
-            this.xrTable5.LocationFloat = new DevExpress.Utils.PointFloat(12.50001F, 24.37502F);
+            this.xrTable5.LocationFloat = new DevExpress.Utils.PointFloat(12.50004F, 229.8472F);
             this.xrTable5.Name = "xrTable5";
             this.xrTable5.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable5.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
@@ -1386,7 +1386,7 @@ namespace ArgusCR1029.Financials
             // 
             // xrTable8
             // 
-            this.xrTable8.LocationFloat = new DevExpress.Utils.PointFloat(129.1666F, 24.37502F);
+            this.xrTable8.LocationFloat = new DevExpress.Utils.PointFloat(129.1666F, 229.8472F);
             this.xrTable8.Name = "xrTable8";
             this.xrTable8.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable8.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
@@ -1414,7 +1414,7 @@ namespace ArgusCR1029.Financials
             // 
             this.GroupFooter1.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
             this.xrTable2});
-            this.GroupFooter1.HeightF = 25F;
+            this.GroupFooter1.HeightF = 37.93081F;
             this.GroupFooter1.KeepTogether = true;
             this.GroupFooter1.Name = "GroupFooter1";
             // 
@@ -1679,7 +1679,7 @@ namespace ArgusCR1029.Financials
             this.GroupFooter1});
             this.Font = new System.Drawing.Font("Arial", 9.75F);
             this.Landscape = true;
-            this.Margins = new System.Drawing.Printing.Margins(0, 0, 0, 7);
+            this.Margins = new System.Drawing.Printing.Margins(0, 0, 25, 7);
             this.PageHeight = 929;
             this.PageWidth = 1268;
             this.PaperKind = System.Drawing.Printing.PaperKind.A4Extra;
