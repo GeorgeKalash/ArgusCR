@@ -23,6 +23,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReportViewer", "..\ReportVi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharedClasses", "..\..\SharedClasses\SharedClasses.csproj", "{85DF1484-AF16-4BF2-BDA3-96E42017C8D8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArgusCR1009", "ArgusCR1009\ArgusCR1009.csproj", "{575CECD2-87E8-4736-B0E5-89A05241D9D3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +71,10 @@ Global
 		{85DF1484-AF16-4BF2-BDA3-96E42017C8D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{85DF1484-AF16-4BF2-BDA3-96E42017C8D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{85DF1484-AF16-4BF2-BDA3-96E42017C8D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{575CECD2-87E8-4736-B0E5-89A05241D9D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{575CECD2-87E8-4736-B0E5-89A05241D9D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{575CECD2-87E8-4736-B0E5-89A05241D9D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{575CECD2-87E8-4736-B0E5-89A05241D9D3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
