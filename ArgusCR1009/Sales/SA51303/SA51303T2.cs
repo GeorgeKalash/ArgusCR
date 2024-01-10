@@ -7,9 +7,9 @@ using ArgusDS.Sales.Reports;
 
 namespace ArgusCR1009.Sales.SA51303
 {
-    public partial class SA51303T1 : ArgusRPT.BaseReport
+    public partial class SA51303T2 : ArgusRPT.BaseReport
     {
-        public SA51303T1 ()
+        public SA51303T2 ()
         {
             InitializeComponent();
         }
@@ -30,8 +30,6 @@ namespace ArgusCR1009.Sales.SA51303
 
             subtotal_data.Text = webObject.record.trxHeader.subtotal.ToString("N2");
             tdAmount_data.Text = webObject.record.trxHeader.tdAmount.ToString();
-            vatAmount_data.Text = webObject.record.trxHeader.vatAmount.ToString("N2");
-            totalTTC_data.Text = (webObject.record.trxHeader.subtotal + webObject.record.trxHeader.vatAmount).ToString("N2");
             totalPay_data.Text = webObject.record.trxHeader.amount.ToString("N2");
             //subtotal2_data.Text = (webObject.record.trxHeader.subtotal - webObject.record.trxHeader.tdAmount).ToString("N2");
 
@@ -47,7 +45,7 @@ namespace ArgusCR1009.Sales.SA51303
         }
         protected override string dictionaryStore()
         {
-            return "CR1009.SA51303T1";
+            return "CR1009.SA51303T2";
         }
     }
 }

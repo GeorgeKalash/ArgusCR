@@ -88,6 +88,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="Sales\SA51303\SA51303T2.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Sales\SA51303\SA51303T2.Designer.cs">
+      <DependentUpon>SA51303T2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Sales\SA51303\SA51303T1.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -100,6 +106,9 @@
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales\SA51303\SA51303T2.resx">
+      <DependentUpon>SA51303T2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Sales\SA51303\SA51303T1.resx">
       <DependentUpon>SA51303T1.cs</DependentUpon>
