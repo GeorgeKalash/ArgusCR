@@ -1,5 +1,4 @@
 ﻿using DevExpress.XtraReports.UI;
-using DevExpress.XtraReports.UI;
 using System;
 using System.Collections;
 using System.ComponentModel;
@@ -24,7 +23,7 @@ namespace ArgusCR1009.Sales.SA51301
             client_data.Text = webObject.record.header.clientName;
             date_data.Text = webObject.record.header.date.ToString(sessionInfo.dateFormat);
 
-            amountInWords_data.Text = SharedClasses.NumberToWords.multiLingualNumberInText((decimal)webObject.record.header.amount, 14, 3);
+            amountInWords_data.Text = SharedClasses.NumberToWords.multiLingualNumberInText((decimal)webObject.record.header.amount, (short) webObject.record.header.currencyProfileId, 3);
 
             ht_data.Text = webObject.record.header.subtotal.ToString("N2");
             tva_data.Text = webObject.record.header.vatAmount.ToString("N2");
