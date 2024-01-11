@@ -36,7 +36,7 @@ namespace ArgusCR1009.Sales.SA51303
             //asdi_data.Text = webObject.record.trxHeader.amount.ToString("N2");
             subtotal2_data.Text = (webObject.record.trxHeader.subtotal - webObject.record.trxHeader.tdAmount).ToString();
 
-            amountInWords_data.Text = SharedClasses.NumberToWords.multiLingualNumberInText((decimal)webObject.record.trxHeader.amount, 14, 3);
+            amountInWords_data.Text = SharedClasses.NumberToWords.multiLingualNumberInText((decimal)webObject.record.trxHeader.amount, (short)webObject.record.currencyProfileId, 3);
 
             spName2_data.Text = webObject.record.trxHeader.spName;
             clientName2_data.Text = webObject.record.trxHeader.clientName;
