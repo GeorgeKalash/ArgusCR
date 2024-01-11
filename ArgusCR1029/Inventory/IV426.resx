@@ -117,4 +117,7 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="xrLabel6.Text" xml:space="preserve">
+    <value>واقر بأننى لم اقم بالحصول من العملاء على اى كمية ذهب بدون تحرير سندات تحصيل ، ولم اقم ببيع ذهب او ارجاع ذهب للعملاء بدون تحرير فاتورة مبيعات او مرتجعات للعملاء من الشركة ، واقر اننى قمت بالجرد الفعلى والمطابقة لعهدة الذهب والنقدية </value>
+  </data>
 </root>

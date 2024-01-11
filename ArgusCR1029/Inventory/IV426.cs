@@ -31,6 +31,13 @@ namespace ArgusCR1029.Inventory
             itemCategory_param.Text = Parameters.Count > 4 ? Parameters[4].Value.ToString() : string.Empty;
             systemFunction_param.Text = Parameters.Count > 5 ? Parameters[5].Value.ToString() : string.Empty;
 
+            startDate2_param.Text = Parameters.Count > 1 ? Parameters[1].Value.ToString() : string.Empty;
+            endDate2_param.Text = Parameters.Count > 2 ? Parameters[2].Value.ToString() : string.Empty;
+
+            startDate3_param.Text = Parameters.Count > 1 ? Parameters[1].Value.ToString() : string.Empty;
+            endDate3_param.Text = Parameters.Count > 2 ? Parameters[2].Value.ToString() : string.Empty;
+
+
             printSignature.Text = reportSignature();
             base.OnBeforePrint(e);
         }
