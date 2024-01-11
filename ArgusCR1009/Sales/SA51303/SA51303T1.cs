@@ -38,7 +38,6 @@ namespace ArgusCR1009.Sales.SA51303
 
             amountInWords_data.Text = SharedClasses.NumberToWords.multiLingualNumberInText((decimal)webObject.record.trxHeader.amount, 14, 3);
 
-            spName2_data.Text = webObject.record.trxHeader.spName;
             clientName2_data.Text = webObject.record.trxHeader.clientName;
 
             base.OnBeforePrint(e);
