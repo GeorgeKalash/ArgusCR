@@ -29,9 +29,7 @@ namespace ArgusCR1029.Inventory
         /// </summary>
         private void InitializeComponent()
         {
-            DevExpress.XtraReports.UI.XRSummary xrSummary1 = new DevExpress.XtraReports.UI.XRSummary();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(IV426B));
-            DevExpress.XtraReports.UI.XRSummary xrSummary2 = new DevExpress.XtraReports.UI.XRSummary();
             this.TopMargin = new DevExpress.XtraReports.UI.TopMarginBand();
             this.BottomMargin = new DevExpress.XtraReports.UI.BottomMarginBand();
             this.Detail = new DevExpress.XtraReports.UI.DetailBand();
@@ -943,8 +941,6 @@ namespace ArgusCR1029.Inventory
             // 
             // xrLabel19
             // 
-            this.xrLabel19.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "sumSum([qtyG21_Received])+sumSum([qtyG21_Sent])")});
             this.xrLabel19.Font = new System.Drawing.Font("Times New Roman", 10F);
             this.xrLabel19.LocationFloat = new DevExpress.Utils.PointFloat(239.7847F, 90.28574F);
             this.xrLabel19.Multiline = true;
@@ -953,10 +949,7 @@ namespace ArgusCR1029.Inventory
             this.xrLabel19.SizeF = new System.Drawing.SizeF(115.4167F, 17.95826F);
             this.xrLabel19.StylePriority.UseFont = false;
             this.xrLabel19.StylePriority.UseTextAlignment = false;
-            xrSummary1.Running = DevExpress.XtraReports.UI.SummaryRunning.Report;
-            this.xrLabel19.Summary = xrSummary1;
             this.xrLabel19.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
-            this.xrLabel19.TextFormatString = "{0:n2}";
             // 
             // startDate3_param
             // 
@@ -1276,8 +1269,6 @@ namespace ArgusCR1029.Inventory
             this.xrLabel23.SizeF = new System.Drawing.SizeF(124.3506F, 17.95827F);
             this.xrLabel23.StylePriority.UseFont = false;
             this.xrLabel23.StylePriority.UseTextAlignment = false;
-            xrSummary2.Running = DevExpress.XtraReports.UI.SummaryRunning.Report;
-            this.xrLabel23.Summary = xrSummary2;
             this.xrLabel23.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
             // 
             // IV426B
