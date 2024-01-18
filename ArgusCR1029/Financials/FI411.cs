@@ -33,15 +33,6 @@ namespace ArgusCR1029.Financials
             printSignature.Text = reportSignature();
             base.OnBeforePrint(e);
         }
-        protected override void OnDataSourceRowChanged(DataSourceRowEventArgs e)
-        {
-            SharedClasses.JsonProtocol.QryStructure<ArgusDS._1029.FI407> obj = deserializeList<ArgusDS._1029.FI407>();
-
-
-            ++itemsCounter;
-
-            base.OnDataSourceRowChanged(e);
-        }
 
         protected override void labelsText()
         {
