@@ -7,7 +7,6 @@ namespace ArgusCR1029.Financials
 {
     public partial class FI411 : ArgusRPT.BaseReport
     {
-        int itemsCounter = 0;
         public FI411 ()
         {
             InitializeComponent();
