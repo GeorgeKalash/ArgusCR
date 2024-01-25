@@ -31,7 +31,7 @@ namespace ArgusCR1029.Purchase.Templates
             currencyName_data.Text = webObject.record.header.currencyName;
             plant_data.Text = webObject.record.header.plantName;
             pm_data.Text = webObject.record.header.pmName;
-            vendorDocRef_data.Text = webObject.record.header.vendorDocRef;
+            paymentTerms_data.Text = webObject.record.header.paymentTermName;
             vatCheckBox.Checked = webObject.record.header.isVattable == true;
             if (webObject.record.header.deliveryDate != null)
                 vendorRef_data.Text = ((DateTime)webObject.record.header.deliveryDate).ToString(sessionInfo.dateFormat);
@@ -57,7 +57,7 @@ namespace ArgusCR1029.Purchase.Templates
             currencyName_lbl.Text = labelText(5);
             plant_lbl.Text = labelText(6);
             pm_lbl.Text = labelText(7);
-            vendorDocRef_lbl.Text = labelText(8);
+            paymentTerms_lbl.Text = labelText(8);
             vat_lbl.Text = labelText(9); 
             deliveryDate_lbl.Text = labelText(10);
             dm_lbl.Text = labelText(11);

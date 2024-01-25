@@ -52,8 +52,8 @@ namespace ArgusCR1029.Purchase.Templates
             this.currencyName_data = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTable11 = new DevExpress.XtraReports.UI.XRTable();
             this.xrTableRow6 = new DevExpress.XtraReports.UI.XRTableRow();
-            this.vendorDocRef_lbl = new DevExpress.XtraReports.UI.XRTableCell();
-            this.vendorDocRef_data = new DevExpress.XtraReports.UI.XRTableCell();
+            this.paymentTerms_lbl = new DevExpress.XtraReports.UI.XRTableCell();
+            this.paymentTerms_data = new DevExpress.XtraReports.UI.XRTableCell();
             this.vatCheckBox = new DevExpress.XtraReports.UI.XRCheckBox();
             this.vat_lbl = new DevExpress.XtraReports.UI.XRLabel();
             this.xrTable7 = new DevExpress.XtraReports.UI.XRTable();
@@ -338,7 +338,7 @@ namespace ArgusCR1029.Purchase.Templates
             this.xrTable4,
             this.title_lbl,
             this.exWorks_lbl});
-            this.ReportHeader.HeightF = 224.75F;
+            this.ReportHeader.HeightF = 204.3751F;
             this.ReportHeader.KeepTogether = true;
             this.ReportHeader.Name = "ReportHeader";
             // 
@@ -401,42 +401,41 @@ namespace ArgusCR1029.Purchase.Templates
             // xrTableRow6
             // 
             this.xrTableRow6.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
-            this.vendorDocRef_lbl,
-            this.vendorDocRef_data});
+            this.paymentTerms_lbl,
+            this.paymentTerms_data});
             this.xrTableRow6.Name = "xrTableRow6";
             this.xrTableRow6.Weight = 1D;
             // 
-            // vendorDocRef_lbl
+            // paymentTerms_lbl
             // 
-            this.vendorDocRef_lbl.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.vendorDocRef_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+            this.paymentTerms_lbl.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.paymentTerms_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
-            this.vendorDocRef_lbl.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold);
-            this.vendorDocRef_lbl.Multiline = true;
-            this.vendorDocRef_lbl.Name = "vendorDocRef_lbl";
-            this.vendorDocRef_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(7, 2, 8, 0, 100F);
-            this.vendorDocRef_lbl.StylePriority.UseBackColor = false;
-            this.vendorDocRef_lbl.StylePriority.UseBorders = false;
-            this.vendorDocRef_lbl.StylePriority.UseFont = false;
-            this.vendorDocRef_lbl.StylePriority.UsePadding = false;
-            this.vendorDocRef_lbl.Text = "Vendor Doc. Ref:";
-            this.vendorDocRef_lbl.Weight = 1.2073335260084106D;
+            this.paymentTerms_lbl.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold);
+            this.paymentTerms_lbl.Multiline = true;
+            this.paymentTerms_lbl.Name = "paymentTerms_lbl";
+            this.paymentTerms_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(7, 2, 8, 0, 100F);
+            this.paymentTerms_lbl.StylePriority.UseBackColor = false;
+            this.paymentTerms_lbl.StylePriority.UseBorders = false;
+            this.paymentTerms_lbl.StylePriority.UseFont = false;
+            this.paymentTerms_lbl.StylePriority.UsePadding = false;
+            this.paymentTerms_lbl.Text = "Payment Terms:";
+            this.paymentTerms_lbl.Weight = 1.2073335260084106D;
             // 
-            // vendorDocRef_data
+            // paymentTerms_data
             // 
-            this.vendorDocRef_data.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+            this.paymentTerms_data.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
-            this.vendorDocRef_data.Font = new System.Drawing.Font("Arial", 9F);
-            this.vendorDocRef_data.Multiline = true;
-            this.vendorDocRef_data.Name = "vendorDocRef_data";
-            this.vendorDocRef_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(7, 2, 8, 0, 100F);
-            this.vendorDocRef_data.StylePriority.UseBorders = false;
-            this.vendorDocRef_data.StylePriority.UseFont = false;
-            this.vendorDocRef_data.StylePriority.UsePadding = false;
-            this.vendorDocRef_data.TextFormatString = "{0:dd/MM/yyyy}";
-            this.vendorDocRef_data.Weight = 1.2460851304770806D;
+            this.paymentTerms_data.Font = new System.Drawing.Font("Arial", 9F);
+            this.paymentTerms_data.Multiline = true;
+            this.paymentTerms_data.Name = "paymentTerms_data";
+            this.paymentTerms_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(7, 2, 8, 0, 100F);
+            this.paymentTerms_data.StylePriority.UseBorders = false;
+            this.paymentTerms_data.StylePriority.UseFont = false;
+            this.paymentTerms_data.StylePriority.UsePadding = false;
+            this.paymentTerms_data.Weight = 1.2460851304770806D;
             // 
             // vatCheckBox
             // 
@@ -1413,8 +1412,8 @@ namespace ArgusCR1029.Purchase.Templates
         private DevExpress.XtraReports.UI.XRLabel description_lbl;
         private DevExpress.XtraReports.UI.XRTable xrTable11;
         private DevExpress.XtraReports.UI.XRTableRow xrTableRow6;
-        private DevExpress.XtraReports.UI.XRTableCell vendorDocRef_lbl;
-        private DevExpress.XtraReports.UI.XRTableCell vendorDocRef_data;
+        private DevExpress.XtraReports.UI.XRTableCell paymentTerms_lbl;
+        private DevExpress.XtraReports.UI.XRTableCell paymentTerms_data;
         private DevExpress.XtraReports.UI.XRTableCell deliveryDate_lbl;
         private DevExpress.XtraReports.UI.XRTableCell deliveryDate_data;
         private DevExpress.XtraReports.UI.XRTableRow xrTableRow5;
