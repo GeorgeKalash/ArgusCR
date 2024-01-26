@@ -70,7 +70,7 @@ namespace ArgusCR1029.Sales
             itemGrp_lbl.Text = labelText(21);
             syFunction_lbl.Text = labelText(22);
             production_lbl.Text = labelText(23);
-
+            totalQty_lbl.Text = labelText(24);
         }
 
         protected override string dictionaryStore()
