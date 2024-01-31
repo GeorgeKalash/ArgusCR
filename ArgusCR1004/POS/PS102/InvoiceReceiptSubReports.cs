@@ -6,7 +6,7 @@ using System.ComponentModel;
 using System.Drawing;
 using System.Drawing.Printing;
 
-namespace ArgusCR1004.POS.PS101
+namespace ArgusCR1004.POS.PS102
 {
     public partial class InvoiceReceiptSubReports : ArgusRPT.BaseReport
     {

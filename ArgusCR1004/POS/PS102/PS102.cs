@@ -5,11 +5,11 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Drawing.Printing;
 
-namespace ArgusCR1004.POS.PS101
+namespace ArgusCR1004.POS.PS102
 {
-    public partial class PS101 : ArgusRPT.BaseReport
+    public partial class PS102 : ArgusRPT.BaseReport
     {
-        public PS101()
+        public PS102()
         {
             InitializeComponent();
         }
