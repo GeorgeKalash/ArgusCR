@@ -140,7 +140,7 @@ namespace ArgusCR1004.POS.PS102
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.itemRef_data.BorderWidth = 1F;
             this.itemRef_data.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[trxLine].[sku]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[sku]")});
             this.itemRef_data.Font = new System.Drawing.Font("Arial", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.itemRef_data.Multiline = true;
             this.itemRef_data.Name = "itemRef_data";
@@ -161,7 +161,7 @@ namespace ArgusCR1004.POS.PS102
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.description_data.BorderWidth = 1F;
             this.description_data.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[trxLine].[itemName]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[itemName]")});
             this.description_data.Font = new System.Drawing.Font("Arial", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.description_data.Multiline = true;
             this.description_data.Name = "description_data";
@@ -182,7 +182,7 @@ namespace ArgusCR1004.POS.PS102
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.purity_data.BorderWidth = 1F;
             this.purity_data.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[trxLine].[metalRef]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[metalRef]")});
             this.purity_data.Font = new System.Drawing.Font("Arial", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.purity_data.Multiline = true;
             this.purity_data.Name = "purity_data";
@@ -203,7 +203,7 @@ namespace ArgusCR1004.POS.PS102
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.wGold_data.BorderWidth = 1F;
             this.wGold_data.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[trxLine].[weight]*[trxLine].[qty]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[weight]*[qty]")});
             this.wGold_data.Font = new System.Drawing.Font("Arial", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.wGold_data.Multiline = true;
             this.wGold_data.Name = "wGold_data";
@@ -225,7 +225,7 @@ namespace ArgusCR1004.POS.PS102
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.qty_data.BorderWidth = 1F;
             this.qty_data.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[trxLine].[qty]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[qty]")});
             this.qty_data.Font = new System.Drawing.Font("Arial", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.qty_data.Multiline = true;
             this.qty_data.Name = "qty_data";
@@ -247,7 +247,7 @@ namespace ArgusCR1004.POS.PS102
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.unitPrice_data.BorderWidth = 1F;
             this.unitPrice_data.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[trxLine].[basePrice]+[trxLine].[baseLaborPrice]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[basePrice]+[baseLaborPrice]")});
             this.unitPrice_data.Font = new System.Drawing.Font("Arial", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.unitPrice_data.Multiline = true;
             this.unitPrice_data.Name = "unitPrice_data";
@@ -269,7 +269,7 @@ namespace ArgusCR1004.POS.PS102
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.extendedPrice_data.BorderWidth = 1F;
             this.extendedPrice_data.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[trxLine].[extendedPrice]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[extendedPrice]")});
             this.extendedPrice_data.Font = new System.Drawing.Font("Arial", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.extendedPrice_data.Multiline = true;
             this.extendedPrice_data.Name = "extendedPrice_data";
@@ -291,7 +291,7 @@ namespace ArgusCR1004.POS.PS102
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.vat_data.BorderWidth = 1F;
             this.vat_data.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[trxLine].[vatAmount]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[vatAmount]")});
             this.vat_data.Font = new System.Drawing.Font("Arial", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.vat_data.Multiline = true;
             this.vat_data.Name = "vat_data";
@@ -313,7 +313,7 @@ namespace ArgusCR1004.POS.PS102
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.totalPrice_data.BorderWidth = 1F;
             this.totalPrice_data.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[trxLine].[extendedPrice]+[trxLine].[vatAmount]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[extendedPrice]+[vatAmount]")});
             this.totalPrice_data.Font = new System.Drawing.Font("Arial", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.totalPrice_data.Multiline = true;
             this.totalPrice_data.Name = "totalPrice_data";
@@ -613,7 +613,7 @@ namespace ArgusCR1004.POS.PS102
             this.xrTableCell62.BorderWidth = 1F;
             this.xrTableCell62.CanGrow = false;
             this.xrTableCell62.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "sumSum([trxLine].[weight])")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "sumSum([weight])")});
             this.xrTableCell62.Font = new System.Drawing.Font("Arial", 6.75F, System.Drawing.FontStyle.Bold);
             this.xrTableCell62.Name = "xrTableCell62";
             this.xrTableCell62.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 4, 3, 0, 100F);
@@ -639,7 +639,7 @@ namespace ArgusCR1004.POS.PS102
             this.xrTableCell64.BorderWidth = 1F;
             this.xrTableCell64.CanGrow = false;
             this.xrTableCell64.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "sumSum([trxLine].[qty])")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "sumSum([qty])")});
             this.xrTableCell64.Font = new System.Drawing.Font("Arial", 6.75F, System.Drawing.FontStyle.Bold);
             this.xrTableCell64.Name = "xrTableCell64";
             this.xrTableCell64.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 4, 3, 0, 100F);
@@ -686,7 +686,7 @@ namespace ArgusCR1004.POS.PS102
             this.xrTableCell66.BorderWidth = 1F;
             this.xrTableCell66.CanGrow = false;
             this.xrTableCell66.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "sumSum([trxLine].[extendedPrice])")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "sumSum([extendedPrice])")});
             this.xrTableCell66.Font = new System.Drawing.Font("Arial", 6.75F, System.Drawing.FontStyle.Bold);
             this.xrTableCell66.Name = "xrTableCell66";
             this.xrTableCell66.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 4, 3, 0, 100F);
@@ -712,7 +712,7 @@ namespace ArgusCR1004.POS.PS102
             this.xrTableCell67.BorderWidth = 1F;
             this.xrTableCell67.CanGrow = false;
             this.xrTableCell67.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "sumSum([trxLine].[vatAmount])")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "sumSum([vatAmount])")});
             this.xrTableCell67.Font = new System.Drawing.Font("Arial", 6.75F, System.Drawing.FontStyle.Bold);
             this.xrTableCell67.Name = "xrTableCell67";
             this.xrTableCell67.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 4, 3, 0, 100F);
@@ -738,7 +738,7 @@ namespace ArgusCR1004.POS.PS102
             this.xrTableCell68.BorderWidth = 1F;
             this.xrTableCell68.CanGrow = false;
             this.xrTableCell68.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "sumSum([trxLine].[extendedPrice]+[trxLine].[vatAmount])")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "sumSum([extendedPrice]+[vatAmount])")});
             this.xrTableCell68.Font = new System.Drawing.Font("Arial", 6.75F, System.Drawing.FontStyle.Bold);
             this.xrTableCell68.Name = "xrTableCell68";
             this.xrTableCell68.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 4, 3, 0, 100F);
@@ -803,7 +803,7 @@ namespace ArgusCR1004.POS.PS102
             this.amountBeforeTax_data.BorderWidth = 1F;
             this.amountBeforeTax_data.CanGrow = false;
             this.amountBeforeTax_data.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "sumSum([trxLine].[extendedPrice])")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "sumSum([extendedPrice])")});
             this.amountBeforeTax_data.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.amountBeforeTax_data.Name = "amountBeforeTax_data";
             this.amountBeforeTax_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 4, 6, 0, 100F);
@@ -856,7 +856,7 @@ namespace ArgusCR1004.POS.PS102
             this.taxValue_data.BorderWidth = 1F;
             this.taxValue_data.CanGrow = false;
             this.taxValue_data.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "sumSum([trxLine].[vatAmount])")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "sumSum([vatAmount])")});
             this.taxValue_data.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.taxValue_data.Name = "taxValue_data";
             this.taxValue_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 4, 6, 0, 100F);
@@ -911,7 +911,7 @@ namespace ArgusCR1004.POS.PS102
             this.amountAfterTax_data.BorderWidth = 1F;
             this.amountAfterTax_data.CanGrow = false;
             this.amountAfterTax_data.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "sumSum([trxLine].[extendedPrice]+[trxLine].[vatAmount])")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "sumSum([extendedPrice]+[vatAmount])")});
             this.amountAfterTax_data.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.amountAfterTax_data.Name = "amountAfterTax_data";
             this.amountAfterTax_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 4, 6, 0, 100F);
