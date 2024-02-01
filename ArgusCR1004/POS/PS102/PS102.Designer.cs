@@ -624,6 +624,7 @@ namespace ArgusCR1004.POS.PS102
             this.title2_lbl.CanGrow = false;
             this.title2_lbl.Font = new System.Drawing.Font("Arial", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
             this.title2_lbl.LocationFloat = new DevExpress.Utils.PointFloat(235F, 118.9552F);
+            this.title2_lbl.Multiline = true;
             this.title2_lbl.Name = "title2_lbl";
             this.title2_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 6, 0, 100F);
             this.title2_lbl.SizeF = new System.Drawing.SizeF(110.1268F, 49.99999F);
@@ -633,7 +634,7 @@ namespace ArgusCR1004.POS.PS102
             this.title2_lbl.StylePriority.UseFont = false;
             this.title2_lbl.StylePriority.UsePadding = false;
             this.title2_lbl.StylePriority.UseTextAlignment = false;
-            this.title2_lbl.Text = "فاتورة ضريبية مبسطة";
+            this.title2_lbl.Text = "إشعار دائن للفاتورة\r\nالضريبية المبسطة";
             this.title2_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopCenter;
             this.title2_lbl.WordWrap = false;
             // 
@@ -1209,6 +1210,7 @@ namespace ArgusCR1004.POS.PS102
             this.title_lbl.CanGrow = false;
             this.title_lbl.Font = new System.Drawing.Font("Arial", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
             this.title_lbl.LocationFloat = new DevExpress.Utils.PointFloat(824.9639F, 118.9552F);
+            this.title_lbl.Multiline = true;
             this.title_lbl.Name = "title_lbl";
             this.title_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 6, 0, 100F);
             this.title_lbl.SizeF = new System.Drawing.SizeF(110.1268F, 49.99999F);
@@ -1218,7 +1220,7 @@ namespace ArgusCR1004.POS.PS102
             this.title_lbl.StylePriority.UseFont = false;
             this.title_lbl.StylePriority.UsePadding = false;
             this.title_lbl.StylePriority.UseTextAlignment = false;
-            this.title_lbl.Text = "فاتورة ضريبية مبسطة";
+            this.title_lbl.Text = "إشعار دائن للفاتورة\r\nالضريبية المبسطة";
             this.title_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopCenter;
             this.title_lbl.WordWrap = false;
             // 
