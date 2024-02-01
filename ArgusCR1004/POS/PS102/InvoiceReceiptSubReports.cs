@@ -10,7 +10,7 @@ namespace ArgusCR1004.POS.PS102
 {
     public partial class InvoiceReceiptSubReports : ArgusRPT.BaseReport
     {
-        public List<ArgusDS.PointOfSale.InvoiceReceiptView> data;
+        public List<ArgusDS.PointOfSale.InvoiceReceipt> data;
 
         public InvoiceReceiptSubReports()
         {

@@ -32,45 +32,45 @@ namespace ArgusCR1004.POS.PS102
 
         protected override void OnBeforePrint(PrintEventArgs e)
         {
-            SharedClasses.JsonProtocol.GetStructure<ArgusDS.PointOfSale.Reports.PS101> webObject = deserializeGet<ArgusDS.PointOfSale.Reports.PS101>();
+            SharedClasses.JsonProtocol.GetStructure<ArgusDS.PointOfSale.InvoicePack> webObject = deserializeGet<ArgusDS.PointOfSale.InvoicePack>();
   
-            vatNo_data.Text = webObject.record.companyInfo.taxNo;
+            vatNo_data.Text = companyInfo.taxNo;
 
-            reference_data.Text = webObject.record.invoiceView.reference;
-            date_data.Text = webObject.record.invoiceView.date.ToString(sessionInfo.dateFormat);
-            spName_data.Text = webObject.record.salesPerson.name;
-            plant_data.Text = webObject.record.invoiceView.plantName;
-            clientName_data.Text = webObject.record.invoiceView?.clientName;
+            reference_data.Text = webObject.record.header.reference;
+            date_data.Text = webObject.record.header.date.ToString(sessionInfo.dateFormat);
+        //    spName_data.Text = webObject.record.salesPerson.name;
+        //    plant_data.Text = webObject.record.header.plantName;
+            clientName_data.Text = webObject.record.header?.clientName;
 
-            if (webObject.record.address != null)
-           {
-                phoneNumber_data.Text = webObject.record.address.phone;
-                address_data.Text = webObject.record.address.street1;
-            }
+        //    if (webObject.record.address != null)
+        //   {
+        //        phoneNumber_data.Text = webObject.record.address.phone;
+        //        address_data.Text = webObject.record.address.street1;
+        //    }
 
-            total_data.Text = SharedClasses.NumberToWords.multiLingualNumberInText((decimal)webObject.record.invoiceView.amount, 2, 2);
+            total_data.Text = SharedClasses.NumberToWords.multiLingualNumberInText((decimal)webObject.record.header.amount, 2, 2);
 
-            vatNo2_data.Text = webObject.record.companyInfo.taxNo;
+            vatNo2_data.Text = companyInfo.taxNo;
 
-            reference2_data.Text = webObject.record.invoiceView.reference;
-            date2_data.Text = webObject.record.invoiceView.date.ToString(sessionInfo.dateFormat);
-            spName2_data.Text = webObject.record.salesPerson.name;
-            plant2_data.Text = webObject.record.invoiceView.plantName;
-            clientName2_data.Text = webObject.record.invoiceView?.clientName;
-            if (webObject.record.address != null)
-            {
-                phoneNumber2_data.Text = webObject.record.address.phone;
-                address2_data.Text = webObject.record.address.street1;
-            }
+            reference2_data.Text = webObject.record.header.reference;
+            date2_data.Text = webObject.record.header.date.ToString(sessionInfo.dateFormat);
+        //    spName2_data.Text = webObject.record.salesPerson.name;
+        //    plant2_data.Text = webObject.record.header.plantName;
+            clientName2_data.Text = webObject.record.header?.clientName;
+       //     if (webObject.record.address != null)
+       //     {
+        //        phoneNumber2_data.Text = webObject.record.address.phone;
+        //        address2_data.Text = webObject.record.address.street1;
+       //     }
 
-            total2_data.Text = SharedClasses.NumberToWords.multiLingualNumberInText((decimal)webObject.record.invoiceView.amount, 2, 2);
-            QRCode2.Text = new KSAeInvoiceQrCode(webObject.record.companyInfo.name, webObject.record.companyInfo.taxNo, (DateTime)webObject.record.logTime, webObject.record.invoiceView.amount.ToString(), webObject.record.invoiceView.vatAmount.ToString()).ToBase64();
-            QRCode.Text = new KSAeInvoiceQrCode(webObject.record.companyInfo.name, webObject.record.companyInfo.taxNo, (DateTime)webObject.record.logTime, webObject.record.invoiceView.amount.ToString(), webObject.record.invoiceView.vatAmount.ToString()).ToBase64();
+            total2_data.Text = SharedClasses.NumberToWords.multiLingualNumberInText((decimal)webObject.record.header.amount, 2, 2);
+      //      QRCode2.Text = new KSAeInvoiceQrCode(companyInfo.name, companyInfo.taxNo, (DateTime)webObject.record.logTime, webObject.record.header.amount.ToString(), webObject.record.header.vatAmount.ToString()).ToBase64();
+         //   QRCode.Text = new KSAeInvoiceQrCode(companyInfo.name, companyInfo.taxNo, (DateTime)webObject.record.logTime, webObject.record.header.amount.ToString(), webObject.record.header.vatAmount.ToString()).ToBase64();
             
-            ((InvoiceItemsSubReports)(InvoiceItemsSubReports.ReportSource)).data = webObject.record.invoiceItems;
-            ((InvoiceReceiptSubReports)(InvoiceReceiptSubReports.ReportSource)).data = webObject.record.receipts;
-            ((InvoiceItemsSubReports)(InvoiceItemsSubReports2.ReportSource)).data = webObject.record.invoiceItems;
-            ((InvoiceReceiptSubReports)(InvoiceReceiptSubReports2.ReportSource)).data = webObject.record.receipts;
+            ((InvoiceItemsSubReports)(InvoiceItemsSubReports.ReportSource)).data = webObject.record.items;
+            ((InvoiceReceiptSubReports)(InvoiceReceiptSubReports.ReportSource)).data = webObject.record.cash;
+            ((InvoiceItemsSubReports)(InvoiceItemsSubReports2.ReportSource)).data = webObject.record.items;
+            ((InvoiceReceiptSubReports)(InvoiceReceiptSubReports2.ReportSource)).data = webObject.record.cash;
 
             printSignature_lbl.Text = reportSignature();
             printSignature2_lbl.Text = reportSignature();
