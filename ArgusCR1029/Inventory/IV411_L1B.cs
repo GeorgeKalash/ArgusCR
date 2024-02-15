@@ -42,6 +42,33 @@ namespace ArgusCR1029.Inventory
         protected override void labelsText()
         {
             title_lbl.Text = labelText(0);
+
+            fiscalYear_lbl.Text = labelText(1);
+            date_lbl.Text = labelText(2);
+            siteParam_lbl.Text = labelText(3);
+            item_lbl.Text = labelText(4);
+
+            itemCategory_lbl.Text = labelText(5);
+            itemGroupParam_lbl.Text = labelText(6);
+            siteGroup_lbl.Text = labelText(7);
+            production_lbl.Text = labelText(8);
+
+            sku_lbl.Text = labelText(9);
+            name_lbl.Text = labelText(10);
+            weight_lbl.Text = labelText(11);
+            siteRef_lbl.Text = labelText(12);
+            ItemGroup_lbl.Text = labelText(13);
+            productionLine_lbl.Text = labelText(14);
+            collection_lbl.Text = labelText(15);
+            pcs_lbl.Text = labelText(16);
+            qty_lbl.Text = labelText(17);
+            purity_lbl.Text = labelText(18);
+            qtyG21_lbl.Text = labelText(19);
+            avgWeight_lbl.Text = labelText(20);
+            pct_lbl.Text = labelText(21);
+
+            SubTotal_lbl.Text = labelText(22);
+            grandTotal_lbl.Text = labelText(23);
         }
 
         protected override string dictionaryStore()
