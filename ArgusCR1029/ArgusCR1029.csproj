@@ -839,6 +839,12 @@
     <Compile Include="Sales\SA203_L1.Designer.cs">
       <DependentUpon>SA203_L1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Sales\SA403.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Sales\SA403.Designer.cs">
+      <DependentUpon>SA403.cs</DependentUpon>
+    </Compile>
     <Compile Include="Sales\SA419.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -1244,6 +1250,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Sales\SA203_L1.resx">
       <DependentUpon>SA203_L1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales\SA403.resx">
+      <DependentUpon>SA403.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Sales\SA419.resx">
       <DependentUpon>SA419.cs</DependentUpon>
