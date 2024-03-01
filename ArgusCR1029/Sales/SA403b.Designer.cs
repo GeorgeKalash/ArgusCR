@@ -47,7 +47,6 @@ namespace ArgusCR1029.Sales
             DevExpress.XtraReports.UI.CrossTab.CrossTabRowDefinition crossTabRowDefinition4 = new DevExpress.XtraReports.UI.CrossTab.CrossTabRowDefinition(25F);
             DevExpress.XtraReports.UI.CrossTab.CrossTabRowDefinition crossTabRowDefinition5 = new DevExpress.XtraReports.UI.CrossTab.CrossTabRowDefinition(25F);
             DevExpress.XtraReports.UI.CrossTab.CrossTabRowDefinition crossTabRowDefinition6 = new DevExpress.XtraReports.UI.CrossTab.CrossTabRowDefinition(25F);
-            DevExpress.XtraReports.UI.CrossTab.CrossTabRowDefinition crossTabRowDefinition7 = new DevExpress.XtraReports.UI.CrossTab.CrossTabRowDefinition(25F);
             DevExpress.XtraReports.UI.CrossTab.CrossTabRowField crossTabRowField1 = new DevExpress.XtraReports.UI.CrossTab.CrossTabRowField();
             DevExpress.XtraReports.UI.CrossTab.CrossTabRowField crossTabRowField2 = new DevExpress.XtraReports.UI.CrossTab.CrossTabRowField();
             DevExpress.XtraReports.UI.CrossTab.CrossTabRowField crossTabRowField3 = new DevExpress.XtraReports.UI.CrossTab.CrossTabRowField();
@@ -114,6 +113,7 @@ namespace ArgusCR1029.Sales
             this.xrCrossTabCell37 = new DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell();
             this.xrCrossTabCell38 = new DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell();
             this.xrCrossTabCell39 = new DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell();
+            this.objectDataSource1 = new DevExpress.DataAccess.ObjectBinding.ObjectDataSource(this.components);
             this.Detail = new DevExpress.XtraReports.UI.DetailBand();
             this.TopMargin = new DevExpress.XtraReports.UI.TopMarginBand();
             this.BottomMargin = new DevExpress.XtraReports.UI.BottomMarginBand();
@@ -121,7 +121,6 @@ namespace ArgusCR1029.Sales
             this.PageFooter = new DevExpress.XtraReports.UI.PageFooterBand();
             this.xrPageInfo1 = new DevExpress.XtraReports.UI.XRPageInfo();
             this.printSignature = new DevExpress.XtraReports.UI.XRLabel();
-            this.objectDataSource1 = new DevExpress.DataAccess.ObjectBinding.ObjectDataSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.crossTab)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.objectDataSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
@@ -408,7 +407,6 @@ namespace ArgusCR1029.Sales
             crossTabRowDefinition4.Visible = false;
             crossTabRowDefinition5.Visible = false;
             crossTabRowDefinition6.Visible = false;
-            crossTabRowDefinition7.Visible = false;
             this.crossTab.RowDefinitions.AddRange(new DevExpress.XtraReports.UI.CrossTab.CrossTabRowDefinition[] {
             new DevExpress.XtraReports.UI.CrossTab.CrossTabRowDefinition(25F),
             new DevExpress.XtraReports.UI.CrossTab.CrossTabRowDefinition(25F),
@@ -418,7 +416,7 @@ namespace ArgusCR1029.Sales
             crossTabRowDefinition4,
             crossTabRowDefinition5,
             crossTabRowDefinition6,
-            crossTabRowDefinition7});
+            new DevExpress.XtraReports.UI.CrossTab.CrossTabRowDefinition(25F)});
             crossTabRowField1.FieldName = "sku";
             crossTabRowField1.SortOrder = DevExpress.XtraReports.UI.XRColumnSortOrder.None;
             crossTabRowField2.FieldName = "itemName";
@@ -682,6 +680,8 @@ namespace ArgusCR1029.Sales
             // 
             // xrCrossTabCell25
             // 
+            this.xrCrossTabCell25.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.xrCrossTabCell25.BorderColor = System.Drawing.Color.Black;
             this.xrCrossTabCell25.ColumnIndex = 0;
             this.xrCrossTabCell25.ColumnSpan = 7;
             this.xrCrossTabCell25.Name = "xrCrossTabCell25";
@@ -730,9 +730,12 @@ namespace ArgusCR1029.Sales
             // 
             // xrCrossTabCell32
             // 
+            this.xrCrossTabCell32.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.xrCrossTabCell32.BorderColor = System.Drawing.Color.Black;
             this.xrCrossTabCell32.ColumnIndex = 7;
             this.xrCrossTabCell32.Name = "xrCrossTabCell32";
             this.xrCrossTabCell32.RowIndex = 8;
+            this.xrCrossTabCell32.TextFormatString = "{0:n2}";
             // 
             // xrCrossTabCell33
             // 
@@ -776,9 +779,17 @@ namespace ArgusCR1029.Sales
             // 
             // xrCrossTabCell39
             // 
+            this.xrCrossTabCell39.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.xrCrossTabCell39.BorderColor = System.Drawing.Color.Black;
             this.xrCrossTabCell39.ColumnIndex = 8;
             this.xrCrossTabCell39.Name = "xrCrossTabCell39";
             this.xrCrossTabCell39.RowIndex = 8;
+            this.xrCrossTabCell39.TextFormatString = "{0:n2}";
+            // 
+            // objectDataSource1
+            // 
+            this.objectDataSource1.DataSource = typeof(ArgusDS.Sales.Reports.SummarySalesByItem);
+            this.objectDataSource1.Name = "objectDataSource1";
             // 
             // Detail
             // 
@@ -830,11 +841,6 @@ namespace ArgusCR1029.Sales
             this.printSignature.StylePriority.UseTextAlignment = false;
             this.printSignature.Text = "printSignature";
             this.printSignature.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
-            // 
-            // objectDataSource1
-            // 
-            this.objectDataSource1.DataSource = typeof(ArgusDS.Sales.Reports.SummarySalesByItem);
-            this.objectDataSource1.Name = "objectDataSource1";
             // 
             // SA403b
             // 
