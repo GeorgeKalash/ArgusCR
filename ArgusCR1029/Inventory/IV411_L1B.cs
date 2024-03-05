@@ -20,7 +20,7 @@ namespace ArgusCR1029.Inventory
         protected override void OnBeforePrint(PrintEventArgs e)
         {
 
-            SharedClasses.JsonProtocol.QryStructure<ArgusDS.Inventory.Reports.IV403> webObject = deserializeList<ArgusDS.Inventory.Reports.IV403>();
+            SharedClasses.JsonProtocol.QryStructure<Custom.CR1029.IV403_L1> webObject = deserializeList<Custom.CR1029.IV403_L1>();
             DataSource = webObject.list;
 
             fiscalYear_param.Text = Parameters.Count > 0 ? Parameters[0].Value.ToString() : string.Empty;
