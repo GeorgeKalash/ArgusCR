@@ -11,7 +11,7 @@ namespace ArgusCR1004.Sales.SA103
 {
     public partial class SA103 : ArgusRPT.BaseReport
     {
-        public SA103 ()
+        public SA103()
         {
             InitializeComponent();
         }
@@ -35,32 +35,36 @@ namespace ArgusCR1004.Sales.SA103
 
             companyName_data.Text = webObject.record.companyInfo.name;
             taxNo_data.Text = webObject.record.companyInfo.taxNo;
+            taxNoENG_data.Text = webObject.record.companyInfo.taxNo;
 
-            reference_data.Text = webObject.record.trxHeader.reference;
+            invRef_data.Text = webObject.record.trxHeader.reference;
+            invDate_data.Text = webObject.record.trxHeader.date.ToString(sessionInfo.dateFormat);
 
-            date_data.Text = webObject.record.trxHeader.date.ToString(sessionInfo.dateFormat);
-            plant_data.Text = webObject.record.trxHeader.plantName;
-            phoneNo_data.Text = webObject.record.companyInfo.address?.phone;
-            crNo_data.Text = webObject.record.companyInfo.crNo;
-            address_data.Text = webObject.record.companyInfo.address?.street1;
-
-            clientRef_data.Text = webObject.record.client.reference;
             clientName_data.Text = webObject.record.trxHeader.clientName;
+            //crNo_data.Text = webObject.record.client.reference;
             clientVATNo_data.Text = webObject.record.client.vatNumber;
-            cAddress_data.Text = webObject.record.billAddress?.street1;
-            exhibitionManager_data.Text = webObject.record.billAddress?.name;
+            clientDistrict_data.Text = webObject.record.billAddress?.cityDistrict;
+            clientCity_data.Text = webObject.record.billAddress?.city;
+
+            //seller data missing binding
+
+
 
             subtotal_data.Text = webObject.record.trxHeader.subtotal.ToString("N2");
+            discount_data.Text = webObject.record.trxHeader.tdAmount?.ToString("N2");
+            //taxable_data.Text = webObject.record.trxHeader.subtotal.ToString("N2");
             vatAmount_data.Text = webObject.record.trxHeader.vatAmount.ToString("N2");
             amount_data.Text = webObject.record.trxHeader.amount.ToString("N2");
-            amountInWords_data.Text = SharedClasses.NumberToWords.multiLingualNumberInText((decimal)webObject.record.trxHeader.amount, 2, 2);
 
-            spName2_data.Text = webObject.record.trxHeader.spName;
+            amountInWords_data.Text = SharedClasses.NumberToWords.multiLingualNumberInText((decimal)webObject.record.trxHeader.amount, 2, 2);
+            //g24_data.Text = webObject.record.trxHeader.;
+            description_data.Text = webObject.record.trxHeader.description;
 
             QRCode.Text = new KSAeInvoiceQrCode(webObject.record.companyInfo.name, webObject.record.companyInfo.taxNo, (DateTime)webObject.record.trxHeader.date, webObject.record.trxHeader.amount.ToString(), webObject.record.trxHeader.vatAmount.ToString()).ToBase64();
 
             ((InvoiceItemsSubReports)(InvoiceItemsSubReports.ReportSource)).data = webObject.record.items;
             ((MetalSubReports)(MetalSubReports.ReportSource)).data = webObject.record.metalSummaries;
+            printSignature.Text = reportSignature();
             base.OnBeforePrint(e);
         }
 
