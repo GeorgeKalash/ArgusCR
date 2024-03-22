@@ -1,4 +1,5 @@
-﻿using DevExpress.XtraReports.UI;
+﻿using ArgusDS.Sales.Reports;
+using DevExpress.XtraReports.UI;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -10,7 +11,6 @@ namespace ArgusCR1004.Sales.SA103
     public partial class MetalSubReports : ArgusRPT.BaseReport
     {
         public List<ArgusDS.Logistics.MetalSummary> data;
-
         public MetalSubReports()
         {
             InitializeComponent();

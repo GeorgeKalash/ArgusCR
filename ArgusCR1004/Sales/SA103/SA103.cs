@@ -31,28 +31,21 @@ namespace ArgusCR1004.Sales.SA103
 
             SharedClasses.JsonProtocol.GetStructure<TrxPrintView> webObject = deserializeGet<TrxPrintView>();
 
-            logo_data.ImageUrl = webObject.record.companyInfo.logoUrl;
-
-            companyName_data.Text = webObject.record.companyInfo.name;
-            taxNo_data.Text = webObject.record.companyInfo.taxNo;
-            taxNoENG_data.Text = webObject.record.companyInfo.taxNo;
 
             invRef_data.Text = webObject.record.trxHeader.reference;
             invDate_data.Text = webObject.record.trxHeader.date.ToString(sessionInfo.dateFormat);
 
             clientName_data.Text = webObject.record.trxHeader.clientName;
-            //crNo_data.Text = webObject.record.client.reference;
+            crNo_data.Text = webObject.record.client.reference;
             clientVATNo_data.Text = webObject.record.client.vatNumber;
             clientDistrict_data.Text = webObject.record.billAddress?.cityDistrict;
             clientCity_data.Text = webObject.record.billAddress?.city;
 
             //seller data missing binding
 
-
-
             subtotal_data.Text = webObject.record.trxHeader.subtotal.ToString("N2");
             discount_data.Text = webObject.record.trxHeader.tdAmount?.ToString("N2");
-            //taxable_data.Text = webObject.record.trxHeader.subtotal.ToString("N2");
+            taxable_data.Text = webObject.record.trxHeader.subtotal.ToString("N2"); 
             vatAmount_data.Text = webObject.record.trxHeader.vatAmount.ToString("N2");
             amount_data.Text = webObject.record.trxHeader.amount.ToString("N2");
 
@@ -60,11 +53,15 @@ namespace ArgusCR1004.Sales.SA103
             //g24_data.Text = webObject.record.trxHeader.;
             description_data.Text = webObject.record.trxHeader.description;
 
+            itemsNo_data.Text = webObject.record.items.Count.ToString();
+            subttl_data.Text = webObject.record.trxHeader.subtotal.ToString("N2");
+            TVA_data.Text = webObject.record.trxHeader.vatAmount.ToString("N2");
+            pureWeight_data.Text = webObject.record.pureMetalQty.ToString("N2");
+
             QRCode.Text = new KSAeInvoiceQrCode(webObject.record.companyInfo.name, webObject.record.companyInfo.taxNo, (DateTime)webObject.record.trxHeader.date, webObject.record.trxHeader.amount.ToString(), webObject.record.trxHeader.vatAmount.ToString()).ToBase64();
 
             ((InvoiceItemsSubReports)(InvoiceItemsSubReports.ReportSource)).data = webObject.record.items;
             ((MetalSubReports)(MetalSubReports.ReportSource)).data = webObject.record.metalSummaries;
-            printSignature.Text = reportSignature();
             base.OnBeforePrint(e);
         }
 
