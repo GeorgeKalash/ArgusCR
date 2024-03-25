@@ -49,7 +49,7 @@ namespace ArgusCR1004.Sales.SA103
 
         protected override string dictionaryStore()
         {
-            return "SA51303T19";
+            return "CR1004.SA103";
         }
     }
 }
