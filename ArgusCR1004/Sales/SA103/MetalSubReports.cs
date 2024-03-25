@@ -1,5 +1,4 @@
-﻿using ArgusDS.Sales.Reports;
-using DevExpress.XtraReports.UI;
+﻿using DevExpress.XtraReports.UI;
 using System;
 using System.Collections;
 using System.Collections.Generic;
