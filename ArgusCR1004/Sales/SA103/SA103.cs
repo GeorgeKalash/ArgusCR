@@ -30,7 +30,6 @@ namespace ArgusCR1004.Sales.SA103
 
             SharedClasses.JsonProtocol.GetStructure<TrxPrintView> webObject = deserializeGet<TrxPrintView>();
 
-
             invRef_data.Text = webObject.record.trxHeader.reference;
             invDate_data.Text = webObject.record.trxHeader.date.ToString(sessionInfo.dateFormat);
 

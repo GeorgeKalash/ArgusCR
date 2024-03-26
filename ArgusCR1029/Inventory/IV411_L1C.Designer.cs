@@ -509,7 +509,7 @@ namespace ArgusCR1029.Inventory
             crossTabColumnDefinition7,
             crossTabColumnDefinition8,
             crossTabColumnDefinition9});
-            crossTabColumnField1.FieldName = "siteRef";
+            crossTabColumnField1.FieldName = "siteName";
             crossTabColumnField1.SortOrder = DevExpress.XtraReports.UI.XRColumnSortOrder.None;
             this.crossTab.ColumnFields.AddRange(new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnField[] {
             crossTabColumnField1});
