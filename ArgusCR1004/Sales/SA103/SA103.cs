@@ -48,7 +48,7 @@ namespace ArgusCR1004.Sales.SA103
             amount_data.Text = webObject.record.trxHeader.amount.ToString("N2");
 
             amountInWords_data.Text = SharedClasses.NumberToWords.multiLingualNumberInText((decimal)webObject.record.trxHeader.amount, 2, 2);
-            //g24_data.Text = webObject.record.trxHeader.;
+            g24_data.Text = SharedClasses.NumberToWords.multiLingualNumberInText((decimal)webObject.record.pureMetalQty, 4, 2);
             description_data.Text = webObject.record.trxHeader.description;
 
             itemsNo_data.Text = webObject.record.items.Count.ToString();
