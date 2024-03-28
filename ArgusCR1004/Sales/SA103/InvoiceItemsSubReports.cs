@@ -29,7 +29,6 @@ namespace ArgusCR1004.Sales.SA103
         {
         }
 
-
         protected override void OnDataSourceRowChanged(DataSourceRowEventArgs e)
         {
             ArgusDS.Sales.ItemView obj = ((List<ArgusDS.Sales.ItemView>)DataSource)[e.CurrentRow];
