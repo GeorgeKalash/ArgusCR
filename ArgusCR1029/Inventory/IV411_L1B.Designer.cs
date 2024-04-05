@@ -429,7 +429,7 @@ namespace ArgusCR1029.Inventory
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell19.BorderWidth = 1F;
             this.xrTableCell19.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[reportingBaseWeight]/sumSum([reportingBaseWeight])")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "([reportingBaseWeight]/sumSum([reportingBaseWeight]))*100")});
             this.xrTableCell19.Font = new System.Drawing.Font("Arial", 8F);
             this.xrTableCell19.Multiline = true;
             this.xrTableCell19.Name = "xrTableCell19";
