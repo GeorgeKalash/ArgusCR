@@ -2,10 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Drawing;
 using System.Drawing.Printing;
-using ArgusDS.Inventory;
-using ArgusDS.Inventory.Reports;
 using DevExpress.XtraReports.UI;
 
 namespace ArgusCR1029.Inventory
@@ -48,7 +45,6 @@ namespace ArgusCR1029.Inventory
         protected override void labelsText()
         {
         }
-
         protected override string dictionaryStore()
         {
             return "CR1029.IV408";
