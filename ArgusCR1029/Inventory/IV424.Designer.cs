@@ -55,6 +55,12 @@ namespace ArgusCR1029.Inventory
             this.xrTableRow12 = new DevExpress.XtraReports.UI.XRTableRow();
             this.itemGroup_lbl = new DevExpress.XtraReports.UI.XRTableCell();
             this.itemGroup_param = new DevExpress.XtraReports.UI.XRTableCell();
+            this.xrTableRow2 = new DevExpress.XtraReports.UI.XRTableRow();
+            this.siteGroup_lbl = new DevExpress.XtraReports.UI.XRTableCell();
+            this.siteGroup_param = new DevExpress.XtraReports.UI.XRTableCell();
+            this.xrTableRow5 = new DevExpress.XtraReports.UI.XRTableRow();
+            this.productionLine_lbl = new DevExpress.XtraReports.UI.XRTableCell();
+            this.productionLine_param = new DevExpress.XtraReports.UI.XRTableCell();
             this.logo_data = new DevExpress.XtraReports.UI.XRPictureBox();
             this.inventoryStatus_lbl = new DevExpress.XtraReports.UI.XRLabel();
             this.Detail = new DevExpress.XtraReports.UI.DetailBand();
@@ -92,12 +98,6 @@ namespace ArgusCR1029.Inventory
             this.xrTableCell14 = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTableCell16 = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTableCell17 = new DevExpress.XtraReports.UI.XRTableCell();
-            this.xrTableRow2 = new DevExpress.XtraReports.UI.XRTableRow();
-            this.siteGroup_lbl = new DevExpress.XtraReports.UI.XRTableCell();
-            this.siteGroup_param = new DevExpress.XtraReports.UI.XRTableCell();
-            this.xrTableRow5 = new DevExpress.XtraReports.UI.XRTableRow();
-            this.productionLine_lbl = new DevExpress.XtraReports.UI.XRTableCell();
-            this.productionLine_param = new DevExpress.XtraReports.UI.XRTableCell();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable3)).BeginInit();
@@ -279,6 +279,56 @@ namespace ArgusCR1029.Inventory
             this.itemGroup_param.Name = "itemGroup_param";
             this.itemGroup_param.StylePriority.UseFont = false;
             this.itemGroup_param.Weight = 1.3532655001980269D;
+            // 
+            // xrTableRow2
+            // 
+            this.xrTableRow2.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
+            this.siteGroup_lbl,
+            this.siteGroup_param});
+            this.xrTableRow2.Name = "xrTableRow2";
+            this.xrTableRow2.Weight = 1D;
+            // 
+            // siteGroup_lbl
+            // 
+            this.siteGroup_lbl.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold);
+            this.siteGroup_lbl.Multiline = true;
+            this.siteGroup_lbl.Name = "siteGroup_lbl";
+            this.siteGroup_lbl.StylePriority.UseFont = false;
+            this.siteGroup_lbl.Text = "مجموعة المواقع";
+            this.siteGroup_lbl.Weight = 0.64673449980197284D;
+            // 
+            // siteGroup_param
+            // 
+            this.siteGroup_param.Font = new System.Drawing.Font("Times New Roman", 9F);
+            this.siteGroup_param.Multiline = true;
+            this.siteGroup_param.Name = "siteGroup_param";
+            this.siteGroup_param.StylePriority.UseFont = false;
+            this.siteGroup_param.Weight = 1.3532655001980269D;
+            // 
+            // xrTableRow5
+            // 
+            this.xrTableRow5.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
+            this.productionLine_lbl,
+            this.productionLine_param});
+            this.xrTableRow5.Name = "xrTableRow5";
+            this.xrTableRow5.Weight = 1D;
+            // 
+            // productionLine_lbl
+            // 
+            this.productionLine_lbl.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold);
+            this.productionLine_lbl.Multiline = true;
+            this.productionLine_lbl.Name = "productionLine_lbl";
+            this.productionLine_lbl.StylePriority.UseFont = false;
+            this.productionLine_lbl.Text = "خط الانتاج";
+            this.productionLine_lbl.Weight = 0.64673449980197284D;
+            // 
+            // productionLine_param
+            // 
+            this.productionLine_param.Font = new System.Drawing.Font("Times New Roman", 9F);
+            this.productionLine_param.Multiline = true;
+            this.productionLine_param.Name = "productionLine_param";
+            this.productionLine_param.StylePriority.UseFont = false;
+            this.productionLine_param.Weight = 1.3532655001980269D;
             // 
             // logo_data
             // 
@@ -643,7 +693,7 @@ namespace ArgusCR1029.Inventory
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell1.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "sumSum([netCost])/sumSum([qty])")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "sumSum([avgCost])")});
             this.xrTableCell1.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold);
             this.xrTableCell1.Multiline = true;
             this.xrTableCell1.Name = "xrTableCell1";
@@ -809,7 +859,7 @@ namespace ArgusCR1029.Inventory
             this.xrTableCell16.Name = "xrTableCell16";
             this.xrTableCell16.StylePriority.UseBackColor = false;
             this.xrTableCell16.StylePriority.UseBorders = false;
-            this.xrTableCell16.Text = "التكلفة المعيارية";
+            this.xrTableCell16.Text = "متوسط التكلفة";
             this.xrTableCell16.Weight = 0.74796215273981825D;
             // 
             // xrTableCell17
@@ -824,56 +874,6 @@ namespace ArgusCR1029.Inventory
             this.xrTableCell17.StylePriority.UseBorders = false;
             this.xrTableCell17.Text = "إجمالى التكلفة";
             this.xrTableCell17.Weight = 0.74796231442787375D;
-            // 
-            // xrTableRow2
-            // 
-            this.xrTableRow2.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
-            this.siteGroup_lbl,
-            this.siteGroup_param});
-            this.xrTableRow2.Name = "xrTableRow2";
-            this.xrTableRow2.Weight = 1D;
-            // 
-            // siteGroup_lbl
-            // 
-            this.siteGroup_lbl.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold);
-            this.siteGroup_lbl.Multiline = true;
-            this.siteGroup_lbl.Name = "siteGroup_lbl";
-            this.siteGroup_lbl.StylePriority.UseFont = false;
-            this.siteGroup_lbl.Text = "مجموعة المواقع";
-            this.siteGroup_lbl.Weight = 0.64673449980197284D;
-            // 
-            // siteGroup_param
-            // 
-            this.siteGroup_param.Font = new System.Drawing.Font("Times New Roman", 9F);
-            this.siteGroup_param.Multiline = true;
-            this.siteGroup_param.Name = "siteGroup_param";
-            this.siteGroup_param.StylePriority.UseFont = false;
-            this.siteGroup_param.Weight = 1.3532655001980269D;
-            // 
-            // xrTableRow5
-            // 
-            this.xrTableRow5.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
-            this.productionLine_lbl,
-            this.productionLine_param});
-            this.xrTableRow5.Name = "xrTableRow5";
-            this.xrTableRow5.Weight = 1D;
-            // 
-            // productionLine_lbl
-            // 
-            this.productionLine_lbl.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold);
-            this.productionLine_lbl.Multiline = true;
-            this.productionLine_lbl.Name = "productionLine_lbl";
-            this.productionLine_lbl.StylePriority.UseFont = false;
-            this.productionLine_lbl.Text = "خط الانتاج";
-            this.productionLine_lbl.Weight = 0.64673449980197284D;
-            // 
-            // productionLine_param
-            // 
-            this.productionLine_param.Font = new System.Drawing.Font("Times New Roman", 9F);
-            this.productionLine_param.Multiline = true;
-            this.productionLine_param.Name = "productionLine_param";
-            this.productionLine_param.StylePriority.UseFont = false;
-            this.productionLine_param.Weight = 1.3532655001980269D;
             // 
             // IV424
             // 
