@@ -31,6 +31,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="ArgusCT-DS, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Extensions\ArgusCT-DS.dll</HintPath>
+    </Reference>
     <Reference Include="ArgusDS">
       <HintPath>..\..\..\..\..\..\..\sourcecode\Extensions\ArgusDS.dll</HintPath>
     </Reference>
@@ -93,7 +97,9 @@
       <DependentUpon>RE36301T1.cs</DependentUpon>
     </Compile>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Resources\" />
+  </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Remittance\RE36301\RE36301T1.resx">
