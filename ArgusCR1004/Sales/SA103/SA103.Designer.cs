@@ -895,7 +895,7 @@ namespace ArgusCR1004.Sales.SA103
             this.xrLabel2.LocationFloat = new DevExpress.Utils.PointFloat(790.1966F, 116.5035F);
             this.xrLabel2.Multiline = true;
             this.xrLabel2.Name = "xrLabel2";
-            this.xrLabel2.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F);
+            this.xrLabel2.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 2, 0, 100F);
             this.xrLabel2.SizeF = new System.Drawing.SizeF(14.12476F, 13.76602F);
             this.xrLabel2.StylePriority.UseFont = false;
             this.xrLabel2.StylePriority.UsePadding = false;
