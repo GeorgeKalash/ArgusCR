@@ -317,7 +317,7 @@ namespace ArgusCR1004.Sales.SA103
             this.xrTableCell22.StylePriority.UseTextAlignment = false;
             this.xrTableCell22.Text = "xrTableCell22";
             this.xrTableCell22.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
-            this.xrTableCell22.Weight = 0.59037406868698539D;
+            this.xrTableCell22.Weight = 0.57001509926348537D;
             // 
             // xrTableCell3
             // 
@@ -337,7 +337,7 @@ namespace ArgusCR1004.Sales.SA103
             this.xrTableCell3.Text = "vatAmount";
             this.xrTableCell3.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
             this.xrTableCell3.TextFormatString = "{0:n2}";
-            this.xrTableCell3.Weight = 0.50654839815924235D;
+            this.xrTableCell3.Weight = 0.52930088221732319D;
             // 
             // xrTableCell24
             // 
@@ -354,7 +354,7 @@ namespace ArgusCR1004.Sales.SA103
             this.xrTableCell24.StylePriority.UseTextAlignment = false;
             this.xrTableCell24.Text = "SAR";
             this.xrTableCell24.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
-            this.xrTableCell24.Weight = 0.2951859834433575D;
+            this.xrTableCell24.Weight = 0.29279246880877674D;
             // 
             // extendedPriceWithVAT_data
             // 
@@ -548,7 +548,7 @@ namespace ArgusCR1004.Sales.SA103
             this.xrTableCell2.StylePriority.UseFont = false;
             this.xrTableCell2.StylePriority.UsePadding = false;
             this.xrTableCell2.Text = "نسبة الضريبة";
-            this.xrTableCell2.Weight = 0.96000174431250018D;
+            this.xrTableCell2.Weight = 0.92689823693655793D;
             // 
             // vatAmount_lbl
             // 
@@ -565,7 +565,7 @@ namespace ArgusCR1004.Sales.SA103
             this.vatAmount_lbl.StylePriority.UseTextAlignment = false;
             this.vatAmount_lbl.Text = "مبلغ الضریبة";
             this.vatAmount_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
-            this.vatAmount_lbl.Weight = 1.3036933151838999D;
+            this.vatAmount_lbl.Weight = 1.3367968225598421D;
             // 
             // extendedPrice_lbl
             // 
@@ -715,7 +715,7 @@ namespace ArgusCR1004.Sales.SA103
             this.xrTableCell16.StylePriority.UseFont = false;
             this.xrTableCell16.StylePriority.UsePadding = false;
             this.xrTableCell16.Text = "VAT%";
-            this.xrTableCell16.Weight = 0.96000064672354724D;
+            this.xrTableCell16.Weight = 0.92689714041063143D;
             // 
             // xrTableCell17
             // 
@@ -732,7 +732,7 @@ namespace ArgusCR1004.Sales.SA103
             this.xrTableCell17.StylePriority.UseTextAlignment = false;
             this.xrTableCell17.Text = "Tax Amount";
             this.xrTableCell17.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
-            this.xrTableCell17.Weight = 1.3036937645178095D;
+            this.xrTableCell17.Weight = 1.3367972708307252D;
             // 
             // xrTableCell18
             // 
