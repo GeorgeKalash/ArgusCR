@@ -552,22 +552,26 @@ namespace ArgusCR1029.Inventory
             // pagesNumber_lbl
             // 
             this.pagesNumber_lbl.BackColor = System.Drawing.Color.White;
-            this.pagesNumber_lbl.LocationFloat = new DevExpress.Utils.PointFloat(1064.06F, 12.5F);
+            this.pagesNumber_lbl.Font = new System.Drawing.Font("Times New Roman", 9F);
+            this.pagesNumber_lbl.LocationFloat = new DevExpress.Utils.PointFloat(1022.393F, 12.5F);
             this.pagesNumber_lbl.Name = "pagesNumber_lbl";
             this.pagesNumber_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.pagesNumber_lbl.SizeF = new System.Drawing.SizeF(94.93958F, 23.00002F);
+            this.pagesNumber_lbl.SizeF = new System.Drawing.SizeF(136.6062F, 23.00002F);
             this.pagesNumber_lbl.StylePriority.UseBackColor = false;
+            this.pagesNumber_lbl.StylePriority.UseFont = false;
             this.pagesNumber_lbl.StylePriority.UseTextAlignment = false;
-            this.pagesNumber_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
+            this.pagesNumber_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             this.pagesNumber_lbl.TextFormatString = "Page {0} of {1}";
             // 
             // printSignature
             // 
+            this.printSignature.Font = new System.Drawing.Font("Times New Roman", 9F);
             this.printSignature.LocationFloat = new DevExpress.Utils.PointFloat(10.00005F, 12.5F);
             this.printSignature.Multiline = true;
             this.printSignature.Name = "printSignature";
             this.printSignature.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.printSignature.SizeF = new System.Drawing.SizeF(866.4131F, 23F);
+            this.printSignature.StylePriority.UseFont = false;
             this.printSignature.StylePriority.UseTextAlignment = false;
             this.printSignature.Text = "printSignature";
             this.printSignature.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;

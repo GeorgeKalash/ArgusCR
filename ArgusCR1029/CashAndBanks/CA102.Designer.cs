@@ -456,21 +456,25 @@ namespace ArgusCR1029.CashAndBanks
             // 
             // xrPageInfo1
             // 
+            this.xrPageInfo1.Font = new System.Drawing.Font("Arial", 9F);
             this.xrPageInfo1.LocationFloat = new DevExpress.Utils.PointFloat(708.7574F, 10.00004F);
             this.xrPageInfo1.Name = "xrPageInfo1";
             this.xrPageInfo1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.xrPageInfo1.SizeF = new System.Drawing.SizeF(82.25775F, 23F);
+            this.xrPageInfo1.StylePriority.UseFont = false;
             this.xrPageInfo1.StylePriority.UseTextAlignment = false;
-            this.xrPageInfo1.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
+            this.xrPageInfo1.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             this.xrPageInfo1.TextFormatString = "Page {0} of {1}";
             // 
             // printSignature
             // 
+            this.printSignature.Font = new System.Drawing.Font("Arial", 9F);
             this.printSignature.LocationFloat = new DevExpress.Utils.PointFloat(37.5F, 9.999974F);
             this.printSignature.Multiline = true;
             this.printSignature.Name = "printSignature";
             this.printSignature.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.printSignature.SizeF = new System.Drawing.SizeF(601.6467F, 23F);
+            this.printSignature.StylePriority.UseFont = false;
             this.printSignature.StylePriority.UseTextAlignment = false;
             this.printSignature.Text = "printSignature";
             this.printSignature.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
