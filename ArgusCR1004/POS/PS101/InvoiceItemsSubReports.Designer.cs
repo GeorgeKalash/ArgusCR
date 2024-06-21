@@ -555,7 +555,7 @@ namespace ArgusCR1004.POS.PS101
             this.ReportFooter.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
             this.xrTable11,
             this.xrTable7});
-            this.ReportFooter.HeightF = 120.2421F;
+            this.ReportFooter.HeightF = 106.4922F;
             this.ReportFooter.KeepTogether = true;
             this.ReportFooter.Name = "ReportFooter";
             // 
