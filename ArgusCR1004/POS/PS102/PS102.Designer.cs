@@ -203,7 +203,6 @@ namespace ArgusCR1004.POS.PS102
             this.InvoiceItemsSubReports2,
             this.InvoiceItemsSubReports});
             this.InvoiceItemSubBand.HeightF = 23F;
-            this.InvoiceItemSubBand.KeepTogether = true;
             this.InvoiceItemSubBand.Name = "InvoiceItemSubBand";
             // 
             // InvoiceItemsSubReports2
@@ -223,7 +222,6 @@ namespace ArgusCR1004.POS.PS102
             // Detail
             // 
             this.Detail.HeightF = 0F;
-            this.Detail.KeepTogether = true;
             this.Detail.Name = "Detail";
             this.Detail.SubBands.AddRange(new DevExpress.XtraReports.UI.SubBand[] {
             this.InvoiceItemSubBand,
@@ -235,7 +233,6 @@ namespace ArgusCR1004.POS.PS102
             this.InvoiceReceiptSubReports2,
             this.InvoiceReceiptSubReports});
             this.InvoiceReceiptSubBand.HeightF = 23F;
-            this.InvoiceReceiptSubBand.KeepTogether = true;
             this.InvoiceReceiptSubBand.Name = "InvoiceReceiptSubBand";
             // 
             // InvoiceReceiptSubReports2
@@ -254,7 +251,7 @@ namespace ArgusCR1004.POS.PS102
             // 
             // TopMargin
             // 
-            this.TopMargin.HeightF = 113.8782F;
+            this.TopMargin.HeightF = 150F;
             this.TopMargin.Name = "TopMargin";
             // 
             // BottomMargin
@@ -278,7 +275,6 @@ namespace ArgusCR1004.POS.PS102
             this.xrTable2,
             this.xrTable1});
             this.ReportHeader.HeightF = 230.9135F;
-            this.ReportHeader.KeepTogether = true;
             this.ReportHeader.Name = "ReportHeader";
             // 
             // QRCode
@@ -2199,7 +2195,6 @@ namespace ArgusCR1004.POS.PS102
             this.spSignature_lbl,
             this.xrTable9});
             this.ReportFooter.HeightF = 136.0417F;
-            this.ReportFooter.KeepTogether = true;
             this.ReportFooter.Name = "ReportFooter";
             // 
             // xrTable7
@@ -2384,7 +2379,7 @@ namespace ArgusCR1004.POS.PS102
             this.ReportFooter});
             this.Font = new System.Drawing.Font("Arial", 9.75F);
             this.Landscape = true;
-            this.Margins = new System.Drawing.Printing.Margins(0, 0, 114, 10);
+            this.Margins = new System.Drawing.Printing.Margins(0, 0, 150, 10);
             this.PageHeight = 827;
             this.PageWidth = 1169;
             this.PaperKind = System.Drawing.Printing.PaperKind.A4;
