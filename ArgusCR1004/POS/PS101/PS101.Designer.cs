@@ -231,7 +231,7 @@ namespace ArgusCR1004.POS.PS101
             this.InvoiceReceiptSubBand.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
             this.InvoiceReceiptSubReports2,
             this.InvoiceReceiptSubReports});
-            this.InvoiceReceiptSubBand.HeightF = 23F;
+            this.InvoiceReceiptSubBand.HeightF = 31.58652F;
             this.InvoiceReceiptSubBand.Name = "InvoiceReceiptSubBand";
             // 
             // InvoiceReceiptSubReports2
@@ -1533,13 +1533,13 @@ namespace ArgusCR1004.POS.PS101
             this.xrPageInfo1,
             this.pagesNumber_lbl,
             this.printSignature_lbl});
-            this.PageFooter.HeightF = 70.00002F;
+            this.PageFooter.HeightF = 90.96471F;
             this.PageFooter.Name = "PageFooter";
             // 
             // xrTable6
             // 
             this.xrTable6.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold);
-            this.xrTable6.LocationFloat = new DevExpress.Utils.PointFloat(600.0001F, 0F);
+            this.xrTable6.LocationFloat = new DevExpress.Utils.PointFloat(599.9996F, 20.96469F);
             this.xrTable6.Name = "xrTable6";
             this.xrTable6.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable6.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
@@ -1833,7 +1833,7 @@ namespace ArgusCR1004.POS.PS101
             // xrTable5
             // 
             this.xrTable5.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold);
-            this.xrTable5.LocationFloat = new DevExpress.Utils.PointFloat(12.50016F, 0F);
+            this.xrTable5.LocationFloat = new DevExpress.Utils.PointFloat(12.49962F, 20.96469F);
             this.xrTable5.Name = "xrTable5";
             this.xrTable5.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable5.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
@@ -2128,7 +2128,7 @@ namespace ArgusCR1004.POS.PS101
             // 
             this.printSignature2_lbl.BackColor = System.Drawing.Color.White;
             this.printSignature2_lbl.Font = new System.Drawing.Font("Arial", 7F);
-            this.printSignature2_lbl.LocationFloat = new DevExpress.Utils.PointFloat(12.5F, 50F);
+            this.printSignature2_lbl.LocationFloat = new DevExpress.Utils.PointFloat(12.49949F, 70.96468F);
             this.printSignature2_lbl.Multiline = true;
             this.printSignature2_lbl.Name = "printSignature2_lbl";
             this.printSignature2_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -2143,7 +2143,7 @@ namespace ArgusCR1004.POS.PS101
             // 
             this.xrPageInfo1.BackColor = System.Drawing.Color.White;
             this.xrPageInfo1.Font = new System.Drawing.Font("Arial", 7F);
-            this.xrPageInfo1.LocationFloat = new DevExpress.Utils.PointFloat(483.8927F, 50F);
+            this.xrPageInfo1.LocationFloat = new DevExpress.Utils.PointFloat(483.8922F, 70.96468F);
             this.xrPageInfo1.Name = "xrPageInfo1";
             this.xrPageInfo1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.xrPageInfo1.SizeF = new System.Drawing.SizeF(78.53003F, 20.00002F);
@@ -2157,7 +2157,7 @@ namespace ArgusCR1004.POS.PS101
             // 
             this.pagesNumber_lbl.BackColor = System.Drawing.Color.White;
             this.pagesNumber_lbl.Font = new System.Drawing.Font("Arial", 7F);
-            this.pagesNumber_lbl.LocationFloat = new DevExpress.Utils.PointFloat(1071.389F, 50F);
+            this.pagesNumber_lbl.LocationFloat = new DevExpress.Utils.PointFloat(1071.389F, 70.96468F);
             this.pagesNumber_lbl.Name = "pagesNumber_lbl";
             this.pagesNumber_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.pagesNumber_lbl.SizeF = new System.Drawing.SizeF(78.53003F, 20.00002F);
@@ -2171,7 +2171,7 @@ namespace ArgusCR1004.POS.PS101
             // 
             this.printSignature_lbl.BackColor = System.Drawing.Color.White;
             this.printSignature_lbl.Font = new System.Drawing.Font("Arial", 7F);
-            this.printSignature_lbl.LocationFloat = new DevExpress.Utils.PointFloat(599.9639F, 50F);
+            this.printSignature_lbl.LocationFloat = new DevExpress.Utils.PointFloat(599.9634F, 70.96468F);
             this.printSignature_lbl.Multiline = true;
             this.printSignature_lbl.Name = "printSignature_lbl";
             this.printSignature_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
