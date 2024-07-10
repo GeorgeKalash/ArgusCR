@@ -394,6 +394,7 @@ namespace ArgusCR1029.BusinessPartners
             // 
             // xrTable5
             // 
+            this.xrTable5.Font = new System.Drawing.Font("Arial", 9F);
             this.xrTable5.LocationFloat = new DevExpress.Utils.PointFloat(16.04158F, 125F);
             this.xrTable5.Name = "xrTable5";
             this.xrTable5.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
@@ -407,6 +408,7 @@ namespace ArgusCR1029.BusinessPartners
             this.xrTableRow10,
             this.xrTableRow11});
             this.xrTable5.SizeF = new System.Drawing.SizeF(468.4029F, 167.3611F);
+            this.xrTable5.StylePriority.UseFont = false;
             // 
             // xrTableRow9
             // 
@@ -418,7 +420,7 @@ namespace ArgusCR1029.BusinessPartners
             // 
             // bpGrp_lbl
             // 
-            this.bpGrp_lbl.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold);
+            this.bpGrp_lbl.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold);
             this.bpGrp_lbl.Multiline = true;
             this.bpGrp_lbl.Name = "bpGrp_lbl";
             this.bpGrp_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 3, 0, 100F);
@@ -445,7 +447,7 @@ namespace ArgusCR1029.BusinessPartners
             // 
             // saleZone_lbl
             // 
-            this.saleZone_lbl.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold);
+            this.saleZone_lbl.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold);
             this.saleZone_lbl.Multiline = true;
             this.saleZone_lbl.Name = "saleZone_lbl";
             this.saleZone_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 3, 0, 100F);
@@ -472,7 +474,7 @@ namespace ArgusCR1029.BusinessPartners
             // 
             // city2_lbl
             // 
-            this.city2_lbl.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold);
+            this.city2_lbl.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold);
             this.city2_lbl.Multiline = true;
             this.city2_lbl.Name = "city2_lbl";
             this.city2_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 3, 0, 100F);
@@ -499,7 +501,7 @@ namespace ArgusCR1029.BusinessPartners
             // 
             // state2_lbl
             // 
-            this.state2_lbl.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold);
+            this.state2_lbl.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold);
             this.state2_lbl.Multiline = true;
             this.state2_lbl.Name = "state2_lbl";
             this.state2_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 3, 0, 100F);
@@ -526,7 +528,7 @@ namespace ArgusCR1029.BusinessPartners
             // 
             // country_lbl
             // 
-            this.country_lbl.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold);
+            this.country_lbl.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold);
             this.country_lbl.Multiline = true;
             this.country_lbl.Name = "country_lbl";
             this.country_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 3, 0, 100F);
@@ -553,7 +555,7 @@ namespace ArgusCR1029.BusinessPartners
             // 
             // clientGroup2_lbl
             // 
-            this.clientGroup2_lbl.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold);
+            this.clientGroup2_lbl.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold);
             this.clientGroup2_lbl.Multiline = true;
             this.clientGroup2_lbl.Name = "clientGroup2_lbl";
             this.clientGroup2_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 3, 0, 100F);
@@ -580,7 +582,7 @@ namespace ArgusCR1029.BusinessPartners
             // 
             // activeStatus_lbl
             // 
-            this.activeStatus_lbl.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold);
+            this.activeStatus_lbl.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold);
             this.activeStatus_lbl.Multiline = true;
             this.activeStatus_lbl.Name = "activeStatus_lbl";
             this.activeStatus_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 3, 0, 100F);
@@ -607,7 +609,7 @@ namespace ArgusCR1029.BusinessPartners
             // 
             // level_lbl
             // 
-            this.level_lbl.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold);
+            this.level_lbl.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold);
             this.level_lbl.Multiline = true;
             this.level_lbl.Name = "level_lbl";
             this.level_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 3, 0, 100F);
