@@ -127,6 +127,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BusinessPartners\BP103B.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BusinessPartners\BP103B.Designer.cs">
+      <DependentUpon>BP103B.cs</DependentUpon>
+    </Compile>
     <Compile Include="BusinessPartners\BP103.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -892,6 +898,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="BusinessPartners\BP103B.resx">
+      <DependentUpon>BP103B.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="BusinessPartners\BP103.resx">
       <DependentUpon>BP103.cs</DependentUpon>
     </EmbeddedResource>
