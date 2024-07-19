@@ -204,6 +204,12 @@
     <Compile Include="Sales\Templates\SAIVC02.Designer.cs">
       <DependentUpon>SAIVC02.cs</DependentUpon>
     </Compile>
+    <Compile Include="Sales\Templates\SAORD02.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Sales\Templates\SAORD02.Designer.cs">
+      <DependentUpon>SAORD02.cs</DependentUpon>
+    </Compile>
     <Compile Include="Sales\Templates\SAORD01.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -257,6 +263,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Sales\Templates\SAIVC02.resx">
       <DependentUpon>SAIVC02.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales\Templates\SAORD02.resx">
+      <DependentUpon>SAORD02.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Sales\Templates\SAORD01.resx">
       <DependentUpon>SAORD01.cs</DependentUpon>
