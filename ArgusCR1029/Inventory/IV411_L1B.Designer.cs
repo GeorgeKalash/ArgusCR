@@ -330,6 +330,8 @@ namespace ArgusCR1029.Inventory
             this.xrTableCell21.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell21.BorderWidth = 1F;
+            this.xrTableCell21.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[pieces]")});
             this.xrTableCell21.Font = new System.Drawing.Font("Arial", 8F);
             this.xrTableCell21.Multiline = true;
             this.xrTableCell21.Name = "xrTableCell21";
@@ -340,6 +342,7 @@ namespace ArgusCR1029.Inventory
             this.xrTableCell21.StylePriority.UsePadding = false;
             this.xrTableCell21.StylePriority.UseTextAlignment = false;
             this.xrTableCell21.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
+            this.xrTableCell21.TextFormatString = "{0:n0}";
             this.xrTableCell21.Weight = 0.6422912166129694D;
             // 
             // xrTableCell15
