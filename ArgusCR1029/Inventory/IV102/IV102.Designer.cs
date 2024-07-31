@@ -349,7 +349,7 @@ namespace ArgusCR1029.Inventory.IV102
             this.fromSiteName_data.StylePriority.UsePadding = false;
             this.fromSiteName_data.StylePriority.UseTextAlignment = false;
             this.fromSiteName_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
-            this.fromSiteName_data.Weight = 1.0551293454597461D;
+            this.fromSiteName_data.Weight = 1.1168576696487882D;
             // 
             // fromSiteRef_data
             // 
@@ -364,7 +364,7 @@ namespace ArgusCR1029.Inventory.IV102
             this.fromSiteRef_data.StylePriority.UsePadding = false;
             this.fromSiteRef_data.StylePriority.UseTextAlignment = false;
             this.fromSiteRef_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
-            this.fromSiteRef_data.Weight = 0.39833564312680314D;
+            this.fromSiteRef_data.Weight = 0.33660731893776108D;
             // 
             // xrTableCell8
             // 
@@ -406,7 +406,7 @@ namespace ArgusCR1029.Inventory.IV102
             this.toSiteName_data.StylePriority.UsePadding = false;
             this.toSiteName_data.StylePriority.UseTextAlignment = false;
             this.toSiteName_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
-            this.toSiteName_data.Weight = 1.0551292950213353D;
+            this.toSiteName_data.Weight = 1.1168576174449738D;
             // 
             // toSiteRef_data
             // 
@@ -421,7 +421,7 @@ namespace ArgusCR1029.Inventory.IV102
             this.toSiteRef_data.StylePriority.UsePadding = false;
             this.toSiteRef_data.StylePriority.UseTextAlignment = false;
             this.toSiteRef_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
-            this.toSiteRef_data.Weight = 0.3983359842820105D;
+            this.toSiteRef_data.Weight = 0.3366076618583721D;
             // 
             // xrTableCell9
             // 

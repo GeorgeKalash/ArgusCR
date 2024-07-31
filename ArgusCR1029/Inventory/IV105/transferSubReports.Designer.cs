@@ -562,7 +562,7 @@ namespace ArgusCR1029.Inventory.IV105
             this.xrTableCell24.Borders = ((DevExpress.XtraPrinting.BorderSide)((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell24.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "sumSum([salesPrice]*[weight])")});
-            this.xrTableCell24.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold);
+            this.xrTableCell24.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Bold);
             this.xrTableCell24.Multiline = true;
             this.xrTableCell24.Name = "xrTableCell24";
             this.xrTableCell24.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 6, 0, 0, 100F);
@@ -581,7 +581,7 @@ namespace ArgusCR1029.Inventory.IV105
             // 
             this.xrTableCell23.BackColor = System.Drawing.Color.WhiteSmoke;
             this.xrTableCell23.Borders = DevExpress.XtraPrinting.BorderSide.Bottom;
-            this.xrTableCell23.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold);
+            this.xrTableCell23.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Bold);
             this.xrTableCell23.Multiline = true;
             this.xrTableCell23.Name = "xrTableCell23";
             this.xrTableCell23.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 6, 0, 0, 100F);
@@ -599,7 +599,7 @@ namespace ArgusCR1029.Inventory.IV105
             this.xrTableCell9.Borders = DevExpress.XtraPrinting.BorderSide.Bottom;
             this.xrTableCell9.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "sumSum([weightG21])")});
-            this.xrTableCell9.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold);
+            this.xrTableCell9.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Bold);
             this.xrTableCell9.Multiline = true;
             this.xrTableCell9.Name = "xrTableCell9";
             this.xrTableCell9.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 6, 0, 0, 100F);
@@ -620,7 +620,7 @@ namespace ArgusCR1029.Inventory.IV105
             this.xrTableCell7.Borders = DevExpress.XtraPrinting.BorderSide.Bottom;
             this.xrTableCell7.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "")});
-            this.xrTableCell7.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold);
+            this.xrTableCell7.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Bold);
             this.xrTableCell7.Multiline = true;
             this.xrTableCell7.Name = "xrTableCell7";
             this.xrTableCell7.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 6, 0, 0, 100F);
@@ -638,7 +638,7 @@ namespace ArgusCR1029.Inventory.IV105
             this.xrTableCell6.Borders = DevExpress.XtraPrinting.BorderSide.Bottom;
             this.xrTableCell6.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "sumSum([weight])")});
-            this.xrTableCell6.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold);
+            this.xrTableCell6.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Bold);
             this.xrTableCell6.Multiline = true;
             this.xrTableCell6.Name = "xrTableCell6";
             this.xrTableCell6.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 6, 0, 0, 100F);
@@ -660,7 +660,7 @@ namespace ArgusCR1029.Inventory.IV105
             this.xrTableCell22.Borders = DevExpress.XtraPrinting.BorderSide.Bottom;
             this.xrTableCell22.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "sumSum([pcs])")});
-            this.xrTableCell22.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold);
+            this.xrTableCell22.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Bold);
             this.xrTableCell22.Multiline = true;
             this.xrTableCell22.Name = "xrTableCell22";
             this.xrTableCell22.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 6, 0, 0, 100F);
@@ -679,7 +679,7 @@ namespace ArgusCR1029.Inventory.IV105
             // 
             this.xrTableCell28.BackColor = System.Drawing.Color.WhiteSmoke;
             this.xrTableCell28.Borders = ((DevExpress.XtraPrinting.BorderSide)((DevExpress.XtraPrinting.BorderSide.Right | DevExpress.XtraPrinting.BorderSide.Bottom)));
-            this.xrTableCell28.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold);
+            this.xrTableCell28.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Bold);
             this.xrTableCell28.Multiline = true;
             this.xrTableCell28.Name = "xrTableCell28";
             this.xrTableCell28.Padding = new DevExpress.XtraPrinting.PaddingInfo(8, 2, 0, 0, 100F);

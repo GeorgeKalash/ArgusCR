@@ -161,7 +161,7 @@ namespace ArgusCR1029.Inventory.IV106
             this.fromSiteName_data.StylePriority.UsePadding = false;
             this.fromSiteName_data.StylePriority.UseTextAlignment = false;
             this.fromSiteName_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
-            this.fromSiteName_data.Weight = 0.98353590484871489D;
+            this.fromSiteName_data.Weight = 1.1064281981934891D;
             // 
             // fromSiteRef_data
             // 
@@ -176,7 +176,7 @@ namespace ArgusCR1029.Inventory.IV106
             this.fromSiteRef_data.StylePriority.UsePadding = false;
             this.fromSiteRef_data.StylePriority.UseTextAlignment = false;
             this.fromSiteRef_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
-            this.fromSiteRef_data.Weight = 0.46992908373783443D;
+            this.fromSiteRef_data.Weight = 0.34703679039306029D;
             // 
             // xrTableCell1
             // 
@@ -218,7 +218,7 @@ namespace ArgusCR1029.Inventory.IV106
             this.toSiteName_data.StylePriority.UsePadding = false;
             this.toSiteName_data.StylePriority.UseTextAlignment = false;
             this.toSiteName_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
-            this.toSiteName_data.Weight = 0.98353603124651434D;
+            this.toSiteName_data.Weight = 1.1064281479201754D;
             // 
             // toSiteRef_data
             // 
@@ -233,7 +233,7 @@ namespace ArgusCR1029.Inventory.IV106
             this.toSiteRef_data.StylePriority.UsePadding = false;
             this.toSiteRef_data.StylePriority.UseTextAlignment = false;
             this.toSiteRef_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
-            this.toSiteRef_data.Weight = 0.46992924805683156D;
+            this.toSiteRef_data.Weight = 0.34703713138317055D;
             // 
             // xrTableCell2
             // 
@@ -453,7 +453,7 @@ namespace ArgusCR1029.Inventory.IV106
             this.title_lbl.StylePriority.UseForeColor = false;
             this.title_lbl.StylePriority.UsePadding = false;
             this.title_lbl.StylePriority.UseTextAlignment = false;
-            this.title_lbl.Text = "درافت نقل الاصناف بطباعة الاصناف";
+            this.title_lbl.Text = "درافت سند تحويل";
             this.title_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopCenter;
             // 
             // xrPageInfo1
@@ -484,11 +484,13 @@ namespace ArgusCR1029.Inventory.IV106
             // 
             // printSignature_lbl
             // 
+            this.printSignature_lbl.Font = new System.Drawing.Font("Arial", 8F);
             this.printSignature_lbl.LocationFloat = new DevExpress.Utils.PointFloat(9.999998F, 9.999974F);
             this.printSignature_lbl.Multiline = true;
             this.printSignature_lbl.Name = "printSignature_lbl";
             this.printSignature_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.printSignature_lbl.SizeF = new System.Drawing.SizeF(625.9621F, 23F);
+            this.printSignature_lbl.StylePriority.UseFont = false;
             this.printSignature_lbl.StylePriority.UseTextAlignment = false;
             this.printSignature_lbl.Text = "printSignature_lbl";
             this.printSignature_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
