@@ -2,7 +2,6 @@
 using System;
 using System.Collections;
 using System.ComponentModel;
-using System.Drawing;
 using System.Drawing.Printing;
 
 namespace ArgusCR1029.Financials
@@ -34,6 +33,7 @@ namespace ArgusCR1029.Financials
             notes_data.Text = obj.record.notes;
             amountInWords_data.Text = SharedClasses.NumberToWords.multiLingualNumberInText((decimal)obj.record.amount, 10, 2);
             amountInWords_data.Text = string.Format("\"{0}\"", amountInWords_data.Text);
+
             segmentName_data.Text = obj.record.segmentName;
 
             printSignature.Text = reportSignature();
@@ -57,6 +57,7 @@ namespace ArgusCR1029.Financials
             notes_lbl.Text = labelText(11);
 
             receiverSign_lbl.Text = labelText(12);
+            payerSignature_lbl.Text = labelText(13);
         }
         protected override string dictionaryStore()
         {
