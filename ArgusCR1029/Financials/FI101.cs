@@ -53,8 +53,10 @@ namespace ArgusCR1029.Financials
             cashAccount_lbl.Text = labelText(7);
             currency_lbl.Text = labelText(8);      
             amount_lbl.Text = labelText(9);
-            notes_lbl.Text = labelText(10);
-            receiverSign_lbl.Text = labelText(11);
+            amountInWords_lbl.Text = labelText(10);
+            notes_lbl.Text = labelText(11);
+
+            receiverSign_lbl.Text = labelText(12);
         }
         protected override string dictionaryStore()
         {

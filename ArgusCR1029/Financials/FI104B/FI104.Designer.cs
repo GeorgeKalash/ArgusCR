@@ -695,7 +695,7 @@ namespace ArgusCR1029.Financials.FI104B
             this.taxInvoice_lbl.StylePriority.UseFont = false;
             this.taxInvoice_lbl.StylePriority.UsePadding = false;
             this.taxInvoice_lbl.StylePriority.UseTextAlignment = false;
-            this.taxInvoice_lbl.Text = "سند صرف وسداد ذهب كسر وسبايك - Metal Payment Voucher";
+            this.taxInvoice_lbl.Text = "سند صرف ذهب كسر وسبايك - Metal Payment Voucher";
             this.taxInvoice_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopCenter;
             // 
             // ReportFooter
