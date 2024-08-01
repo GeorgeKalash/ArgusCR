@@ -157,6 +157,12 @@
     <Compile Include="CashAndBanks\CA401.Designer.cs">
       <DependentUpon>CA401.cs</DependentUpon>
     </Compile>
+    <Compile Include="Financials\FI102.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Financials\FI102.Designer.cs">
+      <DependentUpon>FI102.cs</DependentUpon>
+    </Compile>
     <Compile Include="Financials\FI104B\FI104.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -918,6 +924,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CashAndBanks\CA401.resx">
       <DependentUpon>CA401.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Financials\FI102.resx">
+      <DependentUpon>FI102.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Financials\FI104B\FI104.resx">
       <DependentUpon>FI104.cs</DependentUpon>
