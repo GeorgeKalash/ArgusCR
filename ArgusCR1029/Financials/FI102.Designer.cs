@@ -562,7 +562,8 @@ namespace ArgusCR1029.Financials
             // amount_data
             // 
             this.amount_data.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.amount_data.Borders = ((DevExpress.XtraPrinting.BorderSide)((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top)));
+            this.amount_data.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+            | DevExpress.XtraPrinting.BorderSide.Right)));
             this.amount_data.Multiline = true;
             this.amount_data.Name = "amount_data";
             this.amount_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(5, 2, 13, 0, 100F);
@@ -596,7 +597,8 @@ namespace ArgusCR1029.Financials
             // amountInWords_data
             // 
             this.amountInWords_data.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.amountInWords_data.Borders = ((DevExpress.XtraPrinting.BorderSide)((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top)));
+            this.amountInWords_data.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+            | DevExpress.XtraPrinting.BorderSide.Right)));
             this.amountInWords_data.Multiline = true;
             this.amountInWords_data.Name = "amountInWords_data";
             this.amountInWords_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(5, 2, 13, 0, 100F);
