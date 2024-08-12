@@ -22,11 +22,12 @@ namespace ArgusCR1003.Remittance.RE36301
             refNo_data.Text = webObject.record.reference;
             branch_data.Text = webObject.record.plantName;
 
-            trxNo_data.Text = webObject.record.recordId.ToString();
+           // trxNo_data.Text = webObject.record.recordId.ToString();
             amount_data.Text = webObject.record.amount.ToString("N2"); 
 
             benName_data.Text = webObject.record.beneficiaryName;
-            address_data.Text = webObject.record.countryName;
+           // relation_data.Text = webObject.record.re;
+          //  address_data.Text = webObject.record.countryName;
             telNo_data.Text = webObject.record.beneficiaryCellPhone;
             bank_data.Text = webObject.record.bankName;
             accNo_data.Text = webObject.record.accountNo;
@@ -36,19 +37,19 @@ namespace ArgusCR1003.Remittance.RE36301
             remName_data.Text = webObject.record.clientName + "/" + webObject.record.clientRef;
             nationality_data.Text = webObject.record.clientNationalityName;
             telNo2_data.Text = webObject.record.cellPhone;
-            idNo_data.Text = webObject.record.clientId.ToString();
+            //     idNo_data.Text = webObject.record.clientId.ToString();
 
-           // payMode_data
-           // cashReceived_data
-          //  balancePaid_data
+           // payMode_data.Text = webObject.record.cash.
+            //cashReceived_data.Text = webObject.record.cellPhone;
+        //    balancePaid_data.Text = webObject.record.cellPhone;
 
-         //   rate_data
-        //    charge_data
-       //     vat_data
-        //    total_data
+          //  rate_data.Text = webObject.record.cellPhone;
+          //  charge_data.Text = webObject.record.cellPhone;
+         //   vat_data.Text = webObject.record.cellPhone;
+         //   total_data.Text = webObject.record.cellPhone;
 
-     //       purpose_data
-      //      cashierNo_data
+            purpose_data.Text = webObject.record.purpose;
+            cashierNo_data.Text = webObject.record.cashierNo;
 
             base.OnBeforePrint(e);
         }
