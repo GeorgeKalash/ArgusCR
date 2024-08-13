@@ -22,12 +22,12 @@ namespace ArgusCR1003.Remittance.RE36301
             refNo_data.Text = webObject.record.reference;
             branch_data.Text = webObject.record.plantName;
 
-           // trxNo_data.Text = webObject.record.recordId.ToString();
+            trxNo_data.Text = webObject.record.trackingNo;
             amount_data.Text = webObject.record.amount.ToString("N2"); 
 
             benName_data.Text = webObject.record.beneficiaryName;
-           // relation_data.Text = webObject.record.re;
-          //  address_data.Text = webObject.record.countryName;
+            relation_data.Text = webObject.record.beneficiaryRelation;
+            address_data.Text = webObject.record.beneficiaryAddress;
             telNo_data.Text = webObject.record.beneficiaryCellPhone;
             bank_data.Text = webObject.record.bankName;
             accNo_data.Text = webObject.record.accountNo;
