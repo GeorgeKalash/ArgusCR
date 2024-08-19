@@ -118,6 +118,7 @@ namespace ArgusCR1012.Delivery.Templates
             this.paper_lbl = new DevExpress.XtraReports.UI.XRLabel();
             this.bussinessInfo_lbl = new DevExpress.XtraReports.UI.XRLabel();
             this.distributionDriver_lbl = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel1 = new DevExpress.XtraReports.UI.XRLabel();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable15)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable4)).BeginInit();
@@ -128,6 +129,7 @@ namespace ArgusCR1012.Delivery.Templates
             // ReportHeader
             // 
             this.ReportHeader.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+            this.xrLabel1,
             this.deliveryNote_lbl,
             this.xrTable15,
             this.xrTable5,
@@ -1456,6 +1458,20 @@ namespace ArgusCR1012.Delivery.Templates
             this.distributionDriver_lbl.Text = resources.GetString("distributionDriver_lbl.Text");
             this.distributionDriver_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
             // 
+            // xrLabel1
+            // 
+            this.xrLabel1.Font = new System.Drawing.Font("Times New Roman", 12F);
+            this.xrLabel1.LocationFloat = new DevExpress.Utils.PointFloat(295.4167F, 79.16666F);
+            this.xrLabel1.Multiline = true;
+            this.xrLabel1.Name = "xrLabel1";
+            this.xrLabel1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 2, 0, 100F);
+            this.xrLabel1.SizeF = new System.Drawing.SizeF(217.7083F, 20.83331F);
+            this.xrLabel1.StylePriority.UseFont = false;
+            this.xrLabel1.StylePriority.UsePadding = false;
+            this.xrLabel1.StylePriority.UseTextAlignment = false;
+            this.xrLabel1.Text = "FM:WH:DN:03.REV.05";
+            this.xrLabel1.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopCenter;
+            // 
             // DEORD01
             // 
             this.Bands.AddRange(new DevExpress.XtraReports.UI.Band[] {
@@ -1570,5 +1586,6 @@ namespace ArgusCR1012.Delivery.Templates
         private DevExpress.XtraReports.UI.XRTableRow xrTableRow30;
         private DevExpress.XtraReports.UI.XRTableCell taxNo_data;
         private DevExpress.XtraReports.UI.XRTableCell tamdeedVatNo_lbl;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel1;
     }
 }
