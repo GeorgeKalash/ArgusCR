@@ -173,7 +173,7 @@ namespace ArgusCR1012.Sales.Templates
             this.xrTableRow12,
             this.xrTableRow13,
             this.xrTableRow35});
-            this.xrTable4.SizeF = new System.Drawing.SizeF(340F, 139.375F);
+            this.xrTable4.SizeF = new System.Drawing.SizeF(370F, 139.375F);
             this.xrTable4.StylePriority.UseBorders = false;
             this.xrTable4.StylePriority.UseBorderWidth = false;
             this.xrTable4.StylePriority.UseTextAlignment = false;
@@ -363,7 +363,7 @@ namespace ArgusCR1012.Sales.Templates
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTable5.BorderWidth = 0.5F;
-            this.xrTable5.LocationFloat = new DevExpress.Utils.PointFloat(460.2217F, 99.99998F);
+            this.xrTable5.LocationFloat = new DevExpress.Utils.PointFloat(436.2634F, 99.99997F);
             this.xrTable5.Name = "xrTable5";
             this.xrTable5.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 4, 0, 100F);
             this.xrTable5.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
@@ -372,7 +372,7 @@ namespace ArgusCR1012.Sales.Templates
             this.xrTableRow17,
             this.xrTableRow3,
             this.xrTableRow15});
-            this.xrTable5.SizeF = new System.Drawing.SizeF(341.8778F, 139.375F);
+            this.xrTable5.SizeF = new System.Drawing.SizeF(365.8361F, 139.375F);
             this.xrTable5.StylePriority.UseBorders = false;
             this.xrTable5.StylePriority.UseBorderWidth = false;
             this.xrTable5.StylePriority.UsePadding = false;
