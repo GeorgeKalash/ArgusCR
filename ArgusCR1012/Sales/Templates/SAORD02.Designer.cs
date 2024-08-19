@@ -97,6 +97,7 @@ namespace ArgusCR1012.Sales.Templates
             this.sku_lbl = new DevExpress.XtraReports.UI.XRTableCell();
             this.itemName_lbl = new DevExpress.XtraReports.UI.XRTableCell();
             this.qty_lbl = new DevExpress.XtraReports.UI.XRTableCell();
+            this.xrLabel1 = new DevExpress.XtraReports.UI.XRLabel();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable15)).BeginInit();
@@ -109,6 +110,7 @@ namespace ArgusCR1012.Sales.Templates
             // ReportHeader
             // 
             this.ReportHeader.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+            this.xrLabel1,
             this.salesOrder_lbl,
             this.xrTable4,
             this.xrTable5,
@@ -154,7 +156,7 @@ namespace ArgusCR1012.Sales.Templates
             this.xrTableRow12,
             this.xrTableRow13,
             this.xrTableRow35});
-            this.xrTable4.SizeF = new System.Drawing.SizeF(340F, 139.375F);
+            this.xrTable4.SizeF = new System.Drawing.SizeF(372.2917F, 139.375F);
             this.xrTable4.StylePriority.UseBorders = false;
             this.xrTable4.StylePriority.UseBorderWidth = false;
             this.xrTable4.StylePriority.UseTextAlignment = false;
@@ -344,7 +346,7 @@ namespace ArgusCR1012.Sales.Templates
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTable5.BorderWidth = 0.5F;
-            this.xrTable5.LocationFloat = new DevExpress.Utils.PointFloat(394.9999F, 99.99997F);
+            this.xrTable5.LocationFloat = new DevExpress.Utils.PointFloat(422.0833F, 99.99997F);
             this.xrTable5.Name = "xrTable5";
             this.xrTable5.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 4, 0, 100F);
             this.xrTable5.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
@@ -353,7 +355,7 @@ namespace ArgusCR1012.Sales.Templates
             this.xrTableRow17,
             this.xrTableRow3,
             this.xrTableRow15});
-            this.xrTable5.SizeF = new System.Drawing.SizeF(407.0995F, 139.375F);
+            this.xrTable5.SizeF = new System.Drawing.SizeF(380.0161F, 139.375F);
             this.xrTable5.StylePriority.UseBorders = false;
             this.xrTable5.StylePriority.UseBorderWidth = false;
             this.xrTable5.StylePriority.UsePadding = false;
@@ -987,6 +989,20 @@ namespace ArgusCR1012.Sales.Templates
             this.qty_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             this.qty_lbl.Weight = 0.68873959340988566D;
             // 
+            // xrLabel1
+            // 
+            this.xrLabel1.Font = new System.Drawing.Font("Times New Roman", 12F);
+            this.xrLabel1.LocationFloat = new DevExpress.Utils.PointFloat(313.125F, 79.16666F);
+            this.xrLabel1.Multiline = true;
+            this.xrLabel1.Name = "xrLabel1";
+            this.xrLabel1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 2, 0, 100F);
+            this.xrLabel1.SizeF = new System.Drawing.SizeF(217.7083F, 20.83331F);
+            this.xrLabel1.StylePriority.UseFont = false;
+            this.xrLabel1.StylePriority.UsePadding = false;
+            this.xrLabel1.StylePriority.UseTextAlignment = false;
+            this.xrLabel1.Text = "FM:SAL:SO:01.REV.04";
+            this.xrLabel1.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopCenter;
+            // 
             // SAORD02
             // 
             this.Bands.AddRange(new DevExpress.XtraReports.UI.Band[] {
@@ -1081,5 +1097,6 @@ namespace ArgusCR1012.Sales.Templates
         private DevExpress.XtraReports.UI.XRTableRow xrTableRow24;
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell7;
         private DevExpress.XtraReports.UI.XRTableCell sPeSig_lbl;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel1;
     }
 }
