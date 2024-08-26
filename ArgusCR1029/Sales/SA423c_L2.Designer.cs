@@ -777,7 +777,7 @@ namespace ArgusCR1029.Sales
             this.title_lbl.SizeF = new System.Drawing.SizeF(1053.417F, 39.66666F);
             this.title_lbl.StylePriority.UseFont = false;
             this.title_lbl.StylePriority.UseTextAlignment = false;
-            this.title_lbl.Text = "Total Sales By Plant And Collection";
+            this.title_lbl.Text = "Total Sales By Plant And Item Collection";
             this.title_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             // 
             // logo_data
