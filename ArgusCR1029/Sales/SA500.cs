@@ -2,7 +2,6 @@
 using System;
 using System.Collections;
 using System.ComponentModel;
-using System.Drawing;
 using System.Drawing.Printing;
 
 namespace ArgusCR1029.Sales
@@ -72,7 +71,6 @@ namespace ArgusCR1029.Sales
             production_lbl.Text = labelText(23);
             totalQty_lbl.Text = labelText(24);
         }
-
         protected override string dictionaryStore()
         {
             return "CR1029.SA500";

@@ -1036,19 +1036,19 @@ namespace ArgusCR1029.Sales
             // 
             // xrPageInfo1
             // 
-            this.xrPageInfo1.Font = new System.Drawing.Font("Arial", 9F);
+            this.xrPageInfo1.Font = new System.Drawing.Font("Arial", 8F);
             this.xrPageInfo1.LocationFloat = new DevExpress.Utils.PointFloat(1028.386F, 9.999974F);
             this.xrPageInfo1.Name = "xrPageInfo1";
             this.xrPageInfo1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.xrPageInfo1.SizeF = new System.Drawing.SizeF(130.614F, 23F);
             this.xrPageInfo1.StylePriority.UseFont = false;
             this.xrPageInfo1.StylePriority.UseTextAlignment = false;
-            this.xrPageInfo1.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
+            this.xrPageInfo1.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             this.xrPageInfo1.TextFormatString = "Page {0} of {1}";
             // 
             // printSignature
             // 
-            this.printSignature.Font = new System.Drawing.Font("Arial", 9F);
+            this.printSignature.Font = new System.Drawing.Font("Arial", 8F);
             this.printSignature.LocationFloat = new DevExpress.Utils.PointFloat(9.999998F, 10.0001F);
             this.printSignature.Multiline = true;
             this.printSignature.Name = "printSignature";

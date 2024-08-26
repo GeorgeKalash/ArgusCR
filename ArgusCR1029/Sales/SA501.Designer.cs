@@ -62,6 +62,47 @@ namespace ArgusCR1029.Sales
             this.xrTableCell33 = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTableCell34 = new DevExpress.XtraReports.UI.XRTableCell();
             this.ReportHeader = new DevExpress.XtraReports.UI.ReportHeaderBand();
+            this.xrTable6 = new DevExpress.XtraReports.UI.XRTable();
+            this.xrTableRow7 = new DevExpress.XtraReports.UI.XRTableRow();
+            this.startDate_lbl = new DevExpress.XtraReports.UI.XRTableCell();
+            this.startDate_param = new DevExpress.XtraReports.UI.XRTableCell();
+            this.xrTableRow8 = new DevExpress.XtraReports.UI.XRTableRow();
+            this.endDate_lbl = new DevExpress.XtraReports.UI.XRTableCell();
+            this.endDate_param = new DevExpress.XtraReports.UI.XRTableCell();
+            this.xrTableRow9 = new DevExpress.XtraReports.UI.XRTableRow();
+            this.level_lbl = new DevExpress.XtraReports.UI.XRTableCell();
+            this.level_param = new DevExpress.XtraReports.UI.XRTableCell();
+            this.xrTableRow10 = new DevExpress.XtraReports.UI.XRTableRow();
+            this.plant_lbl = new DevExpress.XtraReports.UI.XRTableCell();
+            this.plant_param = new DevExpress.XtraReports.UI.XRTableCell();
+            this.xrTableRow11 = new DevExpress.XtraReports.UI.XRTableRow();
+            this.sz_lbl = new DevExpress.XtraReports.UI.XRTableCell();
+            this.sz_param = new DevExpress.XtraReports.UI.XRTableCell();
+            this.xrTableRow12 = new DevExpress.XtraReports.UI.XRTableRow();
+            this.client_lbl = new DevExpress.XtraReports.UI.XRTableCell();
+            this.client_param = new DevExpress.XtraReports.UI.XRTableCell();
+            this.xrTableRow13 = new DevExpress.XtraReports.UI.XRTableRow();
+            this.clientGrp_lbl = new DevExpress.XtraReports.UI.XRTableCell();
+            this.clientGrp_param = new DevExpress.XtraReports.UI.XRTableCell();
+            this.xrTable7 = new DevExpress.XtraReports.UI.XRTable();
+            this.xrTableRow14 = new DevExpress.XtraReports.UI.XRTableRow();
+            this.plantGrp_lbl = new DevExpress.XtraReports.UI.XRTableCell();
+            this.plantGrp_param = new DevExpress.XtraReports.UI.XRTableCell();
+            this.xrTableRow15 = new DevExpress.XtraReports.UI.XRTableRow();
+            this.itemCategory_lbl = new DevExpress.XtraReports.UI.XRTableCell();
+            this.itemCategory_param = new DevExpress.XtraReports.UI.XRTableCell();
+            this.xrTableRow16 = new DevExpress.XtraReports.UI.XRTableRow();
+            this.item_lbl = new DevExpress.XtraReports.UI.XRTableCell();
+            this.item_param = new DevExpress.XtraReports.UI.XRTableCell();
+            this.xrTableRow17 = new DevExpress.XtraReports.UI.XRTableRow();
+            this.itemGrp_lbl = new DevExpress.XtraReports.UI.XRTableCell();
+            this.itemGrp_param = new DevExpress.XtraReports.UI.XRTableCell();
+            this.xrTableRow18 = new DevExpress.XtraReports.UI.XRTableRow();
+            this.syFunction_lbl = new DevExpress.XtraReports.UI.XRTableCell();
+            this.syFunction_param = new DevExpress.XtraReports.UI.XRTableCell();
+            this.xrTableRow19 = new DevExpress.XtraReports.UI.XRTableRow();
+            this.production_lbl = new DevExpress.XtraReports.UI.XRTableCell();
+            this.production_param = new DevExpress.XtraReports.UI.XRTableCell();
             this.title_lbl = new DevExpress.XtraReports.UI.XRLabel();
             this.logo_data = new DevExpress.XtraReports.UI.XRPictureBox();
             this.xrTable2 = new DevExpress.XtraReports.UI.XRTable();
@@ -117,54 +158,13 @@ namespace ArgusCR1029.Sales
             this.xrTableCell17 = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTableCell24 = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTableCell26 = new DevExpress.XtraReports.UI.XRTableCell();
-            this.xrTable6 = new DevExpress.XtraReports.UI.XRTable();
-            this.xrTableRow7 = new DevExpress.XtraReports.UI.XRTableRow();
-            this.startDate_lbl = new DevExpress.XtraReports.UI.XRTableCell();
-            this.startDate_param = new DevExpress.XtraReports.UI.XRTableCell();
-            this.xrTableRow8 = new DevExpress.XtraReports.UI.XRTableRow();
-            this.endDate_lbl = new DevExpress.XtraReports.UI.XRTableCell();
-            this.endDate_param = new DevExpress.XtraReports.UI.XRTableCell();
-            this.xrTableRow9 = new DevExpress.XtraReports.UI.XRTableRow();
-            this.level_lbl = new DevExpress.XtraReports.UI.XRTableCell();
-            this.level_param = new DevExpress.XtraReports.UI.XRTableCell();
-            this.xrTableRow10 = new DevExpress.XtraReports.UI.XRTableRow();
-            this.plant_lbl = new DevExpress.XtraReports.UI.XRTableCell();
-            this.plant_param = new DevExpress.XtraReports.UI.XRTableCell();
-            this.xrTableRow11 = new DevExpress.XtraReports.UI.XRTableRow();
-            this.sz_lbl = new DevExpress.XtraReports.UI.XRTableCell();
-            this.sz_param = new DevExpress.XtraReports.UI.XRTableCell();
-            this.xrTableRow12 = new DevExpress.XtraReports.UI.XRTableRow();
-            this.client_lbl = new DevExpress.XtraReports.UI.XRTableCell();
-            this.client_param = new DevExpress.XtraReports.UI.XRTableCell();
-            this.xrTableRow13 = new DevExpress.XtraReports.UI.XRTableRow();
-            this.clientGrp_lbl = new DevExpress.XtraReports.UI.XRTableCell();
-            this.clientGrp_param = new DevExpress.XtraReports.UI.XRTableCell();
-            this.xrTable7 = new DevExpress.XtraReports.UI.XRTable();
-            this.xrTableRow14 = new DevExpress.XtraReports.UI.XRTableRow();
-            this.plantGrp_lbl = new DevExpress.XtraReports.UI.XRTableCell();
-            this.plantGrp_param = new DevExpress.XtraReports.UI.XRTableCell();
-            this.xrTableRow15 = new DevExpress.XtraReports.UI.XRTableRow();
-            this.itemCategory_lbl = new DevExpress.XtraReports.UI.XRTableCell();
-            this.itemCategory_param = new DevExpress.XtraReports.UI.XRTableCell();
-            this.xrTableRow16 = new DevExpress.XtraReports.UI.XRTableRow();
-            this.item_lbl = new DevExpress.XtraReports.UI.XRTableCell();
-            this.item_param = new DevExpress.XtraReports.UI.XRTableCell();
-            this.xrTableRow17 = new DevExpress.XtraReports.UI.XRTableRow();
-            this.itemGrp_lbl = new DevExpress.XtraReports.UI.XRTableCell();
-            this.itemGrp_param = new DevExpress.XtraReports.UI.XRTableCell();
-            this.xrTableRow18 = new DevExpress.XtraReports.UI.XRTableRow();
-            this.syFunction_lbl = new DevExpress.XtraReports.UI.XRTableCell();
-            this.syFunction_param = new DevExpress.XtraReports.UI.XRTableCell();
-            this.xrTableRow19 = new DevExpress.XtraReports.UI.XRTableRow();
-            this.production_lbl = new DevExpress.XtraReports.UI.XRTableCell();
-            this.production_param = new DevExpress.XtraReports.UI.XRTableCell();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.xrTable6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.xrTable7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.xrTable6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.xrTable7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             // 
             // TopMargin
@@ -466,6 +466,334 @@ namespace ArgusCR1029.Sales
             this.ReportHeader.HeightF = 280.7081F;
             this.ReportHeader.KeepTogether = true;
             this.ReportHeader.Name = "ReportHeader";
+            // 
+            // xrTable6
+            // 
+            this.xrTable6.LocationFloat = new DevExpress.Utils.PointFloat(12.5F, 125F);
+            this.xrTable6.Name = "xrTable6";
+            this.xrTable6.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
+            this.xrTable6.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
+            this.xrTableRow7,
+            this.xrTableRow8,
+            this.xrTableRow9,
+            this.xrTableRow10,
+            this.xrTableRow11,
+            this.xrTableRow12,
+            this.xrTableRow13});
+            this.xrTable6.SizeF = new System.Drawing.SizeF(463.9584F, 138.8334F);
+            // 
+            // xrTableRow7
+            // 
+            this.xrTableRow7.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
+            this.startDate_lbl,
+            this.startDate_param});
+            this.xrTableRow7.Name = "xrTableRow7";
+            this.xrTableRow7.Weight = 1D;
+            // 
+            // startDate_lbl
+            // 
+            this.startDate_lbl.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold);
+            this.startDate_lbl.Multiline = true;
+            this.startDate_lbl.Name = "startDate_lbl";
+            this.startDate_lbl.StylePriority.UseFont = false;
+            this.startDate_lbl.Text = "Start Date:";
+            this.startDate_lbl.Weight = 0.55861206381490736D;
+            // 
+            // startDate_param
+            // 
+            this.startDate_param.Multiline = true;
+            this.startDate_param.Name = "startDate_param";
+            this.startDate_param.Weight = 1.7103640956519999D;
+            // 
+            // xrTableRow8
+            // 
+            this.xrTableRow8.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
+            this.endDate_lbl,
+            this.endDate_param});
+            this.xrTableRow8.Name = "xrTableRow8";
+            this.xrTableRow8.Weight = 1D;
+            // 
+            // endDate_lbl
+            // 
+            this.endDate_lbl.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold);
+            this.endDate_lbl.Multiline = true;
+            this.endDate_lbl.Name = "endDate_lbl";
+            this.endDate_lbl.StylePriority.UseFont = false;
+            this.endDate_lbl.Text = "End Date:";
+            this.endDate_lbl.Weight = 0.55861206381490736D;
+            // 
+            // endDate_param
+            // 
+            this.endDate_param.Multiline = true;
+            this.endDate_param.Name = "endDate_param";
+            this.endDate_param.Weight = 1.7103640956519999D;
+            // 
+            // xrTableRow9
+            // 
+            this.xrTableRow9.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
+            this.level_lbl,
+            this.level_param});
+            this.xrTableRow9.Name = "xrTableRow9";
+            this.xrTableRow9.Weight = 1D;
+            // 
+            // level_lbl
+            // 
+            this.level_lbl.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold);
+            this.level_lbl.Multiline = true;
+            this.level_lbl.Name = "level_lbl";
+            this.level_lbl.StylePriority.UseFont = false;
+            this.level_lbl.Text = "Level:";
+            this.level_lbl.Weight = 0.55861206381490736D;
+            // 
+            // level_param
+            // 
+            this.level_param.Multiline = true;
+            this.level_param.Name = "level_param";
+            this.level_param.Weight = 1.7103640956519999D;
+            // 
+            // xrTableRow10
+            // 
+            this.xrTableRow10.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
+            this.plant_lbl,
+            this.plant_param});
+            this.xrTableRow10.Name = "xrTableRow10";
+            this.xrTableRow10.Weight = 1D;
+            // 
+            // plant_lbl
+            // 
+            this.plant_lbl.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold);
+            this.plant_lbl.Multiline = true;
+            this.plant_lbl.Name = "plant_lbl";
+            this.plant_lbl.StylePriority.UseFont = false;
+            this.plant_lbl.Text = "Plant:";
+            this.plant_lbl.Weight = 0.55861206381490736D;
+            // 
+            // plant_param
+            // 
+            this.plant_param.Multiline = true;
+            this.plant_param.Name = "plant_param";
+            this.plant_param.Weight = 1.7103640956519999D;
+            // 
+            // xrTableRow11
+            // 
+            this.xrTableRow11.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
+            this.sz_lbl,
+            this.sz_param});
+            this.xrTableRow11.Name = "xrTableRow11";
+            this.xrTableRow11.Weight = 1D;
+            // 
+            // sz_lbl
+            // 
+            this.sz_lbl.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold);
+            this.sz_lbl.Multiline = true;
+            this.sz_lbl.Name = "sz_lbl";
+            this.sz_lbl.StylePriority.UseFont = false;
+            this.sz_lbl.Text = "Sale Zone:";
+            this.sz_lbl.Weight = 0.55861206381490736D;
+            // 
+            // sz_param
+            // 
+            this.sz_param.Multiline = true;
+            this.sz_param.Name = "sz_param";
+            this.sz_param.Weight = 1.7103640956519999D;
+            // 
+            // xrTableRow12
+            // 
+            this.xrTableRow12.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
+            this.client_lbl,
+            this.client_param});
+            this.xrTableRow12.Name = "xrTableRow12";
+            this.xrTableRow12.Weight = 1D;
+            // 
+            // client_lbl
+            // 
+            this.client_lbl.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold);
+            this.client_lbl.Multiline = true;
+            this.client_lbl.Name = "client_lbl";
+            this.client_lbl.StylePriority.UseFont = false;
+            this.client_lbl.Text = "Client:";
+            this.client_lbl.Weight = 0.55861206381490736D;
+            // 
+            // client_param
+            // 
+            this.client_param.Multiline = true;
+            this.client_param.Name = "client_param";
+            this.client_param.Weight = 1.7103640956519999D;
+            // 
+            // xrTableRow13
+            // 
+            this.xrTableRow13.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
+            this.clientGrp_lbl,
+            this.clientGrp_param});
+            this.xrTableRow13.Name = "xrTableRow13";
+            this.xrTableRow13.Weight = 1D;
+            // 
+            // clientGrp_lbl
+            // 
+            this.clientGrp_lbl.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold);
+            this.clientGrp_lbl.Multiline = true;
+            this.clientGrp_lbl.Name = "clientGrp_lbl";
+            this.clientGrp_lbl.StylePriority.UseFont = false;
+            this.clientGrp_lbl.Text = "Client Group:";
+            this.clientGrp_lbl.Weight = 0.55861206381490736D;
+            // 
+            // clientGrp_param
+            // 
+            this.clientGrp_param.Multiline = true;
+            this.clientGrp_param.Name = "clientGrp_param";
+            this.clientGrp_param.Weight = 1.7103640956519999D;
+            // 
+            // xrTable7
+            // 
+            this.xrTable7.LocationFloat = new DevExpress.Utils.PointFloat(476.4584F, 125F);
+            this.xrTable7.Name = "xrTable7";
+            this.xrTable7.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
+            this.xrTable7.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
+            this.xrTableRow14,
+            this.xrTableRow15,
+            this.xrTableRow16,
+            this.xrTableRow17,
+            this.xrTableRow18,
+            this.xrTableRow19});
+            this.xrTable7.SizeF = new System.Drawing.SizeF(486.4584F, 119F);
+            // 
+            // xrTableRow14
+            // 
+            this.xrTableRow14.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
+            this.plantGrp_lbl,
+            this.plantGrp_param});
+            this.xrTableRow14.Name = "xrTableRow14";
+            this.xrTableRow14.Weight = 1D;
+            // 
+            // plantGrp_lbl
+            // 
+            this.plantGrp_lbl.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold);
+            this.plantGrp_lbl.Multiline = true;
+            this.plantGrp_lbl.Name = "plantGrp_lbl";
+            this.plantGrp_lbl.StylePriority.UseFont = false;
+            this.plantGrp_lbl.Text = "Plant Group:";
+            this.plantGrp_lbl.Weight = 0.62381826982622812D;
+            // 
+            // plantGrp_param
+            // 
+            this.plantGrp_param.Multiline = true;
+            this.plantGrp_param.Name = "plantGrp_param";
+            this.plantGrp_param.Weight = 1.7551935301858459D;
+            // 
+            // xrTableRow15
+            // 
+            this.xrTableRow15.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
+            this.itemCategory_lbl,
+            this.itemCategory_param});
+            this.xrTableRow15.Name = "xrTableRow15";
+            this.xrTableRow15.Weight = 1D;
+            // 
+            // itemCategory_lbl
+            // 
+            this.itemCategory_lbl.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold);
+            this.itemCategory_lbl.Multiline = true;
+            this.itemCategory_lbl.Name = "itemCategory_lbl";
+            this.itemCategory_lbl.StylePriority.UseFont = false;
+            this.itemCategory_lbl.Text = "Item Category:";
+            this.itemCategory_lbl.Weight = 0.62381826982622812D;
+            // 
+            // itemCategory_param
+            // 
+            this.itemCategory_param.Multiline = true;
+            this.itemCategory_param.Name = "itemCategory_param";
+            this.itemCategory_param.Weight = 1.7551935301858459D;
+            // 
+            // xrTableRow16
+            // 
+            this.xrTableRow16.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
+            this.item_lbl,
+            this.item_param});
+            this.xrTableRow16.Name = "xrTableRow16";
+            this.xrTableRow16.Weight = 1D;
+            // 
+            // item_lbl
+            // 
+            this.item_lbl.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold);
+            this.item_lbl.Multiline = true;
+            this.item_lbl.Name = "item_lbl";
+            this.item_lbl.StylePriority.UseFont = false;
+            this.item_lbl.Text = "Item:";
+            this.item_lbl.Weight = 0.62381826982622812D;
+            // 
+            // item_param
+            // 
+            this.item_param.Multiline = true;
+            this.item_param.Name = "item_param";
+            this.item_param.Weight = 1.7551935301858459D;
+            // 
+            // xrTableRow17
+            // 
+            this.xrTableRow17.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
+            this.itemGrp_lbl,
+            this.itemGrp_param});
+            this.xrTableRow17.Name = "xrTableRow17";
+            this.xrTableRow17.Weight = 1D;
+            // 
+            // itemGrp_lbl
+            // 
+            this.itemGrp_lbl.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold);
+            this.itemGrp_lbl.Multiline = true;
+            this.itemGrp_lbl.Name = "itemGrp_lbl";
+            this.itemGrp_lbl.StylePriority.UseFont = false;
+            this.itemGrp_lbl.Text = "Item Group:";
+            this.itemGrp_lbl.Weight = 0.62381826982622812D;
+            // 
+            // itemGrp_param
+            // 
+            this.itemGrp_param.Multiline = true;
+            this.itemGrp_param.Name = "itemGrp_param";
+            this.itemGrp_param.Weight = 1.7551935301858459D;
+            // 
+            // xrTableRow18
+            // 
+            this.xrTableRow18.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
+            this.syFunction_lbl,
+            this.syFunction_param});
+            this.xrTableRow18.Name = "xrTableRow18";
+            this.xrTableRow18.Weight = 1D;
+            // 
+            // syFunction_lbl
+            // 
+            this.syFunction_lbl.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold);
+            this.syFunction_lbl.Multiline = true;
+            this.syFunction_lbl.Name = "syFunction_lbl";
+            this.syFunction_lbl.StylePriority.UseFont = false;
+            this.syFunction_lbl.Text = "System Function:";
+            this.syFunction_lbl.Weight = 0.62381826982622812D;
+            // 
+            // syFunction_param
+            // 
+            this.syFunction_param.Multiline = true;
+            this.syFunction_param.Name = "syFunction_param";
+            this.syFunction_param.Weight = 1.7551935301858459D;
+            // 
+            // xrTableRow19
+            // 
+            this.xrTableRow19.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
+            this.production_lbl,
+            this.production_param});
+            this.xrTableRow19.Name = "xrTableRow19";
+            this.xrTableRow19.Weight = 1D;
+            // 
+            // production_lbl
+            // 
+            this.production_lbl.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold);
+            this.production_lbl.Multiline = true;
+            this.production_lbl.Name = "production_lbl";
+            this.production_lbl.StylePriority.UseFont = false;
+            this.production_lbl.Text = "Production Line:";
+            this.production_lbl.Weight = 0.62381826982622812D;
+            // 
+            // production_param
+            // 
+            this.production_param.Multiline = true;
+            this.production_param.Name = "production_param";
+            this.production_param.Weight = 1.7551935301858459D;
             // 
             // title_lbl
             // 
@@ -900,19 +1228,19 @@ namespace ArgusCR1029.Sales
             // 
             // xrPageInfo1
             // 
-            this.xrPageInfo1.Font = new System.Drawing.Font("Arial", 9F);
+            this.xrPageInfo1.Font = new System.Drawing.Font("Arial", 8F);
             this.xrPageInfo1.LocationFloat = new DevExpress.Utils.PointFloat(1028.386F, 9.999974F);
             this.xrPageInfo1.Name = "xrPageInfo1";
             this.xrPageInfo1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.xrPageInfo1.SizeF = new System.Drawing.SizeF(130.614F, 23F);
             this.xrPageInfo1.StylePriority.UseFont = false;
             this.xrPageInfo1.StylePriority.UseTextAlignment = false;
-            this.xrPageInfo1.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
+            this.xrPageInfo1.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             this.xrPageInfo1.TextFormatString = "Page {0} of {1}";
             // 
             // printSignature
             // 
-            this.printSignature.Font = new System.Drawing.Font("Arial", 9F);
+            this.printSignature.Font = new System.Drawing.Font("Arial", 8F);
             this.printSignature.LocationFloat = new DevExpress.Utils.PointFloat(9.999998F, 10.0001F);
             this.printSignature.Multiline = true;
             this.printSignature.Name = "printSignature";
@@ -1326,334 +1654,6 @@ namespace ArgusCR1029.Sales
             this.xrTableCell26.TextFormatString = "{0:n2}";
             this.xrTableCell26.Weight = 0.80142227748470474D;
             // 
-            // xrTable6
-            // 
-            this.xrTable6.LocationFloat = new DevExpress.Utils.PointFloat(12.5F, 125F);
-            this.xrTable6.Name = "xrTable6";
-            this.xrTable6.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
-            this.xrTable6.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
-            this.xrTableRow7,
-            this.xrTableRow8,
-            this.xrTableRow9,
-            this.xrTableRow10,
-            this.xrTableRow11,
-            this.xrTableRow12,
-            this.xrTableRow13});
-            this.xrTable6.SizeF = new System.Drawing.SizeF(463.9584F, 138.8334F);
-            // 
-            // xrTableRow7
-            // 
-            this.xrTableRow7.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
-            this.startDate_lbl,
-            this.startDate_param});
-            this.xrTableRow7.Name = "xrTableRow7";
-            this.xrTableRow7.Weight = 1D;
-            // 
-            // startDate_lbl
-            // 
-            this.startDate_lbl.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold);
-            this.startDate_lbl.Multiline = true;
-            this.startDate_lbl.Name = "startDate_lbl";
-            this.startDate_lbl.StylePriority.UseFont = false;
-            this.startDate_lbl.Text = "Start Date:";
-            this.startDate_lbl.Weight = 0.55861206381490736D;
-            // 
-            // startDate_param
-            // 
-            this.startDate_param.Multiline = true;
-            this.startDate_param.Name = "startDate_param";
-            this.startDate_param.Weight = 1.7103640956519999D;
-            // 
-            // xrTableRow8
-            // 
-            this.xrTableRow8.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
-            this.endDate_lbl,
-            this.endDate_param});
-            this.xrTableRow8.Name = "xrTableRow8";
-            this.xrTableRow8.Weight = 1D;
-            // 
-            // endDate_lbl
-            // 
-            this.endDate_lbl.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold);
-            this.endDate_lbl.Multiline = true;
-            this.endDate_lbl.Name = "endDate_lbl";
-            this.endDate_lbl.StylePriority.UseFont = false;
-            this.endDate_lbl.Text = "End Date:";
-            this.endDate_lbl.Weight = 0.55861206381490736D;
-            // 
-            // endDate_param
-            // 
-            this.endDate_param.Multiline = true;
-            this.endDate_param.Name = "endDate_param";
-            this.endDate_param.Weight = 1.7103640956519999D;
-            // 
-            // xrTableRow9
-            // 
-            this.xrTableRow9.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
-            this.level_lbl,
-            this.level_param});
-            this.xrTableRow9.Name = "xrTableRow9";
-            this.xrTableRow9.Weight = 1D;
-            // 
-            // level_lbl
-            // 
-            this.level_lbl.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold);
-            this.level_lbl.Multiline = true;
-            this.level_lbl.Name = "level_lbl";
-            this.level_lbl.StylePriority.UseFont = false;
-            this.level_lbl.Text = "Level:";
-            this.level_lbl.Weight = 0.55861206381490736D;
-            // 
-            // level_param
-            // 
-            this.level_param.Multiline = true;
-            this.level_param.Name = "level_param";
-            this.level_param.Weight = 1.7103640956519999D;
-            // 
-            // xrTableRow10
-            // 
-            this.xrTableRow10.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
-            this.plant_lbl,
-            this.plant_param});
-            this.xrTableRow10.Name = "xrTableRow10";
-            this.xrTableRow10.Weight = 1D;
-            // 
-            // plant_lbl
-            // 
-            this.plant_lbl.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold);
-            this.plant_lbl.Multiline = true;
-            this.plant_lbl.Name = "plant_lbl";
-            this.plant_lbl.StylePriority.UseFont = false;
-            this.plant_lbl.Text = "Plant:";
-            this.plant_lbl.Weight = 0.55861206381490736D;
-            // 
-            // plant_param
-            // 
-            this.plant_param.Multiline = true;
-            this.plant_param.Name = "plant_param";
-            this.plant_param.Weight = 1.7103640956519999D;
-            // 
-            // xrTableRow11
-            // 
-            this.xrTableRow11.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
-            this.sz_lbl,
-            this.sz_param});
-            this.xrTableRow11.Name = "xrTableRow11";
-            this.xrTableRow11.Weight = 1D;
-            // 
-            // sz_lbl
-            // 
-            this.sz_lbl.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold);
-            this.sz_lbl.Multiline = true;
-            this.sz_lbl.Name = "sz_lbl";
-            this.sz_lbl.StylePriority.UseFont = false;
-            this.sz_lbl.Text = "Sale Zone:";
-            this.sz_lbl.Weight = 0.55861206381490736D;
-            // 
-            // sz_param
-            // 
-            this.sz_param.Multiline = true;
-            this.sz_param.Name = "sz_param";
-            this.sz_param.Weight = 1.7103640956519999D;
-            // 
-            // xrTableRow12
-            // 
-            this.xrTableRow12.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
-            this.client_lbl,
-            this.client_param});
-            this.xrTableRow12.Name = "xrTableRow12";
-            this.xrTableRow12.Weight = 1D;
-            // 
-            // client_lbl
-            // 
-            this.client_lbl.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold);
-            this.client_lbl.Multiline = true;
-            this.client_lbl.Name = "client_lbl";
-            this.client_lbl.StylePriority.UseFont = false;
-            this.client_lbl.Text = "Client:";
-            this.client_lbl.Weight = 0.55861206381490736D;
-            // 
-            // client_param
-            // 
-            this.client_param.Multiline = true;
-            this.client_param.Name = "client_param";
-            this.client_param.Weight = 1.7103640956519999D;
-            // 
-            // xrTableRow13
-            // 
-            this.xrTableRow13.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
-            this.clientGrp_lbl,
-            this.clientGrp_param});
-            this.xrTableRow13.Name = "xrTableRow13";
-            this.xrTableRow13.Weight = 1D;
-            // 
-            // clientGrp_lbl
-            // 
-            this.clientGrp_lbl.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold);
-            this.clientGrp_lbl.Multiline = true;
-            this.clientGrp_lbl.Name = "clientGrp_lbl";
-            this.clientGrp_lbl.StylePriority.UseFont = false;
-            this.clientGrp_lbl.Text = "Client Group:";
-            this.clientGrp_lbl.Weight = 0.55861206381490736D;
-            // 
-            // clientGrp_param
-            // 
-            this.clientGrp_param.Multiline = true;
-            this.clientGrp_param.Name = "clientGrp_param";
-            this.clientGrp_param.Weight = 1.7103640956519999D;
-            // 
-            // xrTable7
-            // 
-            this.xrTable7.LocationFloat = new DevExpress.Utils.PointFloat(476.4584F, 125F);
-            this.xrTable7.Name = "xrTable7";
-            this.xrTable7.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
-            this.xrTable7.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
-            this.xrTableRow14,
-            this.xrTableRow15,
-            this.xrTableRow16,
-            this.xrTableRow17,
-            this.xrTableRow18,
-            this.xrTableRow19});
-            this.xrTable7.SizeF = new System.Drawing.SizeF(486.4584F, 119F);
-            // 
-            // xrTableRow14
-            // 
-            this.xrTableRow14.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
-            this.plantGrp_lbl,
-            this.plantGrp_param});
-            this.xrTableRow14.Name = "xrTableRow14";
-            this.xrTableRow14.Weight = 1D;
-            // 
-            // plantGrp_lbl
-            // 
-            this.plantGrp_lbl.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold);
-            this.plantGrp_lbl.Multiline = true;
-            this.plantGrp_lbl.Name = "plantGrp_lbl";
-            this.plantGrp_lbl.StylePriority.UseFont = false;
-            this.plantGrp_lbl.Text = "Plant Group:";
-            this.plantGrp_lbl.Weight = 0.62381826982622812D;
-            // 
-            // plantGrp_param
-            // 
-            this.plantGrp_param.Multiline = true;
-            this.plantGrp_param.Name = "plantGrp_param";
-            this.plantGrp_param.Weight = 1.7551935301858459D;
-            // 
-            // xrTableRow15
-            // 
-            this.xrTableRow15.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
-            this.itemCategory_lbl,
-            this.itemCategory_param});
-            this.xrTableRow15.Name = "xrTableRow15";
-            this.xrTableRow15.Weight = 1D;
-            // 
-            // itemCategory_lbl
-            // 
-            this.itemCategory_lbl.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold);
-            this.itemCategory_lbl.Multiline = true;
-            this.itemCategory_lbl.Name = "itemCategory_lbl";
-            this.itemCategory_lbl.StylePriority.UseFont = false;
-            this.itemCategory_lbl.Text = "Item Category:";
-            this.itemCategory_lbl.Weight = 0.62381826982622812D;
-            // 
-            // itemCategory_param
-            // 
-            this.itemCategory_param.Multiline = true;
-            this.itemCategory_param.Name = "itemCategory_param";
-            this.itemCategory_param.Weight = 1.7551935301858459D;
-            // 
-            // xrTableRow16
-            // 
-            this.xrTableRow16.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
-            this.item_lbl,
-            this.item_param});
-            this.xrTableRow16.Name = "xrTableRow16";
-            this.xrTableRow16.Weight = 1D;
-            // 
-            // item_lbl
-            // 
-            this.item_lbl.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold);
-            this.item_lbl.Multiline = true;
-            this.item_lbl.Name = "item_lbl";
-            this.item_lbl.StylePriority.UseFont = false;
-            this.item_lbl.Text = "Item:";
-            this.item_lbl.Weight = 0.62381826982622812D;
-            // 
-            // item_param
-            // 
-            this.item_param.Multiline = true;
-            this.item_param.Name = "item_param";
-            this.item_param.Weight = 1.7551935301858459D;
-            // 
-            // xrTableRow17
-            // 
-            this.xrTableRow17.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
-            this.itemGrp_lbl,
-            this.itemGrp_param});
-            this.xrTableRow17.Name = "xrTableRow17";
-            this.xrTableRow17.Weight = 1D;
-            // 
-            // itemGrp_lbl
-            // 
-            this.itemGrp_lbl.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold);
-            this.itemGrp_lbl.Multiline = true;
-            this.itemGrp_lbl.Name = "itemGrp_lbl";
-            this.itemGrp_lbl.StylePriority.UseFont = false;
-            this.itemGrp_lbl.Text = "Item Group:";
-            this.itemGrp_lbl.Weight = 0.62381826982622812D;
-            // 
-            // itemGrp_param
-            // 
-            this.itemGrp_param.Multiline = true;
-            this.itemGrp_param.Name = "itemGrp_param";
-            this.itemGrp_param.Weight = 1.7551935301858459D;
-            // 
-            // xrTableRow18
-            // 
-            this.xrTableRow18.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
-            this.syFunction_lbl,
-            this.syFunction_param});
-            this.xrTableRow18.Name = "xrTableRow18";
-            this.xrTableRow18.Weight = 1D;
-            // 
-            // syFunction_lbl
-            // 
-            this.syFunction_lbl.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold);
-            this.syFunction_lbl.Multiline = true;
-            this.syFunction_lbl.Name = "syFunction_lbl";
-            this.syFunction_lbl.StylePriority.UseFont = false;
-            this.syFunction_lbl.Text = "System Function:";
-            this.syFunction_lbl.Weight = 0.62381826982622812D;
-            // 
-            // syFunction_param
-            // 
-            this.syFunction_param.Multiline = true;
-            this.syFunction_param.Name = "syFunction_param";
-            this.syFunction_param.Weight = 1.7551935301858459D;
-            // 
-            // xrTableRow19
-            // 
-            this.xrTableRow19.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
-            this.production_lbl,
-            this.production_param});
-            this.xrTableRow19.Name = "xrTableRow19";
-            this.xrTableRow19.Weight = 1D;
-            // 
-            // production_lbl
-            // 
-            this.production_lbl.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold);
-            this.production_lbl.Multiline = true;
-            this.production_lbl.Name = "production_lbl";
-            this.production_lbl.StylePriority.UseFont = false;
-            this.production_lbl.Text = "Production Line:";
-            this.production_lbl.Weight = 0.62381826982622812D;
-            // 
-            // production_param
-            // 
-            this.production_param.Multiline = true;
-            this.production_param.Name = "production_param";
-            this.production_param.Weight = 1.7551935301858459D;
-            // 
             // SA501
             // 
             this.Bands.AddRange(new DevExpress.XtraReports.UI.Band[] {
@@ -1673,12 +1673,12 @@ namespace ArgusCR1029.Sales
             this.PaperKind = System.Drawing.Printing.PaperKind.A4;
             this.Version = "20.1";
             ((System.ComponentModel.ISupportInitialize)(this.xrTable3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.xrTable6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.xrTable7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.xrTable6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.xrTable7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
 
         }

@@ -2,7 +2,6 @@
 using System;
 using System.Collections;
 using System.ComponentModel;
-using System.Drawing;
 using System.Drawing.Printing;
 
 namespace ArgusCR1029.Sales
@@ -18,7 +17,6 @@ namespace ArgusCR1029.Sales
         {
             return title_lbl.Text;
         }
-
         protected override void OnBeforePrint(PrintEventArgs e)
         {
             SharedClasses.JsonProtocol.QryStructure<Custom.CR1029.SA422> obj = deserializeList<Custom.CR1029.SA422>();
@@ -44,7 +42,6 @@ namespace ArgusCR1029.Sales
             printSignature.Text = reportSignature();
             base.OnBeforePrint(e);
         }
-
         protected override void labelsText()
         {
             title_lbl.Text = labelText(0);

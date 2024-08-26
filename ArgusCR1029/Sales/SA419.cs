@@ -2,7 +2,6 @@
 using System;
 using System.Collections;
 using System.ComponentModel;
-using System.Drawing;
 using System.Drawing.Printing;
 
 namespace ArgusCR1029.Sales
@@ -72,7 +71,6 @@ namespace ArgusCR1029.Sales
 
             site_lbl.Text = labelText(20);
             clientGrp_lbl.Text = labelText(21);
-
         }
         protected override string dictionaryStore()
         {
