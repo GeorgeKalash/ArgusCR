@@ -6,9 +6,9 @@ using System.Drawing.Printing;
 
 namespace ArgusCR1029.Sales
 {
-    public partial class SA423c_L2 : ArgusRPT.BaseReport
+    public partial class SA423c_L3 : ArgusRPT.BaseReport
     {
-        public SA423c_L2 ()
+        public SA423c_L3 ()
         {
             InitializeComponent();
         }
@@ -47,7 +47,7 @@ namespace ArgusCR1029.Sales
         {
             title_lbl.Text = labelText(0);
 
-            plantName_lbl.Text = labelText(1);
+            collection_lbl.Text = labelText(1);
             qty18_lbl.Text = labelText(2);
             qty21_lbl.Text = labelText(3);
             laborPrice_lbl.Text = labelText(4);
@@ -71,12 +71,10 @@ namespace ArgusCR1029.Sales
 
             site_lbl.Text = labelText(20);
             clientGrp_lbl.Text = labelText(21);
-
-            collection_lbl.Text = labelText(22);
         }
         protected override string dictionaryStore()
         {
-            return "CR1029.SA423c_L2";
+            return "CR1029.SA423c_L3";
         }
     }
 }
