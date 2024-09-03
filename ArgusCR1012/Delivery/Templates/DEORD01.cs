@@ -1,11 +1,8 @@
 ﻿using System;
 using System.Collections;
 using System.ComponentModel;
-using System.Drawing;
 using System.Drawing.Printing;
 using DevExpress.XtraReports.UI;
-using ArgusDS.Delivery.Reports;
-using ArgusDS.Sales.Reports;
 
 namespace ArgusCR1012.Delivery.Templates
 {
@@ -27,8 +24,10 @@ namespace ArgusCR1012.Delivery.Templates
             SharedClasses.JsonProtocol.GetStructure<ArgusDS.Delivery.Reports.OrderPrintLayout> webObject = deserializeGet<ArgusDS.Delivery.Reports.OrderPrintLayout>();
             DataSource = webObject.record.items;
 
-          //  ArgusDS.Delivery.OrderItemView firstRow = webObject.record.items[0];
-           // soRef_data.Text = firstRow.soRef;
+            //  ArgusDS.Delivery.OrderItemView firstRow = webObject.record.items[0];
+            //soRef_data.Text = firstRow.soRef;
+
+            soRef_data.Text = webObject.record.orderView.soRef;
 
             companyName_data.Text = webObject.record.companyInfo.name;
             taxNo_data.Text = webObject.record.companyInfo.taxNo;
