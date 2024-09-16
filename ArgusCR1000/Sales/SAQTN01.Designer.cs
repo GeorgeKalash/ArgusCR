@@ -839,7 +839,7 @@
             // 
             this.PageFooter.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
             this.xrPictureBox1});
-            this.PageFooter.HeightF = 208F;
+            this.PageFooter.HeightF = 198F;
             this.PageFooter.Name = "PageFooter";
             // 
             // xrPictureBox1
