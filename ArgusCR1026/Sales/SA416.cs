@@ -20,7 +20,7 @@ namespace ArgusCR1026.Sales
 
         protected override void OnBeforePrint(PrintEventArgs e)
         {
-            SharedClasses.JsonProtocol.QryStructure<ArgusDS.Sales.Reports.SA416> obj = deserializeList<ArgusDS.Sales.Reports.SA416>();
+            SharedClasses.JsonProtocol.QryStructure<Custom.> obj = deserializeList<ArgusDS.Sales.Reports.SA416>();
             DataSource = obj.list;
 
             startDate_param.Text = Parameters.Count > 0 ? Parameters[0].Value.ToString() : string.Empty;

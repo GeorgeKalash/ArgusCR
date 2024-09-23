@@ -630,6 +630,18 @@
     <Compile Include="Sales\SA115\SA115.Designer.cs">
       <DependentUpon>SA115.cs</DependentUpon>
     </Compile>
+    <Compile Include="Sales\SA416b.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Sales\SA416b.Designer.cs">
+      <DependentUpon>SA416b.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sales\SA416.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Sales\SA416.Designer.cs">
+      <DependentUpon>SA416.cs</DependentUpon>
+    </Compile>
     <Compile Include="Sales\SA203_L1B.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -1216,6 +1228,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Sales\SA115\SA115.resx">
       <DependentUpon>SA115.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales\SA416b.resx">
+      <DependentUpon>SA416b.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales\SA416.resx">
+      <DependentUpon>SA416.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Sales\SA203_L1B.resx">
       <DependentUpon>SA203_L1B.cs</DependentUpon>
