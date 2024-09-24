@@ -25,17 +25,11 @@ namespace ArgusCR1029.Sales
 
             startDate_param.Text = Parameters.Count > 0 ? Parameters[0].Value.ToString() : string.Empty;
             endDate_param.Text = Parameters.Count > 1 ? Parameters[1].Value.ToString() : string.Empty;
-            plantGroup_param.Text = Parameters.Count > 2 ? Parameters[2].Value.ToString() : string.Empty;
-            plant_param.Text = Parameters.Count > 3 ? Parameters[3].Value.ToString() : string.Empty;
-            salesPerson_param.Text = Parameters.Count > 5 ? Parameters[5].Value.ToString() : string.Empty;
-            clientRef_param.Text = Parameters.Count > 7 ? Parameters[7].Value.ToString() : string.Empty;
-            site_param.Text = Parameters.Count > 4 ? Parameters[4].Value.ToString() : string.Empty;
-            clientGrp_param.Text = Parameters.Count > 6 ? Parameters[6].Value.ToString() : string.Empty;
-            salesZone_param.Text = Parameters.Count > 8 ? Parameters[8].Value.ToString() : string.Empty;
-            itemCategory_param.Text = Parameters.Count > 9 ? Parameters[9].Value.ToString() : string.Empty;
-            desc_param.Text = Parameters.Count > 10 ? Parameters[10].Value.ToString() : string.Empty;
-            stt_param.Text = Parameters.Count > 11 ? Parameters[11].Value.ToString() : string.Empty;
-
+            itemCategory_param.Text = Parameters.Count > 2 ? Parameters[2].Value.ToString() : string.Empty;
+            itemGroup_param.Text = Parameters.Count > 3 ? Parameters[3].Value.ToString() : string.Empty;
+            item_param.Text = Parameters.Count > 4 ? Parameters[4].Value.ToString() : string.Empty;
+            client_param.Text = Parameters.Count > 5 ? Parameters[5].Value.ToString() : string.Empty;
+  
             logo_data.ImageUrl = companyInfo.logoUrl;
 
             printSignature.Text = reportSignature();
@@ -63,19 +57,12 @@ namespace ArgusCR1029.Sales
 
             startDate_lbl.Text = labelText(15);
             endDate_lbl.Text = labelText(16);
-            client_lbl.Text = labelText(17);
-            salesPerson_lbl.Text = labelText(18);
-            plantGroup_lbl.Text = labelText(19);
-            plant_lbl.Text = labelText(20);
+            itemCategory_lbl.Text = labelText(17);
+            itemGroup_lbl.Text = labelText(18);
+            item_lbl.Text = labelText(19);
+            client_lbl.Text = labelText(20);
 
-            site_lbl.Text = labelText(21);
-            clientGrp_lbl.Text = labelText(22);
-            salesZone_lbl.Text = labelText(23);
-            itemCategory_lbl.Text = labelText(24);
-            description_lbl.Text = labelText(25);
-            status_lbl.Text = labelText(26);
-
-            total_lbl.Text = labelText(27);
+            total_lbl.Text = labelText(21);
         }
 
         protected override string dictionaryStore()
