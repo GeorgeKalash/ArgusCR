@@ -3,7 +3,6 @@ using System.Collections;
 using System.ComponentModel;
 using System.Drawing.Printing;
 using DevExpress.XtraReports.UI;
-using ArgusDS.Sales.Reports;
 using System.Collections.Generic;
 
 namespace ArgusCR1029.Sales.SA110
@@ -29,9 +28,6 @@ namespace ArgusCR1029.Sales.SA110
             RightToLeftLayout = DevExpress.XtraReports.UI.RightToLeftLayout.No;
 
             SharedClasses.JsonProtocol.GetStructure <ArgusDS.Sales.Reports.SA110> webObject = deserializeGet<ArgusDS.Sales.Reports.SA110>();
-
-            logo_data.ImageUrl = companyInfo.logoUrl;
-
 
             reference_data.Text = webObject.record.trxHeader.reference;
             date_data.Text = webObject.record.trxHeader.date.ToString(sessionInfo.dateFormat);

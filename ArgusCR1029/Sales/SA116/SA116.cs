@@ -20,14 +20,12 @@ namespace ArgusCR1029.Sales.SA116
             ((ArgusRPT.BaseReport)(MetalSubReports.ReportSource)).setSessionInfo(sessionInfo);
             initSubReports();
         }
-
         protected override void OnBeforePrint(PrintEventArgs e)
         {
             RightToLeft = DevExpress.XtraReports.UI.RightToLeft.No;
             RightToLeftLayout = DevExpress.XtraReports.UI.RightToLeftLayout.No;
 
             SharedClasses.JsonProtocol.GetStructure<ArgusDS.Sales.Reports.SA106> webObject = deserializeGet<ArgusDS.Sales.Reports.SA106>();
-            logo_data.ImageUrl = companyInfo.logoUrl;
 
             reference_data.Text = webObject.record.reference;
             date_data.Text = webObject.record.date.ToString("dd/MM/yyyy");

@@ -118,7 +118,6 @@ namespace ArgusCR1029.Sales.SA111
             this.xrTableRow18 = new DevExpress.XtraReports.UI.XRTableRow();
             this.cAddress_data = new DevExpress.XtraReports.UI.XRTableCell();
             this.cAddress_lbl = new DevExpress.XtraReports.UI.XRTableCell();
-            this.logo_data = new DevExpress.XtraReports.UI.XRPictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable13)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable1)).BeginInit();
@@ -643,9 +642,8 @@ namespace ArgusCR1029.Sales.SA111
             this.ReportHeader.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
             this.xrLabel1,
             this.xrTable8,
-            this.xrTable7,
-            this.logo_data});
-            this.ReportHeader.HeightF = 286.4224F;
+            this.xrTable7});
+            this.ReportHeader.HeightF = 162.8807F;
             this.ReportHeader.KeepTogether = true;
             this.ReportHeader.Name = "ReportHeader";
             // 
@@ -656,7 +654,7 @@ namespace ArgusCR1029.Sales.SA111
             this.xrLabel1.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.xrLabel1.BorderWidth = 1F;
             this.xrLabel1.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Bold);
-            this.xrLabel1.LocationFloat = new DevExpress.Utils.PointFloat(24.99997F, 126.0433F);
+            this.xrLabel1.LocationFloat = new DevExpress.Utils.PointFloat(24.99975F, 0F);
             this.xrLabel1.Multiline = true;
             this.xrLabel1.Name = "xrLabel1";
             this.xrLabel1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 2, 0, 100F);
@@ -668,7 +666,7 @@ namespace ArgusCR1029.Sales.SA111
             this.xrLabel1.StylePriority.UseFont = false;
             this.xrLabel1.StylePriority.UsePadding = false;
             this.xrLabel1.StylePriority.UseTextAlignment = false;
-            this.xrLabel1.Text = " درافت استلام مشغولات ذهبيه بالاصناف - مرتجع";
+            this.xrLabel1.Text = " استلام مشغولات ذهبيه بالاصناف - مرتجع";
             this.xrLabel1.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopCenter;
             // 
             // xrTable8
@@ -677,7 +675,7 @@ namespace ArgusCR1029.Sales.SA111
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTable8.BorderWidth = 0.5F;
-            this.xrTable8.LocationFloat = new DevExpress.Utils.PointFloat(24.99981F, 148.1267F);
+            this.xrTable8.LocationFloat = new DevExpress.Utils.PointFloat(24.99975F, 22.08336F);
             this.xrTable8.Name = "xrTable8";
             this.xrTable8.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable8.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
@@ -910,7 +908,7 @@ namespace ArgusCR1029.Sales.SA111
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTable7.BorderWidth = 0.5F;
-            this.xrTable7.LocationFloat = new DevExpress.Utils.PointFloat(429.9392F, 148.1267F);
+            this.xrTable7.LocationFloat = new DevExpress.Utils.PointFloat(429.9392F, 22.08336F);
             this.xrTable7.Name = "xrTable7";
             this.xrTable7.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 4, 0, 100F);
             this.xrTable7.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
@@ -1159,13 +1157,6 @@ namespace ArgusCR1029.Sales.SA111
             this.cAddress_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
             this.cAddress_lbl.Weight = 5.7011194601984432D;
             // 
-            // logo_data
-            // 
-            this.logo_data.LocationFloat = new DevExpress.Utils.PointFloat(24.99981F, 0F);
-            this.logo_data.Name = "logo_data";
-            this.logo_data.SizeF = new System.Drawing.SizeF(136.46F, 114.58F);
-            this.logo_data.Sizing = DevExpress.XtraPrinting.ImageSizeMode.ZoomImage;
-            // 
             // SA111
             // 
             this.Bands.AddRange(new DevExpress.XtraReports.UI.Band[] {
@@ -1202,7 +1193,6 @@ namespace ArgusCR1029.Sales.SA111
         private DevExpress.XtraReports.UI.DetailBand Detail;
         private DevExpress.XtraReports.UI.SubBand InvoiceItemSubBand;
         private DevExpress.XtraReports.UI.ReportHeaderBand ReportHeader;
-        private DevExpress.XtraReports.UI.XRPictureBox logo_data;
         private DevExpress.XtraReports.UI.XRLabel xrLabel1;
         private DevExpress.XtraReports.UI.XRTable xrTable8;
         private DevExpress.XtraReports.UI.XRTableRow xrTableRow31;

@@ -126,7 +126,6 @@ namespace ArgusCR1029.Sales.SA115
             this.xrTableRow15 = new DevExpress.XtraReports.UI.XRTableRow();
             this.cAddress_data = new DevExpress.XtraReports.UI.XRTableCell();
             this.cAddress_lbl = new DevExpress.XtraReports.UI.XRTableCell();
-            this.logo_data = new DevExpress.XtraReports.UI.XRPictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable13)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable1)).BeginInit();
@@ -755,9 +754,8 @@ namespace ArgusCR1029.Sales.SA115
             this.ReportHeader.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
             this.taxInvoice_lbl,
             this.xrTable4,
-            this.xrTable5,
-            this.logo_data});
-            this.ReportHeader.HeightF = 286.0059F;
+            this.xrTable5});
+            this.ReportHeader.HeightF = 161.4225F;
             this.ReportHeader.KeepTogether = true;
             this.ReportHeader.Name = "ReportHeader";
             // 
@@ -768,7 +766,7 @@ namespace ArgusCR1029.Sales.SA115
             this.taxInvoice_lbl.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.taxInvoice_lbl.BorderWidth = 1F;
             this.taxInvoice_lbl.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Bold);
-            this.taxInvoice_lbl.LocationFloat = new DevExpress.Utils.PointFloat(25.00003F, 125.0017F);
+            this.taxInvoice_lbl.LocationFloat = new DevExpress.Utils.PointFloat(26.62344F, 0F);
             this.taxInvoice_lbl.Multiline = true;
             this.taxInvoice_lbl.Name = "taxInvoice_lbl";
             this.taxInvoice_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 2, 0, 100F);
@@ -789,7 +787,7 @@ namespace ArgusCR1029.Sales.SA115
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTable4.BorderWidth = 0.5F;
-            this.xrTable4.LocationFloat = new DevExpress.Utils.PointFloat(24.99987F, 147.0851F);
+            this.xrTable4.LocationFloat = new DevExpress.Utils.PointFloat(26.62344F, 22.08336F);
             this.xrTable4.Name = "xrTable4";
             this.xrTable4.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable4.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
@@ -1022,7 +1020,7 @@ namespace ArgusCR1029.Sales.SA115
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTable5.BorderWidth = 0.5F;
-            this.xrTable5.LocationFloat = new DevExpress.Utils.PointFloat(429.9393F, 147.0851F);
+            this.xrTable5.LocationFloat = new DevExpress.Utils.PointFloat(431.5629F, 22.08336F);
             this.xrTable5.Name = "xrTable5";
             this.xrTable5.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 4, 0, 100F);
             this.xrTable5.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
@@ -1271,13 +1269,6 @@ namespace ArgusCR1029.Sales.SA115
             this.cAddress_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
             this.cAddress_lbl.Weight = 5.7011194601984432D;
             // 
-            // logo_data
-            // 
-            this.logo_data.LocationFloat = new DevExpress.Utils.PointFloat(24.99987F, 0F);
-            this.logo_data.Name = "logo_data";
-            this.logo_data.SizeF = new System.Drawing.SizeF(136.4583F, 114.585F);
-            this.logo_data.Sizing = DevExpress.XtraPrinting.ImageSizeMode.ZoomImage;
-            // 
             // SA115
             // 
             this.Bands.AddRange(new DevExpress.XtraReports.UI.Band[] {
@@ -1351,7 +1342,6 @@ namespace ArgusCR1029.Sales.SA115
         private DevExpress.XtraReports.UI.XRTableRow xrTableRow15;
         private DevExpress.XtraReports.UI.XRTableCell cAddress_data;
         private DevExpress.XtraReports.UI.XRTableCell cAddress_lbl;
-        private DevExpress.XtraReports.UI.XRPictureBox logo_data;
         private DevExpress.XtraReports.UI.XRTable xrTable12;
         private DevExpress.XtraReports.UI.XRTableRow xrTableRow19;
         private DevExpress.XtraReports.UI.XRTableCell subtotal2_lbl;

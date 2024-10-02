@@ -29,8 +29,6 @@ namespace ArgusCR1029.Sales.SA107
 
             SharedClasses.JsonProtocol.GetStructure<ArgusDS.Sales.Reports.SA107> webObject = deserializeGet<ArgusDS.Sales.Reports.SA107>();
 
-            logo_data.ImageUrl = companyInfo.logoUrl;
-
             reference_data.Text = webObject.record.reference;
             date_data.Text = webObject.record.date.ToString("dd/MM/yyyy");
             plant_data.Text = webObject.record.plantName;
