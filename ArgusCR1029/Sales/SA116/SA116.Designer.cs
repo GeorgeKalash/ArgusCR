@@ -700,7 +700,7 @@ namespace ArgusCR1029.Sales.SA116
             this.xrLabel1.StylePriority.UseFont = false;
             this.xrLabel1.StylePriority.UsePadding = false;
             this.xrLabel1.StylePriority.UseTextAlignment = false;
-            this.xrLabel1.Text = " درافت تسليم مشغولات ذهبيه بفئة الاصناف";
+            this.xrLabel1.Text = " تسليم مشغولات ذهبيه بفئة الاصناف";
             this.xrLabel1.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopCenter;
             // 
             // xrTable8
