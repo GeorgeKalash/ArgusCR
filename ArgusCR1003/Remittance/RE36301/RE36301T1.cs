@@ -22,7 +22,7 @@ namespace ArgusCR1003.Remittance.RE36301
             refNo_data.Text = webObject.record.reference;
             branch_data.Text = webObject.record.plantName;
 
-            trxNo_data.Text = webObject.record.trackingNo;
+       //     trxNo_data.Text = webObject.record.trackingNo;
             amount_data.Text = webObject.record.amount.ToString("N2"); 
 
             benName_data.Text = webObject.record.beneficiaryName;
@@ -32,7 +32,7 @@ namespace ArgusCR1003.Remittance.RE36301
             bank_data.Text = webObject.record.bankName;
             accNo_data.Text = webObject.record.accountNo;
             branch2_data.Text = webObject.record.plantName;
-            agentName_data.Text = webObject.record.agentName;
+       //     agentName_data.Text = webObject.record.agentName;
 
             remName_data.Text = webObject.record.clientName + "/" + webObject.record.clientRef;
             nationality_data.Text = webObject.record.clientNationalityName;
