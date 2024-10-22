@@ -13,12 +13,10 @@ namespace ArgusCR1012.Delivery.Templates
         {
             InitializeComponent();
         }
-
         protected override string reportName()
         {
             return deliveryNote_lbl.Text;
         }
-
         protected override void OnBeforePrint(PrintEventArgs e)
         {
             SharedClasses.JsonProtocol.GetStructure<ArgusDS.Delivery.Reports.OrderPrintLayout> webObject = deserializeGet<ArgusDS.Delivery.Reports.OrderPrintLayout>();
@@ -47,6 +45,8 @@ namespace ArgusCR1012.Delivery.Templates
            
             driverName_data.Text = webObject.record.orderView.driverName;
             driverCellPhone_data.Text = webObject.record.orderView.driverCellPhone;
+
+            note_data.Text = webObject.record.orderView.notes;
 
             base.OnBeforePrint(e);
         }
@@ -99,7 +99,7 @@ namespace ArgusCR1012.Delivery.Templates
 
             distributionDriver_lbl.Text = labelText(35);
             bussinessInfo_lbl.Text = labelText(36);
-            paper_lbl.Text = labelText(37);
+            notesFooter_lbl.Text = labelText(37);
         }
 
         protected override void OnDataSourceRowChanged(DataSourceRowEventArgs e)
