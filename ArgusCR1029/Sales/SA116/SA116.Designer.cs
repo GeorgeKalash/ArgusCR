@@ -136,7 +136,6 @@ namespace ArgusCR1029.Sales.SA116
             this.InvoiceItemSubBand.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
             this.InvoiceItemsSubReports});
             this.InvoiceItemSubBand.HeightF = 23F;
-            this.InvoiceItemSubBand.KeepTogether = true;
             this.InvoiceItemSubBand.Name = "InvoiceItemSubBand";
             // 
             // InvoiceItemsSubReports
@@ -149,7 +148,6 @@ namespace ArgusCR1029.Sales.SA116
             // Detail
             // 
             this.Detail.HeightF = 0F;
-            this.Detail.KeepTogether = true;
             this.Detail.KeepTogetherWithDetailReports = true;
             this.Detail.Name = "Detail";
             this.Detail.SubBands.AddRange(new DevExpress.XtraReports.UI.SubBand[] {
@@ -161,7 +159,6 @@ namespace ArgusCR1029.Sales.SA116
             this.InvoiceReceiptSubBand.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
             this.MetalSubReports});
             this.InvoiceReceiptSubBand.HeightF = 35.5F;
-            this.InvoiceReceiptSubBand.KeepTogether = true;
             this.InvoiceReceiptSubBand.Name = "InvoiceReceiptSubBand";
             // 
             // MetalSubReports
@@ -194,7 +191,6 @@ namespace ArgusCR1029.Sales.SA116
             this.xrLabel2,
             this.xrTable2});
             this.ReportFooter.HeightF = 226.8749F;
-            this.ReportFooter.KeepTogether = true;
             this.ReportFooter.Name = "ReportFooter";
             // 
             // xrTable14
@@ -678,7 +674,6 @@ namespace ArgusCR1029.Sales.SA116
             this.xrTable8,
             this.xrTable7});
             this.ReportHeader.HeightF = 161.4224F;
-            this.ReportHeader.KeepTogether = true;
             this.ReportHeader.Name = "ReportHeader";
             // 
             // xrLabel1
