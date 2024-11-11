@@ -2,14 +2,12 @@
 using System;
 using System.Collections;
 using System.ComponentModel;
-using System.Drawing;
 using System.Drawing.Printing;
 
 namespace ArgusCR1029.Purchase
 {
     public partial class PU401 : ArgusRPT.BaseReport
     {
-        int itemsCounter = 1;
         public PU401()
         {
             InitializeComponent();
@@ -42,35 +40,33 @@ namespace ArgusCR1029.Purchase
         {
             title_lbl.Text = labelText(0);
 
-            rec_lbl.Text = labelText(1);
-            itemRef_lbl.Text = labelText(2);
-            itemName_lbl.Text = labelText(3);
-            itemCat_lbl.Text = labelText(4);
-            itemGrp_lbl.Text = labelText(5);
-            date_lbl.Text = labelText(6);
-            vendor_lbl.Text = labelText(7);
-            site_lbl.Text = labelText(8);
-            pcs_lbl.Text = labelText(9);
-            qty_lbl.Text = labelText(10);
-            unitCost_lbl.Text = labelText(11);
-            amount_lbl.Text = labelText(12);
+            systemFunctions_lbl.Text = labelText(1);
+            reference_lbl.Text = labelText(2);
+            date_lbl.Text = labelText(3);
+            vendorRef_lbl.Text = labelText(4);
+            vendorName_lbl.Text = labelText(5);
+            site_lbl.Text = labelText(6);
+            itemCat_lbl.Text = labelText(7);
+            metal_lbl.Text = labelText(8);
+            itemGrp_lbl.Text = labelText(9);
+            itemRef_lbl.Text = labelText(10);
+            itemName_lbl.Text = labelText(11);
+            pcs_lbl.Text = labelText(12);
+            qty_lbl.Text = labelText(13);
+            unitCost_lbl.Text = labelText(14);
+            amount_lbl.Text = labelText(15);
 
-            startDate_lbl.Text = labelText(13);
-            endDate_lbl.Text = labelText(14);
-            vendorRef_lbl.Text = labelText(15);
-            item_lbl.Text = labelText(16);
-            itemCtgry_lbl.Text = labelText(17);
-            siteParam_lbl.Text = labelText(18);
-            systemFunction_lbl.Text = labelText(19);
-            currency_lbl.Text = labelText(20);
-            itemGroup_lbl.Text = labelText(21);
+            startDate_lbl.Text = labelText(16);
+            endDate_lbl.Text = labelText(17);
+            vendor_lbl.Text = labelText(18);
+            item_lbl.Text = labelText(19);
+            itemCtgry_lbl.Text = labelText(20);
+            siteParam_lbl.Text = labelText(21);
+            systemFunction_lbl.Text = labelText(22);
+            currency_lbl.Text = labelText(23);
+            itemGroup_lbl.Text = labelText(24);
         }
-        protected override void OnDataSourceRowChanged(DataSourceRowEventArgs e)
-        {
-            lineNo_data.Text = itemsCounter.ToString();
-            ++itemsCounter;
-            base.OnDataSourceRowChanged(e);
-        }
+
         protected override string dictionaryStore()
         {
             return "CR1029.PU401";
