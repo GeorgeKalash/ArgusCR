@@ -2,7 +2,6 @@
 using System;
 using System.Collections;
 using System.ComponentModel;
-using System.Drawing;
 using System.Drawing.Printing;
 
 namespace ArgusCR1029.Purchase
@@ -17,7 +16,6 @@ namespace ArgusCR1029.Purchase
         {
             return title_lbl.Text;
         }
-
         protected override void OnBeforePrint(PrintEventArgs e)
         {
             SharedClasses.JsonProtocol.QryStructure<ArgusDS.Purchase.Reports.PU405> obj = deserializeList<ArgusDS.Purchase.Reports.PU405>();
@@ -38,25 +36,27 @@ namespace ArgusCR1029.Purchase
         {
             title_lbl.Text = labelText(0);
 
-            ref_lbl.Text = labelText(1);
-            date_lbl.Text = labelText(2);
-            vendorRef_lbl.Text = labelText(3);
-            site_lbl.Text = labelText(4);
-            itemRef_lbl.Text = labelText(5);
-            itemName_lbl.Text = labelText(6);
+            systemFunctions_lbl.Text = labelText(1);
+            reference_lbl.Text = labelText(2);
+            date_lbl.Text = labelText(3);
+            vendorRef_lbl.Text = labelText(4);
+            vendorName_lbl.Text = labelText(5);
+            site_lbl.Text = labelText(6);
             itemCategory_lbl.Text = labelText(7);
-            srlNo_lbl.Text = labelText(8);
-            qty_lbl.Text = labelText(9);
-            unitCost_lbl.Text = labelText(10);
-            amount_lbl.Text = labelText(11);
+            metal_lbl.Text = labelText(8);
+            itemGroup_lbl.Text = labelText(9);
+            itemRef_lbl.Text = labelText(10);
+            itemName_lbl.Text = labelText(11);
+            srlNo_lbl.Text = labelText(12);
+            pcs_lbl.Text = labelText(13);
+            qty_lbl.Text = labelText(14);
 
-            startDate_lbl.Text = labelText(12);
-            endDate_lbl.Text = labelText(13);
-            item_lbl.Text = labelText(14);
-            siteParam_lbl.Text = labelText(15);
-            systemFunction_lbl.Text = labelText(16);
-            itemCtgry_lbl.Text = labelText(17);
-
+            startDate_lbl.Text = labelText(15);
+            endDate_lbl.Text = labelText(16);
+            item_lbl.Text = labelText(17);
+            siteParam_lbl.Text = labelText(18);
+            systemFunction_lbl.Text = labelText(19);
+            itemCtgry_lbl.Text = labelText(20);
         }
         protected override string dictionaryStore()
         {
