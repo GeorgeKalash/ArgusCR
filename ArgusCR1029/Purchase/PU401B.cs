@@ -2,7 +2,6 @@
 using System;
 using System.Collections;
 using System.ComponentModel;
-using System.Drawing;
 using System.Drawing.Printing;
 
 namespace ArgusCR1029.Purchase
@@ -34,8 +33,6 @@ namespace ArgusCR1029.Purchase
             systemFunction_param.Text = Parameters.Count > 7 ? Parameters[7].Value.ToString() : string.Empty;
             currency_param.Text = Parameters.Count > 5 ? Parameters[5].Value.ToString() : string.Empty;
             itemGroup_param.Text = Parameters.Count > 8 ? Parameters[8].Value.ToString() : string.Empty;
-
-            logo_data.ImageUrl = companyInfo.logoUrl;
 
             printSignature.Text = reportSignature();
             base.OnBeforePrint(e);
@@ -71,7 +68,6 @@ namespace ArgusCR1029.Purchase
             systemFunction_lbl.Text = labelText(23);
             currency_lbl.Text = labelText(24);
             itemGroup_lbl.Text = labelText(25);
-
         }
         protected override void OnDataSourceRowChanged(DataSourceRowEventArgs e)
         {
