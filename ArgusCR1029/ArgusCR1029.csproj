@@ -510,11 +510,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="Purchase\PU203.cs">
+    <Compile Include="Purchase\PU207.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Purchase\PU203.Designer.cs">
-      <DependentUpon>PU203.cs</DependentUpon>
+    <Compile Include="Purchase\PU207.Designer.cs">
+      <DependentUpon>PU207.cs</DependentUpon>
     </Compile>
     <Compile Include="Purchase\PU401B.cs">
       <SubType>Component</SubType>
@@ -1169,8 +1169,8 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Purchase\PU203.resx">
-      <DependentUpon>PU203.cs</DependentUpon>
+    <EmbeddedResource Include="Purchase\PU207.resx">
+      <DependentUpon>PU207.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Purchase\PU401B.resx">
       <DependentUpon>PU401B.cs</DependentUpon>

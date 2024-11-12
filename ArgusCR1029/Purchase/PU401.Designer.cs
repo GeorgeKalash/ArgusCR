@@ -193,6 +193,8 @@ namespace ArgusCR1029.Purchase
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell31.BorderWidth = 1F;
+            this.xrTableCell31.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[functionName]")});
             this.xrTableCell31.Font = new System.Drawing.Font("Arial", 8F);
             this.xrTableCell31.Multiline = true;
             this.xrTableCell31.Name = "xrTableCell31";
@@ -296,7 +298,7 @@ namespace ArgusCR1029.Purchase
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell17.BorderWidth = 1F;
             this.xrTableCell17.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[siteRef]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[siteName]")});
             this.xrTableCell17.Font = new System.Drawing.Font("Arial", 8F);
             this.xrTableCell17.Multiline = true;
             this.xrTableCell17.Name = "xrTableCell17";
@@ -335,6 +337,8 @@ namespace ArgusCR1029.Purchase
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell20.BorderWidth = 1F;
+            this.xrTableCell20.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[metalRef]")});
             this.xrTableCell20.Font = new System.Drawing.Font("Arial", 8F);
             this.xrTableCell20.Multiline = true;
             this.xrTableCell20.Name = "xrTableCell20";
@@ -890,7 +894,7 @@ namespace ArgusCR1029.Purchase
             this.PageFooter.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
             this.xrPageInfo1,
             this.printSignature});
-            this.PageFooter.HeightF = 33.00003F;
+            this.PageFooter.HeightF = 33.00004F;
             this.PageFooter.Name = "PageFooter";
             // 
             // xrPageInfo1
@@ -908,11 +912,11 @@ namespace ArgusCR1029.Purchase
             // printSignature
             // 
             this.printSignature.Font = new System.Drawing.Font("Arial", 8F);
-            this.printSignature.LocationFloat = new DevExpress.Utils.PointFloat(32.91664F, 9.999974F);
+            this.printSignature.LocationFloat = new DevExpress.Utils.PointFloat(12.5F, 9.999974F);
             this.printSignature.Multiline = true;
             this.printSignature.Name = "printSignature";
             this.printSignature.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.printSignature.SizeF = new System.Drawing.SizeF(892.6202F, 23F);
+            this.printSignature.SizeF = new System.Drawing.SizeF(913.0368F, 23F);
             this.printSignature.StylePriority.UseFont = false;
             this.printSignature.StylePriority.UseTextAlignment = false;
             this.printSignature.Text = "printSignature";
@@ -922,7 +926,7 @@ namespace ArgusCR1029.Purchase
             // 
             this.documentRef.GroupFields.AddRange(new DevExpress.XtraReports.UI.GroupField[] {
             new DevExpress.XtraReports.UI.GroupField("documentRef", DevExpress.XtraReports.UI.XRColumnSortOrder.Ascending)});
-            this.documentRef.HeightF = 12.3052F;
+            this.documentRef.HeightF = 0F;
             this.documentRef.KeepTogether = true;
             this.documentRef.Name = "documentRef";
             this.documentRef.RepeatEveryPage = true;
