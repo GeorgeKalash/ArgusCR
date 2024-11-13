@@ -933,7 +933,7 @@ namespace ArgusCR1029.Purchase
             // 
             this.documentRef.GroupFields.AddRange(new DevExpress.XtraReports.UI.GroupField[] {
             new DevExpress.XtraReports.UI.GroupField("documentRef", DevExpress.XtraReports.UI.XRColumnSortOrder.Ascending)});
-            this.documentRef.HeightF = 0F;
+            this.documentRef.HeightF = 12.51348F;
             this.documentRef.KeepTogether = true;
             this.documentRef.Name = "documentRef";
             this.documentRef.RepeatEveryPage = true;

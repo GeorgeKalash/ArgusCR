@@ -215,7 +215,7 @@ namespace ArgusCR1029.Purchase
             this.date_data.StylePriority.UseTextAlignment = false;
             this.date_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
             this.date_data.TextFormatString = "{0:dd/MM/yyyy}";
-            this.date_data.Weight = 0.83719813491371975D;
+            this.date_data.Weight = 0.77874150742182979D;
             // 
             // vendorRef_data
             // 
@@ -234,7 +234,7 @@ namespace ArgusCR1029.Purchase
             this.vendorRef_data.StylePriority.UsePadding = false;
             this.vendorRef_data.StylePriority.UseTextAlignment = false;
             this.vendorRef_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
-            this.vendorRef_data.Weight = 0.71161844630842785D;
+            this.vendorRef_data.Weight = 0.7060583157659861D;
             // 
             // xrTableCell6
             // 
@@ -253,7 +253,7 @@ namespace ArgusCR1029.Purchase
             this.xrTableCell6.StylePriority.UsePadding = false;
             this.xrTableCell6.StylePriority.UseTextAlignment = false;
             this.xrTableCell6.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
-            this.xrTableCell6.Weight = 1.1720778239383363D;
+            this.xrTableCell6.Weight = 1.2360945819726679D;
             // 
             // xrTableCell9
             // 
@@ -272,7 +272,7 @@ namespace ArgusCR1029.Purchase
             this.xrTableCell9.StylePriority.UsePadding = false;
             this.xrTableCell9.StylePriority.UseTextAlignment = false;
             this.xrTableCell9.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
-            this.xrTableCell9.Weight = 1.0464975997076733D;
+            this.xrTableCell9.Weight = 1.1940693644369032D;
             // 
             // xrTableCell13
             // 
@@ -292,7 +292,7 @@ namespace ArgusCR1029.Purchase
             this.xrTableCell13.StylePriority.UseTextAlignment = false;
             this.xrTableCell13.Text = "xrTableCell13";
             this.xrTableCell13.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
-            this.xrTableCell13.Weight = 1.1511489083985895D;
+            this.xrTableCell13.Weight = 1.2541623123323467D;
             // 
             // xrTableCell14
             // 
@@ -311,7 +311,7 @@ namespace ArgusCR1029.Purchase
             this.xrTableCell14.StylePriority.UsePadding = false;
             this.xrTableCell14.StylePriority.UseTextAlignment = false;
             this.xrTableCell14.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
-            this.xrTableCell14.Weight = 0.73254810982501706D;
+            this.xrTableCell14.Weight = 0.67490869192274117D;
             // 
             // xrTableCell15
             // 
@@ -330,7 +330,7 @@ namespace ArgusCR1029.Purchase
             this.xrTableCell15.StylePriority.UsePadding = false;
             this.xrTableCell15.StylePriority.UseTextAlignment = false;
             this.xrTableCell15.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
-            this.xrTableCell15.Weight = 1.0464979165783945D;
+            this.xrTableCell15.Weight = 0.85355216581768356D;
             // 
             // xrTableCell16
             // 
@@ -733,7 +733,7 @@ namespace ArgusCR1029.Purchase
             this.date_lbl.StylePriority.UseBorderWidth = false;
             this.date_lbl.StylePriority.UseFont = false;
             this.date_lbl.Text = "Date";
-            this.date_lbl.Weight = 0.58288793439653053D;
+            this.date_lbl.Weight = 0.54218824231519935D;
             // 
             // vendorRef_lbl
             // 
@@ -750,7 +750,7 @@ namespace ArgusCR1029.Purchase
             this.vendorRef_lbl.StylePriority.UseBorderWidth = false;
             this.vendorRef_lbl.StylePriority.UseFont = false;
             this.vendorRef_lbl.Text = "Vendor Ref.";
-            this.vendorRef_lbl.Weight = 0.49545474506473158D;
+            this.vendorRef_lbl.Weight = 0.49158402054629424D;
             // 
             // vendorName_lbl
             // 
@@ -767,7 +767,7 @@ namespace ArgusCR1029.Purchase
             this.vendorName_lbl.StylePriority.UseBorderWidth = false;
             this.vendorName_lbl.StylePriority.UseFont = false;
             this.vendorName_lbl.Text = "Vendor Name";
-            this.vendorName_lbl.Weight = 0.81604308249125068D;
+            this.vendorName_lbl.Weight = 0.86061349909101914D;
             // 
             // site_lbl
             // 
@@ -784,7 +784,7 @@ namespace ArgusCR1029.Purchase
             this.site_lbl.StylePriority.UseBorderWidth = false;
             this.site_lbl.StylePriority.UseFont = false;
             this.site_lbl.Text = "Site";
-            this.site_lbl.Weight = 0.72860988973486884D;
+            this.site_lbl.Weight = 0.83135528823243676D;
             // 
             // itemCategory_lbl
             // 
@@ -801,7 +801,7 @@ namespace ArgusCR1029.Purchase
             this.itemCategory_lbl.StylePriority.UseBorderWidth = false;
             this.itemCategory_lbl.StylePriority.UseFont = false;
             this.itemCategory_lbl.Text = "Item Category";
-            this.itemCategory_lbl.Weight = 0.80147090863896353D;
+            this.itemCategory_lbl.Weight = 0.87319342635129316D;
             // 
             // metal_lbl
             // 
@@ -818,7 +818,7 @@ namespace ArgusCR1029.Purchase
             this.metal_lbl.StylePriority.UseBorderWidth = false;
             this.metal_lbl.StylePriority.UseFont = false;
             this.metal_lbl.Text = "Metal";
-            this.metal_lbl.Weight = 0.510026944199634D;
+            this.metal_lbl.Weight = 0.46989644386852042D;
             // 
             // itemGroup_lbl
             // 
@@ -835,7 +835,7 @@ namespace ArgusCR1029.Purchase
             this.itemGroup_lbl.StylePriority.UseBorderWidth = false;
             this.itemGroup_lbl.StylePriority.UseFont = false;
             this.itemGroup_lbl.Text = "Item Group";
-            this.itemGroup_lbl.Weight = 0.72860991752913118D;
+            this.itemGroup_lbl.Weight = 0.59427250165034706D;
             // 
             // itemRef_lbl
             // 
