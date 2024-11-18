@@ -141,6 +141,24 @@
       <DependentUpon>PS101.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sales\SA103B\InvoiceItemsSubReports.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Sales\SA103B\InvoiceItemsSubReports.Designer.cs">
+      <DependentUpon>InvoiceItemsSubReports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sales\SA103B\MetalSubReports.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Sales\SA103B\MetalSubReports.Designer.cs">
+      <DependentUpon>MetalSubReports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sales\SA103B\SA103.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Sales\SA103B\SA103.Designer.cs">
+      <DependentUpon>SA103.cs</DependentUpon>
+    </Compile>
     <Compile Include="Sales\SA103\InvoiceItemsSubReports.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -190,6 +208,15 @@
       <DependentUpon>PS101.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Sales\SA103B\InvoiceItemsSubReports.resx">
+      <DependentUpon>InvoiceItemsSubReports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales\SA103B\MetalSubReports.resx">
+      <DependentUpon>MetalSubReports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales\SA103B\SA103.resx">
+      <DependentUpon>SA103.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Sales\SA103\InvoiceItemsSubReports.resx">
       <DependentUpon>InvoiceItemsSubReports.cs</DependentUpon>
     </EmbeddedResource>
