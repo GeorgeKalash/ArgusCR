@@ -207,7 +207,7 @@ namespace ArgusCR1029.Purchase
             this.xrTableCell2.StylePriority.UsePadding = false;
             this.xrTableCell2.StylePriority.UseTextAlignment = false;
             this.xrTableCell2.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
-            this.xrTableCell2.Weight = 0.65852706090654312D;
+            this.xrTableCell2.Weight = 0.69726418495568965D;
             // 
             // xrTableCell6
             // 
@@ -227,7 +227,7 @@ namespace ArgusCR1029.Purchase
             this.xrTableCell6.StylePriority.UseTextAlignment = false;
             this.xrTableCell6.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
             this.xrTableCell6.TextFormatString = "{0:dd/MM/yyyy}";
-            this.xrTableCell6.Weight = 0.58105347856622858D;
+            this.xrTableCell6.Weight = 0.557810932240862D;
             // 
             // xrTableCell8
             // 
@@ -246,7 +246,7 @@ namespace ArgusCR1029.Purchase
             this.xrTableCell8.StylePriority.UsePadding = false;
             this.xrTableCell8.StylePriority.UseTextAlignment = false;
             this.xrTableCell8.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
-            this.xrTableCell8.Weight = 0.54231689001766425D;
+            this.xrTableCell8.Weight = 0.52682231229388432D;
             // 
             // xrTableCell20
             // 
@@ -548,7 +548,7 @@ namespace ArgusCR1029.Purchase
             this.reference_lbl.StylePriority.UseBorderWidth = false;
             this.reference_lbl.StylePriority.UseFont = false;
             this.reference_lbl.Text = "Reference";
-            this.reference_lbl.Weight = 0.56916618168099509D;
+            this.reference_lbl.Weight = 0.60264654605410162D;
             // 
             // date_lbl
             // 
@@ -565,7 +565,7 @@ namespace ArgusCR1029.Purchase
             this.date_lbl.StylePriority.UseBorderWidth = false;
             this.date_lbl.StylePriority.UseFont = false;
             this.date_lbl.Text = "Date";
-            this.date_lbl.Weight = 0.50220567445793485D;
+            this.date_lbl.Weight = 0.48211725148614393D;
             // 
             // vendorRef_lbl
             // 
@@ -582,7 +582,7 @@ namespace ArgusCR1029.Purchase
             this.vendorRef_lbl.StylePriority.UseBorderWidth = false;
             this.vendorRef_lbl.StylePriority.UseFont = false;
             this.vendorRef_lbl.Text = "Vendor Ref.";
-            this.vendorRef_lbl.Weight = 0.4687248947971307D;
+            this.vendorRef_lbl.Weight = 0.4553329533958152D;
             // 
             // vendorName_lbl
             // 
