@@ -52,6 +52,7 @@ namespace ArgusCR1029.Inventory
             ms_lbl.Text = labelText(12);
             production_lbl.Text = labelText(13);
             collection_lbl.Text = labelText(14);
+            createdDate_lbl.Text = labelText(15);
         }
 
         protected override string dictionaryStore()
