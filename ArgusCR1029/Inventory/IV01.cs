@@ -2,7 +2,6 @@
 using System;
 using System.Collections;
 using System.ComponentModel;
-using System.Drawing;
 using System.Drawing.Printing;
 
 namespace ArgusCR1029.Inventory
@@ -32,7 +31,6 @@ namespace ArgusCR1029.Inventory
             printSignature.Text = reportSignature();
             base.OnBeforePrint(e);
         }
-
         protected override void labelsText()
         {
             title_lbl.Text = labelText(0);
@@ -54,7 +52,6 @@ namespace ArgusCR1029.Inventory
             collection_lbl.Text = labelText(14);
             createdDate_lbl.Text = labelText(15);
         }
-
         protected override string dictionaryStore()
         {
             return "CR1029.IV01";
