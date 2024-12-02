@@ -33,8 +33,8 @@ namespace ArgusCR1016.Manufacturing.Templates.MF104
       
             dtName_data.Text = webObject.record.jobOrder.dtName;
             reference_data.Text = webObject.record.jobOrder.reference;
-            
-            double grandTotal = (webObject.record.jobOrder.RMCost?? 0) + (webObject.record.jobOrder.overheadAmount?? 0);
+
+            decimal grandTotal = (webObject.record.jobOrder.RMCost?? 0) + (webObject.record.jobOrder.overheadAmount?? 0);
             grandTotal_data.Text = grandTotal.ToString("N2");
 
 

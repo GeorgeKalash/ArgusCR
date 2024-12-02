@@ -46,7 +46,7 @@ namespace ArgusCR1012.Sales.Templates
             subtotal_data.Text = webObject.record.trxHeader.subtotal.ToString("N2");
             tdAmount_data.Text = webObject.record.trxHeader.tdAmount.ToString();
 
-            double TotalAmountNonSubjectToTax = webObject.record.trxHeader.subtotal - (webObject.record.trxHeader.tdAmount ?? 0);
+            decimal TotalAmountNonSubjectToTax = webObject.record.trxHeader.subtotal - (webObject.record.trxHeader.tdAmount ?? 0);
             totalSub_data.Text = TotalAmountNonSubjectToTax.ToString("N2");
 
             vatAmount_data.Text = webObject.record.trxHeader.vatAmount.ToString("N2");
@@ -67,8 +67,8 @@ namespace ArgusCR1012.Sales.Templates
         {
             ArgusDS.Sales.ItemView obj = ((List<ArgusDS.Sales.ItemView>)DataSource)[e.CurrentRow];
 
-            double netUnitPrice = obj.unitPrice - (obj.mdValue ?? 0);
-            double epWithVAT = obj.extendedPrice + obj.vatAmount;
+            decimal netUnitPrice = obj.unitPrice - (obj.mdValue ?? 0);
+            decimal epWithVAT = obj.extendedPrice + obj.vatAmount;
 
             unitPrice_data.Text = netUnitPrice.ToString("N2");
             extendedPriceWithVAT_data.Text = epWithVAT.ToString("N2");

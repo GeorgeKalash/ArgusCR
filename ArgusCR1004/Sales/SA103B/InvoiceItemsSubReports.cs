@@ -27,13 +27,12 @@ namespace ArgusCR1004.Sales.SA103B
         private void InvoiceItemsSubReports_DataSourceRowChanged(object sender, DataSourceRowEventArgs e)
         {
         }
-
         protected override void OnDataSourceRowChanged(DataSourceRowEventArgs e)
         {
             ArgusDS.Sales.ItemView obj = ((List<ArgusDS.Sales.ItemView>)DataSource)[e.CurrentRow];
 
-            double netUnitPrice = obj.unitPrice - (obj.mdValue ?? 0);
-            double epWithVAT = obj.extendedPrice + obj.vatAmount;
+            decimal netUnitPrice = obj.unitPrice - (obj.mdValue ?? 0);
+            decimal epWithVAT = obj.extendedPrice + obj.vatAmount;
 
             unitPrice_data.Text = netUnitPrice.ToString("N2");
             extendedPriceWithVAT_data.Text = epWithVAT.ToString("N2");

@@ -33,8 +33,8 @@ namespace ArgusCR1004.Sales.SA103
         {
             ArgusDS.Sales.ItemView obj = ((List<ArgusDS.Sales.ItemView>)DataSource)[e.CurrentRow];
 
-            double netUnitPrice = obj.unitPrice - (obj.mdValue ?? 0);
-            double epWithVAT = obj.extendedPrice + obj.vatAmount;
+            decimal netUnitPrice = obj.unitPrice - (obj.mdValue ?? 0);
+            decimal epWithVAT = obj.extendedPrice + obj.vatAmount;
 
             unitPrice_data.Text = netUnitPrice.ToString("N2");
             extendedPriceWithVAT_data.Text = epWithVAT.ToString("N2");

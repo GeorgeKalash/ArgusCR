@@ -18,7 +18,6 @@ namespace ArgusCR1009.Sales.SA51303
             SharedClasses.JsonProtocol.GetStructure<TrxPrintView> webObject = deserializeGet<TrxPrintView>();
             DataSource = webObject.record.items;
 
-
             clientRef_data.Text = webObject.record.client.reference;
             clientName_data.Text = webObject.record.trxHeader.clientName;
             clientVATNo_data.Text = webObject.record.client.vatNumber;
