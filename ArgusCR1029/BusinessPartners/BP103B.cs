@@ -60,6 +60,7 @@ namespace ArgusCR1029.BusinessPartners
             clientGroup2_lbl.Text = labelText(17);
             activeStatus_lbl.Text = labelText(18);
             level_lbl.Text = labelText(19);
+            createdDate_lbl.Text = labelText(20);
         }
         protected override string dictionaryStore()
         {
