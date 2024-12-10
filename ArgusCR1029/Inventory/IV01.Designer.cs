@@ -37,6 +37,7 @@ namespace ArgusCR1029.Inventory
             this.xrTableRow3 = new DevExpress.XtraReports.UI.XRTableRow();
             this.reference_data = new DevExpress.XtraReports.UI.XRTableCell();
             this.date_data = new DevExpress.XtraReports.UI.XRTableCell();
+            this.xrTableCell5 = new DevExpress.XtraReports.UI.XRTableCell();
             this.clientRef_data = new DevExpress.XtraReports.UI.XRTableCell();
             this.clientName_data = new DevExpress.XtraReports.UI.XRTableCell();
             this.spRef_data = new DevExpress.XtraReports.UI.XRTableCell();
@@ -66,6 +67,7 @@ namespace ArgusCR1029.Inventory
             this.xrTableRow1 = new DevExpress.XtraReports.UI.XRTableRow();
             this.sku_lbl = new DevExpress.XtraReports.UI.XRTableCell();
             this.itemName_lbl = new DevExpress.XtraReports.UI.XRTableCell();
+            this.createdDate_lbl = new DevExpress.XtraReports.UI.XRTableCell();
             this.categoryRef_lbl = new DevExpress.XtraReports.UI.XRTableCell();
             this.groupRef_lbl = new DevExpress.XtraReports.UI.XRTableCell();
             this.lineRef_lbl = new DevExpress.XtraReports.UI.XRTableCell();
@@ -82,8 +84,6 @@ namespace ArgusCR1029.Inventory
             this.xrTableRow2 = new DevExpress.XtraReports.UI.XRTableRow();
             this.xrTableCell1 = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTableCell2 = new DevExpress.XtraReports.UI.XRTableCell();
-            this.createdDate_lbl = new DevExpress.XtraReports.UI.XRTableCell();
-            this.xrTableCell5 = new DevExpress.XtraReports.UI.XRTableCell();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable1)).BeginInit();
@@ -178,6 +178,25 @@ namespace ArgusCR1029.Inventory
             this.date_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
             this.date_data.Weight = 1.0437454951175758D;
             this.date_data.WordWrap = false;
+            // 
+            // xrTableCell5
+            // 
+            this.xrTableCell5.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Right) 
+            | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.xrTableCell5.BorderWidth = 1F;
+            this.xrTableCell5.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[createdDate]")});
+            this.xrTableCell5.Multiline = true;
+            this.xrTableCell5.Name = "xrTableCell5";
+            this.xrTableCell5.Padding = new DevExpress.XtraPrinting.PaddingInfo(4, 2, 4, 0, 100F);
+            this.xrTableCell5.StylePriority.UseBorders = false;
+            this.xrTableCell5.StylePriority.UseBorderWidth = false;
+            this.xrTableCell5.StylePriority.UsePadding = false;
+            this.xrTableCell5.StylePriority.UseTextAlignment = false;
+            this.xrTableCell5.Text = "xrTableCell5";
+            this.xrTableCell5.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
+            this.xrTableCell5.TextFormatString = "{0:dd/MM/yyyy}";
+            this.xrTableCell5.Weight = 0.63110267060078917D;
             // 
             // clientRef_data
             // 
@@ -333,13 +352,13 @@ namespace ArgusCR1029.Inventory
             this.xrTable5,
             this.logo_data,
             this.title_lbl});
-            this.ReportHeader.HeightF = 234.6666F;
+            this.ReportHeader.HeightF = 171.1249F;
             this.ReportHeader.KeepTogether = true;
             this.ReportHeader.Name = "ReportHeader";
             // 
             // xrTable5
             // 
-            this.xrTable5.LocationFloat = new DevExpress.Utils.PointFloat(13.2918F, 124.0417F);
+            this.xrTable5.LocationFloat = new DevExpress.Utils.PointFloat(134.1251F, 50.08337F);
             this.xrTable5.Name = "xrTable5";
             this.xrTable5.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable5.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
@@ -561,6 +580,23 @@ namespace ArgusCR1029.Inventory
             this.itemName_lbl.StylePriority.UseFont = false;
             this.itemName_lbl.Text = "Item Name";
             this.itemName_lbl.Weight = 1.0205396350962597D;
+            // 
+            // createdDate_lbl
+            // 
+            this.createdDate_lbl.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.createdDate_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+            | DevExpress.XtraPrinting.BorderSide.Right) 
+            | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.createdDate_lbl.BorderWidth = 1F;
+            this.createdDate_lbl.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold);
+            this.createdDate_lbl.Multiline = true;
+            this.createdDate_lbl.Name = "createdDate_lbl";
+            this.createdDate_lbl.StylePriority.UseBackColor = false;
+            this.createdDate_lbl.StylePriority.UseBorders = false;
+            this.createdDate_lbl.StylePriority.UseBorderWidth = false;
+            this.createdDate_lbl.StylePriority.UseFont = false;
+            this.createdDate_lbl.Text = "Created Date";
+            this.createdDate_lbl.Weight = 0.617071491404701D;
             // 
             // categoryRef_lbl
             // 
@@ -793,42 +829,6 @@ namespace ArgusCR1029.Inventory
             this.xrTableCell2.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
             this.xrTableCell2.TextFormatString = "{0:n2}";
             this.xrTableCell2.Weight = 0.47585178991837174D;
-            // 
-            // createdDate_lbl
-            // 
-            this.createdDate_lbl.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.createdDate_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
-            | DevExpress.XtraPrinting.BorderSide.Right) 
-            | DevExpress.XtraPrinting.BorderSide.Bottom)));
-            this.createdDate_lbl.BorderWidth = 1F;
-            this.createdDate_lbl.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold);
-            this.createdDate_lbl.Multiline = true;
-            this.createdDate_lbl.Name = "createdDate_lbl";
-            this.createdDate_lbl.StylePriority.UseBackColor = false;
-            this.createdDate_lbl.StylePriority.UseBorders = false;
-            this.createdDate_lbl.StylePriority.UseBorderWidth = false;
-            this.createdDate_lbl.StylePriority.UseFont = false;
-            this.createdDate_lbl.Text = "Created Date";
-            this.createdDate_lbl.Weight = 0.617071491404701D;
-            // 
-            // xrTableCell5
-            // 
-            this.xrTableCell5.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Right) 
-            | DevExpress.XtraPrinting.BorderSide.Bottom)));
-            this.xrTableCell5.BorderWidth = 1F;
-            this.xrTableCell5.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[createdDate]")});
-            this.xrTableCell5.Multiline = true;
-            this.xrTableCell5.Name = "xrTableCell5";
-            this.xrTableCell5.Padding = new DevExpress.XtraPrinting.PaddingInfo(4, 2, 4, 0, 100F);
-            this.xrTableCell5.StylePriority.UseBorders = false;
-            this.xrTableCell5.StylePriority.UseBorderWidth = false;
-            this.xrTableCell5.StylePriority.UsePadding = false;
-            this.xrTableCell5.StylePriority.UseTextAlignment = false;
-            this.xrTableCell5.Text = "xrTableCell5";
-            this.xrTableCell5.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
-            this.xrTableCell5.TextFormatString = "{0:dd/MM/yyyy}";
-            this.xrTableCell5.Weight = 0.63110267060078917D;
             // 
             // IV01
             // 

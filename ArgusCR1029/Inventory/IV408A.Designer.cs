@@ -577,7 +577,7 @@ namespace ArgusCR1029.Inventory
             // pagesNumber_lbl
             // 
             this.pagesNumber_lbl.BackColor = System.Drawing.Color.White;
-            this.pagesNumber_lbl.Font = new System.Drawing.Font("Times New Roman", 9F);
+            this.pagesNumber_lbl.Font = new System.Drawing.Font("Times New Roman", 8F);
             this.pagesNumber_lbl.LocationFloat = new DevExpress.Utils.PointFloat(1044.268F, 12.5F);
             this.pagesNumber_lbl.Name = "pagesNumber_lbl";
             this.pagesNumber_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -590,7 +590,7 @@ namespace ArgusCR1029.Inventory
             // 
             // printSignature
             // 
-            this.printSignature.Font = new System.Drawing.Font("Times New Roman", 9F);
+            this.printSignature.Font = new System.Drawing.Font("Times New Roman", 8F);
             this.printSignature.LocationFloat = new DevExpress.Utils.PointFloat(9.999998F, 12.5F);
             this.printSignature.Multiline = true;
             this.printSignature.Name = "printSignature";

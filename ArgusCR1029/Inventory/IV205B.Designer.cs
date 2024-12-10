@@ -451,7 +451,7 @@ namespace ArgusCR1029.Inventory
             this.logo_data,
             this.title_lbl,
             this.xrTable5});
-            this.ReportHeader.HeightF = 219.7917F;
+            this.ReportHeader.HeightF = 144.7917F;
             this.ReportHeader.KeepTogether = true;
             this.ReportHeader.Name = "ReportHeader";
             // 
@@ -477,7 +477,7 @@ namespace ArgusCR1029.Inventory
             // 
             // xrTable5
             // 
-            this.xrTable5.LocationFloat = new DevExpress.Utils.PointFloat(9.999998F, 125F);
+            this.xrTable5.LocationFloat = new DevExpress.Utils.PointFloat(137.5F, 50F);
             this.xrTable5.Name = "xrTable5";
             this.xrTable5.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable5.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
@@ -497,7 +497,7 @@ namespace ArgusCR1029.Inventory
             // 
             // fromSiteParam_lbl
             // 
-            this.fromSiteParam_lbl.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold);
+            this.fromSiteParam_lbl.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold);
             this.fromSiteParam_lbl.Multiline = true;
             this.fromSiteParam_lbl.Name = "fromSiteParam_lbl";
             this.fromSiteParam_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 3, 0, 100F);
@@ -508,9 +508,11 @@ namespace ArgusCR1029.Inventory
             // 
             // fromSite_param
             // 
+            this.fromSite_param.Font = new System.Drawing.Font("Arial", 9F);
             this.fromSite_param.Multiline = true;
             this.fromSite_param.Name = "fromSite_param";
             this.fromSite_param.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 3, 0, 100F);
+            this.fromSite_param.StylePriority.UseFont = false;
             this.fromSite_param.StylePriority.UsePadding = false;
             this.fromSite_param.Weight = 1.5594040751782847D;
             // 
@@ -524,7 +526,7 @@ namespace ArgusCR1029.Inventory
             // 
             // toSiteParam_lbl
             // 
-            this.toSiteParam_lbl.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold);
+            this.toSiteParam_lbl.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold);
             this.toSiteParam_lbl.Multiline = true;
             this.toSiteParam_lbl.Name = "toSiteParam_lbl";
             this.toSiteParam_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 3, 0, 100F);
@@ -535,9 +537,11 @@ namespace ArgusCR1029.Inventory
             // 
             // toSite_param
             // 
+            this.toSite_param.Font = new System.Drawing.Font("Arial", 9F);
             this.toSite_param.Multiline = true;
             this.toSite_param.Name = "toSite_param";
             this.toSite_param.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 3, 0, 100F);
+            this.toSite_param.StylePriority.UseFont = false;
             this.toSite_param.StylePriority.UsePadding = false;
             this.toSite_param.Weight = 1.5594040751782847D;
             // 
@@ -551,7 +555,7 @@ namespace ArgusCR1029.Inventory
             // 
             // startDate_lbl
             // 
-            this.startDate_lbl.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold);
+            this.startDate_lbl.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold);
             this.startDate_lbl.Multiline = true;
             this.startDate_lbl.Name = "startDate_lbl";
             this.startDate_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 3, 0, 100F);
@@ -562,9 +566,11 @@ namespace ArgusCR1029.Inventory
             // 
             // startDate_param
             // 
+            this.startDate_param.Font = new System.Drawing.Font("Arial", 9F);
             this.startDate_param.Multiline = true;
             this.startDate_param.Name = "startDate_param";
             this.startDate_param.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 3, 0, 100F);
+            this.startDate_param.StylePriority.UseFont = false;
             this.startDate_param.StylePriority.UsePadding = false;
             this.startDate_param.Weight = 1.5594040011962771D;
             // 
@@ -578,7 +584,7 @@ namespace ArgusCR1029.Inventory
             // 
             // endDate_lbl
             // 
-            this.endDate_lbl.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold);
+            this.endDate_lbl.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold);
             this.endDate_lbl.Multiline = true;
             this.endDate_lbl.Name = "endDate_lbl";
             this.endDate_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 3, 0, 100F);
@@ -589,9 +595,11 @@ namespace ArgusCR1029.Inventory
             // 
             // endDate_param
             // 
+            this.endDate_param.Font = new System.Drawing.Font("Arial", 9F);
             this.endDate_param.Multiline = true;
             this.endDate_param.Name = "endDate_param";
             this.endDate_param.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 3, 0, 100F);
+            this.endDate_param.StylePriority.UseFont = false;
             this.endDate_param.StylePriority.UsePadding = false;
             this.endDate_param.Weight = 1.5594040751782847D;
             // 
@@ -1023,21 +1031,25 @@ namespace ArgusCR1029.Inventory
             // 
             // printSignature
             // 
+            this.printSignature.Font = new System.Drawing.Font("Arial", 8F);
             this.printSignature.LocationFloat = new DevExpress.Utils.PointFloat(10.00004F, 9.999974F);
             this.printSignature.Multiline = true;
             this.printSignature.Name = "printSignature";
             this.printSignature.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.printSignature.SizeF = new System.Drawing.SizeF(950.3425F, 23F);
+            this.printSignature.StylePriority.UseFont = false;
             this.printSignature.StylePriority.UseTextAlignment = false;
             this.printSignature.Text = "printSignature";
             this.printSignature.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             // 
             // xrPageInfo1
             // 
-            this.xrPageInfo1.LocationFloat = new DevExpress.Utils.PointFloat(1049.792F, 10.00004F);
+            this.xrPageInfo1.Font = new System.Drawing.Font("Arial", 8F);
+            this.xrPageInfo1.LocationFloat = new DevExpress.Utils.PointFloat(1013.334F, 10.00004F);
             this.xrPageInfo1.Name = "xrPageInfo1";
             this.xrPageInfo1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrPageInfo1.SizeF = new System.Drawing.SizeF(109.208F, 23F);
+            this.xrPageInfo1.SizeF = new System.Drawing.SizeF(145.6664F, 23F);
+            this.xrPageInfo1.StylePriority.UseFont = false;
             this.xrPageInfo1.StylePriority.UseTextAlignment = false;
             this.xrPageInfo1.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             this.xrPageInfo1.TextFormatString = "Page {0} of {1}";
@@ -1134,7 +1146,6 @@ namespace ArgusCR1029.Inventory
             this.xrTable1});
             this.notificationGroupName.GroupFields.AddRange(new DevExpress.XtraReports.UI.GroupField[] {
             new DevExpress.XtraReports.UI.GroupField("notificationGroupName", DevExpress.XtraReports.UI.XRColumnSortOrder.Ascending)});
-            this.notificationGroupName.HeightF = 100F;
             this.notificationGroupName.KeepTogether = true;
             this.notificationGroupName.Name = "notificationGroupName";
             this.notificationGroupName.RepeatEveryPage = true;
@@ -1147,7 +1158,7 @@ namespace ArgusCR1029.Inventory
             this.xrLabel1.LocationFloat = new DevExpress.Utils.PointFloat(10.00004F, 25F);
             this.xrLabel1.Multiline = true;
             this.xrLabel1.Name = "xrLabel1";
-            this.xrLabel1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
+            this.xrLabel1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.xrLabel1.SizeF = new System.Drawing.SizeF(328.5416F, 23F);
             this.xrLabel1.StylePriority.UseFont = false;
             this.xrLabel1.Text = "xrLabel1";
