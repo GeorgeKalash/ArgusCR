@@ -505,6 +505,12 @@
     <Compile Include="Inventory\IV102B\IV102B.Designer.cs">
       <DependentUpon>IV102B.cs</DependentUpon>
     </Compile>
+    <Compile Include="Manufacturing\MF205.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Manufacturing\MF205.Designer.cs">
+      <DependentUpon>MF205.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -1164,6 +1170,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Inventory\IV102B\IV102B.resx">
       <DependentUpon>IV102B.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manufacturing\MF205.resx">
+      <DependentUpon>MF205.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
