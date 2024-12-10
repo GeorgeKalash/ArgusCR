@@ -384,7 +384,7 @@ namespace ArgusCR1029.Inventory
             this.xrLabel19,
             this.xrTable9,
             this.xrTable10});
-            this.ReportFooter.HeightF = 412.3132F;
+            this.ReportFooter.HeightF = 399.7369F;
             this.ReportFooter.KeepTogether = true;
             this.ReportFooter.Name = "ReportFooter";
             // 
@@ -934,11 +934,11 @@ namespace ArgusCR1029.Inventory
             // pagesNumber_lbl
             // 
             this.pagesNumber_lbl.BackColor = System.Drawing.Color.White;
-            this.pagesNumber_lbl.Font = new System.Drawing.Font("Arial", 9F);
+            this.pagesNumber_lbl.Font = new System.Drawing.Font("Arial", 8F);
             this.pagesNumber_lbl.LocationFloat = new DevExpress.Utils.PointFloat(9.999879F, 9.999974F);
             this.pagesNumber_lbl.Name = "pagesNumber_lbl";
             this.pagesNumber_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.pagesNumber_lbl.SizeF = new System.Drawing.SizeF(84.89825F, 23F);
+            this.pagesNumber_lbl.SizeF = new System.Drawing.SizeF(153.6483F, 23F);
             this.pagesNumber_lbl.StylePriority.UseBackColor = false;
             this.pagesNumber_lbl.StylePriority.UseFont = false;
             this.pagesNumber_lbl.StylePriority.UseTextAlignment = false;
@@ -947,7 +947,7 @@ namespace ArgusCR1029.Inventory
             // 
             // printSignature
             // 
-            this.printSignature.Font = new System.Drawing.Font("Arial", 9F);
+            this.printSignature.Font = new System.Drawing.Font("Arial", 8F);
             this.printSignature.LocationFloat = new DevExpress.Utils.PointFloat(239.8663F, 10.00004F);
             this.printSignature.Multiline = true;
             this.printSignature.Name = "printSignature";
@@ -964,7 +964,7 @@ namespace ArgusCR1029.Inventory
             this.logo_data,
             this.xrTable6,
             this.title_lbl});
-            this.ReportHeader.HeightF = 211.8147F;
+            this.ReportHeader.HeightF = 198.273F;
             this.ReportHeader.KeepTogether = true;
             this.ReportHeader.Name = "ReportHeader";
             // 
@@ -987,7 +987,7 @@ namespace ArgusCR1029.Inventory
             this.xrTableRow8,
             this.xrTableRow14,
             this.xrTableRow15});
-            this.xrTable6.SizeF = new System.Drawing.SizeF(346.4998F, 147.4096F);
+            this.xrTable6.SizeF = new System.Drawing.SizeF(346.4998F, 134.9096F);
             // 
             // xrTableRow6
             // 
