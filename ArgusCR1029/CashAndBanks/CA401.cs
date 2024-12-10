@@ -15,7 +15,6 @@ namespace ArgusCR1029.CashAndBanks
         {
             return reportTitle_lbl.Text;
         }
-
         protected override void OnBeforePrint(PrintEventArgs e)
         {
             SharedClasses.JsonProtocol.QryStructure<ArgusDS.Financials.Reports.FI401> obj = deserializeList <ArgusDS.Financials.Reports.FI401> ();
@@ -34,7 +33,6 @@ namespace ArgusCR1029.CashAndBanks
             if (Parameters.Count > 2)
                 endDate2_param.Text = Parameters[2].Value.ToString();
             if (Parameters.Count > 3)
-
 
                 startDate3_param.Text = Parameters[1].Value.ToString();
             if (Parameters.Count > 2)

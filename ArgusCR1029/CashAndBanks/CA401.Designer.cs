@@ -573,7 +573,7 @@ namespace ArgusCR1029.CashAndBanks
             this.xrLabel17,
             this.xrLabel18,
             this.xrTable3});
-            this.ReportFooter.HeightF = 388.1526F;
+            this.ReportFooter.HeightF = 372.8608F;
             this.ReportFooter.KeepTogether = true;
             this.ReportFooter.Name = "ReportFooter";
             // 

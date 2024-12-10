@@ -735,13 +735,13 @@ namespace ArgusCR1029.Financials
             this.logo_data,
             this.title_lbl,
             this.xrTable1});
-            this.ReportHeader.HeightF = 275F;
+            this.ReportHeader.HeightF = 202.0833F;
             this.ReportHeader.KeepTogether = true;
             this.ReportHeader.Name = "ReportHeader";
             // 
             // xrTable5
             // 
-            this.xrTable5.LocationFloat = new DevExpress.Utils.PointFloat(315.6212F, 125F);
+            this.xrTable5.LocationFloat = new DevExpress.Utils.PointFloat(435.0318F, 52.08333F);
             this.xrTable5.Name = "xrTable5";
             this.xrTable5.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable5.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
@@ -751,7 +751,7 @@ namespace ArgusCR1029.Financials
             this.xrTableRow16,
             this.xrTableRow17,
             this.xrTableRow18});
-            this.xrTable5.SizeF = new System.Drawing.SizeF(562.0013F, 150F);
+            this.xrTable5.SizeF = new System.Drawing.SizeF(405.7513F, 150F);
             // 
             // xrTableRow12
             // 
@@ -774,7 +774,7 @@ namespace ArgusCR1029.Financials
             // 
             this.accountGroup_param.Multiline = true;
             this.accountGroup_param.Name = "accountGroup_param";
-            this.accountGroup_param.Weight = 1.7210595213442219D;
+            this.accountGroup_param.Weight = 1.1221109725745797D;
             // 
             // xrTableRow13
             // 
@@ -797,7 +797,7 @@ namespace ArgusCR1029.Financials
             // 
             this.site_param.Multiline = true;
             this.site_param.Name = "site_param";
-            this.site_param.Weight = 1.7210595326407856D;
+            this.site_param.Weight = 1.1221109838711434D;
             // 
             // xrTableRow15
             // 
@@ -820,7 +820,7 @@ namespace ArgusCR1029.Financials
             // 
             this.statusParam_param.Multiline = true;
             this.statusParam_param.Name = "statusParam_param";
-            this.statusParam_param.Weight = 1.7210595326407856D;
+            this.statusParam_param.Weight = 1.1221109838711434D;
             // 
             // xrTableRow16
             // 
@@ -843,7 +843,7 @@ namespace ArgusCR1029.Financials
             // 
             this.systemFunction_param.Multiline = true;
             this.systemFunction_param.Name = "systemFunction_param";
-            this.systemFunction_param.Weight = 1.7210595326407856D;
+            this.systemFunction_param.Weight = 1.1221109838711434D;
             // 
             // xrTableRow17
             // 
@@ -866,7 +866,7 @@ namespace ArgusCR1029.Financials
             // 
             this.item_param.Multiline = true;
             this.item_param.Name = "item_param";
-            this.item_param.Weight = 1.7210595326407856D;
+            this.item_param.Weight = 1.1221109838711434D;
             // 
             // xrTableRow18
             // 
@@ -889,7 +889,7 @@ namespace ArgusCR1029.Financials
             // 
             this.itemCategory_param.Multiline = true;
             this.itemCategory_param.Name = "itemCategory_param";
-            this.itemCategory_param.Weight = 1.7210595326407856D;
+            this.itemCategory_param.Weight = 1.1221109838711434D;
             // 
             // logo_data
             // 
@@ -913,7 +913,7 @@ namespace ArgusCR1029.Financials
             // 
             // xrTable1
             // 
-            this.xrTable1.LocationFloat = new DevExpress.Utils.PointFloat(9.999998F, 125F);
+            this.xrTable1.LocationFloat = new DevExpress.Utils.PointFloat(129.4106F, 52.08333F);
             this.xrTable1.Name = "xrTable1";
             this.xrTable1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable1.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
@@ -1073,11 +1073,13 @@ namespace ArgusCR1029.Financials
             // 
             // printSignature
             // 
+            this.printSignature.Font = new System.Drawing.Font("Arial", 8F);
             this.printSignature.LocationFloat = new DevExpress.Utils.PointFloat(12.50002F, 12.68031F);
             this.printSignature.Multiline = true;
             this.printSignature.Name = "printSignature";
             this.printSignature.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.printSignature.SizeF = new System.Drawing.SizeF(975.4625F, 23F);
+            this.printSignature.StylePriority.UseFont = false;
             this.printSignature.StylePriority.UseTextAlignment = false;
             this.printSignature.Text = "printSignature";
             this.printSignature.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
@@ -1085,13 +1087,15 @@ namespace ArgusCR1029.Financials
             // pagesNumber_lbl
             // 
             this.pagesNumber_lbl.BackColor = System.Drawing.Color.Transparent;
-            this.pagesNumber_lbl.LocationFloat = new DevExpress.Utils.PointFloat(1207.274F, 12.68031F);
+            this.pagesNumber_lbl.Font = new System.Drawing.Font("Arial", 8F);
+            this.pagesNumber_lbl.LocationFloat = new DevExpress.Utils.PointFloat(1160.399F, 12.68031F);
             this.pagesNumber_lbl.Name = "pagesNumber_lbl";
             this.pagesNumber_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.pagesNumber_lbl.SizeF = new System.Drawing.SizeF(81.72571F, 23F);
+            this.pagesNumber_lbl.SizeF = new System.Drawing.SizeF(128.6007F, 23F);
             this.pagesNumber_lbl.StylePriority.UseBackColor = false;
+            this.pagesNumber_lbl.StylePriority.UseFont = false;
             this.pagesNumber_lbl.StylePriority.UseTextAlignment = false;
-            this.pagesNumber_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
+            this.pagesNumber_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             this.pagesNumber_lbl.TextFormatString = "Page {0} of {1}";
             // 
             // ReportFooter
