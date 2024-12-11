@@ -94,14 +94,14 @@ namespace ArgusCR1010.Financials
             this.xrTable2,
             this.xrTable1,
             this.receiptVoucher_lbl});
-            this.ReportHeader.HeightF = 394.7976F;
+            this.ReportHeader.HeightF = 376.0476F;
             this.ReportHeader.KeepTogether = true;
             this.ReportHeader.Name = "ReportHeader";
             // 
             // xrTable2
             // 
             this.xrTable2.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold);
-            this.xrTable2.LocationFloat = new DevExpress.Utils.PointFloat(617.7083F, 325F);
+            this.xrTable2.LocationFloat = new DevExpress.Utils.PointFloat(625F, 300F);
             this.xrTable2.Name = "xrTable2";
             this.xrTable2.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable2.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
@@ -129,12 +129,12 @@ namespace ArgusCR1010.Financials
             // 
             // xrTable1
             // 
-            this.xrTable1.LocationFloat = new DevExpress.Utils.PointFloat(51.04167F, 196.875F);
+            this.xrTable1.LocationFloat = new DevExpress.Utils.PointFloat(51.04167F, 200F);
             this.xrTable1.Name = "xrTable1";
             this.xrTable1.Padding = new DevExpress.XtraPrinting.PaddingInfo(5, 2, 7, 0, 100F);
             this.xrTable1.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow10});
-            this.xrTable1.SizeF = new System.Drawing.SizeF(348.3068F, 34.56314F);
+            this.xrTable1.SizeF = new System.Drawing.SizeF(348.3068F, 30.39639F);
             this.xrTable1.StylePriority.UsePadding = false;
             // 
             // xrTableRow10
@@ -260,12 +260,12 @@ namespace ArgusCR1010.Financials
             // 
             // xrTable4
             // 
-            this.xrTable4.LocationFloat = new DevExpress.Utils.PointFloat(501.4211F, 201.0417F);
+            this.xrTable4.LocationFloat = new DevExpress.Utils.PointFloat(500F, 200F);
             this.xrTable4.Name = "xrTable4";
             this.xrTable4.Padding = new DevExpress.XtraPrinting.PaddingInfo(5, 2, 7, 0, 100F);
             this.xrTable4.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow9});
-            this.xrTable4.SizeF = new System.Drawing.SizeF(298.9691F, 30.39639F);
+            this.xrTable4.SizeF = new System.Drawing.SizeF(294.1402F, 30.39639F);
             this.xrTable4.StylePriority.UsePadding = false;
             // 
             // xrTableRow9
