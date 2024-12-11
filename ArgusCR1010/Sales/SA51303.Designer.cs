@@ -87,7 +87,7 @@ namespace ArgusCR1010.Sales
             // 
             this.TopMargin.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
             this.xrPictureBox1});
-            this.TopMargin.HeightF = 175.9167F;
+            this.TopMargin.HeightF = 215F;
             this.TopMargin.Name = "TopMargin";
             // 
             // BottomMargin
@@ -730,9 +730,9 @@ namespace ArgusCR1010.Sales
             // 
             this.xrPictureBox1.ImageAlignment = DevExpress.XtraPrinting.ImageAlignment.MiddleCenter;
             this.xrPictureBox1.ImageSource = new DevExpress.XtraPrinting.Drawing.ImageSource("img", resources.GetString("xrPictureBox1.ImageSource"));
-            this.xrPictureBox1.LocationFloat = new DevExpress.Utils.PointFloat(411.0683F, 0F);
+            this.xrPictureBox1.LocationFloat = new DevExpress.Utils.PointFloat(560.0001F, 0F);
             this.xrPictureBox1.Name = "xrPictureBox1";
-            this.xrPictureBox1.SizeF = new System.Drawing.SizeF(388.9317F, 175.9167F);
+            this.xrPictureBox1.SizeF = new System.Drawing.SizeF(239.9999F, 215F);
             this.xrPictureBox1.Sizing = DevExpress.XtraPrinting.ImageSizeMode.ZoomImage;
             // 
             // xrLabel1
@@ -793,7 +793,7 @@ namespace ArgusCR1010.Sales
             this.ReportHeader,
             this.PageHeader});
             this.Font = new System.Drawing.Font("Arial", 9.75F);
-            this.Margins = new System.Drawing.Printing.Margins(0, 0, 176, 77);
+            this.Margins = new System.Drawing.Printing.Margins(0, 0, 215, 77);
             this.PageHeight = 1169;
             this.PageWidth = 827;
             this.PaperKind = System.Drawing.Printing.PaperKind.A4;
