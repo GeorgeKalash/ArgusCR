@@ -124,7 +124,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Financials\FI31304.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Financials\FI31304.Designer.cs">
+      <DependentUpon>FI31304.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Sales\SA51303.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -133,7 +144,14 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Financials\FI31304.resx">
+      <DependentUpon>FI31304.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Sales\SA51303.resx">
       <DependentUpon>SA51303.cs</DependentUpon>
     </EmbeddedResource>
