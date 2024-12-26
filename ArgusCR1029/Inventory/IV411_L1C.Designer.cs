@@ -677,6 +677,7 @@ namespace ArgusCR1029.Inventory
             this.xrCrossTabCell9.ColumnIndex = 8;
             this.xrCrossTabCell9.Font = new System.Drawing.Font("Arial", 8F);
             this.xrCrossTabCell9.Name = "xrCrossTabCell9";
+            this.xrCrossTabCell9.NullValueText = "-";
             this.xrCrossTabCell9.RowIndex = 1;
             this.xrCrossTabCell9.TextFormatString = "{0:n2}";
             // 
@@ -708,6 +709,7 @@ namespace ArgusCR1029.Inventory
             this.xrCrossTabCell12.ColumnIndex = 9;
             this.xrCrossTabCell12.Font = new System.Drawing.Font("Arial", 8F);
             this.xrCrossTabCell12.Name = "xrCrossTabCell12";
+            this.xrCrossTabCell12.NullValueText = "-";
             this.xrCrossTabCell12.RowIndex = 1;
             this.xrCrossTabCell12.TextFormatString = "{0:n2}";
             // 
@@ -912,6 +914,7 @@ namespace ArgusCR1029.Inventory
             this.xrCrossTabCell36.ColumnIndex = 8;
             this.xrCrossTabCell36.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Bold);
             this.xrCrossTabCell36.Name = "xrCrossTabCell36";
+            this.xrCrossTabCell36.NullValueText = "-";
             this.xrCrossTabCell36.RowIndex = 9;
             this.xrCrossTabCell36.TextFormatString = "{0:n2}";
             // 
@@ -964,6 +967,7 @@ namespace ArgusCR1029.Inventory
             this.xrCrossTabCell44.ColumnIndex = 9;
             this.xrCrossTabCell44.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Bold);
             this.xrCrossTabCell44.Name = "xrCrossTabCell44";
+            this.xrCrossTabCell44.NullValueText = "-";
             this.xrCrossTabCell44.RowIndex = 9;
             this.xrCrossTabCell44.TextFormatString = "{0:n2}";
             // 
@@ -1009,7 +1013,7 @@ namespace ArgusCR1029.Inventory
             this.printSignature.Text = "printSignature";
             this.printSignature.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             // 
-            // IV411_L1D
+            // IV411_L1C
             // 
             this.Bands.AddRange(new DevExpress.XtraReports.UI.Band[] {
             this.ReportHeader,
