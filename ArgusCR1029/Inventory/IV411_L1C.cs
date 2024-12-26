@@ -4,7 +4,6 @@ using System.Collections;
 using System.ComponentModel;
 using System.Drawing.Printing;
 
-
 namespace ArgusCR1029.Inventory
 {
     public partial class IV411_L1C : ArgusRPT.BaseReport
@@ -13,7 +12,6 @@ namespace ArgusCR1029.Inventory
         {
             InitializeComponent();
         }
-
         protected override string reportName()
         {
             return title_lbl.Text;
@@ -41,7 +39,6 @@ namespace ArgusCR1029.Inventory
             printSignature.Text = reportSignature();
             base.OnBeforePrint(e);
         }
-
         protected override void labelsText()
         {
             title_lbl.Text = labelText(0);
@@ -55,8 +52,6 @@ namespace ArgusCR1029.Inventory
             itemGroupParam_lbl.Text = labelText(6);
             siteGroup_lbl.Text = labelText(7);
             production_lbl.Text = labelText(8);
-
-            grandTotal_lbl.Text = labelText(9);
         }
 
         protected override string dictionaryStore()
