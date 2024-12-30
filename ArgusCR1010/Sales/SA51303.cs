@@ -37,6 +37,9 @@ namespace ArgusCR1010.Sales
             decimal TotalAPayer = webObject.record.trxHeader.amount + (webObject.record.trxHeader.amount * 0.05m);
             totalAPayer_data.Text = TotalAPayer.ToString("N0");
 
+            volume_data.Text = webObject.record.trxHeader.volume.ToString();
+            poids_data.Text = webObject.record.trxHeader.weight.ToString();
+
             base.OnBeforePrint(e);
         }
         protected override void labelsText()
