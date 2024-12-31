@@ -247,7 +247,7 @@ namespace ArgusCR1029.Sales
             this.xrTableCell21.StylePriority.UseTextAlignment = false;
             this.xrTableCell21.Text = "clientRef_lbl";
             this.xrTableCell21.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
-            this.xrTableCell21.Weight = 1.0636994714337287D;
+            this.xrTableCell21.Weight = 1.1466039823573966D;
             // 
             // clientName_data
             // 
@@ -265,7 +265,7 @@ namespace ArgusCR1029.Sales
             this.clientName_data.StylePriority.UseTextAlignment = false;
             this.clientName_data.Text = "clientName_data";
             this.clientName_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
-            this.clientName_data.Weight = 0.58594876467737067D;
+            this.clientName_data.Weight = 0.51259921805541786D;
             // 
             // xrTableCell3
             // 
@@ -283,7 +283,7 @@ namespace ArgusCR1029.Sales
             this.xrTableCell3.StylePriority.UseTextAlignment = false;
             this.xrTableCell3.Text = "xrTableCell3";
             this.xrTableCell3.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
-            this.xrTableCell3.Weight = 0.52215394857270836D;
+            this.xrTableCell3.Weight = 0.51259898427099326D;
             // 
             // xrTableCell25
             // 
@@ -1180,7 +1180,7 @@ namespace ArgusCR1029.Sales
             this.plantRef_lbl.StylePriority.UseBorderWidth = false;
             this.plantRef_lbl.StylePriority.UseFont = false;
             this.plantRef_lbl.Text = "Plant";
-            this.plantRef_lbl.Weight = 1.2772819683741858D;
+            this.plantRef_lbl.Weight = 1.3768327892067382D;
             // 
             // plantGroupRef_lbl
             // 
@@ -1197,7 +1197,7 @@ namespace ArgusCR1029.Sales
             this.plantGroupRef_lbl.StylePriority.UseBorderWidth = false;
             this.plantGroupRef_lbl.StylePriority.UseFont = false;
             this.plantGroupRef_lbl.Text = "Plant Group";
-            this.plantGroupRef_lbl.Weight = 0.70360276835738478D;
+            this.plantGroupRef_lbl.Weight = 0.61552522442396218D;
             // 
             // costCenter_lbl
             // 
@@ -1214,7 +1214,7 @@ namespace ArgusCR1029.Sales
             this.costCenter_lbl.StylePriority.UseBorderWidth = false;
             this.costCenter_lbl.StylePriority.UseFont = false;
             this.costCenter_lbl.Text = "Cost Center";
-            this.costCenter_lbl.Weight = 0.626998500593607D;
+            this.costCenter_lbl.Weight = 0.615525223694477D;
             // 
             // G18_lbl
             // 

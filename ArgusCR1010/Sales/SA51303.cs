@@ -26,7 +26,16 @@ namespace ArgusCR1010.Sales
             date_data.Text = webObject.record.trxHeader.date.ToString(sessionInfo.dateFormat);
 
             subtotal_data.Text = webObject.record.trxHeader.subtotal.ToString("N0");
-            tdPer_data.Text = webObject.record.trxHeader.tdPct.ToString();
+
+            if (webObject?.record?.trxHeader?.tdPct != null)
+            {
+                tdPer_data.Text = webObject.record.trxHeader.tdPct.Value.ToString("N0");
+            }
+            else
+            {
+                tdPer_data.Text = "0";
+            }
+
             tdAmount_data.Text = webObject.record.trxHeader.tdAmount.ToString();
             vatAmount_data.Text = webObject.record.trxHeader.vatAmount.ToString("N0");
             amount_data.Text = webObject.record.trxHeader.amount.ToString("N0");
