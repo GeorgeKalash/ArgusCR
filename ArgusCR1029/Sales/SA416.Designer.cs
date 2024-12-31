@@ -339,7 +339,7 @@ namespace ArgusCR1029.Sales
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell24.BorderWidth = 1F;
             this.xrTableCell24.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[laborPrice]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[baseLaborPrice]")});
             this.xrTableCell24.Multiline = true;
             this.xrTableCell24.Name = "xrTableCell24";
             this.xrTableCell24.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 5, 0, 0, 100F);
@@ -717,7 +717,7 @@ namespace ArgusCR1029.Sales
             this.xrTableCell35.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell35.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "sumSum([laborPrice])")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "sumSum([baseLaborPrice])")});
             this.xrTableCell35.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Bold);
             this.xrTableCell35.Multiline = true;
             this.xrTableCell35.Name = "xrTableCell35";

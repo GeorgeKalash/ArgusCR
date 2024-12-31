@@ -271,7 +271,7 @@ namespace ArgusCR1029.Sales
             this.amount_data.BorderWidth = 1F;
             this.amount_data.CanGrow = false;
             this.amount_data.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[netAmount]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[amount]")});
             this.amount_data.Name = "amount_data";
             this.amount_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 5, 0, 0, 100F);
             this.amount_data.StylePriority.UseBorders = false;
@@ -656,7 +656,7 @@ namespace ArgusCR1029.Sales
             this.xrTableCell38.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell38.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "sumSum([netAmount])")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "sumSum([amount])")});
             this.xrTableCell38.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Bold);
             this.xrTableCell38.Multiline = true;
             this.xrTableCell38.Name = "xrTableCell38";
