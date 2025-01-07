@@ -95,6 +95,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="Remittance\RE36204\RE36204T1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Remittance\RE36204\RE36204T1.Designer.cs">
+      <DependentUpon>RE36204T1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Remittance\RE36301\RE36301T1.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -108,6 +114,9 @@
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Remittance\RE36204\RE36204T1.resx">
+      <DependentUpon>RE36204T1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Remittance\RE36301\RE36301T1.resx">
       <DependentUpon>RE36301T1.cs</DependentUpon>
