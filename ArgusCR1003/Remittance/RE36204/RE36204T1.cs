@@ -15,8 +15,11 @@ namespace ArgusCR1003.Remittance.RE36204
 
         protected override void OnBeforePrint(PrintEventArgs e)
         {
-            SharedClasses.JsonProtocol.GetStructure<ArgusCT_DS.Remittance.Report.RT101> webObject = deserializeGet<ArgusCT_DS.Remittance.Report.RT101>();
+            SharedClasses.JsonProtocol.GetStructure<ArgusCT_DS.Remittance.Report.RT102> webObject = deserializeGet<ArgusCT_DS.Remittance.Report.RT102>();
    
+
+
+
 
             base.OnBeforePrint(e);
         }
