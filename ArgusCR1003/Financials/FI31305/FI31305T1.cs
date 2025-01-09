@@ -17,7 +17,7 @@ namespace ArgusCR1003.Remittance.RE36204
         protected override void OnBeforePrint(PrintEventArgs e)
         {
             SharedClasses.JsonProtocol.GetStructure<ArgusDS.Financials.Reports.FI102> webObject = deserializeGet<ArgusDS.Financials.Reports.FI102>();
-            carNo_data.Text = webObject.record.clientMaster.categoryName;
+        /*    carNo_data.Text = webObject.record.clientMaster.categoryName;
             category_data.Text = webObject.record.clientMaster.categoryName;
             date_data.Text = webObject.record.clientRemittance.date.ToString("dd/MM/yyyy"); ;
             branch_data.Text = webObject.record.clientRemittance.plantName;
@@ -53,7 +53,7 @@ namespace ArgusCR1003.Remittance.RE36204
             profession_data.Text = webObject.record.clientMaster.professionName;
             workCity_data.Text = webObject.record.workAddressView.name;
             income_data.Text = webObject.record.clientIndividual.incomeSourceName;
-            adress_data.Text = webObject.record.workAddress.ToString();
+            adress_data.Text = webObject.record.workAddress.ToString();*/
 
 
 
