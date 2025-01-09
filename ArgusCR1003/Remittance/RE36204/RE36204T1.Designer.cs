@@ -216,7 +216,7 @@ namespace ArgusCR1003.Remittance.RE36204
             // 
             this.TopMargin.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
             this.xrPictureBox2});
-            this.TopMargin.HeightF = 91.97984F;
+            this.TopMargin.HeightF = 92F;
             this.TopMargin.Name = "TopMargin";
             // 
             // xrPictureBox2
