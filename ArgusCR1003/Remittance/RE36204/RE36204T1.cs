@@ -54,11 +54,7 @@ namespace ArgusCR1003.Remittance.RE36204
             income_data.Text = webObject.record.clientIndividual.incomeSourceName;
             adress_data.Text = webObject.record.workAddress.ToString();
 
-
-
-
-
-
+            image_data.ImageUrl = webObject.record.imageContent;
             base.OnBeforePrint(e);
         }
 
