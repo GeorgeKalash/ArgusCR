@@ -101,6 +101,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="Remittance\KSAeInvoiceQrCode.cs" />
     <Compile Include="Remittance\RE36204\RE36204T1.cs">
       <SubType>Component</SubType>
     </Compile>
