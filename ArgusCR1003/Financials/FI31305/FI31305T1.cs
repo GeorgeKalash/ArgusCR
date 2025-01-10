@@ -18,28 +18,28 @@ namespace ArgusCR1003.Remittance.RE36204
         {
             SharedClasses.JsonProtocol.GetStructure<ArgusDS.Financials.Reports.FI102> webObject = deserializeGet<ArgusDS.Financials.Reports.FI102>();
               dateTop_data.Text = webObject.record.header.date.ToString("dd/MM/yyyy"); ;
-                time_data.Text = webObject.record.clientMaster.categoryName;
-                refNo_data.Text = webObject.record.clientRemittance.date.ToString("dd/MM/yyyy"); ;
-                branch_data.Text = webObject.record.clientRemittance.plantName;
-                taxNo_data.Text = webObject.record.clientIndividual.fl_firstName;
-                sar_data.Text = webObject.record.PVExpenseView.amount;
-                payTo_data.Text = webObject.record.clientRemittance.genderName;
-                only_data.Text = webObject.record.clientMaster.nationalityName;
+                
+                refNo_data.Text = webObject.record.header.reference;
+                branch_data.Text = webObject.record.header.plantName;
+                
+                sar_data.Text = webObject.record.header.baseAmount.ToString();
+            checkNo_data.Text = webObject.record.header.checkNo;
+            payTo_data.Text = webObject.record.header.cashAccountName;
+                date_data.Text = webObject.record.header.date.ToString("dd/MM/yyyy");
+            bank_data.Text = webObject.record.header.bankAccountName;
+                 xrBarCode1.Text = webObject.record.header.reference; ;
 
-                date_data.Text = webObject.record.clientIDView.idtName;
-                bank_data.Text = webObject.record.clientIDView.idNo;
-                checkNo_data.Text = webObject.record.clientIDView.idCountryName;
 
-                for_data.Text = webObject.record.clientIDView.idCityName;
 
-                recieptName_data.Text = webObject.record.clientIDView.idExpiryDate.ToString("dd/MM/yyyy"); ;
+            recieptName_data.Text = webObject.record.header.accountRef;
 
-                idType_data.Text = webObject.record.clientIDView.idIssueDate?.ToString("dd/MM/yyyy") ?? string.Empty;
+            /*idType_data.Text = webObject.record.clientIDView.idIssueDate?.ToString("dd/MM/yyyy") ?? string.Empty;
+             * for_data.Text = webObject.record.clientIDView.idCityName;
 
-                nationality_data.Text = webObject.record.clientRemittance.educationLevelName;
-                expiryDate_data.Text = webObject.record.clientRemittance.statusName;
-                idNo_data.Text = webObject.record.clientIndividual.sponsorName;
-        
+            nationality_data.Text = webObject.record.clientRemittance.educationLevelName;
+            expiryDate_data.Text = webObject.record.clientRemittance.statusName;
+            idNo_data.Text = webObject.record.clientIndividual.sponsorName;*/
+
             base.OnBeforePrint(e);
         }
 
@@ -51,19 +51,6 @@ namespace ArgusCR1003.Remittance.RE36204
             return "CR1003.FI31305T1";
         }
 
-        private void xrLabel16_BeforePrint(object sender, PrintEventArgs e)
-        {
 
-        }
-
-        private void xrLabel15_BeforePrint(object sender, PrintEventArgs e)
-        {
-
-        }
-
-        private void xrLabel14_BeforePrint(object sender, PrintEventArgs e)
-        {
-
-        }
     }
 }
