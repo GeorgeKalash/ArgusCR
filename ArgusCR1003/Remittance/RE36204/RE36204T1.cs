@@ -55,6 +55,7 @@ namespace ArgusCR1003.Remittance.RE36204
             adress_data.Text = webObject.record.workAddress.ToString();
 
             image_data.ImageUrl = webObject.record.imageContent;
+            QRCode.Text = new KycQrCode(webObject.record.clientRemittance.reference).ToBase64();
             base.OnBeforePrint(e);
         }
 
