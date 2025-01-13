@@ -89,6 +89,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Financials\FI31304\FI31304T1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Financials\FI31304\FI31304T1.Designer.cs">
+      <DependentUpon>FI31304T1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Financials\FI31305\FI31305T1.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -117,6 +123,9 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <EmbeddedResource Include="Financials\FI31304\FI31304T1.resx">
+      <DependentUpon>FI31304T1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Financials\FI31305\FI31305T1.resx">
       <DependentUpon>FI31305T1.cs</DependentUpon>
     </EmbeddedResource>
