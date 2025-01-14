@@ -33,16 +33,6 @@ namespace ArgusCR1003.Remittance.RE36204
 
 
 
-            /*idType_data.Text = webObject.record.clientIDView.idIssueDate?.ToString("dd/MM/yyyy") ?? string.Empty;
-             
-             * bank_data.Text = webObject.record.bankAccountName;
-             * checkNo_data.Text = webObject.record.checkNo;
-
-
-            nationality_data.Text = webObject.record.clientRemittance.educationLevelName;
-            expiryDate_data.Text = webObject.record.clientRemittance.statusName;
-            idNo_data.Text = webObject.record.clientIndividual.sponsorName;*/
-
             base.OnBeforePrint(e);
         }
 
