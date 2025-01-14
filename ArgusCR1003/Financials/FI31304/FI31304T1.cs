@@ -4,7 +4,7 @@ using System.Collections;
 using System.ComponentModel;
 using System.Drawing.Printing;
 
-namespace ArgusCR1003.Remittance.RE36204
+namespace ArgusCR1003.Financials.FI31304
 {
     public partial class FI31304T1 : ArgusRPT.BaseReport
     {
