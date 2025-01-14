@@ -1,5 +1,5 @@
 ﻿
-namespace ArgusCR1003.Remittance.RE36204
+namespace ArgusCR1003.Financials.FI31305
 {
     partial class FI31305T1
     {
@@ -35,7 +35,7 @@ namespace ArgusCR1003.Remittance.RE36204
             this.BottomMargin = new DevExpress.XtraReports.UI.BottomMarginBand();
             this.Detail = new DevExpress.XtraReports.UI.DetailBand();
             this.ReportHeader = new DevExpress.XtraReports.UI.ReportHeaderBand();
-            this.xrBarCode1 = new DevExpress.XtraReports.UI.XRBarCode();
+            this.qrCode = new DevExpress.XtraReports.UI.XRBarCode();
             this.xrTable3 = new DevExpress.XtraReports.UI.XRTable();
             this.xrTableRow12 = new DevExpress.XtraReports.UI.XRTableRow();
             this.xrTableCell2 = new DevExpress.XtraReports.UI.XRTableCell();
@@ -130,7 +130,7 @@ namespace ArgusCR1003.Remittance.RE36204
             // ReportHeader
             // 
             this.ReportHeader.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
-            this.xrBarCode1,
+            this.qrCode,
             this.xrTable3,
             this.xrPictureBox2,
             this.xrTable1,
@@ -139,22 +139,22 @@ namespace ArgusCR1003.Remittance.RE36204
             this.xrTable6,
             this.xrLabel1,
             this.xrLabel3});
-            this.ReportHeader.HeightF = 325.2853F;
+            this.ReportHeader.HeightF = 325.2854F;
             this.ReportHeader.Name = "ReportHeader";
             // 
-            // xrBarCode1
+            // qrCode
             // 
-            this.xrBarCode1.AutoModule = true;
-            this.xrBarCode1.Font = new System.Drawing.Font("Arial", 15.75F);
-            this.xrBarCode1.LocationFloat = new DevExpress.Utils.PointFloat(374.0653F, 0F);
-            this.xrBarCode1.Name = "xrBarCode1";
-            this.xrBarCode1.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F);
-            this.xrBarCode1.SizeF = new System.Drawing.SizeF(123.2598F, 118.8749F);
-            this.xrBarCode1.StylePriority.UseFont = false;
-            this.xrBarCode1.StylePriority.UsePadding = false;
-            this.xrBarCode1.StylePriority.UseTextAlignment = false;
-            this.xrBarCode1.Symbology = qrCodeGenerator1;
-            this.xrBarCode1.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleJustify;
+            this.qrCode.AutoModule = true;
+            this.qrCode.Font = new System.Drawing.Font("Arial", 15.75F);
+            this.qrCode.LocationFloat = new DevExpress.Utils.PointFloat(374.0653F, 0F);
+            this.qrCode.Name = "qrCode";
+            this.qrCode.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F);
+            this.qrCode.SizeF = new System.Drawing.SizeF(123.2598F, 100F);
+            this.qrCode.StylePriority.UseFont = false;
+            this.qrCode.StylePriority.UsePadding = false;
+            this.qrCode.StylePriority.UseTextAlignment = false;
+            this.qrCode.Symbology = qrCodeGenerator1;
+            this.qrCode.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleJustify;
             // 
             // xrTable3
             // 
@@ -1327,6 +1327,6 @@ namespace ArgusCR1003.Remittance.RE36204
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell18;
         private DevExpress.XtraReports.UI.XRTableCell refNo_data;
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell20;
-        private DevExpress.XtraReports.UI.XRBarCode xrBarCode1;
+        private DevExpress.XtraReports.UI.XRBarCode qrCode;
     }
 }
