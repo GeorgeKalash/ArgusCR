@@ -12,7 +12,6 @@ namespace ArgusCR1003.Financials.FI31305
         {
             InitializeComponent();
         }
-
         protected override void OnBeforePrint(PrintEventArgs e)
         {
             SharedClasses.JsonProtocol.GetStructure<ArgusDS.Financials.Reports.FI102> webObject = deserializeGet<ArgusDS.Financials.Reports.FI102>();
@@ -30,7 +29,6 @@ namespace ArgusCR1003.Financials.FI31305
               recieptName_data.Text = webObject.record.header.accountRef;
             base.OnBeforePrint(e);
         }
-
         protected override void labelsText()
         {
         }

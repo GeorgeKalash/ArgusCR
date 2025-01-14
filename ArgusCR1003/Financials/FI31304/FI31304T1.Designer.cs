@@ -35,6 +35,9 @@ namespace ArgusCR1003.Financials.FI31304
             this.BottomMargin = new DevExpress.XtraReports.UI.BottomMarginBand();
             this.Detail = new DevExpress.XtraReports.UI.DetailBand();
             this.ReportHeader = new DevExpress.XtraReports.UI.ReportHeaderBand();
+            this.cashierSignature_data = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel6 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel5 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel4 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel7 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel8 = new DevExpress.XtraReports.UI.XRLabel();
@@ -97,9 +100,6 @@ namespace ArgusCR1003.Financials.FI31304
             this.xrTableCell26 = new DevExpress.XtraReports.UI.XRTableCell();
             this.branch_data = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTableCell27 = new DevExpress.XtraReports.UI.XRTableCell();
-            this.cashierSignature_data = new DevExpress.XtraReports.UI.XRLabel();
-            this.xrLabel6 = new DevExpress.XtraReports.UI.XRLabel();
-            this.xrLabel5 = new DevExpress.XtraReports.UI.XRLabel();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable1)).BeginInit();
@@ -108,7 +108,7 @@ namespace ArgusCR1003.Financials.FI31304
             // 
             // TopMargin
             // 
-            this.TopMargin.HeightF = 23F;
+            this.TopMargin.HeightF = 20F;
             this.TopMargin.Name = "TopMargin";
             // 
             // BottomMargin
@@ -142,7 +142,46 @@ namespace ArgusCR1003.Financials.FI31304
             this.qrCode,
             this.xrTable3});
             this.ReportHeader.HeightF = 484.0236F;
+            this.ReportHeader.KeepTogether = true;
             this.ReportHeader.Name = "ReportHeader";
+            // 
+            // cashierSignature_data
+            // 
+            this.cashierSignature_data.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold);
+            this.cashierSignature_data.ForeColor = System.Drawing.Color.Black;
+            this.cashierSignature_data.LocationFloat = new DevExpress.Utils.PointFloat(551.7537F, 390.4575F);
+            this.cashierSignature_data.Name = "cashierSignature_data";
+            this.cashierSignature_data.SizeF = new System.Drawing.SizeF(154.3105F, 24.17001F);
+            this.cashierSignature_data.StylePriority.UseFont = false;
+            this.cashierSignature_data.StylePriority.UseForeColor = false;
+            this.cashierSignature_data.StylePriority.UseTextAlignment = false;
+            this.cashierSignature_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            // 
+            // xrLabel6
+            // 
+            this.xrLabel6.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold);
+            this.xrLabel6.ForeColor = System.Drawing.Color.Black;
+            this.xrLabel6.LocationFloat = new DevExpress.Utils.PointFloat(706.0642F, 390.4574F);
+            this.xrLabel6.Name = "xrLabel6";
+            this.xrLabel6.SizeF = new System.Drawing.SizeF(89.97742F, 24.17001F);
+            this.xrLabel6.StylePriority.UseFont = false;
+            this.xrLabel6.StylePriority.UseForeColor = false;
+            this.xrLabel6.StylePriority.UseTextAlignment = false;
+            this.xrLabel6.Text = "توقیع الصراف";
+            this.xrLabel6.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
+            // 
+            // xrLabel5
+            // 
+            this.xrLabel5.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold);
+            this.xrLabel5.ForeColor = System.Drawing.Color.Black;
+            this.xrLabel5.LocationFloat = new DevExpress.Utils.PointFloat(424.0226F, 390.4575F);
+            this.xrLabel5.Name = "xrLabel5";
+            this.xrLabel5.SizeF = new System.Drawing.SizeF(127.7311F, 24.17001F);
+            this.xrLabel5.StylePriority.UseFont = false;
+            this.xrLabel5.StylePriority.UseForeColor = false;
+            this.xrLabel5.StylePriority.UseTextAlignment = false;
+            this.xrLabel5.Text = "Cashier Signature";
+            this.xrLabel5.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             // 
             // xrLabel4
             // 
@@ -980,7 +1019,7 @@ namespace ArgusCR1003.Financials.FI31304
             this.xrTableCell2.StylePriority.UseFont = false;
             this.xrTableCell2.StylePriority.UsePadding = false;
             this.xrTableCell2.StylePriority.UseTextAlignment = false;
-            this.xrTableCell2.Text = "Date";
+            this.xrTableCell2.Text = "Date:";
             this.xrTableCell2.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             this.xrTableCell2.Weight = 1.6767663358966847D;
             // 
@@ -1013,7 +1052,7 @@ namespace ArgusCR1003.Financials.FI31304
             this.xrTableCell11.StylePriority.UseFont = false;
             this.xrTableCell11.StylePriority.UsePadding = false;
             this.xrTableCell11.StylePriority.UseTextAlignment = false;
-            this.xrTableCell11.Text = "التاريخ";
+            this.xrTableCell11.Text = ":التاريخ";
             this.xrTableCell11.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
             this.xrTableCell11.Weight = 1.1734763514709128D;
             // 
@@ -1039,7 +1078,7 @@ namespace ArgusCR1003.Financials.FI31304
             this.xrTableCell18.StylePriority.UseFont = false;
             this.xrTableCell18.StylePriority.UsePadding = false;
             this.xrTableCell18.StylePriority.UseTextAlignment = false;
-            this.xrTableCell18.Text = "Ref No";
+            this.xrTableCell18.Text = "Ref No:";
             this.xrTableCell18.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             this.xrTableCell18.Weight = 1.6767659556148309D;
             // 
@@ -1072,7 +1111,7 @@ namespace ArgusCR1003.Financials.FI31304
             this.xrTableCell20.StylePriority.UseFont = false;
             this.xrTableCell20.StylePriority.UsePadding = false;
             this.xrTableCell20.StylePriority.UseTextAlignment = false;
-            this.xrTableCell20.Text = "رقم المرجع";
+            this.xrTableCell20.Text = ":رقم المرجع";
             this.xrTableCell20.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
             this.xrTableCell20.Weight = 1.1734772841448615D;
             // 
@@ -1098,7 +1137,7 @@ namespace ArgusCR1003.Financials.FI31304
             this.xrTableCell26.StylePriority.UseFont = false;
             this.xrTableCell26.StylePriority.UsePadding = false;
             this.xrTableCell26.StylePriority.UseTextAlignment = false;
-            this.xrTableCell26.Text = "Branch";
+            this.xrTableCell26.Text = "Branch:";
             this.xrTableCell26.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             this.xrTableCell26.Weight = 1.6767659553405316D;
             // 
@@ -1131,47 +1170,9 @@ namespace ArgusCR1003.Financials.FI31304
             this.xrTableCell27.StylePriority.UseFont = false;
             this.xrTableCell27.StylePriority.UsePadding = false;
             this.xrTableCell27.StylePriority.UseTextAlignment = false;
-            this.xrTableCell27.Text = "الفرع";
+            this.xrTableCell27.Text = ":الفرع";
             this.xrTableCell27.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
             this.xrTableCell27.Weight = 1.1734773843957944D;
-            // 
-            // cashierSignature_data
-            // 
-            this.cashierSignature_data.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold);
-            this.cashierSignature_data.ForeColor = System.Drawing.Color.Black;
-            this.cashierSignature_data.LocationFloat = new DevExpress.Utils.PointFloat(551.7537F, 390.4575F);
-            this.cashierSignature_data.Name = "cashierSignature_data";
-            this.cashierSignature_data.SizeF = new System.Drawing.SizeF(152.9844F, 24.17001F);
-            this.cashierSignature_data.StylePriority.UseFont = false;
-            this.cashierSignature_data.StylePriority.UseForeColor = false;
-            this.cashierSignature_data.StylePriority.UseTextAlignment = false;
-            this.cashierSignature_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
-            // 
-            // xrLabel6
-            // 
-            this.xrLabel6.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold);
-            this.xrLabel6.ForeColor = System.Drawing.Color.Black;
-            this.xrLabel6.LocationFloat = new DevExpress.Utils.PointFloat(706.0642F, 390.4574F);
-            this.xrLabel6.Name = "xrLabel6";
-            this.xrLabel6.SizeF = new System.Drawing.SizeF(89.97742F, 24.17001F);
-            this.xrLabel6.StylePriority.UseFont = false;
-            this.xrLabel6.StylePriority.UseForeColor = false;
-            this.xrLabel6.StylePriority.UseTextAlignment = false;
-            this.xrLabel6.Text = "توقیع الصراف";
-            this.xrLabel6.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
-            // 
-            // xrLabel5
-            // 
-            this.xrLabel5.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold);
-            this.xrLabel5.ForeColor = System.Drawing.Color.Black;
-            this.xrLabel5.LocationFloat = new DevExpress.Utils.PointFloat(424.0226F, 390.4575F);
-            this.xrLabel5.Name = "xrLabel5";
-            this.xrLabel5.SizeF = new System.Drawing.SizeF(127.7311F, 24.17001F);
-            this.xrLabel5.StylePriority.UseFont = false;
-            this.xrLabel5.StylePriority.UseForeColor = false;
-            this.xrLabel5.StylePriority.UseTextAlignment = false;
-            this.xrLabel5.Text = "Cashier Signature";
-            this.xrLabel5.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             // 
             // FI31304T1
             // 
@@ -1181,7 +1182,7 @@ namespace ArgusCR1003.Financials.FI31304
             this.Detail,
             this.ReportHeader});
             this.Font = new System.Drawing.Font("Arial", 9.75F);
-            this.Margins = new System.Drawing.Printing.Margins(0, 0, 23, 0);
+            this.Margins = new System.Drawing.Printing.Margins(0, 0, 20, 0);
             this.PageHeight = 1169;
             this.PageWidth = 827;
             this.PaperKind = System.Drawing.Printing.PaperKind.A4;
