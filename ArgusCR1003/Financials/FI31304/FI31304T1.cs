@@ -1,5 +1,4 @@
-﻿
-using DevExpress.XtraReports.UI;
+﻿using DevExpress.XtraReports.UI;
 using System;
 using System.Collections;
 using System.ComponentModel;
@@ -13,7 +12,6 @@ namespace ArgusCR1003.Remittance.RE36204
         {
             InitializeComponent();
         }
-
         protected override void OnBeforePrint(PrintEventArgs e)
         {
             SharedClasses.JsonProtocol.GetStructure<ArgusDS.Financials.ReceiptVoucherView> webObject = deserializeGet<ArgusDS.Financials.ReceiptVoucherView>();
@@ -26,13 +24,8 @@ namespace ArgusCR1003.Remittance.RE36204
             receivedFrom_data.Text = webObject.record.cashAccountName;
             date_data.Text = webObject.record.date.ToString("dd/MM/yyyy");
             
-            xrBarCode1.Text = webObject.record.reference; ;
+            qrCode.Text = webObject.record.reference; ;
             for_data.Text = webObject.record.accountName;
-
-
-
-
-
             base.OnBeforePrint(e);
         }
 
@@ -43,7 +36,5 @@ namespace ArgusCR1003.Remittance.RE36204
         {
             return "CR1003.FI31304T1";
         }
-
-
     }
 }
