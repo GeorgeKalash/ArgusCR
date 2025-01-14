@@ -49,6 +49,8 @@ namespace ArgusCR1010.Sales
             volume_data.Text = webObject.record.trxHeader.volume.ToString();
             poids_data.Text = webObject.record.trxHeader.weight.ToString();
 
+            description_data.Text = webObject.record.trxHeader.description;
+
             base.OnBeforePrint(e);
         }
         protected override void labelsText()
