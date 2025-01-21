@@ -89,6 +89,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CurrencyTrading\CT35401\CT35401T1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CurrencyTrading\CT35401\CT35401T1.Designer.cs">
+      <DependentUpon>CT35401T1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CurrencyTrading\CT35401\OperationSubReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CurrencyTrading\CT35401\OperationSubReport.Designer.cs">
+      <DependentUpon>OperationSubReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CurrencyTrading\CT35401\ReceiptsSubReports.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CurrencyTrading\CT35401\ReceiptsSubReports.Designer.cs">
+      <DependentUpon>ReceiptsSubReports.cs</DependentUpon>
+    </Compile>
     <Compile Include="Financials\FI31304\FI31304T1.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -123,6 +141,15 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <EmbeddedResource Include="CurrencyTrading\CT35401\CT35401T1.resx">
+      <DependentUpon>CT35401T1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CurrencyTrading\CT35401\OperationSubReport.resx">
+      <DependentUpon>OperationSubReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CurrencyTrading\CT35401\ReceiptsSubReports.resx">
+      <DependentUpon>ReceiptsSubReports.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Financials\FI31304\FI31304T1.resx">
       <DependentUpon>FI31304T1.cs</DependentUpon>
     </EmbeddedResource>
