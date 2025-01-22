@@ -35,7 +35,7 @@ namespace ArgusCR1003.CurrencyTrading.CT35401
 
         protected override string dictionaryStore()
         {
-            return "CR1003.CT35401";
+            return "CR1003.CT35401T1";
         }
     }
 }
