@@ -56,6 +56,7 @@ namespace ArgusCR1003.CurrencyTrading.CT35303
             this.country_data = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTableCell24 = new DevExpress.XtraReports.UI.XRTableCell();
             this.corCurrencyRef_data = new DevExpress.XtraReports.UI.XRTableCell();
+            this.corCurrencyName_data = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTableCell17 = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrPictureBox2 = new DevExpress.XtraReports.UI.XRPictureBox();
             this.xrTable3 = new DevExpress.XtraReports.UI.XRTable();
@@ -97,7 +98,6 @@ namespace ArgusCR1003.CurrencyTrading.CT35303
             this.xrTableCell22 = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTableCell21 = new DevExpress.XtraReports.UI.XRTableCell();
             this.PageHeader = new DevExpress.XtraReports.UI.PageHeaderBand();
-            this.corCurrencyName_data = new DevExpress.XtraReports.UI.XRTableCell();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable3)).BeginInit();
@@ -485,6 +485,24 @@ namespace ArgusCR1003.CurrencyTrading.CT35303
             this.corCurrencyRef_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             this.corCurrencyRef_data.Weight = 1.670643760315317D;
             // 
+            // corCurrencyName_data
+            // 
+            this.corCurrencyName_data.BackColor = System.Drawing.Color.White;
+            this.corCurrencyName_data.Borders = DevExpress.XtraPrinting.BorderSide.None;
+            this.corCurrencyName_data.BorderWidth = 1F;
+            this.corCurrencyName_data.Font = new System.Drawing.Font("Arial", 9F);
+            this.corCurrencyName_data.ForeColor = System.Drawing.Color.Black;
+            this.corCurrencyName_data.Multiline = true;
+            this.corCurrencyName_data.Name = "corCurrencyName_data";
+            this.corCurrencyName_data.StylePriority.UseBackColor = false;
+            this.corCurrencyName_data.StylePriority.UseBorders = false;
+            this.corCurrencyName_data.StylePriority.UseBorderWidth = false;
+            this.corCurrencyName_data.StylePriority.UseFont = false;
+            this.corCurrencyName_data.StylePriority.UseForeColor = false;
+            this.corCurrencyName_data.StylePriority.UseTextAlignment = false;
+            this.corCurrencyName_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            this.corCurrencyName_data.Weight = 1.670643760315317D;
+            // 
             // xrTableCell17
             // 
             this.xrTableCell17.BackColor = System.Drawing.Color.White;
@@ -545,7 +563,7 @@ namespace ArgusCR1003.CurrencyTrading.CT35303
             // 
             this.xrTableCell2.BackColor = System.Drawing.Color.Transparent;
             this.xrTableCell2.Borders = DevExpress.XtraPrinting.BorderSide.None;
-            this.xrTableCell2.Font = new System.Drawing.Font("Arial", 9F);
+            this.xrTableCell2.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.xrTableCell2.Multiline = true;
             this.xrTableCell2.Name = "xrTableCell2";
             this.xrTableCell2.Padding = new DevExpress.XtraPrinting.PaddingInfo(4, 2, 0, 0, 100F);
@@ -578,7 +596,7 @@ namespace ArgusCR1003.CurrencyTrading.CT35303
             // 
             this.xrTableCell11.BackColor = System.Drawing.Color.Transparent;
             this.xrTableCell11.Borders = DevExpress.XtraPrinting.BorderSide.None;
-            this.xrTableCell11.Font = new System.Drawing.Font("Arial", 9F);
+            this.xrTableCell11.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.xrTableCell11.Multiline = true;
             this.xrTableCell11.Name = "xrTableCell11";
             this.xrTableCell11.Padding = new DevExpress.XtraPrinting.PaddingInfo(4, 2, 0, 0, 100F);
@@ -604,7 +622,7 @@ namespace ArgusCR1003.CurrencyTrading.CT35303
             // 
             this.xrTableCell18.BackColor = System.Drawing.Color.Transparent;
             this.xrTableCell18.Borders = DevExpress.XtraPrinting.BorderSide.None;
-            this.xrTableCell18.Font = new System.Drawing.Font("Arial", 9F);
+            this.xrTableCell18.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.xrTableCell18.Multiline = true;
             this.xrTableCell18.Name = "xrTableCell18";
             this.xrTableCell18.Padding = new DevExpress.XtraPrinting.PaddingInfo(4, 2, 0, 0, 100F);
@@ -637,7 +655,7 @@ namespace ArgusCR1003.CurrencyTrading.CT35303
             // 
             this.xrTableCell20.BackColor = System.Drawing.Color.Transparent;
             this.xrTableCell20.Borders = DevExpress.XtraPrinting.BorderSide.None;
-            this.xrTableCell20.Font = new System.Drawing.Font("Arial", 9F);
+            this.xrTableCell20.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.xrTableCell20.Multiline = true;
             this.xrTableCell20.Name = "xrTableCell20";
             this.xrTableCell20.Padding = new DevExpress.XtraPrinting.PaddingInfo(4, 2, 0, 0, 100F);
@@ -663,7 +681,7 @@ namespace ArgusCR1003.CurrencyTrading.CT35303
             // 
             this.xrTableCell26.BackColor = System.Drawing.Color.Transparent;
             this.xrTableCell26.Borders = DevExpress.XtraPrinting.BorderSide.None;
-            this.xrTableCell26.Font = new System.Drawing.Font("Arial", 9F);
+            this.xrTableCell26.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.xrTableCell26.Multiline = true;
             this.xrTableCell26.Name = "xrTableCell26";
             this.xrTableCell26.Padding = new DevExpress.XtraPrinting.PaddingInfo(4, 2, 0, 0, 100F);
@@ -696,7 +714,7 @@ namespace ArgusCR1003.CurrencyTrading.CT35303
             // 
             this.xrTableCell27.BackColor = System.Drawing.Color.Transparent;
             this.xrTableCell27.Borders = DevExpress.XtraPrinting.BorderSide.None;
-            this.xrTableCell27.Font = new System.Drawing.Font("Arial", 9F);
+            this.xrTableCell27.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.xrTableCell27.Multiline = true;
             this.xrTableCell27.Name = "xrTableCell27";
             this.xrTableCell27.Padding = new DevExpress.XtraPrinting.PaddingInfo(4, 2, 0, 0, 100F);
@@ -725,11 +743,11 @@ namespace ArgusCR1003.CurrencyTrading.CT35303
             // QRCode
             // 
             this.QRCode.Alignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
-            this.QRCode.LocationFloat = new DevExpress.Utils.PointFloat(413.1901F, 0F);
+            this.QRCode.LocationFloat = new DevExpress.Utils.PointFloat(346.6014F, 0F);
             this.QRCode.Name = "QRCode";
             this.QRCode.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F);
             this.QRCode.ShowText = false;
-            this.QRCode.SizeF = new System.Drawing.SizeF(106.3257F, 91.97982F);
+            this.QRCode.SizeF = new System.Drawing.SizeF(189.4955F, 112.9582F);
             this.QRCode.StylePriority.UsePadding = false;
             this.QRCode.StylePriority.UseTextAlignment = false;
             qrCodeGenerator1.CompactionMode = DevExpress.XtraPrinting.BarCode.QRCodeCompactionMode.Byte;
@@ -1082,24 +1100,6 @@ namespace ArgusCR1003.CurrencyTrading.CT35303
             this.xrTable4});
             this.PageHeader.HeightF = 28.75F;
             this.PageHeader.Name = "PageHeader";
-            // 
-            // corCurrencyName_data
-            // 
-            this.corCurrencyName_data.BackColor = System.Drawing.Color.White;
-            this.corCurrencyName_data.Borders = DevExpress.XtraPrinting.BorderSide.None;
-            this.corCurrencyName_data.BorderWidth = 1F;
-            this.corCurrencyName_data.Font = new System.Drawing.Font("Arial", 9F);
-            this.corCurrencyName_data.ForeColor = System.Drawing.Color.Black;
-            this.corCurrencyName_data.Multiline = true;
-            this.corCurrencyName_data.Name = "corCurrencyName_data";
-            this.corCurrencyName_data.StylePriority.UseBackColor = false;
-            this.corCurrencyName_data.StylePriority.UseBorders = false;
-            this.corCurrencyName_data.StylePriority.UseBorderWidth = false;
-            this.corCurrencyName_data.StylePriority.UseFont = false;
-            this.corCurrencyName_data.StylePriority.UseForeColor = false;
-            this.corCurrencyName_data.StylePriority.UseTextAlignment = false;
-            this.corCurrencyName_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
-            this.corCurrencyName_data.Weight = 1.670643760315317D;
             // 
             // CT35303T2
             // 

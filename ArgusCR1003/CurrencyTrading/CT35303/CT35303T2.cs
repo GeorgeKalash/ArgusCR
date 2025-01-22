@@ -1,8 +1,4 @@
 ﻿using DevExpress.XtraReports.UI;
-using System;
-using System.Collections;
-using System.ComponentModel;
-using System.Drawing;
 using System.Drawing.Printing;
 
 namespace ArgusCR1003.CurrencyTrading.CT35303
@@ -27,8 +23,8 @@ namespace ArgusCR1003.CurrencyTrading.CT35303
 
             corNo_data.Text = webObject.record.header.corRef;
             corName_data.Text = webObject.record.header.corName;
-            //corCurrencyRef_data.Text = webObject.record.header.corCurrencyRef;
-            //corCurrencyName_data.Text = webObject.record.header.corCurrencyName;
+            corCurrencyRef_data.Text = webObject.record.header.corCurrencyRef;
+            corCurrencyName_data.Text = webObject.record.header.corCurrencyName;
             //country_data.Text = webObject.record.header.;
             //city_data.Text = webObject.record.header.;
 
