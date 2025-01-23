@@ -74,7 +74,7 @@ namespace ArgusCR1003.CurrencyTrading.CT35401
             this.xrTableCell22 = new DevExpress.XtraReports.UI.XRTableCell();
             this.numb_data = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTableCell25 = new DevExpress.XtraReports.UI.XRTableCell();
-            this.qrCode = new DevExpress.XtraReports.UI.XRBarCode();
+            this.QRCode = new DevExpress.XtraReports.UI.XRBarCode();
             this.xrPictureBox2 = new DevExpress.XtraReports.UI.XRPictureBox();
             this.PageFooter = new DevExpress.XtraReports.UI.PageFooterBand();
             this.xrTable10 = new DevExpress.XtraReports.UI.XRTable();
@@ -135,7 +135,7 @@ namespace ArgusCR1003.CurrencyTrading.CT35401
             this.ReportHeader.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
             this.xrTable1,
             this.xrTable14,
-            this.qrCode,
+            this.QRCode,
             this.xrPictureBox2});
             this.ReportHeader.HeightF = 288.5558F;
             this.ReportHeader.KeepTogether = true;
@@ -830,19 +830,19 @@ namespace ArgusCR1003.CurrencyTrading.CT35401
             this.xrTableCell25.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             this.xrTableCell25.Weight = 1.4494766300436681D;
             // 
-            // qrCode
+            // QRCode
             // 
-            this.qrCode.AutoModule = true;
-            this.qrCode.Font = new System.Drawing.Font("Arial", 15.75F);
-            this.qrCode.LocationFloat = new DevExpress.Utils.PointFloat(25.6734F, 0F);
-            this.qrCode.Name = "qrCode";
-            this.qrCode.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F);
-            this.qrCode.SizeF = new System.Drawing.SizeF(123.2598F, 100F);
-            this.qrCode.StylePriority.UseFont = false;
-            this.qrCode.StylePriority.UsePadding = false;
-            this.qrCode.StylePriority.UseTextAlignment = false;
-            this.qrCode.Symbology = qrCodeGenerator1;
-            this.qrCode.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleJustify;
+            this.QRCode.AutoModule = true;
+            this.QRCode.Font = new System.Drawing.Font("Arial", 15.75F);
+            this.QRCode.LocationFloat = new DevExpress.Utils.PointFloat(25.6734F, 0F);
+            this.QRCode.Name = "QRCode";
+            this.QRCode.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F);
+            this.QRCode.SizeF = new System.Drawing.SizeF(123.2598F, 100F);
+            this.QRCode.StylePriority.UseFont = false;
+            this.QRCode.StylePriority.UsePadding = false;
+            this.QRCode.StylePriority.UseTextAlignment = false;
+            this.QRCode.Symbology = qrCodeGenerator1;
+            this.QRCode.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleJustify;
             // 
             // xrPictureBox2
             // 
@@ -959,7 +959,7 @@ namespace ArgusCR1003.CurrencyTrading.CT35401
         private DevExpress.XtraReports.UI.DetailBand Detail;
         private DevExpress.XtraReports.UI.ReportHeaderBand ReportHeader;
         private DevExpress.XtraReports.UI.XRPictureBox xrPictureBox2;
-        private DevExpress.XtraReports.UI.XRBarCode qrCode;
+        private DevExpress.XtraReports.UI.XRBarCode QRCode;
         private DevExpress.XtraReports.UI.XRTable xrTable14;
         private DevExpress.XtraReports.UI.XRTableRow xrTableRow3;
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell7;
