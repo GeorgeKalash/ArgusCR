@@ -82,13 +82,13 @@ namespace ArgusCR1003.CurrencyTrading.CT35401
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTable7.BorderWidth = 1F;
             this.xrTable7.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.xrTable7.LocationFloat = new DevExpress.Utils.PointFloat(3.859985F, 0F);
+            this.xrTable7.LocationFloat = new DevExpress.Utils.PointFloat(1.502037E-05F, 0F);
             this.xrTable7.Name = "xrTable7";
             this.xrTable7.OddStyleName = "xrControlStyle1";
             this.xrTable7.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable7.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow22});
-            this.xrTable7.SizeF = new System.Drawing.SizeF(533.14F, 23.13F);
+            this.xrTable7.SizeF = new System.Drawing.SizeF(533.1426F, 23.13F);
             this.xrTable7.StylePriority.UseBorders = false;
             this.xrTable7.StylePriority.UseBorderWidth = false;
             this.xrTable7.StylePriority.UseFont = false;
@@ -123,7 +123,7 @@ namespace ArgusCR1003.CurrencyTrading.CT35401
             this.sku_data.StylePriority.UseTextAlignment = false;
             this.sku_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
             this.sku_data.TextFormatString = "{0:n2}";
-            this.sku_data.Weight = 1.2092419992496033D;
+            this.sku_data.Weight = 1.240529972577177D;
             // 
             // itemName_data
             // 
@@ -185,7 +185,7 @@ namespace ArgusCR1003.CurrencyTrading.CT35401
             this.xrTableCell40.StylePriority.UsePadding = false;
             this.xrTableCell40.StylePriority.UseTextAlignment = false;
             this.xrTableCell40.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
-            this.xrTableCell40.Weight = 1.1235277478704335D;
+            this.xrTableCell40.Weight = 1.092260429772774D;
             // 
             // PageHeader
             // 
@@ -200,12 +200,12 @@ namespace ArgusCR1003.CurrencyTrading.CT35401
             | DevExpress.XtraPrinting.BorderSide.Right)));
             this.xrTable6.BorderWidth = 0.5F;
             this.xrTable6.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.xrTable6.LocationFloat = new DevExpress.Utils.PointFloat(3.859985F, 0F);
+            this.xrTable6.LocationFloat = new DevExpress.Utils.PointFloat(0F, 0F);
             this.xrTable6.Name = "xrTable6";
             this.xrTable6.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable6.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow12});
-            this.xrTable6.SizeF = new System.Drawing.SizeF(533.14F, 34.37F);
+            this.xrTable6.SizeF = new System.Drawing.SizeF(533.1426F, 34.37F);
             this.xrTable6.StylePriority.UseBorders = false;
             this.xrTable6.StylePriority.UseBorderWidth = false;
             this.xrTable6.StylePriority.UseFont = false;
@@ -240,7 +240,7 @@ namespace ArgusCR1003.CurrencyTrading.CT35401
             this.xrTableCell41.StylePriority.UseTextAlignment = false;
             this.xrTableCell41.Text = "اﻟﻘﯾﻣﺔ\r\nTotal";
             this.xrTableCell41.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
-            this.xrTableCell41.Weight = 1.8761861597891634D;
+            this.xrTableCell41.Weight = 1.92473086750171D;
             // 
             // subtotal_lbl
             // 
@@ -292,7 +292,7 @@ namespace ArgusCR1003.CurrencyTrading.CT35401
             this.extendedPrice_lbl.StylePriority.UseTextAlignment = false;
             this.extendedPrice_lbl.Text = "اﻟﻌﻣﻠﺔ\r\nCurr.";
             this.extendedPrice_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
-            this.extendedPrice_lbl.Weight = 1.7271279423471391D;
+            this.extendedPrice_lbl.Weight = 1.678615473933222D;
             // 
             // ReportFooter
             // 
@@ -307,12 +307,12 @@ namespace ArgusCR1003.CurrencyTrading.CT35401
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTable3.BorderWidth = 0.5F;
             this.xrTable3.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.xrTable3.LocationFloat = new DevExpress.Utils.PointFloat(3.859985F, 0F);
+            this.xrTable3.LocationFloat = new DevExpress.Utils.PointFloat(1.502037E-05F, 0F);
             this.xrTable3.Name = "xrTable3";
             this.xrTable3.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable3.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow11});
-            this.xrTable3.SizeF = new System.Drawing.SizeF(533.14F, 28.54F);
+            this.xrTable3.SizeF = new System.Drawing.SizeF(533.1426F, 28.54F);
             this.xrTable3.StylePriority.UseBorders = false;
             this.xrTable3.StylePriority.UseBorderWidth = false;
             this.xrTable3.StylePriority.UseFont = false;
@@ -346,7 +346,7 @@ namespace ArgusCR1003.CurrencyTrading.CT35401
             this.xrTableCell48.Summary = xrSummary1;
             this.xrTableCell48.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
             this.xrTableCell48.TextFormatString = "{0:n2}";
-            this.xrTableCell48.Weight = 1.2678117429827009D;
+            this.xrTableCell48.Weight = 1.3006151467782092D;
             this.xrTableCell48.WordWrap = false;
             // 
             // xrTableCell43
@@ -365,7 +365,7 @@ namespace ArgusCR1003.CurrencyTrading.CT35401
             this.xrTableCell43.StylePriority.UsePadding = false;
             this.xrTableCell43.StylePriority.UseTextAlignment = false;
             this.xrTableCell43.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
-            this.xrTableCell43.Weight = 3.2630024238933872D;
+            this.xrTableCell43.Weight = 3.2302206757621903D;
             // 
             // xrControlStyle1
             // 

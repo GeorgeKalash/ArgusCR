@@ -73,12 +73,12 @@ namespace ArgusCR1003.CurrencyTrading.CT35401
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTable7.BorderWidth = 0.5F;
             this.xrTable7.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.xrTable7.LocationFloat = new DevExpress.Utils.PointFloat(3.857483F, 0F);
+            this.xrTable7.LocationFloat = new DevExpress.Utils.PointFloat(0F, 0F);
             this.xrTable7.Name = "xrTable7";
             this.xrTable7.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable7.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow22});
-            this.xrTable7.SizeF = new System.Drawing.SizeF(533.1425F, 23.12514F);
+            this.xrTable7.SizeF = new System.Drawing.SizeF(533.1426F, 23.12514F);
             this.xrTable7.StylePriority.UseBorders = false;
             this.xrTable7.StylePriority.UseBorderWidth = false;
             this.xrTable7.StylePriority.UseFont = false;
@@ -108,7 +108,7 @@ namespace ArgusCR1003.CurrencyTrading.CT35401
             this.sku_data.StylePriority.UseTextAlignment = false;
             this.sku_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
             this.sku_data.TextFormatString = "{0:n2}";
-            this.sku_data.Weight = 1.3369661181936017D;
+            this.sku_data.Weight = 1.368381310058689D;
             // 
             // itemName_data
             // 
@@ -158,7 +158,7 @@ namespace ArgusCR1003.CurrencyTrading.CT35401
             this.xrTableCell40.StylePriority.UsePadding = false;
             this.xrTableCell40.StylePriority.UseTextAlignment = false;
             this.xrTableCell40.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
-            this.xrTableCell40.Weight = 0.999210419781996D;
+            this.xrTableCell40.Weight = 0.96779584835675425D;
             // 
             // PageHeader
             // 
@@ -173,12 +173,12 @@ namespace ArgusCR1003.CurrencyTrading.CT35401
             | DevExpress.XtraPrinting.BorderSide.Right)));
             this.xrTable6.BorderWidth = 0.5F;
             this.xrTable6.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.xrTable6.LocationFloat = new DevExpress.Utils.PointFloat(3.85718F, 0F);
+            this.xrTable6.LocationFloat = new DevExpress.Utils.PointFloat(2.384186E-06F, 0F);
             this.xrTable6.Name = "xrTable6";
             this.xrTable6.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable6.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow12});
-            this.xrTable6.SizeF = new System.Drawing.SizeF(533.1428F, 28.74962F);
+            this.xrTable6.SizeF = new System.Drawing.SizeF(533.1426F, 28.74962F);
             this.xrTable6.StylePriority.UseBorders = false;
             this.xrTable6.StylePriority.UseBorderWidth = false;
             this.xrTable6.StylePriority.UseFont = false;
@@ -212,7 +212,7 @@ namespace ArgusCR1003.CurrencyTrading.CT35401
             this.xrTableCell41.StylePriority.UseTextAlignment = false;
             this.xrTableCell41.Text = "اﻟﻣﺑﻠﻎ \r\nAmount";
             this.xrTableCell41.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
-            this.xrTableCell41.Weight = 2.0100522179400384D;
+            this.xrTableCell41.Weight = 2.0572792382096843D;
             // 
             // subtotal_lbl
             // 
@@ -263,7 +263,7 @@ namespace ArgusCR1003.CurrencyTrading.CT35401
             this.extendedPrice_lbl.StylePriority.UseTextAlignment = false;
             this.extendedPrice_lbl.Text = "طرﯾﻘﺔ اﻟدﻓﻊ\r\nPayment Mode";
             this.extendedPrice_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
-            this.extendedPrice_lbl.Weight = 1.50225740613283D;
+            this.extendedPrice_lbl.Weight = 1.4550273966220759D;
             // 
             // ReceiptsSubReports
             // 
