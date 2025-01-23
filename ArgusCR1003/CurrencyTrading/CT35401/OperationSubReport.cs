@@ -9,7 +9,7 @@ namespace ArgusCR1003.CurrencyTrading.CT35401
 {
     public partial class OperationSubReport : ArgusRPT.BaseReport
     {
-        public List<ArgusCT_DS.Trading.CashInvoiceCurrencyView> data;
+        public List<ArgusCT_DS.Trading.Report.CT101c> data;
 
         public OperationSubReport()
         {
