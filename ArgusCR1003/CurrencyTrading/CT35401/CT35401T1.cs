@@ -23,7 +23,7 @@ namespace ArgusCR1003.CurrencyTrading.CT35401
         {
             SharedClasses.JsonProtocol.GetStructure<ArgusCT_DS.Trading.Report.CT101> webObject = deserializeGet<ArgusCT_DS.Trading.Report.CT101>();
 
-            date_data.Text = webObject.record.header.date.ToString("dd/MM/yyyy"); ;
+            date_data.Text = webObject.record.header.date.ToString("dd/MM/yyyy");
             type_data.Text = webObject.record.header.functionName;
 
             cashier_data.Text = webObject.record.header.cashAccountRef;
@@ -33,10 +33,10 @@ namespace ArgusCR1003.CurrencyTrading.CT35401
             name_data.Text = webObject.record.header.clientName;
             id_data.Text = webObject.record.header.idNo;
 
-            //QRCode.Text = new KycQrCode(webObject.record.header.reference)?.ToBase64();
+            QRCode.Text = new KycQrCode(webObject.record.header.reference)?.ToBase64();
 
-            ((OperationSubReport)(OperationSubReports.ReportSource)).data = webObject.record.items;
-            ((ReceiptsSubReports)(ReceiptsSubReports.ReportSource)).data = webObject.record.receipts;
+            ((OperationSubReport)(OperationSubReports.ReportSource)).data = webObject.record?.items;
+            ((ReceiptsSubReports)(ReceiptsSubReports.ReportSource)).data = webObject.record?.receipts;
 
             base.OnBeforePrint(e);
         }
