@@ -115,7 +115,6 @@ namespace ArgusCR1003.CurrencyTrading.CT35401
             // 
             this.OperationSubReports.LocationFloat = new DevExpress.Utils.PointFloat(25.67328F, 0F);
             this.OperationSubReports.Name = "OperationSubReports";
-            this.OperationSubReports.ReportSource = new ArgusCR1003.CurrencyTrading.CT35401.OperationSubReport();
             this.OperationSubReports.SizeF = new System.Drawing.SizeF(533.1426F, 23F);
             // 
             // ReceiptsSubBand
@@ -129,7 +128,6 @@ namespace ArgusCR1003.CurrencyTrading.CT35401
             // 
             this.ReceiptsSubReports.LocationFloat = new DevExpress.Utils.PointFloat(25.67328F, 0F);
             this.ReceiptsSubReports.Name = "ReceiptsSubReports";
-            this.ReceiptsSubReports.ReportSource = new ArgusCR1003.CurrencyTrading.CT35401.ReceiptsSubReports();
             this.ReceiptsSubReports.SizeF = new System.Drawing.SizeF(533.1426F, 23F);
             // 
             // ReportHeader
@@ -179,6 +177,7 @@ namespace ArgusCR1003.CurrencyTrading.CT35401
             // 
             this.xrTableCell24.BackColor = System.Drawing.Color.White;
             this.xrTableCell24.Borders = ((DevExpress.XtraPrinting.BorderSide)((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top)));
+            this.xrTableCell24.BorderWidth = 0.5F;
             this.xrTableCell24.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.xrTableCell24.ForeColor = System.Drawing.Color.Black;
             this.xrTableCell24.Multiline = true;
@@ -186,6 +185,7 @@ namespace ArgusCR1003.CurrencyTrading.CT35401
             this.xrTableCell24.Padding = new DevExpress.XtraPrinting.PaddingInfo(4, 2, 0, 0, 100F);
             this.xrTableCell24.StylePriority.UseBackColor = false;
             this.xrTableCell24.StylePriority.UseBorders = false;
+            this.xrTableCell24.StylePriority.UseBorderWidth = false;
             this.xrTableCell24.StylePriority.UseFont = false;
             this.xrTableCell24.StylePriority.UseForeColor = false;
             this.xrTableCell24.StylePriority.UsePadding = false;
@@ -198,12 +198,14 @@ namespace ArgusCR1003.CurrencyTrading.CT35401
             // 
             this.name_data.BackColor = System.Drawing.Color.White;
             this.name_data.Borders = DevExpress.XtraPrinting.BorderSide.Top;
+            this.name_data.BorderWidth = 0.5F;
             this.name_data.Font = new System.Drawing.Font("Arial", 9F);
             this.name_data.Multiline = true;
             this.name_data.Name = "name_data";
             this.name_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(4, 2, 0, 0, 100F);
             this.name_data.StylePriority.UseBackColor = false;
             this.name_data.StylePriority.UseBorders = false;
+            this.name_data.StylePriority.UseBorderWidth = false;
             this.name_data.StylePriority.UseFont = false;
             this.name_data.StylePriority.UsePadding = false;
             this.name_data.StylePriority.UseTextAlignment = false;
@@ -214,6 +216,7 @@ namespace ArgusCR1003.CurrencyTrading.CT35401
             // 
             this.xrTableCell27.BackColor = System.Drawing.Color.White;
             this.xrTableCell27.Borders = ((DevExpress.XtraPrinting.BorderSide)((DevExpress.XtraPrinting.BorderSide.Top | DevExpress.XtraPrinting.BorderSide.Right)));
+            this.xrTableCell27.BorderWidth = 0.5F;
             this.xrTableCell27.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.xrTableCell27.ForeColor = System.Drawing.Color.Black;
             this.xrTableCell27.Multiline = true;
@@ -221,6 +224,7 @@ namespace ArgusCR1003.CurrencyTrading.CT35401
             this.xrTableCell27.Padding = new DevExpress.XtraPrinting.PaddingInfo(4, 2, 0, 0, 100F);
             this.xrTableCell27.StylePriority.UseBackColor = false;
             this.xrTableCell27.StylePriority.UseBorders = false;
+            this.xrTableCell27.StylePriority.UseBorderWidth = false;
             this.xrTableCell27.StylePriority.UseFont = false;
             this.xrTableCell27.StylePriority.UseForeColor = false;
             this.xrTableCell27.StylePriority.UsePadding = false;
@@ -242,6 +246,7 @@ namespace ArgusCR1003.CurrencyTrading.CT35401
             // 
             this.xrTableCell1.BackColor = System.Drawing.Color.White;
             this.xrTableCell1.Borders = DevExpress.XtraPrinting.BorderSide.Left;
+            this.xrTableCell1.BorderWidth = 0.5F;
             this.xrTableCell1.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.xrTableCell1.ForeColor = System.Drawing.Color.Black;
             this.xrTableCell1.Multiline = true;
@@ -249,6 +254,7 @@ namespace ArgusCR1003.CurrencyTrading.CT35401
             this.xrTableCell1.Padding = new DevExpress.XtraPrinting.PaddingInfo(4, 2, 0, 0, 100F);
             this.xrTableCell1.StylePriority.UseBackColor = false;
             this.xrTableCell1.StylePriority.UseBorders = false;
+            this.xrTableCell1.StylePriority.UseBorderWidth = false;
             this.xrTableCell1.StylePriority.UseFont = false;
             this.xrTableCell1.StylePriority.UseForeColor = false;
             this.xrTableCell1.StylePriority.UsePadding = false;
@@ -261,12 +267,14 @@ namespace ArgusCR1003.CurrencyTrading.CT35401
             // 
             this.nationality_data.BackColor = System.Drawing.Color.White;
             this.nationality_data.Borders = DevExpress.XtraPrinting.BorderSide.None;
+            this.nationality_data.BorderWidth = 0.5F;
             this.nationality_data.Font = new System.Drawing.Font("Arial", 9F);
             this.nationality_data.Multiline = true;
             this.nationality_data.Name = "nationality_data";
             this.nationality_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(4, 2, 0, 0, 100F);
             this.nationality_data.StylePriority.UseBackColor = false;
             this.nationality_data.StylePriority.UseBorders = false;
+            this.nationality_data.StylePriority.UseBorderWidth = false;
             this.nationality_data.StylePriority.UseFont = false;
             this.nationality_data.StylePriority.UsePadding = false;
             this.nationality_data.StylePriority.UseTextAlignment = false;
@@ -277,6 +285,7 @@ namespace ArgusCR1003.CurrencyTrading.CT35401
             // 
             this.xrTableCell6.BackColor = System.Drawing.Color.White;
             this.xrTableCell6.Borders = DevExpress.XtraPrinting.BorderSide.Right;
+            this.xrTableCell6.BorderWidth = 0.5F;
             this.xrTableCell6.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.xrTableCell6.ForeColor = System.Drawing.Color.Black;
             this.xrTableCell6.Multiline = true;
@@ -284,6 +293,7 @@ namespace ArgusCR1003.CurrencyTrading.CT35401
             this.xrTableCell6.Padding = new DevExpress.XtraPrinting.PaddingInfo(4, 2, 0, 0, 100F);
             this.xrTableCell6.StylePriority.UseBackColor = false;
             this.xrTableCell6.StylePriority.UseBorders = false;
+            this.xrTableCell6.StylePriority.UseBorderWidth = false;
             this.xrTableCell6.StylePriority.UseFont = false;
             this.xrTableCell6.StylePriority.UseForeColor = false;
             this.xrTableCell6.StylePriority.UsePadding = false;
@@ -305,6 +315,7 @@ namespace ArgusCR1003.CurrencyTrading.CT35401
             // 
             this.xrTableCell8.BackColor = System.Drawing.Color.White;
             this.xrTableCell8.Borders = ((DevExpress.XtraPrinting.BorderSide)((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.xrTableCell8.BorderWidth = 0.5F;
             this.xrTableCell8.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.xrTableCell8.ForeColor = System.Drawing.Color.Black;
             this.xrTableCell8.Multiline = true;
@@ -312,6 +323,7 @@ namespace ArgusCR1003.CurrencyTrading.CT35401
             this.xrTableCell8.Padding = new DevExpress.XtraPrinting.PaddingInfo(4, 2, 0, 0, 100F);
             this.xrTableCell8.StylePriority.UseBackColor = false;
             this.xrTableCell8.StylePriority.UseBorders = false;
+            this.xrTableCell8.StylePriority.UseBorderWidth = false;
             this.xrTableCell8.StylePriority.UseFont = false;
             this.xrTableCell8.StylePriority.UseForeColor = false;
             this.xrTableCell8.StylePriority.UsePadding = false;
@@ -324,12 +336,14 @@ namespace ArgusCR1003.CurrencyTrading.CT35401
             // 
             this.id_data.BackColor = System.Drawing.Color.White;
             this.id_data.Borders = DevExpress.XtraPrinting.BorderSide.Bottom;
+            this.id_data.BorderWidth = 0.5F;
             this.id_data.Font = new System.Drawing.Font("Arial", 9F);
             this.id_data.Multiline = true;
             this.id_data.Name = "id_data";
             this.id_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(4, 2, 0, 0, 100F);
             this.id_data.StylePriority.UseBackColor = false;
             this.id_data.StylePriority.UseBorders = false;
+            this.id_data.StylePriority.UseBorderWidth = false;
             this.id_data.StylePriority.UseFont = false;
             this.id_data.StylePriority.UsePadding = false;
             this.id_data.StylePriority.UseTextAlignment = false;
@@ -340,6 +354,7 @@ namespace ArgusCR1003.CurrencyTrading.CT35401
             // 
             this.xrTableCell14.BackColor = System.Drawing.Color.White;
             this.xrTableCell14.Borders = ((DevExpress.XtraPrinting.BorderSide)((DevExpress.XtraPrinting.BorderSide.Right | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.xrTableCell14.BorderWidth = 0.5F;
             this.xrTableCell14.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.xrTableCell14.ForeColor = System.Drawing.Color.Black;
             this.xrTableCell14.Multiline = true;
@@ -347,6 +362,7 @@ namespace ArgusCR1003.CurrencyTrading.CT35401
             this.xrTableCell14.Padding = new DevExpress.XtraPrinting.PaddingInfo(4, 2, 0, 0, 100F);
             this.xrTableCell14.StylePriority.UseBackColor = false;
             this.xrTableCell14.StylePriority.UseBorders = false;
+            this.xrTableCell14.StylePriority.UseBorderWidth = false;
             this.xrTableCell14.StylePriority.UseFont = false;
             this.xrTableCell14.StylePriority.UseForeColor = false;
             this.xrTableCell14.StylePriority.UsePadding = false;
@@ -393,7 +409,7 @@ namespace ArgusCR1003.CurrencyTrading.CT35401
             this.xrTableCell3.BackColor = System.Drawing.Color.White;
             this.xrTableCell3.BorderColor = System.Drawing.Color.Black;
             this.xrTableCell3.Borders = ((DevExpress.XtraPrinting.BorderSide)((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top)));
-            this.xrTableCell3.BorderWidth = 3F;
+            this.xrTableCell3.BorderWidth = 0.5F;
             this.xrTableCell3.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.xrTableCell3.ForeColor = System.Drawing.Color.Black;
             this.xrTableCell3.Multiline = true;
@@ -416,7 +432,7 @@ namespace ArgusCR1003.CurrencyTrading.CT35401
             this.cashier_data.BackColor = System.Drawing.Color.White;
             this.cashier_data.BorderColor = System.Drawing.Color.Black;
             this.cashier_data.Borders = DevExpress.XtraPrinting.BorderSide.Top;
-            this.cashier_data.BorderWidth = 3F;
+            this.cashier_data.BorderWidth = 0.5F;
             this.cashier_data.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold);
             this.cashier_data.ForeColor = System.Drawing.Color.Black;
             this.cashier_data.Multiline = true;
@@ -438,7 +454,7 @@ namespace ArgusCR1003.CurrencyTrading.CT35401
             this.xrTableCell18.BackColor = System.Drawing.Color.White;
             this.xrTableCell18.BorderColor = System.Drawing.Color.Black;
             this.xrTableCell18.Borders = DevExpress.XtraPrinting.BorderSide.Top;
-            this.xrTableCell18.BorderWidth = 3F;
+            this.xrTableCell18.BorderWidth = 0.5F;
             this.xrTableCell18.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.xrTableCell18.ForeColor = System.Drawing.Color.Black;
             this.xrTableCell18.Multiline = true;
@@ -461,7 +477,7 @@ namespace ArgusCR1003.CurrencyTrading.CT35401
             this.xrTableCell7.BackColor = System.Drawing.Color.White;
             this.xrTableCell7.BorderColor = System.Drawing.Color.Black;
             this.xrTableCell7.Borders = DevExpress.XtraPrinting.BorderSide.Top;
-            this.xrTableCell7.BorderWidth = 3F;
+            this.xrTableCell7.BorderWidth = 0.5F;
             this.xrTableCell7.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.xrTableCell7.ForeColor = System.Drawing.Color.Black;
             this.xrTableCell7.Multiline = true;
@@ -484,7 +500,7 @@ namespace ArgusCR1003.CurrencyTrading.CT35401
             this.type_data.BackColor = System.Drawing.Color.White;
             this.type_data.BorderColor = System.Drawing.Color.Black;
             this.type_data.Borders = DevExpress.XtraPrinting.BorderSide.Top;
-            this.type_data.BorderWidth = 3F;
+            this.type_data.BorderWidth = 0.5F;
             this.type_data.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.type_data.Multiline = true;
             this.type_data.Name = "type_data";
@@ -504,7 +520,7 @@ namespace ArgusCR1003.CurrencyTrading.CT35401
             this.xrTableCell10.BackColor = System.Drawing.Color.White;
             this.xrTableCell10.BorderColor = System.Drawing.Color.Black;
             this.xrTableCell10.Borders = ((DevExpress.XtraPrinting.BorderSide)((DevExpress.XtraPrinting.BorderSide.Top | DevExpress.XtraPrinting.BorderSide.Right)));
-            this.xrTableCell10.BorderWidth = 3F;
+            this.xrTableCell10.BorderWidth = 0.5F;
             this.xrTableCell10.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.xrTableCell10.ForeColor = System.Drawing.Color.Black;
             this.xrTableCell10.Multiline = true;
@@ -539,7 +555,7 @@ namespace ArgusCR1003.CurrencyTrading.CT35401
             this.xrTableCell4.BackColor = System.Drawing.Color.White;
             this.xrTableCell4.BorderColor = System.Drawing.Color.Black;
             this.xrTableCell4.Borders = DevExpress.XtraPrinting.BorderSide.Left;
-            this.xrTableCell4.BorderWidth = 3F;
+            this.xrTableCell4.BorderWidth = 0.5F;
             this.xrTableCell4.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.xrTableCell4.ForeColor = System.Drawing.Color.Black;
             this.xrTableCell4.Multiline = true;
@@ -562,7 +578,7 @@ namespace ArgusCR1003.CurrencyTrading.CT35401
             this.time_data.BackColor = System.Drawing.Color.White;
             this.time_data.BorderColor = System.Drawing.Color.Black;
             this.time_data.Borders = DevExpress.XtraPrinting.BorderSide.None;
-            this.time_data.BorderWidth = 3F;
+            this.time_data.BorderWidth = 0.5F;
             this.time_data.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold);
             this.time_data.ForeColor = System.Drawing.Color.Black;
             this.time_data.Multiline = true;
@@ -584,7 +600,7 @@ namespace ArgusCR1003.CurrencyTrading.CT35401
             this.xrTableCell19.BackColor = System.Drawing.Color.White;
             this.xrTableCell19.BorderColor = System.Drawing.Color.Black;
             this.xrTableCell19.Borders = DevExpress.XtraPrinting.BorderSide.None;
-            this.xrTableCell19.BorderWidth = 3F;
+            this.xrTableCell19.BorderWidth = 0.5F;
             this.xrTableCell19.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.xrTableCell19.ForeColor = System.Drawing.Color.Black;
             this.xrTableCell19.Multiline = true;
@@ -607,7 +623,7 @@ namespace ArgusCR1003.CurrencyTrading.CT35401
             this.xrTableCell16.BackColor = System.Drawing.Color.White;
             this.xrTableCell16.BorderColor = System.Drawing.Color.Black;
             this.xrTableCell16.Borders = DevExpress.XtraPrinting.BorderSide.None;
-            this.xrTableCell16.BorderWidth = 3F;
+            this.xrTableCell16.BorderWidth = 0.5F;
             this.xrTableCell16.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.xrTableCell16.ForeColor = System.Drawing.Color.Black;
             this.xrTableCell16.Multiline = true;
@@ -630,7 +646,7 @@ namespace ArgusCR1003.CurrencyTrading.CT35401
             this.date_data.BackColor = System.Drawing.Color.White;
             this.date_data.BorderColor = System.Drawing.Color.Black;
             this.date_data.Borders = DevExpress.XtraPrinting.BorderSide.None;
-            this.date_data.BorderWidth = 3F;
+            this.date_data.BorderWidth = 0.5F;
             this.date_data.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.date_data.Multiline = true;
             this.date_data.Name = "date_data";
@@ -650,7 +666,7 @@ namespace ArgusCR1003.CurrencyTrading.CT35401
             this.xrTableCell21.BackColor = System.Drawing.Color.White;
             this.xrTableCell21.BorderColor = System.Drawing.Color.Black;
             this.xrTableCell21.Borders = DevExpress.XtraPrinting.BorderSide.Right;
-            this.xrTableCell21.BorderWidth = 3F;
+            this.xrTableCell21.BorderWidth = 0.5F;
             this.xrTableCell21.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.xrTableCell21.ForeColor = System.Drawing.Color.Black;
             this.xrTableCell21.Multiline = true;
@@ -685,7 +701,7 @@ namespace ArgusCR1003.CurrencyTrading.CT35401
             this.xrTableCell5.BackColor = System.Drawing.Color.White;
             this.xrTableCell5.BorderColor = System.Drawing.Color.Black;
             this.xrTableCell5.Borders = ((DevExpress.XtraPrinting.BorderSide)((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Bottom)));
-            this.xrTableCell5.BorderWidth = 3F;
+            this.xrTableCell5.BorderWidth = 0.5F;
             this.xrTableCell5.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.xrTableCell5.ForeColor = System.Drawing.Color.Black;
             this.xrTableCell5.Multiline = true;
@@ -708,7 +724,7 @@ namespace ArgusCR1003.CurrencyTrading.CT35401
             this.branch_data.BackColor = System.Drawing.Color.White;
             this.branch_data.BorderColor = System.Drawing.Color.Black;
             this.branch_data.Borders = DevExpress.XtraPrinting.BorderSide.Bottom;
-            this.branch_data.BorderWidth = 3F;
+            this.branch_data.BorderWidth = 0.5F;
             this.branch_data.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold);
             this.branch_data.ForeColor = System.Drawing.Color.Black;
             this.branch_data.Multiline = true;
@@ -730,7 +746,7 @@ namespace ArgusCR1003.CurrencyTrading.CT35401
             this.xrTableCell20.BackColor = System.Drawing.Color.White;
             this.xrTableCell20.BorderColor = System.Drawing.Color.Black;
             this.xrTableCell20.Borders = DevExpress.XtraPrinting.BorderSide.Bottom;
-            this.xrTableCell20.BorderWidth = 3F;
+            this.xrTableCell20.BorderWidth = 0.5F;
             this.xrTableCell20.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.xrTableCell20.ForeColor = System.Drawing.Color.Black;
             this.xrTableCell20.Multiline = true;
@@ -753,7 +769,7 @@ namespace ArgusCR1003.CurrencyTrading.CT35401
             this.xrTableCell22.BackColor = System.Drawing.Color.White;
             this.xrTableCell22.BorderColor = System.Drawing.Color.Black;
             this.xrTableCell22.Borders = DevExpress.XtraPrinting.BorderSide.Bottom;
-            this.xrTableCell22.BorderWidth = 3F;
+            this.xrTableCell22.BorderWidth = 0.5F;
             this.xrTableCell22.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.xrTableCell22.ForeColor = System.Drawing.Color.Black;
             this.xrTableCell22.Multiline = true;
@@ -776,7 +792,7 @@ namespace ArgusCR1003.CurrencyTrading.CT35401
             this.numb_data.BackColor = System.Drawing.Color.White;
             this.numb_data.BorderColor = System.Drawing.Color.Black;
             this.numb_data.Borders = DevExpress.XtraPrinting.BorderSide.Bottom;
-            this.numb_data.BorderWidth = 3F;
+            this.numb_data.BorderWidth = 0.5F;
             this.numb_data.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.numb_data.Multiline = true;
             this.numb_data.Name = "numb_data";
@@ -796,7 +812,7 @@ namespace ArgusCR1003.CurrencyTrading.CT35401
             this.xrTableCell25.BackColor = System.Drawing.Color.White;
             this.xrTableCell25.BorderColor = System.Drawing.Color.Black;
             this.xrTableCell25.Borders = ((DevExpress.XtraPrinting.BorderSide)((DevExpress.XtraPrinting.BorderSide.Right | DevExpress.XtraPrinting.BorderSide.Bottom)));
-            this.xrTableCell25.BorderWidth = 3F;
+            this.xrTableCell25.BorderWidth = 0.5F;
             this.xrTableCell25.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.xrTableCell25.ForeColor = System.Drawing.Color.Black;
             this.xrTableCell25.Multiline = true;
