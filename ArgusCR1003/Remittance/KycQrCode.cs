@@ -13,16 +13,14 @@ public class KycQrCode
        
         Kyc = Encoding.UTF8.GetBytes(_Kyc);
     }
-
     private byte[] getBytes(int id, byte[] Value)
     {
-        byte[] val = new byte[2 + Value.Length];
-        val[0] = (byte)id;
-        val[1] = (byte)Value.Length;
-        Value.CopyTo(val, 2);
-        return val;
+        List<byte> val = new List<byte>();
+        val.Add((byte)id);
+        val.AddRange(BitConverter.GetBytes((ushort)Value.Length));
+        val.AddRange(Value);
+        return val.ToArray();
     }
-
     public string ToBase64()
     {
         List<byte> bytes = new List<byte>();
