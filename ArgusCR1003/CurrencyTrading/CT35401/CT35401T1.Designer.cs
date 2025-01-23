@@ -115,6 +115,7 @@ namespace ArgusCR1003.CurrencyTrading.CT35401
             // 
             this.OperationSubReports.LocationFloat = new DevExpress.Utils.PointFloat(25.67328F, 0F);
             this.OperationSubReports.Name = "OperationSubReports";
+            this.OperationSubReports.ReportSource = new ArgusCR1003.CurrencyTrading.CT35401.OperationSubReport();
             this.OperationSubReports.SizeF = new System.Drawing.SizeF(533.1426F, 23F);
             // 
             // ReceiptsSubBand
@@ -128,6 +129,7 @@ namespace ArgusCR1003.CurrencyTrading.CT35401
             // 
             this.ReceiptsSubReports.LocationFloat = new DevExpress.Utils.PointFloat(25.67328F, 0F);
             this.ReceiptsSubReports.Name = "ReceiptsSubReports";
+            this.ReceiptsSubReports.ReportSource = new ArgusCR1003.CurrencyTrading.CT35401.ReceiptsSubReports();
             this.ReceiptsSubReports.SizeF = new System.Drawing.SizeF(533.1426F, 23F);
             // 
             // ReportHeader
