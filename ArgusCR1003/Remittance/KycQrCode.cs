@@ -15,11 +15,11 @@ public class KycQrCode
     }
     private byte[] getBytes(int id, byte[] Value)
     {
-        List<byte> val = new List<byte>();
-        val.Add((byte)id);
-        val.AddRange(BitConverter.GetBytes((ushort)Value.Length));
-        val.AddRange(Value);
-        return val.ToArray();
+        byte[] val = new byte[2 + Value.Length];
+        val[0] = (byte)id;
+        val[1] = (byte)Value.Length;
+        Value.CopyTo(val, 2);
+        return val;
     }
     public string ToBase64()
     {
