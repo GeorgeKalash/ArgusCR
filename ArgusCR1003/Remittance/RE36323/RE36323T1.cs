@@ -18,7 +18,7 @@ namespace ArgusCR1003.Remittance.RE36323
             sar_data.Text = webObject.record.header.amount.ToString("N2");
             receivedFrom_data.Text = webObject.record.header.clientName;
             from_data.Text = webObject.record.header.clientName;
-            only_data.Text = SharedClasses.NumberToWords.multiLingualNumberInText((decimal)webObject.record.header.amount, 2, 2);
+            only_data.Text = SharedClasses.NumberToWords.multiLingualNumberInText((decimal)webObject.record.header.amount, 2, 1);
             for_data.Text = webObject.record.header.beneficiaryName;
             idType_data.Text = webObject.record.header.idType ;
             expiryDate_data.Text = webObject.record.header.idExpiryDate?.ToString("dd/MM/yyyy");
