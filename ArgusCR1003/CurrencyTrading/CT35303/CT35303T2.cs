@@ -15,7 +15,7 @@ namespace ArgusCR1003.CurrencyTrading.CT35303
         {
             SharedClasses.JsonProtocol.GetStructure<ArgusCT_DS.Trading.Reports.CT103> webObject = deserializeGet<ArgusCT_DS.Trading.Reports.CT103>();
             DataSource = webObject.record.items;
-            QRCode.Text = new KycQrCode(webObject.record.header.reference).ToBase64();
+            QRCode.Text = webObject.record.header.reference;
 
             dateTop_data.Text = webObject.record.header.date.ToString("dd/MM/yyyy");
             refNo_data.Text = webObject.record.header.reference;
