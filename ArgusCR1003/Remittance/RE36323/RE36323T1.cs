@@ -11,7 +11,7 @@ namespace ArgusCR1003.Remittance.RE36323
         protected override void OnBeforePrint(PrintEventArgs e)
         {
             SharedClasses.JsonProtocol.GetStructure<ArgusCT_DS.Remittance.Report.RT201> webObject = deserializeGet<ArgusCT_DS.Remittance.Report.RT201>();
-            QRCode.Text = new KycQrCode(webObject.record.header.reference).ToBase64();
+            QRCode.Text =webObject.record.header.reference;
             dateTop_data.Text = webObject.record.header.date.ToString("dd/MM/yyyy"); 
             refNo_data.Text = webObject.record.header.reference;
             branch_data.Text = webObject.record.header.plantName;
