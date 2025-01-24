@@ -318,7 +318,7 @@ namespace ArgusCR1003.CurrencyTrading.CT35303
             this.corName_data.StylePriority.UseFont = false;
             this.corName_data.StylePriority.UseForeColor = false;
             this.corName_data.StylePriority.UseTextAlignment = false;
-            this.corName_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            this.corName_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
             this.corName_data.Weight = 7.94122949323785D;
             // 
             // xrTableCell3
@@ -355,7 +355,7 @@ namespace ArgusCR1003.CurrencyTrading.CT35303
             this.corNo_data.StylePriority.UseFont = false;
             this.corNo_data.StylePriority.UseForeColor = false;
             this.corNo_data.StylePriority.UseTextAlignment = false;
-            this.corNo_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            this.corNo_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
             this.corNo_data.Weight = 3.3412875412147747D;
             // 
             // xrTableCell14
@@ -409,8 +409,8 @@ namespace ArgusCR1003.CurrencyTrading.CT35303
             this.city_data.StylePriority.UseFont = false;
             this.city_data.StylePriority.UseForeColor = false;
             this.city_data.StylePriority.UseTextAlignment = false;
-            this.city_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
-            this.city_data.Weight = 3.4587561526955586D;
+            this.city_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
+            this.city_data.Weight = 3.810574081446656D;
             // 
             // idType_data
             // 
@@ -429,7 +429,7 @@ namespace ArgusCR1003.CurrencyTrading.CT35303
             this.idType_data.StylePriority.UseTextAlignment = false;
             this.idType_data.Text = "المدينة";
             this.idType_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
-            this.idType_data.Weight = 0.96339390139007586D;
+            this.idType_data.Weight = 1.37878000662448D;
             // 
             // country_data
             // 
@@ -446,8 +446,8 @@ namespace ArgusCR1003.CurrencyTrading.CT35303
             this.country_data.StylePriority.UseFont = false;
             this.country_data.StylePriority.UseForeColor = false;
             this.country_data.StylePriority.UseTextAlignment = false;
-            this.country_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
-            this.country_data.Weight = 3.5190794472807174D;
+            this.country_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
+            this.country_data.Weight = 2.7518754132952155D;
             // 
             // xrTableCell24
             // 
@@ -483,8 +483,8 @@ namespace ArgusCR1003.CurrencyTrading.CT35303
             this.corCurrencyRef_data.StylePriority.UseFont = false;
             this.corCurrencyRef_data.StylePriority.UseForeColor = false;
             this.corCurrencyRef_data.StylePriority.UseTextAlignment = false;
-            this.corCurrencyRef_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
-            this.corCurrencyRef_data.Weight = 1.670643760315317D;
+            this.corCurrencyRef_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
+            this.corCurrencyRef_data.Weight = 1.2311150865725282D;
             // 
             // corCurrencyName_data
             // 
@@ -501,8 +501,8 @@ namespace ArgusCR1003.CurrencyTrading.CT35303
             this.corCurrencyName_data.StylePriority.UseFont = false;
             this.corCurrencyName_data.StylePriority.UseForeColor = false;
             this.corCurrencyName_data.StylePriority.UseTextAlignment = false;
-            this.corCurrencyName_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
-            this.corCurrencyName_data.Weight = 1.670643760315317D;
+            this.corCurrencyName_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
+            this.corCurrencyName_data.Weight = 2.1101724340581058D;
             // 
             // xrTableCell17
             // 
@@ -748,7 +748,7 @@ namespace ArgusCR1003.CurrencyTrading.CT35303
             this.QRCode.Name = "QRCode";
             this.QRCode.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F);
             this.QRCode.ShowText = false;
-            this.QRCode.SizeF = new System.Drawing.SizeF(189.4955F, 112.9582F);
+            this.QRCode.SizeF = new System.Drawing.SizeF(172.8288F, 112.9582F);
             this.QRCode.StylePriority.UsePadding = false;
             this.QRCode.StylePriority.UseTextAlignment = false;
             qrCodeGenerator1.CompactionMode = DevExpress.XtraPrinting.BarCode.QRCodeCompactionMode.Byte;
