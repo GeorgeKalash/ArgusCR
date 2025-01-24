@@ -33,7 +33,7 @@ namespace ArgusCR1003.CurrencyTrading.CT35401
             name_data.Text = webObject.record.header.clientName;
             id_data.Text = webObject.record.header.idNo;
 
-            QRCode.Text = new KycQrCode(webObject.record.header.reference)?.ToBase64();
+            QRCode.Text = webObject.record.header.reference;
 
             ((OperationSubReport)(OperationSubReports.ReportSource)).data = webObject.record?.items;
             ((ReceiptsSubReports)(ReceiptsSubReports.ReportSource)).data = webObject.record?.receipts;
