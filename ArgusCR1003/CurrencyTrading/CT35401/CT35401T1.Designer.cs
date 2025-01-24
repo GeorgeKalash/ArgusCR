@@ -35,9 +35,7 @@ namespace ArgusCR1003.CurrencyTrading.CT35401
             this.BottomMargin = new DevExpress.XtraReports.UI.BottomMarginBand();
             this.Detail = new DevExpress.XtraReports.UI.DetailBand();
             this.OperationSubBand = new DevExpress.XtraReports.UI.SubBand();
-            this.OperationSubReports = new DevExpress.XtraReports.UI.XRSubreport();
             this.ReceiptsSubBand = new DevExpress.XtraReports.UI.SubBand();
-            this.ReceiptsSubReports = new DevExpress.XtraReports.UI.XRSubreport();
             this.ReportHeader = new DevExpress.XtraReports.UI.ReportHeaderBand();
             this.xrTable1 = new DevExpress.XtraReports.UI.XRTable();
             this.xrTableRow6 = new DevExpress.XtraReports.UI.XRTableRow();
@@ -81,6 +79,8 @@ namespace ArgusCR1003.CurrencyTrading.CT35401
             this.xrTableRow27 = new DevExpress.XtraReports.UI.XRTableRow();
             this.xrTableCell17 = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTableCell50 = new DevExpress.XtraReports.UI.XRTableCell();
+            this.OperationSubReports = new DevExpress.XtraReports.UI.XRSubreport();
+            this.ReceiptsSubReports = new DevExpress.XtraReports.UI.XRSubreport();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable10)).BeginInit();
@@ -111,26 +111,12 @@ namespace ArgusCR1003.CurrencyTrading.CT35401
             this.OperationSubBand.HeightF = 23F;
             this.OperationSubBand.Name = "OperationSubBand";
             // 
-            // OperationSubReports
-            // 
-            this.OperationSubReports.LocationFloat = new DevExpress.Utils.PointFloat(25.67328F, 0F);
-            this.OperationSubReports.Name = "OperationSubReports";
-            this.OperationSubReports.ReportSource = new ArgusCR1003.CurrencyTrading.CT35401.OperationSubReport();
-            this.OperationSubReports.SizeF = new System.Drawing.SizeF(533.1426F, 23F);
-            // 
             // ReceiptsSubBand
             // 
             this.ReceiptsSubBand.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
             this.ReceiptsSubReports});
             this.ReceiptsSubBand.HeightF = 23F;
             this.ReceiptsSubBand.Name = "ReceiptsSubBand";
-            // 
-            // ReceiptsSubReports
-            // 
-            this.ReceiptsSubReports.LocationFloat = new DevExpress.Utils.PointFloat(25.67328F, 0F);
-            this.ReceiptsSubReports.Name = "ReceiptsSubReports";
-            this.ReceiptsSubReports.ReportSource = new ArgusCR1003.CurrencyTrading.CT35401.ReceiptsSubReports();
-            this.ReceiptsSubReports.SizeF = new System.Drawing.SizeF(533.1426F, 23F);
             // 
             // ReportHeader
             // 
@@ -839,6 +825,7 @@ namespace ArgusCR1003.CurrencyTrading.CT35401
             this.QRCode.LocationFloat = new DevExpress.Utils.PointFloat(25.6734F, 0F);
             this.QRCode.Name = "QRCode";
             this.QRCode.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F);
+            this.QRCode.ShowText = false;
             this.QRCode.SizeF = new System.Drawing.SizeF(123.2598F, 100F);
             this.QRCode.StylePriority.UseFont = false;
             this.QRCode.StylePriority.UsePadding = false;
@@ -933,6 +920,20 @@ namespace ArgusCR1003.CurrencyTrading.CT35401
             this.xrTableCell50.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
             this.xrTableCell50.Weight = 1.1734763514709128D;
             // 
+            // OperationSubReports
+            // 
+            this.OperationSubReports.LocationFloat = new DevExpress.Utils.PointFloat(25.67328F, 0F);
+            this.OperationSubReports.Name = "OperationSubReports";
+            this.OperationSubReports.ReportSource = new ArgusCR1003.CurrencyTrading.CT35401.OperationSubReport();
+            this.OperationSubReports.SizeF = new System.Drawing.SizeF(533.1426F, 23F);
+            // 
+            // ReceiptsSubReports
+            // 
+            this.ReceiptsSubReports.LocationFloat = new DevExpress.Utils.PointFloat(25.67328F, 0F);
+            this.ReceiptsSubReports.Name = "ReceiptsSubReports";
+            this.ReceiptsSubReports.ReportSource = new ArgusCR1003.CurrencyTrading.CT35401.ReceiptsSubReports();
+            this.ReceiptsSubReports.SizeF = new System.Drawing.SizeF(533.1426F, 23F);
+            // 
             // CT35401T1
             // 
             this.Bands.AddRange(new DevExpress.XtraReports.UI.Band[] {
@@ -961,7 +962,6 @@ namespace ArgusCR1003.CurrencyTrading.CT35401
         private DevExpress.XtraReports.UI.DetailBand Detail;
         private DevExpress.XtraReports.UI.ReportHeaderBand ReportHeader;
         private DevExpress.XtraReports.UI.XRPictureBox xrPictureBox2;
-        private DevExpress.XtraReports.UI.XRBarCode QRCode;
         private DevExpress.XtraReports.UI.XRTable xrTable14;
         private DevExpress.XtraReports.UI.XRTableRow xrTableRow3;
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell7;
@@ -1006,5 +1006,6 @@ namespace ArgusCR1003.CurrencyTrading.CT35401
         private DevExpress.XtraReports.UI.XRSubreport OperationSubReports;
         private DevExpress.XtraReports.UI.SubBand ReceiptsSubBand;
         private DevExpress.XtraReports.UI.XRSubreport ReceiptsSubReports;
+        private DevExpress.XtraReports.UI.XRBarCode QRCode;
     }
 }
