@@ -1345,17 +1345,17 @@ namespace ArgusCR1003.Remittance.RE36323
             // 
             // QRCode
             // 
+            this.QRCode.Alignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
             this.QRCode.AutoModule = true;
-            this.QRCode.Font = new System.Drawing.Font("Arial", 15.75F);
-            this.QRCode.LocationFloat = new DevExpress.Utils.PointFloat(389.7036F, 0F);
+            this.QRCode.LocationFloat = new DevExpress.Utils.PointFloat(377.5771F, 0F);
             this.QRCode.Name = "QRCode";
             this.QRCode.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F);
-            this.QRCode.SizeF = new System.Drawing.SizeF(113.2598F, 100F);
-            this.QRCode.StylePriority.UseFont = false;
+            this.QRCode.ShowText = false;
+            this.QRCode.SizeF = new System.Drawing.SizeF(106.3257F, 91.97982F);
             this.QRCode.StylePriority.UsePadding = false;
             this.QRCode.StylePriority.UseTextAlignment = false;
+            qrCodeGenerator1.CompactionMode = DevExpress.XtraPrinting.BarCode.QRCodeCompactionMode.Byte;
             this.QRCode.Symbology = qrCodeGenerator1;
-            this.QRCode.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleJustify;
             // 
             // RE36323T1
             // 
