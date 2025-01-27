@@ -29,10 +29,9 @@ namespace ArgusCR1003.Remittance.RE36204
         /// </summary>
         private void InitializeComponent()
         {
-            DevExpress.XtraPrinting.BarCode.QRCodeGenerator qrCodeGenerator1 = new DevExpress.XtraPrinting.BarCode.QRCodeGenerator();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RE36204T1));
+            DevExpress.XtraPrinting.BarCode.QRCodeGenerator qrCodeGenerator1 = new DevExpress.XtraPrinting.BarCode.QRCodeGenerator();
             this.TopMargin = new DevExpress.XtraReports.UI.TopMarginBand();
-            this.QRCode = new DevExpress.XtraReports.UI.XRBarCode();
             this.xrPictureBox3 = new DevExpress.XtraReports.UI.XRPictureBox();
             this.xrPictureBox2 = new DevExpress.XtraReports.UI.XRPictureBox();
             this.BottomMargin = new DevExpress.XtraReports.UI.BottomMarginBand();
@@ -200,6 +199,7 @@ namespace ArgusCR1003.Remittance.RE36204
             this.xrTableRow27 = new DevExpress.XtraReports.UI.XRTableRow();
             this.xrTableCell20 = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTableCell50 = new DevExpress.XtraReports.UI.XRTableCell();
+            this.QRCode = new DevExpress.XtraReports.UI.XRBarCode();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable16)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable15)).BeginInit();
@@ -224,21 +224,7 @@ namespace ArgusCR1003.Remittance.RE36204
             this.QRCode,
             this.xrPictureBox3,
             this.xrPictureBox2});
-            this.TopMargin.HeightF = 92F;
             this.TopMargin.Name = "TopMargin";
-            // 
-            // QRCode
-            // 
-            this.QRCode.Alignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
-            this.QRCode.LocationFloat = new DevExpress.Utils.PointFloat(432.4763F, 0F);
-            this.QRCode.Name = "QRCode";
-            this.QRCode.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F);
-            this.QRCode.ShowText = false;
-            this.QRCode.SizeF = new System.Drawing.SizeF(106.3257F, 91.97982F);
-            this.QRCode.StylePriority.UsePadding = false;
-            this.QRCode.StylePriority.UseTextAlignment = false;
-            qrCodeGenerator1.CompactionMode = DevExpress.XtraPrinting.BarCode.QRCodeCompactionMode.Byte;
-            this.QRCode.Symbology = qrCodeGenerator1;
             // 
             // xrPictureBox3
             // 
@@ -246,7 +232,7 @@ namespace ArgusCR1003.Remittance.RE36204
             this.xrPictureBox3.ImageSource = new DevExpress.XtraPrinting.Drawing.ImageSource("img", resources.GetString("xrPictureBox3.ImageSource"));
             this.xrPictureBox3.LocationFloat = new DevExpress.Utils.PointFloat(53.75098F, 0F);
             this.xrPictureBox3.Name = "xrPictureBox3";
-            this.xrPictureBox3.SizeF = new System.Drawing.SizeF(378.7253F, 91.97983F);
+            this.xrPictureBox3.SizeF = new System.Drawing.SizeF(361.7914F, 91.97983F);
             this.xrPictureBox3.Sizing = DevExpress.XtraPrinting.ImageSizeMode.ZoomImage;
             // 
             // xrPictureBox2
@@ -301,7 +287,7 @@ namespace ArgusCR1003.Remittance.RE36204
             this.xrLabel2,
             this.xrTable1,
             this.xrTable4});
-            this.ReportHeader.HeightF = 1045.248F;
+            this.ReportHeader.HeightF = 998.373F;
             this.ReportHeader.Name = "ReportHeader";
             // 
             // xrLabel13
@@ -2957,6 +2943,21 @@ namespace ArgusCR1003.Remittance.RE36204
             this.xrTableCell50.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
             this.xrTableCell50.Weight = 2.082543092386961D;
             // 
+            // QRCode
+            // 
+            this.QRCode.AutoModule = true;
+            this.QRCode.Font = new System.Drawing.Font("Arial", 15.75F);
+            this.QRCode.LocationFloat = new DevExpress.Utils.PointFloat(415.5423F, 0F);
+            this.QRCode.Name = "QRCode";
+            this.QRCode.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F);
+            this.QRCode.ShowText = false;
+            this.QRCode.SizeF = new System.Drawing.SizeF(123.2598F, 100F);
+            this.QRCode.StylePriority.UseFont = false;
+            this.QRCode.StylePriority.UsePadding = false;
+            this.QRCode.StylePriority.UseTextAlignment = false;
+            this.QRCode.Symbology = qrCodeGenerator1;
+            this.QRCode.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleJustify;
+            // 
             // RE36204T1
             // 
             this.Bands.AddRange(new DevExpress.XtraReports.UI.Band[] {
@@ -2967,7 +2968,7 @@ namespace ArgusCR1003.Remittance.RE36204
             this.PageFooter,
             this.ReportFooter});
             this.Font = new System.Drawing.Font("Arial", 9.75F);
-            this.Margins = new System.Drawing.Printing.Margins(0, 0, 92, 0);
+            this.Margins = new System.Drawing.Printing.Margins(0, 0, 100, 0);
             this.PageHeight = 1169;
             this.PageWidth = 827;
             this.PaperKind = System.Drawing.Printing.PaperKind.A4;
