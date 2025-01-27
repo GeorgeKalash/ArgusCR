@@ -27,6 +27,7 @@ namespace ArgusCR1003.Financials.FI31305
               bank_data.Text = webObject.record.header.bankAccountName;
               qrCode.Text = webObject.record.header.reference; ;
               recieptName_data.Text = webObject.record.header.accountRef;
+
             base.OnBeforePrint(e);
         }
         protected override void labelsText()
