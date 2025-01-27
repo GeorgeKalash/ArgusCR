@@ -86,7 +86,6 @@ namespace ArgusCR1003.Financials.FI31304
             this.for_data = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTableCell25 = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrPictureBox2 = new DevExpress.XtraReports.UI.XRPictureBox();
-            this.qrCode = new DevExpress.XtraReports.UI.XRBarCode();
             this.xrTable3 = new DevExpress.XtraReports.UI.XRTable();
             this.xrTableRow12 = new DevExpress.XtraReports.UI.XRTableRow();
             this.xrTableCell2 = new DevExpress.XtraReports.UI.XRTableCell();
@@ -100,6 +99,7 @@ namespace ArgusCR1003.Financials.FI31304
             this.xrTableCell26 = new DevExpress.XtraReports.UI.XRTableCell();
             this.branch_data = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTableCell27 = new DevExpress.XtraReports.UI.XRTableCell();
+            this.QRCode = new DevExpress.XtraReports.UI.XRBarCode();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable1)).BeginInit();
@@ -124,6 +124,7 @@ namespace ArgusCR1003.Financials.FI31304
             // ReportHeader
             // 
             this.ReportHeader.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+            this.QRCode,
             this.cashierSignature_data,
             this.xrLabel6,
             this.xrLabel5,
@@ -139,7 +140,6 @@ namespace ArgusCR1003.Financials.FI31304
             this.xrLabel2,
             this.xrTable1,
             this.xrPictureBox2,
-            this.qrCode,
             this.xrTable3});
             this.ReportHeader.HeightF = 484.0236F;
             this.ReportHeader.KeepTogether = true;
@@ -168,20 +168,20 @@ namespace ArgusCR1003.Financials.FI31304
             this.xrLabel6.StylePriority.UseForeColor = false;
             this.xrLabel6.StylePriority.UseTextAlignment = false;
             this.xrLabel6.Text = "توقیع الصراف";
-            this.xrLabel6.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
+            this.xrLabel6.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             // 
             // xrLabel5
             // 
             this.xrLabel5.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold);
             this.xrLabel5.ForeColor = System.Drawing.Color.Black;
-            this.xrLabel5.LocationFloat = new DevExpress.Utils.PointFloat(424.0226F, 390.4575F);
+            this.xrLabel5.LocationFloat = new DevExpress.Utils.PointFloat(409.7625F, 390.4575F);
             this.xrLabel5.Name = "xrLabel5";
-            this.xrLabel5.SizeF = new System.Drawing.SizeF(127.7311F, 24.17001F);
+            this.xrLabel5.SizeF = new System.Drawing.SizeF(141.9912F, 24.17001F);
             this.xrLabel5.StylePriority.UseFont = false;
             this.xrLabel5.StylePriority.UseForeColor = false;
             this.xrLabel5.StylePriority.UseTextAlignment = false;
             this.xrLabel5.Text = "Cashier Signature";
-            this.xrLabel5.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            this.xrLabel5.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             // 
             // xrLabel4
             // 
@@ -553,7 +553,7 @@ namespace ArgusCR1003.Financials.FI31304
             this.xrLabel2.StylePriority.UseForeColor = false;
             this.xrLabel2.StylePriority.UseTextAlignment = false;
             this.xrLabel2.Text = "Check Receipt Voucher - سند قبض شيك";
-            this.xrLabel2.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            this.xrLabel2.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             // 
             // xrTable1
             // 
@@ -962,20 +962,6 @@ namespace ArgusCR1003.Financials.FI31304
             this.xrPictureBox2.Name = "xrPictureBox2";
             this.xrPictureBox2.SizeF = new System.Drawing.SizeF(273.5369F, 100F);
             // 
-            // qrCode
-            // 
-            this.qrCode.AutoModule = true;
-            this.qrCode.Font = new System.Drawing.Font("Arial", 15.75F);
-            this.qrCode.LocationFloat = new DevExpress.Utils.PointFloat(374.0653F, 0F);
-            this.qrCode.Name = "qrCode";
-            this.qrCode.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F);
-            this.qrCode.SizeF = new System.Drawing.SizeF(123.2598F, 100F);
-            this.qrCode.StylePriority.UseFont = false;
-            this.qrCode.StylePriority.UsePadding = false;
-            this.qrCode.StylePriority.UseTextAlignment = false;
-            this.qrCode.Symbology = qrCodeGenerator1;
-            this.qrCode.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleJustify;
-            // 
             // xrTable3
             // 
             this.xrTable3.BorderColor = System.Drawing.Color.Transparent;
@@ -1174,6 +1160,21 @@ namespace ArgusCR1003.Financials.FI31304
             this.xrTableCell27.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
             this.xrTableCell27.Weight = 1.1734773843957944D;
             // 
+            // QRCode
+            // 
+            this.QRCode.AutoModule = true;
+            this.QRCode.Font = new System.Drawing.Font("Arial", 15.75F);
+            this.QRCode.LocationFloat = new DevExpress.Utils.PointFloat(374.0654F, 0F);
+            this.QRCode.Name = "QRCode";
+            this.QRCode.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F);
+            this.QRCode.ShowText = false;
+            this.QRCode.SizeF = new System.Drawing.SizeF(123.2598F, 100F);
+            this.QRCode.StylePriority.UseFont = false;
+            this.QRCode.StylePriority.UsePadding = false;
+            this.QRCode.StylePriority.UseTextAlignment = false;
+            this.QRCode.Symbology = qrCodeGenerator1;
+            this.QRCode.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleJustify;
+            // 
             // FI31304T1
             // 
             this.Bands.AddRange(new DevExpress.XtraReports.UI.Band[] {
@@ -1214,7 +1215,6 @@ namespace ArgusCR1003.Financials.FI31304
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell26;
         private DevExpress.XtraReports.UI.XRTableCell branch_data;
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell27;
-        private DevExpress.XtraReports.UI.XRBarCode qrCode;
         private DevExpress.XtraReports.UI.XRPictureBox xrPictureBox2;
         private DevExpress.XtraReports.UI.XRLabel xrLabel3;
         private DevExpress.XtraReports.UI.XRLabel xrLabel1;
@@ -1266,5 +1266,6 @@ namespace ArgusCR1003.Financials.FI31304
         private DevExpress.XtraReports.UI.XRLabel cashierSignature_data;
         private DevExpress.XtraReports.UI.XRLabel xrLabel6;
         private DevExpress.XtraReports.UI.XRLabel xrLabel5;
+        private DevExpress.XtraReports.UI.XRBarCode QRCode;
     }
 }
