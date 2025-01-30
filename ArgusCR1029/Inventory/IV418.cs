@@ -61,6 +61,8 @@ namespace ArgusCR1029.Inventory
             itemCategoryParam_lbl.Text = labelText(18);
             siteGroupParam_lbl.Text = labelText(19);
             plantParam_lbl.Text = labelText(20);
+
+            plant_lbl.Text = labelText(21);
         }
         protected override void OnDataSourceRowChanged(DataSourceRowEventArgs e)
         {
