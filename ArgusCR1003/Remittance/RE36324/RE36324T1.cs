@@ -38,10 +38,27 @@ namespace ArgusCR1003.Remittance.RE36324
             branch2_data.Text = webObject.record.beneficiaryBankBranchName;
             agentName_data.Text = webObject.record.corName;
 
-            remName_data.Text = webObject.record.clientName + "/" + webObject.record.clientRef;
+            remName_data.Text = webObject.record.clientFullName + "/" + webObject.record.clientRef;
             nationality_data.Text = webObject.record.remitterNationality;
-            telNo2_data.Text = webObject.record.remitterCellPhone;
-            idNo_data.Text = webObject.record.remitterIdNo.ToString();
+
+            string phoneNumber = webObject.record.remitterCellPhone;
+            if (!string.IsNullOrEmpty(phoneNumber) && phoneNumber.Length > 4)
+            {
+                telNo2_data.Text = new string('*', phoneNumber.Length - 4) + phoneNumber.Substring(phoneNumber.Length - 4);
+            }
+            else
+            {
+                telNo2_data.Text = phoneNumber;
+            }
+            string idNumber = webObject.record.remitterIdNo.ToString();
+            if (!string.IsNullOrEmpty(idNumber) && idNumber.Length > 4)
+            {
+                idNo_data.Text = new string('*', idNumber.Length - 4) + idNumber.Substring(idNumber.Length - 4);
+            }
+            else
+            {
+                idNo_data.Text = idNumber;
+            }
 
             rate_data.Text = webObject.record.exRate.ToString("N2");
             charge_data.Text = webObject.record.commission.ToString("N2");

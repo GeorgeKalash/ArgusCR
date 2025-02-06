@@ -1994,7 +1994,7 @@ namespace ArgusCR1003.Remittance.RE36324
             this.xrTableCell50.StylePriority.UseForeColor = false;
             this.xrTableCell50.StylePriority.UsePadding = false;
             this.xrTableCell50.StylePriority.UseTextAlignment = false;
-            this.xrTableCell50.Text = "ًشكرا لاختياركم التعامل معنا";
+            this.xrTableCell50.Text = "شكرا لاختياركم التعامل معنا";
             this.xrTableCell50.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
             this.xrTableCell50.Weight = 1.1734763514709128D;
             // 
