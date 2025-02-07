@@ -150,6 +150,12 @@
     <Compile Include="Remittance\RE36323\RE36323T1.Designer.cs">
       <DependentUpon>RE36323T1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Remittance\RE36324\RE36324T1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Remittance\RE36324\RE36324T1.Designer.cs">
+      <DependentUpon>RE36324T1.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="CurrencyTrading\CT35303\CT35303T2.resx">
@@ -184,10 +190,14 @@
     <EmbeddedResource Include="Remittance\RE36323\RE36323T1.resx">
       <DependentUpon>RE36323T1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Remittance\RE36324\RE36324T1.resx">
+      <DependentUpon>RE36324T1.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Resource\Footer.png" />
     <Content Include="Resource\Header.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
