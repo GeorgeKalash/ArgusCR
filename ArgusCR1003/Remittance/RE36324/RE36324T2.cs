@@ -74,7 +74,7 @@ namespace ArgusCR1003.Remittance.RE36324
             taxL_data.Text = webObject.record?.taxPercent?.ToString("N2") + "%";
 
             accName_data.Text = webObject.record.cashAccountName;
-            accRef_data.Text = webObject.record.cashAccountRef;
+            accRef_data.Text = "[ " + webObject.record.cashAccountRef+ " ]";
 
             base.OnBeforePrint(e);
         }
