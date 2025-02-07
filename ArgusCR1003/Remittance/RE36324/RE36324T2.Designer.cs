@@ -367,7 +367,7 @@ namespace ArgusCR1003.Remittance.RE36324
             this.xrTableRow8,
             this.xrTableRow33,
             this.xrTableRow34});
-            this.xrTable14.SizeF = new System.Drawing.SizeF(537.1066F, 172.3325F);
+            this.xrTable14.SizeF = new System.Drawing.SizeF(537.1066F, 182.3325F);
             this.xrTable14.StylePriority.UseBorderColor = false;
             this.xrTable14.StylePriority.UseBorders = false;
             this.xrTable14.StylePriority.UseBorderWidth = false;
