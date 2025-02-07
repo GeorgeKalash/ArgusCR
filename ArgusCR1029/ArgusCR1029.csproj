@@ -511,6 +511,18 @@
     <Compile Include="Manufacturing\MF205.Designer.cs">
       <DependentUpon>MF205.cs</DependentUpon>
     </Compile>
+    <Compile Include="Manufacturing\MF415.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Manufacturing\MF415.Designer.cs">
+      <DependentUpon>MF415.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manufacturing\MF416b.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Manufacturing\MF416b.Designer.cs">
+      <DependentUpon>MF416b.cs</DependentUpon>
+    </Compile>
     <Compile Include="Manufacturing\MF416.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -1179,6 +1191,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Manufacturing\MF205.resx">
       <DependentUpon>MF205.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manufacturing\MF415.resx">
+      <DependentUpon>MF415.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manufacturing\MF416b.resx">
+      <DependentUpon>MF416b.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Manufacturing\MF416.resx">
       <DependentUpon>MF416.cs</DependentUpon>
