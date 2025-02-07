@@ -175,17 +175,16 @@ namespace ArgusCR1003.Remittance.RE36324
             this.xrTable13 = new DevExpress.XtraReports.UI.XRTable();
             this.xrTableRow29 = new DevExpress.XtraReports.UI.XRTableRow();
             this.xrTableCell10 = new DevExpress.XtraReports.UI.XRTableCell();
-            this.PageHeader = new DevExpress.XtraReports.UI.PageHeaderBand();
-            this.xrLabel5 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel11 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrPictureBox1 = new DevExpress.XtraReports.UI.XRPictureBox();
+            this.QRCode = new DevExpress.XtraReports.UI.XRBarCode();
             this.xrTable11 = new DevExpress.XtraReports.UI.XRTable();
             this.xrTableRow4 = new DevExpress.XtraReports.UI.XRTableRow();
             this.xrTableCell41 = new DevExpress.XtraReports.UI.XRTableCell();
             this.subtotal_lbl = new DevExpress.XtraReports.UI.XRTableCell();
             this.vat_lbl = new DevExpress.XtraReports.UI.XRTableCell();
             this.extendedPrice_lbl = new DevExpress.XtraReports.UI.XRTableCell();
-            this.xrLabel11 = new DevExpress.XtraReports.UI.XRLabel();
-            this.xrPictureBox1 = new DevExpress.XtraReports.UI.XRPictureBox();
-            this.QRCode = new DevExpress.XtraReports.UI.XRBarCode();
+            this.xrLabel5 = new DevExpress.XtraReports.UI.XRLabel();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable3)).BeginInit();
@@ -310,6 +309,8 @@ namespace ArgusCR1003.Remittance.RE36324
             // ReportHeader
             // 
             this.ReportHeader.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+            this.xrTable11,
+            this.xrLabel5,
             this.xrPictureBox1,
             this.QRCode,
             this.xrLabel1,
@@ -320,7 +321,7 @@ namespace ArgusCR1003.Remittance.RE36324
             this.xrLabel3,
             this.xrLabel4,
             this.xrTable2});
-            this.ReportHeader.HeightF = 824.5541F;
+            this.ReportHeader.HeightF = 856.6372F;
             this.ReportHeader.Name = "ReportHeader";
             // 
             // xrLabel1
@@ -367,7 +368,7 @@ namespace ArgusCR1003.Remittance.RE36324
             this.xrTableRow8,
             this.xrTableRow33,
             this.xrTableRow34});
-            this.xrTable14.SizeF = new System.Drawing.SizeF(537.1066F, 172.3325F);
+            this.xrTable14.SizeF = new System.Drawing.SizeF(537.1066F, 161.4991F);
             this.xrTable14.StylePriority.UseBorderColor = false;
             this.xrTable14.StylePriority.UseBorders = false;
             this.xrTable14.StylePriority.UseBorderWidth = false;
@@ -2615,26 +2616,47 @@ namespace ArgusCR1003.Remittance.RE36324
             this.xrTableCell10.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             this.xrTableCell10.Weight = 1.6767663358966847D;
             // 
-            // PageHeader
+            // xrLabel11
             // 
-            this.PageHeader.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
-            this.xrLabel5,
-            this.xrTable11});
-            this.PageHeader.HeightF = 52.91636F;
-            this.PageHeader.Name = "PageHeader";
+            this.xrLabel11.BackColor = System.Drawing.Color.Black;
+            this.xrLabel11.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.xrLabel11.ForeColor = System.Drawing.Color.White;
+            this.xrLabel11.LocationFloat = new DevExpress.Utils.PointFloat(10F, 121.2939F);
+            this.xrLabel11.Multiline = true;
+            this.xrLabel11.Name = "xrLabel11";
+            this.xrLabel11.SizeF = new System.Drawing.SizeF(563F, 58.33339F);
+            this.xrLabel11.StylePriority.UseBackColor = false;
+            this.xrLabel11.StylePriority.UseFont = false;
+            this.xrLabel11.StylePriority.UseForeColor = false;
+            this.xrLabel11.StylePriority.UseTextAlignment = false;
+            this.xrLabel11.Text = "شركة مساهمة مقفلة - ترخيص رقم (٠٤٠ - أ / ص ) - خاضعه لرقابة و إشراف البنك المركزي" +
+    " السعودي\r\nRegulated & supervised by the Saudi Central Bank- ( A/S - 040 ) Closed" +
+    " Joint Stock Co. - License No";
+            this.xrLabel11.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             // 
-            // xrLabel5
+            // xrPictureBox1
             // 
-            this.xrLabel5.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
-            this.xrLabel5.ForeColor = System.Drawing.Color.Black;
-            this.xrLabel5.LocationFloat = new DevExpress.Utils.PointFloat(123.6029F, 0F);
-            this.xrLabel5.Name = "xrLabel5";
-            this.xrLabel5.SizeF = new System.Drawing.SizeF(356.9127F, 24.16669F);
-            this.xrLabel5.StylePriority.UseFont = false;
-            this.xrLabel5.StylePriority.UseForeColor = false;
-            this.xrLabel5.StylePriority.UseTextAlignment = false;
-            this.xrLabel5.Text = "Pay Details -  ﺗﻔﺎﺻﻴﻞ اﻟﺪﻓﻊ";
-            this.xrLabel5.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            this.xrPictureBox1.ImageAlignment = DevExpress.XtraPrinting.ImageAlignment.MiddleCenter;
+            this.xrPictureBox1.ImageSource = new DevExpress.XtraPrinting.Drawing.ImageSource("img", resources.GetString("xrPictureBox1.ImageSource"));
+            this.xrPictureBox1.LocationFloat = new DevExpress.Utils.PointFloat(295.5058F, 0F);
+            this.xrPictureBox1.Name = "xrPictureBox1";
+            this.xrPictureBox1.SizeF = new System.Drawing.SizeF(266.1844F, 100F);
+            this.xrPictureBox1.Sizing = DevExpress.XtraPrinting.ImageSizeMode.ZoomImage;
+            // 
+            // QRCode
+            // 
+            this.QRCode.AutoModule = true;
+            this.QRCode.Font = new System.Drawing.Font("Arial", 15.75F);
+            this.QRCode.LocationFloat = new DevExpress.Utils.PointFloat(53.75024F, 0F);
+            this.QRCode.Name = "QRCode";
+            this.QRCode.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F);
+            this.QRCode.ShowText = false;
+            this.QRCode.SizeF = new System.Drawing.SizeF(123.4215F, 100F);
+            this.QRCode.StylePriority.UseFont = false;
+            this.QRCode.StylePriority.UsePadding = false;
+            this.QRCode.StylePriority.UseTextAlignment = false;
+            this.QRCode.Symbology = qrCodeGenerator1;
+            this.QRCode.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleJustify;
             // 
             // xrTable11
             // 
@@ -2642,7 +2664,7 @@ namespace ArgusCR1003.Remittance.RE36324
             | DevExpress.XtraPrinting.BorderSide.Right)));
             this.xrTable11.BorderWidth = 0.5F;
             this.xrTable11.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.xrTable11.LocationFloat = new DevExpress.Utils.PointFloat(24.58357F, 24.16667F);
+            this.xrTable11.LocationFloat = new DevExpress.Utils.PointFloat(24.58359F, 827.8875F);
             this.xrTable11.Name = "xrTable11";
             this.xrTable11.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable11.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
@@ -2734,47 +2756,18 @@ namespace ArgusCR1003.Remittance.RE36324
             this.extendedPrice_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             this.extendedPrice_lbl.Weight = 1.5536201475087887D;
             // 
-            // xrLabel11
+            // xrLabel5
             // 
-            this.xrLabel11.BackColor = System.Drawing.Color.Black;
-            this.xrLabel11.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.xrLabel11.ForeColor = System.Drawing.Color.White;
-            this.xrLabel11.LocationFloat = new DevExpress.Utils.PointFloat(10F, 121.2939F);
-            this.xrLabel11.Multiline = true;
-            this.xrLabel11.Name = "xrLabel11";
-            this.xrLabel11.SizeF = new System.Drawing.SizeF(563F, 58.33339F);
-            this.xrLabel11.StylePriority.UseBackColor = false;
-            this.xrLabel11.StylePriority.UseFont = false;
-            this.xrLabel11.StylePriority.UseForeColor = false;
-            this.xrLabel11.StylePriority.UseTextAlignment = false;
-            this.xrLabel11.Text = "شركة مساهمة مقفلة - ترخيص رقم (٠٤٠ - أ / ص ) - خاضعه لرقابة و إشراف البنك المركزي" +
-    " السعودي\r\nRegulated & supervised by the Saudi Central Bank- ( A/S - 040 ) Closed" +
-    " Joint Stock Co. - License No";
-            this.xrLabel11.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
-            // 
-            // xrPictureBox1
-            // 
-            this.xrPictureBox1.ImageAlignment = DevExpress.XtraPrinting.ImageAlignment.MiddleCenter;
-            this.xrPictureBox1.ImageSource = new DevExpress.XtraPrinting.Drawing.ImageSource("img", resources.GetString("xrPictureBox1.ImageSource"));
-            this.xrPictureBox1.LocationFloat = new DevExpress.Utils.PointFloat(295.5058F, 0F);
-            this.xrPictureBox1.Name = "xrPictureBox1";
-            this.xrPictureBox1.SizeF = new System.Drawing.SizeF(266.1844F, 100F);
-            this.xrPictureBox1.Sizing = DevExpress.XtraPrinting.ImageSizeMode.ZoomImage;
-            // 
-            // QRCode
-            // 
-            this.QRCode.AutoModule = true;
-            this.QRCode.Font = new System.Drawing.Font("Arial", 15.75F);
-            this.QRCode.LocationFloat = new DevExpress.Utils.PointFloat(53.75024F, 0F);
-            this.QRCode.Name = "QRCode";
-            this.QRCode.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F);
-            this.QRCode.ShowText = false;
-            this.QRCode.SizeF = new System.Drawing.SizeF(123.4215F, 100F);
-            this.QRCode.StylePriority.UseFont = false;
-            this.QRCode.StylePriority.UsePadding = false;
-            this.QRCode.StylePriority.UseTextAlignment = false;
-            this.QRCode.Symbology = qrCodeGenerator1;
-            this.QRCode.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleJustify;
+            this.xrLabel5.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
+            this.xrLabel5.ForeColor = System.Drawing.Color.Black;
+            this.xrLabel5.LocationFloat = new DevExpress.Utils.PointFloat(123.6029F, 803.7208F);
+            this.xrLabel5.Name = "xrLabel5";
+            this.xrLabel5.SizeF = new System.Drawing.SizeF(356.9127F, 24.16669F);
+            this.xrLabel5.StylePriority.UseFont = false;
+            this.xrLabel5.StylePriority.UseForeColor = false;
+            this.xrLabel5.StylePriority.UseTextAlignment = false;
+            this.xrLabel5.Text = "Pay Details -  ﺗﻔﺎﺻﻴﻞ اﻟﺪﻓﻊ";
+            this.xrLabel5.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             // 
             // RE36324T2
             // 
@@ -2783,8 +2776,7 @@ namespace ArgusCR1003.Remittance.RE36324
             this.BottomMargin,
             this.Detail,
             this.ReportHeader,
-            this.ReportFooter,
-            this.PageHeader});
+            this.ReportFooter});
             this.Font = new System.Drawing.Font("Arial", 9.75F);
             this.Margins = new System.Drawing.Printing.Margins(0, 0, 10, 0);
             this.PageHeight = 827;
@@ -2950,15 +2942,14 @@ namespace ArgusCR1003.Remittance.RE36324
         private DevExpress.XtraReports.UI.XRTableCell taxR_data;
         private DevExpress.XtraReports.UI.XRTableCell totBaseCur_data;
         private DevExpress.XtraReports.UI.XRLabel xrLabel11;
-        private DevExpress.XtraReports.UI.PageHeaderBand PageHeader;
-        private DevExpress.XtraReports.UI.XRLabel xrLabel5;
+        private DevExpress.XtraReports.UI.XRPictureBox xrPictureBox1;
+        private DevExpress.XtraReports.UI.XRBarCode QRCode;
         private DevExpress.XtraReports.UI.XRTable xrTable11;
         private DevExpress.XtraReports.UI.XRTableRow xrTableRow4;
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell41;
         private DevExpress.XtraReports.UI.XRTableCell subtotal_lbl;
         private DevExpress.XtraReports.UI.XRTableCell vat_lbl;
         private DevExpress.XtraReports.UI.XRTableCell extendedPrice_lbl;
-        private DevExpress.XtraReports.UI.XRPictureBox xrPictureBox1;
-        private DevExpress.XtraReports.UI.XRBarCode QRCode;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel5;
     }
 }
