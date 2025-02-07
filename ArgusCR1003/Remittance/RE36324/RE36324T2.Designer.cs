@@ -320,7 +320,7 @@ namespace ArgusCR1003.Remittance.RE36324
             this.xrLabel3,
             this.xrLabel4,
             this.xrTable2});
-            this.ReportHeader.HeightF = 817.0542F;
+            this.ReportHeader.HeightF = 824.5541F;
             this.ReportHeader.Name = "ReportHeader";
             // 
             // xrLabel1
@@ -367,7 +367,7 @@ namespace ArgusCR1003.Remittance.RE36324
             this.xrTableRow8,
             this.xrTableRow33,
             this.xrTableRow34});
-            this.xrTable14.SizeF = new System.Drawing.SizeF(537.1066F, 168.166F);
+            this.xrTable14.SizeF = new System.Drawing.SizeF(537.1066F, 172.3325F);
             this.xrTable14.StylePriority.UseBorderColor = false;
             this.xrTable14.StylePriority.UseBorders = false;
             this.xrTable14.StylePriority.UseBorderWidth = false;
