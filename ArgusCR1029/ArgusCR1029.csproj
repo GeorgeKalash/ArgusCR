@@ -511,6 +511,12 @@
     <Compile Include="Manufacturing\MF205.Designer.cs">
       <DependentUpon>MF205.cs</DependentUpon>
     </Compile>
+    <Compile Include="Manufacturing\MF416.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Manufacturing\MF416.Designer.cs">
+      <DependentUpon>MF416.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -1173,6 +1179,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Manufacturing\MF205.resx">
       <DependentUpon>MF205.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manufacturing\MF416.resx">
+      <DependentUpon>MF416.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
