@@ -553,7 +553,7 @@
             this.ReportFooter.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
             this.xrTable11,
             this.xrTable7});
-            this.ReportFooter.HeightF = 120.2421F;
+            this.ReportFooter.HeightF = 110.8671F;
             this.ReportFooter.Name = "ReportFooter";
             // 
             // xrTable11
@@ -610,7 +610,7 @@
             this.xrTableCell62.BorderWidth = 1F;
             this.xrTableCell62.CanGrow = false;
             this.xrTableCell62.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "sumSum([trxLine].[weight])")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "sumSum([trxLine].[weight]*[trxLine].[qty])")});
             this.xrTableCell62.Font = new System.Drawing.Font("Arial", 6.75F, System.Drawing.FontStyle.Bold);
             this.xrTableCell62.Name = "xrTableCell62";
             this.xrTableCell62.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 4, 3, 0, 100F);

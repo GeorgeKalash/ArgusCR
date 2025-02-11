@@ -100,7 +100,7 @@ namespace ArgusCR1004.POS.PS101
             this.xrTableCell8.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
-            this.xrTableCell8.Font = new System.Drawing.Font("Arial", 8.25F);
+            this.xrTableCell8.Font = new System.Drawing.Font("Arial", 8F);
             this.xrTableCell8.Multiline = true;
             this.xrTableCell8.Name = "xrTableCell8";
             this.xrTableCell8.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 2, 0, 100F);
@@ -120,7 +120,7 @@ namespace ArgusCR1004.POS.PS101
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell9.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[amount]")});
-            this.xrTableCell9.Font = new System.Drawing.Font("Arial", 8.25F);
+            this.xrTableCell9.Font = new System.Drawing.Font("Arial", 8F);
             this.xrTableCell9.Multiline = true;
             this.xrTableCell9.Name = "xrTableCell9";
             this.xrTableCell9.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 2, 0, 100F);
@@ -141,7 +141,7 @@ namespace ArgusCR1004.POS.PS101
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell10.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[ccName]")});
-            this.xrTableCell10.Font = new System.Drawing.Font("Arial", 8.25F);
+            this.xrTableCell10.Font = new System.Drawing.Font("Arial", 8F);
             this.xrTableCell10.Multiline = true;
             this.xrTableCell10.Name = "xrTableCell10";
             this.xrTableCell10.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 2, 0, 100F);
@@ -151,7 +151,7 @@ namespace ArgusCR1004.POS.PS101
             this.xrTableCell10.StylePriority.UsePadding = false;
             this.xrTableCell10.StylePriority.UseTextAlignment = false;
             this.xrTableCell10.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopCenter;
-            this.xrTableCell10.Weight = 1.0182647231827651D;
+            this.xrTableCell10.Weight = 1.054605996213732D;
             // 
             // xrTableCell11
             // 
@@ -161,7 +161,7 @@ namespace ArgusCR1004.POS.PS101
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell11.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[receiptRef]")});
-            this.xrTableCell11.Font = new System.Drawing.Font("Arial", 8.25F);
+            this.xrTableCell11.Font = new System.Drawing.Font("Arial", 8F);
             this.xrTableCell11.Multiline = true;
             this.xrTableCell11.Name = "xrTableCell11";
             this.xrTableCell11.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 2, 0, 100F);
@@ -171,7 +171,7 @@ namespace ArgusCR1004.POS.PS101
             this.xrTableCell11.StylePriority.UsePadding = false;
             this.xrTableCell11.StylePriority.UseTextAlignment = false;
             this.xrTableCell11.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopCenter;
-            this.xrTableCell11.Weight = 1.0182647615905947D;
+            this.xrTableCell11.Weight = 0.98192348855962763D;
             // 
             // xrTableCell12
             // 
@@ -181,7 +181,7 @@ namespace ArgusCR1004.POS.PS101
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell12.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[typeName]")});
-            this.xrTableCell12.Font = new System.Drawing.Font("Arial", 8.25F);
+            this.xrTableCell12.Font = new System.Drawing.Font("Arial", 8F);
             this.xrTableCell12.Multiline = true;
             this.xrTableCell12.Name = "xrTableCell12";
             this.xrTableCell12.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 2, 0, 100F);
@@ -202,7 +202,7 @@ namespace ArgusCR1004.POS.PS101
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell13.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[currencyRef]")});
-            this.xrTableCell13.Font = new System.Drawing.Font("Arial", 8.25F);
+            this.xrTableCell13.Font = new System.Drawing.Font("Arial", 8F);
             this.xrTableCell13.Multiline = true;
             this.xrTableCell13.Name = "xrTableCell13";
             this.xrTableCell13.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 2, 0, 100F);
@@ -222,7 +222,7 @@ namespace ArgusCR1004.POS.PS101
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell14.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[cashAccountRef]")});
-            this.xrTableCell14.Font = new System.Drawing.Font("Arial", 8.25F);
+            this.xrTableCell14.Font = new System.Drawing.Font("Arial", 8F);
             this.xrTableCell14.Multiline = true;
             this.xrTableCell14.Name = "xrTableCell14";
             this.xrTableCell14.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 2, 0, 100F);
@@ -319,7 +319,7 @@ namespace ArgusCR1004.POS.PS101
             this.cardType_lbl.StylePriority.UseTextAlignment = false;
             this.cardType_lbl.Text = "نوع البطاقة";
             this.cardType_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopCenter;
-            this.cardType_lbl.Weight = 1.0182648773846252D;
+            this.cardType_lbl.Weight = 1.0546056657096272D;
             // 
             // ccRef_lbl
             // 
@@ -338,7 +338,7 @@ namespace ArgusCR1004.POS.PS101
             this.ccRef_lbl.StylePriority.UseTextAlignment = false;
             this.ccRef_lbl.Text = "رقم الشيك \\ البطاقة";
             this.ccRef_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopCenter;
-            this.ccRef_lbl.Weight = 1.0182652785877047D;
+            this.ccRef_lbl.Weight = 0.98192449026270257D;
             // 
             // typeName_lbl
             // 
