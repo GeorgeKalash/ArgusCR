@@ -25,11 +25,9 @@ namespace ArgusCR1012.Manufacturing.Templates
         protected override void OnBeforePrint(PrintEventArgs e)
         {
             SharedClasses.JsonProtocol.GetStructure<ArgusDS.Manufacturing.Reports.BOMPrintView> webObject = deserializeGet<ArgusDS.Manufacturing.Reports.BOMPrintView>();
-
-            //if (webObject)
             DataSource = webObject.record.items;
 
-            reference_data.Text = webObject.record.header.reference;
+      //      reference_data.Text = webObject.record.header.reference;
             name_data.Text = webObject.record.header.name;
             type_data.Text = webObject.record.header.typeName;
             sku_data.Text = webObject.record.header.sku;
