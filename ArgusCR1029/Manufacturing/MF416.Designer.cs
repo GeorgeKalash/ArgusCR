@@ -202,6 +202,7 @@ namespace ArgusCR1029.Manufacturing
             this.xrTableCell41 = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTableCell42 = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTableCell43 = new DevExpress.XtraReports.UI.XRTableCell();
+            this.PageHeader = new DevExpress.XtraReports.UI.PageHeaderBand();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable5)).BeginInit();
@@ -640,7 +641,6 @@ namespace ArgusCR1029.Manufacturing
             // ReportHeader
             // 
             this.ReportHeader.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
-            this.xrTable8,
             this.xrTable5,
             this.xrTable1,
             this.xrTable3,
@@ -652,7 +652,7 @@ namespace ArgusCR1029.Manufacturing
             this.addressName_data,
             this.addressMobile_data,
             this.logo_data});
-            this.ReportHeader.HeightF = 271.2083F;
+            this.ReportHeader.HeightF = 225.3333F;
             this.ReportHeader.KeepTogether = true;
             this.ReportHeader.Name = "ReportHeader";
             // 
@@ -661,7 +661,7 @@ namespace ArgusCR1029.Manufacturing
             this.xrTable8.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right)));
             this.xrTable8.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.xrTable8.LocationFloat = new DevExpress.Utils.PointFloat(10.00018F, 225F);
+            this.xrTable8.LocationFloat = new DevExpress.Utils.PointFloat(10.00032F, 0F);
             this.xrTable8.Name = "xrTable8";
             this.xrTable8.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable8.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
@@ -1028,7 +1028,7 @@ namespace ArgusCR1029.Manufacturing
             this.xrTableCell63.StylePriority.UseFont = false;
             this.xrTableCell63.StylePriority.UsePadding = false;
             this.xrTableCell63.Text = "Class";
-            this.xrTableCell63.Weight = 0.98796503279300874D;
+            this.xrTableCell63.Weight = 0.99065009771733648D;
             // 
             // xrTableCell64
             // 
@@ -1044,7 +1044,7 @@ namespace ArgusCR1029.Manufacturing
             this.xrTableCell64.StylePriority.UseFont = false;
             this.xrTableCell64.StylePriority.UsePadding = false;
             this.xrTableCell64.Text = "Ex Pcs";
-            this.xrTableCell64.Weight = 0.65864335730169643D;
+            this.xrTableCell64.Weight = 0.65595829237736869D;
             // 
             // xrTableCell65
             // 
@@ -2310,6 +2310,13 @@ namespace ArgusCR1029.Manufacturing
             this.xrTableCell43.TextFormatString = "{0:n2}";
             this.xrTableCell43.Weight = 0.58405014792128029D;
             // 
+            // PageHeader
+            // 
+            this.PageHeader.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+            this.xrTable8});
+            this.PageHeader.HeightF = 46.20831F;
+            this.PageHeader.Name = "PageHeader";
+            // 
             // MF416
             // 
             this.Bands.AddRange(new DevExpress.XtraReports.UI.Band[] {
@@ -2320,7 +2327,8 @@ namespace ArgusCR1029.Manufacturing
             this.workCenterName,
             this.PageFooter,
             this.GroupFooter1,
-            this.ReportFooter});
+            this.ReportFooter,
+            this.PageHeader});
             this.Font = new System.Drawing.Font("Arial", 9.75F);
             this.Landscape = true;
             this.Margins = new System.Drawing.Printing.Margins(0, 0, 24, 0);
@@ -2496,5 +2504,6 @@ namespace ArgusCR1029.Manufacturing
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell41;
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell42;
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell43;
+        private DevExpress.XtraReports.UI.PageHeaderBand PageHeader;
     }
 }

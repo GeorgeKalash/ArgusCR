@@ -20,7 +20,6 @@ namespace ArgusCR1029.Purchase
 
         protected override void OnBeforePrint(PrintEventArgs e)
         {
-
             SharedClasses.JsonProtocol.QryStructure<ArgusDS.Purchase.Reports.PU401> webObject = deserializeList<ArgusDS.Purchase.Reports.PU401>();
             DataSource = webObject.list;
 
@@ -68,6 +67,8 @@ namespace ArgusCR1029.Purchase
             systemFunction_lbl.Text = labelText(23);
             currency_lbl.Text = labelText(24);
             itemGroup_lbl.Text = labelText(25);
+
+            extendedPriceEgy_lbl.Text = labelText(26);
         }
         protected override void OnDataSourceRowChanged(DataSourceRowEventArgs e)
         {
