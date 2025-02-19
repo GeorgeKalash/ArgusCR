@@ -41,6 +41,15 @@ namespace ArgusCR1003.Remittance.RE36324
             this.qty_data = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTableCell5 = new DevExpress.XtraReports.UI.XRTableCell();
             this.ReportHeader = new DevExpress.XtraReports.UI.ReportHeaderBand();
+            this.xrTable11 = new DevExpress.XtraReports.UI.XRTable();
+            this.xrTableRow4 = new DevExpress.XtraReports.UI.XRTableRow();
+            this.xrTableCell41 = new DevExpress.XtraReports.UI.XRTableCell();
+            this.subtotal_lbl = new DevExpress.XtraReports.UI.XRTableCell();
+            this.vat_lbl = new DevExpress.XtraReports.UI.XRTableCell();
+            this.extendedPrice_lbl = new DevExpress.XtraReports.UI.XRTableCell();
+            this.xrLabel5 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrPictureBox1 = new DevExpress.XtraReports.UI.XRPictureBox();
+            this.QRCode = new DevExpress.XtraReports.UI.XRBarCode();
             this.xrLabel1 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel2 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrTable14 = new DevExpress.XtraReports.UI.XRTable();
@@ -164,6 +173,7 @@ namespace ArgusCR1003.Remittance.RE36324
             this.agentName_data = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTableCell39 = new DevExpress.XtraReports.UI.XRTableCell();
             this.ReportFooter = new DevExpress.XtraReports.UI.ReportFooterBand();
+            this.xrLabel11 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrTable4 = new DevExpress.XtraReports.UI.XRTable();
             this.xrTableRow21 = new DevExpress.XtraReports.UI.XRTableRow();
             this.accName_data = new DevExpress.XtraReports.UI.XRTableCell();
@@ -175,24 +185,14 @@ namespace ArgusCR1003.Remittance.RE36324
             this.xrTable13 = new DevExpress.XtraReports.UI.XRTable();
             this.xrTableRow29 = new DevExpress.XtraReports.UI.XRTableRow();
             this.xrTableCell10 = new DevExpress.XtraReports.UI.XRTableCell();
-            this.xrLabel11 = new DevExpress.XtraReports.UI.XRLabel();
-            this.xrPictureBox1 = new DevExpress.XtraReports.UI.XRPictureBox();
-            this.QRCode = new DevExpress.XtraReports.UI.XRBarCode();
-            this.xrTable11 = new DevExpress.XtraReports.UI.XRTable();
-            this.xrTableRow4 = new DevExpress.XtraReports.UI.XRTableRow();
-            this.xrTableCell41 = new DevExpress.XtraReports.UI.XRTableCell();
-            this.subtotal_lbl = new DevExpress.XtraReports.UI.XRTableCell();
-            this.vat_lbl = new DevExpress.XtraReports.UI.XRTableCell();
-            this.extendedPrice_lbl = new DevExpress.XtraReports.UI.XRTableCell();
-            this.xrLabel5 = new DevExpress.XtraReports.UI.XRLabel();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.xrTable11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable13)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.xrTable11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             // 
             // TopMargin
@@ -210,6 +210,7 @@ namespace ArgusCR1003.Remittance.RE36324
             this.Detail.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
             this.xrTable12});
             this.Detail.HeightF = 23.12514F;
+            this.Detail.KeepTogether = true;
             this.Detail.Name = "Detail";
             // 
             // xrTable12
@@ -322,7 +323,143 @@ namespace ArgusCR1003.Remittance.RE36324
             this.xrLabel4,
             this.xrTable2});
             this.ReportHeader.HeightF = 856.6372F;
+            this.ReportHeader.KeepTogether = true;
             this.ReportHeader.Name = "ReportHeader";
+            // 
+            // xrTable11
+            // 
+            this.xrTable11.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+            | DevExpress.XtraPrinting.BorderSide.Right)));
+            this.xrTable11.BorderWidth = 0.5F;
+            this.xrTable11.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.xrTable11.LocationFloat = new DevExpress.Utils.PointFloat(24.58359F, 827.8875F);
+            this.xrTable11.Name = "xrTable11";
+            this.xrTable11.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
+            this.xrTable11.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
+            this.xrTableRow4});
+            this.xrTable11.SizeF = new System.Drawing.SizeF(537.1066F, 28.74969F);
+            this.xrTable11.StylePriority.UseBorders = false;
+            this.xrTable11.StylePriority.UseBorderWidth = false;
+            this.xrTable11.StylePriority.UseFont = false;
+            // 
+            // xrTableRow4
+            // 
+            this.xrTableRow4.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+            | DevExpress.XtraPrinting.BorderSide.Right) 
+            | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.xrTableRow4.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
+            this.xrTableCell41,
+            this.subtotal_lbl,
+            this.vat_lbl,
+            this.extendedPrice_lbl});
+            this.xrTableRow4.Name = "xrTableRow4";
+            this.xrTableRow4.StylePriority.UseBorders = false;
+            this.xrTableRow4.Weight = 1D;
+            // 
+            // xrTableCell41
+            // 
+            this.xrTableCell41.BackColor = System.Drawing.Color.White;
+            this.xrTableCell41.Borders = ((DevExpress.XtraPrinting.BorderSide)((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top)));
+            this.xrTableCell41.BorderWidth = 0.5F;
+            this.xrTableCell41.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Bold);
+            this.xrTableCell41.Multiline = true;
+            this.xrTableCell41.Name = "xrTableCell41";
+            this.xrTableCell41.StylePriority.UseBackColor = false;
+            this.xrTableCell41.StylePriority.UseBorders = false;
+            this.xrTableCell41.StylePriority.UseBorderWidth = false;
+            this.xrTableCell41.StylePriority.UseFont = false;
+            this.xrTableCell41.StylePriority.UseTextAlignment = false;
+            this.xrTableCell41.Text = "اﻟﻣﺑﻠﻎ اﻟﻣﺳﺗﻠم\r\nReceived amount";
+            this.xrTableCell41.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            this.xrTableCell41.Weight = 1.6438430311916683D;
+            // 
+            // subtotal_lbl
+            // 
+            this.subtotal_lbl.BackColor = System.Drawing.Color.White;
+            this.subtotal_lbl.Borders = DevExpress.XtraPrinting.BorderSide.Top;
+            this.subtotal_lbl.BorderWidth = 0.5F;
+            this.subtotal_lbl.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Bold);
+            this.subtotal_lbl.Multiline = true;
+            this.subtotal_lbl.Name = "subtotal_lbl";
+            this.subtotal_lbl.StylePriority.UseBackColor = false;
+            this.subtotal_lbl.StylePriority.UseBorders = false;
+            this.subtotal_lbl.StylePriority.UseBorderWidth = false;
+            this.subtotal_lbl.StylePriority.UseFont = false;
+            this.subtotal_lbl.StylePriority.UseTextAlignment = false;
+            this.subtotal_lbl.Text = "اﻟﺑﺎﻗﻲ\r\nRefund";
+            this.subtotal_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            this.subtotal_lbl.Weight = 1.6135046455773565D;
+            // 
+            // vat_lbl
+            // 
+            this.vat_lbl.BackColor = System.Drawing.Color.White;
+            this.vat_lbl.Borders = DevExpress.XtraPrinting.BorderSide.Top;
+            this.vat_lbl.BorderWidth = 0.5F;
+            this.vat_lbl.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Bold);
+            this.vat_lbl.Multiline = true;
+            this.vat_lbl.Name = "vat_lbl";
+            this.vat_lbl.StylePriority.UseBackColor = false;
+            this.vat_lbl.StylePriority.UseBorders = false;
+            this.vat_lbl.StylePriority.UseBorderWidth = false;
+            this.vat_lbl.StylePriority.UseFont = false;
+            this.vat_lbl.StylePriority.UseTextAlignment = false;
+            this.vat_lbl.Text = "اﻟﻣﺑﻠﻎ \r\nAmount";
+            this.vat_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            this.vat_lbl.Weight = 1.7167934244011958D;
+            // 
+            // extendedPrice_lbl
+            // 
+            this.extendedPrice_lbl.BackColor = System.Drawing.Color.White;
+            this.extendedPrice_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)((DevExpress.XtraPrinting.BorderSide.Top | DevExpress.XtraPrinting.BorderSide.Right)));
+            this.extendedPrice_lbl.BorderWidth = 0.5F;
+            this.extendedPrice_lbl.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Bold);
+            this.extendedPrice_lbl.Multiline = true;
+            this.extendedPrice_lbl.Name = "extendedPrice_lbl";
+            this.extendedPrice_lbl.StylePriority.UseBackColor = false;
+            this.extendedPrice_lbl.StylePriority.UseBorders = false;
+            this.extendedPrice_lbl.StylePriority.UseBorderWidth = false;
+            this.extendedPrice_lbl.StylePriority.UseFont = false;
+            this.extendedPrice_lbl.StylePriority.UseTextAlignment = false;
+            this.extendedPrice_lbl.Text = "طرﯾﻘﺔ اﻟدﻓﻊ\r\nPayment Mode";
+            this.extendedPrice_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            this.extendedPrice_lbl.Weight = 1.5536201475087887D;
+            // 
+            // xrLabel5
+            // 
+            this.xrLabel5.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
+            this.xrLabel5.ForeColor = System.Drawing.Color.Black;
+            this.xrLabel5.LocationFloat = new DevExpress.Utils.PointFloat(123.6029F, 803.7208F);
+            this.xrLabel5.Name = "xrLabel5";
+            this.xrLabel5.SizeF = new System.Drawing.SizeF(356.9127F, 24.16669F);
+            this.xrLabel5.StylePriority.UseFont = false;
+            this.xrLabel5.StylePriority.UseForeColor = false;
+            this.xrLabel5.StylePriority.UseTextAlignment = false;
+            this.xrLabel5.Text = "Pay Details -  ﺗﻔﺎﺻﻴﻞ اﻟﺪﻓﻊ";
+            this.xrLabel5.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            // 
+            // xrPictureBox1
+            // 
+            this.xrPictureBox1.ImageAlignment = DevExpress.XtraPrinting.ImageAlignment.MiddleCenter;
+            this.xrPictureBox1.ImageSource = new DevExpress.XtraPrinting.Drawing.ImageSource("img", resources.GetString("xrPictureBox1.ImageSource"));
+            this.xrPictureBox1.LocationFloat = new DevExpress.Utils.PointFloat(295.5058F, 0F);
+            this.xrPictureBox1.Name = "xrPictureBox1";
+            this.xrPictureBox1.SizeF = new System.Drawing.SizeF(266.1844F, 100F);
+            this.xrPictureBox1.Sizing = DevExpress.XtraPrinting.ImageSizeMode.ZoomImage;
+            // 
+            // QRCode
+            // 
+            this.QRCode.AutoModule = true;
+            this.QRCode.Font = new System.Drawing.Font("Arial", 15.75F);
+            this.QRCode.LocationFloat = new DevExpress.Utils.PointFloat(53.75024F, 0F);
+            this.QRCode.Name = "QRCode";
+            this.QRCode.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F);
+            this.QRCode.ShowText = false;
+            this.QRCode.SizeF = new System.Drawing.SizeF(123.4215F, 100F);
+            this.QRCode.StylePriority.UseFont = false;
+            this.QRCode.StylePriority.UsePadding = false;
+            this.QRCode.StylePriority.UseTextAlignment = false;
+            this.QRCode.Symbology = qrCodeGenerator1;
+            this.QRCode.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleJustify;
             // 
             // xrLabel1
             // 
@@ -2449,7 +2586,26 @@ namespace ArgusCR1003.Remittance.RE36324
             this.xrLabel6,
             this.xrTable13});
             this.ReportFooter.HeightF = 179.6273F;
+            this.ReportFooter.KeepTogether = true;
             this.ReportFooter.Name = "ReportFooter";
+            // 
+            // xrLabel11
+            // 
+            this.xrLabel11.BackColor = System.Drawing.Color.Black;
+            this.xrLabel11.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.xrLabel11.ForeColor = System.Drawing.Color.White;
+            this.xrLabel11.LocationFloat = new DevExpress.Utils.PointFloat(10F, 121.2939F);
+            this.xrLabel11.Multiline = true;
+            this.xrLabel11.Name = "xrLabel11";
+            this.xrLabel11.SizeF = new System.Drawing.SizeF(563F, 58.33339F);
+            this.xrLabel11.StylePriority.UseBackColor = false;
+            this.xrLabel11.StylePriority.UseFont = false;
+            this.xrLabel11.StylePriority.UseForeColor = false;
+            this.xrLabel11.StylePriority.UseTextAlignment = false;
+            this.xrLabel11.Text = "شركة مساهمة مقفلة - ترخيص رقم (٠٤٠ - أ / ص ) - خاضعه لرقابة و إشراف البنك المركزي" +
+    " السعودي\r\nRegulated & supervised by the Saudi Central Bank- ( A/S - 040 ) Closed" +
+    " Joint Stock Co. - License No";
+            this.xrLabel11.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             // 
             // xrTable4
             // 
@@ -2616,159 +2772,6 @@ namespace ArgusCR1003.Remittance.RE36324
             this.xrTableCell10.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             this.xrTableCell10.Weight = 1.6767663358966847D;
             // 
-            // xrLabel11
-            // 
-            this.xrLabel11.BackColor = System.Drawing.Color.Black;
-            this.xrLabel11.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.xrLabel11.ForeColor = System.Drawing.Color.White;
-            this.xrLabel11.LocationFloat = new DevExpress.Utils.PointFloat(10F, 121.2939F);
-            this.xrLabel11.Multiline = true;
-            this.xrLabel11.Name = "xrLabel11";
-            this.xrLabel11.SizeF = new System.Drawing.SizeF(563F, 58.33339F);
-            this.xrLabel11.StylePriority.UseBackColor = false;
-            this.xrLabel11.StylePriority.UseFont = false;
-            this.xrLabel11.StylePriority.UseForeColor = false;
-            this.xrLabel11.StylePriority.UseTextAlignment = false;
-            this.xrLabel11.Text = "شركة مساهمة مقفلة - ترخيص رقم (٠٤٠ - أ / ص ) - خاضعه لرقابة و إشراف البنك المركزي" +
-    " السعودي\r\nRegulated & supervised by the Saudi Central Bank- ( A/S - 040 ) Closed" +
-    " Joint Stock Co. - License No";
-            this.xrLabel11.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
-            // 
-            // xrPictureBox1
-            // 
-            this.xrPictureBox1.ImageAlignment = DevExpress.XtraPrinting.ImageAlignment.MiddleCenter;
-            this.xrPictureBox1.ImageSource = new DevExpress.XtraPrinting.Drawing.ImageSource("img", resources.GetString("xrPictureBox1.ImageSource"));
-            this.xrPictureBox1.LocationFloat = new DevExpress.Utils.PointFloat(295.5058F, 0F);
-            this.xrPictureBox1.Name = "xrPictureBox1";
-            this.xrPictureBox1.SizeF = new System.Drawing.SizeF(266.1844F, 100F);
-            this.xrPictureBox1.Sizing = DevExpress.XtraPrinting.ImageSizeMode.ZoomImage;
-            // 
-            // QRCode
-            // 
-            this.QRCode.AutoModule = true;
-            this.QRCode.Font = new System.Drawing.Font("Arial", 15.75F);
-            this.QRCode.LocationFloat = new DevExpress.Utils.PointFloat(53.75024F, 0F);
-            this.QRCode.Name = "QRCode";
-            this.QRCode.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F);
-            this.QRCode.ShowText = false;
-            this.QRCode.SizeF = new System.Drawing.SizeF(123.4215F, 100F);
-            this.QRCode.StylePriority.UseFont = false;
-            this.QRCode.StylePriority.UsePadding = false;
-            this.QRCode.StylePriority.UseTextAlignment = false;
-            this.QRCode.Symbology = qrCodeGenerator1;
-            this.QRCode.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleJustify;
-            // 
-            // xrTable11
-            // 
-            this.xrTable11.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
-            | DevExpress.XtraPrinting.BorderSide.Right)));
-            this.xrTable11.BorderWidth = 0.5F;
-            this.xrTable11.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.xrTable11.LocationFloat = new DevExpress.Utils.PointFloat(24.58359F, 827.8875F);
-            this.xrTable11.Name = "xrTable11";
-            this.xrTable11.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
-            this.xrTable11.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
-            this.xrTableRow4});
-            this.xrTable11.SizeF = new System.Drawing.SizeF(537.1066F, 28.74969F);
-            this.xrTable11.StylePriority.UseBorders = false;
-            this.xrTable11.StylePriority.UseBorderWidth = false;
-            this.xrTable11.StylePriority.UseFont = false;
-            // 
-            // xrTableRow4
-            // 
-            this.xrTableRow4.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
-            | DevExpress.XtraPrinting.BorderSide.Right) 
-            | DevExpress.XtraPrinting.BorderSide.Bottom)));
-            this.xrTableRow4.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
-            this.xrTableCell41,
-            this.subtotal_lbl,
-            this.vat_lbl,
-            this.extendedPrice_lbl});
-            this.xrTableRow4.Name = "xrTableRow4";
-            this.xrTableRow4.StylePriority.UseBorders = false;
-            this.xrTableRow4.Weight = 1D;
-            // 
-            // xrTableCell41
-            // 
-            this.xrTableCell41.BackColor = System.Drawing.Color.White;
-            this.xrTableCell41.Borders = ((DevExpress.XtraPrinting.BorderSide)((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top)));
-            this.xrTableCell41.BorderWidth = 0.5F;
-            this.xrTableCell41.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Bold);
-            this.xrTableCell41.Multiline = true;
-            this.xrTableCell41.Name = "xrTableCell41";
-            this.xrTableCell41.StylePriority.UseBackColor = false;
-            this.xrTableCell41.StylePriority.UseBorders = false;
-            this.xrTableCell41.StylePriority.UseBorderWidth = false;
-            this.xrTableCell41.StylePriority.UseFont = false;
-            this.xrTableCell41.StylePriority.UseTextAlignment = false;
-            this.xrTableCell41.Text = "اﻟﻣﺑﻠﻎ اﻟﻣﺳﺗﻠم\r\nReceived amount";
-            this.xrTableCell41.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
-            this.xrTableCell41.Weight = 1.6438430311916683D;
-            // 
-            // subtotal_lbl
-            // 
-            this.subtotal_lbl.BackColor = System.Drawing.Color.White;
-            this.subtotal_lbl.Borders = DevExpress.XtraPrinting.BorderSide.Top;
-            this.subtotal_lbl.BorderWidth = 0.5F;
-            this.subtotal_lbl.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Bold);
-            this.subtotal_lbl.Multiline = true;
-            this.subtotal_lbl.Name = "subtotal_lbl";
-            this.subtotal_lbl.StylePriority.UseBackColor = false;
-            this.subtotal_lbl.StylePriority.UseBorders = false;
-            this.subtotal_lbl.StylePriority.UseBorderWidth = false;
-            this.subtotal_lbl.StylePriority.UseFont = false;
-            this.subtotal_lbl.StylePriority.UseTextAlignment = false;
-            this.subtotal_lbl.Text = "اﻟﺑﺎﻗﻲ\r\nRefund";
-            this.subtotal_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
-            this.subtotal_lbl.Weight = 1.6135046455773565D;
-            // 
-            // vat_lbl
-            // 
-            this.vat_lbl.BackColor = System.Drawing.Color.White;
-            this.vat_lbl.Borders = DevExpress.XtraPrinting.BorderSide.Top;
-            this.vat_lbl.BorderWidth = 0.5F;
-            this.vat_lbl.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Bold);
-            this.vat_lbl.Multiline = true;
-            this.vat_lbl.Name = "vat_lbl";
-            this.vat_lbl.StylePriority.UseBackColor = false;
-            this.vat_lbl.StylePriority.UseBorders = false;
-            this.vat_lbl.StylePriority.UseBorderWidth = false;
-            this.vat_lbl.StylePriority.UseFont = false;
-            this.vat_lbl.StylePriority.UseTextAlignment = false;
-            this.vat_lbl.Text = "اﻟﻣﺑﻠﻎ \r\nAmount";
-            this.vat_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
-            this.vat_lbl.Weight = 1.7167934244011958D;
-            // 
-            // extendedPrice_lbl
-            // 
-            this.extendedPrice_lbl.BackColor = System.Drawing.Color.White;
-            this.extendedPrice_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)((DevExpress.XtraPrinting.BorderSide.Top | DevExpress.XtraPrinting.BorderSide.Right)));
-            this.extendedPrice_lbl.BorderWidth = 0.5F;
-            this.extendedPrice_lbl.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Bold);
-            this.extendedPrice_lbl.Multiline = true;
-            this.extendedPrice_lbl.Name = "extendedPrice_lbl";
-            this.extendedPrice_lbl.StylePriority.UseBackColor = false;
-            this.extendedPrice_lbl.StylePriority.UseBorders = false;
-            this.extendedPrice_lbl.StylePriority.UseBorderWidth = false;
-            this.extendedPrice_lbl.StylePriority.UseFont = false;
-            this.extendedPrice_lbl.StylePriority.UseTextAlignment = false;
-            this.extendedPrice_lbl.Text = "طرﯾﻘﺔ اﻟدﻓﻊ\r\nPayment Mode";
-            this.extendedPrice_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
-            this.extendedPrice_lbl.Weight = 1.5536201475087887D;
-            // 
-            // xrLabel5
-            // 
-            this.xrLabel5.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
-            this.xrLabel5.ForeColor = System.Drawing.Color.Black;
-            this.xrLabel5.LocationFloat = new DevExpress.Utils.PointFloat(123.6029F, 803.7208F);
-            this.xrLabel5.Name = "xrLabel5";
-            this.xrLabel5.SizeF = new System.Drawing.SizeF(356.9127F, 24.16669F);
-            this.xrLabel5.StylePriority.UseFont = false;
-            this.xrLabel5.StylePriority.UseForeColor = false;
-            this.xrLabel5.StylePriority.UseTextAlignment = false;
-            this.xrLabel5.Text = "Pay Details -  ﺗﻔﺎﺻﻴﻞ اﻟﺪﻓﻊ";
-            this.xrLabel5.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
-            // 
             // RE36324T2
             // 
             this.Bands.AddRange(new DevExpress.XtraReports.UI.Band[] {
@@ -2784,13 +2787,13 @@ namespace ArgusCR1003.Remittance.RE36324
             this.PaperKind = System.Drawing.Printing.PaperKind.A5;
             this.Version = "20.1";
             ((System.ComponentModel.ISupportInitialize)(this.xrTable12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.xrTable11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable14)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable13)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.xrTable11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
 
         }
