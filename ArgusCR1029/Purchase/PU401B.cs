@@ -65,7 +65,7 @@ namespace ArgusCR1029.Purchase
             itemCtgry_lbl.Text = labelText(21);
             siteParam_lbl.Text = labelText(22);
             systemFunction_lbl.Text = labelText(23);
-            currency_lbl.Text = labelText(24);
+            currencyParam_lbl.Text = labelText(24);
             itemGroup_lbl.Text = labelText(25);
 
             extendedPriceEgy_lbl.Text = labelText(26);
