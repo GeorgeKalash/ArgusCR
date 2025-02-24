@@ -6,9 +6,9 @@ using System.Drawing.Printing;
 
 namespace ArgusCR1029.Sales
 {
-    public partial class SA203_L1B : ArgusRPT.BaseReport
+    public partial class SA424 : ArgusRPT.BaseReport
     {
-        public SA203_L1B()
+        public SA424()
         {
             InitializeComponent();
         }
@@ -20,7 +20,7 @@ namespace ArgusCR1029.Sales
 
         protected override void OnBeforePrint(PrintEventArgs e)
         {
-            SharedClasses.JsonProtocol.QryStructure<Custom.CR1029.SA203_Layout1> obj = deserializeList<Custom.CR1029.SA203_Layout1>();
+            SharedClasses.JsonProtocol.QryStructure<Custom.CR1029.SA424> obj = deserializeList<Custom.CR1029.SA424>();
             DataSource = obj.list;
 
             startDate_param.Text = Parameters.Count > 0 ? Parameters[0].Value.ToString() : string.Empty;
@@ -80,7 +80,7 @@ namespace ArgusCR1029.Sales
 
         protected override string dictionaryStore()
         {
-            return "CR1029.SA203_L1B";
+            return "CR1029.SA424";
         }
     }
 }
