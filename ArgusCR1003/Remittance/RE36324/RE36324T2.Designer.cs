@@ -2031,9 +2031,9 @@ namespace ArgusCR1003.Remittance.RE36324
             // 
             this.xrLabel3.Font = new System.Drawing.Font("Simplified Arabic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.xrLabel3.ForeColor = System.Drawing.Color.Black;
-            this.xrLabel3.LocationFloat = new DevExpress.Utils.PointFloat(123.603F, 100F);
+            this.xrLabel3.LocationFloat = new DevExpress.Utils.PointFloat(106.9363F, 100F);
             this.xrLabel3.Name = "xrLabel3";
-            this.xrLabel3.SizeF = new System.Drawing.SizeF(356.9127F, 24.16666F);
+            this.xrLabel3.SizeF = new System.Drawing.SizeF(394.4127F, 24.16665F);
             this.xrLabel3.StylePriority.UseFont = false;
             this.xrLabel3.StylePriority.UseForeColor = false;
             this.xrLabel3.StylePriority.UseTextAlignment = false;
