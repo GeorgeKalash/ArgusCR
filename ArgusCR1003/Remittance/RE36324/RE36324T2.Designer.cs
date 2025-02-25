@@ -2029,15 +2029,15 @@ namespace ArgusCR1003.Remittance.RE36324
             // 
             // xrLabel3
             // 
-            this.xrLabel3.Font = new System.Drawing.Font("Simplified Arabic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.xrLabel3.Font = new System.Drawing.Font("Simplified Arabic", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.xrLabel3.ForeColor = System.Drawing.Color.Black;
-            this.xrLabel3.LocationFloat = new DevExpress.Utils.PointFloat(106.9363F, 100F);
+            this.xrLabel3.LocationFloat = new DevExpress.Utils.PointFloat(72.76966F, 100F);
             this.xrLabel3.Name = "xrLabel3";
-            this.xrLabel3.SizeF = new System.Drawing.SizeF(394.4127F, 24.16665F);
+            this.xrLabel3.SizeF = new System.Drawing.SizeF(464.4128F, 24.16665F);
             this.xrLabel3.StylePriority.UseFont = false;
             this.xrLabel3.StylePriority.UseForeColor = false;
             this.xrLabel3.StylePriority.UseTextAlignment = false;
-            this.xrLabel3.Text = "Remittance Voucher  - ﺣــــــــــــــــﻮاﻟﺔ ﺻـــــــــــــــﺎدرة";
+            this.xrLabel3.Text = "Remittance Voucher  - ﺣـــــــــﻮاﻟﺔ ﺻــــــــــﺎدرة";
             this.xrLabel3.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             // 
             // xrLabel4
