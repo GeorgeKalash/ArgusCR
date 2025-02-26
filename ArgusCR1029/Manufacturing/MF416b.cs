@@ -12,7 +12,6 @@ namespace ArgusCR1029.Manufacturing
         {
             InitializeComponent();
         }
-
         protected override string reportName()
         {
             return title_lbl.Text;
@@ -40,7 +39,6 @@ namespace ArgusCR1029.Manufacturing
 
             jobStartedFrom_param.Text = Parameters.Count > 14 ? Parameters[14].Value.ToString() : string.Empty;
             jobStartedTo_param.Text = Parameters.Count > 15 ? Parameters[15].Value.ToString() : string.Empty;
-            workCenter_param.Text = Parameters.Count > 16 ? Parameters[16].Value.ToString() : string.Empty;
 
             logo_data.ImageUrl = companyInfo.logoUrl;
             companyInfoName_data.Text = companyInfo.name;
