@@ -67,6 +67,8 @@ namespace ArgusCR1029.Inventory
             weight_lbl.Text = labelText(20);
             avgWeight_lbl.Text = labelText(21);
             weightPct_lbl.Text = labelText(22);
+
+            mu_lbl.Text = labelText(23);
         }
 
         protected override string dictionaryStore()
