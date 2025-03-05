@@ -170,7 +170,6 @@ namespace ArgusCR1029.Manufacturing
             this.xrTableCell76 = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTableCell77 = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTableCell78 = new DevExpress.XtraReports.UI.XRTableCell();
-            this.workCenterRef = new DevExpress.XtraReports.UI.GroupHeaderBand();
             this.xrLabel2 = new DevExpress.XtraReports.UI.XRLabel();
             this.PageFooter = new DevExpress.XtraReports.UI.PageFooterBand();
             this.pagesNumber_lbl = new DevExpress.XtraReports.UI.XRPageInfo();
@@ -203,6 +202,7 @@ namespace ArgusCR1029.Manufacturing
             this.xrTableCell42 = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTableCell43 = new DevExpress.XtraReports.UI.XRTableCell();
             this.PageHeader = new DevExpress.XtraReports.UI.PageHeaderBand();
+            this.workCenterRef = new DevExpress.XtraReports.UI.GroupHeaderBand();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable1)).BeginInit();
@@ -214,7 +214,7 @@ namespace ArgusCR1029.Manufacturing
             // 
             // TopMargin
             // 
-            this.TopMargin.HeightF = 24F;
+            this.TopMargin.HeightF = 10.45834F;
             this.TopMargin.Name = "TopMargin";
             // 
             // BottomMargin
@@ -652,7 +652,7 @@ namespace ArgusCR1029.Manufacturing
             this.addressName_data,
             this.addressMobile_data,
             this.logo_data});
-            this.ReportHeader.HeightF = 225.3333F;
+            this.ReportHeader.HeightF = 221.1249F;
             this.ReportHeader.KeepTogether = true;
             this.ReportHeader.Name = "ReportHeader";
             // 
@@ -1752,26 +1752,16 @@ namespace ArgusCR1029.Manufacturing
             this.xrTableCell78.Text = "Status";
             this.xrTableCell78.Weight = 0.75553855058317487D;
             // 
-            // workCenterRef
-            // 
-            this.workCenterRef.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
-            this.xrLabel2});
-            this.workCenterRef.GroupFields.AddRange(new DevExpress.XtraReports.UI.GroupField[] {
-            new DevExpress.XtraReports.UI.GroupField("workCenterRef", DevExpress.XtraReports.UI.XRColumnSortOrder.None)});
-            this.workCenterRef.HeightF = 23F;
-            this.workCenterRef.KeepTogether = true;
-            this.workCenterRef.Name = "workCenterRef";
-            // 
             // xrLabel2
             // 
             this.xrLabel2.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[workCenterName]")});
             this.xrLabel2.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Bold);
-            this.xrLabel2.LocationFloat = new DevExpress.Utils.PointFloat(10.00018F, 0F);
+            this.xrLabel2.LocationFloat = new DevExpress.Utils.PointFloat(9.999998F, 6.583436F);
             this.xrLabel2.Multiline = true;
             this.xrLabel2.Name = "xrLabel2";
             this.xrLabel2.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 3, 0, 100F);
-            this.xrLabel2.SizeF = new System.Drawing.SizeF(334.1667F, 23F);
+            this.xrLabel2.SizeF = new System.Drawing.SizeF(341.6638F, 23F);
             this.xrLabel2.StylePriority.UseFont = false;
             this.xrLabel2.StylePriority.UsePadding = false;
             this.xrLabel2.Text = "xrLabel1";
@@ -2317,6 +2307,18 @@ namespace ArgusCR1029.Manufacturing
             this.PageHeader.HeightF = 46.20831F;
             this.PageHeader.Name = "PageHeader";
             // 
+            // workCenterRef
+            // 
+            this.workCenterRef.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+            this.xrLabel2});
+            this.workCenterRef.GroupFields.AddRange(new DevExpress.XtraReports.UI.GroupField[] {
+            new DevExpress.XtraReports.UI.GroupField("workCenterRef", DevExpress.XtraReports.UI.XRColumnSortOrder.Ascending),
+            new DevExpress.XtraReports.UI.GroupField("workCenterName", DevExpress.XtraReports.UI.XRColumnSortOrder.None)});
+            this.workCenterRef.HeightF = 29.58344F;
+            this.workCenterRef.Level = 1;
+            this.workCenterRef.Name = "workCenterRef";
+            this.workCenterRef.RepeatEveryPage = true;
+            // 
             // MF416
             // 
             this.Bands.AddRange(new DevExpress.XtraReports.UI.Band[] {
@@ -2324,14 +2326,14 @@ namespace ArgusCR1029.Manufacturing
             this.BottomMargin,
             this.Detail,
             this.ReportHeader,
-            this.workCenterRef,
             this.PageFooter,
             this.GroupFooter1,
             this.ReportFooter,
-            this.PageHeader});
+            this.PageHeader,
+            this.workCenterRef});
             this.Font = new System.Drawing.Font("Arial", 9.75F);
             this.Landscape = true;
-            this.Margins = new System.Drawing.Printing.Margins(0, 0, 24, 0);
+            this.Margins = new System.Drawing.Printing.Margins(0, 0, 10, 0);
             this.PageHeight = 827;
             this.PageWidth = 1299;
             this.PaperKind = System.Drawing.Printing.PaperKind.A4Plus;
@@ -2353,7 +2355,6 @@ namespace ArgusCR1029.Manufacturing
         private DevExpress.XtraReports.UI.BottomMarginBand BottomMargin;
         private DevExpress.XtraReports.UI.DetailBand Detail;
         private DevExpress.XtraReports.UI.ReportHeaderBand ReportHeader;
-        private DevExpress.XtraReports.UI.GroupHeaderBand workCenterRef;
         private DevExpress.XtraReports.UI.PageFooterBand PageFooter;
         private DevExpress.XtraReports.UI.XRLabel printSignature;
         private DevExpress.XtraReports.UI.XRPageInfo pagesNumber_lbl;
@@ -2505,5 +2506,6 @@ namespace ArgusCR1029.Manufacturing
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell42;
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell43;
         private DevExpress.XtraReports.UI.PageHeaderBand PageHeader;
+        private DevExpress.XtraReports.UI.GroupHeaderBand workCenterRef;
     }
 }
