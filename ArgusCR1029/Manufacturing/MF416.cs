@@ -5,14 +5,13 @@ using System.ComponentModel;
 using System.Drawing.Printing;
 
 namespace ArgusCR1029.Manufacturing
-{
+{  
     public partial class MF416 : ArgusRPT.BaseReport
     {
         public MF416()
         {
             InitializeComponent();
         }
-
         protected override string reportName()
         {
             return title_lbl.Text;
