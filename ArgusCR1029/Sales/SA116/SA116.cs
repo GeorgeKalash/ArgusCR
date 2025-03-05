@@ -29,7 +29,7 @@ namespace ArgusCR1029.Sales.SA116
 
             reference_data.Text = webObject.record.reference;
             date_data.Text = webObject.record.date.ToString("dd/MM/yyyy");
-            plant_data.Text = webObject.record.plantName;
+            plant_data.Text = webObject.record?.plantName;
             salesPerson_data.Text = webObject.record.spName;
             address_data.Text = companyInfo.address?.street1;
 
