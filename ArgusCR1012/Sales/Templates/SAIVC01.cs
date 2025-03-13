@@ -4,7 +4,6 @@ using System.ComponentModel;
 using System.Drawing.Printing;
 using DevExpress.XtraReports.UI;
 using ArgusDS.Sales.Reports;
-using ArgusDS.Inventory;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -104,7 +103,6 @@ namespace ArgusCR1012.Sales.Templates
         {
             tamdeedVatNo_lbl.Text = labelText(0);
             taxInvoice_lbl.Text = labelText(1);
-
             invoiceInfo_lbl.Text = labelText(2);
             reference_lbl.Text = labelText(3);
             date_lbl.Text = labelText(4);
@@ -113,45 +111,35 @@ namespace ArgusCR1012.Sales.Templates
             commercialRecord_lbl.Text = labelText(7);
             address_lbl.Text = labelText(8);
             spName_lbl.Text = labelText(9);
-
             clientInfo_lbl.Text = labelText(10);
             clientName_lbl.Text = labelText(11);
             clientVATNo_lbl.Text = labelText(12);
-
             phoneNumber_lbl.Text = labelText(13);
             cAddress_lbl.Text = labelText(14);
             exhibitionManager_lbl.Text = labelText(15);
-
             sku_lbl.Text = labelText(16);
             itemName_lbl.Text = labelText(17);
             qty_lbl.Text = labelText(18);
             unitPrice_lbl.Text = labelText(19);
-            subtotal_lbl.Text = labelText(20);
-      
-            vat_lbl.Text = labelText(22);
-            vatAmount_lbl.Text = labelText(23);
-            extendedPrice_lbl.Text = labelText(24);
-
-            total_lbl.Text = labelText(25);
-
-            deliveryOrderRef_lbl.Text = labelText(26);
-            notes_lbl.Text = labelText(27);
-
-            subtotal2_lbl.Text = labelText(28);
-            discount2_lbl.Text = labelText(29);
-            totalSub_lbl.Text = labelText(30);
-            vatAmount2_lbl.Text = labelText(31);
-            amount_lbl.Text = labelText(32);
-
-            text_lbl.Text = labelText(33);
-
-            clientSig_lbl.Text = labelText(34);
-            cName_lbl.Text = labelText(35);
-            cSig_lbl.Text = labelText(36);
-
-            sPSig_lbl.Text = labelText(37);
-            saPeName_lbl.Text = labelText(38);
-            sPeSig_lbl.Text = labelText(39);
+            subtotal_lbl.Text = labelText(20);     
+            vat_lbl.Text = labelText(21);
+            vatAmount_lbl.Text = labelText(22);
+            extendedPrice_lbl.Text = labelText(23);
+            total_lbl.Text = labelText(24);
+            deliveryOrderRef_lbl.Text = labelText(25);
+            notes_lbl.Text = labelText(26);
+            subtotal2_lbl.Text = labelText(27);
+            discount2_lbl.Text = labelText(28);
+            totalSub_lbl.Text = labelText(29);
+            vatAmount2_lbl.Text = labelText(30);
+            amount_lbl.Text = labelText(31);
+            text_lbl.Text = labelText(32);
+            clientSig_lbl.Text = labelText(33);
+            cName_lbl.Text = labelText(34);
+            cSig_lbl.Text = labelText(35);
+            sPSig_lbl.Text = labelText(36);
+            saPeName_lbl.Text = labelText(37);
+            sPeSig_lbl.Text = labelText(38);
         }
         protected override string dictionaryStore()
         {
