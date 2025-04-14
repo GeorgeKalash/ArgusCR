@@ -695,7 +695,7 @@ namespace ArgusCR1029.Financials.FI104B
             this.taxInvoice_lbl.StylePriority.UseFont = false;
             this.taxInvoice_lbl.StylePriority.UsePadding = false;
             this.taxInvoice_lbl.StylePriority.UseTextAlignment = false;
-            this.taxInvoice_lbl.Text = "سند صرف ذهب كسر وسبايك - Metal Payment Voucher";
+            this.taxInvoice_lbl.Text = "سند صرف ذهب - Metal Payment Voucher";
             this.taxInvoice_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopCenter;
             // 
             // ReportFooter
@@ -735,7 +735,7 @@ namespace ArgusCR1029.Financials.FI104B
             this.clientSig_lbl.StylePriority.UseFont = false;
             this.clientSig_lbl.StylePriority.UsePadding = false;
             this.clientSig_lbl.StylePriority.UseTextAlignment = false;
-            this.clientSig_lbl.Text = "الحساب";
+            this.clientSig_lbl.Text = "العميل";
             this.clientSig_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopCenter;
             this.clientSig_lbl.Weight = 3.6563450720294846D;
             // 
@@ -767,7 +767,7 @@ namespace ArgusCR1029.Financials.FI104B
             this.cName_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(5, 2, 8, 0, 100F);
             this.cName_lbl.StylePriority.UseFont = false;
             this.cName_lbl.StylePriority.UsePadding = false;
-            this.cName_lbl.Text = "/ اسم الحساب ";
+            this.cName_lbl.Text = "/ اسم العميل ";
             this.cName_lbl.Weight = 1.0984472679738584D;
             // 
             // xrTableRow28

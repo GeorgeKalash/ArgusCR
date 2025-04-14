@@ -4,7 +4,6 @@ using System.ComponentModel;
 using System.Drawing;
 using System.Drawing.Printing;
 using DevExpress.XtraReports.UI;
-using ArgusDS.Sales.Reports;
 using System.Collections.Generic;
 
 namespace ArgusCR1029.Financials.FI104B
