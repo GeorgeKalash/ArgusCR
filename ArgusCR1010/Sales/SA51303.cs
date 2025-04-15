@@ -38,14 +38,15 @@ namespace ArgusCR1010.Sales
                 tdPer_data.Text = "0";
             }
 
-            tdAmount_data.Text = webObject.record.trxHeader.tdAmount.ToString();
+            tdAmount_data.Text = webObject.record.trxHeader.tdAmount?.ToString("N0") ?? "0";
             vatAmount_data.Text = webObject.record.trxHeader.vatAmount.ToString("N0");
             amount_data.Text = webObject.record.trxHeader.amount.ToString("N0");
 
             decimal Airsi = webObject.record.trxHeader.amount * 0.05m;
             // airsi_data.Text = Airsi.ToString("N0");
 
-            airsi_data.Text = webObject.record.trxHeader.miscAmount.ToString();
+            airsi_data.Text = webObject.record.trxHeader.miscAmount?.ToString("N0") ?? "0";
+
 
             decimal TotalAPayer = webObject.record.trxHeader.amount + (webObject.record.trxHeader.amount * 0.05m);
             totalAPayer_data.Text = TotalAPayer.ToString("N0");
