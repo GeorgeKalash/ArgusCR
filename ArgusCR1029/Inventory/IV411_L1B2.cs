@@ -30,8 +30,13 @@ namespace ArgusCR1029.Inventory
 
             itemCategory_param.Text = Parameters.Count > 4 ? Parameters[4].Value.ToString() : string.Empty;
             itemGroup_param.Text = Parameters.Count > 5 ? Parameters[5].Value.ToString() : string.Empty;
-            siteGroup_param.Text = Parameters.Count > 6 ? Parameters[6].Value.ToString() : string.Empty;
-            production_param.Text = Parameters.Count > 7 ? Parameters[7].Value.ToString() : string.Empty;
+            fromSiteGroup_param.Text = Parameters.Count > 6 ? Parameters[6].Value.ToString() : string.Empty;
+            toSiteGroup_param.Text = Parameters.Count > 7 ? Parameters[7].Value.ToString() : string.Empty;
+
+            production_param.Text = Parameters.Count > 8 ? Parameters[8].Value.ToString() : string.Empty;
+            metalPurity_param.Text = Parameters.Count > 9 ? Parameters[9].Value.ToString() : string.Empty;
+            col_param.Text = Parameters.Count > 10 ? Parameters[10].Value.ToString() : string.Empty;
+            brand_param.Text = Parameters.Count > 11 ? Parameters[11].Value.ToString() : string.Empty;
 
             logo_data.ImageUrl = companyInfo.logoUrl;
 
@@ -43,32 +48,35 @@ namespace ArgusCR1029.Inventory
         {
             title_lbl.Text = labelText(0);
 
-            fiscalYear_lbl.Text = labelText(1);
-            date_lbl.Text = labelText(2);
-            siteParam_lbl.Text = labelText(3);
-            item_lbl.Text = labelText(4);
+            sku_lbl.Text = labelText(1);
+            name_lbl.Text = labelText(2);
+            mu_lbl.Text = labelText(3);
+            site_lbl.Text = labelText(4);
+            siteGroup_lbl.Text = labelText(5);
+            category_lbl.Text = labelText(6);
+            metal_lbl.Text = labelText(7);
+            productionLine_lbl.Text = labelText(8);
+            itemGroup_lbl.Text = labelText(9);
+            collection_lbl.Text = labelText(10);
+            stone_lbl.Text = labelText(11);
+            pcs_lbl.Text = labelText(12);
+            weight_lbl.Text = labelText(13);
+            avgWeight_lbl.Text = labelText(14);
 
-            itemCategory_lbl.Text = labelText(5);
-            itemGroupParam_lbl.Text = labelText(6);
-            siteGroupParam_lbl.Text = labelText(7);
-            production_lbl.Text = labelText(8);
+            fiscalYear_lbl.Text = labelText(15);
+            date_lbl.Text = labelText(16);
+            siteParam_lbl.Text = labelText(17);
+            item_lbl.Text = labelText(18);
 
-            sku_lbl.Text = labelText(9);
-            name_lbl.Text = labelText(10);
-            site_lbl.Text = labelText(11);
-            siteGroup_lbl.Text = labelText(12);
-            category_lbl.Text = labelText(13);
-            metal_lbl.Text = labelText(14);
-            productionLine_lbl.Text = labelText(15);
-            itemGroup_lbl.Text = labelText(16);
-            collection_lbl.Text = labelText(17);
-            stone_lbl.Text = labelText(18);
-            pcs_lbl.Text = labelText(19);
-            weight_lbl.Text = labelText(20);
-            avgWeight_lbl.Text = labelText(21);
-            weightPct_lbl.Text = labelText(22);
+            itemCategory_lbl.Text = labelText(19);
+            itemGroupParam_lbl.Text = labelText(20);
+            fromSiteGroup_lbl.Text = labelText(21);
+            toSiteGroup_lbl.Text = labelText(22);
 
-            mu_lbl.Text = labelText(23);
+            production_lbl.Text = labelText(23);
+            metalPurity_lbl.Text = labelText(24);
+            col_lbl.Text = labelText(25);
+            brand_lbl.Text = labelText(26);
         }
 
         protected override string dictionaryStore()

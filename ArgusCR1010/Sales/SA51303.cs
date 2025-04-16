@@ -42,13 +42,12 @@ namespace ArgusCR1010.Sales
             vatAmount_data.Text = webObject.record.trxHeader.vatAmount.ToString("N0");
             amount_data.Text = webObject.record.trxHeader.amount.ToString("N0");
 
-            decimal Airsi = webObject.record.trxHeader.amount * 0.05m;
-            // airsi_data.Text = Airsi.ToString("N0");
+          //  decimal Airsi = webObject.record.trxHeader.amount * 0.05m;
+          // airsi_data.Text = Airsi.ToString("N0");
 
             airsi_data.Text = webObject.record.trxHeader.miscAmount?.ToString("N0") ?? "0";
 
-
-            decimal TotalAPayer = webObject.record.trxHeader.amount + (webObject.record.trxHeader.amount * 0.05m);
+            decimal TotalAPayer = (webObject.record.trxHeader.amount) + (webObject.record.trxHeader.miscAmount ?? 0);
             totalAPayer_data.Text = TotalAPayer.ToString("N0");
 
             volume_data.Text = webObject.record.trxHeader.volume.ToString();
