@@ -154,7 +154,7 @@ namespace ArgusCR1029.Sales.SA113
             this.xrTableCell2.StylePriority.UsePadding = false;
             this.xrTableCell2.StylePriority.UseTextAlignment = false;
             this.xrTableCell2.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
-            this.xrTableCell2.Weight = 1.4621939055661233D;
+            this.xrTableCell2.Weight = 1.2301664956208132D;
             // 
             // xrTableCell22
             // 
@@ -173,7 +173,7 @@ namespace ArgusCR1029.Sales.SA113
             this.xrTableCell22.StylePriority.UsePadding = false;
             this.xrTableCell22.StylePriority.UseTextAlignment = false;
             this.xrTableCell22.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
-            this.xrTableCell22.Weight = 0.85421481381617625D;
+            this.xrTableCell22.Weight = 1.0862422237614864D;
             // 
             // xrTableCell4
             // 
@@ -390,7 +390,7 @@ namespace ArgusCR1029.Sales.SA113
             this.itemName_lbl.StylePriority.UseTextAlignment = false;
             this.itemName_lbl.Text = "اسم الفئة";
             this.itemName_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
-            this.itemName_lbl.Weight = 2.332860060128052D;
+            this.itemName_lbl.Weight = 1.9626714641240182D;
             // 
             // xrTableCell6
             // 
@@ -407,7 +407,7 @@ namespace ArgusCR1029.Sales.SA113
             this.xrTableCell6.StylePriority.UseTextAlignment = false;
             this.xrTableCell6.Text = "رقم عمليه التسليم";
             this.xrTableCell6.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
-            this.xrTableCell6.Weight = 1.362857304952775D;
+            this.xrTableCell6.Weight = 1.7330459009568093D;
             // 
             // xrTableCell3
             // 
