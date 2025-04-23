@@ -195,7 +195,7 @@ namespace ArgusCR1029.Sales.SA115
             this.xrTableCell21.StylePriority.UseTextAlignment = false;
             this.xrTableCell21.Text = "xrTableCell11";
             this.xrTableCell21.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
-            this.xrTableCell21.TextFormatString = "{0:2}";
+            this.xrTableCell21.TextFormatString = "{0:n2}";
             this.xrTableCell21.Weight = 0.604677151857057D;
             // 
             // xrTableCell22

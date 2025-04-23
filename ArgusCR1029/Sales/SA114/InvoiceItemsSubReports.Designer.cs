@@ -125,7 +125,7 @@ namespace ArgusCR1029.Sales.SA114
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell6.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[sku]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[groupRef]")});
             this.xrTableCell6.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.xrTableCell6.Multiline = true;
             this.xrTableCell6.Name = "xrTableCell6";
@@ -145,7 +145,7 @@ namespace ArgusCR1029.Sales.SA114
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell20.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[itemName]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[groupName]")});
             this.xrTableCell20.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.xrTableCell20.Multiline = true;
             this.xrTableCell20.Name = "xrTableCell20";
@@ -220,7 +220,7 @@ namespace ArgusCR1029.Sales.SA114
             this.xrTableCell21.StylePriority.UseTextAlignment = false;
             this.xrTableCell21.Text = "xrTableCell11";
             this.xrTableCell21.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
-            this.xrTableCell21.TextFormatString = "{0:2}";
+            this.xrTableCell21.TextFormatString = "{0:n2}";
             this.xrTableCell21.Weight = 0.6168891085520074D;
             // 
             // xrTableCell22
