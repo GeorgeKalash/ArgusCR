@@ -1,5 +1,5 @@
 ﻿
-namespace ArgusCR1029.Financials.FI104B
+namespace ArgusCR1029.Financials.FI104C
 {
     partial class ItemsSubReports
     {
@@ -93,7 +93,7 @@ namespace ArgusCR1029.Financials.FI104B
             this.xrTable3.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable3.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow6});
-            this.xrTable3.SizeF = new System.Drawing.SizeF(774.9483F, 24.99933F);
+            this.xrTable3.SizeF = new System.Drawing.SizeF(774.9484F, 24.99933F);
             // 
             // xrTableRow6
             // 
@@ -126,7 +126,7 @@ namespace ArgusCR1029.Financials.FI104B
             this.xrTableCell2.StylePriority.UseTextAlignment = false;
             this.xrTableCell2.Text = "SKU";
             this.xrTableCell2.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
-            this.xrTableCell2.Weight = 1.0189713924691517D;
+            this.xrTableCell2.Weight = 1.0189711764336418D;
             // 
             // xrTableCell3
             // 
@@ -146,7 +146,7 @@ namespace ArgusCR1029.Financials.FI104B
             this.xrTableCell3.StylePriority.UseTextAlignment = false;
             this.xrTableCell3.Text = "Item Name";
             this.xrTableCell3.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
-            this.xrTableCell3.Weight = 2.0979684929271731D;
+            this.xrTableCell3.Weight = 2.0979686395812029D;
             // 
             // xrTableCell11
             // 
@@ -424,7 +424,7 @@ namespace ArgusCR1029.Financials.FI104B
             this.xrTable1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable1.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow1});
-            this.xrTable1.SizeF = new System.Drawing.SizeF(663.9592F, 22.29271F);
+            this.xrTable1.SizeF = new System.Drawing.SizeF(663.9594F, 22.29271F);
             // 
             // xrTableRow1
             // 
@@ -455,7 +455,7 @@ namespace ArgusCR1029.Financials.FI104B
             this.xrTableCell15.StylePriority.UseTextAlignment = false;
             this.xrTableCell15.Text = "الاجمالى";
             this.xrTableCell15.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
-            this.xrTableCell15.Weight = 2.0979685688872109D;
+            this.xrTableCell15.Weight = 2.09796885255074D;
             // 
             // xrTableCell16
             // 
@@ -573,7 +573,7 @@ namespace ArgusCR1029.Financials.FI104B
             this.PageHeader,
             this.ReportFooter});
             this.Font = new System.Drawing.Font("Arial", 9.75F);
-            this.Margins = new System.Drawing.Printing.Margins(0, 51, 0, 0);
+            this.Margins = new System.Drawing.Printing.Margins(0, 49, 0, 0);
             this.PageHeight = 1169;
             this.PageWidth = 827;
             this.PaperKind = System.Drawing.Printing.PaperKind.A4;
