@@ -305,7 +305,7 @@ namespace ArgusCR1010.Sales
             // 
             this.price_data.Borders = ((DevExpress.XtraPrinting.BorderSide)((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.price_data.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[unitPrice]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[unitPrice]/[muQty]")});
             this.price_data.Font = new System.Drawing.Font("Times New Roman", 8F);
             this.price_data.Multiline = true;
             this.price_data.Name = "price_data";
