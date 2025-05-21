@@ -22,13 +22,19 @@ namespace ArgusCR1029.Purchase
             SharedClasses.JsonProtocol.QryStructure<ArgusDS._1029.PU207> obj = deserializeList<ArgusDS._1029.PU207>();
             DataSource = obj.list;
 
-            vendor_param.Text = Parameters.Count > 2 ? Parameters[2].Value.ToString() : string.Empty;
             startDate_param.Text = Parameters.Count > 0 ? Parameters[0].Value.ToString() : string.Empty;
             endDate_param.Text = Parameters.Count > 1 ? Parameters[1].Value.ToString() : string.Empty;
-            currency_param.Text = Parameters.Count >  6 ? Parameters[6].Value.ToString() : string.Empty;
-            siteParam_param.Text = Parameters.Count > 3 ? Parameters[3].Value.ToString() : string.Empty;
+            vendor_param.Text = Parameters.Count > 2 ? Parameters[2].Value.ToString() : string.Empty;
+            site_param.Text = Parameters.Count >  3 ? Parameters[3].Value.ToString() : string.Empty;
+            plant_param.Text = Parameters.Count > 4 ? Parameters[4].Value.ToString() : string.Empty;
+            itemCategory_param.Text = Parameters.Count > 5 ? Parameters[5].Value.ToString() : string.Empty;
+
+            currency_param.Text = Parameters.Count > 6 ? Parameters[6].Value.ToString() : string.Empty;
             systemFunction_param.Text = Parameters.Count > 7 ? Parameters[7].Value.ToString() : string.Empty;
             status_param.Text = Parameters.Count > 8 ? Parameters[8].Value.ToString() : string.Empty;
+            description_param.Text = Parameters.Count > 9 ? Parameters[9].Value.ToString() : string.Empty;
+            documentType_param.Text = Parameters.Count > 10 ? Parameters[10].Value.ToString() : string.Empty;
+            accountGroup_param.Text = Parameters.Count > 11 ? Parameters[11].Value.ToString() : string.Empty;
 
             printSignature.Text = reportSignature();
             base.OnBeforePrint(e);
@@ -56,12 +62,17 @@ namespace ArgusCR1029.Purchase
 
             startDate_lbl.Text = labelText(16);
             endDate_lbl.Text = labelText(17);
-            vendor_lbl.Text = labelText(18);
-            currency_lbl.Text = labelText(19);
+            Vendor_lbl.Text = labelText(18);
+            site_lbl.Text = labelText(19);
+            plant_lbl.Text = labelText(20);
+            itemCategory_lbl.Text = labelText(21);
 
-            site_lbl.Text = labelText(20);
-            systemFunction_lbl.Text = labelText(21);
-            status_lbl.Text = labelText(22);
+            currency_lbl.Text = labelText(22);
+            systemFunction_lbl.Text = labelText(23);
+            status_lbl.Text = labelText(24);
+            descriptionParam_lbl.Text = labelText(25);
+            documentType_lbl.Text = labelText(26);
+            accountGroup_lbl.Text = labelText(27);
         }
 
         protected override string dictionaryStore()
