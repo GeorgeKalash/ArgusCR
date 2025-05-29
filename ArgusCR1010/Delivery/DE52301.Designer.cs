@@ -33,6 +33,7 @@ namespace ArgusCR1010.Delivery
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DE52301));
             this.TopMargin = new DevExpress.XtraReports.UI.TopMarginBand();
             this.BottomMargin = new DevExpress.XtraReports.UI.BottomMarginBand();
+            this.xrLine1 = new DevExpress.XtraReports.UI.XRLine();
             this.Detail = new DevExpress.XtraReports.UI.DetailBand();
             this.xrTable3 = new DevExpress.XtraReports.UI.XRTable();
             this.xrTableRow3 = new DevExpress.XtraReports.UI.XRTableRow();
@@ -92,7 +93,6 @@ namespace ArgusCR1010.Delivery
             this.xrTableCell6 = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTableCell11 = new DevExpress.XtraReports.UI.XRTableCell();
             this.taxInvoice_lbl = new DevExpress.XtraReports.UI.XRLabel();
-            this.xrLine1 = new DevExpress.XtraReports.UI.XRLine();
             this.xrLabel2 = new DevExpress.XtraReports.UI.XRLabel();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable5)).BeginInit();
@@ -110,10 +110,16 @@ namespace ArgusCR1010.Delivery
             // BottomMargin
             // 
             this.BottomMargin.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
-            this.xrLine1,
-            this.xrLabel2});
-            this.BottomMargin.HeightF = 77F;
+            this.xrLabel2,
+            this.xrLine1});
+            this.BottomMargin.HeightF = 90.6983F;
             this.BottomMargin.Name = "BottomMargin";
+            // 
+            // xrLine1
+            // 
+            this.xrLine1.LocationFloat = new DevExpress.Utils.PointFloat(25F, 9.583305F);
+            this.xrLine1.Name = "xrLine1";
+            this.xrLine1.SizeF = new System.Drawing.SizeF(770.1656F, 10.00004F);
             // 
             // Detail
             // 
@@ -559,7 +565,7 @@ namespace ArgusCR1010.Delivery
             // 
             this.PageFooter.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
             this.xrTable2});
-            this.PageFooter.HeightF = 105.2132F;
+            this.PageFooter.HeightF = 95.21326F;
             this.PageFooter.Name = "PageFooter";
             // 
             // xrTable2
@@ -907,20 +913,14 @@ namespace ArgusCR1010.Delivery
             this.taxInvoice_lbl.Text = "La Direction Commerciale\r";
             this.taxInvoice_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopCenter;
             // 
-            // xrLine1
-            // 
-            this.xrLine1.LocationFloat = new DevExpress.Utils.PointFloat(25F, 9.583305F);
-            this.xrLine1.Name = "xrLine1";
-            this.xrLine1.SizeF = new System.Drawing.SizeF(770.1656F, 10.00004F);
-            // 
             // xrLabel2
             // 
             this.xrLabel2.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold);
-            this.xrLabel2.LocationFloat = new DevExpress.Utils.PointFloat(39.5833F, 19.58334F);
+            this.xrLabel2.LocationFloat = new DevExpress.Utils.PointFloat(39.5833F, 20.00001F);
             this.xrLabel2.Multiline = true;
             this.xrLabel2.Name = "xrLabel2";
             this.xrLabel2.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel2.SizeF = new System.Drawing.SizeF(732.6663F, 57.41666F);
+            this.xrLabel2.SizeF = new System.Drawing.SizeF(732.6663F, 70.69829F);
             this.xrLabel2.StylePriority.UseFont = false;
             this.xrLabel2.StylePriority.UseTextAlignment = false;
             this.xrLabel2.Text = resources.GetString("xrLabel2.Text");
@@ -937,7 +937,7 @@ namespace ArgusCR1010.Delivery
             this.ReportFooter,
             this.PageFooter});
             this.Font = new System.Drawing.Font("Arial", 9.75F);
-            this.Margins = new System.Drawing.Printing.Margins(0, 0, 25, 77);
+            this.Margins = new System.Drawing.Printing.Margins(0, 0, 25, 91);
             this.PageHeight = 1169;
             this.PageWidth = 827;
             this.PaperKind = System.Drawing.Printing.PaperKind.A4;

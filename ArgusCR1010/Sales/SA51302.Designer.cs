@@ -152,7 +152,7 @@ namespace ArgusCR1010.Sales
             this.BottomMargin.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
             this.xrLabel1,
             this.xrLine1});
-            this.BottomMargin.HeightF = 77.41667F;
+            this.BottomMargin.HeightF = 90.6983F;
             this.BottomMargin.Name = "BottomMargin";
             // 
             // xrLabel1
@@ -162,7 +162,7 @@ namespace ArgusCR1010.Sales
             this.xrLabel1.Multiline = true;
             this.xrLabel1.Name = "xrLabel1";
             this.xrLabel1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel1.SizeF = new System.Drawing.SizeF(732.6663F, 57.41666F);
+            this.xrLabel1.SizeF = new System.Drawing.SizeF(732.6663F, 70.69829F);
             this.xrLabel1.StylePriority.UseFont = false;
             this.xrLabel1.StylePriority.UseTextAlignment = false;
             this.xrLabel1.Text = resources.GetString("xrLabel1.Text");
@@ -1484,7 +1484,7 @@ namespace ArgusCR1010.Sales
             this.PageHeader,
             this.ReportFooter});
             this.Font = new System.Drawing.Font("Arial", 9.75F);
-            this.Margins = new System.Drawing.Printing.Margins(0, 0, 215, 77);
+            this.Margins = new System.Drawing.Printing.Margins(0, 0, 215, 91);
             this.PageHeight = 1169;
             this.PageWidth = 827;
             this.PaperKind = System.Drawing.Printing.PaperKind.A4;
