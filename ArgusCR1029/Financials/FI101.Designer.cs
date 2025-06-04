@@ -679,7 +679,7 @@ namespace ArgusCR1029.Financials
             // pagesNumber_lbl
             // 
             this.pagesNumber_lbl.BackColor = System.Drawing.Color.Transparent;
-            this.pagesNumber_lbl.Font = new System.Drawing.Font("Arial", 8F);
+            this.pagesNumber_lbl.Font = new System.Drawing.Font("Arial", 9F);
             this.pagesNumber_lbl.LocationFloat = new DevExpress.Utils.PointFloat(664.3751F, 9.999974F);
             this.pagesNumber_lbl.Name = "pagesNumber_lbl";
             this.pagesNumber_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -692,7 +692,7 @@ namespace ArgusCR1029.Financials
             // 
             // printSignature
             // 
-            this.printSignature.Font = new System.Drawing.Font("Times New Roman", 8F);
+            this.printSignature.Font = new System.Drawing.Font("Times New Roman", 9F);
             this.printSignature.LocationFloat = new DevExpress.Utils.PointFloat(50F, 9.999974F);
             this.printSignature.Multiline = true;
             this.printSignature.Name = "printSignature";

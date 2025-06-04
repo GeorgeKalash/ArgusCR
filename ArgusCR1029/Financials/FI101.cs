@@ -13,6 +13,7 @@ namespace ArgusCR1029.Financials
             InitializeComponent();
         }
 
+
         protected override void OnBeforePrint(PrintEventArgs e)
         {
             SharedClasses.JsonProtocol.GetStructure<ArgusDS.Financials.ReceiptVoucherView> obj = deserializeGet<ArgusDS.Financials.ReceiptVoucherView>();
