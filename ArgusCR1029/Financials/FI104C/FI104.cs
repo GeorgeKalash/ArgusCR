@@ -51,6 +51,10 @@ namespace ArgusCR1029.Financials.FI104C
             amountBaseMetalQty_data.Text = SharedClasses.NumberToWords.multiLingualNumberInText((decimal)webObject.record.baseMetalQty, 4, 2);
             amountTotalLabor_data.Text = SharedClasses.NumberToWords.multiLingualNumberInText((decimal)webObject.record.totalLabor, 10, 2);
 
+            createdName_data.Text = webObject.record.header.userName;
+            createdDate_data.Text = webObject.record.header.createdDate.ToString();
+
+            printSignature.Text = reportSignature();
             base.OnBeforePrint(e);
         }
 

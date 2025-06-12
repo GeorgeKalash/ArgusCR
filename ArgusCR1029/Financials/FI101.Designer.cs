@@ -84,9 +84,15 @@ namespace ArgusCR1029.Financials
             this.PageFooter = new DevExpress.XtraReports.UI.PageFooterBand();
             this.pagesNumber_lbl = new DevExpress.XtraReports.UI.XRPageInfo();
             this.printSignature = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrTable4 = new DevExpress.XtraReports.UI.XRTable();
+            this.xrTableRow16 = new DevExpress.XtraReports.UI.XRTableRow();
+            this.xrTableCell1 = new DevExpress.XtraReports.UI.XRTableCell();
+            this.createdName_data = new DevExpress.XtraReports.UI.XRTableCell();
+            this.createdDate_data = new DevExpress.XtraReports.UI.XRTableCell();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.xrTable4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             // 
             // TopMargin
@@ -671,16 +677,17 @@ namespace ArgusCR1029.Financials
             // PageFooter
             // 
             this.PageFooter.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+            this.xrTable4,
             this.pagesNumber_lbl,
             this.printSignature});
-            this.PageFooter.HeightF = 32.99999F;
+            this.PageFooter.HeightF = 57.99999F;
             this.PageFooter.Name = "PageFooter";
             // 
             // pagesNumber_lbl
             // 
             this.pagesNumber_lbl.BackColor = System.Drawing.Color.Transparent;
             this.pagesNumber_lbl.Font = new System.Drawing.Font("Arial", 9F);
-            this.pagesNumber_lbl.LocationFloat = new DevExpress.Utils.PointFloat(664.3751F, 9.999974F);
+            this.pagesNumber_lbl.LocationFloat = new DevExpress.Utils.PointFloat(664.3751F, 34.99997F);
             this.pagesNumber_lbl.Name = "pagesNumber_lbl";
             this.pagesNumber_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.pagesNumber_lbl.SizeF = new System.Drawing.SizeF(107.8901F, 23F);
@@ -693,7 +700,7 @@ namespace ArgusCR1029.Financials
             // printSignature
             // 
             this.printSignature.Font = new System.Drawing.Font("Times New Roman", 9F);
-            this.printSignature.LocationFloat = new DevExpress.Utils.PointFloat(50F, 9.999974F);
+            this.printSignature.LocationFloat = new DevExpress.Utils.PointFloat(50F, 34.99997F);
             this.printSignature.Multiline = true;
             this.printSignature.Name = "printSignature";
             this.printSignature.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -702,6 +709,49 @@ namespace ArgusCR1029.Financials
             this.printSignature.StylePriority.UseTextAlignment = false;
             this.printSignature.Text = "printSignature";
             this.printSignature.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            // 
+            // xrTable4
+            // 
+            this.xrTable4.LocationFloat = new DevExpress.Utils.PointFloat(50F, 9.999974F);
+            this.xrTable4.Name = "xrTable4";
+            this.xrTable4.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
+            this.xrTable4.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
+            this.xrTableRow16});
+            this.xrTable4.SizeF = new System.Drawing.SizeF(406.25F, 25F);
+            // 
+            // xrTableRow16
+            // 
+            this.xrTableRow16.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
+            this.xrTableCell1,
+            this.createdName_data,
+            this.createdDate_data});
+            this.xrTableRow16.Name = "xrTableRow16";
+            this.xrTableRow16.Weight = 1D;
+            // 
+            // xrTableCell1
+            // 
+            this.xrTableCell1.Font = new System.Drawing.Font("Arial", 8F);
+            this.xrTableCell1.Multiline = true;
+            this.xrTableCell1.Name = "xrTableCell1";
+            this.xrTableCell1.StylePriority.UseFont = false;
+            this.xrTableCell1.Text = "Created By:";
+            this.xrTableCell1.Weight = 0.72916557312011721D;
+            // 
+            // createdName_data
+            // 
+            this.createdName_data.Font = new System.Drawing.Font("Arial", 8F);
+            this.createdName_data.Multiline = true;
+            this.createdName_data.Name = "createdName_data";
+            this.createdName_data.StylePriority.UseFont = false;
+            this.createdName_data.Weight = 2.0416678619384769D;
+            // 
+            // createdDate_data
+            // 
+            this.createdDate_data.Font = new System.Drawing.Font("Arial", 8F);
+            this.createdDate_data.Multiline = true;
+            this.createdDate_data.Name = "createdDate_data";
+            this.createdDate_data.StylePriority.UseFont = false;
+            this.createdDate_data.Weight = 1.2916665649414063D;
             // 
             // FI101
             // 
@@ -720,6 +770,7 @@ namespace ArgusCR1029.Financials
             ((System.ComponentModel.ISupportInitialize)(this.xrTable3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.xrTable4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
 
         }
@@ -781,5 +832,10 @@ namespace ArgusCR1029.Financials
         private DevExpress.XtraReports.UI.XRTableCell payerSignature_lbl;
         private DevExpress.XtraReports.UI.XRTableRow xrTableRow14;
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell2;
+        private DevExpress.XtraReports.UI.XRTable xrTable4;
+        private DevExpress.XtraReports.UI.XRTableRow xrTableRow16;
+        private DevExpress.XtraReports.UI.XRTableCell xrTableCell1;
+        private DevExpress.XtraReports.UI.XRTableCell createdName_data;
+        private DevExpress.XtraReports.UI.XRTableCell createdDate_data;
     }
 }

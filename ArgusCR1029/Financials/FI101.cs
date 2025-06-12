@@ -34,9 +34,10 @@ namespace ArgusCR1029.Financials
             notes_data.Text = obj.record.notes;
             amountInWords_data.Text = SharedClasses.NumberToWords.multiLingualNumberInText((decimal)obj.record.amount, 10, 2);
             amountInWords_data.Text = string.Format("\"{0}\"", amountInWords_data.Text);
-
             segmentName_data.Text = obj.record.segmentName;
 
+            createdName_data.Text = obj.record.userName;
+            createdDate_data.Text = obj.record.createdDate.ToString();
             printSignature.Text = reportSignature();
             base.OnBeforePrint(e);
         }
