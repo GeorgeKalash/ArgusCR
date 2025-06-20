@@ -166,7 +166,7 @@ namespace ArgusCR1029.Sales
             // 
             // TopMargin
             // 
-            this.TopMargin.HeightF = 25F;
+            this.TopMargin.HeightF = 12.5F;
             this.TopMargin.Name = "TopMargin";
             // 
             // BottomMargin
@@ -1204,6 +1204,7 @@ namespace ArgusCR1029.Sales
             // 
             // xrTable4
             // 
+            this.xrTable4.BackColor = System.Drawing.Color.WhiteSmoke;
             this.xrTable4.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.xrTable4.LocationFloat = new DevExpress.Utils.PointFloat(12.50003F, 0F);
             this.xrTable4.Name = "xrTable4";
@@ -1211,6 +1212,7 @@ namespace ArgusCR1029.Sales
             this.xrTable4.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow9});
             this.xrTable4.SizeF = new System.Drawing.SizeF(1045.648F, 25F);
+            this.xrTable4.StylePriority.UseBackColor = false;
             this.xrTable4.StylePriority.UseFont = false;
             this.xrTable4.StylePriority.UseTextAlignment = false;
             this.xrTable4.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
@@ -1434,6 +1436,7 @@ namespace ArgusCR1029.Sales
             // 
             // xrTable6
             // 
+            this.xrTable6.BackColor = System.Drawing.Color.WhiteSmoke;
             this.xrTable6.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.xrTable6.LocationFloat = new DevExpress.Utils.PointFloat(12.50003F, 0F);
             this.xrTable6.Name = "xrTable6";
@@ -1441,6 +1444,7 @@ namespace ArgusCR1029.Sales
             this.xrTable6.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow10});
             this.xrTable6.SizeF = new System.Drawing.SizeF(1045.648F, 25F);
+            this.xrTable6.StylePriority.UseBackColor = false;
             this.xrTable6.StylePriority.UseFont = false;
             this.xrTable6.StylePriority.UseTextAlignment = false;
             this.xrTable6.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
@@ -1711,7 +1715,7 @@ namespace ArgusCR1029.Sales
             this.PageHeader});
             this.Font = new System.Drawing.Font("Arial", 9.75F);
             this.Landscape = true;
-            this.Margins = new System.Drawing.Printing.Margins(0, 0, 25, 0);
+            this.Margins = new System.Drawing.Printing.Margins(0, 0, 12, 0);
             this.PageHeight = 827;
             this.PageWidth = 1299;
             this.PaperKind = System.Drawing.Printing.PaperKind.A4Plus;

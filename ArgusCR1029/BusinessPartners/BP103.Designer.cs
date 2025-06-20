@@ -104,7 +104,7 @@ namespace ArgusCR1029.BusinessPartners
             // 
             // TopMargin
             // 
-            this.TopMargin.HeightF = 12.29167F;
+            this.TopMargin.HeightF = 11.25F;
             this.TopMargin.Name = "TopMargin";
             // 
             // BottomMargin
@@ -421,6 +421,7 @@ namespace ArgusCR1029.BusinessPartners
             // 
             // xrTable5
             // 
+            this.xrTable5.Font = new System.Drawing.Font("Arial", 9F);
             this.xrTable5.LocationFloat = new DevExpress.Utils.PointFloat(137.5F, 37.5F);
             this.xrTable5.Name = "xrTable5";
             this.xrTable5.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
@@ -434,6 +435,7 @@ namespace ArgusCR1029.BusinessPartners
             this.xrTableRow10,
             this.xrTableRow11});
             this.xrTable5.SizeF = new System.Drawing.SizeF(400.6945F, 167.3611F);
+            this.xrTable5.StylePriority.UseFont = false;
             // 
             // xrTableRow9
             // 
@@ -1028,7 +1030,7 @@ namespace ArgusCR1029.BusinessPartners
             this.levelName});
             this.Font = new System.Drawing.Font("Arial", 9.75F);
             this.Landscape = true;
-            this.Margins = new System.Drawing.Printing.Margins(0, 0, 12, 0);
+            this.Margins = new System.Drawing.Printing.Margins(0, 0, 11, 0);
             this.PageHeight = 827;
             this.PageWidth = 1169;
             this.PaperKind = System.Drawing.Printing.PaperKind.A4;

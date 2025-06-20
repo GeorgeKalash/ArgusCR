@@ -979,7 +979,7 @@ namespace ArgusCR1029.Inventory
             // 
             // TopMargin
             // 
-            this.TopMargin.HeightF = 24F;
+            this.TopMargin.HeightF = 12.54168F;
             this.TopMargin.Name = "TopMargin";
             // 
             // BottomMargin
@@ -1026,7 +1026,7 @@ namespace ArgusCR1029.Inventory
             this.Font = new System.Drawing.Font("Arial", 9.75F);
             this.HorizontalContentSplitting = DevExpress.XtraPrinting.HorizontalContentSplitting.Smart;
             this.Landscape = true;
-            this.Margins = new System.Drawing.Printing.Margins(0, 0, 24, 0);
+            this.Margins = new System.Drawing.Printing.Margins(0, 0, 13, 0);
             this.PageHeight = 1268;
             this.PageWidth = 1752;
             this.PaperKind = System.Drawing.Printing.PaperKind.A3Extra;

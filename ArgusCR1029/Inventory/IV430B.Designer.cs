@@ -429,6 +429,7 @@ namespace ArgusCR1029.Inventory
             this.xrCrossTabCell2.BackColor = System.Drawing.Color.White;
             this.xrCrossTabCell2.BorderColor = System.Drawing.Color.Black;
             this.xrCrossTabCell2.ColumnIndex = 1;
+            this.xrCrossTabCell2.Font = new System.Drawing.Font("Arial", 9F);
             this.xrCrossTabCell2.Name = "xrCrossTabCell2";
             this.xrCrossTabCell2.RowIndex = 1;
             this.xrCrossTabCell2.TextFormatString = "{0:n2}";
@@ -438,6 +439,7 @@ namespace ArgusCR1029.Inventory
             this.xrCrossTabCell3.BackColor = System.Drawing.Color.WhiteSmoke;
             this.xrCrossTabCell3.BorderColor = System.Drawing.Color.Black;
             this.xrCrossTabCell3.ColumnIndex = 1;
+            this.xrCrossTabCell3.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold);
             this.xrCrossTabCell3.Name = "xrCrossTabCell3";
             this.xrCrossTabCell3.RowIndex = 0;
             this.xrCrossTabCell3.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
@@ -447,6 +449,7 @@ namespace ArgusCR1029.Inventory
             this.total_lbl.BackColor = System.Drawing.Color.WhiteSmoke;
             this.total_lbl.BorderColor = System.Drawing.Color.Black;
             this.total_lbl.ColumnIndex = 2;
+            this.total_lbl.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold);
             this.total_lbl.Name = "total_lbl";
             this.total_lbl.RowIndex = 0;
             this.total_lbl.Text = " Total";
@@ -457,6 +460,7 @@ namespace ArgusCR1029.Inventory
             this.xrCrossTabCell5.BackColor = System.Drawing.Color.White;
             this.xrCrossTabCell5.BorderColor = System.Drawing.Color.Black;
             this.xrCrossTabCell5.ColumnIndex = 2;
+            this.xrCrossTabCell5.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold);
             this.xrCrossTabCell5.Name = "xrCrossTabCell5";
             this.xrCrossTabCell5.RowIndex = 1;
             this.xrCrossTabCell5.TextFormatString = "{0:n2}";
@@ -466,7 +470,7 @@ namespace ArgusCR1029.Inventory
             this.xrCrossTabCell6.BackColor = System.Drawing.Color.White;
             this.xrCrossTabCell6.BorderColor = System.Drawing.Color.Black;
             this.xrCrossTabCell6.ColumnIndex = 0;
-            this.xrCrossTabCell6.Font = new System.Drawing.Font("Arial", 9.75F);
+            this.xrCrossTabCell6.Font = new System.Drawing.Font("Arial", 9F);
             this.xrCrossTabCell6.Name = "xrCrossTabCell6";
             this.xrCrossTabCell6.RowIndex = 1;
             // 
@@ -507,7 +511,7 @@ namespace ArgusCR1029.Inventory
             // 
             // TopMargin
             // 
-            this.TopMargin.HeightF = 25F;
+            this.TopMargin.HeightF = 13.54167F;
             this.TopMargin.Name = "TopMargin";
             // 
             // BottomMargin
@@ -569,7 +573,7 @@ namespace ArgusCR1029.Inventory
             this.Font = new System.Drawing.Font("Arial", 9.75F);
             this.HorizontalContentSplitting = DevExpress.XtraPrinting.HorizontalContentSplitting.Smart;
             this.Landscape = true;
-            this.Margins = new System.Drawing.Printing.Margins(0, 0, 25, 0);
+            this.Margins = new System.Drawing.Printing.Margins(0, 0, 14, 0);
             this.PageHeight = 1268;
             this.PageWidth = 1752;
             this.PaperKind = System.Drawing.Printing.PaperKind.A3Extra;

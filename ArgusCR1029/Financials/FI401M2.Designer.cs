@@ -180,7 +180,7 @@ namespace ArgusCR1029.Financials
             this.title_lbl,
             this.crossTab,
             this.xrTable1});
-            this.ReportHeader.HeightF = 412.5001F;
+            this.ReportHeader.HeightF = 387.5F;
             this.ReportHeader.KeepTogether = true;
             this.ReportHeader.Name = "ReportHeader";
             // 
@@ -286,7 +286,7 @@ namespace ArgusCR1029.Financials
             this.crossTab.DataSource = this.objectDataSource1;
             this.crossTab.GeneralStyleName = "crossTabGeneralStyle";
             this.crossTab.HeaderAreaStyleName = "crossTabHeaderStyle";
-            this.crossTab.LocationFloat = new DevExpress.Utils.PointFloat(13.2918F, 162.5F);
+            this.crossTab.LocationFloat = new DevExpress.Utils.PointFloat(12.5F, 137.5F);
             this.crossTab.Name = "crossTab";
             crossTabRowDefinition1.Visible = false;
             crossTabRowDefinition2.Visible = false;
@@ -733,7 +733,7 @@ namespace ArgusCR1029.Financials
             // 
             // xrTable1
             // 
-            this.xrTable1.LocationFloat = new DevExpress.Utils.PointFloat(134.1251F, 45.625F);
+            this.xrTable1.LocationFloat = new DevExpress.Utils.PointFloat(137.5F, 37.5F);
             this.xrTable1.Name = "xrTable1";
             this.xrTable1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable1.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
@@ -741,7 +741,7 @@ namespace ArgusCR1029.Financials
             this.xrTableRow2,
             this.xrTableRow3,
             this.xrTableRow5});
-            this.xrTable1.SizeF = new System.Drawing.SizeF(381.0797F, 100F);
+            this.xrTable1.SizeF = new System.Drawing.SizeF(381.0797F, 86.45835F);
             // 
             // xrTableRow1
             // 
@@ -851,7 +851,7 @@ namespace ArgusCR1029.Financials
             // 
             // TopMargin
             // 
-            this.TopMargin.HeightF = 30F;
+            this.TopMargin.HeightF = 13.33334F;
             this.TopMargin.Name = "TopMargin";
             // 
             // BottomMargin
@@ -935,7 +935,7 @@ namespace ArgusCR1029.Financials
             this.Font = new System.Drawing.Font("Arial", 9.75F);
             this.HorizontalContentSplitting = DevExpress.XtraPrinting.HorizontalContentSplitting.Smart;
             this.Landscape = true;
-            this.Margins = new System.Drawing.Printing.Margins(0, 0, 30, 0);
+            this.Margins = new System.Drawing.Printing.Margins(0, 0, 13, 0);
             this.PageHeight = 827;
             this.PageWidth = 1169;
             this.PaperKind = System.Drawing.Printing.PaperKind.A4;

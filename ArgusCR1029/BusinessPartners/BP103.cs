@@ -13,7 +13,6 @@ namespace ArgusCR1029.BusinessPartners
         {
             InitializeComponent();
         }
-
         protected override string reportName()
         {
             return title_lbl.Text;
