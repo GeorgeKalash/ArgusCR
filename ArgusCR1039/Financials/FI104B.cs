@@ -6,9 +6,9 @@ using System.Drawing.Printing;
 
 namespace ArgusCR1039.Financials
 {
-    public partial class FI104 : ArgusRPT.BaseReport
+    public partial class FI104B : ArgusRPT.BaseReport
     {
-        public FI104()
+        public FI104B()
         {
             InitializeComponent();
         }

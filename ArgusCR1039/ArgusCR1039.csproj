@@ -127,6 +127,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Financials\FI104B.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Financials\FI104B.Designer.cs">
+      <DependentUpon>FI104B.cs</DependentUpon>
+    </Compile>
     <Compile Include="Financials\FI104.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -160,6 +166,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Financials\FI104B.resx">
+      <DependentUpon>FI104B.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Financials\FI104.resx">
       <DependentUpon>FI104.cs</DependentUpon>
     </EmbeddedResource>
