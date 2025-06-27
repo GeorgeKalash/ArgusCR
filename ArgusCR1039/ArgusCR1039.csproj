@@ -139,6 +139,12 @@
     <Compile Include="Financials\FI104.Designer.cs">
       <DependentUpon>FI104.cs</DependentUpon>
     </Compile>
+    <Compile Include="Financials\FI102.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Financials\FI102.Designer.cs">
+      <DependentUpon>FI102.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -171,6 +177,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Financials\FI104.resx">
       <DependentUpon>FI104.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Financials\FI102.resx">
+      <DependentUpon>FI102.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
