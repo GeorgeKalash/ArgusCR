@@ -27,6 +27,9 @@ namespace ArgusCR1039.Financials
             checkNo_data.Text = obj.record.header.checkNo;
             notes_data.Text = obj.record.header.notes;
             amount_data.Text = obj.record.header.amount.ToString("N2");
+            amount2_data.Text = obj.record.header.amount.ToString("N2");
+
+            amountInWords_data.Text = SharedClasses.NumberToWords.multiLingualNumberInText((decimal)obj.record.header.amount, 2, 2);
             base.OnBeforePrint(e);
         }
         protected override void labelsText()
