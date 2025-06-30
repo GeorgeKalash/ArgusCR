@@ -30,7 +30,12 @@ namespace ArgusCR1039.Financials
             amount_data.Text = obj.record.amount.ToString("N2");
             amount2_data.Text = obj.record.amount.ToString("N2");
 
-            amountInWords_data.Text = SharedClasses.NumberToWords.multiLingualNumberInText((decimal)obj.record.amount, 2, 2);
+
+            if (obj.record.currencyProfileId != null)
+                amountInWords_data.Text = SharedClasses.NumberToWords.multiLingualNumberInText((decimal)obj.record.amount, obj.record.currencyProfileId, 2);
+
+            amountInWords_data.Text = string.Format("\"{0}\"", amountInWords_data.Text);
+
             base.OnBeforePrint(e);
         }
         protected override void labelsText()
