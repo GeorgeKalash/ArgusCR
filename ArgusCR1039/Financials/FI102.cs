@@ -16,8 +16,7 @@ namespace ArgusCR1039.Financials
         protected override void OnBeforePrint(PrintEventArgs e)
         {
             SharedClasses.JsonProtocol.GetStructure<ArgusDS.Financials.Reports.FI102> obj = deserializeGet<ArgusDS.Financials.Reports.FI102>();
-            DataSource = obj.record.items;
-
+          //  DataSource = obj.record.items;
             accountRef_data.Text = obj.record.header.accountRef;
             accountName_data.Text = obj.record.header.accountName;
 
@@ -36,7 +35,7 @@ namespace ArgusCR1039.Financials
 
         protected override string dictionaryStore()
         {
-            return "ArgusCR1039.FI102";
+            return "CR1039.FI102";
         }
     }
 }
