@@ -34,31 +34,30 @@ namespace ArgusCR1039.Sales.SA103
             date_data.Text = webObject.record.trxHeader.date.ToString(sessionInfo.dateFormat);
             plant_data.Text = webObject.record.trxHeader.plantName;
             spName_data.Text = webObject.record.salesPerson?.name;
-            address_data.Text = companyInfo.address?.street1;
+          //  address_data.Text = companyInfo.address?.street1;
 
             clientRef_data.Text = webObject.record.client.reference;
             clientName_data.Text = webObject.record.trxHeader.clientName;
             clientVATNo_data.Text = webObject.record.trxHeader.clientVATNo;
             phoneNumber_data.Text = webObject.record.billAddress?.phone;
             cAddress_data.Text = webObject.record.billAddress?.street1;
-            exhibitionManager_data.Text = webObject.record.trxHeader.contactName;
+          //  exhibitionManager_data.Text = webObject.record.trxHeader.contactName;
 
-            tdPct_data.Text = webObject.record.trxHeader.tdPct.ToString();
+        //    tdPct_data.Text = webObject.record.trxHeader.tdPct.ToString();
             subtotal_data.Text = webObject.record.trxHeader.subtotal.ToString("N2");
-            tdAmount_data.Text = webObject.record.trxHeader.tdAmount.ToString();
+          //  tdAmount_data.Text = webObject.record.trxHeader.tdAmount.ToString();
             vatAmount_data.Text = webObject.record.trxHeader.vatAmount.ToString("N2");
             amount_data.Text = webObject.record.trxHeader.amount.ToString("N2");
             amountInWords_data.Text = SharedClasses.NumberToWords.multiLingualNumberInText((decimal)webObject.record.trxHeader.amount, 10, 2);
 
             description_data.Text = webObject.record.trxHeader.description;
 
-            spName2_data.Text = webObject.record.salesPerson?.name;
 
             ((InvoiceItemsSubReports)(InvoiceItemsSubReports.ReportSource)).data = webObject.record.items;
             ((MetalSubReports)(MetalSubReports.ReportSource)).data = webObject.record.metalSummaries;
 
             QRCode.Text = new KSAeInvoiceQrCode(webObject.record.companyInfo.name, webObject.record.companyInfo.taxNo, (DateTime)webObject.record.trxHeader.date, webObject.record.trxHeader.amount.ToString(), webObject.record.trxHeader.vatAmount.ToString()).ToBase64();
-
+            printSignature_data.Text = reportSignature();
             base.OnBeforePrint(e);
         }
 
@@ -68,7 +67,7 @@ namespace ArgusCR1039.Sales.SA103
 
         protected override string dictionaryStore()
         {
-            return "CR1029.SA103";
+            return "CR1039.SA103";
         }
     }
 }
