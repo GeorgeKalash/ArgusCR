@@ -70,12 +70,12 @@ namespace ArgusCR1039.Sales.SA103
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTable2.BorderWidth = 0.5F;
-            this.xrTable2.LocationFloat = new DevExpress.Utils.PointFloat(502.6734F, 0F);
+            this.xrTable2.LocationFloat = new DevExpress.Utils.PointFloat(519.3401F, 0F);
             this.xrTable2.Name = "xrTable2";
             this.xrTable2.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable2.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow2});
-            this.xrTable2.SizeF = new System.Drawing.SizeF(272.275F, 23.11668F);
+            this.xrTable2.SizeF = new System.Drawing.SizeF(224.2317F, 23.11668F);
             this.xrTable2.StylePriority.UseBorders = false;
             this.xrTable2.StylePriority.UseBorderWidth = false;
             this.xrTable2.StylePriority.UseTextAlignment = false;
@@ -124,7 +124,7 @@ namespace ArgusCR1039.Sales.SA103
             this.xrTableCell8.StylePriority.UseTextAlignment = false;
             this.xrTableCell8.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             this.xrTableCell8.TextFormatString = "{0:n2}";
-            this.xrTableCell8.Weight = 2.9493536224910475D;
+            this.xrTableCell8.Weight = 2.4510322312201316D;
             // 
             // xrTableCell9
             // 
@@ -141,7 +141,7 @@ namespace ArgusCR1039.Sales.SA103
             this.xrTableCell9.StylePriority.UseFont = false;
             this.xrTableCell9.StylePriority.UseTextAlignment = false;
             this.xrTableCell9.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
-            this.xrTableCell9.Weight = 3.051349412201704D;
+            this.xrTableCell9.Weight = 2.4510297290571459D;
             // 
             // PageHeader
             // 
@@ -156,12 +156,12 @@ namespace ArgusCR1039.Sales.SA103
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTable1.BorderWidth = 0.5F;
-            this.xrTable1.LocationFloat = new DevExpress.Utils.PointFloat(502.6734F, 0F);
+            this.xrTable1.LocationFloat = new DevExpress.Utils.PointFloat(519.3401F, 0F);
             this.xrTable1.Name = "xrTable1";
             this.xrTable1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable1.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow5});
-            this.xrTable1.SizeF = new System.Drawing.SizeF(272.275F, 20.73332F);
+            this.xrTable1.SizeF = new System.Drawing.SizeF(224.2318F, 20.73332F);
             this.xrTable1.StylePriority.UseBorders = false;
             this.xrTable1.StylePriority.UseBorderWidth = false;
             this.xrTable1.StylePriority.UseTextAlignment = false;
@@ -208,7 +208,7 @@ namespace ArgusCR1039.Sales.SA103
             this.xrTableCell12.StylePriority.UseTextAlignment = false;
             this.xrTableCell12.Text = "الوزن";
             this.xrTableCell12.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
-            this.xrTableCell12.Weight = 2.9493538100059107D;
+            this.xrTableCell12.Weight = 2.4510323870525723D;
             // 
             // xrTableCell14
             // 
@@ -225,7 +225,7 @@ namespace ArgusCR1039.Sales.SA103
             this.xrTableCell14.StylePriority.UseTextAlignment = false;
             this.xrTableCell14.Text = "العيار";
             this.xrTableCell14.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
-            this.xrTableCell14.Weight = 3.0513496062012759D;
+            this.xrTableCell14.Weight = 2.45103202202003D;
             // 
             // MetalSubReports
             // 
@@ -235,7 +235,7 @@ namespace ArgusCR1039.Sales.SA103
             this.Detail,
             this.PageHeader});
             this.Font = new System.Drawing.Font("Arial", 9.75F);
-            this.Margins = new System.Drawing.Printing.Margins(0, 51, 0, 0);
+            this.Margins = new System.Drawing.Printing.Margins(0, 0, 0, 0);
             this.PageHeight = 1169;
             this.PageWidth = 827;
             this.PaperKind = System.Drawing.Printing.PaperKind.A4;
