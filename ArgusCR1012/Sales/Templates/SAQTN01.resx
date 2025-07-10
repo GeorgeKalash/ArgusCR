@@ -117,4 +117,7 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="xrTableCell8.Text" xml:space="preserve">
+    <value>ACCOUNT NO. 974100-001-82  /   ايبان IBAN NO. SA 56 5500 0000 0974 1000 0182              Bank :  Banque  Saudi Fransi البنك السعودى الفرنسى                                                               Account Name :   Tamkeen Modern Pipes Company    شركة تمكين الحديثة للانابيب </value>
+  </data>
 </root>
