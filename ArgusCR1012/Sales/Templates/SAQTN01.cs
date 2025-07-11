@@ -23,7 +23,6 @@ namespace ArgusCR1012.Sales.Templates
             reference_data.Text = webObject.record.header.reference;
             date_data.Text = webObject.record.header.date.ToString(sessionInfo.dateFormat);
 
-            billAddressName_data.Text = webObject.record.billAddress?.name;
             billAddressPhone_data.Text = webObject.record.billAddress?.phone;
 
             subtotal_data.Text = webObject.record.header.subtotal.ToString("N2");
@@ -45,6 +44,8 @@ namespace ArgusCR1012.Sales.Templates
             {
                 shipToAddress_data.Text = string.Format("{0}\\r\\n{1}\\r\\n{2}", webObject.record.shipAddress.street1, webObject.record.shipAddress.street2, webObject.record.shipAddress.city);
             }
+
+            notes_data.Text = webObject.record.header.description;
 
             base.OnBeforePrint(e);
         }
