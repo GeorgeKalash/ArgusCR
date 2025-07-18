@@ -15,7 +15,7 @@ namespace ArgusCR1012.Financials
 
         protected override void OnBeforePrint(PrintEventArgs e)
         {
-            SharedClasses.JsonProtocol.GetStructure<ArgusDS.Financials.MemoView> obj = deserializeGet<ArgusDS.Financials.MemoView>();
+            SharedClasses.JsonProtocol.GetStructure<ArgusDS.Financials.Reports.FI110> obj = deserializeGet<ArgusDS.Financials.Reports.FI110>();
 
             functionName_data.Text = obj.record.functionName;
             documentType_data.Text = obj.record.dtName;

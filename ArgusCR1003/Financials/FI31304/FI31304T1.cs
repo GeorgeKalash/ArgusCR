@@ -14,7 +14,7 @@ namespace ArgusCR1003.Financials.FI31304
         }
         protected override void OnBeforePrint(PrintEventArgs e)
         {
-            SharedClasses.JsonProtocol.GetStructure<ArgusDS.Financials.ReceiptVoucherView> webObject = deserializeGet<ArgusDS.Financials.ReceiptVoucherView>();
+            SharedClasses.JsonProtocol.GetStructure<ArgusDS.Financials.Reports.FI109> webObject = deserializeGet<ArgusDS.Financials.Reports.FI109>();
             dateTop_data.Text = webObject.record.date.ToString("dd/MM/yyyy"); ;
 
             refNo_data.Text = webObject.record.reference;

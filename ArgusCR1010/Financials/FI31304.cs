@@ -14,7 +14,7 @@ namespace ArgusCR1010.Financials
         }
         protected override void OnBeforePrint(PrintEventArgs e)
         {
-            SharedClasses.JsonProtocol.GetStructure<ArgusDS.Financials.ReceiptVoucherView> obj = deserializeGet<ArgusDS.Financials.ReceiptVoucherView>();
+            SharedClasses.JsonProtocol.GetStructure<ArgusDS.Financials.Reports.FI109> obj = deserializeGet<ArgusDS.Financials.Reports.FI109>();
 
 
             reference_data.Text = obj.record.reference;

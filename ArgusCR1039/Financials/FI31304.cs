@@ -15,7 +15,7 @@ namespace ArgusCR1039.Financials
 
         protected override void OnBeforePrint(PrintEventArgs e)
         {
-            SharedClasses.JsonProtocol.GetStructure<ArgusDS.Financials.ReceiptVoucherView> obj = deserializeGet<ArgusDS.Financials.ReceiptVoucherView>();
+            SharedClasses.JsonProtocol.GetStructure<ArgusDS.Financials.Reports.FI109> obj = deserializeGet<ArgusDS.Financials.Reports.FI109>();
 
             accountRef_data.Text = obj.record.accountRef;
             accountName_data.Text = obj.record.accountName;
