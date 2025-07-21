@@ -42,7 +42,10 @@ namespace ArgusCR1012.Sales.Templates
 
             if (webObject.record.shipAddress != null)
             {
-                shipToAddress_data.Text = string.Format("{0}\\r\\n{1}\\r\\n{2}", webObject.record.shipAddress.street1, webObject.record.shipAddress.street2, webObject.record.shipAddress.city);
+                shipToAddress_data.Text = string.Format("{0}, {1}, {2}",
+    webObject.record.shipAddress.street1,
+    webObject.record.shipAddress.street2,
+    webObject.record.shipAddress.city);
             }
 
             notes_data.Text = webObject.record.header.description;
