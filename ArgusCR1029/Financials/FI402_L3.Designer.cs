@@ -111,7 +111,6 @@ namespace ArgusCR1029.Financials
             this.PageFooter = new DevExpress.XtraReports.UI.PageFooterBand();
             this.pagesNumber_lbl = new DevExpress.XtraReports.UI.XRPageInfo();
             this.printSignature = new DevExpress.XtraReports.UI.XRLabel();
-            this.GroupHeader1 = new DevExpress.XtraReports.UI.GroupHeaderBand();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable4)).BeginInit();
@@ -1243,11 +1242,6 @@ namespace ArgusCR1029.Financials
             this.printSignature.StylePriority.UseFont = false;
             this.printSignature.Text = "printSignature";
             // 
-            // GroupHeader1
-            // 
-            this.GroupHeader1.HeightF = 0F;
-            this.GroupHeader1.Name = "GroupHeader1";
-            // 
             // FI402_L3
             // 
             this.Bands.AddRange(new DevExpress.XtraReports.UI.Band[] {
@@ -1256,8 +1250,7 @@ namespace ArgusCR1029.Financials
             this.Detail,
             this.ReportHeader,
             this.PageHeader,
-            this.PageFooter,
-            this.GroupHeader1});
+            this.PageFooter});
             this.Font = new System.Drawing.Font("Arial", 9.75F);
             this.Landscape = true;
             this.Margins = new System.Drawing.Printing.Margins(0, 0, 12, 0);
@@ -1357,6 +1350,5 @@ namespace ArgusCR1029.Financials
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell62;
         private DevExpress.XtraReports.UI.XRTableCell salesPerson_param;
         private DevExpress.XtraReports.UI.XRPictureBox logo_data;
-        private DevExpress.XtraReports.UI.GroupHeaderBand GroupHeader1;
     }
 }
