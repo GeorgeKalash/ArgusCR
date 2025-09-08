@@ -749,7 +749,7 @@ namespace ArgusCR1012.Sales.Templates
             // extendedPrice_data
             // 
             this.extendedPrice_data.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[extendedPrice]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[extendedPrice]-[vatAmount]")});
             this.extendedPrice_data.Font = new System.Drawing.Font("Times New Roman", 8F);
             this.extendedPrice_data.Multiline = true;
             this.extendedPrice_data.Name = "extendedPrice_data";
