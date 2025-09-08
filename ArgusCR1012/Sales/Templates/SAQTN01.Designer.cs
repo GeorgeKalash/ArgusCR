@@ -717,7 +717,7 @@ namespace ArgusCR1012.Sales.Templates
             // unitPrice_data
             // 
             this.unitPrice_data.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[unitPrice]-[mdAmount]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[unitPrice]-[mdValue]")});
             this.unitPrice_data.Font = new System.Drawing.Font("Times New Roman", 8F);
             this.unitPrice_data.Multiline = true;
             this.unitPrice_data.Name = "unitPrice_data";
