@@ -74,6 +74,9 @@ namespace ArgusCR1004.POS.PS101
 
             printSignature_lbl.Text = reportSignature();
             printSignature2_lbl.Text = reportSignature();
+
+            plantCrNo_data.Text = webObject.record.invoiceView.plantCrNo;
+            plantCrNo2_data.Text = webObject.record.invoiceView.plantCrNo;
             base.OnBeforePrint(e);
         }
         protected override void labelsText()
