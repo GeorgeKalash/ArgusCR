@@ -243,6 +243,8 @@
     <Content Include="Resource\Footer.png" />
     <Content Include="Resource\Header.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Remittance\RE36313\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

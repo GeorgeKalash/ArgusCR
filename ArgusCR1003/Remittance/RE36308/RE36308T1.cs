@@ -1,9 +1,6 @@
 ﻿using System;
-using System.Collections;
-using System.ComponentModel;
 using System.Drawing.Printing;
-using DevExpress.XtraReports.UI;
-using ArgusDS.Sales.Reports;
+
 
 
 namespace ArgusCR1003.Remittance.RE36308
