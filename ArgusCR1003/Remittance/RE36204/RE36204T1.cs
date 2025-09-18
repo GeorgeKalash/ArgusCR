@@ -17,14 +17,27 @@ namespace ArgusCR1003.Remittance.RE36204
         {
             SharedClasses.JsonProtocol.GetStructure<ArgusCT_DS.Remittance.Report.RT102> webObject = deserializeGet<ArgusCT_DS.Remittance.Report.RT102>();
 
-            carNo_data.Text = webObject.record.clientMaster?.categoryName;
+            cardNo_data.Text = webObject.record.clientRemittance?.reference;
             category_data.Text = webObject.record.clientMaster?.categoryName;
             date_data.Text = webObject.record.clientRemittance?.date.ToString("dd/MM/yyyy"); ;
             branch_data.Text = webObject.record.clientRemittance?.plantName;
 
+            if (webObject.record.clientIndividual != null)
+            {
+                arName_data.Text = string.Format("{0} {1} {2}",
+                webObject.record.clientIndividual.fl_firstName,
+                webObject.record.clientIndividual.fl_middleName,
+                webObject.record.clientIndividual.fl_lastName);
+            }
 
-            arName_data.Text = webObject.record.clientIndividual?.fl_firstName;
-            engName_data.Text = webObject.record.clientIndividual?.firstName;
+            if (webObject.record.clientIndividual != null)
+            {
+                engName_data.Text = string.Format("{0} {1} {2}",
+                webObject.record.clientIndividual.firstName,
+                webObject.record.clientIndividual.middleName,
+                webObject.record.clientIndividual.lastName);
+            }
+
             gender_data.Text = webObject.record.clientRemittance?.genderName;
             nationality_data.Text = webObject.record.clientMaster?.nationalityName;
             idType_data.Text = webObject.record.clientIDView?.idtName;
