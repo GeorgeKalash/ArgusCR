@@ -89,6 +89,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CurrencyTrading\CT35301\CT35301T1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CurrencyTrading\CT35301\CT35301T1.Designer.cs">
+      <DependentUpon>CT35301T1.cs</DependentUpon>
+    </Compile>
     <Compile Include="CurrencyTrading\CT35303\CT35303T2.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -182,6 +188,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="CurrencyTrading\CT35301\CT35301T1.resx">
+      <DependentUpon>CT35301T1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CurrencyTrading\CT35303\CT35303T2.resx">
       <DependentUpon>CT35303T2.cs</DependentUpon>
     </EmbeddedResource>
