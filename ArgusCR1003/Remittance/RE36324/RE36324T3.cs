@@ -6,9 +6,9 @@ using System.Drawing.Printing;
 
 namespace ArgusCR1003.Remittance.RE36324
 {
-    public partial class RE36324T1 : ArgusRPT.BaseReport
+    public partial class RE36324T3 : ArgusRPT.BaseReport
     {
-        public RE36324T1()
+        public RE36324T3()
         {
             InitializeComponent();
         }
@@ -76,7 +76,7 @@ namespace ArgusCR1003.Remittance.RE36324
         }
         protected override string dictionaryStore()
         {
-            return "CR1003.RE36324T1";
+            return "CR1003.RE36324T3";
         }
     }
 }
