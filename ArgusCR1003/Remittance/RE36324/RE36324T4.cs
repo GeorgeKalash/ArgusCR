@@ -6,9 +6,9 @@ using System.Drawing.Printing;
 
 namespace ArgusCR1003.Remittance.RE36324
 {
-    public partial class RE36324T1 : ArgusRPT.BaseReport
+    public partial class RE36324T4 : ArgusRPT.BaseReport
     {
-        public RE36324T1()
+        public RE36324T4()
         {
             InitializeComponent();
         }
@@ -31,9 +31,6 @@ namespace ArgusCR1003.Remittance.RE36324
             relation_data.Text = webObject.record.relationName;
             address_data.Text = webObject.record.beneficiaryAddressLine1;
             telNo_data.Text = webObject.record.beneficiaryCellPhone;
-            bank_data.Text = webObject.record.beneficiaryBankName;
-            accNo_data.Text = webObject.record.beneficiaryAccountRef;
-            branch2_data.Text = webObject.record.beneficiaryBankBranchName;
             agentName_data.Text = webObject.record.corName;
 
             remName_data.Text = webObject.record.clientFullName + "/" + webObject.record.clientRef;
@@ -76,7 +73,7 @@ namespace ArgusCR1003.Remittance.RE36324
         }
         protected override string dictionaryStore()
         {
-            return "CR1003.RE36324T1";
+            return "CR1003.RE36324T4";
         }
     }
 }
