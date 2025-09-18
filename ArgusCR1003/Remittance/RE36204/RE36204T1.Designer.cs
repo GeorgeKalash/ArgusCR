@@ -29,9 +29,10 @@ namespace ArgusCR1003.Remittance.RE36204
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RE36204T1));
             DevExpress.XtraPrinting.BarCode.QRCodeGenerator qrCodeGenerator1 = new DevExpress.XtraPrinting.BarCode.QRCodeGenerator();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RE36204T1));
             this.TopMargin = new DevExpress.XtraReports.UI.TopMarginBand();
+            this.QRCode = new DevExpress.XtraReports.UI.XRBarCode();
             this.xrPictureBox3 = new DevExpress.XtraReports.UI.XRPictureBox();
             this.xrPictureBox2 = new DevExpress.XtraReports.UI.XRPictureBox();
             this.BottomMargin = new DevExpress.XtraReports.UI.BottomMarginBand();
@@ -61,7 +62,7 @@ namespace ArgusCR1003.Remittance.RE36204
             this.xrTableCell82 = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTableRow36 = new DevExpress.XtraReports.UI.XRTableRow();
             this.xrTableCell83 = new DevExpress.XtraReports.UI.XRTableCell();
-            this.aparteent_data = new DevExpress.XtraReports.UI.XRTableCell();
+            this.apartment_data = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTableCell85 = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTable14 = new DevExpress.XtraReports.UI.XRTable();
             this.xrTableRow3 = new DevExpress.XtraReports.UI.XRTableRow();
@@ -192,14 +193,12 @@ namespace ArgusCR1003.Remittance.RE36204
             this.trxNo_lbl = new DevExpress.XtraReports.UI.XRTableCell();
             this.date_data = new DevExpress.XtraReports.UI.XRTableCell();
             this.trxNo2_lbl = new DevExpress.XtraReports.UI.XRTableCell();
-            this.PageFooter = new DevExpress.XtraReports.UI.PageFooterBand();
             this.xrPictureBox1 = new DevExpress.XtraReports.UI.XRPictureBox();
             this.ReportFooter = new DevExpress.XtraReports.UI.ReportFooterBand();
             this.xrTable10 = new DevExpress.XtraReports.UI.XRTable();
             this.xrTableRow27 = new DevExpress.XtraReports.UI.XRTableRow();
             this.xrTableCell20 = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTableCell50 = new DevExpress.XtraReports.UI.XRTableCell();
-            this.QRCode = new DevExpress.XtraReports.UI.XRBarCode();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable16)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable15)).BeginInit();
@@ -226,6 +225,21 @@ namespace ArgusCR1003.Remittance.RE36204
             this.xrPictureBox2});
             this.TopMargin.Name = "TopMargin";
             // 
+            // QRCode
+            // 
+            this.QRCode.AutoModule = true;
+            this.QRCode.Font = new System.Drawing.Font("Arial", 15.75F);
+            this.QRCode.LocationFloat = new DevExpress.Utils.PointFloat(415.5423F, 20.41667F);
+            this.QRCode.Name = "QRCode";
+            this.QRCode.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F);
+            this.QRCode.ShowText = false;
+            this.QRCode.SizeF = new System.Drawing.SizeF(123.2598F, 46.24999F);
+            this.QRCode.StylePriority.UseFont = false;
+            this.QRCode.StylePriority.UsePadding = false;
+            this.QRCode.StylePriority.UseTextAlignment = false;
+            this.QRCode.Symbology = qrCodeGenerator1;
+            this.QRCode.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            // 
             // xrPictureBox3
             // 
             this.xrPictureBox3.ImageAlignment = DevExpress.XtraPrinting.ImageAlignment.MiddleCenter;
@@ -246,13 +260,12 @@ namespace ArgusCR1003.Remittance.RE36204
             // 
             // BottomMargin
             // 
-            this.BottomMargin.HeightF = 0F;
+            this.BottomMargin.HeightF = 10.86629F;
             this.BottomMargin.Name = "BottomMargin";
             // 
             // Detail
             // 
-            this.Detail.Expanded = false;
-            this.Detail.HeightF = 10.32334F;
+            this.Detail.HeightF = 0F;
             this.Detail.Name = "Detail";
             // 
             // ReportHeader
@@ -287,14 +300,14 @@ namespace ArgusCR1003.Remittance.RE36204
             this.xrLabel2,
             this.xrTable1,
             this.xrTable4});
-            this.ReportHeader.HeightF = 998.373F;
+            this.ReportHeader.HeightF = 934.8313F;
             this.ReportHeader.Name = "ReportHeader";
             // 
             // xrLabel13
             // 
-            this.xrLabel13.Font = new System.Drawing.Font("Arial", 11F, System.Drawing.FontStyle.Bold);
+            this.xrLabel13.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold);
             this.xrLabel13.ForeColor = System.Drawing.Color.Blue;
-            this.xrLabel13.LocationFloat = new DevExpress.Utils.PointFloat(203.4543F, 876.4111F);
+            this.xrLabel13.LocationFloat = new DevExpress.Utils.PointFloat(203.4533F, 833.5001F);
             this.xrLabel13.Name = "xrLabel13";
             this.xrLabel13.SizeF = new System.Drawing.SizeF(103.6054F, 24.16669F);
             this.xrLabel13.StylePriority.UseFont = false;
@@ -305,9 +318,9 @@ namespace ArgusCR1003.Remittance.RE36204
             // 
             // xrLabel12
             // 
-            this.xrLabel12.Font = new System.Drawing.Font("Arial", 11F, System.Drawing.FontStyle.Bold);
+            this.xrLabel12.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold);
             this.xrLabel12.ForeColor = System.Drawing.Color.Blue;
-            this.xrLabel12.LocationFloat = new DevExpress.Utils.PointFloat(511.7167F, 876.411F);
+            this.xrLabel12.LocationFloat = new DevExpress.Utils.PointFloat(575.7451F, 833.5001F);
             this.xrLabel12.Name = "xrLabel12";
             this.xrLabel12.SizeF = new System.Drawing.SizeF(103.6054F, 24.16669F);
             this.xrLabel12.StylePriority.UseFont = false;
@@ -321,15 +334,15 @@ namespace ArgusCR1003.Remittance.RE36204
             this.image_data.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.image_data.LocationFloat = new DevExpress.Utils.PointFloat(53.74995F, 612.5F);
             this.image_data.Name = "image_data";
-            this.image_data.SizeF = new System.Drawing.SizeF(293.1251F, 162.25F);
+            this.image_data.SizeF = new System.Drawing.SizeF(322.8928F, 139.3334F);
             this.image_data.Sizing = DevExpress.XtraPrinting.ImageSizeMode.ZoomImage;
             this.image_data.StylePriority.UseBorders = false;
             // 
             // xrLabel11
             // 
-            this.xrLabel11.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold);
+            this.xrLabel11.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Bold);
             this.xrLabel11.ForeColor = System.Drawing.Color.Black;
-            this.xrLabel11.LocationFloat = new DevExpress.Utils.PointFloat(53.75098F, 823.9167F);
+            this.xrLabel11.LocationFloat = new DevExpress.Utils.PointFloat(53.74995F, 797.875F);
             this.xrLabel11.Multiline = true;
             this.xrLabel11.Name = "xrLabel11";
             this.xrLabel11.SizeF = new System.Drawing.SizeF(744.3533F, 35.625F);
@@ -341,9 +354,9 @@ namespace ArgusCR1003.Remittance.RE36204
             // 
             // xrLabel10
             // 
-            this.xrLabel10.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold);
+            this.xrLabel10.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Bold);
             this.xrLabel10.ForeColor = System.Drawing.Color.Black;
-            this.xrLabel10.LocationFloat = new DevExpress.Utils.PointFloat(53.75098F, 788.2917F);
+            this.xrLabel10.LocationFloat = new DevExpress.Utils.PointFloat(53.74995F, 762.25F);
             this.xrLabel10.Multiline = true;
             this.xrLabel10.Name = "xrLabel10";
             this.xrLabel10.SizeF = new System.Drawing.SizeF(744.3533F, 35.625F);
@@ -401,7 +414,7 @@ namespace ArgusCR1003.Remittance.RE36204
             // 
             // xrLabel1
             // 
-            this.xrLabel1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
+            this.xrLabel1.Font = new System.Drawing.Font("Arial", 11F, System.Drawing.FontStyle.Bold);
             this.xrLabel1.ForeColor = System.Drawing.Color.Blue;
             this.xrLabel1.LocationFloat = new DevExpress.Utils.PointFloat(53.74995F, 574.7444F);
             this.xrLabel1.Name = "xrLabel1";
@@ -414,7 +427,7 @@ namespace ArgusCR1003.Remittance.RE36204
             // 
             // xrLabel9
             // 
-            this.xrLabel9.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
+            this.xrLabel9.Font = new System.Drawing.Font("Arial", 11F, System.Drawing.FontStyle.Bold);
             this.xrLabel9.ForeColor = System.Drawing.Color.Blue;
             this.xrLabel9.LocationFloat = new DevExpress.Utils.PointFloat(677.916F, 574.7444F);
             this.xrLabel9.Name = "xrLabel9";
@@ -506,7 +519,7 @@ namespace ArgusCR1003.Remittance.RE36204
             this.xrTableCell77.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.xrTableCell77.BorderWidth = 2F;
             this.xrTableCell77.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold);
-            this.xrTableCell77.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(160)))));
+            this.xrTableCell77.ForeColor = System.Drawing.Color.MidnightBlue;
             this.xrTableCell77.Multiline = true;
             this.xrTableCell77.Name = "xrTableCell77";
             this.xrTableCell77.Padding = new DevExpress.XtraPrinting.PaddingInfo(4, 2, 0, 0, 100F);
@@ -550,7 +563,7 @@ namespace ArgusCR1003.Remittance.RE36204
             this.xrTableCell79.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.xrTableCell79.BorderWidth = 2F;
             this.xrTableCell79.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold);
-            this.xrTableCell79.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(160)))));
+            this.xrTableCell79.ForeColor = System.Drawing.Color.MidnightBlue;
             this.xrTableCell79.Multiline = true;
             this.xrTableCell79.Name = "xrTableCell79";
             this.xrTableCell79.Padding = new DevExpress.XtraPrinting.PaddingInfo(4, 2, 0, 0, 100F);
@@ -581,7 +594,7 @@ namespace ArgusCR1003.Remittance.RE36204
             this.xrTableCell80.BackColor = System.Drawing.Color.Transparent;
             this.xrTableCell80.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.xrTableCell80.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold);
-            this.xrTableCell80.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(160)))));
+            this.xrTableCell80.ForeColor = System.Drawing.Color.MidnightBlue;
             this.xrTableCell80.Multiline = true;
             this.xrTableCell80.Name = "xrTableCell80";
             this.xrTableCell80.Padding = new DevExpress.XtraPrinting.PaddingInfo(4, 2, 0, 0, 100F);
@@ -616,7 +629,7 @@ namespace ArgusCR1003.Remittance.RE36204
             this.xrTableCell82.BackColor = System.Drawing.Color.Transparent;
             this.xrTableCell82.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.xrTableCell82.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold);
-            this.xrTableCell82.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(160)))));
+            this.xrTableCell82.ForeColor = System.Drawing.Color.MidnightBlue;
             this.xrTableCell82.Multiline = true;
             this.xrTableCell82.Name = "xrTableCell82";
             this.xrTableCell82.Padding = new DevExpress.XtraPrinting.PaddingInfo(4, 2, 0, 0, 100F);
@@ -634,7 +647,7 @@ namespace ArgusCR1003.Remittance.RE36204
             // 
             this.xrTableRow36.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
             this.xrTableCell83,
-            this.aparteent_data,
+            this.apartment_data,
             this.xrTableCell85});
             this.xrTableRow36.Name = "xrTableRow36";
             this.xrTableRow36.Weight = 1D;
@@ -644,7 +657,7 @@ namespace ArgusCR1003.Remittance.RE36204
             this.xrTableCell83.BackColor = System.Drawing.Color.Transparent;
             this.xrTableCell83.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.xrTableCell83.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold);
-            this.xrTableCell83.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(160)))));
+            this.xrTableCell83.ForeColor = System.Drawing.Color.MidnightBlue;
             this.xrTableCell83.Multiline = true;
             this.xrTableCell83.Name = "xrTableCell83";
             this.xrTableCell83.Padding = new DevExpress.XtraPrinting.PaddingInfo(4, 2, 0, 0, 100F);
@@ -658,28 +671,28 @@ namespace ArgusCR1003.Remittance.RE36204
             this.xrTableCell83.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             this.xrTableCell83.Weight = 1.6767657404880918D;
             // 
-            // aparteent_data
+            // apartment_data
             // 
-            this.aparteent_data.BackColor = System.Drawing.Color.Transparent;
-            this.aparteent_data.Borders = DevExpress.XtraPrinting.BorderSide.None;
-            this.aparteent_data.Font = new System.Drawing.Font("Arial", 9F);
-            this.aparteent_data.Multiline = true;
-            this.aparteent_data.Name = "aparteent_data";
-            this.aparteent_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(4, 2, 0, 0, 100F);
-            this.aparteent_data.StylePriority.UseBackColor = false;
-            this.aparteent_data.StylePriority.UseBorders = false;
-            this.aparteent_data.StylePriority.UseFont = false;
-            this.aparteent_data.StylePriority.UsePadding = false;
-            this.aparteent_data.StylePriority.UseTextAlignment = false;
-            this.aparteent_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
-            this.aparteent_data.Weight = 2.5951529877162D;
+            this.apartment_data.BackColor = System.Drawing.Color.Transparent;
+            this.apartment_data.Borders = DevExpress.XtraPrinting.BorderSide.None;
+            this.apartment_data.Font = new System.Drawing.Font("Arial", 9F);
+            this.apartment_data.Multiline = true;
+            this.apartment_data.Name = "apartment_data";
+            this.apartment_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(4, 2, 0, 0, 100F);
+            this.apartment_data.StylePriority.UseBackColor = false;
+            this.apartment_data.StylePriority.UseBorders = false;
+            this.apartment_data.StylePriority.UseFont = false;
+            this.apartment_data.StylePriority.UsePadding = false;
+            this.apartment_data.StylePriority.UseTextAlignment = false;
+            this.apartment_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            this.apartment_data.Weight = 2.5951529877162D;
             // 
             // xrTableCell85
             // 
             this.xrTableCell85.BackColor = System.Drawing.Color.Transparent;
             this.xrTableCell85.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.xrTableCell85.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold);
-            this.xrTableCell85.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(160)))));
+            this.xrTableCell85.ForeColor = System.Drawing.Color.MidnightBlue;
             this.xrTableCell85.Multiline = true;
             this.xrTableCell85.Name = "xrTableCell85";
             this.xrTableCell85.Padding = new DevExpress.XtraPrinting.PaddingInfo(4, 2, 0, 0, 100F);
@@ -731,7 +744,7 @@ namespace ArgusCR1003.Remittance.RE36204
             this.xrTableCell7.BackColor = System.Drawing.Color.Transparent;
             this.xrTableCell7.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.xrTableCell7.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold);
-            this.xrTableCell7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(160)))));
+            this.xrTableCell7.ForeColor = System.Drawing.Color.MidnightBlue;
             this.xrTableCell7.Multiline = true;
             this.xrTableCell7.Name = "xrTableCell7";
             this.xrTableCell7.Padding = new DevExpress.XtraPrinting.PaddingInfo(4, 2, 0, 0, 100F);
@@ -766,7 +779,7 @@ namespace ArgusCR1003.Remittance.RE36204
             this.xrTableCell10.BackColor = System.Drawing.Color.Transparent;
             this.xrTableCell10.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.xrTableCell10.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold);
-            this.xrTableCell10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(160)))));
+            this.xrTableCell10.ForeColor = System.Drawing.Color.MidnightBlue;
             this.xrTableCell10.Multiline = true;
             this.xrTableCell10.Name = "xrTableCell10";
             this.xrTableCell10.Padding = new DevExpress.XtraPrinting.PaddingInfo(4, 2, 0, 0, 100F);
@@ -794,7 +807,7 @@ namespace ArgusCR1003.Remittance.RE36204
             this.xrTableCell16.BackColor = System.Drawing.Color.Transparent;
             this.xrTableCell16.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.xrTableCell16.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold);
-            this.xrTableCell16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(160)))));
+            this.xrTableCell16.ForeColor = System.Drawing.Color.MidnightBlue;
             this.xrTableCell16.Multiline = true;
             this.xrTableCell16.Name = "xrTableCell16";
             this.xrTableCell16.Padding = new DevExpress.XtraPrinting.PaddingInfo(4, 2, 0, 0, 100F);
@@ -829,7 +842,7 @@ namespace ArgusCR1003.Remittance.RE36204
             this.xrTableCell21.BackColor = System.Drawing.Color.Transparent;
             this.xrTableCell21.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.xrTableCell21.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold);
-            this.xrTableCell21.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(160)))));
+            this.xrTableCell21.ForeColor = System.Drawing.Color.MidnightBlue;
             this.xrTableCell21.Multiline = true;
             this.xrTableCell21.Name = "xrTableCell21";
             this.xrTableCell21.Padding = new DevExpress.XtraPrinting.PaddingInfo(4, 2, 0, 0, 100F);
@@ -857,7 +870,7 @@ namespace ArgusCR1003.Remittance.RE36204
             this.xrTableCell22.BackColor = System.Drawing.Color.Transparent;
             this.xrTableCell22.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.xrTableCell22.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold);
-            this.xrTableCell22.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(160)))));
+            this.xrTableCell22.ForeColor = System.Drawing.Color.MidnightBlue;
             this.xrTableCell22.Multiline = true;
             this.xrTableCell22.Name = "xrTableCell22";
             this.xrTableCell22.Padding = new DevExpress.XtraPrinting.PaddingInfo(4, 2, 0, 0, 100F);
@@ -892,7 +905,7 @@ namespace ArgusCR1003.Remittance.RE36204
             this.xrTableCell25.BackColor = System.Drawing.Color.Transparent;
             this.xrTableCell25.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.xrTableCell25.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold);
-            this.xrTableCell25.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(160)))));
+            this.xrTableCell25.ForeColor = System.Drawing.Color.MidnightBlue;
             this.xrTableCell25.Multiline = true;
             this.xrTableCell25.Name = "xrTableCell25";
             this.xrTableCell25.Padding = new DevExpress.XtraPrinting.PaddingInfo(4, 2, 0, 0, 100F);
@@ -920,7 +933,7 @@ namespace ArgusCR1003.Remittance.RE36204
             this.xrTableCell27.BackColor = System.Drawing.Color.Transparent;
             this.xrTableCell27.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.xrTableCell27.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold);
-            this.xrTableCell27.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(160)))));
+            this.xrTableCell27.ForeColor = System.Drawing.Color.MidnightBlue;
             this.xrTableCell27.Multiline = true;
             this.xrTableCell27.Name = "xrTableCell27";
             this.xrTableCell27.Padding = new DevExpress.XtraPrinting.PaddingInfo(4, 2, 0, 0, 100F);
@@ -955,7 +968,7 @@ namespace ArgusCR1003.Remittance.RE36204
             this.xrTableCell30.BackColor = System.Drawing.Color.Transparent;
             this.xrTableCell30.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.xrTableCell30.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold);
-            this.xrTableCell30.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(160)))));
+            this.xrTableCell30.ForeColor = System.Drawing.Color.MidnightBlue;
             this.xrTableCell30.Multiline = true;
             this.xrTableCell30.Name = "xrTableCell30";
             this.xrTableCell30.Padding = new DevExpress.XtraPrinting.PaddingInfo(4, 2, 0, 0, 100F);
@@ -983,7 +996,7 @@ namespace ArgusCR1003.Remittance.RE36204
             this.xrTableCell31.BackColor = System.Drawing.Color.Transparent;
             this.xrTableCell31.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.xrTableCell31.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold);
-            this.xrTableCell31.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(160)))));
+            this.xrTableCell31.ForeColor = System.Drawing.Color.MidnightBlue;
             this.xrTableCell31.Multiline = true;
             this.xrTableCell31.Name = "xrTableCell31";
             this.xrTableCell31.Padding = new DevExpress.XtraPrinting.PaddingInfo(4, 2, 0, 0, 100F);
@@ -1018,7 +1031,7 @@ namespace ArgusCR1003.Remittance.RE36204
             this.xrTableCell34.BackColor = System.Drawing.Color.Transparent;
             this.xrTableCell34.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.xrTableCell34.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold);
-            this.xrTableCell34.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(160)))));
+            this.xrTableCell34.ForeColor = System.Drawing.Color.MidnightBlue;
             this.xrTableCell34.Multiline = true;
             this.xrTableCell34.Name = "xrTableCell34";
             this.xrTableCell34.Padding = new DevExpress.XtraPrinting.PaddingInfo(4, 2, 0, 0, 100F);
@@ -1046,7 +1059,7 @@ namespace ArgusCR1003.Remittance.RE36204
             this.xrTableCell36.BackColor = System.Drawing.Color.Transparent;
             this.xrTableCell36.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.xrTableCell36.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold);
-            this.xrTableCell36.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(160)))));
+            this.xrTableCell36.ForeColor = System.Drawing.Color.MidnightBlue;
             this.xrTableCell36.Multiline = true;
             this.xrTableCell36.Name = "xrTableCell36";
             this.xrTableCell36.Padding = new DevExpress.XtraPrinting.PaddingInfo(4, 2, 0, 0, 100F);
@@ -1081,7 +1094,7 @@ namespace ArgusCR1003.Remittance.RE36204
             this.xrTableCell39.BackColor = System.Drawing.Color.Transparent;
             this.xrTableCell39.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.xrTableCell39.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold);
-            this.xrTableCell39.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(160)))));
+            this.xrTableCell39.ForeColor = System.Drawing.Color.MidnightBlue;
             this.xrTableCell39.Multiline = true;
             this.xrTableCell39.Name = "xrTableCell39";
             this.xrTableCell39.Padding = new DevExpress.XtraPrinting.PaddingInfo(4, 2, 0, 0, 100F);
@@ -1133,7 +1146,7 @@ namespace ArgusCR1003.Remittance.RE36204
             this.xrTableCell38.BackColor = System.Drawing.Color.Transparent;
             this.xrTableCell38.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.xrTableCell38.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold);
-            this.xrTableCell38.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(160)))));
+            this.xrTableCell38.ForeColor = System.Drawing.Color.MidnightBlue;
             this.xrTableCell38.Multiline = true;
             this.xrTableCell38.Name = "xrTableCell38";
             this.xrTableCell38.Padding = new DevExpress.XtraPrinting.PaddingInfo(4, 2, 0, 0, 100F);
@@ -1168,7 +1181,7 @@ namespace ArgusCR1003.Remittance.RE36204
             this.xrTableCell55.BackColor = System.Drawing.Color.Transparent;
             this.xrTableCell55.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.xrTableCell55.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold);
-            this.xrTableCell55.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(160)))));
+            this.xrTableCell55.ForeColor = System.Drawing.Color.MidnightBlue;
             this.xrTableCell55.Multiline = true;
             this.xrTableCell55.Name = "xrTableCell55";
             this.xrTableCell55.Padding = new DevExpress.XtraPrinting.PaddingInfo(4, 2, 0, 0, 100F);
@@ -1196,7 +1209,7 @@ namespace ArgusCR1003.Remittance.RE36204
             this.xrTableCell57.BackColor = System.Drawing.Color.Transparent;
             this.xrTableCell57.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.xrTableCell57.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold);
-            this.xrTableCell57.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(160)))));
+            this.xrTableCell57.ForeColor = System.Drawing.Color.MidnightBlue;
             this.xrTableCell57.Multiline = true;
             this.xrTableCell57.Name = "xrTableCell57";
             this.xrTableCell57.Padding = new DevExpress.XtraPrinting.PaddingInfo(4, 2, 0, 0, 100F);
@@ -1231,7 +1244,7 @@ namespace ArgusCR1003.Remittance.RE36204
             this.xrTableCell60.BackColor = System.Drawing.Color.Transparent;
             this.xrTableCell60.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.xrTableCell60.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold);
-            this.xrTableCell60.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(160)))));
+            this.xrTableCell60.ForeColor = System.Drawing.Color.MidnightBlue;
             this.xrTableCell60.Multiline = true;
             this.xrTableCell60.Name = "xrTableCell60";
             this.xrTableCell60.Padding = new DevExpress.XtraPrinting.PaddingInfo(4, 2, 0, 0, 100F);
@@ -1259,7 +1272,7 @@ namespace ArgusCR1003.Remittance.RE36204
             this.xrTableCell62.BackColor = System.Drawing.Color.Transparent;
             this.xrTableCell62.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.xrTableCell62.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold);
-            this.xrTableCell62.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(160)))));
+            this.xrTableCell62.ForeColor = System.Drawing.Color.MidnightBlue;
             this.xrTableCell62.Multiline = true;
             this.xrTableCell62.Name = "xrTableCell62";
             this.xrTableCell62.Padding = new DevExpress.XtraPrinting.PaddingInfo(4, 2, 0, 0, 100F);
@@ -1294,7 +1307,7 @@ namespace ArgusCR1003.Remittance.RE36204
             this.xrTableCell64.BackColor = System.Drawing.Color.Transparent;
             this.xrTableCell64.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.xrTableCell64.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold);
-            this.xrTableCell64.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(160)))));
+            this.xrTableCell64.ForeColor = System.Drawing.Color.MidnightBlue;
             this.xrTableCell64.Multiline = true;
             this.xrTableCell64.Name = "xrTableCell64";
             this.xrTableCell64.Padding = new DevExpress.XtraPrinting.PaddingInfo(4, 2, 0, 0, 100F);
@@ -1322,7 +1335,7 @@ namespace ArgusCR1003.Remittance.RE36204
             this.xrTableCell65.BackColor = System.Drawing.Color.Transparent;
             this.xrTableCell65.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.xrTableCell65.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold);
-            this.xrTableCell65.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(160)))));
+            this.xrTableCell65.ForeColor = System.Drawing.Color.MidnightBlue;
             this.xrTableCell65.Multiline = true;
             this.xrTableCell65.Name = "xrTableCell65";
             this.xrTableCell65.Padding = new DevExpress.XtraPrinting.PaddingInfo(4, 2, 0, 0, 100F);
@@ -1357,7 +1370,7 @@ namespace ArgusCR1003.Remittance.RE36204
             this.xrTableCell67.BackColor = System.Drawing.Color.Transparent;
             this.xrTableCell67.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.xrTableCell67.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold);
-            this.xrTableCell67.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(160)))));
+            this.xrTableCell67.ForeColor = System.Drawing.Color.MidnightBlue;
             this.xrTableCell67.Multiline = true;
             this.xrTableCell67.Name = "xrTableCell67";
             this.xrTableCell67.Padding = new DevExpress.XtraPrinting.PaddingInfo(4, 2, 0, 0, 100F);
@@ -1385,7 +1398,7 @@ namespace ArgusCR1003.Remittance.RE36204
             this.xrTableCell68.BackColor = System.Drawing.Color.Transparent;
             this.xrTableCell68.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.xrTableCell68.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold);
-            this.xrTableCell68.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(160)))));
+            this.xrTableCell68.ForeColor = System.Drawing.Color.MidnightBlue;
             this.xrTableCell68.Multiline = true;
             this.xrTableCell68.Name = "xrTableCell68";
             this.xrTableCell68.Padding = new DevExpress.XtraPrinting.PaddingInfo(4, 2, 0, 0, 100F);
@@ -1420,7 +1433,7 @@ namespace ArgusCR1003.Remittance.RE36204
             this.xrTableCell70.BackColor = System.Drawing.Color.Transparent;
             this.xrTableCell70.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.xrTableCell70.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold);
-            this.xrTableCell70.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(160)))));
+            this.xrTableCell70.ForeColor = System.Drawing.Color.MidnightBlue;
             this.xrTableCell70.Multiline = true;
             this.xrTableCell70.Name = "xrTableCell70";
             this.xrTableCell70.Padding = new DevExpress.XtraPrinting.PaddingInfo(4, 2, 0, 0, 100F);
@@ -1448,7 +1461,7 @@ namespace ArgusCR1003.Remittance.RE36204
             this.xrTableCell71.BackColor = System.Drawing.Color.Transparent;
             this.xrTableCell71.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.xrTableCell71.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold);
-            this.xrTableCell71.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(160)))));
+            this.xrTableCell71.ForeColor = System.Drawing.Color.MidnightBlue;
             this.xrTableCell71.Multiline = true;
             this.xrTableCell71.Name = "xrTableCell71";
             this.xrTableCell71.Padding = new DevExpress.XtraPrinting.PaddingInfo(4, 2, 0, 0, 100F);
@@ -1483,7 +1496,7 @@ namespace ArgusCR1003.Remittance.RE36204
             this.xrTableCell73.BackColor = System.Drawing.Color.Transparent;
             this.xrTableCell73.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.xrTableCell73.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold);
-            this.xrTableCell73.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(160)))));
+            this.xrTableCell73.ForeColor = System.Drawing.Color.MidnightBlue;
             this.xrTableCell73.Multiline = true;
             this.xrTableCell73.Name = "xrTableCell73";
             this.xrTableCell73.Padding = new DevExpress.XtraPrinting.PaddingInfo(4, 2, 0, 0, 100F);
@@ -1579,7 +1592,7 @@ namespace ArgusCR1003.Remittance.RE36204
             this.xrTableCell59.BorderColor = System.Drawing.Color.SteelBlue;
             this.xrTableCell59.Borders = DevExpress.XtraPrinting.BorderSide.Top;
             this.xrTableCell59.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold);
-            this.xrTableCell59.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(160)))));
+            this.xrTableCell59.ForeColor = System.Drawing.Color.MidnightBlue;
             this.xrTableCell59.Multiline = true;
             this.xrTableCell59.Name = "xrTableCell59";
             this.xrTableCell59.Padding = new DevExpress.XtraPrinting.PaddingInfo(4, 2, 0, 0, 100F);
@@ -1619,7 +1632,7 @@ namespace ArgusCR1003.Remittance.RE36204
             this.xrTableCell61.BorderDashStyle = DevExpress.XtraPrinting.BorderDashStyle.Solid;
             this.xrTableCell61.Borders = DevExpress.XtraPrinting.BorderSide.Top;
             this.xrTableCell61.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold);
-            this.xrTableCell61.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(160)))));
+            this.xrTableCell61.ForeColor = System.Drawing.Color.MidnightBlue;
             this.xrTableCell61.Multiline = true;
             this.xrTableCell61.Name = "xrTableCell61";
             this.xrTableCell61.Padding = new DevExpress.XtraPrinting.PaddingInfo(4, 2, 0, 0, 100F);
@@ -1671,7 +1684,7 @@ namespace ArgusCR1003.Remittance.RE36204
             this.rate_data.Borders = DevExpress.XtraPrinting.BorderSide.Left;
             this.rate_data.BorderWidth = 1F;
             this.rate_data.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold);
-            this.rate_data.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(160)))));
+            this.rate_data.ForeColor = System.Drawing.Color.MidnightBlue;
             this.rate_data.Multiline = true;
             this.rate_data.Name = "rate_data";
             this.rate_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(4, 2, 0, 0, 100F);
@@ -1714,7 +1727,7 @@ namespace ArgusCR1003.Remittance.RE36204
             this.xrTableCell11.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.xrTableCell11.BorderWidth = 2F;
             this.xrTableCell11.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold);
-            this.xrTableCell11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(160)))));
+            this.xrTableCell11.ForeColor = System.Drawing.Color.MidnightBlue;
             this.xrTableCell11.Multiline = true;
             this.xrTableCell11.Name = "xrTableCell11";
             this.xrTableCell11.Padding = new DevExpress.XtraPrinting.PaddingInfo(4, 2, 0, 0, 100F);
@@ -1746,7 +1759,7 @@ namespace ArgusCR1003.Remittance.RE36204
             this.xrTableCell14.Borders = DevExpress.XtraPrinting.BorderSide.Left;
             this.xrTableCell14.BorderWidth = 1F;
             this.xrTableCell14.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold);
-            this.xrTableCell14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(160)))));
+            this.xrTableCell14.ForeColor = System.Drawing.Color.MidnightBlue;
             this.xrTableCell14.Multiline = true;
             this.xrTableCell14.Name = "xrTableCell14";
             this.xrTableCell14.Padding = new DevExpress.XtraPrinting.PaddingInfo(4, 2, 0, 0, 100F);
@@ -1783,7 +1796,7 @@ namespace ArgusCR1003.Remittance.RE36204
             this.xrTableCell44.BackColor = System.Drawing.Color.Transparent;
             this.xrTableCell44.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.xrTableCell44.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold);
-            this.xrTableCell44.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(160)))));
+            this.xrTableCell44.ForeColor = System.Drawing.Color.MidnightBlue;
             this.xrTableCell44.Multiline = true;
             this.xrTableCell44.Name = "xrTableCell44";
             this.xrTableCell44.Padding = new DevExpress.XtraPrinting.PaddingInfo(4, 2, 0, 0, 100F);
@@ -1835,7 +1848,7 @@ namespace ArgusCR1003.Remittance.RE36204
             this.xrTableCell8.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.xrTableCell8.BorderWidth = 2F;
             this.xrTableCell8.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold);
-            this.xrTableCell8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(160)))));
+            this.xrTableCell8.ForeColor = System.Drawing.Color.MidnightBlue;
             this.xrTableCell8.Multiline = true;
             this.xrTableCell8.Name = "xrTableCell8";
             this.xrTableCell8.Padding = new DevExpress.XtraPrinting.PaddingInfo(4, 2, 0, 0, 100F);
@@ -1878,7 +1891,7 @@ namespace ArgusCR1003.Remittance.RE36204
             this.xrTableCell12.Borders = DevExpress.XtraPrinting.BorderSide.Right;
             this.xrTableCell12.BorderWidth = 1F;
             this.xrTableCell12.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold);
-            this.xrTableCell12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(160)))));
+            this.xrTableCell12.ForeColor = System.Drawing.Color.MidnightBlue;
             this.xrTableCell12.Multiline = true;
             this.xrTableCell12.Name = "xrTableCell12";
             this.xrTableCell12.Padding = new DevExpress.XtraPrinting.PaddingInfo(4, 2, 0, 0, 100F);
@@ -1908,7 +1921,7 @@ namespace ArgusCR1003.Remittance.RE36204
             this.xrTableCell19.BackColor = System.Drawing.Color.Transparent;
             this.xrTableCell19.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.xrTableCell19.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold);
-            this.xrTableCell19.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(160)))));
+            this.xrTableCell19.ForeColor = System.Drawing.Color.MidnightBlue;
             this.xrTableCell19.Multiline = true;
             this.xrTableCell19.Name = "xrTableCell19";
             this.xrTableCell19.Padding = new DevExpress.XtraPrinting.PaddingInfo(4, 2, 0, 0, 100F);
@@ -1945,7 +1958,7 @@ namespace ArgusCR1003.Remittance.RE36204
             this.xrTableCell32.Borders = DevExpress.XtraPrinting.BorderSide.Right;
             this.xrTableCell32.BorderWidth = 1F;
             this.xrTableCell32.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold);
-            this.xrTableCell32.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(160)))));
+            this.xrTableCell32.ForeColor = System.Drawing.Color.MidnightBlue;
             this.xrTableCell32.Multiline = true;
             this.xrTableCell32.Name = "xrTableCell32";
             this.xrTableCell32.Padding = new DevExpress.XtraPrinting.PaddingInfo(4, 2, 0, 0, 100F);
@@ -1992,7 +2005,7 @@ namespace ArgusCR1003.Remittance.RE36204
             this.xrTableCell26.BackColor = System.Drawing.Color.Transparent;
             this.xrTableCell26.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.xrTableCell26.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold);
-            this.xrTableCell26.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(160)))));
+            this.xrTableCell26.ForeColor = System.Drawing.Color.MidnightBlue;
             this.xrTableCell26.Multiline = true;
             this.xrTableCell26.Name = "xrTableCell26";
             this.xrTableCell26.Padding = new DevExpress.XtraPrinting.PaddingInfo(4, 2, 0, 0, 100F);
@@ -2029,7 +2042,7 @@ namespace ArgusCR1003.Remittance.RE36204
             this.xrTableCell52.BackColor = System.Drawing.Color.Transparent;
             this.xrTableCell52.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.xrTableCell52.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold);
-            this.xrTableCell52.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(160)))));
+            this.xrTableCell52.ForeColor = System.Drawing.Color.MidnightBlue;
             this.xrTableCell52.Multiline = true;
             this.xrTableCell52.Name = "xrTableCell52";
             this.xrTableCell52.Padding = new DevExpress.XtraPrinting.PaddingInfo(4, 2, 0, 0, 100F);
@@ -2045,7 +2058,7 @@ namespace ArgusCR1003.Remittance.RE36204
             // 
             // xrLabel8
             // 
-            this.xrLabel8.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
+            this.xrLabel8.Font = new System.Drawing.Font("Arial", 11F, System.Drawing.FontStyle.Bold);
             this.xrLabel8.ForeColor = System.Drawing.Color.Blue;
             this.xrLabel8.LocationFloat = new DevExpress.Utils.PointFloat(677.916F, 460.8696F);
             this.xrLabel8.Name = "xrLabel8";
@@ -2058,7 +2071,7 @@ namespace ArgusCR1003.Remittance.RE36204
             // 
             // xrLabel7
             // 
-            this.xrLabel7.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
+            this.xrLabel7.Font = new System.Drawing.Font("Arial", 11F, System.Drawing.FontStyle.Bold);
             this.xrLabel7.ForeColor = System.Drawing.Color.Blue;
             this.xrLabel7.LocationFloat = new DevExpress.Utils.PointFloat(53.74995F, 460.8696F);
             this.xrLabel7.Name = "xrLabel7";
@@ -2104,7 +2117,7 @@ namespace ArgusCR1003.Remittance.RE36204
             this.xrTableCell46.BackColor = System.Drawing.Color.Transparent;
             this.xrTableCell46.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.xrTableCell46.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold);
-            this.xrTableCell46.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(160)))));
+            this.xrTableCell46.ForeColor = System.Drawing.Color.MidnightBlue;
             this.xrTableCell46.Multiline = true;
             this.xrTableCell46.Name = "xrTableCell46";
             this.xrTableCell46.Padding = new DevExpress.XtraPrinting.PaddingInfo(4, 2, 0, 0, 100F);
@@ -2132,7 +2145,7 @@ namespace ArgusCR1003.Remittance.RE36204
             this.extraNo_data.StylePriority.UsePadding = false;
             this.extraNo_data.StylePriority.UseTextAlignment = false;
             this.extraNo_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
-            this.extraNo_data.Weight = 4.0102188873692395D;
+            this.extraNo_data.Weight = 4.2543930027712857D;
             // 
             // xrTableCell76
             // 
@@ -2141,10 +2154,10 @@ namespace ArgusCR1003.Remittance.RE36204
             this.xrTableCell76.Borders = DevExpress.XtraPrinting.BorderSide.Right;
             this.xrTableCell76.BorderWidth = 1F;
             this.xrTableCell76.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold);
-            this.xrTableCell76.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(160)))));
+            this.xrTableCell76.ForeColor = System.Drawing.Color.MidnightBlue;
             this.xrTableCell76.Multiline = true;
             this.xrTableCell76.Name = "xrTableCell76";
-            this.xrTableCell76.Padding = new DevExpress.XtraPrinting.PaddingInfo(4, 20, 0, 0, 100F);
+            this.xrTableCell76.Padding = new DevExpress.XtraPrinting.PaddingInfo(4, 2, 0, 0, 100F);
             this.xrTableCell76.StylePriority.UseBackColor = false;
             this.xrTableCell76.StylePriority.UseBorderColor = false;
             this.xrTableCell76.StylePriority.UseBorders = false;
@@ -2155,7 +2168,7 @@ namespace ArgusCR1003.Remittance.RE36204
             this.xrTableCell76.StylePriority.UseTextAlignment = false;
             this.xrTableCell76.Text = ": الرقم الإضافي";
             this.xrTableCell76.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
-            this.xrTableCell76.Weight = 0.83686312907089566D;
+            this.xrTableCell76.Weight = 0.59268901366884907D;
             // 
             // xrTable3
             // 
@@ -2194,7 +2207,7 @@ namespace ArgusCR1003.Remittance.RE36204
             this.xrTableCell40.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.xrTableCell40.BorderWidth = 2F;
             this.xrTableCell40.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold);
-            this.xrTableCell40.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(160)))));
+            this.xrTableCell40.ForeColor = System.Drawing.Color.MidnightBlue;
             this.xrTableCell40.Multiline = true;
             this.xrTableCell40.Name = "xrTableCell40";
             this.xrTableCell40.Padding = new DevExpress.XtraPrinting.PaddingInfo(4, 2, 0, 0, 100F);
@@ -2238,7 +2251,7 @@ namespace ArgusCR1003.Remittance.RE36204
             this.xrTableCell42.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.xrTableCell42.BorderWidth = 2F;
             this.xrTableCell42.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold);
-            this.xrTableCell42.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(160)))));
+            this.xrTableCell42.ForeColor = System.Drawing.Color.MidnightBlue;
             this.xrTableCell42.Multiline = true;
             this.xrTableCell42.Name = "xrTableCell42";
             this.xrTableCell42.Padding = new DevExpress.XtraPrinting.PaddingInfo(4, 2, 0, 0, 100F);
@@ -2269,7 +2282,7 @@ namespace ArgusCR1003.Remittance.RE36204
             this.xrTableCell43.BackColor = System.Drawing.Color.Transparent;
             this.xrTableCell43.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.xrTableCell43.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold);
-            this.xrTableCell43.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(160)))));
+            this.xrTableCell43.ForeColor = System.Drawing.Color.MidnightBlue;
             this.xrTableCell43.Multiline = true;
             this.xrTableCell43.Name = "xrTableCell43";
             this.xrTableCell43.Padding = new DevExpress.XtraPrinting.PaddingInfo(4, 2, 0, 0, 100F);
@@ -2304,7 +2317,7 @@ namespace ArgusCR1003.Remittance.RE36204
             this.xrTableCell45.BackColor = System.Drawing.Color.Transparent;
             this.xrTableCell45.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.xrTableCell45.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold);
-            this.xrTableCell45.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(160)))));
+            this.xrTableCell45.ForeColor = System.Drawing.Color.MidnightBlue;
             this.xrTableCell45.Multiline = true;
             this.xrTableCell45.Name = "xrTableCell45";
             this.xrTableCell45.Padding = new DevExpress.XtraPrinting.PaddingInfo(4, 2, 0, 0, 100F);
@@ -2332,7 +2345,7 @@ namespace ArgusCR1003.Remittance.RE36204
             this.xrTableCell48.BackColor = System.Drawing.Color.Transparent;
             this.xrTableCell48.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.xrTableCell48.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold);
-            this.xrTableCell48.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(160)))));
+            this.xrTableCell48.ForeColor = System.Drawing.Color.MidnightBlue;
             this.xrTableCell48.Multiline = true;
             this.xrTableCell48.Name = "xrTableCell48";
             this.xrTableCell48.Padding = new DevExpress.XtraPrinting.PaddingInfo(4, 2, 0, 0, 100F);
@@ -2367,7 +2380,7 @@ namespace ArgusCR1003.Remittance.RE36204
             this.xrTableCell75.BackColor = System.Drawing.Color.Transparent;
             this.xrTableCell75.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.xrTableCell75.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold);
-            this.xrTableCell75.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(160)))));
+            this.xrTableCell75.ForeColor = System.Drawing.Color.MidnightBlue;
             this.xrTableCell75.Multiline = true;
             this.xrTableCell75.Name = "xrTableCell75";
             this.xrTableCell75.Padding = new DevExpress.XtraPrinting.PaddingInfo(4, 2, 0, 0, 100F);
@@ -2383,7 +2396,7 @@ namespace ArgusCR1003.Remittance.RE36204
             // 
             // xrLabel6
             // 
-            this.xrLabel6.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
+            this.xrLabel6.Font = new System.Drawing.Font("Arial", 11F, System.Drawing.FontStyle.Bold);
             this.xrLabel6.ForeColor = System.Drawing.Color.Blue;
             this.xrLabel6.LocationFloat = new DevExpress.Utils.PointFloat(647.7078F, 323.3696F);
             this.xrLabel6.Name = "xrLabel6";
@@ -2396,7 +2409,7 @@ namespace ArgusCR1003.Remittance.RE36204
             // 
             // xrLabel5
             // 
-            this.xrLabel5.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
+            this.xrLabel5.Font = new System.Drawing.Font("Arial", 11F, System.Drawing.FontStyle.Bold);
             this.xrLabel5.ForeColor = System.Drawing.Color.Blue;
             this.xrLabel5.LocationFloat = new DevExpress.Utils.PointFloat(53.74996F, 323.3696F);
             this.xrLabel5.Multiline = true;
@@ -2444,7 +2457,7 @@ namespace ArgusCR1003.Remittance.RE36204
             this.xrTableCell13.Borders = DevExpress.XtraPrinting.BorderSide.Top;
             this.xrTableCell13.BorderWidth = 2F;
             this.xrTableCell13.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold);
-            this.xrTableCell13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(160)))));
+            this.xrTableCell13.ForeColor = System.Drawing.Color.MidnightBlue;
             this.xrTableCell13.Multiline = true;
             this.xrTableCell13.Name = "xrTableCell13";
             this.xrTableCell13.Padding = new DevExpress.XtraPrinting.PaddingInfo(4, 2, 0, 0, 100F);
@@ -2487,7 +2500,7 @@ namespace ArgusCR1003.Remittance.RE36204
             this.xrTableCell15.Borders = DevExpress.XtraPrinting.BorderSide.Top;
             this.xrTableCell15.BorderWidth = 2F;
             this.xrTableCell15.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold);
-            this.xrTableCell15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(160)))));
+            this.xrTableCell15.ForeColor = System.Drawing.Color.MidnightBlue;
             this.xrTableCell15.Multiline = true;
             this.xrTableCell15.Name = "xrTableCell15";
             this.xrTableCell15.Padding = new DevExpress.XtraPrinting.PaddingInfo(4, 2, 0, 0, 100F);
@@ -2519,7 +2532,7 @@ namespace ArgusCR1003.Remittance.RE36204
             this.xrTableCell2.Borders = DevExpress.XtraPrinting.BorderSide.Top;
             this.xrTableCell2.BorderWidth = 2F;
             this.xrTableCell2.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold);
-            this.xrTableCell2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(160)))));
+            this.xrTableCell2.ForeColor = System.Drawing.Color.MidnightBlue;
             this.xrTableCell2.Multiline = true;
             this.xrTableCell2.Name = "xrTableCell2";
             this.xrTableCell2.Padding = new DevExpress.XtraPrinting.PaddingInfo(4, 2, 0, 0, 100F);
@@ -2562,7 +2575,7 @@ namespace ArgusCR1003.Remittance.RE36204
             this.xrTableCell17.Borders = DevExpress.XtraPrinting.BorderSide.Top;
             this.xrTableCell17.BorderWidth = 2F;
             this.xrTableCell17.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold);
-            this.xrTableCell17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(160)))));
+            this.xrTableCell17.ForeColor = System.Drawing.Color.MidnightBlue;
             this.xrTableCell17.Multiline = true;
             this.xrTableCell17.Name = "xrTableCell17";
             this.xrTableCell17.Padding = new DevExpress.XtraPrinting.PaddingInfo(4, 2, 0, 0, 100F);
@@ -2580,7 +2593,7 @@ namespace ArgusCR1003.Remittance.RE36204
             // 
             // xrLabel4
             // 
-            this.xrLabel4.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
+            this.xrLabel4.Font = new System.Drawing.Font("Arial", 11F, System.Drawing.FontStyle.Bold);
             this.xrLabel4.ForeColor = System.Drawing.Color.Blue;
             this.xrLabel4.LocationFloat = new DevExpress.Utils.PointFloat(667.4124F, 86.37997F);
             this.xrLabel4.Name = "xrLabel4";
@@ -2593,7 +2606,7 @@ namespace ArgusCR1003.Remittance.RE36204
             // 
             // xrLabel3
             // 
-            this.xrLabel3.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
+            this.xrLabel3.Font = new System.Drawing.Font("Arial", 11F, System.Drawing.FontStyle.Bold);
             this.xrLabel3.ForeColor = System.Drawing.Color.Blue;
             this.xrLabel3.LocationFloat = new DevExpress.Utils.PointFloat(53.75026F, 86.37994F);
             this.xrLabel3.Name = "xrLabel3";
@@ -2606,8 +2619,8 @@ namespace ArgusCR1003.Remittance.RE36204
             // 
             // xrLabel2
             // 
-            this.xrLabel2.BackColor = System.Drawing.Color.Navy;
-            this.xrLabel2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
+            this.xrLabel2.BackColor = System.Drawing.Color.MidnightBlue;
+            this.xrLabel2.Font = new System.Drawing.Font("Arial", 11F, System.Drawing.FontStyle.Bold);
             this.xrLabel2.ForeColor = System.Drawing.Color.White;
             this.xrLabel2.LocationFloat = new DevExpress.Utils.PointFloat(53.74995F, 0F);
             this.xrLabel2.Name = "xrLabel2";
@@ -2653,7 +2666,7 @@ namespace ArgusCR1003.Remittance.RE36204
             this.xrTableCell1.BackColor = System.Drawing.Color.Transparent;
             this.xrTableCell1.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.xrTableCell1.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold);
-            this.xrTableCell1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(160)))));
+            this.xrTableCell1.ForeColor = System.Drawing.Color.MidnightBlue;
             this.xrTableCell1.Multiline = true;
             this.xrTableCell1.Name = "xrTableCell1";
             this.xrTableCell1.Padding = new DevExpress.XtraPrinting.PaddingInfo(4, 2, 0, 0, 100F);
@@ -2688,7 +2701,7 @@ namespace ArgusCR1003.Remittance.RE36204
             this.xrTableCell3.BackColor = System.Drawing.Color.Transparent;
             this.xrTableCell3.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.xrTableCell3.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold);
-            this.xrTableCell3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(160)))));
+            this.xrTableCell3.ForeColor = System.Drawing.Color.MidnightBlue;
             this.xrTableCell3.Multiline = true;
             this.xrTableCell3.Name = "xrTableCell3";
             this.xrTableCell3.Padding = new DevExpress.XtraPrinting.PaddingInfo(4, 2, 0, 0, 100F);
@@ -2716,7 +2729,7 @@ namespace ArgusCR1003.Remittance.RE36204
             this.xrTableCell4.BackColor = System.Drawing.Color.Transparent;
             this.xrTableCell4.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.xrTableCell4.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold);
-            this.xrTableCell4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(160)))));
+            this.xrTableCell4.ForeColor = System.Drawing.Color.MidnightBlue;
             this.xrTableCell4.Multiline = true;
             this.xrTableCell4.Name = "xrTableCell4";
             this.xrTableCell4.Padding = new DevExpress.XtraPrinting.PaddingInfo(4, 2, 0, 0, 100F);
@@ -2751,7 +2764,7 @@ namespace ArgusCR1003.Remittance.RE36204
             this.xrTableCell6.BackColor = System.Drawing.Color.Transparent;
             this.xrTableCell6.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.xrTableCell6.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold);
-            this.xrTableCell6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(160)))));
+            this.xrTableCell6.ForeColor = System.Drawing.Color.MidnightBlue;
             this.xrTableCell6.Multiline = true;
             this.xrTableCell6.Name = "xrTableCell6";
             this.xrTableCell6.Padding = new DevExpress.XtraPrinting.PaddingInfo(4, 2, 0, 0, 100F);
@@ -2796,7 +2809,7 @@ namespace ArgusCR1003.Remittance.RE36204
             this.trxNo_lbl.BackColor = System.Drawing.Color.Transparent;
             this.trxNo_lbl.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.trxNo_lbl.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold);
-            this.trxNo_lbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(160)))));
+            this.trxNo_lbl.ForeColor = System.Drawing.Color.MidnightBlue;
             this.trxNo_lbl.Multiline = true;
             this.trxNo_lbl.Name = "trxNo_lbl";
             this.trxNo_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(4, 2, 0, 0, 100F);
@@ -2833,7 +2846,7 @@ namespace ArgusCR1003.Remittance.RE36204
             this.trxNo2_lbl.BackColor = System.Drawing.Color.Transparent;
             this.trxNo2_lbl.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.trxNo2_lbl.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold);
-            this.trxNo2_lbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(160)))));
+            this.trxNo2_lbl.ForeColor = System.Drawing.Color.MidnightBlue;
             this.trxNo2_lbl.Multiline = true;
             this.trxNo2_lbl.Name = "trxNo2_lbl";
             this.trxNo2_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(4, 2, 0, 0, 100F);
@@ -2847,18 +2860,11 @@ namespace ArgusCR1003.Remittance.RE36204
             this.trxNo2_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
             this.trxNo2_lbl.Weight = 1.1734772841448615D;
             // 
-            // PageFooter
-            // 
-            this.PageFooter.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
-            this.xrPictureBox1});
-            this.PageFooter.HeightF = 49.89325F;
-            this.PageFooter.Name = "PageFooter";
-            // 
             // xrPictureBox1
             // 
             this.xrPictureBox1.ImageAlignment = DevExpress.XtraPrinting.ImageAlignment.MiddleCenter;
             this.xrPictureBox1.ImageSource = new DevExpress.XtraPrinting.Drawing.ImageSource("img", resources.GetString("xrPictureBox1.ImageSource"));
-            this.xrPictureBox1.LocationFloat = new DevExpress.Utils.PointFloat(53.75098F, 0F);
+            this.xrPictureBox1.LocationFloat = new DevExpress.Utils.PointFloat(53.74995F, 35.73608F);
             this.xrPictureBox1.Name = "xrPictureBox1";
             this.xrPictureBox1.SizeF = new System.Drawing.SizeF(717.2678F, 49.89325F);
             this.xrPictureBox1.Sizing = DevExpress.XtraPrinting.ImageSizeMode.ZoomImage;
@@ -2866,8 +2872,9 @@ namespace ArgusCR1003.Remittance.RE36204
             // ReportFooter
             // 
             this.ReportFooter.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+            this.xrPictureBox1,
             this.xrTable10});
-            this.ReportFooter.HeightF = 35.73608F;
+            this.ReportFooter.HeightF = 85.62933F;
             this.ReportFooter.Name = "ReportFooter";
             // 
             // xrTable10
@@ -2943,21 +2950,6 @@ namespace ArgusCR1003.Remittance.RE36204
             this.xrTableCell50.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
             this.xrTableCell50.Weight = 2.082543092386961D;
             // 
-            // QRCode
-            // 
-            this.QRCode.AutoModule = true;
-            this.QRCode.Font = new System.Drawing.Font("Arial", 15.75F);
-            this.QRCode.LocationFloat = new DevExpress.Utils.PointFloat(415.5423F, 0F);
-            this.QRCode.Name = "QRCode";
-            this.QRCode.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F);
-            this.QRCode.ShowText = false;
-            this.QRCode.SizeF = new System.Drawing.SizeF(123.2598F, 100F);
-            this.QRCode.StylePriority.UseFont = false;
-            this.QRCode.StylePriority.UsePadding = false;
-            this.QRCode.StylePriority.UseTextAlignment = false;
-            this.QRCode.Symbology = qrCodeGenerator1;
-            this.QRCode.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleJustify;
-            // 
             // RE36204T1
             // 
             this.Bands.AddRange(new DevExpress.XtraReports.UI.Band[] {
@@ -2965,10 +2957,9 @@ namespace ArgusCR1003.Remittance.RE36204
             this.BottomMargin,
             this.Detail,
             this.ReportHeader,
-            this.PageFooter,
             this.ReportFooter});
             this.Font = new System.Drawing.Font("Arial", 9.75F);
-            this.Margins = new System.Drawing.Printing.Margins(0, 0, 100, 0);
+            this.Margins = new System.Drawing.Printing.Margins(0, 0, 100, 11);
             this.PageHeight = 1169;
             this.PageWidth = 827;
             this.PaperKind = System.Drawing.Printing.PaperKind.A4;
@@ -2999,7 +2990,6 @@ namespace ArgusCR1003.Remittance.RE36204
         private DevExpress.XtraReports.UI.BottomMarginBand BottomMargin;
         private DevExpress.XtraReports.UI.DetailBand Detail;
         private DevExpress.XtraReports.UI.ReportHeaderBand ReportHeader;
-        private DevExpress.XtraReports.UI.PageFooterBand PageFooter;
         private DevExpress.XtraReports.UI.XRTable xrTable4;
         private DevExpress.XtraReports.UI.XRTableRow xrTableRow5;
         private DevExpress.XtraReports.UI.XRTableCell trxNo_lbl;
@@ -3150,7 +3140,7 @@ namespace ArgusCR1003.Remittance.RE36204
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell82;
         private DevExpress.XtraReports.UI.XRTableRow xrTableRow36;
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell83;
-        private DevExpress.XtraReports.UI.XRTableCell aparteent_data;
+        private DevExpress.XtraReports.UI.XRTableCell apartment_data;
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell85;
         private DevExpress.XtraReports.UI.XRTableRow xrTableRow13;
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell48;
