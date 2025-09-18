@@ -1,4 +1,10 @@
-﻿using System.Drawing.Printing;
+﻿using System;
+using System.Collections;
+using System.ComponentModel;
+using System.Drawing.Printing;
+using DevExpress.XtraReports.UI;
+using ArgusDS.Sales.Reports;
+
 
 namespace ArgusCR1003.Remittance.RE36308
 {
@@ -12,19 +18,22 @@ namespace ArgusCR1003.Remittance.RE36308
         protected override void OnBeforePrint(PrintEventArgs e)
         {
             SharedClasses.JsonProtocol.GetStructure<ArgusCT_DS.Remittance.Report.RT105> webObject = deserializeGet<ArgusCT_DS.Remittance.Report.RT105>();
+
             QRCode.Text = webObject.record.reference;
+
             dateTop_data.Text = webObject.record.date.ToString("dd/MM/yyyy");
-            //time_data.Text = webObject.record.header.reference;
+            time_data.Text = webObject.record.date.ToString("hh:mm tt");
             //number_data.Text = webObject.record.header.plantName;
-            //sar_data.Text = webObject.record.header.amount.ToString("N2");
-            //receivedFrom_data.Text = webObject.record.header.clientName;
-            //from_data.Text = webObject.record.header.clientName;
-            //only_data.Text = SharedClasses.NumberToWords.multiLingualNumberInText((decimal)webObject.record.header.amount, 2, 1);
-            //for_data.Text = webObject.record.header.beneficiaryName;
-            //idType_data.Text = webObject.record.header.idType;
-            //expiryDate_data.Text = webObject.record.header.idExpiryDate?.ToString("dd/MM/yyyy");
-            //nationality_data.Text = webObject.record.header.clientNationality;
-            //idNo_data.Text = webObject.record.header.idNo;
+
+            reference_data.Text = webObject.record.reference;
+            outwardsOrder_data.Text = webObject.record.owtRef;
+            date_data.Text = webObject.record.date.ToString("dd/MM/yyyy");
+
+            amoun_data.Text = webObject.record.amount.ToString("N2");
+            amountWord_data.Text = SharedClasses.NumberToWords.multiLingualNumberInText((decimal)webObject.record.amount, 2, Convert.ToInt16(sessionInfo.languageId));
+
+            oldBeneficiaryName_data.Text = webObject.record.oldBeneficiaryName;
+            newBeneficiaryName_data.Text = webObject.record.newBeneficiaryName;
             base.OnBeforePrint(e);
         }
 
