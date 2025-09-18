@@ -144,6 +144,12 @@
     <Compile Include="Remittance\RE36301\RE36301T1.Designer.cs">
       <DependentUpon>RE36301T1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Remittance\RE36308\RE36308T1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Remittance\RE36308\RE36308T1.Designer.cs">
+      <DependentUpon>RE36308T1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Remittance\RE36323\RE36323T1.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -193,6 +199,9 @@
     <EmbeddedResource Include="Remittance\RE36301\RE36301T1.resx">
       <DependentUpon>RE36301T1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Remittance\RE36308\RE36308T1.resx">
+      <DependentUpon>RE36308T1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Remittance\RE36323\RE36323T1.resx">
       <DependentUpon>RE36323T1.cs</DependentUpon>
     </EmbeddedResource>
@@ -207,8 +216,6 @@
     <Content Include="Resource\Footer.png" />
     <Content Include="Resource\Header.png" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Remittance\RE36308\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
