@@ -16,8 +16,6 @@ namespace ArgusCR1003.Remittance.RE36324
         protected override void OnBeforePrint(PrintEventArgs e)
         {
             SharedClasses.JsonProtocol.GetStructure<ArgusCT_DS.Remittance.Report.RT103> webObject = deserializeGet<ArgusCT_DS.Remittance.Report.RT103>();
-
-            QRCode.Text = webObject.record.reference;
             DataSource = webObject.record.paymentDetails;
 
             date_data.Text = webObject.record.date.ToString(sessionInfo.dateFormat);
@@ -50,6 +48,7 @@ namespace ArgusCR1003.Remittance.RE36324
             {
                 telNo2_data.Text = phoneNumber;
             }
+
             string idNumber = webObject.record.remitterIdNo.ToString();
             if (!string.IsNullOrEmpty(idNumber) && idNumber.Length > 4)
             {
@@ -68,6 +67,7 @@ namespace ArgusCR1003.Remittance.RE36324
             purpose_data.Text = webObject.record.remitterPurpose;
             cashierNo_data.Text = webObject.record.cashAccountRef;
 
+            QRCode.Text = webObject.record.reference;
             base.OnBeforePrint(e);
         }
 
