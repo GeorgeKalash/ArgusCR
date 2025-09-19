@@ -26,8 +26,10 @@ namespace ArgusCR1003.Remittance.RE36308
             outwardsOrder_data.Text = webObject.record.owtRef;
             date_data.Text = webObject.record.date.ToString("dd/MM/yyyy");
 
-            amoun_data.Text = webObject.record.amount.ToString("N2");
+            amount_data.Text = webObject.record.amount.ToString("N2");
+            currencyRef_data.Text = webObject.record.currencyName;
             amountWord_data.Text = SharedClasses.NumberToWords.multiLingualNumberInText((decimal)webObject.record.amount, 2, Convert.ToInt16(sessionInfo.languageId));
+            clientName_data.Text = webObject.record.clientName;
 
             oldBeneficiaryName_data.Text = webObject.record.oldBeneficiaryName;
             newBeneficiaryName_data.Text = webObject.record.newBeneficiaryName;

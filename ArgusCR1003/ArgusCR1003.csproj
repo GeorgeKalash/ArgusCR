@@ -186,6 +186,12 @@
     <Compile Include="Remittance\RE36324\RE36324T1.Designer.cs">
       <DependentUpon>RE36324T1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Remittance\RE36326\RE36326T1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Remittance\RE36326\RE36326T1.Designer.cs">
+      <DependentUpon>RE36326T1.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="CurrencyTrading\CT35301\CT35301T1.resx">
@@ -237,6 +243,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Remittance\RE36324\RE36324T1.resx">
       <DependentUpon>RE36324T1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Remittance\RE36326\RE36326T1.resx">
+      <DependentUpon>RE36326T1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
