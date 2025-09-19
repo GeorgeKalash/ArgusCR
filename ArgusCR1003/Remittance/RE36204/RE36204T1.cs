@@ -47,7 +47,7 @@ namespace ArgusCR1003.Remittance.RE36204
             idExp_data.Text = webObject.record.clientIDView?.idExpiryDate.ToString("dd/MM/yyyy");
             idIssDate_data.Text = webObject.record.clientIDView.idIssueDate?.ToString("dd/MM/yyyy") ?? string.Empty;
             eduLevel_data.Text = webObject.record.clientRemittance?.educationLevelName;
-            materialStatus_data.Text = webObject.record.clientRemittance?.statusName;
+            maritalStatus_data.Text = webObject.record.clientRemittance?.statusName;
             sponsor_data.Text = webObject.record.clientIndividual?.sponsorName;
             mobileNo_data.Text = webObject.record.clientRemittance?.whatsAppNo;
 

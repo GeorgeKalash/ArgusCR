@@ -83,7 +83,7 @@ namespace ArgusCR1003.Remittance.RE36204
             this.xrTableCell30 = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTableRow11 = new DevExpress.XtraReports.UI.XRTableRow();
             this.xrTableCell31 = new DevExpress.XtraReports.UI.XRTableCell();
-            this.materialStatus_data = new DevExpress.XtraReports.UI.XRTableCell();
+            this.maritalStatus_data = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTableCell34 = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTableRow12 = new DevExpress.XtraReports.UI.XRTableRow();
             this.xrTableCell36 = new DevExpress.XtraReports.UI.XRTableCell();
@@ -986,7 +986,7 @@ namespace ArgusCR1003.Remittance.RE36204
             // 
             this.xrTableRow11.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
             this.xrTableCell31,
-            this.materialStatus_data,
+            this.maritalStatus_data,
             this.xrTableCell34});
             this.xrTableRow11.Name = "xrTableRow11";
             this.xrTableRow11.Weight = 1D;
@@ -1010,21 +1010,21 @@ namespace ArgusCR1003.Remittance.RE36204
             this.xrTableCell31.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             this.xrTableCell31.Weight = 1.6767659553405316D;
             // 
-            // materialStatus_data
+            // maritalStatus_data
             // 
-            this.materialStatus_data.BackColor = System.Drawing.Color.Transparent;
-            this.materialStatus_data.Borders = DevExpress.XtraPrinting.BorderSide.None;
-            this.materialStatus_data.Font = new System.Drawing.Font("Arial", 9F);
-            this.materialStatus_data.Multiline = true;
-            this.materialStatus_data.Name = "materialStatus_data";
-            this.materialStatus_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(4, 2, 0, 0, 100F);
-            this.materialStatus_data.StylePriority.UseBackColor = false;
-            this.materialStatus_data.StylePriority.UseBorders = false;
-            this.materialStatus_data.StylePriority.UseFont = false;
-            this.materialStatus_data.StylePriority.UsePadding = false;
-            this.materialStatus_data.StylePriority.UseTextAlignment = false;
-            this.materialStatus_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
-            this.materialStatus_data.Weight = 2.3191535449485245D;
+            this.maritalStatus_data.BackColor = System.Drawing.Color.Transparent;
+            this.maritalStatus_data.Borders = DevExpress.XtraPrinting.BorderSide.None;
+            this.maritalStatus_data.Font = new System.Drawing.Font("Arial", 9F);
+            this.maritalStatus_data.Multiline = true;
+            this.maritalStatus_data.Name = "maritalStatus_data";
+            this.maritalStatus_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(4, 2, 0, 0, 100F);
+            this.maritalStatus_data.StylePriority.UseBackColor = false;
+            this.maritalStatus_data.StylePriority.UseBorders = false;
+            this.maritalStatus_data.StylePriority.UseFont = false;
+            this.maritalStatus_data.StylePriority.UsePadding = false;
+            this.maritalStatus_data.StylePriority.UseTextAlignment = false;
+            this.maritalStatus_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            this.maritalStatus_data.Weight = 2.3191535449485245D;
             // 
             // xrTableCell34
             // 
@@ -2819,7 +2819,7 @@ namespace ArgusCR1003.Remittance.RE36204
             this.trxNo_lbl.StylePriority.UseForeColor = false;
             this.trxNo_lbl.StylePriority.UsePadding = false;
             this.trxNo_lbl.StylePriority.UseTextAlignment = false;
-            this.trxNo_lbl.Text = "Ref. Date:";
+            this.trxNo_lbl.Text = "Reg. Date:";
             this.trxNo_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             this.trxNo_lbl.Weight = 1.6843681590131145D;
             // 
@@ -3115,7 +3115,7 @@ namespace ArgusCR1003.Remittance.RE36204
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell30;
         private DevExpress.XtraReports.UI.XRTableRow xrTableRow11;
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell31;
-        private DevExpress.XtraReports.UI.XRTableCell materialStatus_data;
+        private DevExpress.XtraReports.UI.XRTableCell maritalStatus_data;
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell34;
         private DevExpress.XtraReports.UI.XRTableRow xrTableRow12;
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell36;
