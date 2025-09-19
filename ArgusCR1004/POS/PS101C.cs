@@ -57,7 +57,7 @@ namespace ArgusCR1004.POS
         }
         protected override string dictionaryStore()
         {
-            return "CR1004.PS101";
+            return "CR1004.PS101C";
         }
     }
 }
