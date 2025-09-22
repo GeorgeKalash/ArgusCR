@@ -310,7 +310,7 @@ namespace ArgusCR1003.Remittance.RE36308
             this.xrTableCell26.StylePriority.UseTextAlignment = false;
             this.xrTableCell26.Text = "معلومات جديدة";
             this.xrTableCell26.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
-            this.xrTableCell26.Weight = 1.8667815934383778D;
+            this.xrTableCell26.Weight = 2.015532694819711D;
             // 
             // xrTableCell100
             // 
@@ -330,7 +330,7 @@ namespace ArgusCR1003.Remittance.RE36308
             this.xrTableCell100.StylePriority.UseTextAlignment = false;
             this.xrTableCell100.Text = "المعلومات القديمة";
             this.xrTableCell100.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
-            this.xrTableCell100.Weight = 2.4051387891765614D;
+            this.xrTableCell100.Weight = 2.2563876877952285D;
             // 
             // xrTableCell52
             // 
@@ -371,8 +371,8 @@ namespace ArgusCR1003.Remittance.RE36308
             this.newBeneficiaryName_data.StylePriority.UseFont = false;
             this.newBeneficiaryName_data.StylePriority.UsePadding = false;
             this.newBeneficiaryName_data.StylePriority.UseTextAlignment = false;
-            this.newBeneficiaryName_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
-            this.newBeneficiaryName_data.Weight = 1.8667815934383778D;
+            this.newBeneficiaryName_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            this.newBeneficiaryName_data.Weight = 2.0155324870592315D;
             // 
             // oldBeneficiaryName_data
             // 
@@ -390,7 +390,7 @@ namespace ArgusCR1003.Remittance.RE36308
             this.oldBeneficiaryName_data.StylePriority.UsePadding = false;
             this.oldBeneficiaryName_data.StylePriority.UseTextAlignment = false;
             this.oldBeneficiaryName_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
-            this.oldBeneficiaryName_data.Weight = 2.4051387891765614D;
+            this.oldBeneficiaryName_data.Weight = 2.2563878955557075D;
             // 
             // xrTableCell13
             // 
@@ -845,7 +845,7 @@ namespace ArgusCR1003.Remittance.RE36308
             this.dateTop_data.StylePriority.UseFont = false;
             this.dateTop_data.StylePriority.UsePadding = false;
             this.dateTop_data.StylePriority.UseTextAlignment = false;
-            this.dateTop_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            this.dateTop_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
             this.dateTop_data.Weight = 4.0330070864111258D;
             // 
             // xrTableCell11
@@ -886,7 +886,7 @@ namespace ArgusCR1003.Remittance.RE36308
             this.time_data.StylePriority.UseFont = false;
             this.time_data.StylePriority.UsePadding = false;
             this.time_data.StylePriority.UseTextAlignment = false;
-            this.time_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            this.time_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
             this.time_data.Weight = 4.0330059282492945D;
             // 
             // xrTableCell20
@@ -927,7 +927,7 @@ namespace ArgusCR1003.Remittance.RE36308
             this.number_data.StylePriority.UseFont = false;
             this.number_data.StylePriority.UsePadding = false;
             this.number_data.StylePriority.UseTextAlignment = false;
-            this.number_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            this.number_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
             this.number_data.Weight = 4.0330056834750279D;
             // 
             // xrTableCell27

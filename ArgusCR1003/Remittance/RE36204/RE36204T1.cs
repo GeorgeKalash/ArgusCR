@@ -47,7 +47,7 @@ namespace ArgusCR1003.Remittance.RE36204
             idExp_data.Text = webObject.record.clientIDView?.idExpiryDate.ToString("dd/MM/yyyy");
             idIssDate_data.Text = webObject.record.clientIDView.idIssueDate?.ToString("dd/MM/yyyy") ?? string.Empty;
             eduLevel_data.Text = webObject.record.clientRemittance?.educationLevelName;
-      //      maritalStatus_data.Text = webObject.record.clientRemittance?.civilStatus;
+            maritalStatus_data.Text = webObject.record.clientRemittance?.civilStatusName;
             sponsor_data.Text = webObject.record.clientIndividual?.sponsorName;
             mobileNo_data.Text = webObject.record.clientRemittance?.whatsAppNo;
 
@@ -60,7 +60,16 @@ namespace ArgusCR1003.Remittance.RE36204
             apartment_data.Text = webObject.record.addressView?.unitNo;
             extraNo_data.Text = webObject.record.addressView?.phone;
 
-            salary_data.Text = webObject.record.clientRemittance?.salaryRange;
+            salary_data.Text = webObject.record.clientRemittance?.salaryRangeMin.ToString();
+
+            if (webObject.record.clientRemittance != null)
+            {
+                salary_data.Text = string.Format("{0} ---> {1}",
+    webObject.record.clientRemittance.salaryRangeMin.ToString(),
+    webObject.record.clientRemittance.salaryRangeMax.ToString());
+            }
+
+
             profession_data.Text = webObject.record.clientMaster?.professionName;
             workCity_data.Text = webObject.record.workAddressView?.name;
             income_data.Text = webObject.record.clientIndividual?.incomeSourceName;
