@@ -156,6 +156,12 @@
     <Compile Include="Remittance\RE36308\RE36308T1.Designer.cs">
       <DependentUpon>RE36308T1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Remittance\RE36308\RE36308T2.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Remittance\RE36308\RE36308T2.Designer.cs">
+      <DependentUpon>RE36308T2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Remittance\RE36323\RE36323T1.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -228,6 +234,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Remittance\RE36308\RE36308T1.resx">
       <DependentUpon>RE36308T1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Remittance\RE36308\RE36308T2.resx">
+      <DependentUpon>RE36308T2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Remittance\RE36323\RE36323T1.resx">
       <DependentUpon>RE36323T1.cs</DependentUpon>
