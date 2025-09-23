@@ -73,6 +73,7 @@ namespace ArgusCR1003.Remittance.RE36326
 
             //  accName_data.Text = webObject.record.cashAccountName;
             //   accRef_data.Text = "[ " + webObject.record.cashAccountRef+ " ]";
+            printSignature_lbl.Text = reportSignature();
             base.OnBeforePrint(e);
         }
 
