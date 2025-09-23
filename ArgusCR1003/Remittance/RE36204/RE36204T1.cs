@@ -65,8 +65,8 @@ namespace ArgusCR1003.Remittance.RE36204
             if (webObject.record.clientRemittance != null)
             {
                 salary_data.Text = string.Format("{0} ---> {1}",
-    webObject.record.clientRemittance.salaryRangeMin.ToString(),
-    webObject.record.clientRemittance.salaryRangeMax.ToString());
+    webObject.record.clientRemittance.salaryRangeMin?.ToString("N0"),
+    webObject.record.clientRemittance.salaryRangeMax?.ToString("N0"));
             }
 
 
