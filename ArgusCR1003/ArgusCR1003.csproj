@@ -269,6 +269,7 @@
   <ItemGroup>
     <Content Include="Resource\Footer.png" />
     <Content Include="Resource\Header.png" />
+    <Content Include="Resource\saudi_riyal.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Remittance\RE36313\" />
