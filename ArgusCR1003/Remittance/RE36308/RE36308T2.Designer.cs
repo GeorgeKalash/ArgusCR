@@ -204,6 +204,7 @@ namespace ArgusCR1003.Remittance.RE36308
             this.xrPictureBox2 = new DevExpress.XtraReports.UI.XRPictureBox();
             this.xrLabel9 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel12 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrTableCell5 = new DevExpress.XtraReports.UI.XRTableCell();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable3)).BeginInit();
@@ -277,6 +278,7 @@ namespace ArgusCR1003.Remittance.RE36308
             this.xrTableRow18.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
             this.xrTableCell46,
             this.currency_data,
+            this.xrTableCell5,
             this.xrTableCell47});
             this.xrTableRow18.Name = "xrTableRow18";
             this.xrTableRow18.Weight = 1D;
@@ -316,7 +318,7 @@ namespace ArgusCR1003.Remittance.RE36308
             this.currency_data.StylePriority.UsePadding = false;
             this.currency_data.StylePriority.UseTextAlignment = false;
             this.currency_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
-            this.currency_data.Weight = 2.5951532916778075D;
+            this.currency_data.Weight = 1.8551879681653132D;
             // 
             // xrTableCell47
             // 
@@ -3136,6 +3138,24 @@ namespace ArgusCR1003.Remittance.RE36308
             this.xrLabel12.Text = "رمز لأصالتنا | رمز لاقتصادنا | رمز لمستقبلنا";
             this.xrLabel12.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             // 
+            // xrTableCell5
+            // 
+            this.xrTableCell5.BackColor = System.Drawing.Color.Transparent;
+            this.xrTableCell5.BorderColor = System.Drawing.Color.Black;
+            this.xrTableCell5.Borders = DevExpress.XtraPrinting.BorderSide.Top;
+            this.xrTableCell5.Font = new System.Drawing.Font("Simplified Arabic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.xrTableCell5.Multiline = true;
+            this.xrTableCell5.Name = "xrTableCell5";
+            this.xrTableCell5.Padding = new DevExpress.XtraPrinting.PaddingInfo(4, 2, 0, 0, 100F);
+            this.xrTableCell5.StylePriority.UseBackColor = false;
+            this.xrTableCell5.StylePriority.UseBorderColor = false;
+            this.xrTableCell5.StylePriority.UseBorders = false;
+            this.xrTableCell5.StylePriority.UseFont = false;
+            this.xrTableCell5.StylePriority.UsePadding = false;
+            this.xrTableCell5.StylePriority.UseTextAlignment = false;
+            this.xrTableCell5.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            this.xrTableCell5.Weight = 0.73996532351249444D;
+            // 
             // RE36308T2
             // 
             this.Bands.AddRange(new DevExpress.XtraReports.UI.Band[] {
@@ -3336,5 +3356,6 @@ namespace ArgusCR1003.Remittance.RE36308
         private DevExpress.XtraReports.UI.XRPictureBox xrPictureBox2;
         private DevExpress.XtraReports.UI.XRLabel xrLabel9;
         private DevExpress.XtraReports.UI.XRLabel xrLabel12;
+        private DevExpress.XtraReports.UI.XRTableCell xrTableCell5;
     }
 }
