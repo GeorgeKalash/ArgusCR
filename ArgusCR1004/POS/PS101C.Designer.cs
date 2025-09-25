@@ -1449,7 +1449,7 @@ namespace ArgusCR1004.POS
             this.xrTable13.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow23,
             this.xrTableRow24});
-            this.xrTable13.SizeF = new System.Drawing.SizeF(424.8213F, 67.01387F);
+            this.xrTable13.SizeF = new System.Drawing.SizeF(424.8213F, 66.66889F);
             // 
             // xrTableRow23
             // 
