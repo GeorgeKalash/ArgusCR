@@ -50,7 +50,7 @@ namespace ArgusCR1003.Remittance.RE36308
 
             currency_data.Text = webObject.record.currencyName;
             amount_data.Text = webObject.record.lcAmount.ToString();
-         //   charge_data.Text = webObject.record.ch
+            charge_data.Text = webObject.record.commission.ToString();
             rate_data.Text = webObject.record.rate.ToString();
             tdAmount_data.Text = webObject.record.fcAmount.ToString();
             vat_data.Text = webObject.record.vat.ToString();

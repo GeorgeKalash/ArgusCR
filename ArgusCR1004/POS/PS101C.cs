@@ -43,6 +43,7 @@ namespace ArgusCR1004.POS
             reference2_data.Text = webObject.record.invoiceView.reference;
             clientName2_data.Text = webObject.record.invoiceView?.clientName;
             spName2_data.Text = webObject.record.salesPerson.name;
+
             base.OnBeforePrint(e);
         }
         protected override void OnDataSourceRowChanged(DataSourceRowEventArgs e)
