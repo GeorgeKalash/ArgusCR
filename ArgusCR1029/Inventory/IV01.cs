@@ -26,6 +26,17 @@ namespace ArgusCR1029.Inventory
             itemGroup_param.Text = Parameters.Count > 1 ? Parameters[1].Value.ToString() : string.Empty;
             ms_param.Text = Parameters.Count > 2 ? Parameters[2].Value.ToString() : string.Empty;
             production_param.Text = Parameters.Count > 3 ? Parameters[3].Value.ToString() : string.Empty;
+            collection_param.Text = Parameters.Count > 4 ? Parameters[4].Value.ToString() : string.Empty;
+            brand_param.Text = Parameters.Count > 5 ? Parameters[5].Value.ToString() : string.Empty;
+            colorStone_param.Text = Parameters.Count > 6 ? Parameters[6].Value.ToString() : string.Empty;
+
+            stone_param.Text = Parameters.Count > 7 ? Parameters[7].Value.ToString() : string.Empty;
+            startDate_param.Text = Parameters.Count > 8 ? Parameters[8].Value.ToString() : string.Empty;
+            endDate_param.Text = Parameters.Count > 9 ? Parameters[9].Value.ToString() : string.Empty;
+            priceGroup_param.Text = Parameters.Count > 10 ? Parameters[10].Value.ToString() : string.Empty;
+            activeStatus_param.Text = Parameters.Count > 11 ? Parameters[11].Value.ToString() : string.Empty;
+            fromPrice_param.Text = Parameters.Count > 12 ? Parameters[12].Value.ToString() : string.Empty;
+            toPrice_param.Text = Parameters.Count > 13 ? Parameters[13].Value.ToString() : string.Empty;
 
             logo_data.ImageUrl = companyInfo.logoUrl;
             printSignature.Text = reportSignature();
@@ -51,6 +62,8 @@ namespace ArgusCR1029.Inventory
             production_lbl.Text = labelText(13);
             collection_lbl.Text = labelText(14);
             createdDate_lbl.Text = labelText(15);
+            stones_lbl.Text = labelText(16);
+            isInactive_lbl.Text = labelText(17);
         }
         protected override string dictionaryStore()
         {
