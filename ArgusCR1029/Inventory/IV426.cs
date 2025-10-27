@@ -27,15 +27,17 @@ namespace ArgusCR1029.Inventory
             startDate_param.Text = Parameters.Count > 1 ? Parameters[1].Value.ToString() : string.Empty;
             endDate_param.Text = Parameters.Count > 2 ? Parameters[2].Value.ToString() : string.Empty;
             site_param.Text = Parameters.Count > 3 ? Parameters[3].Value.ToString() : string.Empty;
+
             itemCategory_param.Text = Parameters.Count > 4 ? Parameters[4].Value.ToString() : string.Empty;
             systemFunction_param.Text = Parameters.Count > 5 ? Parameters[5].Value.ToString() : string.Empty;
+            fromSiteGroup_param.Text = Parameters.Count > 7 ? Parameters[7].Value.ToString() : string.Empty;
+            toSiteGroup_param.Text = Parameters.Count > 8 ? Parameters[8].Value.ToString() : string.Empty;
 
             startDate2_param.Text = Parameters.Count > 1 ? Parameters[1].Value.ToString() : string.Empty;
             endDate2_param.Text = Parameters.Count > 2 ? Parameters[2].Value.ToString() : string.Empty;
 
             startDate3_param.Text = Parameters.Count > 1 ? Parameters[1].Value.ToString() : string.Empty;
             endDate3_param.Text = Parameters.Count > 2 ? Parameters[2].Value.ToString() : string.Empty;
-
 
             printSignature.Text = reportSignature();
             base.OnBeforePrint(e);
