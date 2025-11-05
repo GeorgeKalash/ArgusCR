@@ -824,7 +824,7 @@ namespace ArgusCR1010.Sales
             this.qte_lbl.StylePriority.UseBorderColor = false;
             this.qte_lbl.StylePriority.UseBorders = false;
             this.qte_lbl.StylePriority.UseFont = false;
-            this.qte_lbl.Text = "Nombre de Cartons";
+            this.qte_lbl.Text = "Quantité";
             this.qte_lbl.Weight = 0.76338693226881393D;
             // 
             // xrTableCell2
@@ -858,7 +858,7 @@ namespace ArgusCR1010.Sales
             this.xrTableCell25.StylePriority.UseBorderColor = false;
             this.xrTableCell25.StylePriority.UseBorders = false;
             this.xrTableCell25.StylePriority.UseFont = false;
-            this.xrTableCell25.Text = "Quantités";
+            this.xrTableCell25.Text = "Quantité Totale";
             this.xrTableCell25.Weight = 0.76338693226881393D;
             // 
             // unitaire_lbl
