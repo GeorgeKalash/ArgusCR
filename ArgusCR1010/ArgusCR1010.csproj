@@ -148,6 +148,12 @@
     <Compile Include="Sales\SA51302.Designer.cs">
       <DependentUpon>SA51302.cs</DependentUpon>
     </Compile>
+    <Compile Include="Sales\SA51319.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Sales\SA51319.Designer.cs">
+      <DependentUpon>SA51319.cs</DependentUpon>
+    </Compile>
     <Compile Include="Sales\SA51303.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -169,6 +175,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Sales\SA51302.resx">
       <DependentUpon>SA51302.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales\SA51319.resx">
+      <DependentUpon>SA51319.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Sales\SA51303.resx">
       <DependentUpon>SA51303.cs</DependentUpon>
