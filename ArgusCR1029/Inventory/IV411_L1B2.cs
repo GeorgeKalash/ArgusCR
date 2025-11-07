@@ -23,20 +23,15 @@ namespace ArgusCR1029.Inventory
             SharedClasses.JsonProtocol.QryStructure<Custom.CR1029.IV403_L1> webObject = deserializeList<Custom.CR1029.IV403_L1>();
             DataSource = webObject.list;
 
-            fiscalYear_param.Text = Parameters.Count > 0 ? Parameters[0].Value.ToString() : string.Empty;
+            item_param.Text = Parameters.Count > 0 ? Parameters[0].Value.ToString() : string.Empty;
             date_param.Text = Parameters.Count > 1 ? Parameters[1].Value.ToString() : string.Empty;
             siteParam_param.Text = Parameters.Count > 2 ? Parameters[2].Value.ToString() : string.Empty;
-            item_param.Text = Parameters.Count > 3 ? Parameters[3].Value.ToString() : string.Empty;
+            itemCategory_param.Text = Parameters.Count > 3 ? Parameters[3].Value.ToString() : string.Empty;
 
-            itemCategory_param.Text = Parameters.Count > 4 ? Parameters[4].Value.ToString() : string.Empty;
-            itemGroup_param.Text = Parameters.Count > 5 ? Parameters[5].Value.ToString() : string.Empty;
-            fromSiteGroup_param.Text = Parameters.Count > 6 ? Parameters[6].Value.ToString() : string.Empty;
-            toSiteGroup_param.Text = Parameters.Count > 7 ? Parameters[7].Value.ToString() : string.Empty;
-
-            production_param.Text = Parameters.Count > 8 ? Parameters[8].Value.ToString() : string.Empty;
-            metalPurity_param.Text = Parameters.Count > 9 ? Parameters[9].Value.ToString() : string.Empty;
-            col_param.Text = Parameters.Count > 10 ? Parameters[10].Value.ToString() : string.Empty;
-            brand_param.Text = Parameters.Count > 11 ? Parameters[11].Value.ToString() : string.Empty;
+            itemGroup_param.Text = Parameters.Count > 4 ? Parameters[4].Value.ToString() : string.Empty;
+            fromSiteGroup_param.Text = Parameters.Count > 5 ? Parameters[5].Value.ToString() : string.Empty;
+            toSiteGroup_param.Text = Parameters.Count > 6 ? Parameters[6].Value.ToString() : string.Empty;
+            production_param.Text = Parameters.Count > 7 ? Parameters[7].Value.ToString() : string.Empty;
 
             logo_data.ImageUrl = companyInfo.logoUrl;
 
@@ -62,21 +57,6 @@ namespace ArgusCR1029.Inventory
             pcs_lbl.Text = labelText(12);
             weight_lbl.Text = labelText(13);
             avgWeight_lbl.Text = labelText(14);
-
-            fiscalYear_lbl.Text = labelText(15);
-            date_lbl.Text = labelText(16);
-            siteParam_lbl.Text = labelText(17);
-            item_lbl.Text = labelText(18);
-
-            itemCategory_lbl.Text = labelText(19);
-            itemGroupParam_lbl.Text = labelText(20);
-            fromSiteGroup_lbl.Text = labelText(21);
-            toSiteGroup_lbl.Text = labelText(22);
-
-            production_lbl.Text = labelText(23);
-            metalPurity_lbl.Text = labelText(24);
-            col_lbl.Text = labelText(25);
-            brand_lbl.Text = labelText(26);
         }
 
         protected override string dictionaryStore()

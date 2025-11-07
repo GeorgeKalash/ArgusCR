@@ -24,9 +24,8 @@ namespace ArgusCR1029.Inventory
             DataSource = webObject.list;
             crossTab.DataSource = webObject.list;
 
-            fiscalYear_param.Text = Parameters.Count > 0 ? Parameters[0].Value.ToString() : string.Empty;
-            asOfDate_param.Text = Parameters.Count > 1 ? Parameters[1].Value.ToString() : string.Empty;
-            site_param.Text = Parameters.Count > 2 ? Parameters[2].Value.ToString() : string.Empty;
+            asOfDate_param.Text = Parameters.Count > 0 ? Parameters[0].Value.ToString() : string.Empty;
+            site_param.Text = Parameters.Count > 1 ? Parameters[1].Value.ToString() : string.Empty;
 
             logo_data.ImageUrl = companyInfo.logoUrl;
 
@@ -38,15 +37,14 @@ namespace ArgusCR1029.Inventory
         {
             title_lbl.Text = labelText(0);
 
-            fiscalYear_lbl.Text = labelText(1);
-            asOfDate_lbl.Text = labelText(2);
-            site_lbl.Text = labelText(3);
+            asOfDate_lbl.Text = labelText(1);
+            site_lbl.Text = labelText(2);
 
-            site2_lbl.Text = labelText(4);
-            itemGroup_lbl.Text = labelText(5);
+            site2_lbl.Text = labelText(3);
+            itemGroup_lbl.Text = labelText(4);
 
-            total_lbl.Text = labelText(6);
-            total2_lbl.Text = labelText(7);
+            total_lbl.Text = labelText(5);
+            total2_lbl.Text = labelText(6);
         }
         protected override string dictionaryStore()
         {
