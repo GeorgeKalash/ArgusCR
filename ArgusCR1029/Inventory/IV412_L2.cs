@@ -23,14 +23,15 @@ namespace ArgusCR1029.Inventory
             SharedClasses.JsonProtocol.QryStructure<ArgusDS.Inventory.Reports.IV408> webObject = deserializeList<ArgusDS.Inventory.Reports.IV408>();
             DataSource = webObject.list;
 
-            fiscalYear_param.Text = Parameters.Count > 0 ? Parameters[0].Value.ToString() : string.Empty;
-            date_param.Text = Parameters.Count > 1 ? Parameters[1].Value.ToString() : string.Empty;
-            siteParam_param.Text = Parameters.Count > 2 ? Parameters[2].Value.ToString() : string.Empty;
-            item_param.Text = Parameters.Count > 3 ? Parameters[3].Value.ToString() : string.Empty;
-            itemCategory_param.Text = Parameters.Count > 4 ? Parameters[4].Value.ToString() : string.Empty;
-            itemGrp_param.Text = Parameters.Count > 5 ? Parameters[5].Value.ToString() : string.Empty;
-            siteGroup_param.Text = Parameters.Count > 6 ? Parameters[6].Value.ToString() : string.Empty;
-            production_param.Text = Parameters.Count > 7 ? Parameters[7].Value.ToString() : string.Empty;
+            item_param.Text = Parameters.Count > 0 ? Parameters[0].Value.ToString() : string.Empty;
+            asOfDate_param.Text = Parameters.Count > 1 ? Parameters[1].Value.ToString() : string.Empty;
+            site_param.Text = Parameters.Count > 2 ? Parameters[2].Value.ToString() : string.Empty;
+            itemCategory_param.Text = Parameters.Count > 3 ? Parameters[3].Value.ToString() : string.Empty;
+
+            itemGroup_param.Text = Parameters.Count > 4 ? Parameters[4].Value.ToString() : string.Empty;
+            fromSiteGroup_param.Text = Parameters.Count > 5 ? Parameters[5].Value.ToString() : string.Empty;
+            toSiteGroup_param.Text = Parameters.Count > 6 ? Parameters[6].Value.ToString() : string.Empty;
+            productionLine_param.Text = Parameters.Count > 7 ? Parameters[7].Value.ToString() : string.Empty;
 
             logo_data.ImageUrl = companyInfo.logoUrl;
 
@@ -50,14 +51,15 @@ namespace ArgusCR1029.Inventory
             cost_lbl.Text = labelText(6);
             total_lbl.Text = labelText(7);
 
-            fiscalYear_lbl.Text = labelText(8);
-            date_lbl.Text = labelText(9);
-            siteParam_lbl.Text = labelText(10);
-            item_lbl.Text = labelText(11);
-            itemCategory_lbl.Text = labelText(12);
-            itemGroup_lbl.Text = labelText(13);
-            siteGroup_lbl.Text = labelText(14);
-            production_lbl.Text = labelText(15);
+            item_lbl.Text = labelText(8);
+            asOfDate_lbl.Text = labelText(9);
+            site_lbl.Text = labelText(10);
+            itemCategory_lbl.Text = labelText(11);
+
+            itemGroup_lbl.Text = labelText(12);
+            fromSiteGroup_lbl.Text = labelText(13);
+            toSiteGroup_lbl.Text = labelText(14);
+            productionLine_lbl.Text = labelText(15);
         }
         protected override string dictionaryStore()
         {

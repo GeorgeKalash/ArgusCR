@@ -39,16 +39,13 @@ namespace ArgusCR1029.Inventory
             this.xrTable5 = new DevExpress.XtraReports.UI.XRTable();
             this.xrTableRow5 = new DevExpress.XtraReports.UI.XRTableRow();
             this.fiscalYear_lbl = new DevExpress.XtraReports.UI.XRTableCell();
-            this.fiscalYear_param = new DevExpress.XtraReports.UI.XRTableCell();
+            this.item_param = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTableRow6 = new DevExpress.XtraReports.UI.XRTableRow();
             this.asOfDate_lbl = new DevExpress.XtraReports.UI.XRTableCell();
             this.asOfDate_param = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTableRow7 = new DevExpress.XtraReports.UI.XRTableRow();
             this.site_lbl = new DevExpress.XtraReports.UI.XRTableCell();
             this.site_param = new DevExpress.XtraReports.UI.XRTableCell();
-            this.xrTableRow8 = new DevExpress.XtraReports.UI.XRTableRow();
-            this.item_lbl = new DevExpress.XtraReports.UI.XRTableCell();
-            this.item_param = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTableRow11 = new DevExpress.XtraReports.UI.XRTableRow();
             this.itemCategory_lbl = new DevExpress.XtraReports.UI.XRTableCell();
             this.itemCategory_param = new DevExpress.XtraReports.UI.XRTableCell();
@@ -57,7 +54,7 @@ namespace ArgusCR1029.Inventory
             this.itemGroup_param = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTableRow2 = new DevExpress.XtraReports.UI.XRTableRow();
             this.siteGroup_lbl = new DevExpress.XtraReports.UI.XRTableCell();
-            this.siteGroup_param = new DevExpress.XtraReports.UI.XRTableCell();
+            this.fromSiteGroup_param = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTableRow9 = new DevExpress.XtraReports.UI.XRTableRow();
             this.productionLine_lbl = new DevExpress.XtraReports.UI.XRTableCell();
             this.productionLine_param = new DevExpress.XtraReports.UI.XRTableCell();
@@ -103,6 +100,9 @@ namespace ArgusCR1029.Inventory
             this.xrTableCell14 = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTableCell16 = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTableCell17 = new DevExpress.XtraReports.UI.XRTableCell();
+            this.xrTableRow8 = new DevExpress.XtraReports.UI.XRTableRow();
+            this.xrTableCell29 = new DevExpress.XtraReports.UI.XRTableCell();
+            this.toSiteGroup_param = new DevExpress.XtraReports.UI.XRTableCell();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable3)).BeginInit();
@@ -128,18 +128,18 @@ namespace ArgusCR1029.Inventory
             this.xrTableRow5,
             this.xrTableRow6,
             this.xrTableRow7,
-            this.xrTableRow8,
             this.xrTableRow11,
             this.xrTableRow12,
             this.xrTableRow2,
+            this.xrTableRow8,
             this.xrTableRow9});
-            this.xrTable5.SizeF = new System.Drawing.SizeF(258.3333F, 165.9444F);
+            this.xrTable5.SizeF = new System.Drawing.SizeF(258.3333F, 165.9445F);
             // 
             // xrTableRow5
             // 
             this.xrTableRow5.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
             this.fiscalYear_lbl,
-            this.fiscalYear_param});
+            this.item_param});
             this.xrTableRow5.Name = "xrTableRow5";
             this.xrTableRow5.Weight = 1D;
             // 
@@ -149,16 +149,16 @@ namespace ArgusCR1029.Inventory
             this.fiscalYear_lbl.Multiline = true;
             this.fiscalYear_lbl.Name = "fiscalYear_lbl";
             this.fiscalYear_lbl.StylePriority.UseFont = false;
-            this.fiscalYear_lbl.Text = "السنة المالية";
+            this.fiscalYear_lbl.Text = "الصنف";
             this.fiscalYear_lbl.Weight = 0.64673499635921727D;
             // 
-            // fiscalYear_param
+            // item_param
             // 
-            this.fiscalYear_param.Font = new System.Drawing.Font("Times New Roman", 9F);
-            this.fiscalYear_param.Multiline = true;
-            this.fiscalYear_param.Name = "fiscalYear_param";
-            this.fiscalYear_param.StylePriority.UseFont = false;
-            this.fiscalYear_param.Weight = 1.3532650036407825D;
+            this.item_param.Font = new System.Drawing.Font("Times New Roman", 9F);
+            this.item_param.Multiline = true;
+            this.item_param.Name = "item_param";
+            this.item_param.StylePriority.UseFont = false;
+            this.item_param.Weight = 1.3532650036407825D;
             // 
             // xrTableRow6
             // 
@@ -209,31 +209,6 @@ namespace ArgusCR1029.Inventory
             this.site_param.Name = "site_param";
             this.site_param.StylePriority.UseFont = false;
             this.site_param.Weight = 1.3532650036407825D;
-            // 
-            // xrTableRow8
-            // 
-            this.xrTableRow8.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
-            this.item_lbl,
-            this.item_param});
-            this.xrTableRow8.Name = "xrTableRow8";
-            this.xrTableRow8.Weight = 1D;
-            // 
-            // item_lbl
-            // 
-            this.item_lbl.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold);
-            this.item_lbl.Multiline = true;
-            this.item_lbl.Name = "item_lbl";
-            this.item_lbl.StylePriority.UseFont = false;
-            this.item_lbl.Text = "الصنف";
-            this.item_lbl.Weight = 0.64673449980197273D;
-            // 
-            // item_param
-            // 
-            this.item_param.Font = new System.Drawing.Font("Times New Roman", 9F);
-            this.item_param.Multiline = true;
-            this.item_param.Name = "item_param";
-            this.item_param.StylePriority.UseFont = false;
-            this.item_param.Weight = 1.3532655001980269D;
             // 
             // xrTableRow11
             // 
@@ -289,7 +264,7 @@ namespace ArgusCR1029.Inventory
             // 
             this.xrTableRow2.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
             this.siteGroup_lbl,
-            this.siteGroup_param});
+            this.fromSiteGroup_param});
             this.xrTableRow2.Name = "xrTableRow2";
             this.xrTableRow2.Weight = 1D;
             // 
@@ -299,16 +274,16 @@ namespace ArgusCR1029.Inventory
             this.siteGroup_lbl.Multiline = true;
             this.siteGroup_lbl.Name = "siteGroup_lbl";
             this.siteGroup_lbl.StylePriority.UseFont = false;
-            this.siteGroup_lbl.Text = "مجموعة المواقع";
+            this.siteGroup_lbl.Text = "من مجموعة الموقع";
             this.siteGroup_lbl.Weight = 0.64673449980197284D;
             // 
-            // siteGroup_param
+            // fromSiteGroup_param
             // 
-            this.siteGroup_param.Font = new System.Drawing.Font("Times New Roman", 9F);
-            this.siteGroup_param.Multiline = true;
-            this.siteGroup_param.Name = "siteGroup_param";
-            this.siteGroup_param.StylePriority.UseFont = false;
-            this.siteGroup_param.Weight = 1.3532655001980269D;
+            this.fromSiteGroup_param.Font = new System.Drawing.Font("Times New Roman", 9F);
+            this.fromSiteGroup_param.Multiline = true;
+            this.fromSiteGroup_param.Name = "fromSiteGroup_param";
+            this.fromSiteGroup_param.StylePriority.UseFont = false;
+            this.fromSiteGroup_param.Weight = 1.3532655001980269D;
             // 
             // xrTableRow9
             // 
@@ -940,6 +915,31 @@ namespace ArgusCR1029.Inventory
             this.xrTableCell17.Text = "إجمالى التكلفة";
             this.xrTableCell17.Weight = 0.89046440314747444D;
             // 
+            // xrTableRow8
+            // 
+            this.xrTableRow8.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
+            this.xrTableCell29,
+            this.toSiteGroup_param});
+            this.xrTableRow8.Name = "xrTableRow8";
+            this.xrTableRow8.Weight = 1D;
+            // 
+            // xrTableCell29
+            // 
+            this.xrTableCell29.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold);
+            this.xrTableCell29.Multiline = true;
+            this.xrTableCell29.Name = "xrTableCell29";
+            this.xrTableCell29.StylePriority.UseFont = false;
+            this.xrTableCell29.Text = "إلى مجموعة الموقع";
+            this.xrTableCell29.Weight = 0.64673568112767077D;
+            // 
+            // toSiteGroup_param
+            // 
+            this.toSiteGroup_param.Font = new System.Drawing.Font("Times New Roman", 9F);
+            this.toSiteGroup_param.Multiline = true;
+            this.toSiteGroup_param.Name = "toSiteGroup_param";
+            this.toSiteGroup_param.StylePriority.UseFont = false;
+            this.toSiteGroup_param.Weight = 1.353264318872329D;
+            // 
             // IV408
             // 
             this.Bands.AddRange(new DevExpress.XtraReports.UI.Band[] {
@@ -1012,15 +1012,12 @@ namespace ArgusCR1029.Inventory
         private DevExpress.XtraReports.UI.XRTable xrTable5;
         private DevExpress.XtraReports.UI.XRTableRow xrTableRow5;
         private DevExpress.XtraReports.UI.XRTableCell fiscalYear_lbl;
-        private DevExpress.XtraReports.UI.XRTableCell fiscalYear_param;
         private DevExpress.XtraReports.UI.XRTableRow xrTableRow6;
         private DevExpress.XtraReports.UI.XRTableCell asOfDate_lbl;
         private DevExpress.XtraReports.UI.XRTableCell asOfDate_param;
         private DevExpress.XtraReports.UI.XRTableRow xrTableRow7;
         private DevExpress.XtraReports.UI.XRTableCell site_lbl;
         private DevExpress.XtraReports.UI.XRTableCell site_param;
-        private DevExpress.XtraReports.UI.XRTableRow xrTableRow8;
-        private DevExpress.XtraReports.UI.XRTableCell item_lbl;
         private DevExpress.XtraReports.UI.XRTableCell item_param;
         private DevExpress.XtraReports.UI.XRTableRow xrTableRow11;
         private DevExpress.XtraReports.UI.XRTableCell itemCategory_lbl;
@@ -1030,9 +1027,12 @@ namespace ArgusCR1029.Inventory
         private DevExpress.XtraReports.UI.XRTableCell itemGroup_param;
         private DevExpress.XtraReports.UI.XRTableRow xrTableRow2;
         private DevExpress.XtraReports.UI.XRTableCell siteGroup_lbl;
-        private DevExpress.XtraReports.UI.XRTableCell siteGroup_param;
+        private DevExpress.XtraReports.UI.XRTableCell fromSiteGroup_param;
         private DevExpress.XtraReports.UI.XRTableRow xrTableRow9;
         private DevExpress.XtraReports.UI.XRTableCell productionLine_lbl;
         private DevExpress.XtraReports.UI.XRTableCell productionLine_param;
+        private DevExpress.XtraReports.UI.XRTableRow xrTableRow8;
+        private DevExpress.XtraReports.UI.XRTableCell xrTableCell29;
+        private DevExpress.XtraReports.UI.XRTableCell toSiteGroup_param;
     }
 }
