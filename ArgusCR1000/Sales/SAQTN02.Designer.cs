@@ -195,9 +195,11 @@
             // 
             // description_data
             // 
+            this.description_data.AutoWidth = true;
             this.description_data.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.description_data.CanShrink = true;
             this.description_data.Font = new System.Drawing.Font("Times New Roman", 9F);
             this.description_data.LocationFloat = new DevExpress.Utils.PointFloat(2.000014F, 232F);
             this.description_data.Multiline = true;
