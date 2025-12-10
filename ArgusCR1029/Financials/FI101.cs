@@ -38,6 +38,8 @@ namespace ArgusCR1029.Financials
 
             createdName_data.Text = obj.record.userName;
             createdDate_data.Text = obj.record.createdDate.ToString();
+
+          //  contact_data.Text = obj.record.;
             printSignature.Text = reportSignature();
             base.OnBeforePrint(e);
         }

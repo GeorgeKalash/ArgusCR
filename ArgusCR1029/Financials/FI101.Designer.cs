@@ -92,6 +92,9 @@ namespace ArgusCR1029.Financials
             this.createdName_data = new DevExpress.XtraReports.UI.XRTableCell();
             this.createdDate_data = new DevExpress.XtraReports.UI.XRTableCell();
             this.pagesNumber_lbl = new DevExpress.XtraReports.UI.XRPageInfo();
+            this.xrTableRow18 = new DevExpress.XtraReports.UI.XRTableRow();
+            this.xrTableCell4 = new DevExpress.XtraReports.UI.XRTableCell();
+            this.contact_data = new DevExpress.XtraReports.UI.XRTableCell();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable1)).BeginInit();
@@ -225,12 +228,13 @@ namespace ArgusCR1029.Financials
             // 
             // xrTable1
             // 
-            this.xrTable1.LocationFloat = new DevExpress.Utils.PointFloat(50F, 137.5F);
+            this.xrTable1.LocationFloat = new DevExpress.Utils.PointFloat(49.99999F, 137.5F);
             this.xrTable1.Name = "xrTable1";
             this.xrTable1.Padding = new DevExpress.XtraPrinting.PaddingInfo(5, 2, 7, 0, 100F);
             this.xrTable1.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow1,
             this.xrTableRow4,
+            this.xrTableRow18,
             this.xrTableRow2,
             this.xrTableRow6,
             this.xrTableRow7,
@@ -240,7 +244,7 @@ namespace ArgusCR1029.Financials
             this.xrTableRow9,
             this.xrTableRow15,
             this.xrTableRow3});
-            this.xrTable1.SizeF = new System.Drawing.SizeF(722.2651F, 529.1523F);
+            this.xrTable1.SizeF = new System.Drawing.SizeF(722.265F, 509.4859F);
             this.xrTable1.StylePriority.UsePadding = false;
             // 
             // xrTableRow1
@@ -783,6 +787,42 @@ namespace ArgusCR1029.Financials
             this.pagesNumber_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             this.pagesNumber_lbl.TextFormatString = "Page {0} of {1}";
             // 
+            // xrTableRow18
+            // 
+            this.xrTableRow18.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
+            this.xrTableCell4,
+            this.contact_data});
+            this.xrTableRow18.Name = "xrTableRow18";
+            this.xrTableRow18.Weight = 1D;
+            // 
+            // xrTableCell4
+            // 
+            this.xrTableCell4.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.xrTableCell4.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+            | DevExpress.XtraPrinting.BorderSide.Right)));
+            this.xrTableCell4.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold);
+            this.xrTableCell4.Multiline = true;
+            this.xrTableCell4.Name = "xrTableCell4";
+            this.xrTableCell4.StylePriority.UseBackColor = false;
+            this.xrTableCell4.StylePriority.UseBorders = false;
+            this.xrTableCell4.StylePriority.UseFont = false;
+            this.xrTableCell4.Text = "المفوض\r\nContact";
+            this.xrTableCell4.Weight = 0.661603126137311D;
+            // 
+            // contact_data
+            // 
+            this.contact_data.BackColor = System.Drawing.Color.White;
+            this.contact_data.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+            | DevExpress.XtraPrinting.BorderSide.Right)));
+            this.contact_data.Multiline = true;
+            this.contact_data.Name = "contact_data";
+            this.contact_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(5, 2, 13, 0, 100F);
+            this.contact_data.StylePriority.UseBackColor = false;
+            this.contact_data.StylePriority.UseBorders = false;
+            this.contact_data.StylePriority.UsePadding = false;
+            this.contact_data.Text = "contact_data";
+            this.contact_data.Weight = 2.3383968738626888D;
+            // 
             // FI101
             // 
             this.Bands.AddRange(new DevExpress.XtraReports.UI.Band[] {
@@ -871,5 +911,8 @@ namespace ArgusCR1029.Financials
         private DevExpress.XtraReports.UI.XRTable xrTable5;
         private DevExpress.XtraReports.UI.XRTableRow xrTableRow17;
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell3;
+        private DevExpress.XtraReports.UI.XRTableRow xrTableRow18;
+        private DevExpress.XtraReports.UI.XRTableCell xrTableCell4;
+        private DevExpress.XtraReports.UI.XRTableCell contact_data;
     }
 }
