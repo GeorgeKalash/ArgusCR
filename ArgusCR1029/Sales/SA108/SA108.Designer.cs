@@ -1036,7 +1036,7 @@ namespace ArgusCR1029.Sales.SA108
             this.exhibitionManager_lbl.StylePriority.UseFont = false;
             this.exhibitionManager_lbl.StylePriority.UsePadding = false;
             this.exhibitionManager_lbl.StylePriority.UseTextAlignment = false;
-            this.exhibitionManager_lbl.Text = "المستلم";
+            this.exhibitionManager_lbl.Text = "المفوض";
             this.exhibitionManager_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
             this.exhibitionManager_lbl.Weight = 5.7011236355202026D;
             // 
