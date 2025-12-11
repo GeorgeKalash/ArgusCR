@@ -13,7 +13,6 @@ namespace ArgusCR1029.Sales.SA114
         {
             InitializeComponent();
         }
-
         public override void setSessionInfo(Dictionary<string, string> _reportHeaders)
         {
             base.setSessionInfo(_reportHeaders);
@@ -37,9 +36,10 @@ namespace ArgusCR1029.Sales.SA114
 
             clientRef_data.Text = webObject.record.header.clientRef;
             clientName_data.Text = webObject.record.header.clientName;
-           // clientVATNo_data.Text = webObject.record.header.vatNumber;
-           // phoneNumber_data.Text = webObject.record.billAddress?.phone;
-           // cAddress_data.Text = webObject.record.billAddress?.street1;
+            clientVATNo_data.Text = webObject.record.header.clientVATNo;
+            // phoneNumber_data.Text = webObject.record.billAddress?.phone;
+            contactName_data.Text = webObject.record.header.contactName;
+            // cAddress_data.Text = webObject.record.billAddress?.street1;
 
             subtotal_data.Text = webObject.record.header.subTotal.ToString("N2");
             vatAmount_data.Text = webObject.record.header.vatAmount.ToString("N2");
@@ -57,7 +57,6 @@ namespace ArgusCR1029.Sales.SA114
         protected override void labelsText()
         {
         }
-
         protected override string dictionaryStore()
         {
             return "CR1029.SA114";
