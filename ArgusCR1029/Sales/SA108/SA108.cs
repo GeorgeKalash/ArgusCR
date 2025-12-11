@@ -40,7 +40,7 @@ namespace ArgusCR1029.Sales.SA108
            clientName_data.Text = webObject.record.header.clientName;
            phoneNumber_data.Text = webObject.record.billAddress?.phone;
            cAddress_data.Text = webObject.record.billAddress?.street1;
-           exhibitionManager_data.Text = webObject.record.header.contactName;
+           contactName_data.Text = webObject.record.header.contactName;
 
             tdPct_data.Text = webObject.record.header.tdPct.ToString();
             subtotal_data.Text = webObject.record.header.subtotal.ToString("N2");

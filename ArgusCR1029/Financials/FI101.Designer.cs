@@ -51,6 +51,9 @@ namespace ArgusCR1029.Financials
             this.xrTableRow4 = new DevExpress.XtraReports.UI.XRTableRow();
             this.reference_lbl = new DevExpress.XtraReports.UI.XRTableCell();
             this.reference_data = new DevExpress.XtraReports.UI.XRTableCell();
+            this.xrTableRow18 = new DevExpress.XtraReports.UI.XRTableRow();
+            this.xrTableCell4 = new DevExpress.XtraReports.UI.XRTableCell();
+            this.contactName_data = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTableRow2 = new DevExpress.XtraReports.UI.XRTableRow();
             this.date_lbl = new DevExpress.XtraReports.UI.XRTableCell();
             this.date_data = new DevExpress.XtraReports.UI.XRTableCell();
@@ -92,9 +95,6 @@ namespace ArgusCR1029.Financials
             this.createdName_data = new DevExpress.XtraReports.UI.XRTableCell();
             this.createdDate_data = new DevExpress.XtraReports.UI.XRTableCell();
             this.pagesNumber_lbl = new DevExpress.XtraReports.UI.XRPageInfo();
-            this.xrTableRow18 = new DevExpress.XtraReports.UI.XRTableRow();
-            this.xrTableCell4 = new DevExpress.XtraReports.UI.XRTableCell();
-            this.contact_data = new DevExpress.XtraReports.UI.XRTableCell();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable1)).BeginInit();
@@ -316,6 +316,41 @@ namespace ArgusCR1029.Financials
             this.reference_data.StylePriority.UseBorders = false;
             this.reference_data.StylePriority.UsePadding = false;
             this.reference_data.Weight = 2.3383968738626888D;
+            // 
+            // xrTableRow18
+            // 
+            this.xrTableRow18.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
+            this.xrTableCell4,
+            this.contactName_data});
+            this.xrTableRow18.Name = "xrTableRow18";
+            this.xrTableRow18.Weight = 1D;
+            // 
+            // xrTableCell4
+            // 
+            this.xrTableCell4.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.xrTableCell4.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+            | DevExpress.XtraPrinting.BorderSide.Right)));
+            this.xrTableCell4.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold);
+            this.xrTableCell4.Multiline = true;
+            this.xrTableCell4.Name = "xrTableCell4";
+            this.xrTableCell4.StylePriority.UseBackColor = false;
+            this.xrTableCell4.StylePriority.UseBorders = false;
+            this.xrTableCell4.StylePriority.UseFont = false;
+            this.xrTableCell4.Text = "المفوض\r\nContact";
+            this.xrTableCell4.Weight = 0.661603126137311D;
+            // 
+            // contactName_data
+            // 
+            this.contactName_data.BackColor = System.Drawing.Color.White;
+            this.contactName_data.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+            | DevExpress.XtraPrinting.BorderSide.Right)));
+            this.contactName_data.Multiline = true;
+            this.contactName_data.Name = "contactName_data";
+            this.contactName_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(5, 2, 13, 0, 100F);
+            this.contactName_data.StylePriority.UseBackColor = false;
+            this.contactName_data.StylePriority.UseBorders = false;
+            this.contactName_data.StylePriority.UsePadding = false;
+            this.contactName_data.Weight = 2.3383968738626888D;
             // 
             // xrTableRow2
             // 
@@ -787,42 +822,6 @@ namespace ArgusCR1029.Financials
             this.pagesNumber_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             this.pagesNumber_lbl.TextFormatString = "Page {0} of {1}";
             // 
-            // xrTableRow18
-            // 
-            this.xrTableRow18.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
-            this.xrTableCell4,
-            this.contact_data});
-            this.xrTableRow18.Name = "xrTableRow18";
-            this.xrTableRow18.Weight = 1D;
-            // 
-            // xrTableCell4
-            // 
-            this.xrTableCell4.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.xrTableCell4.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
-            | DevExpress.XtraPrinting.BorderSide.Right)));
-            this.xrTableCell4.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold);
-            this.xrTableCell4.Multiline = true;
-            this.xrTableCell4.Name = "xrTableCell4";
-            this.xrTableCell4.StylePriority.UseBackColor = false;
-            this.xrTableCell4.StylePriority.UseBorders = false;
-            this.xrTableCell4.StylePriority.UseFont = false;
-            this.xrTableCell4.Text = "المفوض\r\nContact";
-            this.xrTableCell4.Weight = 0.661603126137311D;
-            // 
-            // contact_data
-            // 
-            this.contact_data.BackColor = System.Drawing.Color.White;
-            this.contact_data.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
-            | DevExpress.XtraPrinting.BorderSide.Right)));
-            this.contact_data.Multiline = true;
-            this.contact_data.Name = "contact_data";
-            this.contact_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(5, 2, 13, 0, 100F);
-            this.contact_data.StylePriority.UseBackColor = false;
-            this.contact_data.StylePriority.UseBorders = false;
-            this.contact_data.StylePriority.UsePadding = false;
-            this.contact_data.Text = "contact_data";
-            this.contact_data.Weight = 2.3383968738626888D;
-            // 
             // FI101
             // 
             this.Bands.AddRange(new DevExpress.XtraReports.UI.Band[] {
@@ -913,6 +912,6 @@ namespace ArgusCR1029.Financials
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell3;
         private DevExpress.XtraReports.UI.XRTableRow xrTableRow18;
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell4;
-        private DevExpress.XtraReports.UI.XRTableCell contact_data;
+        private DevExpress.XtraReports.UI.XRTableCell contactName_data;
     }
 }

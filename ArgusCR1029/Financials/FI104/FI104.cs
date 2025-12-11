@@ -1,10 +1,8 @@
 ﻿using System;
 using System.Collections;
 using System.ComponentModel;
-using System.Drawing;
 using System.Drawing.Printing;
 using DevExpress.XtraReports.UI;
-using ArgusDS.Sales.Reports;
 using System.Collections.Generic;
 
 namespace ArgusCR1029.Financials.FI104
@@ -15,7 +13,6 @@ namespace ArgusCR1029.Financials.FI104
         {
             InitializeComponent();
         }
-
         public override void setSessionInfo(Dictionary<string, string> _reportHeaders)
         {
             base.setSessionInfo(_reportHeaders);
@@ -41,7 +38,7 @@ namespace ArgusCR1029.Financials.FI104
             accountRef_data.Text = webObject.record.header.accountRef;
             accountName_data.Text = webObject.record.header.accountName;
             phoneNumber_data.Text = webObject.record.bpAddress?.phone;
-            exhibitionManager_data.Text = webObject.record.contactMasterData?.name;
+            contactName_data.Text = webObject.record.contactMasterData?.name;
             cAddress_data.Text = webObject.record.bpAddress?.street1;
             description_data.Text = webObject.record.header.description;
 
