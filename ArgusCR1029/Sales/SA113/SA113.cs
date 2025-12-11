@@ -41,6 +41,7 @@ namespace ArgusCR1029.Sales.SA113
             clientName_data.Text = webObject.record.trxHeader.clientName;
             clientVATNo_data.Text = webObject.record.client.vatNumber;
             phoneNumber_data.Text = webObject.record.billAddress?.phone;
+            contactName_data.Text = webObject.record.trxHeader.contactName;
             cAddress_data.Text = webObject.record.billAddress?.street1;
 
             tdPct_data.Text = webObject.record.trxHeader.tdPct.ToString();

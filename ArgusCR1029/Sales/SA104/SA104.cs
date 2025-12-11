@@ -15,7 +15,6 @@ namespace ArgusCR1029.Sales.SA104
         {
             InitializeComponent();
         }
-
         public override void setSessionInfo(Dictionary<string, string> _reportHeaders)
         {
             base.setSessionInfo(_reportHeaders);
@@ -23,7 +22,6 @@ namespace ArgusCR1029.Sales.SA104
             ((ArgusRPT.BaseReport)(MetalSubReports.ReportSource)).setSessionInfo(sessionInfo);
             initSubReports();
         }
-
         protected override void OnBeforePrint(PrintEventArgs e)
         {
             RightToLeft = DevExpress.XtraReports.UI.RightToLeft.No;
@@ -41,6 +39,7 @@ namespace ArgusCR1029.Sales.SA104
             clientName_data.Text = webObject.record.trxHeader.clientName;
             clientVATNo_data.Text = webObject.record.client.vatNumber;
             phoneNumber_data.Text = webObject.record.billAddress?.phone;
+            contactName_data.Text = webObject.record.trxHeader.contactName;
             cAddress_data.Text = webObject.record.billAddress?.street1;
 
             tdPct_data.Text = webObject.record.trxHeader.tdPct.ToString();
