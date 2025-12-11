@@ -116,7 +116,7 @@ namespace ArgusCR1029.Sales.SA106
             this.phoneNumber_data = new DevExpress.XtraReports.UI.XRTableCell();
             this.idNo_lbl = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTableRow10 = new DevExpress.XtraReports.UI.XRTableRow();
-            this.exhibitionManager_data = new DevExpress.XtraReports.UI.XRTableCell();
+            this.contactName_data = new DevExpress.XtraReports.UI.XRTableCell();
             this.exhibitionManager_lbl = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTableRow18 = new DevExpress.XtraReports.UI.XRTableRow();
             this.cAddress_data = new DevExpress.XtraReports.UI.XRTableCell();
@@ -1115,24 +1115,24 @@ namespace ArgusCR1029.Sales.SA106
             // xrTableRow10
             // 
             this.xrTableRow10.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
-            this.exhibitionManager_data,
+            this.contactName_data,
             this.exhibitionManager_lbl});
             this.xrTableRow10.Name = "xrTableRow10";
             this.xrTableRow10.Weight = 1D;
             // 
-            // exhibitionManager_data
+            // contactName_data
             // 
-            this.exhibitionManager_data.BackColor = System.Drawing.Color.White;
-            this.exhibitionManager_data.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.exhibitionManager_data.Multiline = true;
-            this.exhibitionManager_data.Name = "exhibitionManager_data";
-            this.exhibitionManager_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(15, 2, 0, 0, 100F);
-            this.exhibitionManager_data.StylePriority.UseBackColor = false;
-            this.exhibitionManager_data.StylePriority.UseFont = false;
-            this.exhibitionManager_data.StylePriority.UsePadding = false;
-            this.exhibitionManager_data.StylePriority.UseTextAlignment = false;
-            this.exhibitionManager_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
-            this.exhibitionManager_data.Weight = 16.796841012971225D;
+            this.contactName_data.BackColor = System.Drawing.Color.White;
+            this.contactName_data.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.contactName_data.Multiline = true;
+            this.contactName_data.Name = "contactName_data";
+            this.contactName_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(15, 2, 0, 0, 100F);
+            this.contactName_data.StylePriority.UseBackColor = false;
+            this.contactName_data.StylePriority.UseFont = false;
+            this.contactName_data.StylePriority.UsePadding = false;
+            this.contactName_data.StylePriority.UseTextAlignment = false;
+            this.contactName_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
+            this.contactName_data.Weight = 16.796841012971225D;
             // 
             // exhibitionManager_lbl
             // 
@@ -1255,7 +1255,7 @@ namespace ArgusCR1029.Sales.SA106
         private DevExpress.XtraReports.UI.XRTableCell phoneNumber_data;
         private DevExpress.XtraReports.UI.XRTableCell idNo_lbl;
         private DevExpress.XtraReports.UI.XRTableRow xrTableRow10;
-        private DevExpress.XtraReports.UI.XRTableCell exhibitionManager_data;
+        private DevExpress.XtraReports.UI.XRTableCell contactName_data;
         private DevExpress.XtraReports.UI.XRTableCell exhibitionManager_lbl;
         private DevExpress.XtraReports.UI.XRTableRow xrTableRow18;
         private DevExpress.XtraReports.UI.XRTableCell cAddress_data;
