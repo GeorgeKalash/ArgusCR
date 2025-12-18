@@ -137,7 +137,7 @@ namespace ArgusCR1039.Financials
             this.xrTable5,
             this.xrTable4,
             this.xrTable16});
-            this.ReportHeader.HeightF = 512.7919F;
+            this.ReportHeader.HeightF = 499.7918F;
             this.ReportHeader.KeepTogether = true;
             this.ReportHeader.Name = "ReportHeader";
             // 
@@ -175,7 +175,7 @@ namespace ArgusCR1039.Financials
             // 
             this.xrTable2.AnchorVertical = DevExpress.XtraReports.UI.VerticalAnchorStyles.Bottom;
             this.xrTable2.BorderWidth = 0.5F;
-            this.xrTable2.LocationFloat = new DevExpress.Utils.PointFloat(35.73221F, 363.0416F);
+            this.xrTable2.LocationFloat = new DevExpress.Utils.PointFloat(35.73221F, 350.0416F);
             this.xrTable2.Name = "xrTable2";
             this.xrTable2.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable2.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
@@ -206,7 +206,6 @@ namespace ArgusCR1039.Financials
             this.amountInWords_data.StylePriority.UseFont = false;
             this.amountInWords_data.StylePriority.UsePadding = false;
             this.amountInWords_data.StylePriority.UseTextAlignment = false;
-            this.amountInWords_data.Text = "amountInWords_data";
             this.amountInWords_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopCenter;
             this.amountInWords_data.Weight = 1.5204929525940083D;
             // 
@@ -214,7 +213,7 @@ namespace ArgusCR1039.Financials
             // 
             this.xrTable1.AnchorVertical = DevExpress.XtraReports.UI.VerticalAnchorStyles.Bottom;
             this.xrTable1.BorderWidth = 0.5F;
-            this.xrTable1.LocationFloat = new DevExpress.Utils.PointFloat(37.5F, 314.0833F);
+            this.xrTable1.LocationFloat = new DevExpress.Utils.PointFloat(37.5F, 301.0833F);
             this.xrTable1.Name = "xrTable1";
             this.xrTable1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable1.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
@@ -273,7 +272,7 @@ namespace ArgusCR1039.Financials
             // 
             this.xrTable3.AnchorVertical = DevExpress.XtraReports.UI.VerticalAnchorStyles.Bottom;
             this.xrTable3.BorderWidth = 0.5F;
-            this.xrTable3.LocationFloat = new DevExpress.Utils.PointFloat(37.5F, 187F);
+            this.xrTable3.LocationFloat = new DevExpress.Utils.PointFloat(37.5F, 174F);
             this.xrTable3.Name = "xrTable3";
             this.xrTable3.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable3.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
@@ -543,7 +542,7 @@ namespace ArgusCR1039.Financials
             // 
             this.xrTable5.AnchorVertical = DevExpress.XtraReports.UI.VerticalAnchorStyles.Bottom;
             this.xrTable5.BorderWidth = 0.5F;
-            this.xrTable5.LocationFloat = new DevExpress.Utils.PointFloat(448.2323F, 62.5F);
+            this.xrTable5.LocationFloat = new DevExpress.Utils.PointFloat(448.2323F, 49.49997F);
             this.xrTable5.Name = "xrTable5";
             this.xrTable5.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable5.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
@@ -741,7 +740,7 @@ namespace ArgusCR1039.Financials
             // 
             this.xrTable4.AnchorVertical = DevExpress.XtraReports.UI.VerticalAnchorStyles.Bottom;
             this.xrTable4.BorderWidth = 0.5F;
-            this.xrTable4.LocationFloat = new DevExpress.Utils.PointFloat(37.5F, 62.5F);
+            this.xrTable4.LocationFloat = new DevExpress.Utils.PointFloat(37.5F, 49.49997F);
             this.xrTable4.Name = "xrTable4";
             this.xrTable4.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable4.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
@@ -936,7 +935,7 @@ namespace ArgusCR1039.Financials
             // 
             // xrTable16
             // 
-            this.xrTable16.LocationFloat = new DevExpress.Utils.PointFloat(350F, 12.5F);
+            this.xrTable16.LocationFloat = new DevExpress.Utils.PointFloat(345.8333F, 0F);
             this.xrTable16.Name = "xrTable16";
             this.xrTable16.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable16.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {

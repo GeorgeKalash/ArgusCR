@@ -768,7 +768,7 @@ namespace ArgusCR1039.Financials
             this.xrTable6,
             this.xrTable3,
             this.xrTable2});
-            this.ReportFooter.HeightF = 211.4675F;
+            this.ReportFooter.HeightF = 194.3862F;
             this.ReportFooter.Name = "ReportFooter";
             // 
             // xrTable7
