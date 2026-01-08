@@ -262,7 +262,7 @@ namespace ArgusCR1029.Financials
             this.xrTableCell19.StylePriority.UseTextAlignment = false;
             this.xrTableCell19.Text = "Account";
             this.xrTableCell19.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
-            this.xrTableCell19.Weight = 4.9122960373088205D;
+            this.xrTableCell19.Weight = 4.6361752794325435D;
             // 
             // xrTableCell20
             // 
@@ -282,7 +282,7 @@ namespace ArgusCR1029.Financials
             this.xrTableCell20.StylePriority.UseTextAlignment = false;
             this.xrTableCell20.Text = "Account Name";
             this.xrTableCell20.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
-            this.xrTableCell20.Weight = 6.4641384730757494D;
+            this.xrTableCell20.Weight = 6.7402592309520264D;
             // 
             // xrTableCell21
             // 
@@ -987,7 +987,7 @@ namespace ArgusCR1029.Financials
             this.xrTableCell8.StylePriority.UseBorderWidth = false;
             this.xrTableCell8.StylePriority.UseFont = false;
             this.xrTableCell8.Text = "SP Ref";
-            this.xrTableCell8.Weight = 4.9122960373088205D;
+            this.xrTableCell8.Weight = 4.6361758236050692D;
             // 
             // xrTableCell1
             // 
@@ -1004,7 +1004,7 @@ namespace ArgusCR1029.Financials
             this.xrTableCell1.StylePriority.UseBorderWidth = false;
             this.xrTableCell1.StylePriority.UseFont = false;
             this.xrTableCell1.Text = "SP Name";
-            this.xrTableCell1.Weight = 6.4641384730757494D;
+            this.xrTableCell1.Weight = 6.7402586867795007D;
             // 
             // xrTableCell2
             // 
