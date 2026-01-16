@@ -179,6 +179,7 @@ namespace ArgusCR1029.Financials
             this.xrTableCell76 = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTableCell77 = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTableCell78 = new DevExpress.XtraReports.UI.XRTableCell();
+            this.spRef = new DevExpress.XtraReports.UI.GroupHeaderBand();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable4)).BeginInit();
@@ -2116,6 +2117,15 @@ namespace ArgusCR1029.Financials
             this.xrTableCell78.TextFormatString = "{0:n2}";
             this.xrTableCell78.Weight = 5.1354580291066414D;
             // 
+            // spRef
+            // 
+            this.spRef.GroupFields.AddRange(new DevExpress.XtraReports.UI.GroupField[] {
+            new DevExpress.XtraReports.UI.GroupField("spRef", DevExpress.XtraReports.UI.XRColumnSortOrder.Ascending)});
+            this.spRef.HeightF = 0F;
+            this.spRef.KeepTogether = true;
+            this.spRef.Name = "spRef";
+            this.spRef.RepeatEveryPage = true;
+            // 
             // FI402_L4
             // 
             this.Bands.AddRange(new DevExpress.XtraReports.UI.Band[] {
@@ -2125,7 +2135,8 @@ namespace ArgusCR1029.Financials
             this.ReportHeader,
             this.PageHeader,
             this.PageFooter,
-            this.ReportFooter});
+            this.ReportFooter,
+            this.spRef});
             this.Font = new System.Drawing.Font("Arial", 9.75F);
             this.Landscape = true;
             this.Margins = new System.Drawing.Printing.Margins(0, 0, 12, 0);
@@ -2264,5 +2275,6 @@ namespace ArgusCR1029.Financials
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell76;
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell77;
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell78;
+        private DevExpress.XtraReports.UI.GroupHeaderBand spRef;
     }
 }
