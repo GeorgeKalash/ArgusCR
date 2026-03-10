@@ -29,6 +29,14 @@ namespace ArgusCR1029.Sales
             itemGroup_param.Text = Parameters.Count > 3 ? Parameters[3].Value.ToString() : string.Empty;
             item_param.Text = Parameters.Count > 4 ? Parameters[4].Value.ToString() : string.Empty;
             client_param.Text = Parameters.Count > 5 ? Parameters[5].Value.ToString() : string.Empty;
+            plant_param.Text = Parameters.Count > 6 ? Parameters[6].Value.ToString() : string.Empty;
+            systemFunction_param.Text = Parameters.Count > 7 ? Parameters[7].Value.ToString() : string.Empty;
+            docType_param.Text = Parameters.Count > 8 ? Parameters[8].Value.ToString() : string.Empty;
+            clientGrp_param.Text = Parameters.Count > 9 ? Parameters[9].Value.ToString() : string.Empty;
+            salesPerson_param.Text = Parameters.Count > 10 ? Parameters[10].Value.ToString() : string.Empty;
+            reference_param.Text = Parameters.Count > 11 ? Parameters[11].Value.ToString() : string.Empty;
+            itemCollection_param.Text = Parameters.Count > 12 ? Parameters[12].Value.ToString() : string.Empty;
+            productionLine_param.Text = Parameters.Count > 13 ? Parameters[13].Value.ToString() : string.Empty;
   
             logo_data.ImageUrl = companyInfo.logoUrl;
 
@@ -53,7 +61,7 @@ namespace ArgusCR1029.Sales
             vatAmount_lbl.Text = labelText(11);
             totalWithVat_lbl.Text = labelText(12);
             totalCost_lbl.Text = labelText(13);
-            grossProfit_lbl.Text = labelText(14);
+            unitCost_lbl.Text = labelText(14);
 
             startDate_lbl.Text = labelText(15);
             endDate_lbl.Text = labelText(16);
@@ -61,8 +69,16 @@ namespace ArgusCR1029.Sales
             itemGroup_lbl.Text = labelText(18);
             item_lbl.Text = labelText(19);
             client_lbl.Text = labelText(20);
+            plant_lbl.Text = labelText(21);
+            systemFunction_lbl.Text = labelText(22);
+            docType_lbl.Text = labelText(23);
+            clientGrp_lbl.Text = labelText(24);
+            salesPerson_lbl.Text = labelText(25);
+            reference_lbl.Text = labelText(26);
+            itemCollection_lbl.Text = labelText(27);
+            productionLine_lbl.Text = labelText(28);
 
-            total_lbl.Text = labelText(21);
+            total_lbl.Text = labelText(29);
         }
 
         protected override string dictionaryStore()
