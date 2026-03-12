@@ -60,7 +60,7 @@ namespace ArgusCR1029.Sales
             vatAmount_lbl.Text = labelText(10);
             totalWithVat_lbl.Text = labelText(11);
             totalCost_lbl.Text = labelText(12);
-            grossProfit_lbl.Text = labelText(13);
+            unitCost_lbl.Text = labelText(13);
 
             startDate_lbl.Text = labelText(14);
             endDate_lbl.Text = labelText(15);
