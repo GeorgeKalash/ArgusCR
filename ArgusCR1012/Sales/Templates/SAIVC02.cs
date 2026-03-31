@@ -31,8 +31,7 @@ namespace ArgusCR1012.Sales.Templates
             {
                 date_data.Text = ((DateTime)webObject.record.trxHeader.date).ToString(sessionInfo.dateFormat) + " " + ((DateTime)webObject.record.logTime).ToString("HH:mm");
             }
-         //   date_data.Text = webObject.record.trxHeader.date.ToString("dd/MM/yy");
-
+ 
             plant_data.Text = webObject.record.trxHeader.plantName;
             licenseNo_data.Text = webObject.record.companyInfo.licenseNo;
             crNo_data.Text = webObject.record.companyInfo.crNo;
@@ -60,7 +59,7 @@ namespace ArgusCR1012.Sales.Templates
             spName2_data.Text = webObject.record.trxHeader.spName;
 
             QRCode.Text = new KSAeInvoiceQrCode(webObject.record.companyInfo.name, webObject.record.companyInfo.taxNo, (DateTime)webObject.record.logTime, webObject.record.trxHeader.amount.ToString(), webObject.record.trxHeader.vatAmount.ToString()).ToBase64();
-
+       //     QRCode.Text = webObject.record.trxHeader.qrCode;
             base.OnBeforePrint(e);
         }
         protected override void OnDataSourceRowChanged(DataSourceRowEventArgs e)
