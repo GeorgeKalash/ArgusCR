@@ -56,7 +56,8 @@ namespace ArgusCR1004.Sales.SA103
             TVA_data.Text = webObject.record.trxHeader.vatAmount.ToString("N2");
             pureWeight_data.Text = webObject.record.pureMetalQty.ToString("N2");
 
-            QRCode.Text = new KSAeInvoiceQrCode(webObject.record.companyInfo.name, webObject.record.companyInfo.taxNo, (DateTime)webObject.record.trxHeader.date, webObject.record.trxHeader.amount.ToString(), webObject.record.trxHeader.vatAmount.ToString()).ToBase64();
+
+            QRCode.Text = webObject.record.qrCode;
 
             ((InvoiceItemsSubReports)(InvoiceItemsSubReports.ReportSource)).data = webObject.record.items;
             ((MetalSubReports)(MetalSubReports.ReportSource)).data = webObject.record.metalSummaries;

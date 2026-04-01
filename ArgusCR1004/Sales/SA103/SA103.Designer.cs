@@ -32,8 +32,8 @@ namespace ArgusCR1004.Sales.SA103
         /// </summary>
         private void InitializeComponent()
         {
-            DevExpress.XtraPrinting.BarCode.QRCodeGenerator qrCodeGenerator1 = new DevExpress.XtraPrinting.BarCode.QRCodeGenerator();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SA103));
+            DevExpress.XtraPrinting.BarCode.QRCodeGenerator qrCodeGenerator1 = new DevExpress.XtraPrinting.BarCode.QRCodeGenerator();
             this.InvoiceItemSubBand = new DevExpress.XtraReports.UI.SubBand();
             this.InvoiceItemsSubReports = new DevExpress.XtraReports.UI.XRSubreport();
             this.Detail = new DevExpress.XtraReports.UI.DetailBand();
@@ -49,7 +49,6 @@ namespace ArgusCR1004.Sales.SA103
             this.TVA_data = new DevExpress.XtraReports.UI.XRTableCell();
             this.subttl_data = new DevExpress.XtraReports.UI.XRTableCell();
             this.itemsNo_data = new DevExpress.XtraReports.UI.XRTableCell();
-            this.QRCode = new DevExpress.XtraReports.UI.XRBarCode();
             this.xrTable12 = new DevExpress.XtraReports.UI.XRTable();
             this.xrTableRow19 = new DevExpress.XtraReports.UI.XRTableRow();
             this.xrTableCell26 = new DevExpress.XtraReports.UI.XRTableCell();
@@ -179,6 +178,7 @@ namespace ArgusCR1004.Sales.SA103
             this.PageFooter = new DevExpress.XtraReports.UI.PageFooterBand();
             this.xrLine1 = new DevExpress.XtraReports.UI.XRLine();
             this.xrPictureBox2 = new DevExpress.XtraReports.UI.XRPictureBox();
+            this.QRCode = new DevExpress.XtraReports.UI.XRBarCode();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable16)).BeginInit();
@@ -226,12 +226,12 @@ namespace ArgusCR1004.Sales.SA103
             // InvoiceReceiptSubBand
             // 
             this.InvoiceReceiptSubBand.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
-            this.xrTable1,
             this.QRCode,
+            this.xrTable1,
             this.xrTable12,
             this.xrTable16,
             this.MetalSubReports});
-            this.InvoiceReceiptSubBand.HeightF = 198.8898F;
+            this.InvoiceReceiptSubBand.HeightF = 233.5233F;
             this.InvoiceReceiptSubBand.KeepTogether = true;
             this.InvoiceReceiptSubBand.Name = "InvoiceReceiptSubBand";
             // 
@@ -241,13 +241,13 @@ namespace ArgusCR1004.Sales.SA103
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTable1.BorderWidth = 0.5F;
-            this.xrTable1.LocationFloat = new DevExpress.Utils.PointFloat(373.3453F, 152.8666F);
+            this.xrTable1.LocationFloat = new DevExpress.Utils.PointFloat(375F, 187.5F);
             this.xrTable1.Name = "xrTable1";
             this.xrTable1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable1.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow5,
             this.xrTableRow6});
-            this.xrTable1.SizeF = new System.Drawing.SizeF(430.9762F, 46.02325F);
+            this.xrTable1.SizeF = new System.Drawing.SizeF(429.3216F, 46.02325F);
             this.xrTable1.StylePriority.UseBorders = false;
             this.xrTable1.StylePriority.UseBorderWidth = false;
             this.xrTable1.StylePriority.UseTextAlignment = false;
@@ -405,26 +405,13 @@ namespace ArgusCR1004.Sales.SA103
             this.itemsNo_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             this.itemsNo_data.Weight = 1.7109103749010837D;
             // 
-            // QRCode
-            // 
-            this.QRCode.Alignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
-            this.QRCode.LocationFloat = new DevExpress.Utils.PointFloat(671.102F, 15.27255F);
-            this.QRCode.Name = "QRCode";
-            this.QRCode.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F);
-            this.QRCode.ShowText = false;
-            this.QRCode.SizeF = new System.Drawing.SizeF(133.2194F, 124.6292F);
-            this.QRCode.StylePriority.UsePadding = false;
-            this.QRCode.StylePriority.UseTextAlignment = false;
-            qrCodeGenerator1.CompactionMode = DevExpress.XtraPrinting.BarCode.QRCodeCompactionMode.Byte;
-            this.QRCode.Symbology = qrCodeGenerator1;
-            // 
             // xrTable12
             // 
             this.xrTable12.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTable12.BorderWidth = 0.5F;
-            this.xrTable12.LocationFloat = new DevExpress.Utils.PointFloat(16.43345F, 35.59405F);
+            this.xrTable12.LocationFloat = new DevExpress.Utils.PointFloat(16.43344F, 35.59405F);
             this.xrTable12.Name = "xrTable12";
             this.xrTable12.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable12.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
@@ -433,7 +420,7 @@ namespace ArgusCR1004.Sales.SA103
             this.xrTableRow9,
             this.xrTableRow35,
             this.xrTableRow36});
-            this.xrTable12.SizeF = new System.Drawing.SizeF(632.2685F, 104.3077F);
+            this.xrTable12.SizeF = new System.Drawing.SizeF(595.6584F, 140.2841F);
             this.xrTable12.StylePriority.UseBorders = false;
             this.xrTable12.StylePriority.UseBorderWidth = false;
             this.xrTable12.StylePriority.UseTextAlignment = false;
@@ -452,7 +439,7 @@ namespace ArgusCR1004.Sales.SA103
             // xrTableCell26
             // 
             this.xrTableCell26.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.xrTableCell26.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold);
+            this.xrTableCell26.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Bold);
             this.xrTableCell26.Multiline = true;
             this.xrTableCell26.Name = "xrTableCell26";
             this.xrTableCell26.StylePriority.UseBackColor = false;
@@ -465,7 +452,7 @@ namespace ArgusCR1004.Sales.SA103
             // subtotal2_lbl
             // 
             this.subtotal2_lbl.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.subtotal2_lbl.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold);
+            this.subtotal2_lbl.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Bold);
             this.subtotal2_lbl.Multiline = true;
             this.subtotal2_lbl.Name = "subtotal2_lbl";
             this.subtotal2_lbl.StylePriority.UseBackColor = false;
@@ -480,7 +467,7 @@ namespace ArgusCR1004.Sales.SA103
             this.subtotal_data.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.subtotal_data.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
-            this.subtotal_data.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold);
+            this.subtotal_data.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Bold);
             this.subtotal_data.Multiline = true;
             this.subtotal_data.Name = "subtotal_data";
             this.subtotal_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(4, 2, 0, 0, 100F);
@@ -497,7 +484,7 @@ namespace ArgusCR1004.Sales.SA103
             this.cell1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.cell1.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Top | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
-            this.cell1.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold);
+            this.cell1.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Bold);
             this.cell1.Multiline = true;
             this.cell1.Name = "cell1";
             this.cell1.Padding = new DevExpress.XtraPrinting.PaddingInfo(5, 0, 0, 0, 100F);
@@ -523,7 +510,7 @@ namespace ArgusCR1004.Sales.SA103
             // xrTableCell29
             // 
             this.xrTableCell29.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.xrTableCell29.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold);
+            this.xrTableCell29.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Bold);
             this.xrTableCell29.Multiline = true;
             this.xrTableCell29.Name = "xrTableCell29";
             this.xrTableCell29.StylePriority.UseBackColor = false;
@@ -536,7 +523,7 @@ namespace ArgusCR1004.Sales.SA103
             // vatAmount2_lbl
             // 
             this.vatAmount2_lbl.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.vatAmount2_lbl.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold);
+            this.vatAmount2_lbl.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Bold);
             this.vatAmount2_lbl.Multiline = true;
             this.vatAmount2_lbl.Name = "vatAmount2_lbl";
             this.vatAmount2_lbl.StylePriority.UseBackColor = false;
@@ -551,7 +538,7 @@ namespace ArgusCR1004.Sales.SA103
             this.discount_data.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.discount_data.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
-            this.discount_data.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold);
+            this.discount_data.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Bold);
             this.discount_data.Multiline = true;
             this.discount_data.Name = "discount_data";
             this.discount_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(4, 2, 0, 0, 100F);
@@ -568,7 +555,7 @@ namespace ArgusCR1004.Sales.SA103
             this.celltwo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.celltwo.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Top | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
-            this.celltwo.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold);
+            this.celltwo.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Bold);
             this.celltwo.Multiline = true;
             this.celltwo.Name = "celltwo";
             this.celltwo.Padding = new DevExpress.XtraPrinting.PaddingInfo(5, 0, 0, 0, 100F);
@@ -594,7 +581,7 @@ namespace ArgusCR1004.Sales.SA103
             // xrTableCell32
             // 
             this.xrTableCell32.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.xrTableCell32.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold);
+            this.xrTableCell32.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Bold);
             this.xrTableCell32.Multiline = true;
             this.xrTableCell32.Name = "xrTableCell32";
             this.xrTableCell32.StylePriority.UseBackColor = false;
@@ -607,7 +594,7 @@ namespace ArgusCR1004.Sales.SA103
             // amount_lbl
             // 
             this.amount_lbl.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.amount_lbl.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold);
+            this.amount_lbl.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Bold);
             this.amount_lbl.Multiline = true;
             this.amount_lbl.Name = "amount_lbl";
             this.amount_lbl.StylePriority.UseBackColor = false;
@@ -622,7 +609,7 @@ namespace ArgusCR1004.Sales.SA103
             this.taxable_data.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.taxable_data.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
-            this.taxable_data.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold);
+            this.taxable_data.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Bold);
             this.taxable_data.Multiline = true;
             this.taxable_data.Name = "taxable_data";
             this.taxable_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(4, 2, 0, 0, 100F);
@@ -639,7 +626,7 @@ namespace ArgusCR1004.Sales.SA103
             this.cell3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.cell3.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Top | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
-            this.cell3.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold);
+            this.cell3.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Bold);
             this.cell3.Multiline = true;
             this.cell3.Name = "cell3";
             this.cell3.Padding = new DevExpress.XtraPrinting.PaddingInfo(5, 0, 0, 0, 100F);
@@ -665,7 +652,7 @@ namespace ArgusCR1004.Sales.SA103
             // xrTableCell35
             // 
             this.xrTableCell35.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.xrTableCell35.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold);
+            this.xrTableCell35.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Bold);
             this.xrTableCell35.Multiline = true;
             this.xrTableCell35.Name = "xrTableCell35";
             this.xrTableCell35.StylePriority.UseBackColor = false;
@@ -678,7 +665,7 @@ namespace ArgusCR1004.Sales.SA103
             // xrTableCell36
             // 
             this.xrTableCell36.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.xrTableCell36.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold);
+            this.xrTableCell36.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Bold);
             this.xrTableCell36.Multiline = true;
             this.xrTableCell36.Name = "xrTableCell36";
             this.xrTableCell36.StylePriority.UseBackColor = false;
@@ -693,7 +680,7 @@ namespace ArgusCR1004.Sales.SA103
             this.vatAmount_data.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.vatAmount_data.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
-            this.vatAmount_data.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold);
+            this.vatAmount_data.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Bold);
             this.vatAmount_data.Multiline = true;
             this.vatAmount_data.Name = "vatAmount_data";
             this.vatAmount_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(4, 2, 0, 0, 100F);
@@ -710,7 +697,7 @@ namespace ArgusCR1004.Sales.SA103
             this.xrTableCell38.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.xrTableCell38.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Top | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
-            this.xrTableCell38.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold);
+            this.xrTableCell38.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Bold);
             this.xrTableCell38.Multiline = true;
             this.xrTableCell38.Name = "xrTableCell38";
             this.xrTableCell38.Padding = new DevExpress.XtraPrinting.PaddingInfo(5, 0, 0, 0, 100F);
@@ -736,7 +723,7 @@ namespace ArgusCR1004.Sales.SA103
             // xrTableCell39
             // 
             this.xrTableCell39.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.xrTableCell39.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold);
+            this.xrTableCell39.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Bold);
             this.xrTableCell39.Multiline = true;
             this.xrTableCell39.Name = "xrTableCell39";
             this.xrTableCell39.StylePriority.UseBackColor = false;
@@ -749,7 +736,7 @@ namespace ArgusCR1004.Sales.SA103
             // xrTableCell40
             // 
             this.xrTableCell40.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.xrTableCell40.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold);
+            this.xrTableCell40.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Bold);
             this.xrTableCell40.Multiline = true;
             this.xrTableCell40.Name = "xrTableCell40";
             this.xrTableCell40.StylePriority.UseBackColor = false;
@@ -764,7 +751,7 @@ namespace ArgusCR1004.Sales.SA103
             this.amount_data.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.amount_data.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
-            this.amount_data.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold);
+            this.amount_data.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Bold);
             this.amount_data.Multiline = true;
             this.amount_data.Name = "amount_data";
             this.amount_data.Padding = new DevExpress.XtraPrinting.PaddingInfo(4, 2, 0, 0, 100F);
@@ -781,7 +768,7 @@ namespace ArgusCR1004.Sales.SA103
             this.xrTableCell42.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.xrTableCell42.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Top | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
-            this.xrTableCell42.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold);
+            this.xrTableCell42.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Bold);
             this.xrTableCell42.Multiline = true;
             this.xrTableCell42.Name = "xrTableCell42";
             this.xrTableCell42.Padding = new DevExpress.XtraPrinting.PaddingInfo(5, 0, 0, 0, 100F);
@@ -800,12 +787,12 @@ namespace ArgusCR1004.Sales.SA103
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTable16.BorderWidth = 0.5F;
-            this.xrTable16.LocationFloat = new DevExpress.Utils.PointFloat(16.43345F, 10.00001F);
+            this.xrTable16.LocationFloat = new DevExpress.Utils.PointFloat(16.43344F, 10.00001F);
             this.xrTable16.Name = "xrTable16";
             this.xrTable16.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable16.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow31});
-            this.xrTable16.SizeF = new System.Drawing.SizeF(632.2685F, 25.59404F);
+            this.xrTable16.SizeF = new System.Drawing.SizeF(595.6584F, 25.59404F);
             this.xrTable16.StylePriority.UseBorders = false;
             this.xrTable16.StylePriority.UseBorderWidth = false;
             this.xrTable16.StylePriority.UseTextAlignment = false;
@@ -859,7 +846,7 @@ namespace ArgusCR1004.Sales.SA103
             // 
             // MetalSubReports
             // 
-            this.MetalSubReports.LocationFloat = new DevExpress.Utils.PointFloat(16.43342F, 152.8665F);
+            this.MetalSubReports.LocationFloat = new DevExpress.Utils.PointFloat(16.43342F, 187.5F);
             this.MetalSubReports.Name = "MetalSubReports";
             this.MetalSubReports.ReportSource = new ArgusCR1004.Sales.SA103.MetalSubReports();
             this.MetalSubReports.SizeF = new System.Drawing.SizeF(339.9198F, 23.01166F);
@@ -2233,6 +2220,19 @@ namespace ArgusCR1004.Sales.SA103
             this.xrPictureBox2.Name = "xrPictureBox2";
             this.xrPictureBox2.SizeF = new System.Drawing.SizeF(739.0058F, 76.66666F);
             // 
+            // QRCode
+            // 
+            this.QRCode.Alignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
+            this.QRCode.LocationFloat = new DevExpress.Utils.PointFloat(629.3206F, 9.293143F);
+            this.QRCode.Name = "QRCode";
+            this.QRCode.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F);
+            this.QRCode.ShowText = false;
+            this.QRCode.SizeF = new System.Drawing.SizeF(175.0011F, 166.585F);
+            this.QRCode.StylePriority.UsePadding = false;
+            this.QRCode.StylePriority.UseTextAlignment = false;
+            qrCodeGenerator1.CompactionMode = DevExpress.XtraPrinting.BarCode.QRCodeCompactionMode.Byte;
+            this.QRCode.Symbology = qrCodeGenerator1;
+            // 
             // SA103
             // 
             this.Bands.AddRange(new DevExpress.XtraReports.UI.Band[] {
@@ -2304,7 +2304,6 @@ namespace ArgusCR1004.Sales.SA103
         private DevExpress.XtraReports.UI.XRTableRow xrTableRow15;
         private DevExpress.XtraReports.UI.XRTableCell clientDistrict_data;
         private DevExpress.XtraReports.UI.XRTableCell cAddress_lbl;
-        private DevExpress.XtraReports.UI.XRBarCode QRCode;
         private DevExpress.XtraReports.UI.XRTable xrTable12;
         private DevExpress.XtraReports.UI.XRTableRow xrTableRow19;
         private DevExpress.XtraReports.UI.XRTableCell subtotal2_lbl;
@@ -2415,5 +2414,6 @@ namespace ArgusCR1004.Sales.SA103
         private DevExpress.XtraReports.UI.XRTableRow xrTableRow38;
         private DevExpress.XtraReports.UI.XRTableCell g24_data;
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell44;
+        private DevExpress.XtraReports.UI.XRBarCode QRCode;
     }
 }

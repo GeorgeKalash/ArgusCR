@@ -56,7 +56,7 @@ namespace ArgusCR1039.Sales.SA103
             ((InvoiceItemsSubReports)(InvoiceItemsSubReports.ReportSource)).data = webObject.record.items;
             ((MetalSubReports)(MetalSubReports.ReportSource)).data = webObject.record.metalSummaries;
 
-            QRCode.Text = new KSAeInvoiceQrCode(webObject.record.companyInfo.name, webObject.record.companyInfo.taxNo, (DateTime)webObject.record.trxHeader.date, webObject.record.trxHeader.amount.ToString(), webObject.record.trxHeader.vatAmount.ToString()).ToBase64();
+            QRCode.Text = webObject.record.qrCode;
             printSignature_data.Text = reportSignature();
             base.OnBeforePrint(e);
         }
