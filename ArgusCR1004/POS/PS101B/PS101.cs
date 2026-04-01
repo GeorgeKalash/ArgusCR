@@ -64,9 +64,9 @@ namespace ArgusCR1004.POS.PS101B
             }
 
             total2_data.Text = SharedClasses.NumberToWords.multiLingualNumberInText((decimal)webObject.record.invoiceView.amount, 2, 2);
-            QRCode2.Text = new KSAeInvoiceQrCode(webObject.record.companyInfo.name, webObject.record.companyInfo.taxNo, (DateTime)webObject.record.logTime, webObject.record.invoiceView.amount.ToString(), webObject.record.invoiceView.vatAmount.ToString()).ToBase64();
-            QRCode.Text = new KSAeInvoiceQrCode(webObject.record.companyInfo.name, webObject.record.companyInfo.taxNo, (DateTime)webObject.record.logTime, webObject.record.invoiceView.amount.ToString(), webObject.record.invoiceView.vatAmount.ToString()).ToBase64();
-            
+            QRCode2.Text = webObject.record.invoiceView.qrCode;
+            QRCode.Text = webObject.record.invoiceView.qrCode;
+
             ((InvoiceItemsSubReports)(InvoiceItemsSubReports.ReportSource)).data = webObject.record.invoiceItems;
             ((InvoiceReceiptSubReports)(InvoiceReceiptSubReports.ReportSource)).data = webObject.record.receipts;
             ((InvoiceItemsSubReports)(InvoiceItemsSubReports2.ReportSource)).data = webObject.record.invoiceItems;

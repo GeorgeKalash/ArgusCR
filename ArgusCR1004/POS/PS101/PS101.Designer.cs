@@ -31,8 +31,8 @@ namespace ArgusCR1004.POS.PS101
         /// </summary>
         private void InitializeComponent()
         {
-            DevExpress.XtraPrinting.BarCode.QRCodeGenerator qrCodeGenerator1 = new DevExpress.XtraPrinting.BarCode.QRCodeGenerator();
             DevExpress.XtraPrinting.BarCode.QRCodeGenerator qrCodeGenerator2 = new DevExpress.XtraPrinting.BarCode.QRCodeGenerator();
+            DevExpress.XtraPrinting.BarCode.QRCodeGenerator qrCodeGenerator1 = new DevExpress.XtraPrinting.BarCode.QRCodeGenerator();
             this.InvoiceItemSubBand = new DevExpress.XtraReports.UI.SubBand();
             this.InvoiceItemsSubReports2 = new DevExpress.XtraReports.UI.XRSubreport();
             this.InvoiceItemsSubReports = new DevExpress.XtraReports.UI.XRSubreport();
@@ -43,8 +43,6 @@ namespace ArgusCR1004.POS.PS101
             this.TopMargin = new DevExpress.XtraReports.UI.TopMarginBand();
             this.BottomMargin = new DevExpress.XtraReports.UI.BottomMarginBand();
             this.ReportHeader = new DevExpress.XtraReports.UI.ReportHeaderBand();
-            this.QRCode = new DevExpress.XtraReports.UI.XRBarCode();
-            this.QRCode2 = new DevExpress.XtraReports.UI.XRBarCode();
             this.xrTable8 = new DevExpress.XtraReports.UI.XRTable();
             this.xrTableRow14 = new DevExpress.XtraReports.UI.XRTableRow();
             this.vatNo2_data = new DevExpress.XtraReports.UI.XRTableCell();
@@ -177,6 +175,8 @@ namespace ArgusCR1004.POS.PS101
             this.xrTableRow9 = new DevExpress.XtraReports.UI.XRTableRow();
             this.total_data = new DevExpress.XtraReports.UI.XRTableCell();
             this.total_lbl = new DevExpress.XtraReports.UI.XRTableCell();
+            this.QRCode2 = new DevExpress.XtraReports.UI.XRBarCode();
+            this.QRCode = new DevExpress.XtraReports.UI.XRBarCode();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable11)).BeginInit();
@@ -269,38 +269,12 @@ namespace ArgusCR1004.POS.PS101
             this.xrTable3,
             this.xrTable2,
             this.xrTable1});
-            this.ReportHeader.HeightF = 230.9135F;
+            this.ReportHeader.HeightF = 314.2468F;
             this.ReportHeader.Name = "ReportHeader";
-            // 
-            // QRCode
-            // 
-            this.QRCode.Alignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
-            this.QRCode.LocationFloat = new DevExpress.Utils.PointFloat(600.0001F, 0F);
-            this.QRCode.Name = "QRCode";
-            this.QRCode.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F);
-            this.QRCode.ShowText = false;
-            this.QRCode.SizeF = new System.Drawing.SizeF(124.4827F, 106.5865F);
-            this.QRCode.StylePriority.UsePadding = false;
-            this.QRCode.StylePriority.UseTextAlignment = false;
-            qrCodeGenerator1.CompactionMode = DevExpress.XtraPrinting.BarCode.QRCodeCompactionMode.Byte;
-            this.QRCode.Symbology = qrCodeGenerator1;
-            // 
-            // QRCode2
-            // 
-            this.QRCode2.Alignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
-            this.QRCode2.LocationFloat = new DevExpress.Utils.PointFloat(12.50326F, 0F);
-            this.QRCode2.Name = "QRCode2";
-            this.QRCode2.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F);
-            this.QRCode2.ShowText = false;
-            this.QRCode2.SizeF = new System.Drawing.SizeF(124.4827F, 106.5865F);
-            this.QRCode2.StylePriority.UsePadding = false;
-            this.QRCode2.StylePriority.UseTextAlignment = false;
-            qrCodeGenerator2.CompactionMode = DevExpress.XtraPrinting.BarCode.QRCodeCompactionMode.Byte;
-            this.QRCode2.Symbology = qrCodeGenerator2;
             // 
             // xrTable8
             // 
-            this.xrTable8.LocationFloat = new DevExpress.Utils.PointFloat(361.6786F, 33.53852F);
+            this.xrTable8.LocationFloat = new DevExpress.Utils.PointFloat(361.6785F, 49.16352F);
             this.xrTable8.Name = "xrTable8";
             this.xrTable8.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable8.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
@@ -347,7 +321,7 @@ namespace ArgusCR1004.POS.PS101
             // xrTable10
             // 
             this.xrTable10.Font = new System.Drawing.Font("Arial", 8F);
-            this.xrTable10.LocationFloat = new DevExpress.Utils.PointFloat(361.643F, 118.9552F);
+            this.xrTable10.LocationFloat = new DevExpress.Utils.PointFloat(361.6068F, 184.5802F);
             this.xrTable10.Name = "xrTable10";
             this.xrTable10.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable10.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
@@ -505,14 +479,14 @@ namespace ArgusCR1004.POS.PS101
             // 
             // xrTable11
             // 
-            this.xrTable11.LocationFloat = new DevExpress.Utils.PointFloat(12.50326F, 118.9552F);
+            this.xrTable11.LocationFloat = new DevExpress.Utils.PointFloat(12.54247F, 184.5802F);
             this.xrTable11.Name = "xrTable11";
             this.xrTable11.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable11.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow18,
             this.xrTableRow22,
             this.xrTableRow26});
-            this.xrTable11.SizeF = new System.Drawing.SizeF(212.4587F, 49.99997F);
+            this.xrTable11.SizeF = new System.Drawing.SizeF(212.3833F, 49.99997F);
             // 
             // xrTableRow18
             // 
@@ -658,7 +632,7 @@ namespace ArgusCR1004.POS.PS101
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.title2_lbl.CanGrow = false;
             this.title2_lbl.Font = new System.Drawing.Font("Arial", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
-            this.title2_lbl.LocationFloat = new DevExpress.Utils.PointFloat(235F, 118.9552F);
+            this.title2_lbl.LocationFloat = new DevExpress.Utils.PointFloat(234.9638F, 184.5802F);
             this.title2_lbl.Name = "title2_lbl";
             this.title2_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 6, 0, 100F);
             this.title2_lbl.SizeF = new System.Drawing.SizeF(110.1268F, 49.99999F);
@@ -674,7 +648,7 @@ namespace ArgusCR1004.POS.PS101
             // 
             // xrTable12
             // 
-            this.xrTable12.LocationFloat = new DevExpress.Utils.PointFloat(12.50326F, 171.9552F);
+            this.xrTable12.LocationFloat = new DevExpress.Utils.PointFloat(12.46707F, 237.5802F);
             this.xrTable12.Name = "xrTable12";
             this.xrTable12.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable12.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
@@ -955,7 +929,7 @@ namespace ArgusCR1004.POS.PS101
             // 
             // xrTable4
             // 
-            this.xrTable4.LocationFloat = new DevExpress.Utils.PointFloat(599.9639F, 171.9552F);
+            this.xrTable4.LocationFloat = new DevExpress.Utils.PointFloat(599.9278F, 237.5802F);
             this.xrTable4.Name = "xrTable4";
             this.xrTable4.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable4.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
@@ -1243,7 +1217,7 @@ namespace ArgusCR1004.POS.PS101
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.title_lbl.CanGrow = false;
             this.title_lbl.Font = new System.Drawing.Font("Arial", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
-            this.title_lbl.LocationFloat = new DevExpress.Utils.PointFloat(824.9639F, 118.9552F);
+            this.title_lbl.LocationFloat = new DevExpress.Utils.PointFloat(824.9278F, 184.5802F);
             this.title_lbl.Name = "title_lbl";
             this.title_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 6, 0, 100F);
             this.title_lbl.SizeF = new System.Drawing.SizeF(110.1268F, 49.99999F);
@@ -1259,7 +1233,7 @@ namespace ArgusCR1004.POS.PS101
             // 
             // xrTable3
             // 
-            this.xrTable3.LocationFloat = new DevExpress.Utils.PointFloat(599.9639F, 118.9552F);
+            this.xrTable3.LocationFloat = new DevExpress.Utils.PointFloat(599.9278F, 184.5802F);
             this.xrTable3.Name = "xrTable3";
             this.xrTable3.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable3.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
@@ -1406,7 +1380,7 @@ namespace ArgusCR1004.POS.PS101
             // xrTable2
             // 
             this.xrTable2.Font = new System.Drawing.Font("Arial", 8F);
-            this.xrTable2.LocationFloat = new DevExpress.Utils.PointFloat(949.1068F, 118.9552F);
+            this.xrTable2.LocationFloat = new DevExpress.Utils.PointFloat(949.0706F, 184.5802F);
             this.xrTable2.Name = "xrTable2";
             this.xrTable2.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable2.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
@@ -1564,7 +1538,7 @@ namespace ArgusCR1004.POS.PS101
             // 
             // xrTable1
             // 
-            this.xrTable1.LocationFloat = new DevExpress.Utils.PointFloat(949.1425F, 33.53852F);
+            this.xrTable1.LocationFloat = new DevExpress.Utils.PointFloat(949.1819F, 49.16352F);
             this.xrTable1.Name = "xrTable1";
             this.xrTable1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable1.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
@@ -2275,6 +2249,32 @@ namespace ArgusCR1004.POS.PS101
             this.total_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
             this.total_lbl.Weight = 0.28571423585926603D;
             // 
+            // QRCode2
+            // 
+            this.QRCode2.Alignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
+            this.QRCode2.LocationFloat = new DevExpress.Utils.PointFloat(12.54247F, 0F);
+            this.QRCode2.Name = "QRCode2";
+            this.QRCode2.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F);
+            this.QRCode2.ShowText = false;
+            this.QRCode2.SizeF = new System.Drawing.SizeF(175.0011F, 166.585F);
+            this.QRCode2.StylePriority.UsePadding = false;
+            this.QRCode2.StylePriority.UseTextAlignment = false;
+            qrCodeGenerator2.CompactionMode = DevExpress.XtraPrinting.BarCode.QRCodeCompactionMode.Byte;
+            this.QRCode2.Symbology = qrCodeGenerator2;
+            // 
+            // QRCode
+            // 
+            this.QRCode.Alignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
+            this.QRCode.LocationFloat = new DevExpress.Utils.PointFloat(600.0032F, 0F);
+            this.QRCode.Name = "QRCode";
+            this.QRCode.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F);
+            this.QRCode.ShowText = false;
+            this.QRCode.SizeF = new System.Drawing.SizeF(175.0011F, 166.585F);
+            this.QRCode.StylePriority.UsePadding = false;
+            this.QRCode.StylePriority.UseTextAlignment = false;
+            qrCodeGenerator1.CompactionMode = DevExpress.XtraPrinting.BarCode.QRCodeCompactionMode.Byte;
+            this.QRCode.Symbology = qrCodeGenerator1;
+            // 
             // PS101
             // 
             this.Bands.AddRange(new DevExpress.XtraReports.UI.Band[] {
@@ -2413,8 +2413,6 @@ namespace ArgusCR1004.POS.PS101
         private DevExpress.XtraReports.UI.XRTableCell nationality2_lbl;
         private DevExpress.XtraReports.UI.XRSubreport InvoiceItemsSubReports2;
         private DevExpress.XtraReports.UI.XRSubreport InvoiceReceiptSubReports2;
-        private DevExpress.XtraReports.UI.XRBarCode QRCode2;
-        private DevExpress.XtraReports.UI.XRBarCode QRCode;
         private DevExpress.XtraReports.UI.XRTable xrTable6;
         private DevExpress.XtraReports.UI.XRTableRow xrTableRow5;
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell22;
@@ -2453,5 +2451,7 @@ namespace ArgusCR1004.POS.PS101
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell18;
         private DevExpress.XtraReports.UI.XRTableRow xrTableRow6;
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell2;
+        private DevExpress.XtraReports.UI.XRBarCode QRCode2;
+        private DevExpress.XtraReports.UI.XRBarCode QRCode;
     }
 }

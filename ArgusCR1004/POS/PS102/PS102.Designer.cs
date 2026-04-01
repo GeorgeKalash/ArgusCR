@@ -44,8 +44,6 @@ namespace ArgusCR1004.POS.PS102
             this.TopMargin = new DevExpress.XtraReports.UI.TopMarginBand();
             this.BottomMargin = new DevExpress.XtraReports.UI.BottomMarginBand();
             this.ReportHeader = new DevExpress.XtraReports.UI.ReportHeaderBand();
-            this.QRCode = new DevExpress.XtraReports.UI.XRBarCode();
-            this.QRCode2 = new DevExpress.XtraReports.UI.XRBarCode();
             this.xrTable8 = new DevExpress.XtraReports.UI.XRTable();
             this.xrTableRow14 = new DevExpress.XtraReports.UI.XRTableRow();
             this.vatNo2_data = new DevExpress.XtraReports.UI.XRTableCell();
@@ -182,6 +180,8 @@ namespace ArgusCR1004.POS.PS102
             this.xrTableRow9 = new DevExpress.XtraReports.UI.XRTableRow();
             this.total_data = new DevExpress.XtraReports.UI.XRTableCell();
             this.total_lbl = new DevExpress.XtraReports.UI.XRTableCell();
+            this.QRCode = new DevExpress.XtraReports.UI.XRBarCode();
+            this.QRCode2 = new DevExpress.XtraReports.UI.XRBarCode();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable11)).BeginInit();
@@ -276,32 +276,6 @@ namespace ArgusCR1004.POS.PS102
             this.xrTable1});
             this.ReportHeader.HeightF = 230.9135F;
             this.ReportHeader.Name = "ReportHeader";
-            // 
-            // QRCode
-            // 
-            this.QRCode.Alignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
-            this.QRCode.LocationFloat = new DevExpress.Utils.PointFloat(600.0001F, 0F);
-            this.QRCode.Name = "QRCode";
-            this.QRCode.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F);
-            this.QRCode.ShowText = false;
-            this.QRCode.SizeF = new System.Drawing.SizeF(124.4827F, 106.5865F);
-            this.QRCode.StylePriority.UsePadding = false;
-            this.QRCode.StylePriority.UseTextAlignment = false;
-            qrCodeGenerator1.CompactionMode = DevExpress.XtraPrinting.BarCode.QRCodeCompactionMode.Byte;
-            this.QRCode.Symbology = qrCodeGenerator1;
-            // 
-            // QRCode2
-            // 
-            this.QRCode2.Alignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
-            this.QRCode2.LocationFloat = new DevExpress.Utils.PointFloat(12.50326F, 0F);
-            this.QRCode2.Name = "QRCode2";
-            this.QRCode2.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F);
-            this.QRCode2.ShowText = false;
-            this.QRCode2.SizeF = new System.Drawing.SizeF(124.4827F, 106.5865F);
-            this.QRCode2.StylePriority.UsePadding = false;
-            this.QRCode2.StylePriority.UseTextAlignment = false;
-            qrCodeGenerator2.CompactionMode = DevExpress.XtraPrinting.BarCode.QRCodeCompactionMode.Byte;
-            this.QRCode2.Symbology = qrCodeGenerator2;
             // 
             // xrTable8
             // 
@@ -2368,6 +2342,32 @@ namespace ArgusCR1004.POS.PS102
             this.total_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
             this.total_lbl.Weight = 0.28571423585926603D;
             // 
+            // QRCode
+            // 
+            this.QRCode.Alignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
+            this.QRCode.LocationFloat = new DevExpress.Utils.PointFloat(600.0001F, 0F);
+            this.QRCode.Name = "QRCode";
+            this.QRCode.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F);
+            this.QRCode.ShowText = false;
+            this.QRCode.SizeF = new System.Drawing.SizeF(124.4827F, 106.5865F);
+            this.QRCode.StylePriority.UsePadding = false;
+            this.QRCode.StylePriority.UseTextAlignment = false;
+            qrCodeGenerator1.CompactionMode = DevExpress.XtraPrinting.BarCode.QRCodeCompactionMode.Byte;
+            this.QRCode.Symbology = qrCodeGenerator1;
+            // 
+            // QRCode2
+            // 
+            this.QRCode2.Alignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
+            this.QRCode2.LocationFloat = new DevExpress.Utils.PointFloat(12.50326F, 0F);
+            this.QRCode2.Name = "QRCode2";
+            this.QRCode2.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F);
+            this.QRCode2.ShowText = false;
+            this.QRCode2.SizeF = new System.Drawing.SizeF(124.4827F, 106.5865F);
+            this.QRCode2.StylePriority.UsePadding = false;
+            this.QRCode2.StylePriority.UseTextAlignment = false;
+            qrCodeGenerator2.CompactionMode = DevExpress.XtraPrinting.BarCode.QRCodeCompactionMode.Byte;
+            this.QRCode2.Symbology = qrCodeGenerator2;
+            // 
             // PS102
             // 
             this.Bands.AddRange(new DevExpress.XtraReports.UI.Band[] {
@@ -2524,8 +2524,6 @@ namespace ArgusCR1004.POS.PS102
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell19;
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell20;
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell21;
-        private DevExpress.XtraReports.UI.XRBarCode QRCode2;
-        private DevExpress.XtraReports.UI.XRBarCode QRCode;
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell3;
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell2;
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell7;
@@ -2550,5 +2548,7 @@ namespace ArgusCR1004.POS.PS102
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell36;
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell37;
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell38;
+        private DevExpress.XtraReports.UI.XRBarCode QRCode;
+        private DevExpress.XtraReports.UI.XRBarCode QRCode2;
     }
 }
