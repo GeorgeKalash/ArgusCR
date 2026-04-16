@@ -101,17 +101,6 @@ namespace ArgusCR1029.Manufacturing
             this.colorStone_param = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTableRow14 = new DevExpress.XtraReports.UI.XRTableRow();
             this.xrTableCell16 = new DevExpress.XtraReports.UI.XRTableCell();
-            this.stone_param = new DevExpress.XtraReports.UI.XRTableCell();
-            this.xrTableRow15 = new DevExpress.XtraReports.UI.XRTableRow();
-            this.xrTableCell18 = new DevExpress.XtraReports.UI.XRTableCell();
-            this.status_param = new DevExpress.XtraReports.UI.XRTableCell();
-            this.xrTable3 = new DevExpress.XtraReports.UI.XRTable();
-            this.xrTableRow16 = new DevExpress.XtraReports.UI.XRTableRow();
-            this.jobStartedFrom_lbl = new DevExpress.XtraReports.UI.XRTableCell();
-            this.jobStartedFrom_param = new DevExpress.XtraReports.UI.XRTableCell();
-            this.xrTableRow17 = new DevExpress.XtraReports.UI.XRTableRow();
-            this.jobStartedTo_lbl = new DevExpress.XtraReports.UI.XRTableCell();
-            this.jobStartedTo_param = new DevExpress.XtraReports.UI.XRTableCell();
             this.title_lbl = new DevExpress.XtraReports.UI.XRLabel();
             this.addressStreet_data = new DevExpress.XtraReports.UI.XRLabel();
             this.addressEmail_data = new DevExpress.XtraReports.UI.XRLabel();
@@ -171,10 +160,10 @@ namespace ArgusCR1029.Manufacturing
             this.xrTableCell74 = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTableCell76 = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTableCell77 = new DevExpress.XtraReports.UI.XRTableCell();
+            this.stone_param = new DevExpress.XtraReports.UI.XRTableCell();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.xrTable3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
@@ -584,7 +573,6 @@ namespace ArgusCR1029.Manufacturing
             this.ReportHeader.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
             this.xrTable5,
             this.xrTable1,
-            this.xrTable3,
             this.title_lbl,
             this.addressStreet_data,
             this.addressEmail_data,
@@ -798,9 +786,8 @@ namespace ArgusCR1029.Manufacturing
             this.xrTableRow11,
             this.xrTableRow12,
             this.xrTableRow13,
-            this.xrTableRow14,
-            this.xrTableRow15});
-            this.xrTable1.SizeF = new System.Drawing.SizeF(314F, 158.5938F);
+            this.xrTableRow14});
+            this.xrTable1.SizeF = new System.Drawing.SizeF(314F, 135.9375F);
             // 
             // xrTableRow9
             // 
@@ -943,99 +930,6 @@ namespace ArgusCR1029.Manufacturing
             this.xrTableCell16.StylePriority.UseFont = false;
             this.xrTableCell16.Text = "Stone:";
             this.xrTableCell16.Weight = 0.31095233839181013D;
-            // 
-            // stone_param
-            // 
-            this.stone_param.Font = new System.Drawing.Font("Arial", 9F);
-            this.stone_param.Multiline = true;
-            this.stone_param.Name = "stone_param";
-            this.stone_param.StylePriority.UseFont = false;
-            this.stone_param.Weight = 1.4833334630869843D;
-            // 
-            // xrTableRow15
-            // 
-            this.xrTableRow15.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
-            this.xrTableCell18,
-            this.status_param});
-            this.xrTableRow15.Name = "xrTableRow15";
-            this.xrTableRow15.Weight = 1D;
-            // 
-            // xrTableCell18
-            // 
-            this.xrTableCell18.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold);
-            this.xrTableCell18.Multiline = true;
-            this.xrTableCell18.Name = "xrTableCell18";
-            this.xrTableCell18.StylePriority.UseFont = false;
-            this.xrTableCell18.Text = "Status:";
-            this.xrTableCell18.Weight = 0.31095233839181013D;
-            // 
-            // status_param
-            // 
-            this.status_param.Font = new System.Drawing.Font("Arial", 9F);
-            this.status_param.Multiline = true;
-            this.status_param.Name = "status_param";
-            this.status_param.StylePriority.UseFont = false;
-            this.status_param.Weight = 1.4833334630869843D;
-            // 
-            // xrTable3
-            // 
-            this.xrTable3.LocationFloat = new DevExpress.Utils.PointFloat(990.5F, 50.00002F);
-            this.xrTable3.Name = "xrTable3";
-            this.xrTable3.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
-            this.xrTable3.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
-            this.xrTableRow16,
-            this.xrTableRow17});
-            this.xrTable3.SizeF = new System.Drawing.SizeF(291.0833F, 45.3125F);
-            // 
-            // xrTableRow16
-            // 
-            this.xrTableRow16.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
-            this.jobStartedFrom_lbl,
-            this.jobStartedFrom_param});
-            this.xrTableRow16.Name = "xrTableRow16";
-            this.xrTableRow16.Weight = 1D;
-            // 
-            // jobStartedFrom_lbl
-            // 
-            this.jobStartedFrom_lbl.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold);
-            this.jobStartedFrom_lbl.Multiline = true;
-            this.jobStartedFrom_lbl.Name = "jobStartedFrom_lbl";
-            this.jobStartedFrom_lbl.StylePriority.UseFont = false;
-            this.jobStartedFrom_lbl.Text = "Job Started From:";
-            this.jobStartedFrom_lbl.Weight = 0.72761861840527764D;
-            // 
-            // jobStartedFrom_param
-            // 
-            this.jobStartedFrom_param.Font = new System.Drawing.Font("Arial", 9F);
-            this.jobStartedFrom_param.Multiline = true;
-            this.jobStartedFrom_param.Name = "jobStartedFrom_param";
-            this.jobStartedFrom_param.StylePriority.UseFont = false;
-            this.jobStartedFrom_param.Weight = 0.9357146795000757D;
-            // 
-            // xrTableRow17
-            // 
-            this.xrTableRow17.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
-            this.jobStartedTo_lbl,
-            this.jobStartedTo_param});
-            this.xrTableRow17.Name = "xrTableRow17";
-            this.xrTableRow17.Weight = 1D;
-            // 
-            // jobStartedTo_lbl
-            // 
-            this.jobStartedTo_lbl.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold);
-            this.jobStartedTo_lbl.Multiline = true;
-            this.jobStartedTo_lbl.Name = "jobStartedTo_lbl";
-            this.jobStartedTo_lbl.StylePriority.UseFont = false;
-            this.jobStartedTo_lbl.Text = "Job Started To:";
-            this.jobStartedTo_lbl.Weight = 0.727618967177616D;
-            // 
-            // jobStartedTo_param
-            // 
-            this.jobStartedTo_param.Font = new System.Drawing.Font("Arial", 9F);
-            this.jobStartedTo_param.Multiline = true;
-            this.jobStartedTo_param.Name = "jobStartedTo_param";
-            this.jobStartedTo_param.StylePriority.UseFont = false;
-            this.jobStartedTo_param.Weight = 0.93571433072773735D;
             // 
             // title_lbl
             // 
@@ -1906,6 +1800,14 @@ namespace ArgusCR1029.Manufacturing
             this.xrTableCell77.Text = "PCT Add";
             this.xrTableCell77.Weight = 0.76607367290419892D;
             // 
+            // stone_param
+            // 
+            this.stone_param.Font = new System.Drawing.Font("Arial", 9F);
+            this.stone_param.Multiline = true;
+            this.stone_param.Name = "stone_param";
+            this.stone_param.StylePriority.UseFont = false;
+            this.stone_param.Weight = 1.4833334630869843D;
+            // 
             // MF416b
             // 
             this.Bands.AddRange(new DevExpress.XtraReports.UI.Band[] {
@@ -1926,7 +1828,6 @@ namespace ArgusCR1029.Manufacturing
             ((System.ComponentModel.ISupportInitialize)(this.xrTable4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.xrTable3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
@@ -1991,17 +1892,6 @@ namespace ArgusCR1029.Manufacturing
         private DevExpress.XtraReports.UI.XRTableCell colorStone_param;
         private DevExpress.XtraReports.UI.XRTableRow xrTableRow14;
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell16;
-        private DevExpress.XtraReports.UI.XRTableCell stone_param;
-        private DevExpress.XtraReports.UI.XRTableRow xrTableRow15;
-        private DevExpress.XtraReports.UI.XRTableCell xrTableCell18;
-        private DevExpress.XtraReports.UI.XRTableCell status_param;
-        private DevExpress.XtraReports.UI.XRTable xrTable3;
-        private DevExpress.XtraReports.UI.XRTableRow xrTableRow16;
-        private DevExpress.XtraReports.UI.XRTableCell jobStartedFrom_lbl;
-        private DevExpress.XtraReports.UI.XRTableCell jobStartedFrom_param;
-        private DevExpress.XtraReports.UI.XRTableRow xrTableRow17;
-        private DevExpress.XtraReports.UI.XRTableCell jobStartedTo_lbl;
-        private DevExpress.XtraReports.UI.XRTableCell jobStartedTo_param;
         private DevExpress.XtraReports.UI.XRTable xrTable4;
         private DevExpress.XtraReports.UI.XRTableRow xrTableRow19;
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell13;
@@ -2070,5 +1960,6 @@ namespace ArgusCR1029.Manufacturing
         private DevExpress.XtraReports.UI.XRTableCell collection_data;
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell28;
         private DevExpress.XtraReports.UI.XRTableCell collection_lbl;
+        private DevExpress.XtraReports.UI.XRTableCell stone_param;
     }
 }

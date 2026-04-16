@@ -35,10 +35,6 @@ namespace ArgusCR1029.Manufacturing
             brand_param.Text = Parameters.Count > 10 ? Parameters[10].Value.ToString() : string.Empty;
             colorStone_param.Text = Parameters.Count > 11 ? Parameters[11].Value.ToString() : string.Empty;
             stone_param.Text = Parameters.Count > 12 ? Parameters[12].Value.ToString() : string.Empty;
-            status_param.Text = Parameters.Count > 13 ? Parameters[13].Value.ToString() : string.Empty;
-
-            jobStartedFrom_param.Text = Parameters.Count > 14 ? Parameters[14].Value.ToString() : string.Empty;
-            jobStartedTo_param.Text = Parameters.Count > 15 ? Parameters[15].Value.ToString() : string.Empty;
 
             logo_data.ImageUrl = companyInfo.logoUrl;
             companyInfoName_data.Text = companyInfo.name;
