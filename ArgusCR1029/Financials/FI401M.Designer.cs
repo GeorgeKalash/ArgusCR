@@ -811,7 +811,7 @@ namespace ArgusCR1029.Financials
             this.xrTableRow2,
             this.xrTableRow3,
             this.xrTableRow5});
-            this.xrTable1.SizeF = new System.Drawing.SizeF(414.4129F, 75.50002F);
+            this.xrTable1.SizeF = new System.Drawing.SizeF(340.4546F, 75.50002F);
             // 
             // xrTableRow1
             // 
@@ -836,7 +836,7 @@ namespace ArgusCR1029.Financials
             this.fiscalYear_param.Multiline = true;
             this.fiscalYear_param.Name = "fiscalYear_param";
             this.fiscalYear_param.StylePriority.UseFont = false;
-            this.fiscalYear_param.Weight = 2.0788863051774595D;
+            this.fiscalYear_param.Weight = 1.581035918398022D;
             // 
             // xrTableRow2
             // 
@@ -861,7 +861,7 @@ namespace ArgusCR1029.Financials
             this.startDate_param.Multiline = true;
             this.startDate_param.Name = "startDate_param";
             this.startDate_param.StylePriority.UseFont = false;
-            this.startDate_param.Weight = 2.0788863190193512D;
+            this.startDate_param.Weight = 1.5810359322399137D;
             // 
             // xrTableRow3
             // 
@@ -886,7 +886,7 @@ namespace ArgusCR1029.Financials
             this.endDate_param.Multiline = true;
             this.endDate_param.Name = "endDate_param";
             this.endDate_param.StylePriority.UseFont = false;
-            this.endDate_param.Weight = 2.0788863190193512D;
+            this.endDate_param.Weight = 1.5810359322399137D;
             // 
             // xrTableRow5
             // 
@@ -911,7 +911,7 @@ namespace ArgusCR1029.Financials
             this.account_param.Multiline = true;
             this.account_param.Name = "account_param";
             this.account_param.StylePriority.UseFont = false;
-            this.account_param.Weight = 2.0788863051774662D;
+            this.account_param.Weight = 1.5810359183980287D;
             // 
             // Detail
             // 
@@ -941,7 +941,7 @@ namespace ArgusCR1029.Financials
             this.xrLabel1,
             this.pagesNumber_lbl,
             this.printSignature});
-            this.PageFooter.HeightF = 122.1668F;
+            this.PageFooter.HeightF = 113F;
             this.PageFooter.Name = "PageFooter";
             // 
             // xrLabel1
@@ -969,10 +969,10 @@ namespace ArgusCR1029.Financials
             // 
             this.pagesNumber_lbl.BackColor = System.Drawing.Color.White;
             this.pagesNumber_lbl.Font = new System.Drawing.Font("Arial", 8F);
-            this.pagesNumber_lbl.LocationFloat = new DevExpress.Utils.PointFloat(1135.417F, 96.66678F);
+            this.pagesNumber_lbl.LocationFloat = new DevExpress.Utils.PointFloat(1135.417F, 87.5F);
             this.pagesNumber_lbl.Name = "pagesNumber_lbl";
             this.pagesNumber_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.pagesNumber_lbl.SizeF = new System.Drawing.SizeF(112.0153F, 25.49998F);
+            this.pagesNumber_lbl.SizeF = new System.Drawing.SizeF(112.0151F, 24.66679F);
             this.pagesNumber_lbl.StylePriority.UseBackColor = false;
             this.pagesNumber_lbl.StylePriority.UseFont = false;
             this.pagesNumber_lbl.StylePriority.UseTextAlignment = false;
@@ -982,7 +982,7 @@ namespace ArgusCR1029.Financials
             // printSignature
             // 
             this.printSignature.Font = new System.Drawing.Font("Arial", 8F);
-            this.printSignature.LocationFloat = new DevExpress.Utils.PointFloat(12.5F, 96.66678F);
+            this.printSignature.LocationFloat = new DevExpress.Utils.PointFloat(12.5F, 87.5F);
             this.printSignature.Multiline = true;
             this.printSignature.Name = "printSignature";
             this.printSignature.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);

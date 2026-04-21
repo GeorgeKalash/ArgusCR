@@ -622,7 +622,7 @@ namespace ArgusCR1029.Financials
             this.xrTable4,
             this.logo_data,
             this.reportTitle_lbl});
-            this.ReportHeader.HeightF = 198.8749F;
+            this.ReportHeader.HeightF = 174.8749F;
             this.ReportHeader.Name = "ReportHeader";
             // 
             // xrTable5
@@ -637,7 +637,7 @@ namespace ArgusCR1029.Financials
             this.xrTableRow11,
             this.xrTableRow12,
             this.xrTableRow13});
-            this.xrTable5.SizeF = new System.Drawing.SizeF(300.0001F, 125F);
+            this.xrTable5.SizeF = new System.Drawing.SizeF(300.0001F, 115F);
             this.xrTable5.StylePriority.UseFont = false;
             // 
             // xrTableRow9
@@ -777,7 +777,7 @@ namespace ArgusCR1029.Financials
             this.xrTableRow6,
             this.xrTableRow7,
             this.xrTableRow8});
-            this.xrTable4.SizeF = new System.Drawing.SizeF(300.0001F, 125F);
+            this.xrTable4.SizeF = new System.Drawing.SizeF(300.0001F, 115F);
             this.xrTable4.StylePriority.UseFont = false;
             // 
             // xrTableRow3

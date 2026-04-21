@@ -816,7 +816,7 @@ namespace ArgusCR1029.Financials
             this.xrTableRow12,
             this.xrTableRow13,
             this.xrTableRow14});
-            this.xrTable8.SizeF = new System.Drawing.SizeF(692.2397F, 150F);
+            this.xrTable8.SizeF = new System.Drawing.SizeF(666.198F, 150F);
             // 
             // xrTableRow9
             // 
@@ -843,7 +843,7 @@ namespace ArgusCR1029.Financials
             this.year_param.Multiline = true;
             this.year_param.Name = "year_param";
             this.year_param.StylePriority.UseFont = false;
-            this.year_param.Weight = 1.3301207075336294D;
+            this.year_param.Weight = 1.2277110131626796D;
             // 
             // currency_lbl
             // 
@@ -852,7 +852,7 @@ namespace ArgusCR1029.Financials
             this.currency_lbl.Name = "currency_lbl";
             this.currency_lbl.StylePriority.UseFont = false;
             this.currency_lbl.Text = "Currency:";
-            this.currency_lbl.Weight = 0.6784944155480982D;
+            this.currency_lbl.Weight = 0.64235019127240833D;
             // 
             // currency_param
             // 
@@ -860,7 +860,7 @@ namespace ArgusCR1029.Financials
             this.currency_param.Multiline = true;
             this.currency_param.Name = "currency_param";
             this.currency_param.StylePriority.UseFont = false;
-            this.currency_param.Weight = 1.3795178956690659D;
+            this.currency_param.Weight = 1.3674692914489217D;
             // 
             // xrTableRow10
             // 
@@ -887,7 +887,7 @@ namespace ArgusCR1029.Financials
             this.startDate_param.Multiline = true;
             this.startDate_param.Name = "startDate_param";
             this.startDate_param.StylePriority.UseFont = false;
-            this.startDate_param.Weight = 1.3301203986810406D;
+            this.startDate_param.Weight = 1.2277106160664939D;
             // 
             // accountBalance_lbl
             // 
@@ -896,7 +896,7 @@ namespace ArgusCR1029.Financials
             this.accountBalance_lbl.Name = "accountBalance_lbl";
             this.accountBalance_lbl.StylePriority.UseFont = false;
             this.accountBalance_lbl.Text = "Account Balance:";
-            this.accountBalance_lbl.Weight = 0.67849476852248525D;
+            this.accountBalance_lbl.Weight = 0.64235054424679539D;
             // 
             // accountBalance_param
             // 
@@ -904,7 +904,7 @@ namespace ArgusCR1029.Financials
             this.accountBalance_param.Multiline = true;
             this.accountBalance_param.Name = "accountBalance_param";
             this.accountBalance_param.StylePriority.UseFont = false;
-            this.accountBalance_param.Weight = 1.3795178956690659D;
+            this.accountBalance_param.Weight = 1.3674693796925186D;
             // 
             // xrTableRow11
             // 
@@ -931,7 +931,7 @@ namespace ArgusCR1029.Financials
             this.endDate_param.Multiline = true;
             this.endDate_param.Name = "endDate_param";
             this.endDate_param.StylePriority.UseFont = false;
-            this.endDate_param.Weight = 1.3301203986810404D;
+            this.endDate_param.Weight = 1.2277107043100906D;
             // 
             // accountType_lbl
             // 
@@ -940,7 +940,7 @@ namespace ArgusCR1029.Financials
             this.accountType_lbl.Name = "accountType_lbl";
             this.accountType_lbl.StylePriority.UseFont = false;
             this.accountType_lbl.Text = "Account Type:";
-            this.accountType_lbl.Weight = 0.67849512149687252D;
+            this.accountType_lbl.Weight = 0.64235054424679539D;
             // 
             // accountType_param
             // 
@@ -948,7 +948,7 @@ namespace ArgusCR1029.Financials
             this.accountType_param.Multiline = true;
             this.accountType_param.Name = "accountType_param";
             this.accountType_param.StylePriority.UseFont = false;
-            this.accountType_param.Weight = 1.3795175426946791D;
+            this.accountType_param.Weight = 1.3674692914489222D;
             // 
             // xrTableRow12
             // 
@@ -975,7 +975,7 @@ namespace ArgusCR1029.Financials
             this.account_param.Multiline = true;
             this.account_param.Name = "account_param";
             this.account_param.StylePriority.UseFont = false;
-            this.account_param.Weight = 1.330120663411831D;
+            this.account_param.Weight = 1.2277110572844781D;
             // 
             // plant_lbl
             // 
@@ -984,7 +984,7 @@ namespace ArgusCR1029.Financials
             this.plant_lbl.Name = "plant_lbl";
             this.plant_lbl.StylePriority.UseFont = false;
             this.plant_lbl.Text = "Plant:";
-            this.plant_lbl.Weight = 0.67849372062977331D;
+            this.plant_lbl.Weight = 0.6423487904053089D;
             // 
             // plant_param
             // 
@@ -992,7 +992,7 @@ namespace ArgusCR1029.Financials
             this.plant_param.Multiline = true;
             this.plant_param.Name = "plant_param";
             this.plant_param.StylePriority.UseFont = false;
-            this.plant_param.Weight = 1.3795186788309877D;
+            this.plant_param.Weight = 1.3674706923160209D;
             // 
             // xrTableRow13
             // 
@@ -1019,7 +1019,7 @@ namespace ArgusCR1029.Financials
             this.accountGroup_param.Multiline = true;
             this.accountGroup_param.Name = "accountGroup_param";
             this.accountGroup_param.StylePriority.UseFont = false;
-            this.accountGroup_param.Weight = 1.330120663411831D;
+            this.accountGroup_param.Weight = 1.2277110572844781D;
             // 
             // plantGroup_lbl
             // 
@@ -1028,7 +1028,7 @@ namespace ArgusCR1029.Financials
             this.plantGroup_lbl.Name = "plantGroup_lbl";
             this.plantGroup_lbl.StylePriority.UseFont = false;
             this.plantGroup_lbl.Text = "Plant Group:";
-            this.plantGroup_lbl.Weight = 0.67849372062977331D;
+            this.plantGroup_lbl.Weight = 0.6423487904053089D;
             // 
             // plantGroup_param
             // 
@@ -1036,7 +1036,7 @@ namespace ArgusCR1029.Financials
             this.plantGroup_param.Multiline = true;
             this.plantGroup_param.Name = "plantGroup_param";
             this.plantGroup_param.StylePriority.UseFont = false;
-            this.plantGroup_param.Weight = 1.3795186788309874D;
+            this.plantGroup_param.Weight = 1.3674706923160209D;
             // 
             // xrTableRow14
             // 
@@ -1063,7 +1063,7 @@ namespace ArgusCR1029.Financials
             this.segment_param.Multiline = true;
             this.segment_param.Name = "segment_param";
             this.segment_param.StylePriority.UseFont = false;
-            this.segment_param.Weight = 1.3301207516554277D;
+            this.segment_param.Weight = 1.2277109690408812D;
             // 
             // saleZone_lbl
             // 
@@ -1072,7 +1072,7 @@ namespace ArgusCR1029.Financials
             this.saleZone_lbl.Name = "saleZone_lbl";
             this.saleZone_lbl.StylePriority.UseFont = false;
             this.saleZone_lbl.Text = "Sale Zone:";
-            this.saleZone_lbl.Weight = 0.678494779552935D;
+            this.saleZone_lbl.Weight = 0.642350555277245D;
             // 
             // saleZone_param
             // 
@@ -1080,7 +1080,7 @@ namespace ArgusCR1029.Financials
             this.saleZone_param.Multiline = true;
             this.saleZone_param.Name = "saleZone_param";
             this.saleZone_param.StylePriority.UseFont = false;
-            this.saleZone_param.Weight = 1.3795175316642292D;
+            this.saleZone_param.Weight = 1.3674690156876816D;
             // 
             // logo_data
             // 

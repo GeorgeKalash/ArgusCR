@@ -737,13 +737,13 @@ namespace ArgusCR1029.Financials
             this.logo_data,
             this.title_lbl,
             this.xrTable1});
-            this.ReportHeader.HeightF = 202.0833F;
+            this.ReportHeader.HeightF = 200F;
             this.ReportHeader.KeepTogether = true;
             this.ReportHeader.Name = "ReportHeader";
             // 
             // xrTable5
             // 
-            this.xrTable5.LocationFloat = new DevExpress.Utils.PointFloat(435.0318F, 52.08333F);
+            this.xrTable5.LocationFloat = new DevExpress.Utils.PointFloat(411.8712F, 50F);
             this.xrTable5.Name = "xrTable5";
             this.xrTable5.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable5.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
@@ -753,7 +753,7 @@ namespace ArgusCR1029.Financials
             this.xrTableRow16,
             this.xrTableRow17,
             this.xrTableRow18});
-            this.xrTable5.SizeF = new System.Drawing.SizeF(405.7513F, 150F);
+            this.xrTable5.SizeF = new System.Drawing.SizeF(332.8346F, 150F);
             // 
             // xrTableRow12
             // 
@@ -776,7 +776,7 @@ namespace ArgusCR1029.Financials
             // 
             this.accountGroup_param.Multiline = true;
             this.accountGroup_param.Name = "accountGroup_param";
-            this.accountGroup_param.Weight = 1.1221109725745797D;
+            this.accountGroup_param.Weight = 0.84260166846419393D;
             // 
             // xrTableRow13
             // 
@@ -799,7 +799,7 @@ namespace ArgusCR1029.Financials
             // 
             this.site_param.Multiline = true;
             this.site_param.Name = "site_param";
-            this.site_param.Weight = 1.1221109838711434D;
+            this.site_param.Weight = 0.84260167976075762D;
             // 
             // xrTableRow15
             // 
@@ -822,7 +822,7 @@ namespace ArgusCR1029.Financials
             // 
             this.statusParam_param.Multiline = true;
             this.statusParam_param.Name = "statusParam_param";
-            this.statusParam_param.Weight = 1.1221109838711434D;
+            this.statusParam_param.Weight = 0.84260167976075762D;
             // 
             // xrTableRow16
             // 
@@ -845,7 +845,7 @@ namespace ArgusCR1029.Financials
             // 
             this.systemFunction_param.Multiline = true;
             this.systemFunction_param.Name = "systemFunction_param";
-            this.systemFunction_param.Weight = 1.1221109838711434D;
+            this.systemFunction_param.Weight = 0.84260167976075762D;
             // 
             // xrTableRow17
             // 
@@ -868,7 +868,7 @@ namespace ArgusCR1029.Financials
             // 
             this.item_param.Multiline = true;
             this.item_param.Name = "item_param";
-            this.item_param.Weight = 1.1221109838711434D;
+            this.item_param.Weight = 0.84260167976075762D;
             // 
             // xrTableRow18
             // 
@@ -891,7 +891,7 @@ namespace ArgusCR1029.Financials
             // 
             this.itemCategory_param.Multiline = true;
             this.itemCategory_param.Name = "itemCategory_param";
-            this.itemCategory_param.Weight = 1.1221109838711434D;
+            this.itemCategory_param.Weight = 0.84260167976075762D;
             // 
             // logo_data
             // 
@@ -915,7 +915,7 @@ namespace ArgusCR1029.Financials
             // 
             // xrTable1
             // 
-            this.xrTable1.LocationFloat = new DevExpress.Utils.PointFloat(129.4106F, 52.08333F);
+            this.xrTable1.LocationFloat = new DevExpress.Utils.PointFloat(125F, 50F);
             this.xrTable1.Name = "xrTable1";
             this.xrTable1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable1.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
@@ -925,7 +925,7 @@ namespace ArgusCR1029.Financials
             this.xrTableRow4,
             this.xrTableRow6,
             this.xrTableRow9});
-            this.xrTable1.SizeF = new System.Drawing.SizeF(305.6212F, 150F);
+            this.xrTable1.SizeF = new System.Drawing.SizeF(286.8712F, 150F);
             // 
             // xrTableRow11
             // 
@@ -948,7 +948,7 @@ namespace ArgusCR1029.Financials
             // 
             this.startDate_param.Multiline = true;
             this.startDate_param.Name = "startDate_param";
-            this.startDate_param.Weight = 1.5200254921267911D;
+            this.startDate_param.Weight = 1.3878581443328031D;
             // 
             // xrTableRow14
             // 
@@ -971,7 +971,7 @@ namespace ArgusCR1029.Financials
             // 
             this.endDate_param.Multiline = true;
             this.endDate_param.Name = "endDate_param";
-            this.endDate_param.Weight = 1.5200254921267911D;
+            this.endDate_param.Weight = 1.3878581443328031D;
             // 
             // xrTableRow1
             // 
@@ -994,7 +994,7 @@ namespace ArgusCR1029.Financials
             // 
             this.referenceParam_param.Multiline = true;
             this.referenceParam_param.Name = "referenceParam_param";
-            this.referenceParam_param.Weight = 1.5200254921267911D;
+            this.referenceParam_param.Weight = 1.3878581443328031D;
             // 
             // xrTableRow4
             // 
@@ -1017,7 +1017,7 @@ namespace ArgusCR1029.Financials
             // 
             this.plant_param.Multiline = true;
             this.plant_param.Name = "plant_param";
-            this.plant_param.Weight = 1.5200254921267911D;
+            this.plant_param.Weight = 1.3878581443328031D;
             // 
             // xrTableRow6
             // 
@@ -1040,7 +1040,7 @@ namespace ArgusCR1029.Financials
             // 
             this.plantGroup_param.Multiline = true;
             this.plantGroup_param.Name = "plantGroup_param";
-            this.plantGroup_param.Weight = 1.5200254921267911D;
+            this.plantGroup_param.Weight = 1.3878581443328031D;
             // 
             // xrTableRow9
             // 
@@ -1063,7 +1063,7 @@ namespace ArgusCR1029.Financials
             // 
             this.account_param.Multiline = true;
             this.account_param.Name = "account_param";
-            this.account_param.Weight = 1.5200254921267911D;
+            this.account_param.Weight = 1.3878581443328031D;
             // 
             // PageFooter
             // 

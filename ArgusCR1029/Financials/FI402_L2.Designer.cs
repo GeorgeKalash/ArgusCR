@@ -177,7 +177,7 @@ namespace ArgusCR1029.Financials
             this.xrTable4.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable4.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow2});
-            this.xrTable4.SizeF = new System.Drawing.SizeF(1293F, 25F);
+            this.xrTable4.SizeF = new System.Drawing.SizeF(1283.167F, 25F);
             this.xrTable4.StylePriority.UseBorders = false;
             this.xrTable4.StylePriority.UseBorderWidth = false;
             this.xrTable4.StylePriority.UseFont = false;
@@ -781,7 +781,7 @@ namespace ArgusCR1029.Financials
             this.xrTable1.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow1,
             this.xrTableRow5});
-            this.xrTable1.SizeF = new System.Drawing.SizeF(1293F, 47.91686F);
+            this.xrTable1.SizeF = new System.Drawing.SizeF(1283.166F, 47.91686F);
             this.xrTable1.StylePriority.UseBorders = false;
             this.xrTable1.StylePriority.UseFont = false;
             this.xrTable1.StylePriority.UseTextAlignment = false;
@@ -1366,7 +1366,7 @@ namespace ArgusCR1029.Financials
             this.xrTable5.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable5.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow6});
-            this.xrTable5.SizeF = new System.Drawing.SizeF(1293F, 25F);
+            this.xrTable5.SizeF = new System.Drawing.SizeF(1283.166F, 25F);
             this.xrTable5.StylePriority.UseFont = false;
             // 
             // xrTableRow6
