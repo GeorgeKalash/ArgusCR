@@ -883,7 +883,7 @@ namespace ArgusCR1029.Manufacturing
             // 
             // title_lbl
             // 
-            this.title_lbl.Font = new System.Drawing.Font("Times New Roman", 21F, System.Drawing.FontStyle.Bold);
+            this.title_lbl.Font = new System.Drawing.Font("Times New Roman", 21F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
             this.title_lbl.LocationFloat = new DevExpress.Utils.PointFloat(330.1665F, 0.08331934F);
             this.title_lbl.Multiline = true;
             this.title_lbl.Name = "title_lbl";

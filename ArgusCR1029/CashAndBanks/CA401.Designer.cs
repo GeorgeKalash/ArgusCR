@@ -281,51 +281,51 @@ namespace ArgusCR1029.CashAndBanks
             // 
             // fiscalYear_lbl
             // 
-            this.fiscalYear_lbl.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold);
+            this.fiscalYear_lbl.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Bold);
             this.fiscalYear_lbl.LocationFloat = new DevExpress.Utils.PointFloat(24.99979F, 124.625F);
             this.fiscalYear_lbl.Multiline = true;
             this.fiscalYear_lbl.Name = "fiscalYear_lbl";
             this.fiscalYear_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.fiscalYear_lbl.SizeF = new System.Drawing.SizeF(93.8752F, 23.00002F);
+            this.fiscalYear_lbl.SizeF = new System.Drawing.SizeF(78.2502F, 23.00002F);
             this.fiscalYear_lbl.StylePriority.UseFont = false;
             this.fiscalYear_lbl.Text = "Fiscal Year:";
             // 
             // startDate_lbl
             // 
-            this.startDate_lbl.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold);
+            this.startDate_lbl.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Bold);
             this.startDate_lbl.LocationFloat = new DevExpress.Utils.PointFloat(26.04167F, 147.6251F);
             this.startDate_lbl.Multiline = true;
             this.startDate_lbl.Name = "startDate_lbl";
             this.startDate_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.startDate_lbl.SizeF = new System.Drawing.SizeF(92.83333F, 23F);
+            this.startDate_lbl.SizeF = new System.Drawing.SizeF(77.20833F, 23F);
             this.startDate_lbl.StylePriority.UseFont = false;
             this.startDate_lbl.Text = "Start Date:";
             // 
             // endDate_lbl
             // 
-            this.endDate_lbl.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold);
+            this.endDate_lbl.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Bold);
             this.endDate_lbl.LocationFloat = new DevExpress.Utils.PointFloat(26.04167F, 170.625F);
             this.endDate_lbl.Multiline = true;
             this.endDate_lbl.Name = "endDate_lbl";
             this.endDate_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.endDate_lbl.SizeF = new System.Drawing.SizeF(92.83331F, 23.00002F);
+            this.endDate_lbl.SizeF = new System.Drawing.SizeF(77.20833F, 23.00002F);
             this.endDate_lbl.StylePriority.UseFont = false;
             this.endDate_lbl.Text = "End Date:";
             // 
             // year_param
             // 
-            this.year_param.Font = new System.Drawing.Font("Times New Roman", 9F);
-            this.year_param.LocationFloat = new DevExpress.Utils.PointFloat(118.875F, 124.625F);
+            this.year_param.Font = new System.Drawing.Font("Times New Roman", 8F);
+            this.year_param.LocationFloat = new DevExpress.Utils.PointFloat(103.25F, 124.625F);
             this.year_param.Multiline = true;
             this.year_param.Name = "year_param";
             this.year_param.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.year_param.SizeF = new System.Drawing.SizeF(194.9166F, 23.00002F);
+            this.year_param.SizeF = new System.Drawing.SizeF(193.8748F, 23.00002F);
             this.year_param.StylePriority.UseFont = false;
             // 
             // endDate_param
             // 
-            this.endDate_param.Font = new System.Drawing.Font("Times New Roman", 9F);
-            this.endDate_param.LocationFloat = new DevExpress.Utils.PointFloat(118.875F, 170.6251F);
+            this.endDate_param.Font = new System.Drawing.Font("Times New Roman", 8F);
+            this.endDate_param.LocationFloat = new DevExpress.Utils.PointFloat(103.25F, 170.6251F);
             this.endDate_param.Multiline = true;
             this.endDate_param.Name = "endDate_param";
             this.endDate_param.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -334,12 +334,12 @@ namespace ArgusCR1029.CashAndBanks
             // 
             // startDate_param
             // 
-            this.startDate_param.Font = new System.Drawing.Font("Times New Roman", 9F);
-            this.startDate_param.LocationFloat = new DevExpress.Utils.PointFloat(118.875F, 147.6251F);
+            this.startDate_param.Font = new System.Drawing.Font("Times New Roman", 8F);
+            this.startDate_param.LocationFloat = new DevExpress.Utils.PointFloat(103.25F, 147.6251F);
             this.startDate_param.Multiline = true;
             this.startDate_param.Name = "startDate_param";
             this.startDate_param.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.startDate_param.SizeF = new System.Drawing.SizeF(194.9166F, 23.00003F);
+            this.startDate_param.SizeF = new System.Drawing.SizeF(193.8748F, 23.00003F);
             this.startDate_param.StylePriority.UseFont = false;
             // 
             // accountName_param
@@ -962,26 +962,30 @@ namespace ArgusCR1029.CashAndBanks
             // pagesNumber_lbl
             // 
             this.pagesNumber_lbl.BackColor = System.Drawing.Color.White;
-            this.pagesNumber_lbl.Font = new System.Drawing.Font("Times New Roman", 9F);
+            this.pagesNumber_lbl.Font = new System.Drawing.Font("Times New Roman", 8F);
+            this.pagesNumber_lbl.ForeColor = System.Drawing.Color.DimGray;
             this.pagesNumber_lbl.LocationFloat = new DevExpress.Utils.PointFloat(1029.519F, 10.00004F);
             this.pagesNumber_lbl.Name = "pagesNumber_lbl";
             this.pagesNumber_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.pagesNumber_lbl.SizeF = new System.Drawing.SizeF(118.8152F, 23F);
             this.pagesNumber_lbl.StylePriority.UseBackColor = false;
             this.pagesNumber_lbl.StylePriority.UseFont = false;
+            this.pagesNumber_lbl.StylePriority.UseForeColor = false;
             this.pagesNumber_lbl.StylePriority.UseTextAlignment = false;
             this.pagesNumber_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             this.pagesNumber_lbl.TextFormatString = "Page {0} of {1}";
             // 
             // printSignature
             // 
-            this.printSignature.Font = new System.Drawing.Font("Times New Roman", 9F);
+            this.printSignature.Font = new System.Drawing.Font("Times New Roman", 8F);
+            this.printSignature.ForeColor = System.Drawing.Color.DimGray;
             this.printSignature.LocationFloat = new DevExpress.Utils.PointFloat(9.999998F, 10.00001F);
             this.printSignature.Multiline = true;
             this.printSignature.Name = "printSignature";
             this.printSignature.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.printSignature.SizeF = new System.Drawing.SizeF(884.6637F, 23F);
             this.printSignature.StylePriority.UseFont = false;
+            this.printSignature.StylePriority.UseForeColor = false;
             this.printSignature.Text = "printSignature";
             // 
             // ReportHeader
@@ -1028,7 +1032,7 @@ namespace ArgusCR1029.CashAndBanks
             this.xrTable5.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable5.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow5});
-            this.xrTable5.SizeF = new System.Drawing.SizeF(776.7915F, 20.83333F);
+            this.xrTable5.SizeF = new System.Drawing.SizeF(572.4677F, 20.83333F);
             // 
             // xrTableRow5
             // 
@@ -1067,7 +1071,7 @@ namespace ArgusCR1029.CashAndBanks
             this.xrTableCell3.Name = "xrTableCell3";
             this.xrTableCell3.StylePriority.UseFont = false;
             this.xrTableCell3.Text = "xrTableCell3";
-            this.xrTableCell3.Weight = 3.4097297143151239D;
+            this.xrTableCell3.Weight = 2.1847060454314828D;
             // 
             // xrTable4
             // 

@@ -881,7 +881,7 @@ namespace ArgusCR1029.Financials
             // 
             // title_lbl
             // 
-            this.title_lbl.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.title_lbl.Font = new System.Drawing.Font("Times New Roman", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
             this.title_lbl.LocationFloat = new DevExpress.Utils.PointFloat(141.5668F, 0F);
             this.title_lbl.Multiline = true;
             this.title_lbl.Name = "title_lbl";
@@ -913,7 +913,7 @@ namespace ArgusCR1029.Financials
             this.xrTable8.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable8.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow10});
-            this.xrTable8.SizeF = new System.Drawing.SizeF(771.8665F, 25.62494F);
+            this.xrTable8.SizeF = new System.Drawing.SizeF(621.9064F, 25.62494F);
             // 
             // xrTableRow10
             // 
@@ -941,7 +941,7 @@ namespace ArgusCR1029.Financials
             this.xrTableCell12.Multiline = true;
             this.xrTableCell12.Name = "xrTableCell12";
             this.xrTableCell12.StylePriority.UseFont = false;
-            this.xrTableCell12.Weight = 3.7836196616554472D;
+            this.xrTableCell12.Weight = 2.9173141500785529D;
             // 
             // xrTable6
             // 
@@ -950,7 +950,7 @@ namespace ArgusCR1029.Financials
             this.xrTable6.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable6.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow7});
-            this.xrTable6.SizeF = new System.Drawing.SizeF(771.8665F, 25.62494F);
+            this.xrTable6.SizeF = new System.Drawing.SizeF(622.4639F, 25.62494F);
             // 
             // xrTableRow7
             // 
@@ -978,7 +978,7 @@ namespace ArgusCR1029.Financials
             this.xrTableCell30.Multiline = true;
             this.xrTableCell30.Name = "xrTableCell30";
             this.xrTableCell30.StylePriority.UseFont = false;
-            this.xrTableCell30.Weight = 3.7836196616554472D;
+            this.xrTableCell30.Weight = 2.9205342188486747D;
             // 
             // xrTable1
             // 

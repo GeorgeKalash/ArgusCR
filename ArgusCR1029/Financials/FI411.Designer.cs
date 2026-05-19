@@ -724,8 +724,8 @@ namespace ArgusCR1029.Financials
             // 
             // reportTitle_lbl
             // 
-            this.reportTitle_lbl.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
-            this.reportTitle_lbl.LocationFloat = new DevExpress.Utils.PointFloat(118.0832F, 10.00001F);
+            this.reportTitle_lbl.Font = new System.Drawing.Font("Times New Roman", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
+            this.reportTitle_lbl.LocationFloat = new DevExpress.Utils.PointFloat(118.0829F, 0F);
             this.reportTitle_lbl.Multiline = true;
             this.reportTitle_lbl.Name = "reportTitle_lbl";
             this.reportTitle_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);

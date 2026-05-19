@@ -639,7 +639,7 @@ namespace ArgusCR1029.Financials
             // 
             // accountGroup_param
             // 
-            this.accountGroup_param.Font = new System.Drawing.Font("Times New Roman", 9F);
+            this.accountGroup_param.Font = new System.Drawing.Font("Times New Roman", 8F);
             this.accountGroup_param.LocationFloat = new DevExpress.Utils.PointFloat(250.6248F, 141.9305F);
             this.accountGroup_param.Multiline = true;
             this.accountGroup_param.Name = "accountGroup_param";
@@ -649,7 +649,7 @@ namespace ArgusCR1029.Financials
             // 
             // accountGroup_lbl
             // 
-            this.accountGroup_lbl.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold);
+            this.accountGroup_lbl.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Bold);
             this.accountGroup_lbl.LocationFloat = new DevExpress.Utils.PointFloat(136.0415F, 141.9305F);
             this.accountGroup_lbl.Multiline = true;
             this.accountGroup_lbl.Name = "accountGroup_lbl";
@@ -660,7 +660,7 @@ namespace ArgusCR1029.Financials
             // 
             // reportTitle_lbl
             // 
-            this.reportTitle_lbl.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
+            this.reportTitle_lbl.Font = new System.Drawing.Font("Times New Roman", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
             this.reportTitle_lbl.LocationFloat = new DevExpress.Utils.PointFloat(111.4164F, 0F);
             this.reportTitle_lbl.Multiline = true;
             this.reportTitle_lbl.Name = "reportTitle_lbl";
@@ -673,7 +673,7 @@ namespace ArgusCR1029.Financials
             // 
             // fiscalYear_lbl
             // 
-            this.fiscalYear_lbl.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold);
+            this.fiscalYear_lbl.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Bold);
             this.fiscalYear_lbl.LocationFloat = new DevExpress.Utils.PointFloat(136.0415F, 49.93048F);
             this.fiscalYear_lbl.Multiline = true;
             this.fiscalYear_lbl.Name = "fiscalYear_lbl";
@@ -684,7 +684,7 @@ namespace ArgusCR1029.Financials
             // 
             // startDate_lbl
             // 
-            this.startDate_lbl.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold);
+            this.startDate_lbl.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Bold);
             this.startDate_lbl.LocationFloat = new DevExpress.Utils.PointFloat(136.0415F, 72.93059F);
             this.startDate_lbl.Multiline = true;
             this.startDate_lbl.Name = "startDate_lbl";
@@ -695,7 +695,7 @@ namespace ArgusCR1029.Financials
             // 
             // endDate_lbl
             // 
-            this.endDate_lbl.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold);
+            this.endDate_lbl.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Bold);
             this.endDate_lbl.LocationFloat = new DevExpress.Utils.PointFloat(136.0415F, 95.93048F);
             this.endDate_lbl.Multiline = true;
             this.endDate_lbl.Name = "endDate_lbl";
@@ -706,7 +706,7 @@ namespace ArgusCR1029.Financials
             // 
             // endDate_param
             // 
-            this.endDate_param.Font = new System.Drawing.Font("Times New Roman", 9F);
+            this.endDate_param.Font = new System.Drawing.Font("Times New Roman", 8F);
             this.endDate_param.LocationFloat = new DevExpress.Utils.PointFloat(250.6248F, 95.93048F);
             this.endDate_param.Multiline = true;
             this.endDate_param.Name = "endDate_param";
@@ -716,7 +716,7 @@ namespace ArgusCR1029.Financials
             // 
             // startDate_param
             // 
-            this.startDate_param.Font = new System.Drawing.Font("Times New Roman", 9F);
+            this.startDate_param.Font = new System.Drawing.Font("Times New Roman", 8F);
             this.startDate_param.LocationFloat = new DevExpress.Utils.PointFloat(250.6248F, 72.93059F);
             this.startDate_param.Multiline = true;
             this.startDate_param.Name = "startDate_param";
@@ -726,7 +726,7 @@ namespace ArgusCR1029.Financials
             // 
             // fiscalYear_param
             // 
-            this.fiscalYear_param.Font = new System.Drawing.Font("Times New Roman", 9F);
+            this.fiscalYear_param.Font = new System.Drawing.Font("Times New Roman", 8F);
             this.fiscalYear_param.LocationFloat = new DevExpress.Utils.PointFloat(250.6248F, 49.93057F);
             this.fiscalYear_param.Multiline = true;
             this.fiscalYear_param.Name = "fiscalYear_param";
@@ -736,7 +736,7 @@ namespace ArgusCR1029.Financials
             // 
             // account_lbl
             // 
-            this.account_lbl.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold);
+            this.account_lbl.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Bold);
             this.account_lbl.LocationFloat = new DevExpress.Utils.PointFloat(136.0415F, 118.9305F);
             this.account_lbl.Multiline = true;
             this.account_lbl.Name = "account_lbl";
@@ -747,7 +747,7 @@ namespace ArgusCR1029.Financials
             // 
             // account_param
             // 
-            this.account_param.Font = new System.Drawing.Font("Times New Roman", 9F);
+            this.account_param.Font = new System.Drawing.Font("Times New Roman", 8F);
             this.account_param.LocationFloat = new DevExpress.Utils.PointFloat(250.6248F, 118.9305F);
             this.account_param.Multiline = true;
             this.account_param.Name = "account_param";

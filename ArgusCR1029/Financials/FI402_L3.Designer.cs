@@ -626,7 +626,7 @@ namespace ArgusCR1029.Financials
             // 
             // xrTable5
             // 
-            this.xrTable5.Font = new System.Drawing.Font("Arial", 9F);
+            this.xrTable5.Font = new System.Drawing.Font("Arial", 8F);
             this.xrTable5.LocationFloat = new DevExpress.Utils.PointFloat(437.5001F, 50F);
             this.xrTable5.Name = "xrTable5";
             this.xrTable5.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
@@ -766,7 +766,7 @@ namespace ArgusCR1029.Financials
             // 
             // xrTable4
             // 
-            this.xrTable4.Font = new System.Drawing.Font("Arial", 9F);
+            this.xrTable4.Font = new System.Drawing.Font("Arial", 8F);
             this.xrTable4.LocationFloat = new DevExpress.Utils.PointFloat(137.5F, 50F);
             this.xrTable4.Name = "xrTable4";
             this.xrTable4.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
@@ -913,7 +913,7 @@ namespace ArgusCR1029.Financials
             // 
             // reportTitle_lbl
             // 
-            this.reportTitle_lbl.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
+            this.reportTitle_lbl.Font = new System.Drawing.Font("Times New Roman", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
             this.reportTitle_lbl.LocationFloat = new DevExpress.Utils.PointFloat(118.0832F, 0F);
             this.reportTitle_lbl.Multiline = true;
             this.reportTitle_lbl.Name = "reportTitle_lbl";

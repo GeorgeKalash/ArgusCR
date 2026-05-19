@@ -101,6 +101,7 @@ namespace ArgusCR1029.Manufacturing
             this.colorStone_param = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTableRow14 = new DevExpress.XtraReports.UI.XRTableRow();
             this.xrTableCell16 = new DevExpress.XtraReports.UI.XRTableCell();
+            this.stone_param = new DevExpress.XtraReports.UI.XRTableCell();
             this.title_lbl = new DevExpress.XtraReports.UI.XRLabel();
             this.addressStreet_data = new DevExpress.XtraReports.UI.XRLabel();
             this.addressEmail_data = new DevExpress.XtraReports.UI.XRLabel();
@@ -160,7 +161,6 @@ namespace ArgusCR1029.Manufacturing
             this.xrTableCell74 = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTableCell76 = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTableCell77 = new DevExpress.XtraReports.UI.XRTableCell();
-            this.stone_param = new DevExpress.XtraReports.UI.XRTableCell();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable1)).BeginInit();
@@ -615,7 +615,7 @@ namespace ArgusCR1029.Manufacturing
             this.startDate_lbl.Name = "startDate_lbl";
             this.startDate_lbl.StylePriority.UseFont = false;
             this.startDate_lbl.Text = "Start Date:";
-            this.startDate_lbl.Weight = 0.53714279650962149D;
+            this.startDate_lbl.Weight = 0.60261896110325741D;
             // 
             // startDate_param
             // 
@@ -623,7 +623,7 @@ namespace ArgusCR1029.Manufacturing
             this.startDate_param.Multiline = true;
             this.startDate_param.Name = "startDate_param";
             this.startDate_param.StylePriority.UseFont = false;
-            this.startDate_param.Weight = 1.257143004969173D;
+            this.startDate_param.Weight = 1.1916668403755371D;
             // 
             // xrTableRow6
             // 
@@ -640,7 +640,7 @@ namespace ArgusCR1029.Manufacturing
             this.endDate_lbl.Name = "endDate_lbl";
             this.endDate_lbl.StylePriority.UseFont = false;
             this.endDate_lbl.Text = "End Date:";
-            this.endDate_lbl.Weight = 0.53714279650962149D;
+            this.endDate_lbl.Weight = 0.60261896110325741D;
             // 
             // endDate_param
             // 
@@ -648,7 +648,7 @@ namespace ArgusCR1029.Manufacturing
             this.endDate_param.Multiline = true;
             this.endDate_param.Name = "endDate_param";
             this.endDate_param.StylePriority.UseFont = false;
-            this.endDate_param.Weight = 1.257143004969173D;
+            this.endDate_param.Weight = 1.1916668403755371D;
             // 
             // xrTableRow1
             // 
@@ -665,7 +665,7 @@ namespace ArgusCR1029.Manufacturing
             this.xrTableCell1.Name = "xrTableCell1";
             this.xrTableCell1.StylePriority.UseFont = false;
             this.xrTableCell1.Text = "Item Category:";
-            this.xrTableCell1.Weight = 0.53714275291307922D;
+            this.xrTableCell1.Weight = 0.60261878671708824D;
             // 
             // itemCategory_param
             // 
@@ -673,7 +673,7 @@ namespace ArgusCR1029.Manufacturing
             this.itemCategory_param.Multiline = true;
             this.itemCategory_param.Name = "itemCategory_param";
             this.itemCategory_param.StylePriority.UseFont = false;
-            this.itemCategory_param.Weight = 1.2571430485657154D;
+            this.itemCategory_param.Weight = 1.1916670147617063D;
             // 
             // xrTableRow3
             // 
@@ -690,7 +690,7 @@ namespace ArgusCR1029.Manufacturing
             this.xrTableCell3.Name = "xrTableCell3";
             this.xrTableCell3.StylePriority.UseFont = false;
             this.xrTableCell3.Text = "Item Group:";
-            this.xrTableCell3.Weight = 0.53714279650962149D;
+            this.xrTableCell3.Weight = 0.60261896110325741D;
             // 
             // itemGroup_param
             // 
@@ -698,7 +698,7 @@ namespace ArgusCR1029.Manufacturing
             this.itemGroup_param.Multiline = true;
             this.itemGroup_param.Name = "itemGroup_param";
             this.itemGroup_param.StylePriority.UseFont = false;
-            this.itemGroup_param.Weight = 1.257143004969173D;
+            this.itemGroup_param.Weight = 1.1916668403755371D;
             // 
             // xrTableRow4
             // 
@@ -715,7 +715,7 @@ namespace ArgusCR1029.Manufacturing
             this.xrTableCell5.Name = "xrTableCell5";
             this.xrTableCell5.StylePriority.UseFont = false;
             this.xrTableCell5.Text = "Production Line:";
-            this.xrTableCell5.Weight = 0.62047619202125037D;
+            this.xrTableCell5.Weight = 0.60261896110325741D;
             // 
             // productionLine_param
             // 
@@ -723,7 +723,7 @@ namespace ArgusCR1029.Manufacturing
             this.productionLine_param.Multiline = true;
             this.productionLine_param.Name = "productionLine_param";
             this.productionLine_param.StylePriority.UseFont = false;
-            this.productionLine_param.Weight = 1.1738096094575441D;
+            this.productionLine_param.Weight = 1.1916668403755371D;
             // 
             // xrTableRow7
             // 
@@ -740,7 +740,7 @@ namespace ArgusCR1029.Manufacturing
             this.xrTableCell7.Name = "xrTableCell7";
             this.xrTableCell7.StylePriority.UseFont = false;
             this.xrTableCell7.Text = "Item:";
-            this.xrTableCell7.Weight = 0.31095233839181013D;
+            this.xrTableCell7.Weight = 0.6026189611032573D;
             // 
             // item_param
             // 
@@ -748,7 +748,7 @@ namespace ArgusCR1029.Manufacturing
             this.item_param.Multiline = true;
             this.item_param.Name = "item_param";
             this.item_param.StylePriority.UseFont = false;
-            this.item_param.Weight = 1.4833334630869843D;
+            this.item_param.Weight = 1.1916668403755371D;
             // 
             // xrTableRow8
             // 
@@ -765,7 +765,7 @@ namespace ArgusCR1029.Manufacturing
             this.xrTableCell2.Name = "xrTableCell2";
             this.xrTableCell2.StylePriority.UseFont = false;
             this.xrTableCell2.Text = "Design:";
-            this.xrTableCell2.Weight = 0.31095233839181013D;
+            this.xrTableCell2.Weight = 0.6026189611032573D;
             // 
             // design_param
             // 
@@ -773,7 +773,7 @@ namespace ArgusCR1029.Manufacturing
             this.design_param.Multiline = true;
             this.design_param.Name = "design_param";
             this.design_param.StylePriority.UseFont = false;
-            this.design_param.Weight = 1.4833334630869843D;
+            this.design_param.Weight = 1.1916668403755371D;
             // 
             // xrTable1
             // 
@@ -854,7 +854,7 @@ namespace ArgusCR1029.Manufacturing
             this.xrTableCell10.Name = "xrTableCell10";
             this.xrTableCell10.StylePriority.UseFont = false;
             this.xrTableCell10.Text = "Collection:";
-            this.xrTableCell10.Weight = 0.53714275291307922D;
+            this.xrTableCell10.Weight = 0.72761826963293941D;
             // 
             // collection_param
             // 
@@ -862,7 +862,7 @@ namespace ArgusCR1029.Manufacturing
             this.collection_param.Multiline = true;
             this.collection_param.Name = "collection_param";
             this.collection_param.StylePriority.UseFont = false;
-            this.collection_param.Weight = 1.2571430485657154D;
+            this.collection_param.Weight = 1.0666675318458552D;
             // 
             // xrTableRow12
             // 
@@ -879,7 +879,7 @@ namespace ArgusCR1029.Manufacturing
             this.xrTableCell12.Name = "xrTableCell12";
             this.xrTableCell12.StylePriority.UseFont = false;
             this.xrTableCell12.Text = "Brand:";
-            this.xrTableCell12.Weight = 0.53714279650962149D;
+            this.xrTableCell12.Weight = 0.7276182696329393D;
             // 
             // brand_param
             // 
@@ -887,7 +887,7 @@ namespace ArgusCR1029.Manufacturing
             this.brand_param.Multiline = true;
             this.brand_param.Name = "brand_param";
             this.brand_param.StylePriority.UseFont = false;
-            this.brand_param.Weight = 1.257143004969173D;
+            this.brand_param.Weight = 1.0666675318458552D;
             // 
             // xrTableRow13
             // 
@@ -904,7 +904,7 @@ namespace ArgusCR1029.Manufacturing
             this.xrTableCell14.Name = "xrTableCell14";
             this.xrTableCell14.StylePriority.UseFont = false;
             this.xrTableCell14.Text = "Color Stone:";
-            this.xrTableCell14.Weight = 0.62047619202125037D;
+            this.xrTableCell14.Weight = 0.7276182696329393D;
             // 
             // colorStone_param
             // 
@@ -912,7 +912,7 @@ namespace ArgusCR1029.Manufacturing
             this.colorStone_param.Multiline = true;
             this.colorStone_param.Name = "colorStone_param";
             this.colorStone_param.StylePriority.UseFont = false;
-            this.colorStone_param.Weight = 1.1738096094575441D;
+            this.colorStone_param.Weight = 1.0666675318458552D;
             // 
             // xrTableRow14
             // 
@@ -929,11 +929,19 @@ namespace ArgusCR1029.Manufacturing
             this.xrTableCell16.Name = "xrTableCell16";
             this.xrTableCell16.StylePriority.UseFont = false;
             this.xrTableCell16.Text = "Stone:";
-            this.xrTableCell16.Weight = 0.31095233839181013D;
+            this.xrTableCell16.Weight = 0.72761826963293919D;
+            // 
+            // stone_param
+            // 
+            this.stone_param.Font = new System.Drawing.Font("Arial", 9F);
+            this.stone_param.Multiline = true;
+            this.stone_param.Name = "stone_param";
+            this.stone_param.StylePriority.UseFont = false;
+            this.stone_param.Weight = 1.0666675318458552D;
             // 
             // title_lbl
             // 
-            this.title_lbl.Font = new System.Drawing.Font("Times New Roman", 21F, System.Drawing.FontStyle.Bold);
+            this.title_lbl.Font = new System.Drawing.Font("Times New Roman", 21F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
             this.title_lbl.LocationFloat = new DevExpress.Utils.PointFloat(330.1665F, 0.08331934F);
             this.title_lbl.Multiline = true;
             this.title_lbl.Name = "title_lbl";
@@ -1799,14 +1807,6 @@ namespace ArgusCR1029.Manufacturing
             this.xrTableCell77.StylePriority.UseFont = false;
             this.xrTableCell77.Text = "PCT Add";
             this.xrTableCell77.Weight = 0.76607367290419892D;
-            // 
-            // stone_param
-            // 
-            this.stone_param.Font = new System.Drawing.Font("Arial", 9F);
-            this.stone_param.Multiline = true;
-            this.stone_param.Name = "stone_param";
-            this.stone_param.StylePriority.UseFont = false;
-            this.stone_param.Weight = 1.4833334630869843D;
             // 
             // MF416b
             // 
