@@ -142,7 +142,7 @@ namespace ArgusCR1029.Inventory
             this.xrTable6.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow7,
             this.xrTableRow8});
-            this.xrTable6.SizeF = new System.Drawing.SizeF(300F, 41.4861F);
+            this.xrTable6.SizeF = new System.Drawing.SizeF(273.9583F, 41.4861F);
             // 
             // xrTableRow7
             // 
@@ -159,7 +159,7 @@ namespace ArgusCR1029.Inventory
             this.asOfDate_lbl.Name = "asOfDate_lbl";
             this.asOfDate_lbl.StylePriority.UseFont = false;
             this.asOfDate_lbl.Text = "As Of Date:";
-            this.asOfDate_lbl.Weight = 0.64673449980197284D;
+            this.asOfDate_lbl.Weight = 0.60204618939525145D;
             // 
             // asOfDate_param
             // 
@@ -167,7 +167,7 @@ namespace ArgusCR1029.Inventory
             this.asOfDate_param.Multiline = true;
             this.asOfDate_param.Name = "asOfDate_param";
             this.asOfDate_param.StylePriority.UseFont = false;
-            this.asOfDate_param.Weight = 1.7953694074858264D;
+            this.asOfDate_param.Weight = 1.628069241668439D;
             // 
             // xrTableRow8
             // 
@@ -184,7 +184,7 @@ namespace ArgusCR1029.Inventory
             this.site_lbl.Name = "site_lbl";
             this.site_lbl.StylePriority.UseFont = false;
             this.site_lbl.Text = "Site:";
-            this.site_lbl.Weight = 0.64673499635921727D;
+            this.site_lbl.Weight = 0.60204668595249589D;
             // 
             // site_param
             // 
@@ -192,7 +192,7 @@ namespace ArgusCR1029.Inventory
             this.site_param.Multiline = true;
             this.site_param.Name = "site_param";
             this.site_param.StylePriority.UseFont = false;
-            this.site_param.Weight = 1.795368910928582D;
+            this.site_param.Weight = 1.6280687451111946D;
             // 
             // title_lbl
             // 
@@ -426,12 +426,14 @@ namespace ArgusCR1029.Inventory
             // 
             this.pagesNumber_lbl.BackColor = System.Drawing.Color.White;
             this.pagesNumber_lbl.Font = new System.Drawing.Font("Arial", 8F);
+            this.pagesNumber_lbl.ForeColor = System.Drawing.Color.DimGray;
             this.pagesNumber_lbl.LocationFloat = new DevExpress.Utils.PointFloat(1104.976F, 12.5F);
             this.pagesNumber_lbl.Name = "pagesNumber_lbl";
             this.pagesNumber_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.pagesNumber_lbl.SizeF = new System.Drawing.SizeF(142.1898F, 22.99995F);
             this.pagesNumber_lbl.StylePriority.UseBackColor = false;
             this.pagesNumber_lbl.StylePriority.UseFont = false;
+            this.pagesNumber_lbl.StylePriority.UseForeColor = false;
             this.pagesNumber_lbl.StylePriority.UseTextAlignment = false;
             this.pagesNumber_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             this.pagesNumber_lbl.TextFormatString = "Page {0} of {1}";
@@ -439,12 +441,14 @@ namespace ArgusCR1029.Inventory
             // printSignature
             // 
             this.printSignature.Font = new System.Drawing.Font("Arial", 8F);
+            this.printSignature.ForeColor = System.Drawing.Color.DimGray;
             this.printSignature.LocationFloat = new DevExpress.Utils.PointFloat(12.5F, 12.49997F);
             this.printSignature.Multiline = true;
             this.printSignature.Name = "printSignature";
             this.printSignature.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.printSignature.SizeF = new System.Drawing.SizeF(1019.508F, 23F);
+            this.printSignature.SizeF = new System.Drawing.SizeF(785.1331F, 23F);
             this.printSignature.StylePriority.UseFont = false;
+            this.printSignature.StylePriority.UseForeColor = false;
             this.printSignature.StylePriority.UseTextAlignment = false;
             this.printSignature.Text = "printSignature";
             this.printSignature.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
