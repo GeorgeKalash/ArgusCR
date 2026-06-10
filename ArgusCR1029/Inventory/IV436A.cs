@@ -19,7 +19,7 @@ namespace ArgusCR1029.Inventory
 
         protected override void OnBeforePrint(PrintEventArgs e)
         {
-            SharedClasses.JsonProtocol.QryStructure<ArgusDS.Inventory.Reports.IV436> webObject = deserializeList<ArgusDS.Inventory.Reports.IV436>();
+            SharedClasses.JsonProtocol.QryStructure<ArgusDS.Inventory.Reports.IV436b> webObject = deserializeList<ArgusDS.Inventory.Reports.IV436b>();
             DataSource = webObject.list;
             crossTab.DataSource = webObject.list;
             xrChart.DataSource = webObject.list;
