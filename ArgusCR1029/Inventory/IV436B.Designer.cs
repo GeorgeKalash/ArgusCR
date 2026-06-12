@@ -1,7 +1,7 @@
 ﻿
 namespace ArgusCR1029.Inventory
 {
-    partial class IV436A
+    partial class IV436B
     {
         /// <summary>
         /// Required designer variable.
@@ -30,8 +30,10 @@ namespace ArgusCR1029.Inventory
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition crossTabColumnDefinition1 = new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(91.66666F);
-            DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition crossTabColumnDefinition2 = new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(130.2083F);
+            DevExpress.XtraCharts.XYDiagram xyDiagram1 = new DevExpress.XtraCharts.XYDiagram();
+            DevExpress.XtraCharts.StackedBarSeriesView stackedBarSeriesView1 = new DevExpress.XtraCharts.StackedBarSeriesView();
+            DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition crossTabColumnDefinition1 = new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(100F);
+            DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition crossTabColumnDefinition2 = new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(100F);
             DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition crossTabColumnDefinition3 = new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(100F);
             DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition crossTabColumnDefinition4 = new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(100F);
             DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition crossTabColumnDefinition5 = new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(100F);
@@ -42,16 +44,15 @@ namespace ArgusCR1029.Inventory
             DevExpress.XtraReports.UI.CrossTab.CrossTabRowField crossTabRowField1 = new DevExpress.XtraReports.UI.CrossTab.CrossTabRowField();
             DevExpress.XtraReports.UI.CrossTab.CrossTabRowField crossTabRowField2 = new DevExpress.XtraReports.UI.CrossTab.CrossTabRowField();
             DevExpress.XtraReports.UI.CrossTab.CrossTabRowField crossTabRowField3 = new DevExpress.XtraReports.UI.CrossTab.CrossTabRowField();
-            DevExpress.XtraCharts.XYDiagram xyDiagram1 = new DevExpress.XtraCharts.XYDiagram();
-            DevExpress.XtraCharts.Series series1 = new DevExpress.XtraCharts.Series();
-            DevExpress.XtraCharts.StackedBarSeriesView stackedBarSeriesView1 = new DevExpress.XtraCharts.StackedBarSeriesView();
             this.objectDataSource1 = new DevExpress.DataAccess.ObjectBinding.ObjectDataSource(this.components);
             this.crossTabGeneralStyle = new DevExpress.XtraReports.UI.XRControlStyle();
             this.crossTabDataStyle = new DevExpress.XtraReports.UI.XRControlStyle();
             this.crossTabHeaderStyle = new DevExpress.XtraReports.UI.XRControlStyle();
             this.crossTabTotalStyle = new DevExpress.XtraReports.UI.XRControlStyle();
             this.ReportHeader = new DevExpress.XtraReports.UI.ReportHeaderBand();
-            this.title_lbl = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrChart = new DevExpress.XtraReports.UI.XRChart();
+            this.objectDataSource2 = new DevExpress.DataAccess.ObjectBinding.ObjectDataSource(this.components);
+            this.logo_data = new DevExpress.XtraReports.UI.XRPictureBox();
             this.xrTable6 = new DevExpress.XtraReports.UI.XRTable();
             this.xrTableRow7 = new DevExpress.XtraReports.UI.XRTableRow();
             this.asOfDate_lbl = new DevExpress.XtraReports.UI.XRTableCell();
@@ -59,7 +60,7 @@ namespace ArgusCR1029.Inventory
             this.xrTableRow8 = new DevExpress.XtraReports.UI.XRTableRow();
             this.site_lbl = new DevExpress.XtraReports.UI.XRTableCell();
             this.site_param = new DevExpress.XtraReports.UI.XRTableCell();
-            this.logo_data = new DevExpress.XtraReports.UI.XRPictureBox();
+            this.title_lbl = new DevExpress.XtraReports.UI.XRLabel();
             this.crossTab = new DevExpress.XtraReports.UI.XRCrossTab();
             this.xrCrossTabCell1 = new DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell();
             this.xrCrossTabCell2 = new DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell();
@@ -85,25 +86,21 @@ namespace ArgusCR1029.Inventory
             this.BottomMargin = new DevExpress.XtraReports.UI.BottomMarginBand();
             this.TitleStyle = new DevExpress.XtraReports.UI.XRControlStyle();
             this.PageFooter = new DevExpress.XtraReports.UI.PageFooterBand();
-            this.pagesNumber_lbl = new DevExpress.XtraReports.UI.XRPageInfo();
             this.printSignature = new DevExpress.XtraReports.UI.XRLabel();
-            this.objectDataSource2 = new DevExpress.DataAccess.ObjectBinding.ObjectDataSource(this.components);
-            this.objectDataSource3 = new DevExpress.DataAccess.ObjectBinding.ObjectDataSource(this.components);
-            this.xrChart = new DevExpress.XtraReports.UI.XRChart();
+            this.pagesNumber_lbl = new DevExpress.XtraReports.UI.XRPageInfo();
             ((System.ComponentModel.ISupportInitialize)(this.objectDataSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.xrTable6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.crossTab)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.objectDataSource2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.objectDataSource3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrChart)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(xyDiagram1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(series1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(stackedBarSeriesView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.objectDataSource2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.xrTable6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.crossTab)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             // 
             // objectDataSource1
             // 
-            this.objectDataSource1.DataSource = typeof(ArgusDS.Inventory.Reports.IV436);
+            this.objectDataSource1.DataMember = "items";
+            this.objectDataSource1.DataSource = typeof(ArgusDS.Inventory.Reports.IV436b);
             this.objectDataSource1.Name = "objectDataSource1";
             // 
             // crossTabGeneralStyle
@@ -140,22 +137,51 @@ namespace ArgusCR1029.Inventory
             // 
             this.ReportHeader.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
             this.xrChart,
-            this.title_lbl,
-            this.xrTable6,
             this.logo_data,
+            this.xrTable6,
+            this.title_lbl,
             this.crossTab});
-            this.ReportHeader.HeightF = 525F;
+            this.ReportHeader.HeightF = 525.2501F;
             this.ReportHeader.Name = "ReportHeader";
             // 
-            // title_lbl
+            // xrChart
             // 
-            this.title_lbl.LocationFloat = new DevExpress.Utils.PointFloat(118.0832F, 0F);
-            this.title_lbl.Name = "title_lbl";
-            this.title_lbl.SizeF = new System.Drawing.SizeF(1149.917F, 30.01301F);
-            this.title_lbl.StyleName = "TitleStyle";
-            this.title_lbl.StylePriority.UseTextAlignment = false;
-            this.title_lbl.Text = "Site Point In Time By Cost";
-            this.title_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopCenter;
+            this.xrChart.BorderColor = System.Drawing.Color.Black;
+            this.xrChart.Borders = DevExpress.XtraPrinting.BorderSide.None;
+            this.xrChart.DataSource = this.objectDataSource2;
+            xyDiagram1.AxisX.VisibleInPanesSerializable = "-1";
+            xyDiagram1.AxisY.VisibleInPanesSerializable = "-1";
+            xyDiagram1.DefaultPane.EnableAxisXScrolling = DevExpress.Utils.DefaultBoolean.False;
+            xyDiagram1.DefaultPane.EnableAxisXZooming = DevExpress.Utils.DefaultBoolean.False;
+            xyDiagram1.DefaultPane.EnableAxisYScrolling = DevExpress.Utils.DefaultBoolean.False;
+            xyDiagram1.DefaultPane.EnableAxisYZooming = DevExpress.Utils.DefaultBoolean.False;
+            this.xrChart.Diagram = xyDiagram1;
+            this.xrChart.Legend.Name = "Default Legend";
+            this.xrChart.Legend.Visibility = DevExpress.Utils.DefaultBoolean.False;
+            this.xrChart.LocationFloat = new DevExpress.Utils.PointFloat(12.49999F, 126.1668F);
+            this.xrChart.Name = "xrChart";
+            this.xrChart.SeriesDataMember = "cost";
+            this.xrChart.SeriesSerializable = new DevExpress.XtraCharts.Series[0];
+            this.xrChart.SeriesTemplate.ArgumentDataMember = "monthName";
+            this.xrChart.SeriesTemplate.LabelsVisibility = DevExpress.Utils.DefaultBoolean.True;
+            this.xrChart.SeriesTemplate.SeriesDataMember = "cost";
+            this.xrChart.SeriesTemplate.ValueDataMembersSerializable = "cost";
+            stackedBarSeriesView1.Color = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(179)))), ((int)(((byte)(226)))));
+            this.xrChart.SeriesTemplate.View = stackedBarSeriesView1;
+            this.xrChart.SizeF = new System.Drawing.SizeF(950F, 261.4583F);
+            // 
+            // objectDataSource2
+            // 
+            this.objectDataSource2.DataMember = "diagram";
+            this.objectDataSource2.DataSource = typeof(ArgusDS.Inventory.Reports.IV436b);
+            this.objectDataSource2.Name = "objectDataSource2";
+            // 
+            // logo_data
+            // 
+            this.logo_data.LocationFloat = new DevExpress.Utils.PointFloat(12.5F, 0F);
+            this.logo_data.Name = "logo_data";
+            this.logo_data.SizeF = new System.Drawing.SizeF(105.5832F, 113F);
+            this.logo_data.Sizing = DevExpress.XtraPrinting.ImageSizeMode.ZoomImage;
             // 
             // xrTable6
             // 
@@ -217,12 +243,15 @@ namespace ArgusCR1029.Inventory
             this.site_param.StylePriority.UseFont = false;
             this.site_param.Weight = 1.6280687451111946D;
             // 
-            // logo_data
+            // title_lbl
             // 
-            this.logo_data.LocationFloat = new DevExpress.Utils.PointFloat(12.5F, 0F);
-            this.logo_data.Name = "logo_data";
-            this.logo_data.SizeF = new System.Drawing.SizeF(105.5832F, 113F);
-            this.logo_data.Sizing = DevExpress.XtraPrinting.ImageSizeMode.ZoomImage;
+            this.title_lbl.LocationFloat = new DevExpress.Utils.PointFloat(118.0832F, 0F);
+            this.title_lbl.Name = "title_lbl";
+            this.title_lbl.SizeF = new System.Drawing.SizeF(1180.917F, 30.01301F);
+            this.title_lbl.StyleName = "TitleStyle";
+            this.title_lbl.StylePriority.UseTextAlignment = false;
+            this.title_lbl.Text = "Site Point In Time By Cost";
+            this.title_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopCenter;
             // 
             // crossTab
             // 
@@ -269,7 +298,7 @@ namespace ArgusCR1029.Inventory
             this.crossTab.DataSource = this.objectDataSource1;
             this.crossTab.GeneralStyleName = "crossTabGeneralStyle";
             this.crossTab.HeaderAreaStyleName = "crossTabHeaderStyle";
-            this.crossTab.LocationFloat = new DevExpress.Utils.PointFloat(12.5F, 400F);
+            this.crossTab.LocationFloat = new DevExpress.Utils.PointFloat(12.5F, 400.2502F);
             this.crossTab.Name = "crossTab";
             crossTabRowDefinition1.Visible = false;
             crossTabRowDefinition2.Visible = false;
@@ -280,7 +309,6 @@ namespace ArgusCR1029.Inventory
             crossTabRowDefinition2,
             new DevExpress.XtraReports.UI.CrossTab.CrossTabRowDefinition(25F)});
             crossTabRowField1.FieldName = "categoryRef";
-            crossTabRowField1.SortOrder = DevExpress.XtraReports.UI.XRColumnSortOrder.None;
             crossTabRowField2.FieldName = "categoryName";
             crossTabRowField2.SortOrder = DevExpress.XtraReports.UI.XRColumnSortOrder.None;
             crossTabRowField3.FieldName = "groupName";
@@ -289,11 +317,12 @@ namespace ArgusCR1029.Inventory
             crossTabRowField1,
             crossTabRowField2,
             crossTabRowField3});
-            this.crossTab.SizeF = new System.Drawing.SizeF(521.875F, 125F);
+            this.crossTab.SizeF = new System.Drawing.SizeF(500F, 125F);
             this.crossTab.TotalAreaStyleName = "crossTabTotalStyle";
             // 
             // xrCrossTabCell1
             // 
+            this.xrCrossTabCell1.BackColor = System.Drawing.Color.WhiteSmoke;
             this.xrCrossTabCell1.BorderColor = System.Drawing.Color.Black;
             this.xrCrossTabCell1.ColumnIndex = 0;
             this.xrCrossTabCell1.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Bold);
@@ -304,6 +333,7 @@ namespace ArgusCR1029.Inventory
             // 
             // xrCrossTabCell2
             // 
+            this.xrCrossTabCell2.BackColor = System.Drawing.Color.WhiteSmoke;
             this.xrCrossTabCell2.BorderColor = System.Drawing.Color.Black;
             this.xrCrossTabCell2.ColumnIndex = 1;
             this.xrCrossTabCell2.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Bold);
@@ -314,6 +344,7 @@ namespace ArgusCR1029.Inventory
             // 
             // xrCrossTabCell3
             // 
+            this.xrCrossTabCell3.BackColor = System.Drawing.Color.WhiteSmoke;
             this.xrCrossTabCell3.BorderColor = System.Drawing.Color.Black;
             this.xrCrossTabCell3.ColumnIndex = 2;
             this.xrCrossTabCell3.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Bold);
@@ -334,6 +365,7 @@ namespace ArgusCR1029.Inventory
             // 
             // xrCrossTabCell5
             // 
+            this.xrCrossTabCell5.BackColor = System.Drawing.Color.WhiteSmoke;
             this.xrCrossTabCell5.BorderColor = System.Drawing.Color.Black;
             this.xrCrossTabCell5.ColumnIndex = 3;
             this.xrCrossTabCell5.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Bold);
@@ -343,6 +375,7 @@ namespace ArgusCR1029.Inventory
             // 
             // xrCrossTabCell6
             // 
+            this.xrCrossTabCell6.BackColor = System.Drawing.Color.WhiteSmoke;
             this.xrCrossTabCell6.BorderColor = System.Drawing.Color.Black;
             this.xrCrossTabCell6.ColumnIndex = 4;
             this.xrCrossTabCell6.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Bold);
@@ -399,7 +432,6 @@ namespace ArgusCR1029.Inventory
             // 
             // xrCrossTabCell12
             // 
-            this.xrCrossTabCell12.BorderColor = System.Drawing.Color.Black;
             this.xrCrossTabCell12.ColumnIndex = 0;
             this.xrCrossTabCell12.ColumnSpan = 3;
             this.xrCrossTabCell12.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Bold);
@@ -409,6 +441,7 @@ namespace ArgusCR1029.Inventory
             // 
             // xrCrossTabCell13
             // 
+            this.xrCrossTabCell13.BackColor = System.Drawing.Color.WhiteSmoke;
             this.xrCrossTabCell13.BorderColor = System.Drawing.Color.Black;
             this.xrCrossTabCell13.ColumnIndex = 0;
             this.xrCrossTabCell13.ColumnSpan = 3;
@@ -426,7 +459,6 @@ namespace ArgusCR1029.Inventory
             // 
             // xrCrossTabCell15
             // 
-            this.xrCrossTabCell15.BorderColor = System.Drawing.Color.Black;
             this.xrCrossTabCell15.ColumnIndex = 3;
             this.xrCrossTabCell15.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Bold);
             this.xrCrossTabCell15.Name = "xrCrossTabCell15";
@@ -434,6 +466,7 @@ namespace ArgusCR1029.Inventory
             // 
             // xrCrossTabCell16
             // 
+            this.xrCrossTabCell16.BackColor = System.Drawing.Color.WhiteSmoke;
             this.xrCrossTabCell16.BorderColor = System.Drawing.Color.Black;
             this.xrCrossTabCell16.ColumnIndex = 3;
             this.xrCrossTabCell16.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Bold);
@@ -450,7 +483,6 @@ namespace ArgusCR1029.Inventory
             // 
             // xrCrossTabCell18
             // 
-            this.xrCrossTabCell18.BorderColor = System.Drawing.Color.Black;
             this.xrCrossTabCell18.ColumnIndex = 4;
             this.xrCrossTabCell18.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Bold);
             this.xrCrossTabCell18.Name = "xrCrossTabCell18";
@@ -458,6 +490,7 @@ namespace ArgusCR1029.Inventory
             // 
             // xrCrossTabCell19
             // 
+            this.xrCrossTabCell19.BackColor = System.Drawing.Color.WhiteSmoke;
             this.xrCrossTabCell19.BorderColor = System.Drawing.Color.Black;
             this.xrCrossTabCell19.ColumnIndex = 4;
             this.xrCrossTabCell19.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Bold);
@@ -489,10 +522,25 @@ namespace ArgusCR1029.Inventory
             // PageFooter
             // 
             this.PageFooter.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
-            this.pagesNumber_lbl,
-            this.printSignature});
+            this.printSignature,
+            this.pagesNumber_lbl});
             this.PageFooter.HeightF = 35.49997F;
             this.PageFooter.Name = "PageFooter";
+            // 
+            // printSignature
+            // 
+            this.printSignature.Font = new System.Drawing.Font("Arial", 8F);
+            this.printSignature.ForeColor = System.Drawing.Color.DimGray;
+            this.printSignature.LocationFloat = new DevExpress.Utils.PointFloat(12.5F, 12.49997F);
+            this.printSignature.Multiline = true;
+            this.printSignature.Name = "printSignature";
+            this.printSignature.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.printSignature.SizeF = new System.Drawing.SizeF(785.1331F, 23F);
+            this.printSignature.StylePriority.UseFont = false;
+            this.printSignature.StylePriority.UseForeColor = false;
+            this.printSignature.StylePriority.UseTextAlignment = false;
+            this.printSignature.Text = "printSignature";
+            this.printSignature.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
             // 
             // pagesNumber_lbl
             // 
@@ -510,73 +558,7 @@ namespace ArgusCR1029.Inventory
             this.pagesNumber_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             this.pagesNumber_lbl.TextFormatString = "Page {0} of {1}";
             // 
-            // printSignature
-            // 
-            this.printSignature.Font = new System.Drawing.Font("Arial", 8F);
-            this.printSignature.ForeColor = System.Drawing.Color.DimGray;
-            this.printSignature.LocationFloat = new DevExpress.Utils.PointFloat(12.5F, 12.49997F);
-            this.printSignature.Multiline = true;
-            this.printSignature.Name = "printSignature";
-            this.printSignature.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.printSignature.SizeF = new System.Drawing.SizeF(785.1331F, 23F);
-            this.printSignature.StylePriority.UseFont = false;
-            this.printSignature.StylePriority.UseForeColor = false;
-            this.printSignature.StylePriority.UseTextAlignment = false;
-            this.printSignature.Text = "printSignature";
-            this.printSignature.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
-            // 
-            // objectDataSource2
-            // 
-            this.objectDataSource2.DataSource = typeof(ArgusDS.Inventory.Reports.IV436);
-            this.objectDataSource2.Name = "objectDataSource2";
-            // 
-            // objectDataSource3
-            // 
-            this.objectDataSource3.DataSource = typeof(ArgusDS.Inventory.Reports.IV436);
-            this.objectDataSource3.Name = "objectDataSource3";
-            // 
-            // xrChart
-            // 
-            this.xrChart.BorderColor = System.Drawing.Color.Black;
-            this.xrChart.Borders = DevExpress.XtraPrinting.BorderSide.None;
-            this.xrChart.DataSource = this.objectDataSource3;
-            xyDiagram1.AxisX.MinorCount = 2;
-            xyDiagram1.AxisX.Tickmarks.MinorVisible = false;
-            xyDiagram1.AxisX.Title.Visibility = DevExpress.Utils.DefaultBoolean.Default;
-            xyDiagram1.AxisX.Visibility = DevExpress.Utils.DefaultBoolean.True;
-            xyDiagram1.AxisX.VisibleInPanesSerializable = "-1";
-            xyDiagram1.AxisX.VisualRange.Auto = false;
-            xyDiagram1.AxisX.VisualRange.MaxValueSerializable = "J";
-            xyDiagram1.AxisX.VisualRange.MinValueSerializable = "A";
-            xyDiagram1.AxisX.WholeRange.Auto = false;
-            xyDiagram1.AxisX.WholeRange.MaxValueSerializable = "J";
-            xyDiagram1.AxisX.WholeRange.MinValueSerializable = "A";
-            xyDiagram1.AxisY.Visibility = DevExpress.Utils.DefaultBoolean.True;
-            xyDiagram1.AxisY.VisibleInPanesSerializable = "-1";
-            xyDiagram1.DefaultPane.EnableAxisXScrolling = DevExpress.Utils.DefaultBoolean.False;
-            xyDiagram1.DefaultPane.EnableAxisXZooming = DevExpress.Utils.DefaultBoolean.False;
-            xyDiagram1.DefaultPane.EnableAxisYScrolling = DevExpress.Utils.DefaultBoolean.False;
-            xyDiagram1.DefaultPane.EnableAxisYZooming = DevExpress.Utils.DefaultBoolean.False;
-            this.xrChart.Diagram = xyDiagram1;
-            this.xrChart.Legend.Name = "Default Legend";
-            this.xrChart.Legend.Visibility = DevExpress.Utils.DefaultBoolean.False;
-            this.xrChart.LocationFloat = new DevExpress.Utils.PointFloat(12.5F, 123.5F);
-            this.xrChart.Name = "xrChart";
-            this.xrChart.PaletteName = "Blue II";
-            this.xrChart.SeriesDataMember = "cost";
-            series1.ArgumentDataMember = "monthName";
-            series1.DataSource = this.objectDataSource3;
-            series1.Name = "Series 1";
-            series1.ValueDataMembersSerializable = "cost";
-            this.xrChart.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
-        series1};
-            this.xrChart.SeriesTemplate.ArgumentDataMember = "monthName";
-            this.xrChart.SeriesTemplate.SeriesDataMember = "cost";
-            this.xrChart.SeriesTemplate.ValueDataMembersSerializable = "cost";
-            this.xrChart.SeriesTemplate.View = stackedBarSeriesView1;
-            this.xrChart.SizeF = new System.Drawing.SizeF(844.7917F, 260.4167F);
-            // 
-            // IV436A
+            // IV436B
             // 
             this.Bands.AddRange(new DevExpress.XtraReports.UI.Band[] {
             this.ReportHeader,
@@ -586,8 +568,7 @@ namespace ArgusCR1029.Inventory
             this.PageFooter});
             this.ComponentStorage.AddRange(new System.ComponentModel.IComponent[] {
             this.objectDataSource1,
-            this.objectDataSource2,
-            this.objectDataSource3});
+            this.objectDataSource2});
             this.Font = new System.Drawing.Font("Arial", 9.75F);
             this.HorizontalContentSplitting = DevExpress.XtraPrinting.HorizontalContentSplitting.Smart;
             this.Landscape = true;
@@ -604,14 +585,12 @@ namespace ArgusCR1029.Inventory
             this.Version = "20.1";
             this.VerticalContentSplitting = DevExpress.XtraPrinting.VerticalContentSplitting.Smart;
             ((System.ComponentModel.ISupportInitialize)(this.objectDataSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.xrTable6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.crossTab)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.objectDataSource2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.objectDataSource3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(xyDiagram1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(series1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(stackedBarSeriesView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrChart)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.objectDataSource2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.xrTable6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.crossTab)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
 
         }
@@ -648,10 +627,7 @@ namespace ArgusCR1029.Inventory
         private DevExpress.XtraReports.UI.TopMarginBand TopMargin;
         private DevExpress.XtraReports.UI.BottomMarginBand BottomMargin;
         private DevExpress.XtraReports.UI.XRControlStyle TitleStyle;
-        private DevExpress.XtraReports.UI.PageFooterBand PageFooter;
-        private DevExpress.XtraReports.UI.XRLabel printSignature;
-        private DevExpress.XtraReports.UI.XRPageInfo pagesNumber_lbl;
-        private DevExpress.XtraReports.UI.XRLabel title_lbl;
+        private DevExpress.XtraReports.UI.XRPictureBox logo_data;
         private DevExpress.XtraReports.UI.XRTable xrTable6;
         private DevExpress.XtraReports.UI.XRTableRow xrTableRow7;
         private DevExpress.XtraReports.UI.XRTableCell asOfDate_lbl;
@@ -659,9 +635,11 @@ namespace ArgusCR1029.Inventory
         private DevExpress.XtraReports.UI.XRTableRow xrTableRow8;
         private DevExpress.XtraReports.UI.XRTableCell site_lbl;
         private DevExpress.XtraReports.UI.XRTableCell site_param;
-        private DevExpress.XtraReports.UI.XRPictureBox logo_data;
-        private DevExpress.DataAccess.ObjectBinding.ObjectDataSource objectDataSource3;
-        private DevExpress.DataAccess.ObjectBinding.ObjectDataSource objectDataSource2;
+        private DevExpress.XtraReports.UI.XRLabel title_lbl;
+        private DevExpress.XtraReports.UI.PageFooterBand PageFooter;
+        private DevExpress.XtraReports.UI.XRLabel printSignature;
+        private DevExpress.XtraReports.UI.XRPageInfo pagesNumber_lbl;
         private DevExpress.XtraReports.UI.XRChart xrChart;
+        private DevExpress.DataAccess.ObjectBinding.ObjectDataSource objectDataSource2;
     }
 }

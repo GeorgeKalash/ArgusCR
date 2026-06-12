@@ -6,12 +6,13 @@ using System.Drawing.Printing;
 
 namespace ArgusCR1029.Inventory
 {
-    public partial class IV436A : ArgusRPT.BaseReport
+    public partial class IV436B : ArgusRPT.BaseReport
     {
-        public IV436A()
+        public IV436B()
         {
             InitializeComponent();
         }
+
         protected override string reportName()
         {
             return title_lbl.Text;
@@ -24,9 +25,9 @@ namespace ArgusCR1029.Inventory
             crossTab.DataSource = webObject.list;
             xrChart.DataSource = webObject.list;
 
-            xrChart.Series[0].ArgumentDataMember = "monthName";
-            xrChart.Series[0].ValueDataMembers.Clear();
-            xrChart.Series[0].ValueDataMembers.AddRange(new string[] { "cost" });
+            //       xrChart.Series[0].ArgumentDataMember = "monthName";
+            //       xrChart.Series[0].ValueDataMembers.Clear();
+            //      xrChart.Series[0].ValueDataMembers.AddRange(new string[] { "cost" });
 
             asOfDate_param.Text = Parameters.Count > 0 ? Parameters[0].Value.ToString() : string.Empty;
             site_param.Text = Parameters.Count > 1 ? Parameters[1].Value.ToString() : string.Empty;
@@ -43,7 +44,7 @@ namespace ArgusCR1029.Inventory
         }
         protected override string dictionaryStore()
         {
-            return "CR1029.IV436A";
+            return "CR1029.IV436B";
         }
     }
 }
