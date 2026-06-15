@@ -6,9 +6,9 @@ using System.Drawing.Printing;
 
 namespace ArgusCR1029.Inventory
 {
-    public partial class IV436B : ArgusRPT.BaseReport
+    public partial class IV436b : ArgusRPT.BaseReport
     {
-        public IV436B()
+        public IV436b()
         {
             InitializeComponent();
         }
@@ -17,17 +17,12 @@ namespace ArgusCR1029.Inventory
         {
             return title_lbl.Text;
         }
-
         protected override void OnBeforePrint(PrintEventArgs e)
         {
-            SharedClasses.JsonProtocol.QryStructure<ArgusDS.Inventory.Reports.IV436b> webObject = deserializeList<ArgusDS.Inventory.Reports.IV436b>();
+            SharedClasses.JsonProtocol.QryStructure<ArgusDS.Inventory.Reports.IV436> webObject = deserializeList<ArgusDS.Inventory.Reports.IV436>();
             DataSource = webObject.list;
             crossTab.DataSource = webObject.list;
             xrChart.DataSource = webObject.list;
-
-            //       xrChart.Series[0].ArgumentDataMember = "monthName";
-            //       xrChart.Series[0].ValueDataMembers.Clear();
-            //      xrChart.Series[0].ValueDataMembers.AddRange(new string[] { "cost" });
 
             asOfDate_param.Text = Parameters.Count > 0 ? Parameters[0].Value.ToString() : string.Empty;
             site_param.Text = Parameters.Count > 1 ? Parameters[1].Value.ToString() : string.Empty;
@@ -37,14 +32,13 @@ namespace ArgusCR1029.Inventory
             printSignature.Text = reportSignature();
             base.OnBeforePrint(e);
         }
-
         protected override void labelsText()
         {
             title_lbl.Text = labelText(0);
         }
         protected override string dictionaryStore()
         {
-            return "CR1029.IV436B";
+            return "CR1029.IV436b";
         }
     }
 }
