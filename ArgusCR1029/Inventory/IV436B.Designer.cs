@@ -31,6 +31,8 @@ namespace ArgusCR1029.Inventory
         {
             this.components = new System.ComponentModel.Container();
             DevExpress.XtraCharts.XYDiagram xyDiagram1 = new DevExpress.XtraCharts.XYDiagram();
+            DevExpress.XtraCharts.StackedBarSeriesLabel stackedBarSeriesLabel1 = new DevExpress.XtraCharts.StackedBarSeriesLabel();
+            DevExpress.XtraCharts.StackedBarSeriesView stackedBarSeriesView1 = new DevExpress.XtraCharts.StackedBarSeriesView();
             DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition crossTabColumnDefinition1 = new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(100F);
             DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition crossTabColumnDefinition2 = new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(100F);
             DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition crossTabColumnDefinition3 = new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(100F);
@@ -89,6 +91,8 @@ namespace ArgusCR1029.Inventory
             ((System.ComponentModel.ISupportInitialize)(this.objectDataSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrChart)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(xyDiagram1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(stackedBarSeriesLabel1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(stackedBarSeriesView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.objectDataSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.crossTab)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable5)).BeginInit();
@@ -159,15 +163,21 @@ namespace ArgusCR1029.Inventory
             this.xrChart.Diagram = xyDiagram1;
             this.xrChart.Legend.Name = "Default Legend";
             this.xrChart.Legend.Visibility = DevExpress.Utils.DefaultBoolean.False;
-            this.xrChart.LocationFloat = new DevExpress.Utils.PointFloat(9.999752F, 125F);
+            this.xrChart.LocationFloat = new DevExpress.Utils.PointFloat(25F, 125F);
             this.xrChart.Name = "xrChart";
-            this.xrChart.PaletteName = "Blue II";
+            this.xrChart.PaletteName = "Blue Warm";
             this.xrChart.SeriesDataMember = "totalCost";
             this.xrChart.SeriesSerializable = new DevExpress.XtraCharts.Series[0];
             this.xrChart.SeriesTemplate.ArgumentDataMember = "monthName";
+            stackedBarSeriesLabel1.Border.Visibility = DevExpress.Utils.DefaultBoolean.False;
+            stackedBarSeriesLabel1.LineVisibility = DevExpress.Utils.DefaultBoolean.True;
+            stackedBarSeriesLabel1.Position = DevExpress.XtraCharts.BarSeriesLabelPosition.Auto;
+            this.xrChart.SeriesTemplate.Label = stackedBarSeriesLabel1;
             this.xrChart.SeriesTemplate.LabelsVisibility = DevExpress.Utils.DefaultBoolean.True;
             this.xrChart.SeriesTemplate.SeriesDataMember = "totalCost";
             this.xrChart.SeriesTemplate.ValueDataMembersSerializable = "totalCost";
+            stackedBarSeriesView1.Border.Visibility = DevExpress.Utils.DefaultBoolean.False;
+            this.xrChart.SeriesTemplate.View = stackedBarSeriesView1;
             this.xrChart.SizeF = new System.Drawing.SizeF(998.3336F, 300F);
             // 
             // objectDataSource2
@@ -220,7 +230,7 @@ namespace ArgusCR1029.Inventory
             this.crossTab.DataSource = this.objectDataSource1;
             this.crossTab.GeneralStyleName = "crossTabGeneralStyle";
             this.crossTab.HeaderAreaStyleName = "crossTabHeaderStyle";
-            this.crossTab.LocationFloat = new DevExpress.Utils.PointFloat(12.5F, 450F);
+            this.crossTab.LocationFloat = new DevExpress.Utils.PointFloat(25F, 450F);
             this.crossTab.Name = "crossTab";
             crossTabRowDefinition1.Visible = false;
             crossTabRowDefinition2.Visible = false;
@@ -423,9 +433,9 @@ namespace ArgusCR1029.Inventory
             // title_lbl
             // 
             this.title_lbl.Font = new System.Drawing.Font("Times New Roman", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
-            this.title_lbl.LocationFloat = new DevExpress.Utils.PointFloat(115.583F, 0F);
+            this.title_lbl.LocationFloat = new DevExpress.Utils.PointFloat(130.5832F, 0F);
             this.title_lbl.Name = "title_lbl";
-            this.title_lbl.SizeF = new System.Drawing.SizeF(1183.417F, 30.01301F);
+            this.title_lbl.SizeF = new System.Drawing.SizeF(1168.417F, 30.01301F);
             this.title_lbl.StyleName = "TitleStyle";
             this.title_lbl.StylePriority.UseFont = false;
             this.title_lbl.StylePriority.UseTextAlignment = false;
@@ -434,14 +444,14 @@ namespace ArgusCR1029.Inventory
             // 
             // logo_data
             // 
-            this.logo_data.LocationFloat = new DevExpress.Utils.PointFloat(9.999756F, 0F);
+            this.logo_data.LocationFloat = new DevExpress.Utils.PointFloat(25F, 0F);
             this.logo_data.Name = "logo_data";
             this.logo_data.SizeF = new System.Drawing.SizeF(105.5832F, 113F);
             this.logo_data.Sizing = DevExpress.XtraPrinting.ImageSizeMode.ZoomImage;
             // 
             // xrTable5
             // 
-            this.xrTable5.LocationFloat = new DevExpress.Utils.PointFloat(124.9998F, 37.5F);
+            this.xrTable5.LocationFloat = new DevExpress.Utils.PointFloat(140.0001F, 37.5F);
             this.xrTable5.Name = "xrTable5";
             this.xrTable5.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable5.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
@@ -571,6 +581,8 @@ namespace ArgusCR1029.Inventory
             this.VerticalContentSplitting = DevExpress.XtraPrinting.VerticalContentSplitting.Smart;
             ((System.ComponentModel.ISupportInitialize)(this.objectDataSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(xyDiagram1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(stackedBarSeriesLabel1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(stackedBarSeriesView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrChart)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.objectDataSource2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.crossTab)).EndInit();
