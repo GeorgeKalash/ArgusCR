@@ -307,6 +307,12 @@
     <Compile Include="Financials\FI409M2.Designer.cs">
       <DependentUpon>FI409M2.cs</DependentUpon>
     </Compile>
+    <Compile Include="GeneralLedger\GL301.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GeneralLedger\GL301.Designer.cs">
+      <DependentUpon>GL301.cs</DependentUpon>
+    </Compile>
     <Compile Include="Inventory\IV01.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -1143,6 +1149,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Financials\FI409M2.resx">
       <DependentUpon>FI409M2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GeneralLedger\GL301.resx">
+      <DependentUpon>GL301.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Inventory\IV01.resx">
       <DependentUpon>IV01.cs</DependentUpon>
