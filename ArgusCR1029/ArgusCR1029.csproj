@@ -211,6 +211,12 @@
     <Compile Include="Financials\FI206_L1.Designer.cs">
       <DependentUpon>FI206_L1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Financials\FI418.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Financials\FI418.Designer.cs">
+      <DependentUpon>FI418.cs</DependentUpon>
+    </Compile>
     <Compile Include="Financials\FI401_L1b.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -1101,6 +1107,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Financials\FI206_L1.resx">
       <DependentUpon>FI206_L1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Financials\FI418.resx">
+      <DependentUpon>FI418.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Financials\FI401_L1b.resx">
       <DependentUpon>FI401_L1b.cs</DependentUpon>
