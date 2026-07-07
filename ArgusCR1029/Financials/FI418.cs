@@ -35,7 +35,7 @@ namespace ArgusCR1029.Financials
                 accounBalance_param.Text = Parameters[7].Value.ToString();
                 accountType_param.Text = Parameters[8].Value.ToString();
                 plant_param.Text = Parameters[9].Value.ToString();
-                plantGroup_lbl.Text = Parameters[10].Value.ToString();
+                plantGroup_param.Text = Parameters[10].Value.ToString();
                 saleZone_param.Text = Parameters[11].Value.ToString();
                 clientGroup_param.Text = Parameters[12].Value.ToString();
             }
@@ -92,8 +92,8 @@ namespace ArgusCR1029.Financials
             accountType_lbl.Text = labelText(25);
             plant_lbl.Text = labelText(26);
             plantGroup_lbl.Text = labelText(27);
-            saleZone_param.Text = labelText(28);
-            clientGroup_param.Text = labelText(29);
+            saleZone_lbl.Text = labelText(28);
+            clientGroup_lbl.Text = labelText(29);
         }
 
         protected override string dictionaryStore()
