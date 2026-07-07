@@ -24,10 +24,20 @@ namespace ArgusCR1029.Financials
 
             if (Parameters.Count > 0)
             {
-                year_param.Text = Parameters[0].Value.ToString();
+                fiscalYear_param.Text = Parameters[0].Value.ToString();
                 startDate_param.Text = Parameters[1].Value.ToString();
                 endDate_param.Text = Parameters[2].Value.ToString();
-                accountName_param.Text = Parameters[4].Value.ToString();
+                account_param.Text = Parameters[3].Value.ToString();
+                accountGroup_param.Text = Parameters[4].Value.ToString();
+                salesPerson_param.Text = Parameters[5].Value.ToString();
+                currency_param.Text = Parameters[6].Value.ToString();
+
+                accounBalance_param.Text = Parameters[7].Value.ToString();
+                accountType_param.Text = Parameters[8].Value.ToString();
+                plant_param.Text = Parameters[9].Value.ToString();
+                plantGroup_lbl.Text = Parameters[10].Value.ToString();
+                saleZone_param.Text = Parameters[11].Value.ToString();
+                clientGroup_param.Text = Parameters[12].Value.ToString();
             }
 
             logo_data.ImageUrl = companyInfo.logoUrl;
@@ -53,22 +63,37 @@ namespace ArgusCR1029.Financials
             docRef_lbl.Text = labelText(2);
             date_lbl.Text = labelText(3);
             description_lbl.Text = labelText(4);
+            currency_lbl.Text = labelText(5);
 
-            amount_lbl.Text = labelText(5);
-            debit_lbl.Text = labelText(6);
-            credit_lbl.Text = labelText(7);
-            balance_lbl.Text = labelText(8);
+            amount_lbl.Text = labelText(6);
+            debit_lbl.Text = labelText(7);
+            credit_lbl.Text = labelText(8);
+            balance_lbl.Text = labelText(9);
 
-            base_lbl.Text = labelText(9);
-            baseDebit_lbl.Text = labelText(10);
-            baseCredit_lbl.Text = labelText(11);
-            runningBaseBalance_lbl.Text = labelText(12);
+            base_lbl.Text = labelText(10);
+            baseDebit_lbl.Text = labelText(11);
+            baseCredit_lbl.Text = labelText(12);
+            runningBaseBalance_lbl.Text = labelText(13);
 
-            rate_lbl.Text = labelText(13);
+            rate_lbl.Text = labelText(14);
 
-            fiscalYear_lbl.Text = labelText(14);
-            startDate_lbl.Text = labelText(15);
-            endDate_lbl.Text = labelText(16);
+            subTotal_lbl.Text = labelText(15);
+            grandTotal_lbl.Text = labelText(16);
+
+            fiscalYear_lbl.Text = labelText(17);
+            startDate_lbl.Text = labelText(18);
+            endDate_lbl.Text = labelText(19);
+            account_lbl.Text = labelText(20);
+            accountGroup_lbl.Text = labelText(21);
+            salesPerson_lbl.Text = labelText(22);
+            currencyParam_lbl.Text = labelText(23);
+
+            accountBalance_lbl.Text = labelText(24);
+            accountType_lbl.Text = labelText(25);
+            plant_lbl.Text = labelText(26);
+            plantGroup_lbl.Text = labelText(27);
+            saleZone_param.Text = labelText(28);
+            clientGroup_param.Text = labelText(29);
         }
 
         protected override string dictionaryStore()
