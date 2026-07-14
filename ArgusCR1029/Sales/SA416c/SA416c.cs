@@ -1,27 +1,36 @@
 ﻿using DevExpress.XtraReports.UI;
 using System;
 using System.Collections;
+using System.Collections.Generic;
 using System.ComponentModel;
 using System.Drawing.Printing;
 
-namespace ArgusCR1029.Sales
+namespace ArgusCR1029.Sales.SA416c
 {
-    public partial class SA416 : ArgusRPT.BaseReport
-    {
-        public SA416()
+    public partial class SA416c : ArgusRPT.BaseReport
+    {      
+        public SA416c()
         {
             InitializeComponent();
         }
-
         protected override string reportName()
         {
             return title_lbl.Text;
         }
 
+        public override void setSessionInfo(Dictionary<string, string> _reportHeaders)
+        {
+            base.setSessionInfo(_reportHeaders);
+            ((ArgusRPT.BaseReport)(DetailSubReports.ReportSource)).setSessionInfo(sessionInfo);
+            ((ArgusRPT.BaseReport)(SummarySubReports.ReportSource)).setSessionInfo(sessionInfo);
+            initSubReports();
+        }
         protected override void OnBeforePrint(PrintEventArgs e)
         {
-            SharedClasses.JsonProtocol.QryStructure<Custom.CR1029.SA416> obj = deserializeList<Custom.CR1029.SA416>();
-            DataSource = obj.list;
+            RightToLeft = DevExpress.XtraReports.UI.RightToLeft.No;
+            RightToLeftLayout = DevExpress.XtraReports.UI.RightToLeftLayout.No;
+
+            SharedClasses.JsonProtocol.GetStructure<Custom.CR1029.SA416c> webObject = deserializeGet<Custom.CR1029.SA416c>();
 
             startDate_param.Text = Parameters.Count > 0 ? Parameters[0].Value.ToString() : string.Empty;
             endDate_param.Text = Parameters.Count > 1 ? Parameters[1].Value.ToString() : string.Empty;
@@ -37,53 +46,25 @@ namespace ArgusCR1029.Sales
             reference_param.Text = Parameters.Count > 11 ? Parameters[11].Value.ToString() : string.Empty;
             itemCollection_param.Text = Parameters.Count > 12 ? Parameters[12].Value.ToString() : string.Empty;
             productionLine_param.Text = Parameters.Count > 13 ? Parameters[13].Value.ToString() : string.Empty;
-  
+
             logo_data.ImageUrl = companyInfo.logoUrl;
 
             printSignature.Text = reportSignature();
+
+            ((DetailSubReports)(DetailSubReports.ReportSource)).data = webObject.record.items;
+            ((SummarySubReports)(SummarySubReports.ReportSource)).data = webObject.record.summary;
+
             base.OnBeforePrint(e);
         }
 
         protected override void labelsText()
         {
             title_lbl.Text = labelText(0);
-
-            documentRef_lbl.Text = labelText(1);
-            date_lbl.Text = labelText(2);
-            plantRef_lbl.Text = labelText(3);
-            plantGroupRef_lbl.Text = labelText(4);
-            costCenter_lbl.Text = labelText(5);
-            sku_lbl.Text = labelText(6);
-            itemName_lbl.Text = labelText(7);
-            G18_lbl.Text = labelText(8);
-            G21_lbl.Text = labelText(9);
-            laborPrice_lbl.Text = labelText(10);
-            vatAmount_lbl.Text = labelText(11);
-            totalWithVat_lbl.Text = labelText(12);
-            totalCost_lbl.Text = labelText(13);
-            unitCost_lbl.Text = labelText(14);
-
-            startDate_lbl.Text = labelText(15);
-            endDate_lbl.Text = labelText(16);
-            itemCategory_lbl.Text = labelText(17);
-            itemGroup_lbl.Text = labelText(18);
-            item_lbl.Text = labelText(19);
-            client_lbl.Text = labelText(20);
-            plant_lbl.Text = labelText(21);
-            systemFunction_lbl.Text = labelText(22);
-            docType_lbl.Text = labelText(23);
-            clientGrp_lbl.Text = labelText(24);
-            salesPerson_lbl.Text = labelText(25);
-            reference_lbl.Text = labelText(26);
-            itemCollection_lbl.Text = labelText(27);
-            productionLine_lbl.Text = labelText(28);
-
-            total_lbl.Text = labelText(29);
         }
 
         protected override string dictionaryStore()
         {
-            return "CR1029.SA416";
+            return "CR1029.SA416c";
         }
     }
 }

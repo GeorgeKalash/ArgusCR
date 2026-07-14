@@ -648,6 +648,24 @@
     <Compile Include="Purchase\Templates\PU103\PU103.Designer.cs">
       <DependentUpon>PU103.cs</DependentUpon>
     </Compile>
+    <Compile Include="Sales\SA416c\DetailSubReports.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Sales\SA416c\DetailSubReports.Designer.cs">
+      <DependentUpon>DetailSubReports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sales\SA416c\SA416c.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Sales\SA416c\SA416c.Designer.cs">
+      <DependentUpon>SA416c.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sales\SA416c\SummarySubReports.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Sales\SA416c\SummarySubReports.Designer.cs">
+      <DependentUpon>SummarySubReports.cs</DependentUpon>
+    </Compile>
     <Compile Include="Sales\SA424\DetailSubReports.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -743,12 +761,6 @@
     </Compile>
     <Compile Include="Sales\SA416b.Designer.cs">
       <DependentUpon>SA416b.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Sales\SA416.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Sales\SA416.Designer.cs">
-      <DependentUpon>SA416.cs</DependentUpon>
     </Compile>
     <Compile Include="Sales\SA204_L1.cs">
       <SubType>Component</SubType>
@@ -1340,6 +1352,15 @@
     <EmbeddedResource Include="Purchase\Templates\PU103\PU103.resx">
       <DependentUpon>PU103.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Sales\SA416c\DetailSubReports.resx">
+      <DependentUpon>DetailSubReports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales\SA416c\SA416c.resx">
+      <DependentUpon>SA416c.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales\SA416c\SummarySubReports.resx">
+      <DependentUpon>SummarySubReports.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Sales\SA424\DetailSubReports.resx">
       <DependentUpon>DetailSubReports.cs</DependentUpon>
     </EmbeddedResource>
@@ -1387,9 +1408,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Sales\SA416b.resx">
       <DependentUpon>SA416b.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Sales\SA416.resx">
-      <DependentUpon>SA416.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Sales\SA204_L1.resx">
       <DependentUpon>SA204_L1.cs</DependentUpon>
