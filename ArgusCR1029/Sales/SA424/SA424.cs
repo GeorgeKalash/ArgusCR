@@ -1,27 +1,36 @@
 ﻿using DevExpress.XtraReports.UI;
 using System;
 using System.Collections;
+using System.Collections.Generic;
 using System.ComponentModel;
 using System.Drawing.Printing;
 
-namespace ArgusCR1029.Sales
+namespace ArgusCR1029.Sales.SA424
 {
     public partial class SA424 : ArgusRPT.BaseReport
-    {
+    {      
         public SA424()
         {
             InitializeComponent();
         }
-
         protected override string reportName()
         {
             return title_lbl.Text;
         }
 
+        public override void setSessionInfo(Dictionary<string, string> _reportHeaders)
+        {
+            base.setSessionInfo(_reportHeaders);
+            ((ArgusRPT.BaseReport)(DetailSubReports.ReportSource)).setSessionInfo(sessionInfo);
+            ((ArgusRPT.BaseReport)(SummarySubReports.ReportSource)).setSessionInfo(sessionInfo);
+            initSubReports();
+        }
         protected override void OnBeforePrint(PrintEventArgs e)
         {
-            SharedClasses.JsonProtocol.QryStructure<Custom.CR1029.SA424> obj = deserializeList<Custom.CR1029.SA424>();
-            DataSource = obj.list;
+            RightToLeft = DevExpress.XtraReports.UI.RightToLeft.No;
+            RightToLeftLayout = DevExpress.XtraReports.UI.RightToLeftLayout.No;
+
+            SharedClasses.JsonProtocol.GetStructure<Custom.CR1029.SA424> webObject = deserializeGet<Custom.CR1029.SA424>();
 
             startDate_param.Text = Parameters.Count > 0 ? Parameters[0].Value.ToString() : string.Empty;
             endDate_param.Text = Parameters.Count > 1 ? Parameters[1].Value.ToString() : string.Empty;
@@ -39,6 +48,10 @@ namespace ArgusCR1029.Sales
             logo_data.ImageUrl = companyInfo.logoUrl;
 
             printSignature.Text = reportSignature();
+
+            ((DetailSubReports)(DetailSubReports.ReportSource)).data = webObject.record.items;
+            ((SummarySubReports)(SummarySubReports.ReportSource)).data = webObject.record.summary;
+
             base.OnBeforePrint(e);
         }
 
@@ -46,36 +59,19 @@ namespace ArgusCR1029.Sales
         {
             title_lbl.Text = labelText(0);
 
-            documentRef_lbl.Text = labelText(1);
-            date_lbl.Text = labelText(2);
-            plantRef_lbl.Text = labelText(3);
-            plantGroupRef_lbl.Text = labelText(4);
-            costCenter_lbl.Text = labelText(5);
-            G18_lbl.Text = labelText(6);
-            G21_lbl.Text = labelText(7);
-            laborPrice_lbl.Text = labelText(8);
-            discount_lbl.Text = labelText(9);
-            netSalesAmount_lbl.Text = labelText(10);
-            vatAmount_lbl.Text = labelText(11);
-            totalWithVat_lbl.Text = labelText(12);
-            totalCost_lbl.Text = labelText(13);
-            grossProfit_lbl.Text = labelText(14);
+            startDate_lbl.Text = labelText(1);
+            endDate_lbl.Text = labelText(2);
+            client_lbl.Text = labelText(3);
+            salesPerson_lbl.Text = labelText(4);
+            plantGroup_lbl.Text = labelText(5);
+            plant_lbl.Text = labelText(6);
 
-            startDate_lbl.Text = labelText(15);
-            endDate_lbl.Text = labelText(16);
-            client_lbl.Text = labelText(17);
-            salesPerson_lbl.Text = labelText(18);
-            plantGroup_lbl.Text = labelText(19);
-            plant_lbl.Text = labelText(20);
-
-            site_lbl.Text = labelText(21);
-            clientGrp_lbl.Text = labelText(22);
-            salesZone_lbl.Text = labelText(23);
-            itemCategory_lbl.Text = labelText(24);
-            description_lbl.Text = labelText(25);
-            status_lbl.Text = labelText(26);
-
-            total_lbl.Text = labelText(27);
+            site_lbl.Text = labelText(7);
+            clientGrp_lbl.Text = labelText(8);
+            salesZone_lbl.Text = labelText(9);
+            itemCategory_lbl.Text = labelText(10);
+            description_lbl.Text = labelText(11);
+            status_lbl.Text = labelText(12);
         }
 
         protected override string dictionaryStore()
