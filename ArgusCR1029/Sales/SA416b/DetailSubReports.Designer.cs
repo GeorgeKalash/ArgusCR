@@ -48,8 +48,11 @@ namespace ArgusCR1029.Sales.SA416b
             this.grp_data = new DevExpress.XtraReports.UI.XRTableCell();
             this.collection_data = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTableCell25 = new DevExpress.XtraReports.UI.XRTableCell();
+            this.xrTableCell10 = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTableCell26 = new DevExpress.XtraReports.UI.XRTableCell();
+            this.xrTableCell11 = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTableCell24 = new DevExpress.XtraReports.UI.XRTableCell();
+            this.xrTableCell12 = new DevExpress.XtraReports.UI.XRTableCell();
             this.vatAmount_data = new DevExpress.XtraReports.UI.XRTableCell();
             this.amount_data = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTableCell23 = new DevExpress.XtraReports.UI.XRTableCell();
@@ -74,9 +77,6 @@ namespace ArgusCR1029.Sales.SA416b
             this.totalCost_lbl = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTableCell6 = new DevExpress.XtraReports.UI.XRTableCell();
             this.ReportFooter = new DevExpress.XtraReports.UI.ReportFooterBand();
-            this.xrTableCell10 = new DevExpress.XtraReports.UI.XRTableCell();
-            this.xrTableCell11 = new DevExpress.XtraReports.UI.XRTableCell();
-            this.xrTableCell12 = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTable1 = new DevExpress.XtraReports.UI.XRTable();
             this.xrTableRow1 = new DevExpress.XtraReports.UI.XRTableRow();
             this.xrTableCell17 = new DevExpress.XtraReports.UI.XRTableCell();
@@ -168,7 +168,7 @@ namespace ArgusCR1029.Sales.SA416b
             this.xrTableCell8.StylePriority.UseTextAlignment = false;
             this.xrTableCell8.Text = "xrTableCell8";
             this.xrTableCell8.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
-            this.xrTableCell8.Weight = 0.63069778355277384D;
+            this.xrTableCell8.Weight = 0.6079143117595015D;
             // 
             // xrTableCell9
             // 
@@ -188,7 +188,7 @@ namespace ArgusCR1029.Sales.SA416b
             this.xrTableCell9.StylePriority.UseTextAlignment = false;
             this.xrTableCell9.Text = "xrTableCell9";
             this.xrTableCell9.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
-            this.xrTableCell9.Weight = 1.0983480941339245D;
+            this.xrTableCell9.Weight = 1.0012705597262717D;
             // 
             // category_data
             // 
@@ -207,7 +207,7 @@ namespace ArgusCR1029.Sales.SA416b
             this.category_data.StylePriority.UsePadding = false;
             this.category_data.StylePriority.UseTextAlignment = false;
             this.category_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
-            this.category_data.Weight = 0.57739992019303776D;
+            this.category_data.Weight = 0.6972609263939632D;
             // 
             // line_data
             // 
@@ -226,7 +226,7 @@ namespace ArgusCR1029.Sales.SA416b
             this.line_data.StylePriority.UsePadding = false;
             this.line_data.StylePriority.UseTextAlignment = false;
             this.line_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
-            this.line_data.Weight = 0.66059177667692126D;
+            this.line_data.Weight = 0.70088916800848333D;
             // 
             // grp_data
             // 
@@ -245,7 +245,7 @@ namespace ArgusCR1029.Sales.SA416b
             this.grp_data.StylePriority.UsePadding = false;
             this.grp_data.StylePriority.UseTextAlignment = false;
             this.grp_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
-            this.grp_data.Weight = 0.57366094070261164D;
+            this.grp_data.Weight = 0.54354689062483319D;
             // 
             // collection_data
             // 
@@ -264,7 +264,7 @@ namespace ArgusCR1029.Sales.SA416b
             this.collection_data.StylePriority.UsePadding = false;
             this.collection_data.StylePriority.UseTextAlignment = false;
             this.collection_data.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
-            this.collection_data.Weight = 0.578361597761266D;
+            this.collection_data.Weight = 0.56817825650748244D;
             // 
             // xrTableCell25
             // 
@@ -284,6 +284,26 @@ namespace ArgusCR1029.Sales.SA416b
             this.xrTableCell25.StylePriority.UseTextAlignment = false;
             this.xrTableCell25.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
             this.xrTableCell25.Weight = 0.45124609363557255D;
+            // 
+            // xrTableCell10
+            // 
+            this.xrTableCell10.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Right) 
+            | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.xrTableCell10.BorderWidth = 1F;
+            this.xrTableCell10.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[qty]")});
+            this.xrTableCell10.Font = new System.Drawing.Font("Times New Roman", 8F);
+            this.xrTableCell10.Multiline = true;
+            this.xrTableCell10.Name = "xrTableCell10";
+            this.xrTableCell10.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 5, 0, 0, 100F);
+            this.xrTableCell10.StylePriority.UseBorders = false;
+            this.xrTableCell10.StylePriority.UseBorderWidth = false;
+            this.xrTableCell10.StylePriority.UseFont = false;
+            this.xrTableCell10.StylePriority.UsePadding = false;
+            this.xrTableCell10.StylePriority.UseTextAlignment = false;
+            this.xrTableCell10.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
+            this.xrTableCell10.TextFormatString = "{0:n2}";
+            this.xrTableCell10.Weight = 0.42576429336328131D;
             // 
             // xrTableCell26
             // 
@@ -305,6 +325,26 @@ namespace ArgusCR1029.Sales.SA416b
             this.xrTableCell26.TextFormatString = "{0:n2}";
             this.xrTableCell26.Weight = 0.42576363545993073D;
             // 
+            // xrTableCell11
+            // 
+            this.xrTableCell11.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Right) 
+            | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.xrTableCell11.BorderWidth = 1F;
+            this.xrTableCell11.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[amount]")});
+            this.xrTableCell11.Font = new System.Drawing.Font("Times New Roman", 8F);
+            this.xrTableCell11.Multiline = true;
+            this.xrTableCell11.Name = "xrTableCell11";
+            this.xrTableCell11.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 5, 0, 0, 100F);
+            this.xrTableCell11.StylePriority.UseBorders = false;
+            this.xrTableCell11.StylePriority.UseBorderWidth = false;
+            this.xrTableCell11.StylePriority.UseFont = false;
+            this.xrTableCell11.StylePriority.UsePadding = false;
+            this.xrTableCell11.StylePriority.UseTextAlignment = false;
+            this.xrTableCell11.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
+            this.xrTableCell11.TextFormatString = "{0:n2}";
+            this.xrTableCell11.Weight = 0.53268051321921916D;
+            // 
             // xrTableCell24
             // 
             this.xrTableCell24.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Right) 
@@ -322,6 +362,24 @@ namespace ArgusCR1029.Sales.SA416b
             this.xrTableCell24.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
             this.xrTableCell24.TextFormatString = "{0:n2}";
             this.xrTableCell24.Weight = 0.53268039679803947D;
+            // 
+            // xrTableCell12
+            // 
+            this.xrTableCell12.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Right) 
+            | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.xrTableCell12.BorderWidth = 1F;
+            this.xrTableCell12.Font = new System.Drawing.Font("Times New Roman", 8F);
+            this.xrTableCell12.Multiline = true;
+            this.xrTableCell12.Name = "xrTableCell12";
+            this.xrTableCell12.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 5, 0, 0, 100F);
+            this.xrTableCell12.StylePriority.UseBorders = false;
+            this.xrTableCell12.StylePriority.UseBorderWidth = false;
+            this.xrTableCell12.StylePriority.UseFont = false;
+            this.xrTableCell12.StylePriority.UsePadding = false;
+            this.xrTableCell12.StylePriority.UseTextAlignment = false;
+            this.xrTableCell12.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
+            this.xrTableCell12.TextFormatString = "{0:n2}";
+            this.xrTableCell12.Weight = 0.53267963288935483D;
             // 
             // vatAmount_data
             // 
@@ -470,7 +528,7 @@ namespace ArgusCR1029.Sales.SA416b
             this.sku_lbl.StylePriority.UseBorderWidth = false;
             this.sku_lbl.StylePriority.UseFont = false;
             this.sku_lbl.Text = "Item Ref.";
-            this.sku_lbl.Weight = 0.81719778467852955D;
+            this.sku_lbl.Weight = 0.78767714252129728D;
             // 
             // itemName_lbl
             // 
@@ -487,7 +545,7 @@ namespace ArgusCR1029.Sales.SA416b
             this.itemName_lbl.StylePriority.UseBorderWidth = false;
             this.itemName_lbl.StylePriority.UseFont = false;
             this.itemName_lbl.Text = "Item Name";
-            this.itemName_lbl.Weight = 1.4231343435865427D;
+            this.itemName_lbl.Weight = 1.2973505657339965D;
             // 
             // category_lbl
             // 
@@ -504,7 +562,7 @@ namespace ArgusCR1029.Sales.SA416b
             this.category_lbl.StylePriority.UseBorderWidth = false;
             this.category_lbl.StylePriority.UseFont = false;
             this.category_lbl.Text = "Category";
-            this.category_lbl.Weight = 0.748139457719857D;
+            this.category_lbl.Weight = 0.90344387772963552D;
             // 
             // line_lbl
             // 
@@ -521,7 +579,7 @@ namespace ArgusCR1029.Sales.SA416b
             this.line_lbl.StylePriority.UseBorderWidth = false;
             this.line_lbl.StylePriority.UseFont = false;
             this.line_lbl.Text = "Production Line";
-            this.line_lbl.Weight = 0.85593185458602594D;
+            this.line_lbl.Weight = 0.90814542813418231D;
             // 
             // grp_lbl
             // 
@@ -538,7 +596,7 @@ namespace ArgusCR1029.Sales.SA416b
             this.grp_lbl.StylePriority.UseBorderWidth = false;
             this.grp_lbl.StylePriority.UseFont = false;
             this.grp_lbl.Text = "Item Group";
-            this.grp_lbl.Weight = 0.7432944029284605D;
+            this.grp_lbl.Weight = 0.70427606463541093D;
             // 
             // collection_lbl
             // 
@@ -555,7 +613,7 @@ namespace ArgusCR1029.Sales.SA416b
             this.collection_lbl.StylePriority.UseBorderWidth = false;
             this.collection_lbl.StylePriority.UseFont = false;
             this.collection_lbl.Text = "Collection";
-            this.collection_lbl.Weight = 0.74938615959537214D;
+            this.collection_lbl.Weight = 0.73619092434026534D;
             // 
             // G18_lbl
             // 
@@ -733,64 +791,6 @@ namespace ArgusCR1029.Sales.SA416b
             this.xrTable1});
             this.ReportFooter.HeightF = 20.8334F;
             this.ReportFooter.Name = "ReportFooter";
-            // 
-            // xrTableCell10
-            // 
-            this.xrTableCell10.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Right) 
-            | DevExpress.XtraPrinting.BorderSide.Bottom)));
-            this.xrTableCell10.BorderWidth = 1F;
-            this.xrTableCell10.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[qty]")});
-            this.xrTableCell10.Font = new System.Drawing.Font("Times New Roman", 8F);
-            this.xrTableCell10.Multiline = true;
-            this.xrTableCell10.Name = "xrTableCell10";
-            this.xrTableCell10.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 5, 0, 0, 100F);
-            this.xrTableCell10.StylePriority.UseBorders = false;
-            this.xrTableCell10.StylePriority.UseBorderWidth = false;
-            this.xrTableCell10.StylePriority.UseFont = false;
-            this.xrTableCell10.StylePriority.UsePadding = false;
-            this.xrTableCell10.StylePriority.UseTextAlignment = false;
-            this.xrTableCell10.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
-            this.xrTableCell10.TextFormatString = "{0:n2}";
-            this.xrTableCell10.Weight = 0.42576429336328131D;
-            // 
-            // xrTableCell11
-            // 
-            this.xrTableCell11.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Right) 
-            | DevExpress.XtraPrinting.BorderSide.Bottom)));
-            this.xrTableCell11.BorderWidth = 1F;
-            this.xrTableCell11.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[amount]")});
-            this.xrTableCell11.Font = new System.Drawing.Font("Times New Roman", 8F);
-            this.xrTableCell11.Multiline = true;
-            this.xrTableCell11.Name = "xrTableCell11";
-            this.xrTableCell11.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 5, 0, 0, 100F);
-            this.xrTableCell11.StylePriority.UseBorders = false;
-            this.xrTableCell11.StylePriority.UseBorderWidth = false;
-            this.xrTableCell11.StylePriority.UseFont = false;
-            this.xrTableCell11.StylePriority.UsePadding = false;
-            this.xrTableCell11.StylePriority.UseTextAlignment = false;
-            this.xrTableCell11.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
-            this.xrTableCell11.TextFormatString = "{0:n2}";
-            this.xrTableCell11.Weight = 0.53268051321921916D;
-            // 
-            // xrTableCell12
-            // 
-            this.xrTableCell12.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Right) 
-            | DevExpress.XtraPrinting.BorderSide.Bottom)));
-            this.xrTableCell12.BorderWidth = 1F;
-            this.xrTableCell12.Font = new System.Drawing.Font("Times New Roman", 8F);
-            this.xrTableCell12.Multiline = true;
-            this.xrTableCell12.Name = "xrTableCell12";
-            this.xrTableCell12.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 5, 0, 0, 100F);
-            this.xrTableCell12.StylePriority.UseBorders = false;
-            this.xrTableCell12.StylePriority.UseBorderWidth = false;
-            this.xrTableCell12.StylePriority.UseFont = false;
-            this.xrTableCell12.StylePriority.UsePadding = false;
-            this.xrTableCell12.StylePriority.UseTextAlignment = false;
-            this.xrTableCell12.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
-            this.xrTableCell12.TextFormatString = "{0:n2}";
-            this.xrTableCell12.Weight = 0.53267963288935483D;
             // 
             // xrTable1
             // 
