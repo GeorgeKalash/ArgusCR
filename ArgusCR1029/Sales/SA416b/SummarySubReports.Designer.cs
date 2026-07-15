@@ -1,5 +1,5 @@
 ﻿
-namespace ArgusCR1029.Sales.SA416c
+namespace ArgusCR1029.Sales.SA416b
 {
     partial class SummarySubReports
     {
@@ -32,18 +32,6 @@ namespace ArgusCR1029.Sales.SA416c
             this.TopMargin = new DevExpress.XtraReports.UI.TopMarginBand();
             this.BottomMargin = new DevExpress.XtraReports.UI.BottomMarginBand();
             this.Detail = new DevExpress.XtraReports.UI.DetailBand();
-            this.xrTable3 = new DevExpress.XtraReports.UI.XRTable();
-            this.xrTableRow4 = new DevExpress.XtraReports.UI.XRTableRow();
-            this.xrTableCell25 = new DevExpress.XtraReports.UI.XRTableCell();
-            this.xrTableCell26 = new DevExpress.XtraReports.UI.XRTableCell();
-            this.xrTableCell6 = new DevExpress.XtraReports.UI.XRTableCell();
-            this.xrTableCell24 = new DevExpress.XtraReports.UI.XRTableCell();
-            this.xrTableCell22 = new DevExpress.XtraReports.UI.XRTableCell();
-            this.xrTableCell4 = new DevExpress.XtraReports.UI.XRTableCell();
-            this.vatAmount_data = new DevExpress.XtraReports.UI.XRTableCell();
-            this.amount_data = new DevExpress.XtraReports.UI.XRTableCell();
-            this.xrTableCell23 = new DevExpress.XtraReports.UI.XRTableCell();
-            this.status_data = new DevExpress.XtraReports.UI.XRTableCell();
             this.PageHeader = new DevExpress.XtraReports.UI.PageHeaderBand();
             this.xrTable8 = new DevExpress.XtraReports.UI.XRTable();
             this.xrTableRow18 = new DevExpress.XtraReports.UI.XRTableRow();
@@ -57,8 +45,20 @@ namespace ArgusCR1029.Sales.SA416c
             this.totalWithVat_lbl = new DevExpress.XtraReports.UI.XRTableCell();
             this.totalCost_lbl = new DevExpress.XtraReports.UI.XRTableCell();
             this.grossProfit_lbl = new DevExpress.XtraReports.UI.XRTableCell();
-            ((System.ComponentModel.ISupportInitialize)(this.xrTable3)).BeginInit();
+            this.xrTable3 = new DevExpress.XtraReports.UI.XRTable();
+            this.xrTableRow4 = new DevExpress.XtraReports.UI.XRTableRow();
+            this.xrTableCell25 = new DevExpress.XtraReports.UI.XRTableCell();
+            this.xrTableCell26 = new DevExpress.XtraReports.UI.XRTableCell();
+            this.xrTableCell6 = new DevExpress.XtraReports.UI.XRTableCell();
+            this.xrTableCell24 = new DevExpress.XtraReports.UI.XRTableCell();
+            this.xrTableCell22 = new DevExpress.XtraReports.UI.XRTableCell();
+            this.xrTableCell4 = new DevExpress.XtraReports.UI.XRTableCell();
+            this.vatAmount_data = new DevExpress.XtraReports.UI.XRTableCell();
+            this.amount_data = new DevExpress.XtraReports.UI.XRTableCell();
+            this.xrTableCell23 = new DevExpress.XtraReports.UI.XRTableCell();
+            this.status_data = new DevExpress.XtraReports.UI.XRTableCell();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.xrTable3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             // 
             // TopMargin
@@ -78,6 +78,218 @@ namespace ArgusCR1029.Sales.SA416c
             this.Detail.HeightF = 20.8334F;
             this.Detail.KeepTogether = true;
             this.Detail.Name = "Detail";
+            // 
+            // PageHeader
+            // 
+            this.PageHeader.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+            this.xrTable8});
+            this.PageHeader.HeightF = 25F;
+            this.PageHeader.Name = "PageHeader";
+            // 
+            // xrTable8
+            // 
+            this.xrTable8.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+            | DevExpress.XtraPrinting.BorderSide.Right) 
+            | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.xrTable8.BorderWidth = 0.5F;
+            this.xrTable8.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.xrTable8.LocationFloat = new DevExpress.Utils.PointFloat(471.3213F, 0F);
+            this.xrTable8.Name = "xrTable8";
+            this.xrTable8.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
+            this.xrTable8.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
+            this.xrTableRow18});
+            this.xrTable8.SizeF = new System.Drawing.SizeF(791.637F, 25F);
+            this.xrTable8.StylePriority.UseBorders = false;
+            this.xrTable8.StylePriority.UseBorderWidth = false;
+            this.xrTable8.StylePriority.UseFont = false;
+            this.xrTable8.StylePriority.UseTextAlignment = false;
+            this.xrTable8.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            // 
+            // xrTableRow18
+            // 
+            this.xrTableRow18.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
+            this.G18_lbl,
+            this.G21_lbl,
+            this.xrTableCell5,
+            this.laborPrice_lbl,
+            this.discount_lbl,
+            this.netSalesAmount_lbl,
+            this.vatAmount_lbl,
+            this.totalWithVat_lbl,
+            this.totalCost_lbl,
+            this.grossProfit_lbl});
+            this.xrTableRow18.Name = "xrTableRow18";
+            this.xrTableRow18.Weight = 1D;
+            // 
+            // G18_lbl
+            // 
+            this.G18_lbl.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.G18_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+            | DevExpress.XtraPrinting.BorderSide.Right) 
+            | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.G18_lbl.BorderWidth = 1F;
+            this.G18_lbl.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Bold);
+            this.G18_lbl.Multiline = true;
+            this.G18_lbl.Name = "G18_lbl";
+            this.G18_lbl.StylePriority.UseBackColor = false;
+            this.G18_lbl.StylePriority.UseBorders = false;
+            this.G18_lbl.StylePriority.UseBorderWidth = false;
+            this.G18_lbl.StylePriority.UseFont = false;
+            this.G18_lbl.Text = "Metal";
+            this.G18_lbl.Weight = 0.74510953506213173D;
+            // 
+            // G21_lbl
+            // 
+            this.G21_lbl.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.G21_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+            | DevExpress.XtraPrinting.BorderSide.Right) 
+            | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.G21_lbl.BorderWidth = 1F;
+            this.G21_lbl.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Bold);
+            this.G21_lbl.Multiline = true;
+            this.G21_lbl.Name = "G21_lbl";
+            this.G21_lbl.StylePriority.UseBackColor = false;
+            this.G21_lbl.StylePriority.UseBorders = false;
+            this.G21_lbl.StylePriority.UseBorderWidth = false;
+            this.G21_lbl.StylePriority.UseFont = false;
+            this.G21_lbl.Text = "Qty";
+            this.G21_lbl.Weight = 0.74510951848346885D;
+            // 
+            // xrTableCell5
+            // 
+            this.xrTableCell5.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.xrTableCell5.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+            | DevExpress.XtraPrinting.BorderSide.Right) 
+            | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.xrTableCell5.BorderWidth = 1F;
+            this.xrTableCell5.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Bold);
+            this.xrTableCell5.Multiline = true;
+            this.xrTableCell5.Name = "xrTableCell5";
+            this.xrTableCell5.StylePriority.UseBackColor = false;
+            this.xrTableCell5.StylePriority.UseBorders = false;
+            this.xrTableCell5.StylePriority.UseBorderWidth = false;
+            this.xrTableCell5.StylePriority.UseFont = false;
+            this.xrTableCell5.Text = "Base Qty 21";
+            this.xrTableCell5.Weight = 0.74510951848346885D;
+            // 
+            // laborPrice_lbl
+            // 
+            this.laborPrice_lbl.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.laborPrice_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+            | DevExpress.XtraPrinting.BorderSide.Right) 
+            | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.laborPrice_lbl.BorderWidth = 1F;
+            this.laborPrice_lbl.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Bold);
+            this.laborPrice_lbl.Multiline = true;
+            this.laborPrice_lbl.Name = "laborPrice_lbl";
+            this.laborPrice_lbl.StylePriority.UseBackColor = false;
+            this.laborPrice_lbl.StylePriority.UseBorders = false;
+            this.laborPrice_lbl.StylePriority.UseBorderWidth = false;
+            this.laborPrice_lbl.StylePriority.UseFont = false;
+            this.laborPrice_lbl.Text = "Sales Amount";
+            this.laborPrice_lbl.Weight = 0.684514513586934D;
+            // 
+            // discount_lbl
+            // 
+            this.discount_lbl.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.discount_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+            | DevExpress.XtraPrinting.BorderSide.Right) 
+            | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.discount_lbl.BorderWidth = 1F;
+            this.discount_lbl.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Bold);
+            this.discount_lbl.Multiline = true;
+            this.discount_lbl.Name = "discount_lbl";
+            this.discount_lbl.StylePriority.UseBackColor = false;
+            this.discount_lbl.StylePriority.UseBorders = false;
+            this.discount_lbl.StylePriority.UseBorderWidth = false;
+            this.discount_lbl.StylePriority.UseFont = false;
+            this.discount_lbl.Text = "Discount";
+            this.discount_lbl.Weight = 0.61942707884052073D;
+            // 
+            // netSalesAmount_lbl
+            // 
+            this.netSalesAmount_lbl.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.netSalesAmount_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+            | DevExpress.XtraPrinting.BorderSide.Right) 
+            | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.netSalesAmount_lbl.BorderWidth = 1F;
+            this.netSalesAmount_lbl.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Bold);
+            this.netSalesAmount_lbl.Multiline = true;
+            this.netSalesAmount_lbl.Name = "netSalesAmount_lbl";
+            this.netSalesAmount_lbl.StylePriority.UseBackColor = false;
+            this.netSalesAmount_lbl.StylePriority.UseBorders = false;
+            this.netSalesAmount_lbl.StylePriority.UseBorderWidth = false;
+            this.netSalesAmount_lbl.StylePriority.UseFont = false;
+            this.netSalesAmount_lbl.Text = "Net Sales Amount";
+            this.netSalesAmount_lbl.Weight = 0.7451094795622325D;
+            // 
+            // vatAmount_lbl
+            // 
+            this.vatAmount_lbl.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.vatAmount_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+            | DevExpress.XtraPrinting.BorderSide.Right) 
+            | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.vatAmount_lbl.BorderWidth = 1F;
+            this.vatAmount_lbl.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Bold);
+            this.vatAmount_lbl.Multiline = true;
+            this.vatAmount_lbl.Name = "vatAmount_lbl";
+            this.vatAmount_lbl.StylePriority.UseBackColor = false;
+            this.vatAmount_lbl.StylePriority.UseBorders = false;
+            this.vatAmount_lbl.StylePriority.UseBorderWidth = false;
+            this.vatAmount_lbl.StylePriority.UseFont = false;
+            this.vatAmount_lbl.Text = "Vat Amount";
+            this.vatAmount_lbl.Weight = 0.65197081734568874D;
+            // 
+            // totalWithVat_lbl
+            // 
+            this.totalWithVat_lbl.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.totalWithVat_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+            | DevExpress.XtraPrinting.BorderSide.Right) 
+            | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.totalWithVat_lbl.BorderWidth = 1F;
+            this.totalWithVat_lbl.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Bold);
+            this.totalWithVat_lbl.Multiline = true;
+            this.totalWithVat_lbl.Name = "totalWithVat_lbl";
+            this.totalWithVat_lbl.StylePriority.UseBackColor = false;
+            this.totalWithVat_lbl.StylePriority.UseBorders = false;
+            this.totalWithVat_lbl.StylePriority.UseBorderWidth = false;
+            this.totalWithVat_lbl.StylePriority.UseFont = false;
+            this.totalWithVat_lbl.Text = "Total With Vat";
+            this.totalWithVat_lbl.Weight = 0.65197080188421119D;
+            // 
+            // totalCost_lbl
+            // 
+            this.totalCost_lbl.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.totalCost_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+            | DevExpress.XtraPrinting.BorderSide.Right) 
+            | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.totalCost_lbl.BorderWidth = 1F;
+            this.totalCost_lbl.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Bold);
+            this.totalCost_lbl.Multiline = true;
+            this.totalCost_lbl.Name = "totalCost_lbl";
+            this.totalCost_lbl.StylePriority.UseBackColor = false;
+            this.totalCost_lbl.StylePriority.UseBorders = false;
+            this.totalCost_lbl.StylePriority.UseBorderWidth = false;
+            this.totalCost_lbl.StylePriority.UseFont = false;
+            this.totalCost_lbl.Text = "Total Cost";
+            this.totalCost_lbl.Weight = 0.65197080611895175D;
+            // 
+            // grossProfit_lbl
+            // 
+            this.grossProfit_lbl.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.grossProfit_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+            | DevExpress.XtraPrinting.BorderSide.Right) 
+            | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.grossProfit_lbl.BorderWidth = 1F;
+            this.grossProfit_lbl.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Bold);
+            this.grossProfit_lbl.Multiline = true;
+            this.grossProfit_lbl.Name = "grossProfit_lbl";
+            this.grossProfit_lbl.StylePriority.UseBackColor = false;
+            this.grossProfit_lbl.StylePriority.UseBorders = false;
+            this.grossProfit_lbl.StylePriority.UseBorderWidth = false;
+            this.grossProfit_lbl.StylePriority.UseFont = false;
+            this.grossProfit_lbl.Text = "Gross Profit";
+            this.grossProfit_lbl.Weight = 0.65197085887348116D;
             // 
             // xrTable3
             // 
@@ -319,218 +531,6 @@ namespace ArgusCR1029.Sales.SA416c
             this.status_data.Weight = 0.53537215127110094D;
             this.status_data.WordWrap = false;
             // 
-            // PageHeader
-            // 
-            this.PageHeader.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
-            this.xrTable8});
-            this.PageHeader.HeightF = 25F;
-            this.PageHeader.Name = "PageHeader";
-            // 
-            // xrTable8
-            // 
-            this.xrTable8.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
-            | DevExpress.XtraPrinting.BorderSide.Right) 
-            | DevExpress.XtraPrinting.BorderSide.Bottom)));
-            this.xrTable8.BorderWidth = 0.5F;
-            this.xrTable8.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.xrTable8.LocationFloat = new DevExpress.Utils.PointFloat(471.3213F, 0F);
-            this.xrTable8.Name = "xrTable8";
-            this.xrTable8.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
-            this.xrTable8.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
-            this.xrTableRow18});
-            this.xrTable8.SizeF = new System.Drawing.SizeF(791.637F, 25F);
-            this.xrTable8.StylePriority.UseBorders = false;
-            this.xrTable8.StylePriority.UseBorderWidth = false;
-            this.xrTable8.StylePriority.UseFont = false;
-            this.xrTable8.StylePriority.UseTextAlignment = false;
-            this.xrTable8.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
-            // 
-            // xrTableRow18
-            // 
-            this.xrTableRow18.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
-            this.G18_lbl,
-            this.G21_lbl,
-            this.xrTableCell5,
-            this.laborPrice_lbl,
-            this.discount_lbl,
-            this.netSalesAmount_lbl,
-            this.vatAmount_lbl,
-            this.totalWithVat_lbl,
-            this.totalCost_lbl,
-            this.grossProfit_lbl});
-            this.xrTableRow18.Name = "xrTableRow18";
-            this.xrTableRow18.Weight = 1D;
-            // 
-            // G18_lbl
-            // 
-            this.G18_lbl.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.G18_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
-            | DevExpress.XtraPrinting.BorderSide.Right) 
-            | DevExpress.XtraPrinting.BorderSide.Bottom)));
-            this.G18_lbl.BorderWidth = 1F;
-            this.G18_lbl.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Bold);
-            this.G18_lbl.Multiline = true;
-            this.G18_lbl.Name = "G18_lbl";
-            this.G18_lbl.StylePriority.UseBackColor = false;
-            this.G18_lbl.StylePriority.UseBorders = false;
-            this.G18_lbl.StylePriority.UseBorderWidth = false;
-            this.G18_lbl.StylePriority.UseFont = false;
-            this.G18_lbl.Text = "Metal";
-            this.G18_lbl.Weight = 0.74510953506213173D;
-            // 
-            // G21_lbl
-            // 
-            this.G21_lbl.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.G21_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
-            | DevExpress.XtraPrinting.BorderSide.Right) 
-            | DevExpress.XtraPrinting.BorderSide.Bottom)));
-            this.G21_lbl.BorderWidth = 1F;
-            this.G21_lbl.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Bold);
-            this.G21_lbl.Multiline = true;
-            this.G21_lbl.Name = "G21_lbl";
-            this.G21_lbl.StylePriority.UseBackColor = false;
-            this.G21_lbl.StylePriority.UseBorders = false;
-            this.G21_lbl.StylePriority.UseBorderWidth = false;
-            this.G21_lbl.StylePriority.UseFont = false;
-            this.G21_lbl.Text = "Qty";
-            this.G21_lbl.Weight = 0.74510951848346885D;
-            // 
-            // xrTableCell5
-            // 
-            this.xrTableCell5.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.xrTableCell5.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
-            | DevExpress.XtraPrinting.BorderSide.Right) 
-            | DevExpress.XtraPrinting.BorderSide.Bottom)));
-            this.xrTableCell5.BorderWidth = 1F;
-            this.xrTableCell5.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Bold);
-            this.xrTableCell5.Multiline = true;
-            this.xrTableCell5.Name = "xrTableCell5";
-            this.xrTableCell5.StylePriority.UseBackColor = false;
-            this.xrTableCell5.StylePriority.UseBorders = false;
-            this.xrTableCell5.StylePriority.UseBorderWidth = false;
-            this.xrTableCell5.StylePriority.UseFont = false;
-            this.xrTableCell5.Text = "Base Qty 21";
-            this.xrTableCell5.Weight = 0.74510951848346885D;
-            // 
-            // laborPrice_lbl
-            // 
-            this.laborPrice_lbl.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.laborPrice_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
-            | DevExpress.XtraPrinting.BorderSide.Right) 
-            | DevExpress.XtraPrinting.BorderSide.Bottom)));
-            this.laborPrice_lbl.BorderWidth = 1F;
-            this.laborPrice_lbl.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Bold);
-            this.laborPrice_lbl.Multiline = true;
-            this.laborPrice_lbl.Name = "laborPrice_lbl";
-            this.laborPrice_lbl.StylePriority.UseBackColor = false;
-            this.laborPrice_lbl.StylePriority.UseBorders = false;
-            this.laborPrice_lbl.StylePriority.UseBorderWidth = false;
-            this.laborPrice_lbl.StylePriority.UseFont = false;
-            this.laborPrice_lbl.Text = "Sales Amount";
-            this.laborPrice_lbl.Weight = 0.684514513586934D;
-            // 
-            // discount_lbl
-            // 
-            this.discount_lbl.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.discount_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
-            | DevExpress.XtraPrinting.BorderSide.Right) 
-            | DevExpress.XtraPrinting.BorderSide.Bottom)));
-            this.discount_lbl.BorderWidth = 1F;
-            this.discount_lbl.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Bold);
-            this.discount_lbl.Multiline = true;
-            this.discount_lbl.Name = "discount_lbl";
-            this.discount_lbl.StylePriority.UseBackColor = false;
-            this.discount_lbl.StylePriority.UseBorders = false;
-            this.discount_lbl.StylePriority.UseBorderWidth = false;
-            this.discount_lbl.StylePriority.UseFont = false;
-            this.discount_lbl.Text = "Discount";
-            this.discount_lbl.Weight = 0.61942707884052073D;
-            // 
-            // netSalesAmount_lbl
-            // 
-            this.netSalesAmount_lbl.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.netSalesAmount_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
-            | DevExpress.XtraPrinting.BorderSide.Right) 
-            | DevExpress.XtraPrinting.BorderSide.Bottom)));
-            this.netSalesAmount_lbl.BorderWidth = 1F;
-            this.netSalesAmount_lbl.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Bold);
-            this.netSalesAmount_lbl.Multiline = true;
-            this.netSalesAmount_lbl.Name = "netSalesAmount_lbl";
-            this.netSalesAmount_lbl.StylePriority.UseBackColor = false;
-            this.netSalesAmount_lbl.StylePriority.UseBorders = false;
-            this.netSalesAmount_lbl.StylePriority.UseBorderWidth = false;
-            this.netSalesAmount_lbl.StylePriority.UseFont = false;
-            this.netSalesAmount_lbl.Text = "Net Sales Amount";
-            this.netSalesAmount_lbl.Weight = 0.7451094795622325D;
-            // 
-            // vatAmount_lbl
-            // 
-            this.vatAmount_lbl.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.vatAmount_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
-            | DevExpress.XtraPrinting.BorderSide.Right) 
-            | DevExpress.XtraPrinting.BorderSide.Bottom)));
-            this.vatAmount_lbl.BorderWidth = 1F;
-            this.vatAmount_lbl.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Bold);
-            this.vatAmount_lbl.Multiline = true;
-            this.vatAmount_lbl.Name = "vatAmount_lbl";
-            this.vatAmount_lbl.StylePriority.UseBackColor = false;
-            this.vatAmount_lbl.StylePriority.UseBorders = false;
-            this.vatAmount_lbl.StylePriority.UseBorderWidth = false;
-            this.vatAmount_lbl.StylePriority.UseFont = false;
-            this.vatAmount_lbl.Text = "Vat Amount";
-            this.vatAmount_lbl.Weight = 0.65197081734568874D;
-            // 
-            // totalWithVat_lbl
-            // 
-            this.totalWithVat_lbl.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.totalWithVat_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
-            | DevExpress.XtraPrinting.BorderSide.Right) 
-            | DevExpress.XtraPrinting.BorderSide.Bottom)));
-            this.totalWithVat_lbl.BorderWidth = 1F;
-            this.totalWithVat_lbl.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Bold);
-            this.totalWithVat_lbl.Multiline = true;
-            this.totalWithVat_lbl.Name = "totalWithVat_lbl";
-            this.totalWithVat_lbl.StylePriority.UseBackColor = false;
-            this.totalWithVat_lbl.StylePriority.UseBorders = false;
-            this.totalWithVat_lbl.StylePriority.UseBorderWidth = false;
-            this.totalWithVat_lbl.StylePriority.UseFont = false;
-            this.totalWithVat_lbl.Text = "Total With Vat";
-            this.totalWithVat_lbl.Weight = 0.65197080188421119D;
-            // 
-            // totalCost_lbl
-            // 
-            this.totalCost_lbl.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.totalCost_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
-            | DevExpress.XtraPrinting.BorderSide.Right) 
-            | DevExpress.XtraPrinting.BorderSide.Bottom)));
-            this.totalCost_lbl.BorderWidth = 1F;
-            this.totalCost_lbl.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Bold);
-            this.totalCost_lbl.Multiline = true;
-            this.totalCost_lbl.Name = "totalCost_lbl";
-            this.totalCost_lbl.StylePriority.UseBackColor = false;
-            this.totalCost_lbl.StylePriority.UseBorders = false;
-            this.totalCost_lbl.StylePriority.UseBorderWidth = false;
-            this.totalCost_lbl.StylePriority.UseFont = false;
-            this.totalCost_lbl.Text = "Total Cost";
-            this.totalCost_lbl.Weight = 0.65197080611895175D;
-            // 
-            // grossProfit_lbl
-            // 
-            this.grossProfit_lbl.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.grossProfit_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
-            | DevExpress.XtraPrinting.BorderSide.Right) 
-            | DevExpress.XtraPrinting.BorderSide.Bottom)));
-            this.grossProfit_lbl.BorderWidth = 1F;
-            this.grossProfit_lbl.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Bold);
-            this.grossProfit_lbl.Multiline = true;
-            this.grossProfit_lbl.Name = "grossProfit_lbl";
-            this.grossProfit_lbl.StylePriority.UseBackColor = false;
-            this.grossProfit_lbl.StylePriority.UseBorders = false;
-            this.grossProfit_lbl.StylePriority.UseBorderWidth = false;
-            this.grossProfit_lbl.StylePriority.UseFont = false;
-            this.grossProfit_lbl.Text = "Gross Profit";
-            this.grossProfit_lbl.Weight = 0.65197085887348116D;
-            // 
             // SummarySubReports
             // 
             this.Bands.AddRange(new DevExpress.XtraReports.UI.Band[] {
@@ -545,8 +545,8 @@ namespace ArgusCR1029.Sales.SA416c
             this.PageWidth = 1299;
             this.PaperKind = System.Drawing.Printing.PaperKind.A4Plus;
             this.Version = "20.1";
-            ((System.ComponentModel.ISupportInitialize)(this.xrTable3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.xrTable3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
 
         }

@@ -1,27 +1,36 @@
 ﻿using DevExpress.XtraReports.UI;
 using System;
 using System.Collections;
+using System.Collections.Generic;
 using System.ComponentModel;
 using System.Drawing.Printing;
 
-namespace ArgusCR1029.Sales
+namespace ArgusCR1029.Sales.SA416b
 {
     public partial class SA416b : ArgusRPT.BaseReport
-    {
+    {      
         public SA416b()
         {
             InitializeComponent();
         }
-
         protected override string reportName()
         {
             return title_lbl.Text;
         }
 
+        public override void setSessionInfo(Dictionary<string, string> _reportHeaders)
+        {
+            base.setSessionInfo(_reportHeaders);
+            ((ArgusRPT.BaseReport)(DetailSubReports.ReportSource)).setSessionInfo(sessionInfo);
+            ((ArgusRPT.BaseReport)(SummarySubReports.ReportSource)).setSessionInfo(sessionInfo);
+            initSubReports();
+        }
         protected override void OnBeforePrint(PrintEventArgs e)
         {
-            SharedClasses.JsonProtocol.QryStructure<Custom.CR1029.SA416b> obj = deserializeList<Custom.CR1029.SA416b>();
-            DataSource = obj.list;
+            RightToLeft = DevExpress.XtraReports.UI.RightToLeft.No;
+            RightToLeftLayout = DevExpress.XtraReports.UI.RightToLeftLayout.No;
+
+            SharedClasses.JsonProtocol.GetStructure<Custom.CR1029.SA416b> webObject = deserializeGet<Custom.CR1029.SA416b>();
 
             startDate_param.Text = Parameters.Count > 0 ? Parameters[0].Value.ToString() : string.Empty;
             endDate_param.Text = Parameters.Count > 1 ? Parameters[1].Value.ToString() : string.Empty;
@@ -41,44 +50,18 @@ namespace ArgusCR1029.Sales
             logo_data.ImageUrl = companyInfo.logoUrl;
 
             printSignature.Text = reportSignature();
+
+            ((DetailSubReports)(DetailSubReports.ReportSource)).data = webObject.record.items;
+            ((SummarySubReports)(SummarySubReports.ReportSource)).data = webObject.record.summary;
+
             base.OnBeforePrint(e);
         }
 
         protected override void labelsText()
         {
             title_lbl.Text = labelText(0);
-
-            sku_lbl.Text = labelText(1);
-            itemName_lbl.Text = labelText(2);
-            category_lbl.Text = labelText(3);
-            line_lbl.Text = labelText(4);
-            grp_lbl.Text = labelText(5);
-            collection_lbl.Text = labelText(6);
-            G18_lbl.Text = labelText(7);
-            G21_lbl.Text = labelText(8);
-            laborPrice_lbl.Text = labelText(9);
-            vatAmount_lbl.Text = labelText(10);
-            totalWithVat_lbl.Text = labelText(11);
-            totalCost_lbl.Text = labelText(12);
-            unitCost_lbl.Text = labelText(13);
-
-            startDate_lbl.Text = labelText(14);
-            endDate_lbl.Text = labelText(15);
-            itemCategory_lbl.Text = labelText(16);
-            itemGroup_lbl.Text = labelText(17);
-            item_lbl.Text = labelText(18);
-            client_lbl.Text = labelText(19);
-            plant_lbl.Text = labelText(20);
-            systemFunction_lbl.Text = labelText(21);
-            docType_lbl.Text = labelText(22);
-            clientGrp_lbl.Text = labelText(23);
-            salesPerson_lbl.Text = labelText(24);
-            reference_lbl.Text = labelText(25);
-            itemCollection_lbl.Text = labelText(26);
-            productionLine_lbl.Text = labelText(27);
-
-            total_lbl.Text = labelText(28);
         }
+
         protected override string dictionaryStore()
         {
             return "CR1029.SA416b";
