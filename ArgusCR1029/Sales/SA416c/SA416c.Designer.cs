@@ -40,9 +40,8 @@ namespace ArgusCR1029.Sales.SA416c
             this.TopMargin = new DevExpress.XtraReports.UI.TopMarginBand();
             this.BottomMargin = new DevExpress.XtraReports.UI.BottomMarginBand();
             this.ReportHeader = new DevExpress.XtraReports.UI.ReportHeaderBand();
-            this.PageFooter = new DevExpress.XtraReports.UI.PageFooterBand();
-            this.printSignature = new DevExpress.XtraReports.UI.XRLabel();
-            this.pagesNumber_lbl = new DevExpress.XtraReports.UI.XRPageInfo();
+            this.logo_data = new DevExpress.XtraReports.UI.XRPictureBox();
+            this.title_lbl = new DevExpress.XtraReports.UI.XRLabel();
             this.xrTable5 = new DevExpress.XtraReports.UI.XRTable();
             this.xrTableRow5 = new DevExpress.XtraReports.UI.XRTableRow();
             this.startDate_lbl = new DevExpress.XtraReports.UI.XRTableCell();
@@ -87,8 +86,9 @@ namespace ArgusCR1029.Sales.SA416c
             this.xrTableRow16 = new DevExpress.XtraReports.UI.XRTableRow();
             this.productionLine_lbl = new DevExpress.XtraReports.UI.XRTableCell();
             this.productionLine_param = new DevExpress.XtraReports.UI.XRTableCell();
-            this.logo_data = new DevExpress.XtraReports.UI.XRPictureBox();
-            this.title_lbl = new DevExpress.XtraReports.UI.XRLabel();
+            this.PageFooter = new DevExpress.XtraReports.UI.PageFooterBand();
+            this.printSignature = new DevExpress.XtraReports.UI.XRLabel();
+            this.pagesNumber_lbl = new DevExpress.XtraReports.UI.XRPageInfo();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
@@ -105,7 +105,7 @@ namespace ArgusCR1029.Sales.SA416c
             // 
             this.DetailSubReports.LocationFloat = new DevExpress.Utils.PointFloat(24.58334F, 0F);
             this.DetailSubReports.Name = "DetailSubReports";
-            this.DetailSubReports.ReportSource = new ArgusCR1029.Sales.SA424.DetailSubReports();
+            this.DetailSubReports.ReportSource = new ArgusCR1029.Sales.SA416c.DetailSubReports();
             this.DetailSubReports.SizeF = new System.Drawing.SizeF(1252.833F, 23F);
             // 
             // Detail
@@ -128,7 +128,7 @@ namespace ArgusCR1029.Sales.SA416c
             // 
             this.SummarySubReports.LocationFloat = new DevExpress.Utils.PointFloat(24.58334F, 18.33324F);
             this.SummarySubReports.Name = "SummarySubReports";
-            this.SummarySubReports.ReportSource = new ArgusCR1029.Sales.SA424.SummarySubReports();
+            this.SummarySubReports.ReportSource = new ArgusCR1029.Sales.SA416c.SummarySubReports();
             this.SummarySubReports.SizeF = new System.Drawing.SizeF(1252.833F, 23F);
             // 
             // TopMargin
@@ -151,44 +151,25 @@ namespace ArgusCR1029.Sales.SA416c
             this.ReportHeader.HeightF = 224.9168F;
             this.ReportHeader.Name = "ReportHeader";
             // 
-            // PageFooter
+            // logo_data
             // 
-            this.PageFooter.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
-            this.printSignature,
-            this.pagesNumber_lbl});
-            this.PageFooter.HeightF = 32.50003F;
-            this.PageFooter.Name = "PageFooter";
+            this.logo_data.LocationFloat = new DevExpress.Utils.PointFloat(12.49976F, 0F);
+            this.logo_data.Name = "logo_data";
+            this.logo_data.SizeF = new System.Drawing.SizeF(206.8123F, 113F);
+            this.logo_data.Sizing = DevExpress.XtraPrinting.ImageSizeMode.ZoomImage;
             // 
-            // printSignature
+            // title_lbl
             // 
-            this.printSignature.Font = new System.Drawing.Font("Arial", 8F);
-            this.printSignature.ForeColor = System.Drawing.Color.DimGray;
-            this.printSignature.LocationFloat = new DevExpress.Utils.PointFloat(24.58334F, 9.500027F);
-            this.printSignature.Multiline = true;
-            this.printSignature.Name = "printSignature";
-            this.printSignature.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.printSignature.SizeF = new System.Drawing.SizeF(733.1813F, 23F);
-            this.printSignature.StylePriority.UseFont = false;
-            this.printSignature.StylePriority.UseForeColor = false;
-            this.printSignature.StylePriority.UseTextAlignment = false;
-            this.printSignature.Text = "printSignature";
-            this.printSignature.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
-            // 
-            // pagesNumber_lbl
-            // 
-            this.pagesNumber_lbl.BackColor = System.Drawing.Color.White;
-            this.pagesNumber_lbl.Font = new System.Drawing.Font("Arial", 8F);
-            this.pagesNumber_lbl.ForeColor = System.Drawing.Color.DimGray;
-            this.pagesNumber_lbl.LocationFloat = new DevExpress.Utils.PointFloat(1179.74F, 12.5F);
-            this.pagesNumber_lbl.Name = "pagesNumber_lbl";
-            this.pagesNumber_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.pagesNumber_lbl.SizeF = new System.Drawing.SizeF(97.67694F, 20.00002F);
-            this.pagesNumber_lbl.StylePriority.UseBackColor = false;
-            this.pagesNumber_lbl.StylePriority.UseFont = false;
-            this.pagesNumber_lbl.StylePriority.UseForeColor = false;
-            this.pagesNumber_lbl.StylePriority.UseTextAlignment = false;
-            this.pagesNumber_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
-            this.pagesNumber_lbl.TextFormatString = "Page {0} of {1}";
+            this.title_lbl.Font = new System.Drawing.Font("Times New Roman", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
+            this.title_lbl.LocationFloat = new DevExpress.Utils.PointFloat(219.312F, 0F);
+            this.title_lbl.Multiline = true;
+            this.title_lbl.Name = "title_lbl";
+            this.title_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.title_lbl.SizeF = new System.Drawing.SizeF(1079.688F, 39.66666F);
+            this.title_lbl.StylePriority.UseFont = false;
+            this.title_lbl.StylePriority.UseTextAlignment = false;
+            this.title_lbl.Text = " Detailed Sales Costs By Document";
+            this.title_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             // 
             // xrTable5
             // 
@@ -570,25 +551,44 @@ namespace ArgusCR1029.Sales.SA416c
             this.productionLine_param.StylePriority.UseFont = false;
             this.productionLine_param.Weight = 1.2311113879433222D;
             // 
-            // logo_data
+            // PageFooter
             // 
-            this.logo_data.LocationFloat = new DevExpress.Utils.PointFloat(12.49976F, 0F);
-            this.logo_data.Name = "logo_data";
-            this.logo_data.SizeF = new System.Drawing.SizeF(206.8123F, 113F);
-            this.logo_data.Sizing = DevExpress.XtraPrinting.ImageSizeMode.ZoomImage;
+            this.PageFooter.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+            this.printSignature,
+            this.pagesNumber_lbl});
+            this.PageFooter.HeightF = 32.50003F;
+            this.PageFooter.Name = "PageFooter";
             // 
-            // title_lbl
+            // printSignature
             // 
-            this.title_lbl.Font = new System.Drawing.Font("Times New Roman", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
-            this.title_lbl.LocationFloat = new DevExpress.Utils.PointFloat(219.312F, 0F);
-            this.title_lbl.Multiline = true;
-            this.title_lbl.Name = "title_lbl";
-            this.title_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.title_lbl.SizeF = new System.Drawing.SizeF(1079.688F, 39.66666F);
-            this.title_lbl.StylePriority.UseFont = false;
-            this.title_lbl.StylePriority.UseTextAlignment = false;
-            this.title_lbl.Text = " Detailed Sales Costs By Document";
-            this.title_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            this.printSignature.Font = new System.Drawing.Font("Arial", 8F);
+            this.printSignature.ForeColor = System.Drawing.Color.DimGray;
+            this.printSignature.LocationFloat = new DevExpress.Utils.PointFloat(24.58334F, 9.500027F);
+            this.printSignature.Multiline = true;
+            this.printSignature.Name = "printSignature";
+            this.printSignature.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.printSignature.SizeF = new System.Drawing.SizeF(825.8896F, 23F);
+            this.printSignature.StylePriority.UseFont = false;
+            this.printSignature.StylePriority.UseForeColor = false;
+            this.printSignature.StylePriority.UseTextAlignment = false;
+            this.printSignature.Text = "printSignature";
+            this.printSignature.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            // 
+            // pagesNumber_lbl
+            // 
+            this.pagesNumber_lbl.BackColor = System.Drawing.Color.White;
+            this.pagesNumber_lbl.Font = new System.Drawing.Font("Arial", 8F);
+            this.pagesNumber_lbl.ForeColor = System.Drawing.Color.DimGray;
+            this.pagesNumber_lbl.LocationFloat = new DevExpress.Utils.PointFloat(1179.74F, 12.5F);
+            this.pagesNumber_lbl.Name = "pagesNumber_lbl";
+            this.pagesNumber_lbl.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.pagesNumber_lbl.SizeF = new System.Drawing.SizeF(97.67694F, 20.00002F);
+            this.pagesNumber_lbl.StylePriority.UseBackColor = false;
+            this.pagesNumber_lbl.StylePriority.UseFont = false;
+            this.pagesNumber_lbl.StylePriority.UseForeColor = false;
+            this.pagesNumber_lbl.StylePriority.UseTextAlignment = false;
+            this.pagesNumber_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            this.pagesNumber_lbl.TextFormatString = "Page {0} of {1}";
             // 
             // SA416c
             // 
