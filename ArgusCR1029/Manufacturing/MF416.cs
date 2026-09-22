@@ -41,11 +41,11 @@ namespace ArgusCR1029.Manufacturing
            stone_param.Text = Parameters.Count > 16 ? Parameters[16].Value.ToString() : string.Empty;
            status_param.Text = Parameters.Count > 17 ? Parameters[17].Value.ToString() : string.Empty;
            workCenter_param.Text = Parameters.Count > 18 ? Parameters[18].Value.ToString() : string.Empty;
-           documentType_param.Text = Parameters.Count > 18 ? Parameters[18].Value.ToString() : string.Empty;
-           reference_param.Text = Parameters.Count > 18 ? Parameters[18].Value.ToString() : string.Empty;
-           metal_param.Text = Parameters.Count > 18 ? Parameters[18].Value.ToString() : string.Empty;
-           designFamily_param.Text = Parameters.Count > 18 ? Parameters[18].Value.ToString() : string.Empty;
-           productDeveloper_param.Text = Parameters.Count > 18 ? Parameters[18].Value.ToString() : string.Empty;
+           documentType_param.Text = Parameters.Count > 19 ? Parameters[19].Value.ToString() : string.Empty;
+           reference_param.Text = Parameters.Count > 20 ? Parameters[20].Value.ToString() : string.Empty;
+           metal_param.Text = Parameters.Count > 21 ? Parameters[21].Value.ToString() : string.Empty;
+           designFamily_param.Text = Parameters.Count > 22 ? Parameters[22].Value.ToString() : string.Empty;
+           productDeveloper_param.Text = Parameters.Count > 23 ? Parameters[23].Value.ToString() : string.Empty;
 
             logo_data.ImageUrl = companyInfo?.logoUrl;
            companyInfoName_data.Text = companyInfo?.name;
