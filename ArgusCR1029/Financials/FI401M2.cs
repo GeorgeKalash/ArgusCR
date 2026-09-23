@@ -50,6 +50,7 @@ namespace ArgusCR1029.Financials
             functionName_lbl.Text = labelText(7);
             plantRef_lbl.Text = labelText(8);
             grandTotal_lbl.Text = labelText(9);
+            contactPerson_lbl.Text = labelText(10);
         }
         protected override string dictionaryStore()
         {

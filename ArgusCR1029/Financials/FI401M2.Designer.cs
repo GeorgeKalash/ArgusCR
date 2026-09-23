@@ -75,7 +75,7 @@ namespace ArgusCR1029.Financials
             this.reference_lbl = new DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell();
             this.functionName_lbl = new DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell();
             this.plantRef_lbl = new DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell();
-            this.xrCrossTabCell7 = new DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell();
+            this.contactPerson_lbl = new DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell();
             this.balanceNonMetal_data = new DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell();
             this.balanceBaseMetal_data = new DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell();
             this.xrCrossTabCell10 = new DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell();
@@ -213,7 +213,7 @@ namespace ArgusCR1029.Financials
             this.reference_lbl,
             this.functionName_lbl,
             this.plantRef_lbl,
-            this.xrCrossTabCell7,
+            this.contactPerson_lbl,
             this.balanceNonMetal_data,
             this.balanceBaseMetal_data,
             this.xrCrossTabCell10,
@@ -434,17 +434,17 @@ namespace ArgusCR1029.Financials
             this.plantRef_lbl.Text = "Plant";
             this.plantRef_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             // 
-            // xrCrossTabCell7
+            // contactPerson_lbl
             // 
-            this.xrCrossTabCell7.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.xrCrossTabCell7.BorderColor = System.Drawing.Color.Black;
-            this.xrCrossTabCell7.ColumnIndex = 6;
-            this.xrCrossTabCell7.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Bold);
-            this.xrCrossTabCell7.Name = "xrCrossTabCell7";
-            this.xrCrossTabCell7.RowIndex = 0;
-            this.xrCrossTabCell7.RowSpan = 2;
-            this.xrCrossTabCell7.Text = "Contact Person";
-            this.xrCrossTabCell7.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            this.contactPerson_lbl.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.contactPerson_lbl.BorderColor = System.Drawing.Color.Black;
+            this.contactPerson_lbl.ColumnIndex = 6;
+            this.contactPerson_lbl.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Bold);
+            this.contactPerson_lbl.Name = "contactPerson_lbl";
+            this.contactPerson_lbl.RowIndex = 0;
+            this.contactPerson_lbl.RowSpan = 2;
+            this.contactPerson_lbl.Text = "Contact Person";
+            this.contactPerson_lbl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             // 
             // balanceNonMetal_data
             // 
@@ -1121,7 +1121,7 @@ namespace ArgusCR1029.Financials
     "يد الحساب المذكور أعلاه صحيحا\r\nحسابات المبيعات  ت:25886123/24  - ف:25935727";
             this.xrLabel1.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopCenter;
             // 
-            // FI401
+            // FI401M2
             // 
             this.Bands.AddRange(new DevExpress.XtraReports.UI.Band[] {
             this.ReportHeader,
@@ -1168,7 +1168,7 @@ namespace ArgusCR1029.Financials
         private DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell reference_lbl;
         private DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell functionName_lbl;
         private DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell plantRef_lbl;
-        private DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell xrCrossTabCell7;
+        private DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell contactPerson_lbl;
         private DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell balanceNonMetal_data;
         private DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell balanceBaseMetal_data;
         private DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell xrCrossTabCell10;

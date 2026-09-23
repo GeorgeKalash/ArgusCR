@@ -1,9 +1,7 @@
 ﻿using DevExpress.XtraReports.UI;
 using System;
 using System.Collections;
-using System.Collections.Generic;
 using System.ComponentModel;
-using System.Drawing;
 using System.Drawing.Printing;
 
 namespace ArgusCR1029.Financials
@@ -57,6 +55,7 @@ namespace ArgusCR1029.Financials
             plantRef_lbl.Text = labelText(8);
             description_lbl.Text = labelText(9);
             grandTotal_lbl.Text = labelText(10);
+            contactPerson_lbl.Text = labelText(11);
         }
         protected override string dictionaryStore()
         {
