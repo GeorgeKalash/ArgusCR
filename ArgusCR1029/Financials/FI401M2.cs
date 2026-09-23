@@ -1,20 +1,17 @@
 ﻿using DevExpress.XtraReports.UI;
 using System;
 using System.Collections;
-using System.Collections.Generic;
 using System.ComponentModel;
-using System.Drawing;
 using System.Drawing.Printing;
 
 namespace ArgusCR1029.Financials
 {
     public partial class FI401M2 : ArgusRPT.BaseReport
     {
-        public FI401M2 ()
+        public FI401M2()
         {
             InitializeComponent();
         }
-
         protected override string reportName()
         {
             return title_lbl.Text;
@@ -33,7 +30,6 @@ namespace ArgusCR1029.Financials
             }
             balanceNonMetal_data.Text = obj.record.baseCurrencyRef;
             balanceBaseMetal_data.Text = obj.record.baseMetalCurrencyRef;
-
 
             logo_data.ImageUrl = companyInfo.logoUrl;
 
