@@ -36,7 +36,7 @@ namespace ArgusCR1029.Financials
             DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition crossTabColumnDefinition4 = new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(73.63783F);
             DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition crossTabColumnDefinition5 = new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(73.63783F);
             DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition crossTabColumnDefinition6 = new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(62.17948F);
-            DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition crossTabColumnDefinition7 = new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(85.09615F);
+            DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition crossTabColumnDefinition7 = new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(250F);
             DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition crossTabColumnDefinition8 = new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(73.63783F);
             DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition crossTabColumnDefinition9 = new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(73.63783F);
             DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition crossTabColumnDefinition10 = new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(73.63783F);
@@ -291,7 +291,7 @@ namespace ArgusCR1029.Financials
             crossTabColumnDefinition4.AutoWidthMode = DevExpress.XtraReports.UI.AutoSizeMode.ShrinkAndGrow;
             crossTabColumnDefinition5.AutoWidthMode = DevExpress.XtraReports.UI.AutoSizeMode.ShrinkAndGrow;
             crossTabColumnDefinition6.AutoWidthMode = DevExpress.XtraReports.UI.AutoSizeMode.ShrinkAndGrow;
-            crossTabColumnDefinition7.AutoWidthMode = DevExpress.XtraReports.UI.AutoSizeMode.ShrinkAndGrow;
+            crossTabColumnDefinition7.AutoWidthMode = DevExpress.XtraReports.UI.AutoSizeMode.ShrinkOnly;
             crossTabColumnDefinition8.AutoWidthMode = DevExpress.XtraReports.UI.AutoSizeMode.ShrinkAndGrow;
             crossTabColumnDefinition9.AutoWidthMode = DevExpress.XtraReports.UI.AutoSizeMode.ShrinkAndGrow;
             crossTabColumnDefinition10.AutoWidthMode = DevExpress.XtraReports.UI.AutoSizeMode.ShrinkAndGrow;
@@ -381,7 +381,7 @@ namespace ArgusCR1029.Financials
             crossTabRowField8,
             crossTabRowField9,
             crossTabRowField10});
-            this.crossTab.SizeF = new System.Drawing.SizeF(957.2917F, 325F);
+            this.crossTab.SizeF = new System.Drawing.SizeF(1122.196F, 325F);
             this.crossTab.TotalAreaStyleName = "crossTabTotalStyle";
             // 
             // xrCrossTabCell1
