@@ -1079,9 +1079,10 @@ namespace ArgusCR1029.Financials
             this.printSignature.LocationFloat = new DevExpress.Utils.PointFloat(12.5F, 74.49998F);
             this.printSignature.Multiline = true;
             this.printSignature.Name = "printSignature";
-            this.printSignature.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.printSignature.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 5, 0, 100F);
             this.printSignature.SizeF = new System.Drawing.SizeF(960.156F, 25.50002F);
             this.printSignature.StylePriority.UseFont = false;
+            this.printSignature.StylePriority.UsePadding = false;
             this.printSignature.StylePriority.UseTextAlignment = false;
             this.printSignature.Text = "printSignature";
             this.printSignature.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
@@ -1135,9 +1136,9 @@ namespace ArgusCR1029.Financials
             this.HorizontalContentSplitting = DevExpress.XtraPrinting.HorizontalContentSplitting.Smart;
             this.Landscape = true;
             this.Margins = new System.Drawing.Printing.Margins(0, 0, 13, 0);
-            this.PageHeight = 827;
-            this.PageWidth = 1169;
-            this.PaperKind = System.Drawing.Printing.PaperKind.A4;
+            this.PageHeight = 1268;
+            this.PageWidth = 1752;
+            this.PaperKind = System.Drawing.Printing.PaperKind.A3Extra;
             this.StyleSheet.AddRange(new DevExpress.XtraReports.UI.XRControlStyle[] {
             this.TitleStyle,
             this.crossTabGeneralStyle,
