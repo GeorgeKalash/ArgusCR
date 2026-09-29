@@ -64,6 +64,10 @@ namespace ArgusCR1029.Inventory
             createdDate_lbl.Text = labelText(15);
             stones_lbl.Text = labelText(16);
             isInactive_lbl.Text = labelText(17);
+
+            design_lbl.Text = labelText(18);
+            designFamily_lbl.Text = labelText(19);
+            productDeveloper_lbl.Text = labelText(20);
         }
         protected override string dictionaryStore()
         {
