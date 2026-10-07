@@ -541,7 +541,7 @@ namespace ArgusCR1029.Sales
             this.xrTableRow11,
             this.xrTableRow12,
             this.xrTableRow13});
-            this.xrTable6.SizeF = new System.Drawing.SizeF(314.4232F, 138.8334F);
+            this.xrTable6.SizeF = new System.Drawing.SizeF(290.4648F, 138.8334F);
             // 
             // xrTableRow7
             // 
@@ -566,7 +566,7 @@ namespace ArgusCR1029.Sales
             this.startDate_param.Multiline = true;
             this.startDate_param.Name = "startDate_param";
             this.startDate_param.StylePriority.UseFont = false;
-            this.startDate_param.Weight = 1.1115163926146898D;
+            this.startDate_param.Weight = 0.99434861349467507D;
             // 
             // xrTableRow8
             // 
@@ -591,7 +591,7 @@ namespace ArgusCR1029.Sales
             this.endDate_param.Multiline = true;
             this.endDate_param.Name = "endDate_param";
             this.endDate_param.StylePriority.UseFont = false;
-            this.endDate_param.Weight = 1.1115163926146898D;
+            this.endDate_param.Weight = 0.99434861349467507D;
             // 
             // xrTableRow9
             // 
@@ -616,7 +616,7 @@ namespace ArgusCR1029.Sales
             this.level_param.Multiline = true;
             this.level_param.Name = "level_param";
             this.level_param.StylePriority.UseFont = false;
-            this.level_param.Weight = 1.1115163926146898D;
+            this.level_param.Weight = 0.99434861349467507D;
             // 
             // xrTableRow10
             // 
@@ -641,7 +641,7 @@ namespace ArgusCR1029.Sales
             this.plant_param.Multiline = true;
             this.plant_param.Name = "plant_param";
             this.plant_param.StylePriority.UseFont = false;
-            this.plant_param.Weight = 1.1115163926146898D;
+            this.plant_param.Weight = 0.99434861349467507D;
             // 
             // xrTableRow11
             // 
@@ -666,7 +666,7 @@ namespace ArgusCR1029.Sales
             this.sz_param.Multiline = true;
             this.sz_param.Name = "sz_param";
             this.sz_param.StylePriority.UseFont = false;
-            this.sz_param.Weight = 1.1115163926146898D;
+            this.sz_param.Weight = 0.99434861349467507D;
             // 
             // xrTableRow12
             // 
@@ -691,7 +691,7 @@ namespace ArgusCR1029.Sales
             this.client_param.Multiline = true;
             this.client_param.Name = "client_param";
             this.client_param.StylePriority.UseFont = false;
-            this.client_param.Weight = 1.1115163926146898D;
+            this.client_param.Weight = 0.99434861349467507D;
             // 
             // xrTableRow13
             // 
@@ -716,11 +716,11 @@ namespace ArgusCR1029.Sales
             this.clientGrp_param.Multiline = true;
             this.clientGrp_param.Name = "clientGrp_param";
             this.clientGrp_param.StylePriority.UseFont = false;
-            this.clientGrp_param.Weight = 1.1115163926146898D;
+            this.clientGrp_param.Weight = 0.99434861349467507D;
             // 
             // xrTable7
             // 
-            this.xrTable7.LocationFloat = new DevExpress.Utils.PointFloat(451.9232F, 50F);
+            this.xrTable7.LocationFloat = new DevExpress.Utils.PointFloat(427.9648F, 50.00006F);
             this.xrTable7.Name = "xrTable7";
             this.xrTable7.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable7.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
@@ -730,7 +730,7 @@ namespace ArgusCR1029.Sales
             this.xrTableRow17,
             this.xrTableRow18,
             this.xrTableRow19});
-            this.xrTable7.SizeF = new System.Drawing.SizeF(327.0833F, 119F);
+            this.xrTable7.SizeF = new System.Drawing.SizeF(297.9167F, 119F);
             // 
             // xrTableRow14
             // 
@@ -755,7 +755,7 @@ namespace ArgusCR1029.Sales
             this.plantGrp_param.Multiline = true;
             this.plantGrp_param.Name = "plantGrp_param";
             this.plantGrp_param.StylePriority.UseFont = false;
-            this.plantGrp_param.Weight = 1.1082240925896616D;
+            this.plantGrp_param.Weight = 0.96558548933590593D;
             // 
             // xrTableRow15
             // 
@@ -780,7 +780,7 @@ namespace ArgusCR1029.Sales
             this.itemCategory_param.Multiline = true;
             this.itemCategory_param.Name = "itemCategory_param";
             this.itemCategory_param.StylePriority.UseFont = false;
-            this.itemCategory_param.Weight = 1.1082240925896616D;
+            this.itemCategory_param.Weight = 0.96558548933590593D;
             // 
             // xrTableRow16
             // 
@@ -805,7 +805,7 @@ namespace ArgusCR1029.Sales
             this.item_param.Multiline = true;
             this.item_param.Name = "item_param";
             this.item_param.StylePriority.UseFont = false;
-            this.item_param.Weight = 1.1082240925896616D;
+            this.item_param.Weight = 0.96558548933590593D;
             // 
             // xrTableRow17
             // 
@@ -830,7 +830,7 @@ namespace ArgusCR1029.Sales
             this.itemGrp_param.Multiline = true;
             this.itemGrp_param.Name = "itemGrp_param";
             this.itemGrp_param.StylePriority.UseFont = false;
-            this.itemGrp_param.Weight = 1.1082240925896616D;
+            this.itemGrp_param.Weight = 0.96558548933590593D;
             // 
             // xrTableRow18
             // 
@@ -855,7 +855,7 @@ namespace ArgusCR1029.Sales
             this.syFunction_param.Multiline = true;
             this.syFunction_param.Name = "syFunction_param";
             this.syFunction_param.StylePriority.UseFont = false;
-            this.syFunction_param.Weight = 1.1082240925896616D;
+            this.syFunction_param.Weight = 0.96558548933590593D;
             // 
             // xrTableRow19
             // 
@@ -880,7 +880,7 @@ namespace ArgusCR1029.Sales
             this.production_param.Multiline = true;
             this.production_param.Name = "production_param";
             this.production_param.StylePriority.UseFont = false;
-            this.production_param.Weight = 1.1082240925896616D;
+            this.production_param.Weight = 0.96558548933590593D;
             // 
             // title_lbl
             // 

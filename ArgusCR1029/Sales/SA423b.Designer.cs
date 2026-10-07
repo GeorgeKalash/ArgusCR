@@ -340,7 +340,7 @@ namespace ArgusCR1029.Sales
             this.xrTable7,
             this.title_lbl,
             this.logo_data});
-            this.ReportHeader.HeightF = 234.0416F;
+            this.ReportHeader.HeightF = 218.6249F;
             this.ReportHeader.KeepTogether = true;
             this.ReportHeader.Name = "ReportHeader";
             // 
