@@ -829,7 +829,7 @@ namespace ArgusCR1029.Sales
             this.productionLine_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.productionLine_lbl.BorderWidth = 1F;
-            this.productionLine_lbl.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold);
+            this.productionLine_lbl.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Bold);
             this.productionLine_lbl.Multiline = true;
             this.productionLine_lbl.Name = "productionLine_lbl";
             this.productionLine_lbl.StylePriority.UseBackColor = false;
@@ -845,7 +845,7 @@ namespace ArgusCR1029.Sales
             this.g18_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.g18_lbl.BorderWidth = 1F;
-            this.g18_lbl.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold);
+            this.g18_lbl.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Bold);
             this.g18_lbl.Multiline = true;
             this.g18_lbl.Name = "g18_lbl";
             this.g18_lbl.StylePriority.UseBackColor = false;
@@ -861,7 +861,7 @@ namespace ArgusCR1029.Sales
             this.g21_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.g21_lbl.BorderWidth = 1F;
-            this.g21_lbl.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold);
+            this.g21_lbl.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Bold);
             this.g21_lbl.Multiline = true;
             this.g21_lbl.Name = "g21_lbl";
             this.g21_lbl.StylePriority.UseBackColor = false;
@@ -877,7 +877,7 @@ namespace ArgusCR1029.Sales
             this.vat_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.vat_lbl.BorderWidth = 1F;
-            this.vat_lbl.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold);
+            this.vat_lbl.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Bold);
             this.vat_lbl.Multiline = true;
             this.vat_lbl.Name = "vat_lbl";
             this.vat_lbl.StylePriority.UseBackColor = false;
@@ -893,7 +893,7 @@ namespace ArgusCR1029.Sales
             this.discount_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.discount_lbl.BorderWidth = 1F;
-            this.discount_lbl.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold);
+            this.discount_lbl.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Bold);
             this.discount_lbl.Multiline = true;
             this.discount_lbl.Name = "discount_lbl";
             this.discount_lbl.StylePriority.UseBackColor = false;
@@ -909,7 +909,7 @@ namespace ArgusCR1029.Sales
             this.net_lbl.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.net_lbl.BorderWidth = 1F;
-            this.net_lbl.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold);
+            this.net_lbl.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Bold);
             this.net_lbl.Multiline = true;
             this.net_lbl.Name = "net_lbl";
             this.net_lbl.StylePriority.UseBackColor = false;
@@ -926,7 +926,7 @@ namespace ArgusCR1029.Sales
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.avgDiscount_lbl.BorderWidth = 1F;
-            this.avgDiscount_lbl.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold);
+            this.avgDiscount_lbl.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Bold);
             this.avgDiscount_lbl.Multiline = true;
             this.avgDiscount_lbl.Name = "avgDiscount_lbl";
             this.avgDiscount_lbl.StylePriority.UseBackColor = false;
