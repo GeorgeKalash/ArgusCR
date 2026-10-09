@@ -33,8 +33,10 @@ namespace ArgusCR1029.Manufacturing.MF428
         private void InitializeComponent()
         {
             this.GeneralSubBand = new DevExpress.XtraReports.UI.SubBand();
+            this.GeneralSubReports = new DevExpress.XtraReports.UI.XRSubreport();
             this.Detail = new DevExpress.XtraReports.UI.DetailBand();
             this.SummarySubBand = new DevExpress.XtraReports.UI.SubBand();
+            this.MetalSubReports = new DevExpress.XtraReports.UI.XRSubreport();
             this.TopMargin = new DevExpress.XtraReports.UI.TopMarginBand();
             this.BottomMargin = new DevExpress.XtraReports.UI.BottomMarginBand();
             this.ReportHeader = new DevExpress.XtraReports.UI.ReportHeaderBand();
@@ -75,8 +77,6 @@ namespace ArgusCR1029.Manufacturing.MF428
             this.xrTableCell9 = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTableCell10 = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTableCell11 = new DevExpress.XtraReports.UI.XRTableCell();
-            this.GeneralSubReports = new DevExpress.XtraReports.UI.XRSubreport();
-            this.MetalSubReports = new DevExpress.XtraReports.UI.XRSubreport();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
@@ -88,6 +88,13 @@ namespace ArgusCR1029.Manufacturing.MF428
             this.GeneralSubReports});
             this.GeneralSubBand.HeightF = 23F;
             this.GeneralSubBand.Name = "GeneralSubBand";
+            // 
+            // GeneralSubReports
+            // 
+            this.GeneralSubReports.LocationFloat = new DevExpress.Utils.PointFloat(25.00003F, 0F);
+            this.GeneralSubReports.Name = "GeneralSubReports";
+            this.GeneralSubReports.ReportSource = new ArgusCR1029.Manufacturing.MF428.GeneralSubReports();
+            this.GeneralSubReports.SizeF = new System.Drawing.SizeF(1121.356F, 23F);
             // 
             // Detail
             // 
@@ -104,6 +111,13 @@ namespace ArgusCR1029.Manufacturing.MF428
             this.MetalSubReports});
             this.SummarySubBand.HeightF = 23F;
             this.SummarySubBand.Name = "SummarySubBand";
+            // 
+            // MetalSubReports
+            // 
+            this.MetalSubReports.LocationFloat = new DevExpress.Utils.PointFloat(25.00003F, 0F);
+            this.MetalSubReports.Name = "MetalSubReports";
+            this.MetalSubReports.ReportSource = new ArgusCR1029.Manufacturing.MF428.MetalSubReports();
+            this.MetalSubReports.SizeF = new System.Drawing.SizeF(1121.356F, 23F);
             // 
             // TopMargin
             // 
@@ -155,8 +169,8 @@ namespace ArgusCR1029.Manufacturing.MF428
             this.startDate_lbl.Multiline = true;
             this.startDate_lbl.Name = "startDate_lbl";
             this.startDate_lbl.StylePriority.UseFont = false;
-            this.startDate_lbl.Text = "تاريخ البدء";
-            this.startDate_lbl.Weight = 0.45253756424627994D;
+            this.startDate_lbl.Text = "تاريخ البدء:";
+            this.startDate_lbl.Weight = 0.37492585263179118D;
             // 
             // startDate_param
             // 
@@ -164,7 +178,7 @@ namespace ArgusCR1029.Manufacturing.MF428
             this.startDate_param.Multiline = true;
             this.startDate_param.Name = "startDate_param";
             this.startDate_param.StylePriority.UseFont = false;
-            this.startDate_param.Weight = 1.1653730944472054D;
+            this.startDate_param.Weight = 1.2429848060616942D;
             // 
             // xrTableRow7
             // 
@@ -180,8 +194,8 @@ namespace ArgusCR1029.Manufacturing.MF428
             this.endDate_lbl.Multiline = true;
             this.endDate_lbl.Name = "endDate_lbl";
             this.endDate_lbl.StylePriority.UseFont = false;
-            this.endDate_lbl.Text = "تاريخ الانتهاء";
-            this.endDate_lbl.Weight = 0.45253756424628D;
+            this.endDate_lbl.Text = "تاريخ الانتهاء:";
+            this.endDate_lbl.Weight = 0.37492585263179123D;
             // 
             // endDate_param
             // 
@@ -189,7 +203,7 @@ namespace ArgusCR1029.Manufacturing.MF428
             this.endDate_param.Multiline = true;
             this.endDate_param.Name = "endDate_param";
             this.endDate_param.StylePriority.UseFont = false;
-            this.endDate_param.Weight = 1.1653730944472052D;
+            this.endDate_param.Weight = 1.2429848060616939D;
             // 
             // xrTableRow9
             // 
@@ -205,8 +219,8 @@ namespace ArgusCR1029.Manufacturing.MF428
             this.item_lbl.Multiline = true;
             this.item_lbl.Name = "item_lbl";
             this.item_lbl.StylePriority.UseFont = false;
-            this.item_lbl.Text = "مركز العمل";
-            this.item_lbl.Weight = 0.45253756424628D;
+            this.item_lbl.Text = "مركز العمل:";
+            this.item_lbl.Weight = 0.37492585263179123D;
             // 
             // workCenter_param
             // 
@@ -214,7 +228,7 @@ namespace ArgusCR1029.Manufacturing.MF428
             this.workCenter_param.Multiline = true;
             this.workCenter_param.Name = "workCenter_param";
             this.workCenter_param.StylePriority.UseFont = false;
-            this.workCenter_param.Weight = 1.1653730944472052D;
+            this.workCenter_param.Weight = 1.2429848060616939D;
             // 
             // title_lbl
             // 
@@ -544,20 +558,6 @@ namespace ArgusCR1029.Manufacturing.MF428
             this.xrTableCell11.StylePriority.UsePadding = false;
             this.xrTableCell11.Text = "نسبه الإضافات";
             this.xrTableCell11.Weight = 0.64079282455648D;
-            // 
-            // GeneralSubReports
-            // 
-            this.GeneralSubReports.LocationFloat = new DevExpress.Utils.PointFloat(25.00003F, 0F);
-            this.GeneralSubReports.Name = "GeneralSubReports";
-            this.GeneralSubReports.ReportSource = new ArgusCR1029.Manufacturing.MF428.GeneralSubReports();
-            this.GeneralSubReports.SizeF = new System.Drawing.SizeF(1121.356F, 23F);
-            // 
-            // MetalSubReports
-            // 
-            this.MetalSubReports.LocationFloat = new DevExpress.Utils.PointFloat(25.00003F, 0F);
-            this.MetalSubReports.Name = "MetalSubReports";
-            this.MetalSubReports.ReportSource = new ArgusCR1029.Manufacturing.MF428.MetalSubReports();
-            this.MetalSubReports.SizeF = new System.Drawing.SizeF(1121.356F, 23F);
             // 
             // MF428
             // 
