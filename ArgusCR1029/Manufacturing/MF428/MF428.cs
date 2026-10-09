@@ -55,7 +55,7 @@ namespace ArgusCR1029.Manufacturing.MF428
         }
         protected override string dictionaryStore()
         {
-            return "MF428";
+            return "CR1029.MF428";
         }
     }
 }
