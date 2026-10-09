@@ -595,6 +595,24 @@
     <Compile Include="Manufacturing\MF419.Designer.cs">
       <DependentUpon>MF419.cs</DependentUpon>
     </Compile>
+    <Compile Include="Manufacturing\MF428\GeneralSubReports.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Manufacturing\MF428\GeneralSubReports.Designer.cs">
+      <DependentUpon>GeneralSubReports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manufacturing\MF428\MetalSubReports.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Manufacturing\MF428\MetalSubReports.Designer.cs">
+      <DependentUpon>MetalSubReports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manufacturing\MF428\MF428.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Manufacturing\MF428\MF428.Designer.cs">
+      <DependentUpon>MF428.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -1335,6 +1353,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Manufacturing\MF419.resx">
       <DependentUpon>MF419.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manufacturing\MF428\GeneralSubReports.resx">
+      <DependentUpon>GeneralSubReports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manufacturing\MF428\MetalSubReports.resx">
+      <DependentUpon>MetalSubReports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manufacturing\MF428\MF428.resx">
+      <DependentUpon>MF428.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
