@@ -571,10 +571,22 @@
     <Compile Include="Manufacturing\MF205.Designer.cs">
       <DependentUpon>MF205.cs</DependentUpon>
     </Compile>
-    <Compile Include="Manufacturing\MF416b.cs">
+    <Compile Include="Manufacturing\MF416b\GeneralSubReports.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Manufacturing\MF416b.Designer.cs">
+    <Compile Include="Manufacturing\MF416b\GeneralSubReports.Designer.cs">
+      <DependentUpon>GeneralSubReports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manufacturing\MF416b\GrandTotalSubReports.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Manufacturing\MF416b\GrandTotalSubReports.Designer.cs">
+      <DependentUpon>GrandTotalSubReports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manufacturing\MF416b\MF416b.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Manufacturing\MF416b\MF416b.Designer.cs">
       <DependentUpon>MF416b.cs</DependentUpon>
     </Compile>
     <Compile Include="Manufacturing\MF416.cs">
@@ -1354,7 +1366,13 @@
     <EmbeddedResource Include="Manufacturing\MF205.resx">
       <DependentUpon>MF205.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Manufacturing\MF416b.resx">
+    <EmbeddedResource Include="Manufacturing\MF416b\GeneralSubReports.resx">
+      <DependentUpon>GeneralSubReports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manufacturing\MF416b\GrandTotalSubReports.resx">
+      <DependentUpon>GrandTotalSubReports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manufacturing\MF416b\MF416b.resx">
       <DependentUpon>MF416b.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Manufacturing\MF416.resx">
