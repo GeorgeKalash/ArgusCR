@@ -1,10 +1,11 @@
-﻿using DevExpress.XtraReports.UI;
-using System;
+﻿using System;
 using System.Collections;
 using System.ComponentModel;
 using System.Drawing.Printing;
+using DevExpress.XtraReports.UI;
+using System.Collections.Generic;
 
-namespace ArgusCR1029.Manufacturing
+namespace ArgusCR1029.Manufacturing.MF415
 {
     public partial class MF415 : ArgusRPT.BaseReport
     {
@@ -12,14 +13,20 @@ namespace ArgusCR1029.Manufacturing
         {
             InitializeComponent();
         }
-        protected override string reportName()
+        public override void setSessionInfo(Dictionary<string, string> _reportHeaders)
         {
-            return title_lbl.Text;
+            base.setSessionInfo(_reportHeaders);
+            ((ArgusRPT.BaseReport)(GeneralSubReports.ReportSource)).setSessionInfo(sessionInfo);
+            ((ArgusRPT.BaseReport)(GrandTotalSubReports.ReportSource)).setSessionInfo(sessionInfo);
+            initSubReports();
         }
+
         protected override void OnBeforePrint(PrintEventArgs e)
         {
-            SharedClasses.JsonProtocol.QryStructure <ArgusDS._1029.MF415> webObject = deserializeList<ArgusDS._1029.MF415>();
-            DataSource = webObject.list;
+           SharedClasses.JsonProtocol.GetStructure<ArgusDS._1029.MF415> webObject = deserializeGet<ArgusDS._1029.MF415>();
+
+            ((GeneralSubReports)(GeneralSubReports.ReportSource)).data = webObject.record.items;
+            ((GrandTotalSubReports)(GrandTotalSubReports.ReportSource)).data = webObject.record.summary;
 
             startDate_param.Text = Parameters.Count > 0 ? Parameters[0].Value.ToString() : string.Empty;
             endDate_param.Text = Parameters.Count > 1 ? Parameters[1].Value.ToString() : string.Empty;
@@ -38,12 +45,13 @@ namespace ArgusCR1029.Manufacturing
                 addressMobile_data.Text = companyInfo.address.phone;
                 addressEmail_data.Text = companyInfo.address.email1;
             }
+
             printSignature.Text = reportSignature();
+
             base.OnBeforePrint(e);
         }
         protected override void labelsText()
         {
-            title_lbl.Text = labelText(0);
         }
         protected override string dictionaryStore()
         {

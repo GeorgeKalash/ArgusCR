@@ -571,12 +571,6 @@
     <Compile Include="Manufacturing\MF205.Designer.cs">
       <DependentUpon>MF205.cs</DependentUpon>
     </Compile>
-    <Compile Include="Manufacturing\MF415.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Manufacturing\MF415.Designer.cs">
-      <DependentUpon>MF415.cs</DependentUpon>
-    </Compile>
     <Compile Include="Manufacturing\MF416b.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -612,6 +606,24 @@
     </Compile>
     <Compile Include="Manufacturing\MF428\MF428.Designer.cs">
       <DependentUpon>MF428.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manufacturing\MF415\GeneralSubReports.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Manufacturing\MF415\GeneralSubReports.Designer.cs">
+      <DependentUpon>GeneralSubReports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manufacturing\MF415\GrandTotalSubReports.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Manufacturing\MF415\GrandTotalSubReports.Designer.cs">
+      <DependentUpon>GrandTotalSubReports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manufacturing\MF415\MF415.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Manufacturing\MF415\MF415.Designer.cs">
+      <DependentUpon>MF415.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -1342,9 +1354,6 @@
     <EmbeddedResource Include="Manufacturing\MF205.resx">
       <DependentUpon>MF205.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Manufacturing\MF415.resx">
-      <DependentUpon>MF415.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Manufacturing\MF416b.resx">
       <DependentUpon>MF416b.cs</DependentUpon>
     </EmbeddedResource>
@@ -1362,6 +1371,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Manufacturing\MF428\MF428.resx">
       <DependentUpon>MF428.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manufacturing\MF415\GeneralSubReports.resx">
+      <DependentUpon>GeneralSubReports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manufacturing\MF415\GrandTotalSubReports.resx">
+      <DependentUpon>GrandTotalSubReports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manufacturing\MF415\MF415.resx">
+      <DependentUpon>MF415.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
